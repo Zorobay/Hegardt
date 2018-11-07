@@ -1,0 +1,308 @@
+body {
+	background-image: url(bg.jpg);
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	font-size: small;
+	font-weight: normal;
+	padding: 10px;
+}
+td {
+	font-size: small;
+	font-weight: normal;
+}
+h4 {
+	margin-top: 2ex;
+	margin-bottom: 0ex;
+	font-weight: bold;
+	text-align: left;
+}
+.anrubrik {
+	margin-left: 4ex;
+}
+.anregister {
+	border-top: 1px solid #305059;
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+/*	background-color: #dfe6e0; */
+}
+.namn {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	font-size: large;
+	color: red;
+}
+.levnad {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	text-align: center;
+	color: red;
+}
+.tavelrubrik {
+	margin-left: 4ex;
+	text-align: center;
+}
+.indexrubrik {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 150%;
+	text-align: center;
+	color: blue;
+}
+.proband, .f, .m {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	margin-left: 40px;
+	text-indent: -38px;
+	padding-left: 40px;
+	padding-right: 2px;
+}
+.ana {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	font-size: x-small;
+	font-weight: normal;
+	border: thin solid #c0c0c0;
+	margin-left: 30px;
+	text-indent: -28px;
+	padding-left: 30px;
+	padding-right: 2px;
+}
+.f_med, .m_med {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	font-size: x-small;
+	font-weight: normal;
+	margin-left: 40px;
+	text-indent: -38px;
+	padding-left: 40px;
+	padding-right: 2px;
+	border: thin solid #c0c0c0;
+}
+.ff, .fm, .mf, .mm, .fff, .ffm, .fmf, .fmm, .mff, .mfm, .mmf, .mmm,
+.ffff, .fffm, .ffmf, .ffmm, .fmff, .fmfm, .fmmf, .fmmm,
+.mfff, .mffm, .mfmf, .mfmm, .mmff, .mmfm, .mmmf, .mmmm {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	font-size: x-small;
+	margin-left: 30px;
+	text-indent: -28px;
+	padding-left: 30px;
+	padding-right: 2px;
+}
+.ff_med, .fm_med, .mf_med, .mm_med, .fff_med, .ffm_med, .fmf_med, .fmm_med, .mff_med, .mfm_med, .mmf_med, .mmm_med,
+.ffff_med, .fffm_med, .ffmf_med, .ffmm_med, .fmff_med, .fmfm_med, .fmmf_med, .fmmm_med,
+.mfff_med, .mffm_med, .mfmf_med, .mfmm_med, .mmff_med, .mmfm_med, .mmmf_med, .mmmm_med {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	font-size: x-small;
+	margin-left: 30px;
+	text-indent: -28px;
+	padding-left: 30px;
+	padding-right: 2px;
+	border: thin solid #c0c0c0;
+}
+.t_proband, .t_f, .t_m, .t_ff, .t_fm, .t_mf, .t_mm,
+.t_fff, .t_ffm, .t_fmf, .t_fmm, .t_mff, .t_mfm, .t_mmf, .t_mmm,
+.t_ffff, .t_fffm, .t_ffmf, .t_ffmm, .t_fmff, .t_fmfm, .t_fmmf, .t_fmmm,
+.t_mfff, .t_mffm, .t_mfmf, .t_mfmm, .t_mmff, .t_mmfm, .t_mmmf, .t_mmmm {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 75%;
+	border: thin solid #E1E2E8;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+.rel {
+	font-style: normal;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+.rel2 {
+	font-style: normal;
+	font-size: x-small;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+.t_rel {
+	font-style: normal;
+	font-weight: bold;
+	text-transform: lowercase;
+}
+.portrett {		/* tabell runt bild och bildtext */
+	background-image: url(bg.jpg);
+	margin-left: 4%;
+/*	border: 2em solid; */
+}
+.bild {
+	text-align: center;
+}
+.bildtext {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	font-style: italic;
+	text-align: center;
+}
+.angen {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 110%;
+	color: black;
+}
+.notis, .biografi {		/* valda notiser och biografi för huvudpersonen */
+	margin-right: 2%;
+	margin-left: 2%;
+	font-weight: normal;
+	text-align: left;
+}
+.giften {
+	border-top: 1px solid #305059;
+	margin-right: 2%;
+}
+.gifte {
+	margin-left: 2%;
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	font-size: small;
+	font-weight: normal;
+	line-height: 200%;
+}
+.partner {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 110%;
+}
+.barn {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 110%;
+}
+.giftesnotiser, .partnernotiser {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	margin-left: 4%;
+}
+.barnnotiser {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	margin-left: 8%;
+}
+.sidfot {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	text-align: center;
+	font-size: 80%;
+	font-style: italic;
+}
+.antabell {		/* används i ansedel */
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	border: thin solid #717370;
+	font-size: 1%;
+	vertical-align: middle;
+	padding: 0px;
+	margin: 0px;
+}
+.antavla {	/* används i antavla och stamtavla */
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	background-color: #bdc4b9;
+	border: thin solid #717370;
+	vertical-align: middle;
+	margin-left: 2%;
+	margin-top: 2ex;
+	width: 96%;
+}
+.antavla_p, .barn1, .barn2, .barn3, .barn4 {
+	border: thin solid #E1E2E8;
+}
+.tilltal {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: underline;
+}
+.kella {	/* källa hos notisen */
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: xx-small;
+	text-transform: uppercase;
+}
+.kellanr {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	color: Maroon;
+}
+.notop {
+	margin-top: 0ex;
+}
+.kellor {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 80%;
+	font-weight: normal;
+	margin-bottom: 0ex;
+	margin-left: 2%;
+	text-align: left;
+}
+.kellatext {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: normal;
+}
+.fotnotnr {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 80%;
+	vertical-align: super;
+	font-weight: normal;
+	font-style: normal;
+}
+.fotnot {
+	border-top: 1px solid #305059;
+	margin-bottom: 0ex;
+}
+.fotnottext {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 80%;
+	font-weight: normal;
+	font-style: normal;
+}
+.multimedia {
+	border-top: 1px solid #305059;
+	padding-top: 2ex;
+	font-weight: normal;
+	text-align: center;}
+}
+.register {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	text-align: center;
+	font-size: 110%;
+	font-weight: bold;
+	line-height: 200%;
+}
+.indexrubrik {	/* Överskrift i person-, namn- och ortsregister */
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 150%;
+	text-align: center;
+	color: olive;
+}
+.orttabell {
+	width: 96%;
+	margin-left: 2%;
+	margin-top: 2ex;
+}
+.ort {
+	background-color: #bdc4b9;
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	font-weight: bold;
+}
+.ortperson {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 100%;
+}
+.indexbokst {
+	border-top: 1px solid #305059;
+	font-size: 110%;
+	text-align: center;
+	color: blue;
+	font-weight: bold;
+	line-height: 150%;
+}
+.indexnamn,
+.indexperson {
+	line-height: 150%;
+}
+A:link, 
+A:visited {
+	color: #1C3D7D;
+	text-decoration: none;
+	font-weight: bold;
+}
+A:hover {
+	color: #1C3D7D;
+	background: #bdc4b9;
+	font-weight: bold;
+}
+A:active {
+	color: #1C3D7D;
+	text-decoration: none;
+	font-weight: bold;
+}
