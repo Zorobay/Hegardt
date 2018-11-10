@@ -9,7 +9,7 @@ def parse_person(html):
 
 
 def main():
-    with open("html.html", 'r') as file:
+    with open("ansedel_christian.html", 'r') as file:
         html = file.read()
 
     person = parse_person(html)
