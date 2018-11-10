@@ -3,6 +3,9 @@
 node_modules
 package.json
 
+# Python virtual environment
+venv
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
