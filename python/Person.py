@@ -8,13 +8,16 @@ reg_ansedel = re.compile("ansedel", re.IGNORECASE | re.UNICODE)
 reg_name = re.compile("\w+", re.IGNORECASE | re.UNICODE)
 date_str = "[\sa-zA-Z]*([\d-]*)"
 loc_str = "[\w\s-]*\s+i\s+([\w,\s]*)"
+reg_date = re.compile(date_str, re.IGNORECASE | re.UNICODE)
+reg_loc = re.compile(loc_str, re.IGNORECASE | re.UNICODE)
 reg_birth_date = re.compile("Född{}".format(date_str), re.IGNORECASE | re.UNICODE)
 reg_birth_loc = re.compile("Född{}".format(loc_str), re.IGNORECASE | re.UNICODE)
 reg_death_date = re.compile("Död{}".format(date_str), re.IGNORECASE | re.UNICODE)
 reg_death_loc = re.compile("Död{}".format(loc_str), re.IGNORECASE | re.UNICODE)
 reg_occupation = re.compile("(\w*)", re.IGNORECASE | re.UNICODE)
-reg_newline_no_full_stop = re.compile("(?<=[^\.])\n", re.UNICODE)
+reg_newline_on_full_stop = re.compile("(?<=[^\.])\n", re.UNICODE)
 reg_long_space = re.compile("\s{2,}", re.UNICODE)
+reg_file_id = re.compile("\/\d*\/\d*\/\d*.htm", re.IGNORECASE | re.UNICODE)
 
 
 def match_or_else(match, pos, other):
@@ -51,7 +54,7 @@ class Person:
 
         # Declare empty holders
         self.first_name = ""
-        self.middle_names = [""]
+        self.middle_names = []
         self.last_name = ""
         self.birth_date = ""
         self.birth_loc = ""
@@ -59,32 +62,60 @@ class Person:
         self.death_loc = ""
         self.occupation = ""
         self.notes = ""
-        self.spouses = [dict]  # list of spouses on the form
+        self.spouses = []  # list of spouses on the form (spouse id, date, location)
         self.father = ""  # unique html file path
         self.mother = ""  # unique html file path
-        self.children = [""]  # list of unique html file paths
+        self.children = []  # list of unique html file paths
 
         self.set_names(self.bs.find_all("title")[-1].string)  # Find names from innermost title tag
         self.parse_cell()
         self.set_notes()
         self.set_father()
         self.set_mother()
-        self.set_spouse_and_children()
+        self.set_children()
+        self.set_spouses()
 
-    def set_spouse_and_children(self):
+    def set_spouses(self):
         if len(self.tables) < 3:
             return
         table = self.tables[-1]
         cell = table.find("tr").find_all("td")[1]
-        cell
+        all_x5 = cell.find_all("x5")
+
+        for x5 in all_x5:
+            date_and_loc = str(x5.contents[0]).strip()
+            match = reg_date.search(date_and_loc)
+            date_pos = match.regs[1][1]
+            date = match_or_else(match, 1, "")
+            match = reg_loc.search(date_and_loc)
+            loc = match_or_else(match, 1, date_and_loc[date_pos:])
+
+            a_tags = x5.find_all("a")
+            for a in a_tags:
+                if "href" in a.attrs and reg_file_id.search(a.attrs["href"]):
+                    spouse_id = path_to_file_id(a.attrs["href"])
+                    self.spouses.append((spouse_id, date.strip(), loc.strip()))
+                    break
+
+    def set_children(self):
+        if len(self.tables) < 3:
+            return
+        table = self.tables[-1]
+        cell = table.find("tr").find_all("td")[1]
+        children_html = cell.find("blockquote")
+        a_tags = children_html.find_all("a")
+
+        for a in a_tags:
+            if "href" in a.attrs and reg_file_id.search(a.attrs["href"]):  # href is refering to a child
+                self.children.append(path_to_file_id(a.attrs["href"]))
 
     def set_father(self):
-        self.father = self.set_ancestor(0,1)
+        self.father = self.set_parent(0, 1)
 
     def set_mother(self):
-        self.mother = self.set_ancestor(2, 0)
+        self.mother = self.set_parent(2, 0)
 
-    def set_ancestor(self, row, col):
+    def set_parent(self, row, col):
         table = self.tables[0]
         if len(self.tables) > 2:
             table = self.tables[1]
@@ -109,7 +140,7 @@ class Person:
                     self.notes += line_str.strip()
 
         # Trim excess newline and space
-        self.notes = reg_newline_no_full_stop.sub('', self.notes).strip()
+        self.notes = reg_newline_on_full_stop.sub('', self.notes).strip()
         self.notes = reg_long_space.sub(' ', self.notes)
 
     def parse_cell(self):
