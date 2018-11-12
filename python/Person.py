@@ -1,6 +1,7 @@
 from bs4 import BeautifulSoup
 import re
 import bleach
+import os
 
 # Declare regex
 
@@ -41,7 +42,8 @@ def path_to_file_id(file_name):
     :param file_name: the file's name as a string
     :return: a string on the form "folder1/folder2/filename"
     """
-    path = file_name.split('/')
+    file_name = re.sub("\\\\", "/", file_name)
+    path = file_name.split("/")
     return "/".join(path[-3:])
 
 
@@ -232,7 +234,7 @@ class Person:
                     self.middle_names = names[1:-1]
 
     def as_json(self):
-        return {
+        return {self.file_id: {
             "first_name": self.first_name,
             "middle_name": self.middle_names,
             "last_name": self.last_name,
@@ -249,4 +251,4 @@ class Person:
             "father": self.father,
             "mother": self.mother,
             "children": self.children
-        }
+        }}
