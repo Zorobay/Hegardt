@@ -38,11 +38,12 @@ def get_first_cell(table):
 def path_to_file_id(file_name):
     """
     Gets the unique path id of this file, which corresponds to the path of the last two directories.
-    :param file: the file's name as a string
+    :param file_name: the file's name as a string
     :return: a string on the form "folder1/folder2/filename"
     """
     path = file_name.split('/')
     return "/".join(path[-3:])
+
 
 class Person:
 
@@ -102,12 +103,13 @@ class Person:
             return
         table = self.tables[-1]
         cell = table.find("tr").find_all("td")[1]
-        children_html = cell.find("blockquote")
-        a_tags = children_html.find_all("a")
+        bqs = cell.find_all("blockquote")  # Blocks where childrens names are listed
 
-        for a in a_tags:
-            if "href" in a.attrs and reg_file_id.search(a.attrs["href"]):  # href is refering to a child
-                self.children.append(path_to_file_id(a.attrs["href"]))
+        for bq in bqs:
+            a_tags = bq.find_all("a")
+            for a in a_tags:
+                if "href" in a.attrs and reg_file_id.search(a.attrs["href"]):  # href is refering to a child
+                    self.children.append(path_to_file_id(a.attrs["href"]))
 
     def set_father(self):
         self.father = self.set_parent(0, 1)
@@ -121,8 +123,11 @@ class Person:
             table = self.tables[1]
 
         cell = table.find_all("tr")[row].find_all("td")[col]  # Get cell from first row second column
-        path = cell.a.attrs["href"]
-        return path_to_file_id(path)
+
+        if cell.a and "href" in cell.a.attrs:
+            path = cell.a.attrs["href"]
+            return path_to_file_id(path)
+        return ""
 
     def set_notes(self):
         cell = get_first_cell(self.tables[1])
@@ -178,12 +183,13 @@ class Person:
 
     def set_names(self, name_str):
         """
-        Finds and appropriately sets the names of the person.
+        Finds and appropriately sets the names of the person. If there is only one name available,
+        interprets it as a last name.
         :return:
         """
         names = reg_name.findall(reg_ansedel.sub('', name_str))
-        self.first_name = names[0]
+        self.last_name = names[-1]
         if len(names) > 1:
-            self.last_name = names[-1]
+            self.first_name = names[0]
             if len(names) > 2:
                 self.middle_names = names[1:-1]

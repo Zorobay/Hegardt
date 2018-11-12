@@ -149,3 +149,27 @@ class TestAnna(TestHelge):
                          "000/0001/243.htm", "000/0001/244.htm", "000/0001/246.htm", "000/0001/247.htm",
                          "000/0001/248.htm"]
         }
+
+class TestMorsing(TestHelge):
+    """Morsing only has one name and a marriage, nothing else!"""
+
+    def setUp(self):
+        with open("../../Disgen/html/000/0001/433.htm", 'r') as file:
+            self.person = Person(file)
+
+        self.props = {
+            "first_name": "",
+            "middle_name": [],
+            "last_name": "Morsing",
+            "birth_date": "",
+            "birth_loc": "",
+            "death_date": "",
+            "death_loc": "",
+            "occupation": "",
+            "notes": "",
+            "file_id": "000/0001/433.htm",
+            "spouses": [("000/0001/240.htm", "", "")],
+            "father": "",
+            "mother": "",
+            "children": ["000/0001/432.htm", "000/0001/434.htm", "000/0001/435.htm"]
+        }
