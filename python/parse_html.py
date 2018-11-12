@@ -1,18 +1,36 @@
-from bs4 import BeautifulSoup
-import re
-
-
-# Declare regex
-reg_name = re.compile("\w+", re.IGNORECASE | re.UNICODE)
-
-def parse_person(html):
+import os
+import sys
+from python.Person import Person
+from time import time
+import json
 
 
 def main():
-    with open("ansedel_christian.html", 'r') as file:
-        html = file.read()
+    ppl = []
+    file_nr = 0
+    start = time()
+    for root, dirs, files in os.walk("../Disgen/html"):
+        for file in files:
+            if "-" not in file and file.endswith(".htm") or file.endswith(".html"):
+                p = os.path.join(root, file)
+                file_nr += 1
+                print("Processing [{}]: {}".format(file_nr, p))
+                with open(p, 'r') as f:
+                    try:
+                        person = Person(f)
+                        ppl.append(person.as_json())
+                    except:
+                        print("{}Error in file: {}{}".format('\033[91m', p, '\033[0m'))
+                        return
 
-    person = parse_person(html)
+    end = time()
+    print("Finished parsing {} files in {:3g}s".format(file_nr, (end - start)))
+
+    with open("all_ppl.json", 'w+') as outfile:
+        json.dump(ppl, outfile)
+
+    print("Wrote output to [all_ppl.json]")
+
 
 if __name__ == "__main__":
     main()

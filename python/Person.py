@@ -61,6 +61,8 @@ class Person:
         self.birth_loc = ""
         self.death_date = ""
         self.death_loc = ""
+        self.bury_date = ""
+        self.bury_loc = ""
         self.occupation = ""
         self.notes = ""
         self.spouses = []  # list of spouses on the form (spouse id, date, location)
@@ -71,14 +73,18 @@ class Person:
         self.set_names(self.bs.find_all("title")[-1].string)  # Find names from innermost title tag
         self.parse_cell()
         self.set_notes()
+        if len(self.notes.strip()) < 2:
+            # Residual symbols might be parsed as notes.
+            # If less than 2 symbols, this is garbage.
+            self.notes = ""
         self.set_father()
         self.set_mother()
         self.set_children()
         self.set_spouses()
 
+
     def set_spouses(self):
-        if len(self.tables) < 3:
-            return
+
         table = self.tables[-1]
         cell = table.find("tr").find_all("td")[1]
         all_x5 = cell.find_all("x5")
@@ -99,8 +105,7 @@ class Person:
                     break
 
     def set_children(self):
-        if len(self.tables) < 3:
-            return
+
         table = self.tables[-1]
         cell = table.find("tr").find_all("td")[1]
         bqs = cell.find_all("blockquote")  # Blocks where childrens names are listed
@@ -112,17 +117,29 @@ class Person:
                     self.children.append(path_to_file_id(a.attrs["href"]))
 
     def set_father(self):
-        self.father = self.set_parent(0, 1)
+        father = self.set_parent(self.tables[0], 0, 1)
+        if father == "":
+            if len(self.tables) < 2:
+                return
+            father = self.set_parent(self.tables[1], 0, 1)
+
+        self.father = father
 
     def set_mother(self):
-        self.mother = self.set_parent(2, 0)
+        mother = self.set_parent(self.tables[0], 2, 0)
+        if mother == "":
+            if len(self.tables) < 2:
+                return
+            mother = self.set_parent(self.tables[1], 2, 0)
 
-    def set_parent(self, row, col):
-        table = self.tables[0]
-        if len(self.tables) > 2:
-            table = self.tables[1]
+        self.mother = mother
 
-        cell = table.find_all("tr")[row].find_all("td")[col]  # Get cell from first row second column
+    def set_parent(self, table, row, col):
+        try:
+            cell = table.find_all("tr")[row].find_all("td")[col]  # Get cell from first row second column
+        except:
+            # The parent is not in table 0, try table 1
+            return ""
 
         if cell.a and "href" in cell.a.attrs:
             path = cell.a.attrs["href"]
@@ -130,12 +147,15 @@ class Person:
         return ""
 
     def set_notes(self):
+        if len(self.tables) < 2:
+            return
+
         cell = get_first_cell(self.tables[1])
 
         if len(self.tables) > 2:  # Other type of html, we only have 2 tables
             cell = get_first_cell(self.tables[2])
 
-        if cell.font.contents[0].strip().startswith("Levnadsbeskrivning"):  # Has notes!
+        if cell.font and cell.font.contents[0].strip().startswith("Levnadsbeskrivning"):  # Has notes!
             for line in cell.contents[1:]:  # Skip content with header 'Levnadsbeskrivning'
                 line_str = str(line).strip()
 
@@ -145,7 +165,7 @@ class Person:
                     self.notes += line_str.strip()
 
         # Trim excess newline and space
-        self.notes = reg_newline_on_full_stop.sub('', self.notes).strip()
+        self.notes = reg_newline_on_full_stop.sub(' ', self.notes).strip()
         self.notes = reg_long_space.sub(' ', self.notes)
 
     def parse_cell(self):
@@ -156,18 +176,34 @@ class Person:
         lines = list(filter(None, lines))  # remove empty elements
         found_name = self.first_name != ""
 
+        last_found_i = 0
         for line in lines:
             if line.lower().startswith("född"):  # parse born line
                 self.set_birth(line)
+                last_found_i += 1
             elif line.lower().startswith("död"):  # parse death line
                 self.set_death(line)
-            elif not found_name and (line.lower().startswith("<b") or line and line[0].isalpha()):  # parse name line
-                found_name = True
-                self.set_names(line)
+                last_found_i += 1
+            elif line.lower().startswith("begravd"):
+                self.set_bury(line)
+                last_found_i += 1
             elif found_name and len(lines) > 1 and line and line[
                 0].isalpha():  # Remaining line is occupation if more than 1 line
                 match = reg_occupation.search(line)
                 self.occupation = match_or_else(match, 1, "").strip()
+                last_found_i += 1
+
+        for line in lines[last_found_i:]:  # Remaining lines should be notes
+            if self.first_name == "" and self.last_name == "":
+                self.notes += line + "\n"
+            elif not line.startswith(self.first_name[0:-1]) and not line.startswith(self.last_name[0:-1]):
+                self.notes += line + "\n"
+
+    def set_bury(self, bury_str):
+        match = reg_date.search(bury_str)
+        self.bury_date = match_or_else(match, 1, "").strip()
+        match = reg_loc.search(bury_str)
+        self.bury_loc = match_or_else(match, 1, "").strip()
 
     def set_birth(self, birth_str):
         match = reg_birth_date.search(birth_str)
@@ -188,8 +224,29 @@ class Person:
         :return:
         """
         names = reg_name.findall(reg_ansedel.sub('', name_str))
-        self.last_name = names[-1]
-        if len(names) > 1:
-            self.first_name = names[0]
-            if len(names) > 2:
-                self.middle_names = names[1:-1]
+        if len(names) > 0:
+            self.last_name = names[-1]
+            if len(names) > 1:
+                self.first_name = names[0]
+                if len(names) > 2:
+                    self.middle_names = names[1:-1]
+
+    def as_json(self):
+        return {
+            "first_name": self.first_name,
+            "middle_name": self.middle_names,
+            "last_name": self.last_name,
+            "birth_date": self.birth_date,
+            "birth_loc": self.birth_loc,
+            "death_date": self.death_date,
+            "death_loc": self.death_loc,
+            "bury_date": self.bury_date,
+            "bury_loc": self.bury_loc,
+            "occupation": self.occupation,
+            "notes": self.notes,
+            "file_id": self.file_id,
+            "spouses": self.spouses,
+            "father": self.father,
+            "mother": self.mother,
+            "children": self.children
+        }
