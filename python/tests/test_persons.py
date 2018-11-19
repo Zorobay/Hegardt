@@ -28,7 +28,8 @@ class TestHelge(unittest.TestCase):
             "father": "000/0000/409.htm",
             "mother": "000/0000/417.htm",
             "children": ["000/0000/423.htm", "000/0000/424.htm", "000/0000/426.htm", "000/0000/427.htm",
-                         "000/0000/429.htm"]
+                         "000/0000/429.htm"],
+            "references": []
         }
 
     def test_first_name(self):
@@ -80,6 +81,9 @@ class TestHelge(unittest.TestCase):
     def test_children(self):
         self.assertListEqual(self.props["children"], self.person.children)
 
+    def test_references(self):
+        self.assertEqual(self.props["references"], self.person.references)
+
 
 class TestJurgen(TestHelge):
     """Jurgen is very simple. No kids or wife, birth or death recorded."""
@@ -104,7 +108,8 @@ class TestJurgen(TestHelge):
             "spouses": [],
             "father": "000/0000/003.htm",
             "mother": "000/0000/005.htm",
-            "children": []
+            "children": [],
+            "references": ["se Peters dagbok"]
         }
 
 
@@ -132,7 +137,8 @@ class TestChristian(TestHelge):
                         ("000/0000/602.htm", "1992-07-04", "ombord på S/Y Gita II")],
             "father": "000/0000/419.htm",
             "mother": "000/0000/422.htm",
-            "children": ["000/0000/431.htm", "000/0000/432.htm", "000/0000/433.htm"]
+            "children": ["000/0000/431.htm", "000/0000/432.htm", "000/0000/433.htm"],
+            "references": []
         }
 
 
@@ -161,8 +167,10 @@ class TestAnna(TestHelge):
             "mother": "000/0001/242.htm",
             "children": ["000/0001/432.htm", "000/0001/434.htm", "000/0001/435.htm",
                          "000/0001/243.htm", "000/0001/244.htm", "000/0001/246.htm", "000/0001/247.htm",
-                         "000/0001/248.htm"]
+                         "000/0001/248.htm"],
+            "references": []
         }
+
 
 class TestMorsing(TestHelge):
     """Morsing only has one name and a marriage, nothing else!"""
@@ -187,8 +195,10 @@ class TestMorsing(TestHelge):
             "spouses": [("000/0001/240.htm", "", "")],
             "father": "",
             "mother": "",
-            "children": ["000/0001/432.htm", "000/0001/434.htm", "000/0001/435.htm"]
+            "children": ["000/0001/432.htm", "000/0001/434.htm", "000/0001/435.htm"],
+            "references": []
         }
+
 
 class TestBotel(TestHelge):
     """
@@ -215,13 +225,16 @@ class TestBotel(TestHelge):
             "spouses": [],
             "father": "000/0000/001.htm",
             "mother": "",
-            "children": []
+            "children": [],
+            "references": []
         }
+
 
 class TestUnknown(TestHelge):
     """
     Unknown person without name or parents. Has a spouse however.
     """
+
     def setUp(self):
         with open("../../Disgen/html/000/0000/465.htm", 'r') as file:
             self.person = Person(file)
@@ -242,11 +255,14 @@ class TestUnknown(TestHelge):
             "spouses": [("000/0000/103.htm", "", "")],
             "father": "",
             "mother": "",
-            "children": ["000/0000/104.htm", "000/0000/150.htm"]
+            "children": ["000/0000/104.htm", "000/0000/150.htm"],
+            "references": []
         }
+
 
 class TestNonExisting(TestHelge):
     """Completely empty"""
+
     def setUp(self):
         with open("../../Disgen/html/000/0000/908.htm", 'r') as file:
             self.person = Person(file)
@@ -267,5 +283,228 @@ class TestNonExisting(TestHelge):
             "spouses": [],
             "father": "",
             "mother": "",
-            "children": []
+            "children": [],
+            "references": []
+        }
+
+
+class TestArvid(TestHelge):
+    """Weird format for death"""
+
+    def setUp(self):
+        with open("../../Disgen/html/000/0001/046.htm", 'r') as file:
+            self.person = Person(file)
+
+        self.props = {
+            "first_name": "Arvid",
+            "middle_name": [],
+            "last_name": "Ausell",
+            "birth_date": "1750",
+            "birth_loc": "",
+            "death_date": "1802-03-01",
+            "death_loc": "på sin gård Håkanstorp",
+            "bury_date": "",
+            "bury_loc": "",
+            "occupation": "Kyrkoinspektör",
+            "notes": "",
+            "file_id": "000/0001/046.htm",
+            "spouses": [
+                ("000/0001/045.htm", "1783-10-05", "Malmö")
+            ],
+            "father": "",
+            "mother": "",
+            "children": [],
+            "references": []
+        }
+
+
+class TestWaaraGrape(TestHelge):
+    """Unique last name with dash."""
+
+    def setUp(self):
+        with open("../../Disgen/html/000/0000/430.htm", 'r') as file:
+            self.person = Person(file)
+
+        self.props = {
+            "first_name": "Elna",
+            "middle_name": ["Birgitta"],
+            "last_name": "Waara-Grape",
+            "birth_date": "1933-02-21",
+            "birth_loc": "Skellefteå",
+            "death_date": "1988-06-14",
+            "death_loc": "Lund",
+            "bury_date": "",
+            "bury_loc": "",
+            "occupation": "Fil dr",
+            "notes": "",
+            "file_id": "000/0000/430.htm",
+            "spouses": [
+                (
+                    "000/0000/423.htm",
+                    "1958-06-20",
+                    "Skellefteå"
+                )
+            ],
+            "father": "000/0000/477.htm",
+            "mother": "000/0000/478.htm",
+            "children": [
+                "000/0000/431.htm",
+                "000/0000/432.htm",
+                "000/0000/433.htm"
+            ],
+            "references": []
+        }
+
+
+class TestAnna(TestHelge):
+    """Has a death with lot of information."""
+
+    def setUp(self):
+        with open("../../Disgen/html/000/0000/022.htm", 'r') as file:
+            self.person = Person(file)
+
+        self.props = {
+            "first_name": "Anna",
+            "middle_name": [
+                "Elisabeth"
+            ],
+            "last_name": "Bratt",
+            "birth_date": "1753-06-12",
+            "birth_loc": "Uddevalla",
+            "death_date": "1835-03-10",
+            "death_loc": "på Annegreteberg i Uddevalla",
+            "bury_date": "",
+            "bury_loc": "",
+            "occupation": "",
+            "notes": "",
+            "file_id": "000/0000/022.htm",
+            "spouses": [
+                (
+                    "000/0000/017.htm",
+                    "1774-09-13",
+                    "Uddevalla"
+                )
+            ],
+            "father": "000/0000/484.htm",
+            "mother": "000/0000/485.htm",
+            "children": [
+                "000/0000/588.htm",
+                "000/0000/032.htm",
+                "000/0000/033.htm",
+                "000/0000/200.htm",
+                "000/0000/034.htm",
+                "000/0000/036.htm",
+                "000/0000/038.htm"
+            ],
+            "references": []
+        }
+
+
+class TestAfÅminne(TestHelge):
+    """Last name with 'af'"""
+
+    def setUp(self):
+        with open("../../Disgen/html/000/0001/306.htm", 'r') as file:
+            self.person = Person(file)
+
+        self.props = {
+            "first_name": "Anna",
+            "middle_name": [
+                "Regina",
+                "Horn"
+            ],
+            "last_name": "af Åminne",
+            "birth_date": "1718-03-07",
+            "birth_loc": "",
+            "death_date": "1796-11-21",
+            "death_loc": "på Berga i Högsby",
+            "bury_date": "",
+            "bury_loc": "",
+            "occupation": "Friherrinna",
+            "notes": "",
+            "file_id": "000/0001/306.htm",
+            "spouses": [
+                (
+                    "000/0001/305.htm",
+                    "1762",
+                    ""
+                )
+            ],
+            "father": "000/0001/307.htm",
+            "mother": "000/0001/308.htm",
+            "children": [],
+            "references": []
+        }
+
+
+class TestHorn(TestHelge):
+    def setUp(self):
+        with open("../../Disgen/html/000/0001/307.htm", 'r') as file:
+            self.person = Person(file)
+
+        self.props = {
+            "first_name": "Christer",
+            "middle_name": [],
+            "last_name": "Horn",
+            "birth_date": "",
+            "birth_loc": "",
+            "death_date": "",
+            "death_loc": "",
+            "bury_date": "",
+            "bury_loc": "",
+            "occupation": "Överste, friherre",
+            "notes": "",
+            "file_id": "000/0001/307.htm",
+            "spouses": [
+                (
+                    "000/0001/308.htm",
+                    "",
+                    ""
+                )
+            ],
+            "father": "",
+            "mother": "",
+            "children": [
+                "000/0001/306.htm"
+            ],
+            "references": []
+        }
+
+
+class TestCarlos(TestHelge):
+    def setUp(self):
+        with open("../../Disgen/html/000/0000/304.htm", 'r') as file:
+            self.person = Person(file)
+
+        self.props = {
+            "first_name": "Carlos",
+            "middle_name": [
+                "Alfonso",
+                "José"
+            ],
+            "last_name": "Garcia-Hegardt",
+            "birth_date": "1946-07-30",
+            "birth_loc": "Zaragosa, Spanien",
+            "death_date": "",
+            "death_loc": "",
+            "bury_date": "",
+            "bury_loc": "",
+            "occupation": "Licenciat i kemi",
+            "notes": "Adress Calle del Rio 31-9 D, Miranda de Ebro, Burgos, Spanien.\nBor i Burgos, Spanien.",
+            "file_id": "000/0000/304.htm",
+            "spouses": [
+                (
+                    "000/0000/305.htm",
+                    "1973-07-02",
+                    "Barbastro, Spanien"
+                )
+            ],
+            "father": "000/0000/294.htm",
+            "mother": "000/0000/293.htm",
+            "children": [
+                "000/0000/312.htm",
+                "000/0000/313.htm",
+                "000/0000/314.htm"
+            ],
+            "references": []
         }

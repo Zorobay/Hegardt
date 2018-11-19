@@ -6,18 +6,22 @@ import os
 # Declare regex
 
 reg_ansedel = re.compile("ansedel", re.IGNORECASE | re.UNICODE)
-reg_name = re.compile("\w+", re.IGNORECASE | re.UNICODE)
-date_str = "[\sa-zA-Z]*([\d-]*)"
-loc_str = "[\w\s-]*\s+i\s+([\w,\s]*)"
+reg_name = re.compile("[\w-]+", re.IGNORECASE | re.UNICODE)
+date_str = "[\sa-öA-Ö]*([\d-]*)"
+loc_str = "[\w\s-]*\s+i\s+([a-öA-Ö,\s]*)"
+rem_letters = "[0-9\s\.-]*([a-öA-Ö\s,]*)"
 reg_date = re.compile(date_str, re.IGNORECASE | re.UNICODE)
 reg_loc = re.compile(loc_str, re.IGNORECASE | re.UNICODE)
 reg_birth_date = re.compile("Född{}".format(date_str), re.IGNORECASE | re.UNICODE)
 reg_birth_loc = re.compile("Född{}".format(loc_str), re.IGNORECASE | re.UNICODE)
-reg_death_date = re.compile("Död{}".format(date_str), re.IGNORECASE | re.UNICODE)
-reg_death_loc = re.compile("Död{}".format(loc_str), re.IGNORECASE | re.UNICODE)
-reg_occupation = re.compile("(\w*)", re.IGNORECASE | re.UNICODE)
+reg_birth_remaining = re.compile("Född {}".format(rem_letters), re.IGNORECASE | re.UNICODE)
+reg_death_date = re.compile("Död {}".format(date_str), re.IGNORECASE | re.UNICODE)
+reg_death_loc = re.compile("Död {}".format(loc_str), re.IGNORECASE | re.UNICODE)
+reg_death_remaining = re.compile("Död{}".format(rem_letters), re.IGNORECASE | re.UNICODE)
+reg_occupation = re.compile("([\w\s,]*)", re.IGNORECASE | re.UNICODE)
 reg_newline_on_full_stop = re.compile("(?<=[^\.])\n", re.UNICODE)
-reg_long_space = re.compile("\s{2,}", re.UNICODE)
+reg_space_after_newline = re.compile("\n ", re.UNICODE | re.IGNORECASE)
+reg_long_space = re.compile(" {2,}", re.UNICODE)
 reg_file_id = re.compile("\/\d*\/\d*\/\d*.htm", re.IGNORECASE | re.UNICODE)
 
 
@@ -71,6 +75,7 @@ class Person:
         self.father = ""  # unique html file path
         self.mother = ""  # unique html file path
         self.children = []  # list of unique html file paths
+        self.references = []
 
         self.set_names(self.bs.find_all("title")[-1].string)  # Find names from innermost title tag
         self.parse_cell()
@@ -83,7 +88,13 @@ class Person:
         self.set_mother()
         self.set_children()
         self.set_spouses()
+        self.set_references()
 
+    def set_references(self):
+        font = self.bs.find_all("table")[-1].find_next("hr").find_next("font")
+        if "Källor" in font.text:
+            for item in font.find("ol").find_all("li"):
+                self.references.append(item.text.strip())
 
     def set_spouses(self):
 
@@ -169,6 +180,7 @@ class Person:
         # Trim excess newline and space
         self.notes = reg_newline_on_full_stop.sub(' ', self.notes).strip()
         self.notes = reg_long_space.sub(' ', self.notes)
+        self.notes = reg_space_after_newline.sub('\n', self.notes)
 
     def parse_cell(self):
         cell = get_first_cell(self.tables[0])  # Extract the cell containing person info
@@ -189,11 +201,11 @@ class Person:
             elif line.lower().startswith("begravd"):
                 self.set_bury(line)
                 last_found_i += 1
-            elif found_name and len(lines) > 1 and line and line[
-                0].isalpha():  # Remaining line is occupation if more than 1 line
-                match = reg_occupation.search(line)
-                self.occupation = match_or_else(match, 1, "").strip()
-                last_found_i += 1
+            elif found_name and line and line[0].isalpha():  # Remaining line is occupation
+                if len(self.occupation) == 0 and not (line.startswith(self.first_name) or line.startswith(self.last_name)):
+                    match = reg_occupation.search(line)
+                    self.occupation = match_or_else(match, 1, "").strip()
+                    last_found_i += 1
 
         for line in lines[last_found_i:]:  # Remaining lines should be notes
             if self.first_name == "" and self.last_name == "":
@@ -208,16 +220,30 @@ class Person:
         self.bury_loc = match_or_else(match, 1, "").strip()
 
     def set_birth(self, birth_str):
+        # Get the birth date
         match = reg_birth_date.search(birth_str)
         self.birth_date = match_or_else(match, 1, "").strip()
-        match = reg_birth_loc.search(birth_str)
-        self.birth_loc = match_or_else(match, 1, "").strip()
+        # Get the birth location
+        if "i" and "på" in birth_str: # Complex form, remove date and extract all
+            birth_str = birth_str.replace(self.birth_date, "")  # Remove birth date from string
+            birth_str = reg_long_space.subn(" ", birth_str)[0]
+            match_or_else(reg_birth_remaining.search(birth_str), 1, "")
+        else:
+            match = reg_birth_loc.search(birth_str)
+            self.birth_loc = match_or_else(match, 1, match_or_else(reg_birth_remaining.search(birth_str), 1, "")).strip()
 
     def set_death(self, death_str):
+        # Get the death date
         match = reg_death_date.search(death_str)
         self.death_date = match_or_else(match, 1, "").strip()
-        match = reg_death_loc.search(death_str)
-        self.death_loc = match_or_else(match, 1, "").strip()
+        # Get the death location
+        if " i " and " på " in death_str:  # Complex form, remove date and extract all
+            death_str = death_str.replace(self.death_date, "")  # Remove death date from string
+            death_str = reg_long_space.subn(" ", death_str)[0]
+            self.death_loc = match_or_else(reg_death_remaining.search(death_str), 1, "").strip()
+        else:
+            match = re.search(reg_death_loc, death_str)
+            self.death_loc = match_or_else(match, 1, match_or_else(reg_death_remaining.search(death_str), 1, "")).strip()
 
     def set_names(self, name_str):
         """
@@ -229,12 +255,20 @@ class Person:
         if len(names) > 0:
             self.last_name = names[-1]
             if len(names) > 1:
-                self.first_name = names[0]
-                if len(names) > 2:
-                    self.middle_names = names[1:-1]
+                if "af" in names:  # Special last name, should be two words
+                    self.last_name = " ".join(names[-2:])
+                    if len(names) > 2:
+                        self.first_name = names[0]
+                        if len(names) > 3:
+                            self.middle_names = names[1:-2]
+                else:
+                    self.first_name = names[0]
+                    if len(names) > 2:
+                        self.middle_names = names[1:-1]
 
     def as_json(self):
-        return {self.file_id: {
+
+        json = {
             "first_name": self.first_name,
             "middle_name": self.middle_names,
             "last_name": self.last_name,
@@ -250,5 +284,8 @@ class Person:
             "spouses": self.spouses,
             "father": self.father,
             "mother": self.mother,
-            "children": self.children
-        }}
+            "children": self.children,
+            "references": self.references
+        }
+
+        return json
