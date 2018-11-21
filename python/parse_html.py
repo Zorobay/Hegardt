@@ -26,8 +26,8 @@ def main():
     end = time()
     print("Finished parsing {} files in {:3g}s".format(file_nr, (end - start)))
 
-    with open("all_ppl.json", 'w+') as outfile:
-        json.dump(ppl, outfile)
+    with open("all_ppl.json", 'w+', encoding='utf-16') as outfile:
+        json.dump(ppl, outfile, ensure_ascii=False)
 
     print("Wrote output to [all_ppl.json]")
 
