@@ -1,49 +1,34 @@
 const express = require('express');
-
+const { body, validationResult } = require('express-validator/check');
 const router = express.Router();
 
 //Respond to any requests to the root url
 router.get('/', (req, res) => {
-    res.send('It works!');
+    res.render('form', {title: "Regga dig för whaat?"});
 });
 
-module.export = router;
+// Handle rout and validate properties of req.
+router.post('/',
+    [
+        body('name')
+            .isLength({min: 2})
+            .withMessage('Please enter a name'),
+        body('email')
+            .isAscii()
+            .withMessage('Jävla svensk email!')
+    ],
+    (req, res) => {
+        const errors = validationResult(req);
 
+        if (errors.isEmpty()) {
+            res.send('Thank you for your registration!');
+        } else {
+            res.render('form', {
+                title: 'Registration form',
+                errors: errors.array(),
+                data: req.body,
+            });
+        }
+    });
 
-
-
-
-// console.log("Running Node.js project demon forever.");
-//
-// var mongoose = require('mongoose');
-// mongoose.connect('mongodb://localhost/test', {useNewUrlParser: true});
-// var db = mongoose.connection;
-// db.on('error', console.error.bind(console, 'connection error:'));
-// db.once('open', function () {
-//     console.log("Connection successful!");
-//
-//     // Define Schema for person
-//     var personSchema = new mongoose.Schema({
-//         name: String,
-//         born: Date
-//     });
-//
-//     personSchema.methods.beget = function (mate) {
-//         console.log("Uh yeah, begetting a child with " + mate.name);
-//     }
-//
-//     var Person = mongoose.model('Person', personSchema); //Compile Schema into Model
-//
-//     var sebastian = new Person({name: "Sebastian Hegardt", born: new Date()}); // Create a person
-//     var d = new Date();
-//     var ana_lice = new Person({name: "Ana-Lice Machado", born: d.setDate(d.getDate() - 7)});
-//     sebastian.beget(ana_lice);
-//
-//     // save both models to database
-//     sebastian.save(function (err) {
-//         if (err) return console.error(err);
-//     });
-//     ana_lice.save(function (err) {
-//         if (err) return console.error(err);
-//     });
-// });
+module.exports = router;
