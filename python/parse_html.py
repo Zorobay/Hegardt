@@ -1,5 +1,4 @@
 import os
-import sys
 from python.Person import Person
 from time import time
 import json
@@ -15,6 +14,7 @@ def main():
                 p = os.path.join(root, file)
                 file_nr += 1
                 print("Processing [{}]: {}".format(file_nr, p))
+
                 with open(p, 'r') as f:
                     try:
                         person = Person(f)
@@ -34,4 +34,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

@@ -4,7 +4,7 @@ const router = express.Router();
 
 //Respond to any requests to the root url
 router.get('/', (req, res) => {
-    res.render('form', {title: "Regga dig för whaat?"});
+    res.render('db_browser', {title: "Sök i databasen"});
 });
 
 // Handle rout and validate properties of req.
