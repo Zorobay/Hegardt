@@ -1,6 +1,7 @@
 const express = require('express');
 const { body, validationResult } = require('express-validator/check');
 const router = express.Router();
+const mongoose = require('mongoose');
 
 //Respond to any requests to the root url
 router.get('/', (req, res) => {
@@ -31,4 +32,7 @@ router.post('/',
         }
     });
 
+router.get('/', (req, res) => {
+    console.log("Wow!")
+});
 module.exports = router;

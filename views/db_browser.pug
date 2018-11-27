@@ -3,7 +3,7 @@ extends html_layout
 block content
     h1 Sök i databasen
 
-    form(class="form-inline")
+    form(class="form-inline" action="." method="GET")
         div(class="form-group")
             label(for="dropdownDBList") Välj påg/tös:
             select(class="form-control" id="dropdownDBList")
