@@ -48,7 +48,8 @@ def path_to_file_id(file_name):
     """
     file_name = re.sub("\\\\", "/", file_name)
     path = file_name.split("/")
-    return "/".join(path[-3:])
+    path[-1] = path[-1].split(".")[0]
+    return "".join(path[-3:])
 
 
 class Person:
