@@ -26,7 +26,7 @@ const personSchema = new mongoose.Schema({
         country: {type: String, trim: true},
         region: {type: String, trim: true},
         city: {type: String, trim: true},
-        specify: {type: String, trim: true}
+        notes: {type: String, trim: true}
     },
     death_date: {
         date: Date,
@@ -50,7 +50,7 @@ const personSchema = new mongoose.Schema({
         country: {type: String, trim: true},
         region: {type: String, trim: true},
         city: {type: String, trim: true},
-        specify: {type: String, trim: true}
+        notes: {type: String, trim: true}
     },
     bury_date: {
         date: Date,
@@ -74,7 +74,7 @@ const personSchema = new mongoose.Schema({
         country: {type: String, trim: true},
         region: {type: String, trim: true},
         city: {type: String, trim: true},
-        specify: {type: String, trim: true}
+        notes: {type: String, trim: true}
     },
     occupation: {type: [String], trim: true},
     notes: String,
@@ -86,4 +86,4 @@ const personSchema = new mongoose.Schema({
     references: [String]
 });
 
-module.exports = mongoose.model('Person', personSchema);
+module.exports = mongoose.model('Person', personSchema, 'persons');

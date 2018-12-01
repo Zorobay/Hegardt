@@ -1,10 +1,10 @@
 from bs4 import BeautifulSoup
 import re
 import bleach
-import os
+from MyDate import MyDate
+from MyLocation import MyLocation
 
 # Declare regex
-
 reg_ansedel = re.compile("ansedel", re.IGNORECASE | re.UNICODE)
 reg_name = re.compile("[\w-]+", re.IGNORECASE | re.UNICODE)
 date_str = "[\sa-öA-Ö]*([\d-]*)"
@@ -18,7 +18,7 @@ reg_birth_remaining = re.compile("Född {}".format(rem_letters), re.IGNORECASE |
 reg_death_date = re.compile("Död {}".format(date_str), re.IGNORECASE | re.UNICODE)
 reg_death_loc = re.compile("Död {}".format(loc_str), re.IGNORECASE | re.UNICODE)
 reg_death_remaining = re.compile("Död{}".format(rem_letters), re.IGNORECASE | re.UNICODE)
-reg_occupation = re.compile("([\w\s,]*)", re.IGNORECASE | re.UNICODE)
+reg_occupation = re.compile("([\w\s,:]*)", re.IGNORECASE | re.UNICODE)
 reg_newline_on_full_stop = re.compile("(?<=[^\.])\n", re.UNICODE)
 reg_space_after_newline = re.compile("\n ", re.UNICODE | re.IGNORECASE)
 reg_long_space = re.compile(" {2,}", re.UNICODE)
@@ -63,13 +63,13 @@ class Person:
         self.first_name = ""
         self.middle_names = []
         self.last_name = ""
-        self.birth_date = ""
-        self.birth_loc = ""
-        self.death_date = ""
-        self.death_loc = ""
-        self.bury_date = ""
-        self.bury_loc = ""
-        self.occupation = ""
+        self.birth_date = MyDate()
+        self.birth_loc = MyLocation()
+        self.death_date = MyDate()
+        self.death_loc = MyLocation()
+        self.bury_date = MyDate()
+        self.bury_loc = MyLocation()
+        self.occupation = [""]
         self.notes = ""
         self.spouses = []  # list of spouses on the form (spouse id, date, location)
         self.father = ""  # unique html file path
@@ -202,9 +202,10 @@ class Person:
                 self.set_bury(line)
                 last_found_i += 1
             elif found_name and line and line[0].isalpha():  # Remaining line is occupation
-                if len(self.occupation) == 0 and not (line.startswith(self.first_name) or line.startswith(self.last_name)):
+                if len(self.occupation) == 0 and not (
+                        line.startswith(self.first_name) or line.startswith(self.last_name)):
                     match = reg_occupation.search(line)
-                    self.occupation = match_or_else(match, 1, "").strip()
+                    self.occupation = match_or_else(match, 1, "").strip().split(",")
                     last_found_i += 1
 
         for line in lines[last_found_i:]:  # Remaining lines should be notes
@@ -215,35 +216,45 @@ class Person:
 
     def set_bury(self, bury_str):
         match = reg_date.search(bury_str)
-        self.bury_date = match_or_else(match, 1, "").strip()
+        bury_date = match_or_else(match, 1, "").strip()
+        self.bury_date = MyDate(bury_date)
         match = reg_loc.search(bury_str)
-        self.bury_loc = match_or_else(match, 1, "").strip()
+        bury_loc = match_or_else(match, 1, "").strip()
+        self.bury_loc = MyLocation(bury_loc)
 
     def set_birth(self, birth_str):
         # Get the birth date
         match = reg_birth_date.search(birth_str)
-        self.birth_date = match_or_else(match, 1, "").strip()
+        birth_date = match_or_else(match, 1, "").strip()
+        self.birth_date = MyDate(birth_date)
         # Get the birth location
-        if "i" and "på" in birth_str: # Complex form, remove date and extract all
-            birth_str = birth_str.replace(self.birth_date, "")  # Remove birth date from string
+        if "i" and "på" in birth_str:  # Complex form, remove date and extract all
+            birth_str = birth_str.replace(birth_date, "")  # Remove birth date from string
             birth_str = reg_long_space.subn(" ", birth_str)[0]
-            match_or_else(reg_birth_remaining.search(birth_str), 1, "")
+            birth_loc = match_or_else(reg_birth_remaining.search(birth_str), 1, "")
+            self.birth_loc = MyLocation(birth_loc)
         else:
             match = reg_birth_loc.search(birth_str)
-            self.birth_loc = match_or_else(match, 1, match_or_else(reg_birth_remaining.search(birth_str), 1, "")).strip()
+            birth_loc = match_or_else(match, 1,
+                                           match_or_else(reg_birth_remaining.search(birth_str), 1, "")).strip()
+            self.birth_loc = MyLocation(birth_loc)
 
     def set_death(self, death_str):
         # Get the death date
         match = reg_death_date.search(death_str)
-        self.death_date = match_or_else(match, 1, "").strip()
+        death_date = match_or_else(match, 1, "").strip()
+        self.death_date = MyDate(death_date)
         # Get the death location
         if " i " and " på " in death_str:  # Complex form, remove date and extract all
-            death_str = death_str.replace(self.death_date, "")  # Remove death date from string
+            death_str = death_str.replace(death_date, "")  # Remove death date from string
             death_str = reg_long_space.subn(" ", death_str)[0]
-            self.death_loc = match_or_else(reg_death_remaining.search(death_str), 1, "").strip()
+            death_loc = match_or_else(reg_death_remaining.search(death_str), 1, "").strip()
+            self.death_loc = MyLocation(death_loc)
         else:
             match = re.search(reg_death_loc, death_str)
-            self.death_loc = match_or_else(match, 1, match_or_else(reg_death_remaining.search(death_str), 1, "")).strip()
+            death_loc = match_or_else(match, 1,
+                                           match_or_else(reg_death_remaining.search(death_str), 1, "")).strip()
+            self.death_loc = MyLocation(death_loc)
 
     def set_names(self, name_str):
         """
@@ -272,12 +283,12 @@ class Person:
             "first_name": self.first_name,
             "middle_name": self.middle_names,
             "last_name": self.last_name,
-            "birth_date": self.birth_date,
-            "birth_loc": self.birth_loc,
-            "death_date": self.death_date,
-            "death_loc": self.death_loc,
-            "bury_date": self.bury_date,
-            "bury_loc": self.bury_loc,
+            "birth_date": self.birth_date.get_json(),
+            "birth_loc": self.birth_loc.get_json(),
+            "death_date": self.death_date.get_json(),
+            "death_loc": self.death_loc.get_json(),
+            "bury_date": self.bury_date.get_json(),
+            "bury_loc": self.bury_loc.get_json(),
             "occupation": self.occupation,
             "notes": self.notes,
             "file_id": self.file_id,
