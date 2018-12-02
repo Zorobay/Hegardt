@@ -7,7 +7,13 @@ const Person = mongoose.model('Person');
 //Respond to any requests to the root url
 router.get('/', (req, res) => {
     //console.log("WOW")
-    res.render('db_browser', {title: "Sök i databasen"});
+    var ct = 0;
+    Person.countDocuments({}, function (err, count) {
+        ct = count;
+        console.log(`Documents: ${count}`);
+        res.render('db_browser', {title: "Sök i databasen", numDocs: ct});
+
+    })
 });
 
 // Handle rout and validate properties of req.
@@ -36,13 +42,13 @@ router.post('/',
             };
             console.log(j);
             const registration = new Person(j);
-            registration.save()
-                .then(() => {
-                    res.send('Wow coolt!');
-                })
-                .catch(() => {
-                    res.send('That did not work!');
-                })
+            // registration.save()
+            //     .then(() => {
+            //         res.send('Wow coolt!');
+            //     })
+            //     .catch(() => {
+            //         res.send('That did not work!');
+            //     })
         } else {
             res.render('db_browser', {
                 title: 'Sök i databasen',

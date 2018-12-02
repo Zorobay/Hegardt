@@ -3,6 +3,7 @@ import re
 import bleach
 from MyDate import MyDate
 from MyLocation import MyLocation
+from MySpouse import MySpouse
 
 # Declare regex
 reg_ansedel = re.compile("ansedel", re.IGNORECASE | re.UNICODE)
@@ -115,7 +116,7 @@ class Person:
             for a in a_tags:
                 if "href" in a.attrs and reg_file_id.search(a.attrs["href"]):
                     spouse_id = path_to_file_id(a.attrs["href"])
-                    self.spouses.append((spouse_id, date.strip(), loc.strip()))
+                    self.spouses.append(MySpouse(spouse_id, date.strip(), loc.strip()))
                     break
 
     def set_children(self):
@@ -237,7 +238,7 @@ class Person:
         else:
             match = reg_birth_loc.search(birth_str)
             birth_loc = match_or_else(match, 1,
-                                           match_or_else(reg_birth_remaining.search(birth_str), 1, "")).strip()
+                                      match_or_else(reg_birth_remaining.search(birth_str), 1, "")).strip()
             self.birth_loc = MyLocation(birth_loc)
 
     def set_death(self, death_str):
@@ -254,7 +255,7 @@ class Person:
         else:
             match = re.search(reg_death_loc, death_str)
             death_loc = match_or_else(match, 1,
-                                           match_or_else(reg_death_remaining.search(death_str), 1, "")).strip()
+                                      match_or_else(reg_death_remaining.search(death_str), 1, "")).strip()
             self.death_loc = MyLocation(death_loc)
 
     def set_names(self, name_str):
@@ -280,6 +281,10 @@ class Person:
 
     def as_json(self):
 
+        spouses = []
+        for sp in self.spouses:
+            spouses.append(sp.get_json())
+
         json = {
             "first_name": self.first_name,
             "middle_name": self.middle_names,
@@ -293,7 +298,7 @@ class Person:
             "occupation": self.occupation,
             "notes": self.notes,
             "file_id": self.file_id,
-            "spouses": self.spouses,
+            "spouses": spouses,
             "father": self.father,
             "mother": self.mother,
             "children": self.children,

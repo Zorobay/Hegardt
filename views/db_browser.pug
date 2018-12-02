@@ -1,18 +1,18 @@
 extends html_layout
 
 block content
-    h1 Sök i databasen
+    h1= `${title}`
 
     if errors
         ul.my-errors
             for error in errors
                 li=error
+    p= `Number of documents: ${numDocs}`
 
     form(class="form-inline" action="." method="GET")
         div(class="form-group")
             label(for="dropdownDBList") Välj påg/tös:
             select(class="form-control" id="dropdownDBList" method="POST" action=".")
-                option() Snopp Hegardt
 
 
     form(class="form-inline" action="." method="POST")
