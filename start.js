@@ -9,7 +9,7 @@ var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.on('connected', function () {
     console.log(`Mongoose connection open on ${process.env.DATABASE}`);
-    //uploadPersonsFromJson(jsonDoc);
+    uploadPersonsFromJson(jsonDoc);
 });
 
 require('./models/Person');
@@ -19,10 +19,11 @@ const server = app.listen(3000, () => {
 });
 
 let getId = function (fileId) {
-    if (fileId.length < 10)
+    if (fileId.length == 0 || fileId == null)
         return null;
 
-    return mongoose.mongo.ObjectId(`00000000000000${fileId}`);
+    const zeros = "0".repeat(24 - fileId.length);
+    return mongoose.mongo.ObjectId(`${zeros}${fileId}`);
 }
 
 let uploadPersonsFromJson = function (personsJson) {
