@@ -9,7 +9,7 @@ var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.on('connected', function () {
     console.log(`Mongoose connection open on ${process.env.DATABASE}`);
-    uploadPersonsFromJson(jsonDoc);
+    //uploadPersonsFromJson(jsonDoc);
 });
 
 require('./models/Person');
@@ -28,6 +28,7 @@ let getId = function (fileId) {
 
 let uploadPersonsFromJson = function (personsJson) {
     const Person = mongoose.model('Person');
+    Person.remove({}, function(){});
 
     var i = 0;
     for (key in personsJson) {

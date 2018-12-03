@@ -3,6 +3,7 @@
 node_modules
 package-lock.json
 Disgen/html
+all_ppl.json
 
 # Python virtual environment
 venv
