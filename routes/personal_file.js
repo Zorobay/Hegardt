@@ -2,6 +2,7 @@ const express = require('express');
 const {body, validationResult} = require('express-validator/check');
 const router = express.Router();
 const mongoose = require('mongoose');
+const moment = require('moment');
 
 const Person = mongoose.model('Person');
 
@@ -13,13 +14,15 @@ router.get('/', (req, res) => {
 // Respond to any request to a particular personal file
 router.get('/*/', (req, res) => {
     const pageId = req.params[0];
+    console.log(pageId);
     Person.find({_id: pageId}).then((persons) => {
         const person = persons[0];
-        person.exists = true;
-
+        const age = (person.birth_date && person.birth_date.year) ? moment().diff(person.birth_date.year.toString(), 'years') : null;
+        person.age = age;
         res.render('personal_file', person);
-    }).catch(() => {
-        res.render('personal_file', {esists:false});
+    }).catch((error) => {
+        console.log(error);
+        res.render('missing_personal_file');
     })
 });
 

@@ -20,5 +20,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use('/', indexRouter);
 app.use('/ansedel/', personalFileRouter);
 
+//Set the app to use moment
+app.locals.moment = require('moment');
 //Export our app to use it in other files (like in start.js)
 module.exports = app;

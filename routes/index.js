@@ -11,8 +11,8 @@ router.get('/', (req, res) => {
     Person.countDocuments({}, function (err, count) {
         ct = count;
         console.log(`Documents: ${count}`);
-        res.render('db_browser', {title: "Sök i databasen", numDocs: ct});
-
+        //res.render('db_browser', {title: "Sök i databasen", numDocs: ct});
+        res.render('homepage', {title: "Hegardt.se - Släktdatabas"});
     })
 });
 

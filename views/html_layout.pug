@@ -9,5 +9,20 @@ html
         script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
 
     body
-        div.container.listing-reg
+        nav(class="navbar navbar-default")
+            div(class="container-fluid")
+                div(class="navbar-header")
+                    button(type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigationBar" aria-expanded="false")
+                        span( class="sr-only") Toggle navigation
+
+                    a(class="navbar-brand" href="#") Brand
+
+                div(class="collapse navbar-collapse" id="navigationBar")
+                    ul(class="nav navbar-nav")
+                        li(class="active")
+                            h(href="/") Home
+                        li(class="active")
+                            h(href="/ansedel/") Ansedel
+
+        div(class="container")
             block content
