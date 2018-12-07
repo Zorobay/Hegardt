@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const moment = require('moment');
 
 const dateSchema = new mongoose.Schema({
     date: Date,
@@ -51,5 +52,38 @@ const personSchema = new mongoose.Schema({
     children: [mongoose.Schema.Types.ObjectId],
     references: [String]
 });
+
+/**
+ * Calculates the age of this person.
+ * @returns {*} Returns the age as a number if birth date is recorded, null otherwise
+ */
+personSchema.methods.getAge = function () {
+    const bd = this.birth_date;
+    if (bd && bd.year) {
+        const d = moment(bd.year, 'YYYY');
+        const now = moment(Date.now());
+        return now.diff(d, 'years');
+    }
+    return null;
+}
+
+/**
+ * Fins all (biological) siblings of this person.
+ * @returns {Array} Returns all the siblings as a list. If no siblings were found, returns an empty list.
+ */
+personSchema.methods.getSiblings = function () {
+    const sibs = [];
+    this.model('Person').findById(this.mother).then((mom) => {
+        sibs.extend(mom.children);
+        console.log(sibs)
+    });
+
+    this.model('Person').findById(this.father).then((pa) => {
+        sibs.concat(pa.children);
+    });
+
+    return sibs;
+
+}
 
 module.exports = mongoose.model('Person', personSchema, 'persons');

@@ -14,11 +14,13 @@ router.get('/', (req, res) => {
 // Respond to any request to a particular personal file
 router.get('/*/', (req, res) => {
     const pageId = req.params[0];
-    console.log(pageId);
+
+
     Person.find({_id: pageId}).then((persons) => {
         const person = persons[0];
-        const age = (person.birth_date && person.birth_date.year) ? moment().diff(person.birth_date.year.toString(), 'years') : null;
-        person.age = age;
+        person.age = person.getAge();
+        person.siblings = person.getSiblings();
+        console.log(person.siblings)
         res.render('personal_file', person);
     }).catch((error) => {
         console.log(error);
