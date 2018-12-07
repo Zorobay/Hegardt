@@ -72,14 +72,14 @@ personSchema.methods.getAge = function () {
  * @returns {Array} Returns all the siblings as a list. If no siblings were found, returns an empty list.
  */
 personSchema.methods.getSiblings = function () {
-    const sibs = [];
-    this.model('Person').findById(this.mother).then((mom) => {
-        sibs.extend(mom.children);
-        console.log(sibs)
+    var sibs = new Set();
+    this.model('Person').findById(this.mother, function(err, adventure) {
+        console.log(adventure);
+        console.log(adventure.children)
     });
 
     this.model('Person').findById(this.father).then((pa) => {
-        sibs.concat(pa.children);
+        sibs.add(pa.children);
     });
 
     return sibs;
