@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const moment = require('moment');
+const _ = require('lodash');
 
 const dateSchema = new mongoose.Schema({
     date: Date,
@@ -59,8 +60,8 @@ const personSchema = new mongoose.Schema({
  */
 personSchema.methods.getAge = function () {
     const bd = this.birth_date;
-    if (bd && bd.year) {
-        const d = moment(bd.year, 'YYYY');
+    if (bd) {
+        const d = moment(bd.date);
         const now = moment(Date.now());
         return now.diff(d, 'years');
     }
@@ -68,22 +69,29 @@ personSchema.methods.getAge = function () {
 }
 
 /**
- * Fins all (biological) siblings of this person.
- * @returns {Array} Returns all the siblings as a list. If no siblings were found, returns an empty list.
+ * Finds all biological siblings of this person. Sets the [siblings] field of this person to a list of sibling ids,
+ * or an empty list if no siblings were found.
+ * @param callback the function to call when finished.
  */
-personSchema.methods.getSiblings = function () {
-    var sibs = new Set();
-    this.model('Person').findById(this.mother, function(err, adventure) {
-        console.log(adventure);
-        console.log(adventure.children)
+personSchema.methods.getSiblings = function (callback) {
+
+    const self = this;
+    const mId = this.mother;
+    const pId = this.father;
+    const sibs = [];
+
+    self.model('Person').findById(mId, "children", function (err, res) {
+        if (!err)
+            sibs.push(res.children);
+
+        self.model('Person').findById(pId, "children", function (err, res) {
+            if (!err)
+                sibs.push(res.children);
+
+            self.siblings = _.uniqWith(sibs, _.isEqual);
+            callback();
+        })
     });
-
-    this.model('Person').findById(this.father).then((pa) => {
-        sibs.add(pa.children);
-    });
-
-    return sibs;
-
 }
 
 module.exports = mongoose.model('Person', personSchema, 'persons');

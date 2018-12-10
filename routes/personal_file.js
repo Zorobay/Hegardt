@@ -19,10 +19,10 @@ router.get('/*/', (req, res) => {
     Person.find({_id: pageId}).then((persons) => {
         const person = persons[0];
         person.age = person.getAge();
-        person.siblings = person.getSiblings();
-        console.log(person.siblings)
-        res.render('personal_file', person);
-    }).catch((error) => {
+        person.getSiblings(function (err) {
+            res.render('personal_file', person);
+        }
+    );}).catch((error) => {
         console.log(error);
         res.render('missing_personal_file');
     })
