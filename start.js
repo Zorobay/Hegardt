@@ -28,9 +28,8 @@ let getId = function (fileId) {
 
 let uploadPersonsFromJson = function (personsJson) {
     const Person = mongoose.model('Person');
-    Person.remove({}, function(){});
+    Person.remove({}, function(){});  // clear database
 
-    var i = 0;
     for (key in personsJson) {
         console.log("---------------------------------");
         const personJson = jsonDoc[key];

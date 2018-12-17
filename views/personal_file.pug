@@ -1,27 +1,58 @@
 extends html_layout
 
-block content
-    title= `Ansedel: ${first_name}${last_name}`
+block extra_head
+    script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqZoM1vl6f_EQKYhJIVi9Tlpy4Br5sQec&callback=initMap" async defer)
 
-    - var mNames = middle_name.join(' ');
-    - var sibs = siblings.join(':');
+
+
+block content
+    title= `Ansedel: ${full_name}`
+
+    - let linkPerson = function(p) {return [`${p.full_name}`, p._id]; };
+    - const sibs = siblings.map(linkPerson);
+    - let zeroPad = function(d) {return d != null && d < 10 ? "0" + d : d};
+    - let toDate = function(date) {return date != null ? [date.year, zeroPad(date.month), zeroPad(date.day)].join('-') : "??"};
+    - let toLocation = function(loc) {return loc != null ? [loc.]};
+
+    mixin wellCell(date, location)
+        div.well.well-sm
+            div.row
+                div.col-sm-1
+                    span.fas.fa-calendar-alt
+                div.col-sm-11
+                    p= `${toDate(date)}`
+            div.row
+                div.col-sm-1
+                    span.fas.fa-map-marked-alt
+                div.col-sm-11
+                    p #{location}
 
     div(class="page-header")
         small Ansedel
-        h1= `${first_name} ${mNames} ${last_name}`
+        h1= `${full_name}`
 
-    small #{(age) ? age : "??"} år gammal
-
-    p= `${sibs}`
+    small #{(!is_dead) ? ((age) ? age + " år gammal" : "?? år gammal") : ""}
 
     div(class="container")
         div(class="row")
-            div(class="col-md-4") Birth shit
-            div(class="col-md-4") Death shit
-            div(class="col-md-4") bury shit
-    // Mother, father
+            div(class="col-md-4")
+                p.text-center Född&nbsp
+                +wellCell(birth_date, birth_location)
 
-    //Kids
+            div(class="col-md-4")
+                p.text-center Död&nbsp
+                +wellCell(death_date, death_location)
+
+            div(class="col-md-4")
+                p.text-center Begravd&nbsp
+                +wellCell(bury_date, bury_location)
+
+    h2 Syskon
+    ol
+        each sib in sibs
+            li
+                a(href=`${sib[1]}`)= `${sib[0]}`
+
 
 
 

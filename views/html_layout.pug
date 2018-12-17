@@ -1,12 +1,19 @@
 doctype html
 
-html
+html(lang="sv")
     head
         title= `${title}`
         // Load bootstrap css
         link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
+        // Load fontawesome
+        link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css")
+        // Load own stylesheet
+        link(rel="stylesheet" href="stylesheets/style.css")
         // Load bootstrap JavaScript
         script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+
+        block extra_head
 
     body
         nav(class="navbar navbar-default")
@@ -17,7 +24,10 @@ html
 
                     a(class="navbar-brand" href="#") Brand
 
-                div(class="collapse navbar-collapse" id="navigationBar")
+                div(class="collapse navbar-collapse inline" id="navigationBar")
+                    form(class="form-inline")
+                        input(type="text", class="form-control", placeholder="sök" id="globalSearchBar")
+                        button(class="btn btn-primary") Sök
                     ul(class="nav navbar-nav")
                         li(class="active")
                             h(href="/") Home

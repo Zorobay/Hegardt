@@ -1,3 +1,9 @@
 extends html_layout
 
+block extra_head
+    script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqZoM1vl6f_EQKYhJIVi9Tlpy4Br5sQec&callback=initMap" async defer)
+
 block content
+    div(id="map", style={height: '100%'})
+
+    p hej

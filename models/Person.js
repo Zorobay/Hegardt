@@ -38,6 +38,11 @@ const personSchema = new mongoose.Schema({
     first_name: {type: String, trim: true},
     middle_name: {type: [String], trim: true},
     last_name: {type: String, trim: true},
+    sex: {
+        type: String,
+        enum: ["MAN", "WOMAN", "UNKNOWN"],
+        default: "UNKNOWN"
+    },
     birth_date: dateSchema,
     birth_location: locationSchema,
     death_date: dateSchema,
@@ -55,10 +60,43 @@ const personSchema = new mongoose.Schema({
 });
 
 /**
- * Calculates the age of this person.
- * @returns {*} Returns the age as a number if birth date is recorded, null otherwise
+ * Finds all biological siblings of this person.
+ * @param callback(sibs) the function to call when finished. Sets the sibs parameter of the callback function to a list
+ * of sibling IDs or an empty list if no siblings were found.
  */
-personSchema.methods.getAge = function () {
+personSchema.methods.getSiblings = function (callback) {
+
+    const self = this;
+    const mId = this.mother;
+    const pId = this.father;
+    var sibs = [];
+
+    this.model('Person').find({_id: {$in: [mId, pId]}}, "children", function (err, res) {
+
+        res.forEach(chList => {sibs = sibs.concat(chList.children); });
+        sibs = _.uniqWith(sibs, _.isEqual);  // Remove duplicates
+        _.remove(sibs, self._id);  // Remove own id
+
+
+        if (sibs.length != 0) {
+            self.model('Person').find({_id: {$in: sibs}}, function (err, res) { callback(res); });
+        } else {
+            callback(sibs);
+        }
+    });
+};
+
+/**
+ * The full name of this person as a string.
+ */
+personSchema.virtual('full_name').get(function() {
+    return this.first_name + " " + this.middle_name.join(' ') + " " + this.last_name;
+});
+
+/**
+ * The age of this person in years. Is null if no birth date has been recorded.
+ */
+personSchema.virtual('age').get(function () {
     const bd = this.birth_date;
     if (bd) {
         const d = moment(bd.date);
@@ -66,32 +104,10 @@ personSchema.methods.getAge = function () {
         return now.diff(d, 'years');
     }
     return null;
-}
+});
 
-/**
- * Finds all biological siblings of this person. Sets the [siblings] field of this person to a list of sibling ids,
- * or an empty list if no siblings were found.
- * @param callback the function to call when finished.
- */
-personSchema.methods.getSiblings = function (callback) {
-
-    const self = this;
-    const mId = this.mother;
-    const pId = this.father;
-    const sibs = [];
-
-    self.model('Person').findById(mId, "children", function (err, res) {
-        if (!err)
-            sibs.push(res.children);
-
-        self.model('Person').findById(pId, "children", function (err, res) {
-            if (!err)
-                sibs.push(res.children);
-
-            self.siblings = _.uniqWith(sibs, _.isEqual);
-            callback();
-        })
-    });
-}
+personSchema.virtual('is_dead').get(function() {
+    return this.death_date || this.age > 123;
+});
 
 module.exports = mongoose.model('Person', personSchema, 'persons');
