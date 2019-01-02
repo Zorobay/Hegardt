@@ -1,17 +1,15 @@
 extends html_layout
 
 block extra_head
-    script(src="https://maps.googleapis.com/maps/api/js?key=KEY&callback=initMap" async defer)
-
+    //- require('dotenv').config(); const api_key = process.env.GOOGLE_MAPS_API_KEY;
+    //script(src=`https://maps.googleapis.com/maps/api/js?key=${api_key}&callback=initMap` async defer)
 
 block content
-    title= `Ansedel: ${full_name}`
 
     - let linkPerson = function(p) {return [`${p.full_name}`, p._id]; };
     - const sibs = siblings.map(linkPerson);
     - let zeroPad = function(d) {return d != null && d < 10 ? "0" + d : d};
     - let toDate = function(date) {return date != null ? [date.year, zeroPad(date.month), zeroPad(date.day)].join('-') : "??"};
-    - let toLocation = function(loc) {return loc != null ? [loc.]};
 
     mixin wellCell(date, location)
         div.well.well-sm

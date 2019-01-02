@@ -1,0 +1,32 @@
+extends html_layout
+
+block extra_head
+
+block content
+
+    // Load Data Tables css
+    link(rel="stylesheet" href="https://cdn.datatables.net/v/bs4/dt-1.10.18/b-1.5.4/b-colvis-1.5.4/cr-1.5.0/fh-3.1.4/r-2.2.2/datatables.min.css")
+    // Load Data Tables js
+    script(src="https://cdn.datatables.net/v/bs4/dt-1.10.18/b-1.5.4/b-colvis-1.5.4/cr-1.5.0/fh-3.1.4/r-2.2.2/datatables.min.js")
+    script.
+        $(document).ready(function () {
+            $('#registerTable').DataTable({
+                data: data,
+                columns: [
+                    {data: 'first_name'}
+                ]
+            });
+        });
+
+    div.container
+        table.table-striped#registerTable
+            thead.thead-light
+                tr
+                    th Namn
+                    th Född
+                    th Död
+                    th
+
+
+        div.table#example
+

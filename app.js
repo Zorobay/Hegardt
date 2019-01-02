@@ -5,6 +5,7 @@ const bodyParser = require('body-parser');
 // Routes
 const indexRouter = require('./routes/index');
 const personalFileRouter = require('./routes/personal_file');
+const registerRouter = require('./routes/register');
 
 // Create a new express app
 const app = express();
@@ -17,8 +18,9 @@ app.set('view engine', 'pug');
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // Whenever we get a request on the form '/whatever' it should use the routes file to redirect
+app.use('/register', registerRouter);
 app.use('/', indexRouter);
-app.use('/ansedel/', personalFileRouter);
+app.use('/', personalFileRouter);
 
 //Set the app to use moment
 app.locals.moment = require('moment');
