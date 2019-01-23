@@ -34,3 +34,9 @@ class MyLocation:
                 "city": self.city,
                 "notes": self.notes
             }
+
+    def __str__(self):
+        return "MyLocation(" + self.city + ", " + self.region + ", " + self.country + ")"
+
+    def __eq__(self, other):
+        return self.city == other.city and self.region == other.region and self.country == other.country and self.notes == other.notes

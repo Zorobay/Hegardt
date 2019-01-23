@@ -1,9 +1,9 @@
 from bs4 import BeautifulSoup
 import re
 import bleach
-from MyDate import MyDate
-from MyLocation import MyLocation
-from MySpouse import MySpouse
+from python.MyDate import MyDate
+from python.MyLocation import MyLocation
+from python.MySpouse import MySpouse
 
 # Declare regex
 reg_ansedel = re.compile("ansedel", re.IGNORECASE | re.UNICODE)
@@ -66,11 +66,11 @@ class Person:
         self.middle_names = []
         self.last_name = ""
         self.birth_date = MyDate()
-        self.birth_loc = MyLocation()
+        self.birth_location = MyLocation()
         self.death_date = MyDate()
-        self.death_loc = MyLocation()
+        self.death_location = MyLocation()
         self.bury_date = MyDate()
-        self.bury_loc = MyLocation()
+        self.bury_location = MyLocation()
         self.occupation = [""]
         self.notes = ""
         self.spouses = []  # list of spouses on the form (spouse id, date, location)
@@ -167,7 +167,7 @@ class Person:
 
         cell = get_first_cell(self.tables[1])
 
-        if len(self.tables) > 2:  # Other type of html, we only have 2 tables
+        if len(self.tables) > 2:  # Other type of html, we have more than two tables
             cell = get_first_cell(self.tables[2])
 
         if cell.font and cell.font.contents[0].strip().startswith("Levnadsbeskrivning"):  # Has notes!
@@ -204,10 +204,11 @@ class Person:
                 self.set_bury(line)
                 last_found_i += 1
             elif found_name and line and line[0].isalpha():  # Remaining line is occupation
-                if len(self.occupation) == 0 and not (
+                if len(self.occupation[0]) == 0 and not (
                         line.startswith(self.first_name) or line.startswith(self.last_name)):
                     match = reg_occupation.search(line)
-                    self.occupation = match_or_else(match, 1, "").strip().split(",")
+                    self.occupation = match_or_else(match, 1, "").split(",")
+                    self.occupation = [occ.strip().capitalize() for occ in self.occupation]
                     last_found_i += 1
 
         for line in lines[last_found_i:]:  # Remaining lines should be notes
@@ -222,7 +223,7 @@ class Person:
         self.bury_date = MyDate(bury_date)
         match = reg_loc.search(bury_str)
         bury_loc = match_or_else(match, 1, "").strip()
-        self.bury_loc = MyLocation(bury_loc)
+        self.bury_location = MyLocation(bury_loc)
 
     def set_birth(self, birth_str):
         # Get the birth date
@@ -234,12 +235,12 @@ class Person:
             birth_str = birth_str.replace(birth_date, "")  # Remove birth date from string
             birth_str = reg_long_space.subn(" ", birth_str)[0]
             birth_loc = match_or_else(reg_birth_remaining.search(birth_str), 1, "")
-            self.birth_loc = MyLocation(birth_loc)
+            self.birth_location = MyLocation(birth_loc)
         else:
             match = reg_birth_loc.search(birth_str)
             birth_loc = match_or_else(match, 1,
                                       match_or_else(reg_birth_remaining.search(birth_str), 1, "")).strip()
-            self.birth_loc = MyLocation(birth_loc)
+            self.birth_location = MyLocation(birth_loc)
 
     def set_death(self, death_str):
         # Get the death date
@@ -251,12 +252,12 @@ class Person:
             death_str = death_str.replace(death_date, "")  # Remove death date from string
             death_str = reg_long_space.subn(" ", death_str)[0]
             death_loc = match_or_else(reg_death_remaining.search(death_str), 1, "").strip()
-            self.death_loc = MyLocation(death_loc)
+            self.death_location = MyLocation(death_loc)
         else:
             match = re.search(reg_death_loc, death_str)
             death_loc = match_or_else(match, 1,
                                       match_or_else(reg_death_remaining.search(death_str), 1, "")).strip()
-            self.death_loc = MyLocation(death_loc)
+            self.death_location = MyLocation(death_loc)
 
     def set_names(self, name_str):
         """
@@ -290,11 +291,11 @@ class Person:
             "middle_name": self.middle_names,
             "last_name": self.last_name,
             "birth_date": self.birth_date.get_json(),
-            "birth_loc": self.birth_loc.get_json(),
+            "birth_location": self.birth_location.get_json(),
             "death_date": self.death_date.get_json(),
-            "death_loc": self.death_loc.get_json(),
+            "death_location": self.death_location.get_json(),
             "bury_date": self.bury_date.get_json(),
-            "bury_loc": self.bury_loc.get_json(),
+            "bury_location": self.bury_location.get_json(),
             "occupation": self.occupation,
             "notes": self.notes,
             "file_id": self.file_id,
@@ -302,7 +303,8 @@ class Person:
             "father": self.father,
             "mother": self.mother,
             "children": self.children,
-            "references": self.references
+            "references": self.references,
+            "sex": ""
         }
 
         return json

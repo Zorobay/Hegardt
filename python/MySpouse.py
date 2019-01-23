@@ -1,5 +1,5 @@
-from MyDate import MyDate
-from MyLocation import MyLocation
+from python.MyDate import MyDate
+from python.MyLocation import MyLocation
 
 
 class MySpouse:
@@ -18,3 +18,6 @@ class MySpouse:
                 "marriage_date": self.date.get_json(),
                 "location": self.location.get_json(),
             }
+
+    def __eq__(self, other):
+        return self.date == other.date and self.location == other.location and self.spouse_id == other.spouse_id

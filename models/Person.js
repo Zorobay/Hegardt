@@ -40,8 +40,8 @@ const personSchema = new mongoose.Schema({
     last_name: {type: String, trim: true},
     sex: {
         type: String,
-        enum: ["MAN", "WOMAN", "UNKNOWN"],
-        default: "UNKNOWN"
+        enum: ["MAN", "WOMAN", "OTHER", ""],
+        default: ""
     },
     birth_date: dateSchema,
     birth_location: locationSchema,
@@ -57,6 +57,8 @@ const personSchema = new mongoose.Schema({
     mother: mongoose.Schema.Types.ObjectId,
     children: [mongoose.Schema.Types.ObjectId],
     references: [String]
+}, {toObject: { virtuals: true },
+    toJSON: { virtuals: true }
 });
 
 /**
@@ -85,6 +87,12 @@ personSchema.methods.getSiblings = function (callback) {
         }
     });
 };
+
+personSchema.virtual('birth_date_pretty').get(function () {
+    let zeroPad = function(d) {return d != null && d < 10 ? "0" + d : d};
+    const date = this.birth_date;
+    return date != null ? [date.year, zeroPad(date.month), zeroPad(date.day)].join('-') : "??";
+});
 
 /**
  * The full name of this person as a string.

@@ -45,3 +45,9 @@ class MyDate:
                     "year": self.year,
                     "month": self.month,
                     "day": self.day}
+
+    def __str__(self):
+        return "MyDate(" + self.year + "-" + self.month + "-" + self.day + ")"
+
+    def __eq__(self, other):
+        return self.year == other.year and self.month == other.month and self.day == other.day

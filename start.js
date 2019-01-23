@@ -1,24 +1,26 @@
-const mongoose = require('mongoose');
-require('dotenv').config();
-const jsonDoc = require('./python/all_ppl.json');
+const mongoose = require("mongoose");
+require("dotenv").config();
+const jsonDoc = require("./python/all_ppl.json");
 
 mongoose.connect(process.env.DATABASE, {useNewUrlParser: true});
 mongoose.Promise = global.Promise;
 var db = mongoose.connection;
 
-db.on('error', console.error.bind(console, 'connection error:'));
-db.on('connected', function () {
+db.on("error", console.error.bind(console, "connection error:"));
+db.on("connected", function () {
     console.log(`Mongoose connection open on ${process.env.DATABASE}`);
-    //uploadPersonsFromJson(jsonDoc);
+    if (process.argv[2] == "populate") {
+        uploadPersonsFromJson(jsonDoc);
+    }
 });
 
-require('./models/Person');
-const app = require('./app');
+require("./models/Person");
+const app = require("./app");
 const server = app.listen(3000, () => {
     console.log(`Express is running on port ${server.address().port}`);
 });
 
-let getId = function (fileId) {
+var getId = function (fileId) {
     if (fileId.length == 0 || fileId == null)
         return null;
 
@@ -27,8 +29,9 @@ let getId = function (fileId) {
 }
 
 let uploadPersonsFromJson = function (personsJson) {
-    const Person = mongoose.model('Person');
-    Person.remove({}, function(){});  // clear database
+    const Person = mongoose.model("Person");
+    Person.deleteMany({}, function () {
+    });  // clear database
 
     for (key in personsJson) {
         console.log("---------------------------------");
@@ -58,7 +61,9 @@ let uploadPersonsFromJson = function (personsJson) {
 
         // For some reason the children list is not recognized as a list...
         const childrenIds = [];
-        personJson["children"].forEach((child) => { childrenIds.push(getId(child)); });
+        personJson["children"].forEach((child) => {
+            childrenIds.push(getId(child));
+        });
         personJson.children = childrenIds;
 
         console.log(personJson);
