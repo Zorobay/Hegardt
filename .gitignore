@@ -2,7 +2,7 @@
 .idea
 node_modules
 package-lock.json
-Disgen/html
+Disgen
 all_ppl.json
 
 # Python virtual environment
