@@ -2,14 +2,14 @@ const mongoose = require("mongoose");
 require("dotenv").config();
 const jsonDoc = require("./python/all_ppl.json");
 
-mongoose.connect(process.env.DATABASE, {useNewUrlParser: true});
+mongoose.connect(`mongodb://${process.env.DB_USER}:${process.env.DB_PASSWORD}@${process.env.DB}`, {useNewUrlParser: true});
 mongoose.Promise = global.Promise;
 var db = mongoose.connection;
 
 db.on("error", console.error.bind(console, "connection error:"));
 db.on("connected", function () {
-    console.log(`Mongoose connection open on ${process.env.DATABASE}`);
-    if (process.argv[2] == "populate") {
+    console.log(`Mongoose connection open on mongodb://${process.env.DB}`);
+    if (process.argv[2] == "--populate") {
         uploadPersonsFromJson(jsonDoc);
     }
 });
