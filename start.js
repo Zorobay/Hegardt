@@ -9,7 +9,7 @@ var db = mongoose.connection;
 db.on("error", console.error.bind(console, "connection error:"));
 db.on("connected", function () {
     console.log(`Mongoose connection open on mongodb://${process.env.DB}`);
-    if (process.argv[2] == "--populate") {
+    if (process.argv == "populate") {
         uploadPersonsFromJson(jsonDoc);
     }
 });
