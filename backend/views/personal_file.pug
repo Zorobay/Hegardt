@@ -1,0 +1,58 @@
+extends html_layout
+
+block extra_head
+    //- require('dotenv').config(); const api_key = process.env.GOOGLE_MAPS_API_KEY;
+    //script(src=`https://maps.googleapis.com/maps/api/js?key=${api_key}&callback=initMap` async defer)
+    // Load own js
+    script(src="js/navbar.js")
+
+block content
+
+    - let linkPerson = function(p) {return [`${p.full_name}`, p._id]; };
+    - const sibs = siblings.map(linkPerson);
+    - let zeroPad = function(d) {return d != null && d < 10 ? "0" + d : d};
+    - let toDate = function(date) {return date != null ? [date.year, zeroPad(date.month), zeroPad(date.day)].join('-') : "??"};
+
+    mixin wellCell(date, location)
+        div.well.well-sm
+            div.row
+                div.col-sm-1
+                    span.fas.fa-calendar-alt
+                div.col-sm-11
+                    p= `${toDate(date)}`
+            div.row
+                div.col-sm-1
+                    span.fas.fa-map-marked-alt
+                div.col-sm-11
+                    p #{location}
+
+    div(class="page-header")
+        small Ansedel
+        h1= `${full_name}`
+
+    small #{(!is_dead) ? ((age) ? age + " år gammal" : "?? år gammal") : ""}
+
+    div(class="container")
+        div(class="row")
+            div(class="col-md-4")
+                p.text-center Född&nbsp
+                +wellCell(birth_date, birth_location)
+
+            div(class="col-md-4")
+                p.text-center Död&nbsp
+                +wellCell(death_date, death_location)
+
+            div(class="col-md-4")
+                p.text-center Begravd&nbsp
+                +wellCell(bury_date, bury_location)
+
+    h2 Syskon
+    ol
+        each sib in sibs
+            li
+                a(href=`${sib[1]}`)= `${sib[0]}`
+
+
+
+
+

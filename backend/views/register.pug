@@ -1,0 +1,81 @@
+extends html_layout
+
+block extra_head
+    // Load own js
+    script(src = "js/navbar.js")
+block content
+
+    // Load moment
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.4/moment.min.js")
+    // Load Data Tables css
+    link(rel="stylesheet" href="https://cdn.datatables.net/v/bs4/dt-1.10.18/b-1.5.4/b-colvis-1.5.4/cr-1.5.0/fh-3.1.4/r-2.2.2/datatables.min.css")
+    // Load Data Tables js
+    script(src="https://cdn.datatables.net/v/bs4/dt-1.10.18/b-1.5.4/b-colvis-1.5.4/cr-1.5.0/fh-3.1.4/r-2.2.2/datatables.min.js")
+    // Load swedish language plugin for datatables
+    script(str="https://cdn.datatables.net/plug-ins/1.10.19/i18n/Swedish.json")
+
+    script.
+        const data = !{ppl};  // Get ppl data from pug
+        $(document).ready(function () {
+            const registerTable = $('#registerTable').DataTable({
+                language: {url: "language/Swedish.json"},
+                data: data,
+                columns: [
+                    {data: "_id",
+                        render: function(data, type, row, meta) {
+                            return `<a href="ansedel/${data}">Länk</a>`
+                        }},
+                    {data: 'first_name'},
+                    {data: 'middle_name',
+                        render: function(data, type, row, meta) {
+                            return data ? data.join(', ') : null;
+                        }},
+                    {data: 'last_name'},
+                    {data: 'birth_date',
+                        render: function(data, type, row, meta) {
+                            if (data) {
+                                return [data.year, data.month, data.day]
+                                    .filter(function(elem) {return elem})
+                                    .map(function(elem) {return elem < 10 ? '0' + elem : elem})
+                                    .join('-')
+                            } else {
+                                return null;
+                            }
+                        }},
+                    {data: 'birth_location',
+                        render: function (data, type, row, meta) {
+                            if (data) {
+                                return [data.city, data.region, data.country]
+                                    .filter(e => e)
+                                    .join(', ')
+                            } else {
+                                return null;
+                            }
+                        }
+                    },
+                    {data: 'occupation'}
+                ],
+                deferRender: true  // Only render the pages needed
+            })
+                .on("dblclick", "tbody tr", function() {
+                    const clickedData = registerTable.row(this).data();
+                    console.log(clickedData);
+                    parent.router.navigate("ansedel/" + clickedData._id);
+                })
+
+        });
+
+    div.container
+        h1 Personregister
+
+    div.container
+        table.table-striped#registerTable("data-page-length"= "50")
+            thead.thead-light
+                tr
+                    th Ansedel
+                    th Förnamn
+                    th Mellannamn
+                    th Efternamn
+                    th Födelsedatum
+                    th Födelseplats
+                    th Yrke

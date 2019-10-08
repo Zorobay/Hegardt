@@ -1,12 +1,12 @@
 const mongoose = require("mongoose");
 require("dotenv").config();
-const jsonDoc = require("./python/all_ppl.json");
+const jsonDoc = require("../python/all_ppl.json");
 
 mongoose.connect(`mongodb://${process.env.DB_USER}:${process.env.DB_PASSWORD}@${process.env.DB}`, {useNewUrlParser: true});
 mongoose.Promise = global.Promise;
 var db = mongoose.connection;
 
-db.on("error", console.error.bind(console, "connection error:"));
+db.on("error", () => {console.log(`Connection error! Failed to connect to ${process.env.DB}`); });
 db.on("connected", function () {
     console.log(`Mongoose connection open on mongodb://${process.env.DB}`);
     if (process.argv == "populate") {

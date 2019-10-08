@@ -10,8 +10,22 @@ require('dotenv').config();
 //     key: process.env.GOOGLE_MAPS_API_KEY
 // });
 
+router.get('/id/:id', (req, res) => {
+    const id = req.params.id;
+    console.log("hej id:" + id);
+});
+
+router.get("/all", (req, res) => {
+    Person.find({}, (err, ppl) => {
+        if (err)
+            console.log(err);
+        else
+            res.json(ppl);
+    })
+})
 // Respond to any request to a particular personal file
 router.get('/*/', (req, res) => {
+    console.log("hejs2")
     const pageId = req.params[0];
 
     Person.findById(pageId).then(person => {

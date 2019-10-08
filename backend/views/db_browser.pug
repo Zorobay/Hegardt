@@ -1,0 +1,25 @@
+extends html_layout
+
+block content
+    h1= `${title}`
+
+    if errors
+        ul.my-errors
+            for error in errors
+                li=error
+    p= `Number of documents: ${numDocs}`
+
+    form(class="form-inline" action="." method="GET")
+        div(class="form-group")
+            label(for="dropdownDBList") Välj påg/tös:
+            select(class="form-control" id="dropdownDBList" method="POST" action=".")
+
+
+    form(class="form-inline" action="." method="POST")
+        div(class="form-group")
+            label(for="nameInput") Name:
+            input(class="form-control" id="nameInput" name="first_name" action="." method="POST")
+
+            label(for="birthDateInput") Occupations:
+            input(class="form-control" id="birthDateInput" name="occupation" action="." method="POST")
+            button(type="submit" class="button btn-lg btn-primary btn-block") Submit
