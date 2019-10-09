@@ -18,7 +18,17 @@ Vue.config.productionTip = false;
 library.add(faMapMarkedAlt, faCalendarAlt);
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 
-// Definen vue mixins
+// Import and use leaflet for maps
+import { Icon } from "leaflet";
+//import "leaflet.icon.glyph";
+delete Icon.Default.prototype._getIconUrl;
+Icon.Default.mergeOptions({
+  iconRetinaUrl: require("leaflet/dist/images/marker-icon-2x.png"),
+  iconUrl: require("leaflet/dist/images/marker-icon.png"),
+  shadowUrl: require("leaflet/dist/images/marker-shadow.png")
+});
+
+// Define vue mixins
 Vue.mixin({
   methods: {
     formatDate: function (date) {

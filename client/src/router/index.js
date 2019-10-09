@@ -4,6 +4,8 @@ import Homepage from '@/components/Homepage.vue';
 import MissingPage from '@/components/MissingPage.vue';
 import Register from '@/components/register/Register.vue';
 import PersonalFile from '@/components/personal_file/PersonalFile';
+import Map from "../components/MapPage/LeafletMap";
+import MapPage from "../components/MapPage/MapPage";
 
 Vue.use(VueRouter);
 
@@ -23,6 +25,11 @@ export default new VueRouter({
       path: "/person/id/:id",
       name: "PersonalFile",
       component: PersonalFile
+    },
+    {
+      path: "/map",
+      name: "Map",
+      component: MapPage
     },
     {
       path: "*",
