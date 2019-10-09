@@ -11,26 +11,30 @@ const searchRouter = require("./endpoints/search");
 // Create a new express app
 const app = express();
 
-//Specify our paths and the view engine we use
-//app.set("views", path.join(__dirname, "views"));
-//app.set("view engine", "pug");
-
-// Use CORS to allow communication to backend
+// Use CORS to allow communication to frontend
 app.use(cors());
 
 // use bodyparser to parse url body
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({extended: true}));
 
 // Whenever we get a request on the form "/whatever" it should use the routes file to redirect
 app.use("/person/", personalFileRouter);
 app.use("/search", searchRouter);
 app.use("/", indexRouter);
 
+// Setup error handling middleware
+app.use(function (err, req, res, next) {
+    // Do logging and user-friendly error message display
+    console.error(err.message);
+    res.status(404).send({
+        status: 404,
+        message: err.message
+    });
+});
+
 // Serve static files
-app.use(express.static(path.join(__dirname,"public")));
+app.use(express.static(path.join(__dirname, "public")));
 app.use(express.static(path.join(__dirname, "node_modules")));
 
-//Set the app to use moment
-app.locals.moment = require("moment");
 //Export our app to use it in other files (like in index.js)
 module.exports = app;

@@ -20,7 +20,7 @@ export default new VueRouter({
       component: Register
     },
     {
-      path: "/person",
+      path: "/person/id/:id",
       name: "PersonalFile",
       component: PersonalFile
     },

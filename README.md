@@ -1,5 +1,18 @@
 # Hegardt
 
+## Running the web app
+
+First, install nodemon: `npm -g install nodemon`. 
+
+Run the backend using: `nodemon backend/index.js`
+
+Run the frontend using: 
+
+```bash
+cd client
+npm run serve --fix
+```
+
 ## Development
 
 ### Install npm dependencies
@@ -8,11 +21,11 @@ First, install all the dependencies:
 npm install
 ```
 ### Create environment variables file
-Then, create a .env file in the project root. Define the following variabes:
+Then, create a `backend/.env` file. Define the following variabes:
 ```
-DB=
-DB_USER=
-DB_PASSWORD=
+DB=<database URL>
+DB_USER=<database username>
+DB_PASSWORD=<database password>
 ```
 
 ### Setup heroku
