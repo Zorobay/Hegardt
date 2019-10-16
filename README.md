@@ -1,7 +1,8 @@
 # Hegardt
 
 ## TODO
-- [] Implement linking to PersonalFile when clicking on a marker in map
+- [ ] Implement linking to PersonalFile when clicking on a marker in map
+- [ ] Get search function to work again
 
 
 ## Running the web app
