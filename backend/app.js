@@ -6,7 +6,6 @@ const bodyParser = require("body-parser");
 // Routes
 const indexRouter = require("./endpoints/index");
 const personalFileRouter = require("./endpoints/person");
-const searchRouter = require("./endpoints/search");
 
 // Create a new express app
 const app = express();
@@ -19,7 +18,6 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 // Whenever we get a request on the form "/whatever" it should use the routes file to redirect
 app.use("/person/", personalFileRouter);
-app.use("/search", searchRouter);
 app.use("/", indexRouter);
 
 // Setup error handling middleware
@@ -36,5 +34,5 @@ app.use(function (err, req, res, next) {
 app.use(express.static(path.join(__dirname, "public")));
 app.use(express.static(path.join(__dirname, "node_modules")));
 
-//Export our app to use it in other files (like in index.js)
+//Export our app to use it in other files (like in index.common)
 module.exports = app;

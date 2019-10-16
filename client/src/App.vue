@@ -1,15 +1,16 @@
 <template>
   <div>
     <Navbar></Navbar>
+    <p>{{msg}}</p>
     <b-container id="app">
-      <router-view/>
+      <router-view :key="$route.fullPath"/>
     </b-container>
   </div>
 </template>
 
 <script>
-  import Homepage from './components/Homepage.vue';
-  import Navbar from "./components/Navbar";
+  import Homepage from './components/pages/Homepage.vue';
+  import Navbar from "./components/navbar/Navbar";
 
   export default {
     name: 'app',
@@ -17,6 +18,11 @@
       Navbar,
       Homepage,
     },
+    computed: {
+      msg() {
+        return this.$store.getters.globalMsg;
+      }
+    }
   };
 </script>
 

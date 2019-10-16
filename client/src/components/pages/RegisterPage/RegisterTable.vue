@@ -14,7 +14,8 @@
 
       <!-- A custom formatted column -->
       <template v-slot:cell(link)="data">
-        <a v-bind:href="getIdURL(data.item._id)">GO</a>
+        <router-link v-bind:to="{name: 'PersonalFile', params: {id: data.item._id}}">GO
+        </router-link>
       </template>
     </b-table>
   </div>

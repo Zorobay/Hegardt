@@ -1,62 +1,73 @@
 const express = require('express');
-//const {body, validationResult} = require('express-validator/check');
 const router = express.Router();
 const mongoose = require('mongoose');
-
 const Person = mongoose.model('Person');
-
 require('dotenv').config();
-// const googleMapsClient = require('@google/maps').createClient({
-//     key: process.env.GOOGLE_MAPS_API_KEY
-// });
 
+// Lookup person by id
 router.get('/id/:id', (req, res, next) => {
     const id = req.params.id;
 
     Person.findById(id)
+        .then(person => {
+            // Find their siblings
+            person.getSiblings((sibs) => {
+                person.siblings = sibs;
+                res.json(person);
+            });
+
+        })
         .catch(err => {
             next(err);
         })
-        .then(person => {
-            res.json(person);
+});
+
+// Lookup person by name
+router.get("/search/:term", (req, res) => {
+    let term = req.params.term;
+    if (term.length > 0) {
+        let st = term.replace(" ", "|");
+        const re = new RegExp(st, "ig");
+        console.log(st);
+
+        Person.find({first_name: re}, (err, ppl) => {
+            res.json(ppl);
         })
+            .limit(30)
+    } else {
+        res.json([])
+    }
+});
+
+router.get("/all/:limit", (req, res) => {
+    let limit = req.params.limit;
+    try {
+        limit = parseInt(limit);
+    } catch (e) {
+        throw e;
+    }
+
+    Person.find({}).limit(limit).exec((err, ppl) => {
+        if (err)
+            console.log(err);
+        else {
+            console.log("Limit " + limit);
+            console.log(ppl);
+            res.json(ppl);
+        }
+    });
 });
 
 router.get("/all", (req, res) => {
     Person.find({}, (err, ppl) => {
         if (err)
             console.log(err);
-        else
+        else {
             res.json(ppl);
+            console.log(ppl);
+        }
     })
 });
-// Respond to any request to a particular personal file
-/*router.get('/!*!/', (req, res) => {
-    console.log("hejs2")
-    const pageId = req.params[0];
-
-    Person.findById(pageId).then(person => {
-        person.getSiblings(function (sibs) {
-                console.log(person);
-                person.siblings = sibs;
-                res.render('personal_file', person);
-
-                // person.geo = googleMapsClient.geocode({
-                //     address: 'Lund, Sweden'
-                // }, function (err, response) {
-                //     if (!err) {
-                //         console.log(response.json.results);
-                //     } else {
-                //         console.log(err);
-                //     }
-                // })
-            }
-        );
-    }).catch((error) => {
-        console.log(error);
-        res.render('missing_personal_file');
-    })
-});*/
 
 
 module.exports = router;

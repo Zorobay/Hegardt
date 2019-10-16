@@ -1,11 +1,12 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import Homepage from '@/components/Homepage.vue';
-import MissingPage from '@/components/MissingPage.vue';
-import Register from '@/components/register/Register.vue';
-import PersonalFile from '@/components/personal_file/PersonalFile';
-import Map from "../components/MapPage/LeafletMap";
-import MapPage from "../components/MapPage/MapPage";
+import Homepage from '@/components/pages/Homepage.vue';
+import MissingPage from '@/components/pages/MissingPage.vue';
+import RegisterPage from '@/components/pages/RegisterPage/RegisterPage.vue';
+import Map from "../components/pages/MapPage/LeafletMap";
+import MapPage from "../components/pages/MapPage/MapPage";
+import Debug from "../components/Debug";
+import CreditPage from "../components/pages/CreditPage/CreditPage";
 
 Vue.use(VueRouter);
 
@@ -17,19 +18,32 @@ export default new VueRouter({
       component: Homepage
     },
     {
-      path: "/register",
+      path: "/hegardt"
+    },
+    {
+      path: "/hegardt/register",
       name: "Register",
-      component: Register
+      component: RegisterPage
     },
     {
-      path: "/person/id/:id",
+      path: "/hegardt/person/id/:id",
       name: "PersonalFile",
-      component: PersonalFile
+      component: () => import("@/components/pages/PersonalFilePage/PersonalFilePage")
     },
     {
-      path: "/map",
+      path: "/debug",
+      name: "Debug",
+      component: Debug
+    },
+    {
+      path: "/hegardt/map",
       name: "Map",
       component: MapPage
+    },
+    {
+      path: "/credit",
+      name: "Credit",
+      component: CreditPage
     },
     {
       path: "*",

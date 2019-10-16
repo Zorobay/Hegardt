@@ -4,8 +4,11 @@
 
 First, install nodemon: `npm -g install nodemon`. 
 
+### Backend
 Run the backend using: `nodemon backend/index.js`
+You can repopulate the database from the JSON database file by running the backend with the option `--populate`
 
+### Frontend
 Run the frontend using: 
 
 ```bash
@@ -26,6 +29,8 @@ Then, create a `backend/.env` file. Define the following variabes:
 DB=<database URL>
 DB_USER=<database username>
 DB_PASSWORD=<database password>
+HERE_API_ID=<HERE api ID>
+HERE_API_KEY=<HERE api key>
 ```
 
 ### Setup heroku

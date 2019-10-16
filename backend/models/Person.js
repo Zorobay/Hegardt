@@ -25,7 +25,9 @@ const locationSchema = new mongoose.Schema({
     country: {type: String, trim: true},
     region: {type: String, trim: true},
     city: {type: String, trim: true},
-    notes: {type: String, trim: true}
+    notes: {type: String, trim: true},
+    latitude: {type: Number},
+    longitude: {type: Number}
 }, {_id: false});
 
 const spouseSchema = new mongoose.Schema({
@@ -56,7 +58,8 @@ const personSchema = new mongoose.Schema({
     father: mongoose.Schema.Types.ObjectId,
     mother: mongoose.Schema.Types.ObjectId,
     children: [mongoose.Schema.Types.ObjectId],
-    references: [String]
+    references: [String],
+    faulty: {type: mongoose.Schema.Types.Boolean, default: false}
 }, {toObject: { virtuals: true },
     toJSON: { virtuals: true }
 });
@@ -74,11 +77,9 @@ personSchema.methods.getSiblings = function (callback) {
     var sibs = [];
 
     this.model('Person').find({_id: {$in: [mId, pId]}}, "children", function (err, res) {
-
         res.forEach(chList => {sibs = sibs.concat(chList.children); });
         sibs = _.uniqWith(sibs, _.isEqual);  // Remove duplicates
         _.remove(sibs, self._id);  // Remove own id
-
 
         if (sibs.length != 0) {
             self.model('Person').find({_id: {$in: sibs}}, function (err, res) { callback(res); });

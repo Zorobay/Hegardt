@@ -1,4 +1,7 @@
 import Vue from 'vue';
+import Vuex from "vuex";
+import store from "./store";
+
 // Import Bootstrap and Bootstrap Vue
 import BootstrapVue from 'bootstrap-vue';
 import 'bootstrap/dist/css/bootstrap.css';
@@ -12,6 +15,7 @@ import router from './router';
 import App from './App.vue';
 
 Vue.use(BootstrapVue);
+Vue.use(Vuex);
 Vue.config.productionTip = false;
 
 // Add required icons to the library here, one by one
@@ -49,7 +53,12 @@ Vue.mixin({
     },
     formatLocation: function (location) {
       if (location) {
-        return [location.country, location.region, location.city].join(", ");
+        let locs = [];
+        for (let loc of [location.city, location.region, location.country]) {
+          if (loc)
+            locs.push(loc);
+        }
+        return locs.join(", ");
       } else {
         return "?";
       }
@@ -59,5 +68,6 @@ Vue.mixin({
 
 new Vue({
   router,
+  store,
   render: h => h(App),
 }).$mount('#app');
