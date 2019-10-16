@@ -1,5 +1,9 @@
 # Hegardt
 
+## TODO
+- [] Implement linking to PersonalFile when clicking on a marker in map
+
+
 ## Running the web app
 
 First, install nodemon: `npm -g install nodemon`. 
