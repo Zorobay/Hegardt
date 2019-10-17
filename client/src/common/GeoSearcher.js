@@ -6,6 +6,6 @@ export default class GeoSearcher {
   }
 
   async search(phrase, callback) {
-    return this.provider.search({query: phrase});
+    return this.provider.query({query: phrase});
   }
 }

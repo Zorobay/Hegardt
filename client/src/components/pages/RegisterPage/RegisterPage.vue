@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Personregister</h1>
+    <h1>Personregister <b-spinner v-if="!loaded"></b-spinner></h1>
     <register-table
       v-bind:items="people">
     </register-table>
@@ -17,7 +17,8 @@
     components: {RegisterTable},
     data: () => ({
       persons: [],
-      headings: ["First Name", "Last Name"]
+      headings: ["First Name", "Last Name"],
+      loaded: false
     }),
     computed: {
         people() {
@@ -30,9 +31,11 @@
         this.$store.dispatch(FETCH_ALL_PEOPLE)
         .then(res => {
           this.persons = res;
+          this.loaded = true;
         });
       } else {
         this.persons = this.$store.getters.people;
+        this.loaded = true;
       }
 
     }

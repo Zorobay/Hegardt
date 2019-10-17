@@ -23,6 +23,10 @@
 
       <!-- Right aligned nav items -->
       <b-navbar-nav class="ml-auto">
+        <b-dropdown variant="primary" text="Language" class="m-md-auto">
+          <b-dropdown-item>Swedish <img src="icons/sweden.png" height="22"/></b-dropdown-item>
+          <b-dropdown-item active>English <img src="icons/usa.jpg" height="14"/></b-dropdown-item>
+        </b-dropdown>
         <search-form></search-form>
       </b-navbar-nav>
 
@@ -42,4 +46,7 @@
 
 <style scoped>
 
+  .swedish-flag::before{
+    content: '\01F1FA\01F1F8';
+  }
 </style>

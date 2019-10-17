@@ -3,7 +3,8 @@
     <h2>{{this.person.full_name}}</h2>
     <h4>Ansedel</h4>
 
-    <p>Född {{this.person.age}} år sedan</p>
+    <p v-if="this.person.age">Född {{this.person.age}} år sedan</p>
+    <p v-else>Född ? år sedan</p>
     <div class="row">
       <div class="col-md-4">
         <p class="text-center font-weight-bold">Född</p>
@@ -27,12 +28,20 @@
       <b-row>
         <b-col>
           <h4>Fader</h4>
-          <h5 v-if="person.father"><a v-bind:href="getPersonURL(father)">{{father.full_name}}</a></h5>
+          <h5 v-if="father">
+            <router-link
+              :to="{name: 'PersonalFile', params: {id: father._id}}">{{father.full_name}}
+            </router-link>
+          </h5>
           <h5 v-else>?</h5>
         </b-col>
         <b-col>
           <h4>Moder</h4>
-          <h5 v-if="person.mother"><a v-bind:href="getPersonURL(mother)">{{mother.full_name}}</a></h5>
+          <h5 v-if="mother">
+            <router-link
+              :to="{name: 'PersonalFile', params: {id: mother._id}}">{{mother.full_name}}
+            </router-link>
+          </h5>
           <h5 v-else>?</h5>
         </b-col>
       </b-row>
@@ -53,6 +62,7 @@
 
 <script>
   import WellCell from "./WellCell";
+  import {FETCH_PEOPLE_BY_ID} from "../../../store/actions.type";
 
   export default {
     name: "PersonalFilePage",
@@ -64,49 +74,23 @@
         mother: {}
       }
     },
-    methods: {
-      findPersonById: async function (id) {
-        const API_URL = "http://localhost:3000/person/id/";
-
-        await fetch(API_URL + id)
-          .then(res => {
-            return res.json();
-          })
-          .then(res => {
-            if (res.status >= 400) {
-              this.$router.push({name: "MissingPage"});
-            } else {
-              this.person = res;
-
-              // Success! Get father!
-              if (this.person.father) {
-                fetch(API_URL + this.person.father)
-                  .then(res => res.json())
-                  .then(res => {
-                    this.father = res;
-                  });
-              }
-
-              if (this.person.mother) {
-                fetch(API_URL + this.person.mother)
-                  .then(res => res.json())
-                  .then(res => {
-                    this.mother = res;
-                  });
-              }
-            }
-          });
-      },
-      getPersonURL(person) {
-        if (person) {
-          let id = person._id;
-          return "#/person/id/" + id;
-        }
-      }
-    },
     created() {
       const id = this.$route.params.id;
-      this.findPersonById(id);
+      this.$store.dispatch(FETCH_PEOPLE_BY_ID, id)
+        .then(data => {
+          this.person = data;
+
+          if (this.person.father) {
+            this.$store.dispatch(FETCH_PEOPLE_BY_ID, this.person.father)
+              .then(data => this.father = data)
+          }
+
+          if (this.person.mother) {
+            this.$store.dispatch(FETCH_PEOPLE_BY_ID, this.person.mother)
+              .then(data => this.mother = data);
+          }
+        })
+        .catch(err => this.$router.push({name: "MissingPage"}));
     }
   }
 </script>

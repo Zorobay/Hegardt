@@ -64,7 +64,11 @@
           let latitude = p.birth_location.latitude;
 
           if (longitude && latitude) {
-            let marker = L.marker([latitude, longitude], {icon: this.markerIcon}).addTo(this.map);
+            let marker = L.marker([latitude, longitude], {icon: this.markerIcon})
+              .on('click', function() {
+                this.$router.push({name: "PersonalFile", params: {id: p._id}})
+              })
+              .addTo(this.map);
             marker.bindTooltip(p.full_name, {className: "tooltip", permanent: false, opacity: 0.7});
           }
         }

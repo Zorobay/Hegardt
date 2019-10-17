@@ -23,8 +23,8 @@
       }
     },
     methods: {
-      search(event) {
-        geo.search("New York, NY").then(res => this.response = res);
+      query(event) {
+        geo.query("New York, NY").then(res => this.response = res);
         console.log("Searched for " + this.searchTerm);
       }
     }

@@ -10,25 +10,28 @@ router.get('/id/:id', (req, res, next) => {
 
     Person.findById(id)
         .then(person => {
-            // Find their siblings
-            person.getSiblings((sibs) => {
-                person.siblings = sibs;
-                res.json(person);
-            });
-
+            res.json(person);
         })
         .catch(err => {
             next(err);
         })
 });
 
+router.get("/siblings/:id", (req, res) => {
+    let id = req.params.id;
+
+});
+
 // Lookup person by name
-router.get("/search/:term", (req, res) => {
+router.get("/query/:type/:term", (req, res) => {
     let term = req.params.term;
+    let type = req.params.type;
     if (term.length > 0) {
+        if (type !== "name")
+            return;  // Implement more query types
+
         let st = term.replace(" ", "|");
         const re = new RegExp(st, "ig");
-        console.log(st);
 
         Person.find({first_name: re}, (err, ppl) => {
             res.json(ppl);
@@ -39,32 +42,12 @@ router.get("/search/:term", (req, res) => {
     }
 });
 
-router.get("/all/:limit", (req, res) => {
-    let limit = req.params.limit;
-    try {
-        limit = parseInt(limit);
-    } catch (e) {
-        throw e;
-    }
-
-    Person.find({}).limit(limit).exec((err, ppl) => {
-        if (err)
-            console.log(err);
-        else {
-            console.log("Limit " + limit);
-            console.log(ppl);
-            res.json(ppl);
-        }
-    });
-});
-
 router.get("/all", (req, res) => {
     Person.find({}, (err, ppl) => {
         if (err)
             console.log(err);
         else {
             res.json(ppl);
-            console.log(ppl);
         }
     })
 });
