@@ -1,9 +1,26 @@
 # Hegardt
 
 ## TODO
-- [ ] Implement linking to PersonalFile when clicking on a marker in map
-- [ ] Get search function to work again
-
+- [ ] Store people as a HashMap in the store to allow for fast retrieval with ID
+- [ ] Implement login functionality
+- [ ] Implement admin mode to edit people and upload new people
+- [ ] Implement function to choose **language**!
+  - [ ] Implement language button
+- [ ] Features in `PersonalFilePage`
+  - [ ] Fix siblings
+- [ ] Features in `search-form`
+  - [x] Get search function to work again
+  - [ ] Searching for `Johan Hegardt` now matches ALL Johan...not what we want.
+  - [ ] Disable chrome form fill
+  - [ ] Enable arrow keys to be used in the result list (go over to a modified dropdown list?)
+- [ ] Features in `People map`
+  - Filtering
+    - [ ] Gender
+    - [ ] Name
+    - [ ] Dead or alive
+    - [ ] Location by born/dead/buried
+  - Other features
+    - [ ] Implement linking to PersonalFile when clicking on a marker in map
 
 ## Running the web app
 
