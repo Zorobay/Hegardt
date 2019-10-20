@@ -34,6 +34,11 @@ Icon.Default.mergeOptions({
 
 // Define vue mixins
 Vue.mixin({
+  computed: {
+    getLang() {
+      return this.$store.getters.languageDict;
+    }
+  },
   methods: {
     formatDate: function (date) {
       var moment = require("moment");

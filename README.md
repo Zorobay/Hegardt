@@ -5,7 +5,9 @@
 - [ ] Implement login functionality
 - [ ] Implement admin mode to edit people and upload new people
 - [ ] Implement function to choose **language**!
-  - [ ] Implement language button
+  - [x] Implement language button
+  - [ ] Save language file to local storage (validate age of it too)
+  - [ ] Set active class to dropdown item when clicked
 - [ ] Features in `PersonalFilePage`
   - [ ] Fix siblings
 - [ ] Features in `search-form`
@@ -14,7 +16,7 @@
   - [ ] Disable chrome form fill
   - [ ] Enable arrow keys to be used in the result list (go over to a modified dropdown list?)
 - [ ] Features in `People map`
-  - Filtering
+  - Filtering (in a `Form` inside a `Collapse`)
     - [ ] Gender
     - [ ] Name
     - [ ] Dead or alive

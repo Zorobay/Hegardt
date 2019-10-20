@@ -7,6 +7,7 @@ import Map from "../components/pages/MapPage/LeafletMap";
 import MapPage from "../components/pages/MapPage/MapPage";
 import Debug from "../components/Debug";
 import CreditPage from "../components/pages/CreditPage/CreditPage";
+import HegardtPage from "../components/pages/HegardtPage/HegardtPage";
 
 Vue.use(VueRouter);
 
@@ -18,7 +19,9 @@ export default new VueRouter({
       component: Homepage
     },
     {
-      path: "/hegardt"
+      path: "/hegardt",
+      name: "HegardtPage",
+      component: HegardtPage
     },
     {
       path: "/hegardt/register",

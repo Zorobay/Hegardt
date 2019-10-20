@@ -17,7 +17,7 @@ html(lang="sv")
         //script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous")
 
         // Load own js
-        script(src = "js/navbar.js")
+        script(src = "common/navbar.js")
 
         block extra_head
 
@@ -33,11 +33,11 @@ html(lang="sv")
                     li.nav-item.active
                         a.nav-link#navItemHome(href="/") Hem
                     li.nav-item
-                        a.nav-link#navItemRegister(href="/register") Personregister
+                        a.nav-link#navItemRegister(href="/RegisterPage") Personregister
                     li.nav-item
                         a.nav-link#navItemMap(href="/karta") Karta
                 div.dropdown
-                    input.form-control.mr-sm-2#globalSearchBar(type="search" onkeyup="showResults(this.value)" role="combobox" placeholder="sök")
+                    input.form-control.mr-sm-2#globalSearchBar(type="query" onkeyup="showResults(this.value)" role="combobox" placeholder="sök")
                     ul.dropdown-menu#searchResults(role="menu")
                 button.btn.btn-outline-success.my-2.my-sm-0(type="submit") Sök
 

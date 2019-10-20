@@ -1,7 +1,6 @@
 <template>
   <div>
     <Navbar></Navbar>
-    <p>{{msg}}</p>
     <b-container id="app">
       <router-view :key="$route.fullPath"/>
     </b-container>
@@ -11,6 +10,7 @@
 <script>
   import Homepage from './components/pages/Homepage.vue';
   import Navbar from "./components/navbar/Navbar";
+  import {CHANGE_LANGUAGE} from "./store/actions.type";
 
   export default {
     name: 'app',
@@ -18,10 +18,15 @@
       Navbar,
       Homepage,
     },
-    computed: {
-      msg() {
-        return this.$store.getters.globalMsg;
+    data() {
+      return {
+        defaultLang: 'en'
       }
+    },
+    created() {
+      // Load default language English
+      this.$store.dispatch(CHANGE_LANGUAGE, this.defaultLang)
+        .then(res => console.log(`Loaded language file for default language code [${this.defaultLang}]`));
     }
   };
 </script>

@@ -1,0 +1,12 @@
+{
+  "menu": {
+    "language": "Språk",
+    "home": "Hem",
+    "other_projects": "Andra Project",
+    "register": "Register",
+    "recipes": "Recept",
+    "map": "Karta",
+    "swedish": "Svenska",
+    "english": "Engelska"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "menu": {
+    "language": "Language",
+    "home": "Home",
+    "other_projects": "Other Projects",
+    "register": "Register",
+    "recipes": "Recipes",
+    "map": "Map",
+    "swedish": "Swedish",
+    "english": "English"
+  }
+}
