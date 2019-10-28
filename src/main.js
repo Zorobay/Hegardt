@@ -1,12 +1,12 @@
 import Vue from 'vue';
 import Vuex from "vuex";
 import store from "./store";
-console.log(`${process.argv[2]}`);
 
 // Import Bootstrap and Bootstrap Vue
 import BootstrapVue from 'bootstrap-vue';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap-vue/dist/bootstrap-vue.css';
+
 // Import FontAwesome icons
 import {library} from '@fortawesome/fontawesome-svg-core';
 import {faCalendarAlt, faMapMarkedAlt} from '@fortawesome/free-solid-svg-icons';
