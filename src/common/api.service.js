@@ -1,4 +1,4 @@
-const API_BASE = "http://localhost:3000/";
+const API_BASE = "https://hegardt-backend.herokuapp.com/";
 const PEOPLE_ID = API_BASE + "person/id/";
 const PEOPLE_ALL = API_BASE + "person/all";
 const PEOPLE_NAME = API_BASE + "person/query/name/";

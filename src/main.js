@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import Vuex from "vuex";
 import store from "./store";
+console.log(`${process.argv[2]}`);
 
 // Import Bootstrap and Bootstrap Vue
 import BootstrapVue from 'bootstrap-vue';
