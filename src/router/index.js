@@ -9,6 +9,7 @@ import Debug from "../components/Debug";
 import CreditPage from "../components/pages/CreditPage/CreditPage";
 import HegardtPage from "../components/pages/HegardtPage/HegardtPage";
 import SignupPage from "../components/pages/SignupPage/SignupPage";
+import PersonalFilePage from "../components/pages/PersonalFilePage/PersonalFilePage";
 
 Vue.use(VueRouter);
 
@@ -32,7 +33,7 @@ export default new VueRouter({
     {
       path: "/hegardt/person/id/:id",
       name: "PersonalFile",
-      component: () => import("@/components/pages/PersonalFilePage/PersonalFilePage")
+      component: PersonalFilePage
     },
     {
       path: "/debug",
