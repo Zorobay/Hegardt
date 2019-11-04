@@ -1,4 +1,4 @@
-# Hegardt
+# Hegardt Frontend
 
 ## TODO
 - [ ] Store people as a HashMap in the store to allow for fast retrieval with ID

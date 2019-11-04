@@ -1,59 +1,72 @@
 <template>
   <div>
-    <h1>Signup</h1>
-    <b-form @submit="onSubmit" id="signup-form">
+    <div v-if="!success">
+      <h1>Signup</h1>
+      <b-form @submit="onSubmit" id="signup-form">
 
-      <!--Email input-->
-      <b-form-group
-        :invalid-feedback="invalidEmail"
-        :state="emailState"
-        label="Email"
-        label-for="email-input"
-      >
-        <b-form-input :state="emailState" id="email-input" required type="email"
-                      v-model="form.email">
-        </b-form-input>
-      </b-form-group>
+        <!--Email input-->
+        <b-form-group
+          :invalid-feedback="invalidEmail"
+          :state="emailState"
+          label="Email"
+          label-for="email-input"
+        >
+          <b-form-input :state="emailState" id="email-input" required type="email"
+                        v-model="form.email">
+          </b-form-input>
+        </b-form-group>
 
-      <!--Password input-->
-      <b-form-group
-        label="Password"
-        label-for="password-input"
-        :state="passwordState"
-        :invalid-feedback="invalidPassword"
-      >
-        <b-form-input id="password-input" required type="password" :state="passwordState"
-                      v-model="form.password"></b-form-input>
-      </b-form-group>
+        <!--Password input-->
+        <b-form-group
+          :invalid-feedback="invalidPassword"
+          :state="passwordState"
+          label="Password"
+          label-for="password-input"
+        >
+          <b-form-input :state="passwordState" id="password-input" required type="password"
+                        v-model="form.password"></b-form-input>
+        </b-form-group>
 
-      <!--Password confirm input-->
-      <b-form-group
-        :invalid-feedback="invalidConfirmPassword"
-        :state="confirmPasswordState"
-        label="Confirm Password"
-        label-for="confirm-password-input"
-      >
-        <b-form-input :state="confirmPasswordState" id="confirm-password-input" required
-                      type="password" v-model="form.confirmPassword"
-        ></b-form-input>
-      </b-form-group>
+        <!--Password confirm input-->
+        <b-form-group
+          :invalid-feedback="invalidConfirmPassword"
+          :state="confirmPasswordState"
+          label="Confirm Password"
+          label-for="confirm-password-input"
+        >
+          <b-form-input :state="confirmPasswordState" id="confirm-password-input" required
+                        type="password" v-model="form.confirmPassword"
+          ></b-form-input>
+        </b-form-group>
 
-      <!--Personal database ID input-->
-      <b-form-group
-        description="If you exist in the database, please enter your ID. The ID is the last part of the url (after the /id/) of a personal file, like this: hegardt/person/id/000000000000000000100182"
-        label="Personal Database ID"
-        label-for="person-id-input"
-      >
-        <b-form-input id="person-id-input" v-model="form.personId"></b-form-input>
-      </b-form-group>
+        <!--Personal database ID input-->
+        <b-form-group
+          :invalid-feedback="invalidUserId"
+          :state="userIdState"
+          description="If you exist in the database, please enter your ID. The ID is the last part of the url (after the /id/) of a personal file, like this: hegardt/person/id/000000000000000000100182"
+          label="Personal Database ID"
+          label-for="person-id-input"
+        >
+          <b-form-input :state="userIdState" id="person-id-input" v-model="form.person_id"></b-form-input>
+        </b-form-group>
 
-      <!--Confirm Button-->
-      <b-button type="submit" variant="primary">Sign up</b-button>
-    </b-form>
+        <!--Confirm Button-->
+        <b-button type="submit" variant="primary">Sign up</b-button>
+      </b-form>
+    </div>
+    <div v-if="success">
+      <h1 style="color: green;">Success! You've signed up!</h1>
+      <h6>However, you need to confirm your email before using
+        the account. Check the email we sent you and follow the link.</h6>
+    </div>
   </div>
 </template>
 
 <script>
+  import {UserService} from "../../../common/api.service";
+
+  const ObjectId = require('mongoose').Types.ObjectId;
+
   export default {
     name: "SignupPage",
     data() {
@@ -62,22 +75,30 @@
           email: "",
           password: "",
           confirmPassword: "",
-          personId: ""
+          person_id: ""
         },
-        email_regexp: new RegExp(`(.+)@(.+)\\.(.+)`)
+        email_regexp: new RegExp(`(.+)@(.+)\\.(.+)`),
+        success: false,
+        failed_exists: false
       }
     },
     computed: {
       invalidEmail() {
-        return "Please enter a valid email address.";
+        if (this.failed_exists)
+          return "A user with that email already exists!";
+        else
+          return "Please enter a valid email address.";
       },
       emailState() {
+        if (this.failed_exists)
+          return false;
+
         let e = this.form.email;
         if (e.length === 0)
           return null;
         return !!(e && e.match(this.email_regexp));
       },
-      invalidPassword(){
+      invalidPassword() {
         return "Password must be longer than 6 symbols!";
       },
       passwordState() {
@@ -95,11 +116,45 @@
         if (!this.passwordState || cp.length === 0)
           return null;
         return !!(p === cp);
+      },
+      userIdState() {
+        let id = this.form.person_id;
+        if (!id)
+          return null;
+        return !!(ObjectId.isValid(id) && ObjectId(id).toString() === id);
+      },
+      invalidUserId() {
+        return "This is not a valid ID!";
       }
     },
     methods: {
       onSubmit() {
-        console.log("Signing up!");
+        let user = {
+          email: this.form.email,
+          password: this.form.password,
+          person_id: this.form.person_id
+        };
+        UserService.postUser(user)
+          .then(res => {
+            if (res.status === 200) {
+              this.success = true;
+            }
+          })
+          .catch(err => {
+            if (err.response.status === 422) {
+              let data = err.response.data;
+              if (data.length > 1) {
+                throw err;
+              } else {
+                let err0 = data[0];
+                if (err0.msg.code === "USER_EXISTS") {
+                  this.failed_exists = true;
+                }
+              }
+            } else {
+              throw err;
+            }
+          });
       },
 
     }

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p>Välkommen till Hegardt.se, ett släktforskningsprojekt startat av
+    <p>Välkommen till hegardt.se, ett släktforskningsprojekt startat av
       <router-link :to="{name: 'PersonalFile', params: {id: '?'}}">Peter Hegardt</router-link>
       och fortsatt av
       <router-link :to="{name: 'PersonalFile', params: {id: '000000000000000000000635'}}">
