@@ -134,7 +134,7 @@
           password: this.form.password,
           person_id: this.form.person_id
         };
-        UserService.postUser(user)
+        UserService.registerUser(user)
           .then(res => {
             if (res.status === 200) {
               this.success = true;
@@ -164,6 +164,6 @@
 <style scoped>
   #signup-form {
     margin: auto;
-    width: 50%;
+    width: 40%;
   }
 </style>

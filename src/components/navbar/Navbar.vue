@@ -14,6 +14,7 @@
           <b-dropdown-item href="#/hegardt">{{getLang.menu.home}}</b-dropdown-item>
           <b-dropdown-item href="#/hegardt/register">{{getLang.menu.register}}</b-dropdown-item>
           <b-dropdown-item href="#/hegardt/map">{{getLang.menu.map}}</b-dropdown-item>
+          <b-dropdown-item :to="{name: 'FamilyTreePage'}">Family Tree</b-dropdown-item>
         </b-nav-item-dropdown>
 
         <b-nav-item-dropdown v-bind:text="getLang.menu.other_projects">
@@ -32,8 +33,8 @@
           </b-dropdown-item>
         </b-dropdown>
         <search-form></search-form>
-        <b-button size="sm" class="mr-sm-2" @click="login">Log in</b-button>
-        <b-button size="sm" class="mr-sm-2" @click="signup">Sign up</b-button>
+        <b-nav-item :to="{name: 'LoginPage'}">Log in</b-nav-item>
+        <b-nav-item :to="{name: 'SignupPage'}">Sign up</b-nav-item>
       </b-navbar-nav>
     </b-collapse>
   </b-navbar>
@@ -61,7 +62,7 @@
         this.$store.dispatch(CHANGE_LANGUAGE, lang);
       },
       login(){
-
+        this.$router.push({name: "LoginPage"});
       },
       signup() {
         this.$router.push({name: "SignupPage"});

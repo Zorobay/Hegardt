@@ -6,7 +6,8 @@ const PEOPLE_ALL = API_BASE + "person/all";
 const PEOPLE_NAME = API_BASE + "person/query/name/";
 const PEOPLE_STATS = API_BASE + "person/stats";
 
-const USER_POST = API_BASE + "user/";
+const USER_REGISTER = API_BASE + "user/register";
+const USER_AUTHENTICATE = API_BASE + "user/authenticate";
 
 import axios from 'axios';
 import qs from 'qs';
@@ -53,8 +54,12 @@ const PeopleService = {
 export const UserService = {
   ...Service,
 
-  async postUser(user) {
-    return this._post(USER_POST, user);
+  async registerUser(user) {
+    return this._post(USER_REGISTER, user);
+  },
+
+  async authenticateUser(user) {
+    return this._post(USER_AUTHENTICATE, user);
   }
 };
 

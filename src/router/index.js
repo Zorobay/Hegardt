@@ -10,6 +10,8 @@ import CreditPage from "../components/pages/CreditPage/CreditPage";
 import HegardtPage from "../components/pages/HegardtPage/HegardtPage";
 import SignupPage from "../components/pages/SignupPage/SignupPage";
 import PersonalFilePage from "../components/pages/PersonalFilePage/PersonalFilePage";
+import LoginPage from "../components/pages/LoginPage/LoginPage";
+import FamilyTreePage from "../components/pages/FamilyTreePage/FamilyTreePage";
 
 Vue.use(VueRouter);
 
@@ -29,6 +31,11 @@ export default new VueRouter({
       path: "/hegardt/register",
       name: "Register",
       component: RegisterPage
+    },
+    {
+      path: "/hegardt/familytree",
+      name: "FamilyTreePage",
+      component: FamilyTreePage
     },
     {
       path: "/hegardt/person/id/:id",
@@ -54,6 +61,11 @@ export default new VueRouter({
       path: "/signup",
       name: "SignupPage",
       component: SignupPage
+    },
+    {
+      path: "/login",
+      name: "LoginPage",
+      component: LoginPage
     },
     {
       path: "*",
