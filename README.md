@@ -30,6 +30,10 @@
     - [ ] Check that email is not already registered!
 - [ ] **CV**
 - [ ] **Recipes**
+    - [ ] Upload recipes to collection
+    - [ ] Create recipe Model
+    - [ ] List all recipes
+    - [ ] Creat a table of contents sidebar
 ## Running the web app
 
 Run the frontend using: 
