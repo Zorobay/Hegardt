@@ -15,7 +15,7 @@
 </template>
 
 <script>
-  import {CHANGE_MAPSETTINGS} from "../../../store/actions.type";
+  import {CHANGE_MAP_SETTINGS} from "../../../store/actions.type";
 
   export default {
     name: "MapControls",
@@ -41,7 +41,7 @@
     },
     methods: {
       update() {
-        this.$store.dispatch(CHANGE_MAPSETTINGS, this.settings);
+        this.$store.dispatch(CHANGE_MAP_SETTINGS, this.settings);
       }
     }
   }

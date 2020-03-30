@@ -1,8 +1,8 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import Homepage from '@/components/pages/Homepage.vue';
-import MissingPage from '@/components/pages/MissingPage.vue';
-import RegisterPage from '@/components/pages/RegisterPage/RegisterPage.vue';
+import Homepage from '../components/pages/Homepage.vue';
+import MissingPage from '../components/pages/MissingPage.vue';
+import RegisterPage from '../components/pages/RegisterPage/RegisterPage.vue';
 import MapPage from '../components/pages/MapPage/MapPage.vue';
 import Debug from '../components/Debug.vue';
 import CreditPage from '../components/pages/CreditPage/CreditPage.vue';
@@ -11,6 +11,8 @@ import SignupPage from '../components/pages/SignupPage/SignupPage.vue';
 import PersonalFilePage from '../components/pages/PersonalFilePage/PersonalFilePage.vue';
 import LoginPage from '../components/pages/LoginPage/LoginPage.vue';
 import FamilyTreePage from '../components/pages/FamilyTreePage/FamilyTreePage.vue';
+import RecipesPage from '../components/pages/RecipesPage/RecipesPage';
+import RecipePage from '../components/pages/RecipePage/RecipePage';
 
 Vue.use(VueRouter);
 
@@ -40,6 +42,16 @@ export default new VueRouter({
       path: '/hegardt/person/id/:id',
       name: 'PersonalFile',
       component: PersonalFilePage,
+    },
+    {
+      path: '/recipes',
+      name: 'RecipesPage',
+      component: RecipesPage,
+    },
+    {
+      path: '/recipe/:title',
+      name: 'RecipePage',
+      component: RecipePage,
     },
     {
       path: '/debug',

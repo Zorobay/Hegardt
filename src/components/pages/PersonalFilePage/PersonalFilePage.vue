@@ -61,18 +61,18 @@
 </template>
 
 <script>
-  import WellCell from "./WellCell";
-  import {FETCH_PEOPLE_BY_ID} from "../../../store/actions.type";
+  import WellCell from './WellCell';
+  import {FETCH_PEOPLE_BY_ID} from '../../../store/actions.type';
 
   export default {
-    name: "PersonalFilePage",
+    name: 'PersonalFilePage',
     components: {WellCell},
-    data: function () {
+    data: function() {
       return {
         person: {},
         father: {},
-        mother: {}
-      }
+        mother: {},
+      };
     },
     created() {
       const id = this.$route.params.id;
@@ -82,7 +82,7 @@
 
           if (this.person.father) {
             this.$store.dispatch(FETCH_PEOPLE_BY_ID, this.person.father)
-              .then(data => this.father = data)
+              .then(data => this.father = data);
           }
 
           if (this.person.mother) {
@@ -90,9 +90,9 @@
               .then(data => this.mother = data);
           }
         })
-        .catch(err => this.$router.replace({name: "MissingPage"}));
-    }
-  }
+        .catch(err => this.$router.replace({name: 'MissingPage'}));
+    },
+  };
 </script>
 
 <style scoped>

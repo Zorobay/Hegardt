@@ -28,7 +28,7 @@
     ],
     "linebreak-style": [
       "error",
-      "windows"
+      "unix"
     ],
     "max-len": [
       "error",
@@ -39,7 +39,8 @@
     "arrow-parens": [
       "error",
       "as-needed"
-    ]
+    ],
+    "quotes": ["error", "single"]
   },
   "overrides": [
     {

@@ -50,6 +50,15 @@ First, install all the dependencies:
 npm install
 ```
 
+### Define environment variables
+
+Create a `.env.development` file in the root directory and define the following variables
+
+```.env
+VUE_APP_API_URL=<URL to the backend>
+VUE_APP_API_PORT=<port to backend>
+```
+
 ### Setup heroku
 Install the [heroku CLI](https://devcenter.heroku.com/articles/heroku-cli) if not already installed: 
 

@@ -19,9 +19,9 @@
 
 <script>
   export default {
-    props: ["date", "location"],
-    name: "WellCell"
-  }
+    props: ['date', 'location'],
+    name: 'WellCell',
+  };
 </script>
 
 <style scoped>

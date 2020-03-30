@@ -1,5 +1,5 @@
-import {CHANGE_MAPSETTINGS} from "./actions.type";
-import {SET_MAPSETTINGS} from "./mutations.type";
+import {CHANGE_MAP_SETTINGS} from "./actions.type";
+import {SET_MAP_SETTINGS} from "./mutations.type";
 
 
 export const state = {
@@ -17,14 +17,14 @@ export const state = {
 };
 
 export const mutations = {
-  [SET_MAPSETTINGS](state, settings) {
+  [SET_MAP_SETTINGS](state, settings) {
     state.mapSettings = settings;
   }
 };
 
 export const actions = {
-  [CHANGE_MAPSETTINGS](context, settings) {
-    context.commit(SET_MAPSETTINGS, settings);
+  [CHANGE_MAP_SETTINGS](context, settings) {
+    context.commit(SET_MAP_SETTINGS, settings);
   }
 };
 

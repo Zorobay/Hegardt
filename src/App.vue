@@ -1,7 +1,7 @@
 <template>
   <div>
     <Navbar></Navbar>
-    <b-container id="app">
+    <b-container class="app">
       <router-view :key="$route.fullPath"/>
     </b-container>
   </div>
@@ -32,7 +32,7 @@
 </script>
 
 <style>
-  #app {
+  .app {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

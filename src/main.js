@@ -1,6 +1,6 @@
 import Vue from 'vue';
-import Vuex from "vuex";
-import store from "./store";
+import Vuex from 'vuex';
+import store from './store';
 
 // Import Bootstrap and Bootstrap Vue
 import BootstrapVue from 'bootstrap-vue';
@@ -9,7 +9,7 @@ import 'bootstrap-vue/dist/bootstrap-vue.css';
 
 // Import FontAwesome icons
 import {library} from '@fortawesome/fontawesome-svg-core';
-import {faCalendarAlt, faMapMarkedAlt} from '@fortawesome/free-solid-svg-icons';
+import {faCalendarAlt, faMapMarkedAlt, faClock, faUsers} from '@fortawesome/free-solid-svg-icons';
 import {FontAwesomeIcon} from '@fortawesome/vue-fontawesome';
 
 import router from './router';
@@ -20,17 +20,17 @@ Vue.use(Vuex);
 Vue.config.productionTip = false;
 
 // Add required icons to the library here, one by one
-library.add(faMapMarkedAlt, faCalendarAlt);
+library.add(faMapMarkedAlt, faCalendarAlt, faClock, faUsers);
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 
 // Import and use leaflet for maps
-import { Icon } from "leaflet";
-//import "leaflet.icon.glyph";
+import {Icon} from 'leaflet';
+// import "leaflet.icon.glyph";
 delete Icon.Default.prototype._getIconUrl;
 Icon.Default.mergeOptions({
-  iconRetinaUrl: require("leaflet/dist/images/marker-icon-2x.png"),
-  iconUrl: require("leaflet/dist/images/marker-icon.png"),
-  shadowUrl: require("leaflet/dist/images/marker-shadow.png")
+  iconRetinaUrl: require('leaflet/dist/images/marker-icon-2x.png'),
+  iconUrl: require('leaflet/dist/images/marker-icon.png'),
+  shadowUrl: require('leaflet/dist/images/marker-shadow.png'),
 });
 
 // Define vue mixins
@@ -38,38 +38,46 @@ Vue.mixin({
   computed: {
     getLang() {
       return this.$store.getters.languageDict;
-    }
+    },
   },
   methods: {
-    formatDate: function (date) {
-      var moment = require("moment");
+    formatRange: function(range) {
+      let out = range[0];
+      if (range[1]) {
+        out += ` - ${range[1]}`;
+      }
+      return out;
+    },
+    formatDate: function(date) {
+      const moment = require('moment');
       if (date == null) {
-        return "?";
+        return '?';
       } else {
-        let d = moment(date.date);
-        return d.format("YYYY-MM-DD");
+        const d = moment(date.date);
+        return d.format('YYYY-MM-DD');
       }
     },
-    formatOccupations: function (occupations) {
+    formatOccupations: function(occupations) {
       if (occupations == null) {
-        return "?";
+        return '?';
       } else {
-        return occupations.join(", ");
+        return occupations.join(', ');
       }
     },
-    formatLocation: function (location) {
+    formatLocation: function(location) {
       if (location) {
-        let locs = [];
-        for (let loc of [location.city, location.region, location.country]) {
-          if (loc)
+        const locs = [];
+        for (const loc of [location.city, location.region, location.country]) {
+          if (loc) {
             locs.push(loc);
+          }
         }
-        return locs.join(", ");
+        return locs.join(', ');
       } else {
-        return "?";
+        return '?';
       }
-    }
-  }
+    },
+  },
 });
 
 new Vue({

@@ -1,6 +1,8 @@
 <template>
   <div>
-    <h1>Personregister <b-spinner v-if="!loaded"></b-spinner></h1>
+    <h1>Personregister
+      <b-spinner v-if="!loaded"></b-spinner>
+    </h1>
     <register-table
       v-bind:items="people">
     </register-table>
@@ -8,34 +10,33 @@
 </template>
 
 <script>
-  import RegisterTable from "./RegisterTable";
-  import {FETCH_ALL_PEOPLE} from "../../../store/actions.type";
-  import { mapGetters } from "vuex";
+  import RegisterTable from './RegisterTable';
+  import {FETCH_ALL_PEOPLE} from '../../../store/actions.type';
+  import {mapGetters} from 'vuex';
 
   export default {
-    name: "RegisterPage",
+    name: 'RegisterPage',
     components: {RegisterTable},
     data: () => ({
-      headings: ["First Name", "Last Name"],
-      loaded: false
+      headings: ['First Name', 'Last Name'],
+      loaded: false,
     }),
     computed: {
-        people() {
-          return this.$store.getters.people;
-        },
+      people() {
+        return this.$store.getters.people;
+      },
     },
     created() {
       if (!this.$store.getters.allPeopleFetched) {
         this.$store.dispatch(FETCH_ALL_PEOPLE)
-        .then(res => {
-          this.loaded = true;
-        });
+          .then(res => {
+            this.loaded = true;
+          });
       } else {
         this.loaded = true;
       }
-
-    }
-  }
+    },
+  };
 </script>
 
 <style scoped>

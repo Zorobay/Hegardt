@@ -41,34 +41,34 @@
 </template>
 
 <script>
-  import SearchForm from "./SearchForm";
-  import {SET_LANGUAGE} from "../../store/mutations.type";
-  import {CHANGE_LANGUAGE} from "../../store/actions.type";
+  import SearchForm from './SearchForm';
+  import {SET_LANGUAGE} from '../../store/mutations.type';
+  import {CHANGE_LANGUAGE} from '../../store/actions.type';
 
   export default {
-    name: "Navbar",
+    name: 'Navbar',
     components: {SearchForm},
     data() {
       return {
-      }
+      };
     },
     computed: {
       lang() {
         return this.$store.getters.language;
-      }
+      },
     },
     methods: {
       onLanguageChosen(lang) {
         this.$store.dispatch(CHANGE_LANGUAGE, lang);
       },
-      login(){
-        this.$router.push({name: "LoginPage"});
+      login() {
+        this.$router.push({name: 'LoginPage'});
       },
       signup() {
-        this.$router.push({name: "SignupPage"});
-      }
-    }
-  }
+        this.$router.push({name: 'SignupPage'});
+      },
+    },
+  };
 </script>
 
 <style scoped>
