@@ -30,9 +30,10 @@
     - [ ] Check that email is not already registered!
 - [ ] **CV**
 - [ ] **Recipes**
-    - [ ] Upload recipes to collection
-    - [ ] Create recipe Model
-    - [ ] List all recipes
+    - [x] Upload recipes to collection
+    - [x] Create recipe Model
+    - [x] List all recipes
+    - [x] Recipe page
     - [ ] Creat a table of contents sidebar
 ## Running the web app
 
@@ -52,7 +53,7 @@ npm install
 
 ### Define environment variables
 
-Create a `.env.development` file in the root directory and define the following variables
+Create a `.env` file in the root directory and define the following variables
 
 ```.env
 VUE_APP_API_URL=<URL to the backend>
