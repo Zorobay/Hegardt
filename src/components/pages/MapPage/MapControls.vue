@@ -15,36 +15,36 @@
 </template>
 
 <script>
-  import {CHANGE_MAP_SETTINGS} from "../../../store/actions.type";
+  import {CHANGE_MAP_SETTINGS} from '../../../store/actions.type';
 
   export default {
-    name: "MapControls",
+    name: 'MapControls',
     data() {
       return {
         settings: {
-          checked: ["dead"],
+          checked: ['dead'],
           gender: {
-            options: ["male", "female", "both"],
-            selected: "both"
+            options: ['male', 'female', 'both'],
+            selected: 'both',
           },
           location: {
-            options: ["Birth Location", "Death Location", "Bury Location"],
-            selected: "Birth Location",
-          }
-        }
-      }
+            options: ['Birth Location', 'Death Location', 'Bury Location'],
+            selected: 'Birth Location',
+          },
+        },
+      };
     },
     computed: {
       mapSettings() {
         return this.$store.getters.mapSettings;
-      }
+      },
     },
     methods: {
       update() {
         this.$store.dispatch(CHANGE_MAP_SETTINGS, this.settings);
-      }
-    }
-  }
+      },
+    },
+  };
 </script>
 
 <style scoped>

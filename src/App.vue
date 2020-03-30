@@ -9,8 +9,8 @@
 
 <script>
   import Homepage from './components/pages/Homepage.vue';
-  import Navbar from "./components/navbar/Navbar";
-  import {CHANGE_LANGUAGE} from "./store/actions.type";
+  import Navbar from './components/navbar/Navbar';
+  import {CHANGE_LANGUAGE} from './store/actions.type';
 
   export default {
     name: 'app',
@@ -20,14 +20,14 @@
     },
     data() {
       return {
-        defaultLang: 'en'
-      }
+        defaultLang: 'en',
+      };
     },
     created() {
       // Load default language English
       this.$store.dispatch(CHANGE_LANGUAGE, this.defaultLang)
         .then(res => console.log(`Loaded language file for default language code [${this.defaultLang}]`));
-    }
+    },
   };
 </script>
 
