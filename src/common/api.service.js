@@ -1,4 +1,4 @@
-const API_BASE = `${process.env.VUE_APP_API_URL}:${process.env.VUE_APP_API_PORT}/`;
+const API_BASE = `${process.env.VUE_APP_API_BASE}/`;
 
 const RECIPE_ALL = API_BASE + 'recipe/all';
 const RECIPE_NAME = API_BASE + 'recipe/title/';

@@ -56,8 +56,7 @@ npm install
 Create a `.env` file in the root directory and define the following variables
 
 ```.env
-VUE_APP_API_URL=<URL to the backend>
-VUE_APP_API_PORT=<port to backend>
+VUE_APP_API_BASE=<url to backend api>
 ```
 
 ### Setup heroku
