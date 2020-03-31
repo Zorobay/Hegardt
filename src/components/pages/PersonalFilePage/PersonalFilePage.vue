@@ -49,7 +49,7 @@
 
     <h4>Syskon</h4>
     <ul>
-      <li v-for="sib in person.siblings">
+      <li v-for="sib in person.siblings" :key="sib._id">
         {{sib}}
       </li>
     </ul>
@@ -69,9 +69,9 @@
     components: {WellCell},
     data: function() {
       return {
-        person: {},
-        father: {},
-        mother: {},
+        person: null,
+        father: null,
+        mother: null,
       };
     },
     created() {

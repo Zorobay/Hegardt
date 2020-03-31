@@ -27,7 +27,7 @@
           </div>
         </div>
         <div class="col-md-8 instructions">
-          <div v-for="instr in recipe.instructions">
+          <div v-for="instr in recipe.instructions" :key="instr.title">
             <p>{{instr.title}}</p>
             <ol>
               <li v-for="i in instr.instructions" :key="i">{{i}}</li>
@@ -47,14 +47,14 @@
     name: 'RecipePage',
     data() {
       return {
-        recipe: {},
+        recipe: null,
       };
     },
     created() {
       const title = this.$route.params.title;
       this.$store.dispatch(FETCH_RECIPE_BY_TITLE, title)
         .then(res => {
-          this.recipe = res[0];
+          this.recipe = res;
         })
         .catch(err => this.$router.replace({name: 'MissingPage'}));
     },
