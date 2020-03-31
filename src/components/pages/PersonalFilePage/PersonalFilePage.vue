@@ -62,7 +62,7 @@
 
 <script>
   import WellCell from './WellCell';
-  import {FETCH_PEOPLE_BY_ID} from '../../../store/actions.type';
+  import {FETCH_PERSON_BY_ID} from '../../../store/actions.type';
 
   export default {
     name: 'PersonalFilePage',
@@ -76,17 +76,17 @@
     },
     created() {
       const id = this.$route.params.id;
-      this.$store.dispatch(FETCH_PEOPLE_BY_ID, id)
+      this.$store.dispatch(FETCH_PERSON_BY_ID, id)
         .then(data => {
           this.person = data;
 
           if (this.person.father) {
-            this.$store.dispatch(FETCH_PEOPLE_BY_ID, this.person.father)
+            this.$store.dispatch(FETCH_PERSON_BY_ID, this.person.father)
               .then(data => this.father = data);
           }
 
           if (this.person.mother) {
-            this.$store.dispatch(FETCH_PEOPLE_BY_ID, this.person.mother)
+            this.$store.dispatch(FETCH_PERSON_BY_ID, this.person.mother)
               .then(data => this.mother = data);
           }
         })

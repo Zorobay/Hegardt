@@ -1,34 +1,42 @@
-import {FETCH_ALL_PEOPLE, FETCH_PEOPLE_BY_ID, FETCH_PEOPLE_BY_NAME} from './actions.type';
+import {FETCH_ALL_PEOPLE, FETCH_PERSON_BY_ID, FETCH_PEOPLE_BY_NAME} from './actions.type';
 import PeopleService from '../common/api.service';
-import {SET_ALL_PEOPLE} from './mutations.type';
+import {ADD_PERSON_TO_HASH, SET_ALL_PEOPLE} from './mutations.type';
 
 
 export const state = {
   allPeopleFetched: false,
   peoples: [],
-  globalMsg: 'Fök ya\'ll',
+  peopleHash: new Map(),
 };
 
 export const mutations = {
   [SET_ALL_PEOPLE](state, allPeople) {
     state.peoples = allPeople;
     state.allPeopleFetched = true;
+
+    for (const p of allPeople) {
+      const id = p._id;
+      state.peopleHash.set(id, p);
+    }
+  },
+  [ADD_PERSON_TO_HASH](state, person) {
+    state.peopleHash.set(person._id, person);
   },
 };
 
 export const actions = {
-  async [FETCH_PEOPLE_BY_ID](context, id) {
-    if (state.allPeopleFetched) {
-      const subset = state.peoples.filter(p => p._id.match(id));
+  async [FETCH_PERSON_BY_ID](context, id) {
+    // First, check if the person is in the hash map
+    if (state.peopleHash.has(id)) {
       return new Promise((resolve, reject) => {
-        if (subset.length > 0) {
-          resolve(subset[0]);
-        } else {
-          reject(`No person found for id [${id}]`);
-        }
+        resolve(state.peopleHash.get(id));
       });
     } else {
-      return PeopleService.getPersonById(id);
+      return PeopleService.getPersonById(id)
+          .then(person => {
+            context.commit(ADD_PERSON_TO_HASH, person);
+            return person;
+          });
     }
   },
   async [FETCH_PEOPLE_BY_NAME](context, keyword) {
