@@ -4,14 +4,14 @@
       <div class="row">
         <div class="col-md-5">
           <p>
-            <font-awesome-icon icon="clock"/>
+            <font-awesome-icon icon="users"/>
             {{formatRange(recipe.portions)}} {{recipe.portion_unit}}
           </p>
         </div>
         <div class="col-md-1"></div>
         <div class="col-md-4">
           <p>
-            <font-awesome-icon icon="users"/>
+            <font-awesome-icon icon="clock"/>
             {{formatRange(recipe.total_time)}} {{recipe.time_unit}}
           </p>
         </div>
