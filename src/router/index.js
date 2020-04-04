@@ -79,7 +79,8 @@ export default new VueRouter({
       component: LoginPage,
     },
     {
-      path: '*',
+      path: '/404',
+      alias: '*',
       name: 'MissingPage',
       component: MissingPage,
     }],

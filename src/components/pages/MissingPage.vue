@@ -8,13 +8,15 @@
 
 <script>
   export default {
-    data: {name: "MissingPage"},
+    data: function() {
+      return {name: 'MissingPage'};
+    },
     methods: {
       goBack() {
         this.$router.go(-1);
-      }
-    }
-  }
+      },
+    },
+  };
 </script>
 
 <style scoped>
