@@ -49,11 +49,19 @@
 
     <h4>Syskon</h4>
     <ul>
-      <li v-for="sib in person.siblings" :key="sib._id">
-        {{sib}}
-      </li>
+      <h5 v-for="sib in siblings" :key="sib.id">
+        <router-link :to="{name: 'PersonalFile', params: {id: sib.id}}">
+          {{sib.full_name}}
+        </router-link>
+      </h5>
     </ul>
 
+    <h4>Barn</h4>
+    <h5 v-for="child in children" :key="child.id">
+      <router-link :to="{name: 'PersonalFile', params: {id: child.id}}">
+        {{child.full_name}}
+      </router-link>
+    </h5>
     <h4>Anteckningar</h4>
     <p>{{person.notes}}</p>
 
@@ -67,11 +75,13 @@
   export default {
     name: 'PersonalFilePage',
     components: {WellCell},
-    data: function() {
+    data() {
       return {
         person: null,
         father: null,
         mother: null,
+        siblings: [],
+        children: [],
       };
     },
     created() {
@@ -82,15 +92,37 @@
 
           if (this.person.father) {
             this.$store.dispatch(FETCH_PERSON_BY_ID, this.person.father)
-              .then(data => this.father = data);
+              .then(data => {
+                this.father = data;
+                if (this.person.mother) {
+                  this.$store.dispatch(FETCH_PERSON_BY_ID, this.person.mother)
+                    .then(data => {
+                      this.mother = data;
+                    });
+                }
+              });
           }
 
-          if (this.person.mother) {
-            this.$store.dispatch(FETCH_PERSON_BY_ID, this.person.mother)
-              .then(data => this.mother = data);
+          for (const child of this.person.children) {
+            this.$store.dispatch(FETCH_PERSON_BY_ID, child)
+              .then(data => {
+                this.children.push(data);
+              })
+              .catch(err => console.log(err));
+          }
+
+          for (const sib of this.person.siblings) {
+            this.$store.dispatch(FETCH_PERSON_BY_ID, sib)
+              .then(data => {
+                this.siblings.push(data);
+              })
+              .catch(err => console.log(err));
           }
         })
-        .catch(err => this.$router.replace({name: 'MissingPage'}));
+        .catch(err => {
+          console.log(err);
+          this.$router.replace({name: 'MissingPage'});
+        });
     },
   };
 </script>

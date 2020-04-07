@@ -10,6 +10,7 @@
   - [ ] Save language file to local storage (validate age of it too)
   - [ ] Set active class to dropdown item when clicked
 - [ ] Features in `PersonalFilePage`
+  - [ ] Add birth date to the right of all names (links)
   - [ ] Fix children
   - [ ] Fix siblings
 - [ ] Features in `search-form`
