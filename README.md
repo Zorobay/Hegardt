@@ -11,8 +11,8 @@
   - [ ] Set active class to dropdown item when clicked
 - [ ] Features in `PersonalFilePage`
   - [ ] Add birth date to the right of all names (links)
-  - [ ] Fix children
-  - [ ] Fix siblings
+  - [x] Fix children
+  - [x] Fix siblings
 - [ ] Features in `search-form`
   - [x] Get search function to work again
   - [ ] Show birth date in small print under the name in results
