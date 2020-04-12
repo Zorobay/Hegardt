@@ -2,6 +2,7 @@
 
 ## TODO
 - [x] Store people and recipes as a HashMap in the store to allow for fast retrieval with ID
+- [ ] Implement **webpack**
 - [ ] Implement login functionality
 - [ ] Implement admin mode to edit people and upload new people
 - [ ] Implement function to choose **language**!
