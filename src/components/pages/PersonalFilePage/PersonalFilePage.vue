@@ -47,7 +47,7 @@
       </b-row>
     </b-container>
 
-    <h4>Syskon</h4>
+    <h4 v-if="siblings.length > 0">Syskon</h4>
     <ul>
       <h5 v-for="sib in siblings" :key="sib.id">
         <router-link :to="{name: 'PersonalFile', params: {id: sib.id}}">
@@ -56,7 +56,7 @@
       </h5>
     </ul>
 
-    <h4>Barn</h4>
+    <h4 v-if="children.length > 0">Barn</h4>
     <h5 v-for="child in children" :key="child.id">
       <router-link :to="{name: 'PersonalFile', params: {id: child.id}}">
         {{child.full_name}}
