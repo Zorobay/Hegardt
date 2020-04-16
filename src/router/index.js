@@ -4,7 +4,6 @@ import Homepage from '../components/pages/Homepage.vue';
 import MissingPage from '../components/pages/MissingPage.vue';
 import RegisterPage from '../components/pages/RegisterPage/RegisterPage.vue';
 import MapPage from '../components/pages/MapPage/MapPage.vue';
-import Debug from '../components/Debug.vue';
 import CreditPage from '../components/pages/CreditPage/CreditPage.vue';
 import HegardtPage from '../components/pages/HegardtPage/HegardtPage.vue';
 import SignupPage from '../components/pages/SignupPage/SignupPage.vue';
@@ -52,11 +51,6 @@ export default new VueRouter({
       path: '/recipe/:title',
       name: 'RecipePage',
       component: RecipePage,
-    },
-    {
-      path: '/debug',
-      name: 'Debug',
-      component: Debug,
     },
     {
       path: '/hegardt/map',

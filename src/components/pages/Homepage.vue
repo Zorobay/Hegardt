@@ -1,8 +1,9 @@
 <template>
   <div>
-      <p>Hej och välkommen till släktforskningssidan för Hegardt-släkten! Detta är ett projekt som fortsätter på det <router-link :to="{name: 'PersonalFile', params: {}}">Peter
-        Hegardt gjort med </router-link><a href="http://www.hegardt.se/disgen/html/"> hegardt.se.</a></p>
-      <p>Jag som har utvecklat den här sidan heter Sebastian Hegardt</p>
+    <p>Welcome to the personal page of
+      <router-link :to="{name: 'PersonalFile',
+       params: {id: '000000000000000000000635'}}">Sebastian Hegardt</router-link>.
+    </p>
   </div>
 </template>
 

@@ -51,10 +51,6 @@ const PeopleService = {
   async getAllPeople() {
     return this._get(PEOPLE_ALL);
   },
-
-  childrenToSiblings(personId, children) {
-
-  },
 };
 
 export const UserService = {

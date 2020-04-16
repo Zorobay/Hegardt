@@ -3,6 +3,7 @@
     <h1>Personregister
       <b-spinner v-if="!loaded"></b-spinner>
     </h1>
+    <p>{{people.length}}/1273</p>
     <register-table
       v-bind:items="people">
     </register-table>

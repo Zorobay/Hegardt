@@ -28,40 +28,28 @@
       <b-row>
         <b-col>
           <h4>Fader</h4>
-          <h5 v-if="father">
-            <router-link
-              :to="{name: 'PersonalFile', params: {id: father._id}}">{{father.full_name}}
-            </router-link>
-          </h5>
-          <h5 v-else>?</h5>
+          <name-link :person="father"></name-link>
         </b-col>
         <b-col>
           <h4>Moder</h4>
-          <h5 v-if="mother">
-            <router-link
-              :to="{name: 'PersonalFile', params: {id: mother._id}}">{{mother.full_name}}
-            </router-link>
-          </h5>
-          <h5 v-else>?</h5>
+          <name-link :person="mother"/>
         </b-col>
       </b-row>
     </b-container>
 
     <h4 v-if="siblings.length > 0">Syskon</h4>
-    <ul>
-      <h5 v-for="sib in siblings" :key="sib.id">
-        <router-link :to="{name: 'PersonalFile', params: {id: sib.id}}">
-          {{sib.full_name}}
-        </router-link>
-      </h5>
+    <ul class="person-list">
+      <li v-for="sib in siblings" :key="sib.id">
+        <name-link :person="sib"></name-link>
+      </li>
     </ul>
 
     <h4 v-if="children.length > 0">Barn</h4>
-    <h5 v-for="child in children" :key="child.id">
-      <router-link :to="{name: 'PersonalFile', params: {id: child.id}}">
-        {{child.full_name}}
-      </router-link>
-    </h5>
+    <ul class="person-list">
+      <li v-for="child in children" :key="child.id">
+        <name-link :person="child"></name-link>
+      </li>
+    </ul>
     <h4>Anteckningar</h4>
     <p>{{person.notes}}</p>
 
@@ -71,10 +59,11 @@
 <script>
   import WellCell from './WellCell';
   import {FETCH_PERSON_BY_ID} from '../../../store/actions.type';
+  import NameLink from "../../person/NameLink";
 
   export default {
     name: 'PersonalFilePage',
-    components: {WellCell},
+    components: {NameLink, WellCell},
     data() {
       return {
         person: null,
@@ -128,5 +117,9 @@
 </script>
 
 <style scoped>
+
+  .person-list {
+    list-style-type: none;
+  }
 
 </style>
