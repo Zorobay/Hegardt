@@ -59,7 +59,7 @@
 <script>
   import WellCell from './WellCell';
   import {FETCH_PERSON_BY_ID} from '../../../store/actions.type';
-  import NameLink from "../../person/NameLink";
+  import NameLink from '../../person/NameLink';
 
   export default {
     name: 'PersonalFilePage',
