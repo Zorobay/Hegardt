@@ -1,6 +1,6 @@
 <template>
   <b-navbar toggleable="lg" type="dark" variant="primary">
-    <b-navbar-brand href="#">Sebastian.hegardt.se</b-navbar-brand>
+    <b-navbar-brand href="#/">Sebastian.hegardt.se</b-navbar-brand>
 
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
@@ -8,7 +8,7 @@
 
       <!--Left aligned nav items-->
       <b-navbar-nav>
-        <b-nav-item href="/#">{{getLang.menu.home}}</b-nav-item>
+        <b-nav-item href="#/">{{getLang.menu.home}}</b-nav-item>
 
         <b-nav-item-dropdown text="Hegardt.se" right>
           <b-dropdown-item href="#/hegardt">{{getLang.menu.home}}</b-dropdown-item>
