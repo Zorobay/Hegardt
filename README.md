@@ -11,14 +11,14 @@
   - [ ] Save language file to local storage (validate age of it too)
   - [ ] Set active class to dropdown item when clicked
 - [ ] Features in `PersonalFilePage`
-  - [ ] Add birth date to the right of all names (links)
+  - [x] Add birth date to the right of all names (links)
   - [x] Fix children
   - [x] Fix siblings
 - [ ] Features in `search-form`
   - [x] Get search function to work again
   - [ ] Show birth date in small print under the name in results
   - [ ] Searching for `Johan Hegardt` now matches ALL Johan...not what we want.
-  - [ ] Disable chrome form fill
+  - [x] Disable chrome form fill
   - [ ] Enable arrow keys to be used in the result list (go over to a modified dropdown list?)
 - [ ] Features in `People map`
   - [ ] Implement linking to PersonalFile when clicking on a marker in map

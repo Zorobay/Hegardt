@@ -1,7 +1,7 @@
 <template>
   <b-col>
     <b-row>
-      <b-form @submit="onSubmit" inline>
+      <b-form @submit="onSubmit" inline autocomplete="off">
         <b-form-input
           @blur="exit()"
           @input="searchCallback()"
@@ -26,23 +26,21 @@
 </template>
 
 <script>
-  import {FETCH_PEOPLE_BY_NAME} from "../../store/actions.type";
-
-  const API_URL = "http://localhost:3000/person/search/";
+  import {FETCH_PEOPLE_BY_NAME} from '../../store/actions.type';
 
   export default {
-    name: "SearchForm",
+    name: 'SearchForm',
     data() {
       return {
-        query: "",
+        query: '',
         results: [],
-        showDropdown: true
-      }
+        showDropdown: true,
+      };
     },
     methods: {
       resultClicked(res) {
         this.query = res.full_name;
-        this.$router.push({name: "PersonalFile", params: {id: res._id}});
+        this.$router.push({name: 'PersonalFile', params: {id: res._id}});
       },
       searchCallback() {
         this.showDropdown = true;
@@ -56,13 +54,13 @@
         }
       },
       onSubmit(evt) {
-        evt.preventDefault();  // Prevents reloading the page
+        evt.preventDefault(); // Prevents reloading the page
       },
       exit() {
         this.showDropdown = false;
-      }
-    }
-  }
+      },
+    },
+  };
 </script>
 
 <style scoped>
