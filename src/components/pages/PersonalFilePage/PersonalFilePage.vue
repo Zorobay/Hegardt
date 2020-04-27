@@ -1,7 +1,13 @@
 <template>
   <div v-if="this.person">
-    <h2>{{this.person.full_name}}</h2>
+    <h2>{{this.person.full_name}}
+      <font-awesome-icon v-if="person.sex === 'MAN'" icon="mars"></font-awesome-icon>
+      <font-awesome-icon v-else-if="person.sex === 'WOMAN'" icon="venus"></font-awesome-icon>
+    </h2>
     <h4>Ansedel</h4>
+
+    <h4 v-if="person.sex === 'MAN'">
+    </h4>
 
     <p v-if="this.person.age">Född {{this.person.age}} år sedan</p>
     <p v-else>Född ? år sedan</p>

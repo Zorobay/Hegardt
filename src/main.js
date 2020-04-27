@@ -9,7 +9,7 @@ import 'bootstrap-vue/dist/bootstrap-vue.css';
 
 // Import FontAwesome icons
 import {library} from '@fortawesome/fontawesome-svg-core';
-import {faCalendarAlt, faMapMarkedAlt, faClock, faUsers} from '@fortawesome/free-solid-svg-icons';
+import {faCalendarAlt, faMapMarkedAlt, faClock, faUsers, faMars, faVenus} from '@fortawesome/free-solid-svg-icons';
 import {FontAwesomeIcon} from '@fortawesome/vue-fontawesome';
 
 import router from './router';
@@ -20,7 +20,7 @@ Vue.use(Vuex);
 Vue.config.productionTip = false;
 
 // Add required icons to the library here, one by one
-library.add(faMapMarkedAlt, faCalendarAlt, faClock, faUsers);
+library.add(faMapMarkedAlt, faCalendarAlt, faClock, faUsers, faMars, faVenus);
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 
 // Import and use leaflet for maps
