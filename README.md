@@ -1,6 +1,7 @@
 # Hegardt Frontend
 
 ## TODO
+- [ ] Update gender of all people by parsing HTML (father, mother or grandfather, grandmother)...
 - [x] Store people and recipes as a HashMap in the store to allow for fast retrieval with ID
 - [ ] Implement **webpack**
 - [ ] Implement login functionality
