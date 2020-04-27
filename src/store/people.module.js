@@ -40,8 +40,10 @@ export const actions = {
     }
   },
   async [FETCH_PEOPLE_BY_NAME](context, keyword) {
-    if (state.allPeopleFetched) { // Find people by filtering the existing collection
-      const reg = new RegExp(keyword, 'ig');
+    const processed = keyword.split(' ').map(t => `(.*${t})`);
+    const reg = new RegExp(processed, 'ig');
+
+    if (false) { // Find people by filtering the existing collection
       const subset = state.peoples.filter(p => p.full_name.match(reg));
       return new Promise((resolve, reject) => {
         resolve(subset);

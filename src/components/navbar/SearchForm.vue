@@ -47,10 +47,12 @@
         if (this.query.length > 0) {
           this.$store.dispatch(FETCH_PEOPLE_BY_NAME, this.query)
             .then(data => {
-              console.log(this.query);
               this.results = data;
             })
-            .catch(err => this.results = []);
+            .catch(err => {
+              console.log(err);
+              this.results = [];
+            });
         }
       },
       onSubmit(evt) {
