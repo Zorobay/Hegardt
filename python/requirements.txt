@@ -1,0 +1,24 @@
+# This file may be used to create an environment using:
+# $ conda create --name <env> --file <this file>
+# platform: win-64
+beautifulsoup4=4.9.1=pypi_0
+bleach=3.2.1=pypi_0
+bs4=0.0.1=pypi_0
+ca-certificates=2020.7.22=0
+certifi=2020.6.20=py37_0
+openssl=1.1.1h=he774522_0
+packaging=20.4=pypi_0
+pip=20.2.2=py37_0
+pymongo=3.11.0=pypi_0
+pyparsing=2.4.7=pypi_0
+python=3.7.9=h60c2a47_0
+python-dateutil=2.8.1=pypi_0
+setuptools=49.6.0=py37_0
+soupsieve=2.0.1=pypi_0
+sqlite=3.33.0=h2a8f88b_0
+vc=14.1=h0510ff6_4
+vs2015_runtime=14.16.27012=hf0eaf9b_3
+webencodings=0.5.1=pypi_0
+wheel=0.35.1=py_0
+wincertstore=0.2=py37_0
+zlib=1.2.11=h62dcd97_4

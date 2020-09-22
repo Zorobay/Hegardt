@@ -1,3 +1,2 @@
-# Required python packages
-
-    pip install pymongo bleach bs4 bson
+# Install requirements with conda
+`conda create --name hegardt --file requirements.txt`
