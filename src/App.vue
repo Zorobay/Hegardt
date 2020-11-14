@@ -8,7 +8,6 @@
 </template>
 
 <script>
-  import Homepage from './components/pages/Homepage.vue';
   import Navbar from './components/navbar/Navbar';
   import {CHANGE_LANGUAGE} from './store/actions.type';
 
@@ -16,7 +15,6 @@
     name: 'app',
     components: {
       Navbar,
-      Homepage,
     },
     data() {
       return {
@@ -32,12 +30,5 @@
 </script>
 
 <style>
-  .app {
-    font-family: 'Avenir', Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
-    margin-top: 60px;
-  }
+
 </style>

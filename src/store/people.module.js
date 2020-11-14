@@ -49,11 +49,11 @@ export const actions = {
         resolve(subset);
       });
     } else {
-      return PeopleService.getPeopleByName(keyword);
+      return PeopleService.getPersonsByName(keyword);
     }
   },
   async [FETCH_ALL_PEOPLE](context) {
-    return PeopleService.getAllPeople()
+    return PeopleService.getAllPersons()
         .then(data => {
           context.commit(SET_ALL_PEOPLE, data);
           return data;

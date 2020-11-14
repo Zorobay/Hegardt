@@ -1,5 +1,6 @@
 <template>
   <div v-if="this.person">
+    <p>{{this.person}}</p>
     <h2>{{this.person.full_name}}
       <font-awesome-icon v-if="person.sex === 'MAN'" icon="mars"></font-awesome-icon>
       <font-awesome-icon v-else-if="person.sex === 'WOMAN'" icon="venus"></font-awesome-icon>

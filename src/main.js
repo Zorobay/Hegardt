@@ -1,30 +1,26 @@
+import '../scss/custom.scss';
+import '@/assets/global.css';
+
 import Vue from 'vue';
 import Vuex from 'vuex';
 import store from './store';
 
 // Import Bootstrap and Bootstrap Vue
-import BootstrapVue from 'bootstrap-vue';
+import {BootstrapVue, IconsPlugin} from 'bootstrap-vue';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap-vue/dist/bootstrap-vue.css';
-
-// Import FontAwesome icons
-import {library} from '@fortawesome/fontawesome-svg-core';
-import {faCalendarAlt, faMapMarkedAlt, faClock, faUsers, faMars, faVenus} from '@fortawesome/free-solid-svg-icons';
-import {FontAwesomeIcon} from '@fortawesome/vue-fontawesome';
 
 import router from './router';
 import App from './App.vue';
 
 Vue.use(BootstrapVue);
+Vue.use(IconsPlugin);
 Vue.use(Vuex);
 Vue.config.productionTip = false;
 
-// Add required icons to the library here, one by one
-library.add(faMapMarkedAlt, faCalendarAlt, faClock, faUsers, faMars, faVenus);
-Vue.component('font-awesome-icon', FontAwesomeIcon);
-
 // Import and use leaflet for maps
 import {Icon} from 'leaflet';
+
 // import "leaflet.icon.glyph";
 delete Icon.Default.prototype._getIconUrl;
 Icon.Default.mergeOptions({

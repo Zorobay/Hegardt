@@ -1,4 +1,5 @@
-const API_BASE = `${process.env.VUE_APP_API_BASE}/`;
+const API_BASE = `${process.env.VUE_APP_API_BASE_URL}/`;
+console.log(`API_BASE: ${API_BASE}`);
 
 const RECIPE_ALL = API_BASE + 'recipe/all';
 const RECIPE_NAME = API_BASE + 'recipe/title/';
@@ -16,12 +17,14 @@ import qs from 'qs';
 
 const Service = {
   async _get(url) {
+    console.log(`[GET] ${url}`);
     return axios(url)
         .then(res => res.data)
         .catch(err => console.error(err));
   },
 
   async _post(url, data) {
+    console.log(`[POST] ${url}`);
     const config = {
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded',
@@ -44,11 +47,11 @@ const PeopleService = {
     return this._get(PEOPLE_ID + id);
   },
 
-  async getPeopleByName(query) {
+  async getPersonsByName(query) {
     return this._get(PEOPLE_NAME + query);
   },
 
-  async getAllPeople() {
+  async getAllPersons() {
     return this._get(PEOPLE_ALL);
   },
 };
