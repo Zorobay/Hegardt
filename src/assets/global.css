@@ -10,6 +10,11 @@
     margin-top: 60px;
 }
 
+.person-info-column {
+    background-color: #d7d7d7;
+    border-radius: 25px;
+}
+
 h1,h2,h3,h4,h5,h6 {
     font-family: "Roboto Light", Helvetica, Arial, sans-serif;
 }

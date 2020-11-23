@@ -1,5 +1,7 @@
 import '../scss/custom.scss';
 import '@/assets/global.css';
+import formatDate from 'date-fns/format'
+import get from 'lodash/get';
 
 import Vue from 'vue';
 import Vuex from 'vuex';
@@ -13,6 +15,14 @@ import 'bootstrap-vue/dist/bootstrap-vue.css';
 import router from './router';
 import App from './App.vue';
 
+// Fontawesome icons
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faVenus, faMars, faStickyNote } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+
+library.add(faVenus, faMars, faStickyNote);
+Vue.component('font-awesome-icon', FontAwesomeIcon)
+
 Vue.use(BootstrapVue);
 Vue.use(IconsPlugin);
 Vue.use(Vuex);
@@ -20,6 +30,8 @@ Vue.config.productionTip = false;
 
 // Import and use leaflet for maps
 import {Icon} from 'leaflet';
+
+
 
 // import "leaflet.icon.glyph";
 delete Icon.Default.prototype._getIconUrl;
@@ -31,12 +43,10 @@ Icon.Default.mergeOptions({
 
 // Define vue mixins
 Vue.mixin({
-  computed: {
-    getLang() {
-      return this.$store.getters.languageDict;
-    },
-  },
   methods: {
+    Lang(path) {
+      return get(this.$store.getters.languageDict, path);
+    },
     formatRange: function(range) {
       let out = range[0];
       if (range[1]) {
@@ -44,14 +54,25 @@ Vue.mixin({
       }
       return out;
     },
-    formatDate: function(date) {
-      const moment = require('moment');
-      if (date == null) {
-        return '?';
-      } else {
-        const d = moment(date.date);
-        return d.format('YYYY-MM-DD');
+    formatDate: function(dateObject) {
+      if (!dateObject || !dateObject.date) {
+        return ''
       }
+
+      let formatString = '';
+
+      if (dateObject.year) {
+        formatString += 'yyyy';
+      }
+
+      if (dateObject.month) {
+        formatString += '-MM'
+        if (dateObject.day) {
+          formatString += '-dd'
+        }
+      }
+
+      return formatDate(new Date(dateObject.date), formatString);
     },
     formatOccupations: function(occupations) {
       if (occupations == null) {
@@ -62,17 +83,13 @@ Vue.mixin({
     },
     formatLocation: function(location) {
       if (location) {
-        const locs = [];
-        for (const loc of [location.city, location.region, location.country]) {
-          if (loc) {
-            locs.push(loc);
-          }
-        }
-        return locs.join(', ');
-      } else {
-        return '?';
+        const locs = [location.city, location.region, location.country];
+        return locs.filter(l => !!l).join(', ');
       }
     },
+    elvis: function(obj, path) {
+      return get(obj, path);
+    }
   },
 });
 

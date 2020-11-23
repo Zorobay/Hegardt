@@ -6,7 +6,7 @@ import {ADD_PERSON_TO_HASH, SET_ALL_PEOPLE} from './mutations.type';
 export const state = {
   allPeopleFetched: false,
   peoples: [],
-  peopleHash: new Map(),
+  personsHashMap: new Map(),
 };
 
 export const mutations = {
@@ -16,20 +16,20 @@ export const mutations = {
 
     for (const p of allPeople) {
       const id = p._id;
-      state.peopleHash.set(id, p);
+      state.personsHashMap.set(id, p);
     }
   },
   [ADD_PERSON_TO_HASH](state, person) {
-    state.peopleHash.set(person._id, person);
+    if (person) state.personsHashMap.set(person._id, person);
   },
 };
 
 export const actions = {
   async [FETCH_PERSON_BY_ID](context, id) {
     // First, check if the person is in the hash map
-    if (state.peopleHash.has(id)) {
+    if (state.personsHashMap.has(id)) {
       return new Promise((resolve, reject) => {
-        resolve(state.peopleHash.get(id));
+        resolve(state.personsHashMap.get(id));
       });
     } else {
       return PeopleService.getPersonById(id)

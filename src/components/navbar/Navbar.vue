@@ -8,17 +8,17 @@
 
       <!--Left aligned nav items-->
       <b-navbar-nav>
-        <b-nav-item href="#/">{{getLang.menu.home}}</b-nav-item>
+        <b-nav-item href="#/">{{ Lang('menu.home') }}</b-nav-item>
 
         <b-nav-item-dropdown text="Hegardt.se" right>
-          <b-dropdown-item href="#/hegardt">{{getLang.menu.home}}</b-dropdown-item>
-          <b-dropdown-item href="#/hegardt/register">{{getLang.menu.register}}</b-dropdown-item>
-          <b-dropdown-item href="#/hegardt/map">{{getLang.menu.map}}</b-dropdown-item>
+          <b-dropdown-item href="#/hegardt">{{ Lang('menu.home') }}</b-dropdown-item>
+          <b-dropdown-item href="#/hegardt/register">{{ Lang('menu.register') }}</b-dropdown-item>
+          <b-dropdown-item href="#/hegardt/map">{{ Lang('menu.map') }}</b-dropdown-item>
           <b-dropdown-item :to="{name: 'FamilyTreePage'}">Family Tree</b-dropdown-item>
         </b-nav-item-dropdown>
 
-        <b-nav-item-dropdown v-bind:text="getLang.menu.other_projects">
-          <b-dropdown-item href="#/recipes">{{getLang.menu.recipes}}</b-dropdown-item>
+        <b-nav-item-dropdown v-bind:text="Lang('menu.other_projects')">
+          <b-dropdown-item href="#/recipes">{{ Lang('menu.recipes') }}</b-dropdown-item>
         </b-nav-item-dropdown>
       </b-navbar-nav>
 

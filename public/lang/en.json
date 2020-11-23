@@ -8,5 +8,17 @@
     "map": "Map",
     "swedish": "Swedish",
     "english": "English"
+  },
+  "ppage": {
+    "note": "Note",
+    "birth": {
+      "heading": "Birth"
+    },
+    "death": {
+      "heading": "Death"
+    },
+    "burial": {
+      "heading": "Burial"
+    }
   }
 }

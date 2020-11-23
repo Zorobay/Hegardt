@@ -19,7 +19,6 @@
     name: 'RegisterPage',
     components: {RegisterTable},
     data: () => ({
-      headings: ['First Name', 'Last Name'],
       loaded: false,
     }),
     computed: {

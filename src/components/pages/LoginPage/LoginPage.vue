@@ -29,7 +29,7 @@
 
 <script>
 
-  import {UserService} from "../../../common/api.service";
+  import {UserService} from '@/common/api.service';
 
   export default {
     name: "LoginPage",
@@ -64,7 +64,7 @@
           .catch(err => {
             const res = err.response;
             if (res.status === 401) { // Authentication error!
-              if (res.data.code === "USER_WRONG_PASSWORD") {
+              if (res.data.code === "WRONG_LOGIN_INFORMATION") {
                 this.wrongPass = true;
               } else if (res.data.code === "USER_MISSING") {
                 this.missingUserAlert = true;

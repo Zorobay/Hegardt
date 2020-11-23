@@ -1,132 +1,109 @@
 <template>
+
   <div v-if="this.person">
-    <p>{{this.person}}</p>
-    <h2>{{this.person.full_name}}
-      <font-awesome-icon v-if="person.sex === 'MAN'" icon="mars"></font-awesome-icon>
-      <font-awesome-icon v-else-if="person.sex === 'WOMAN'" icon="venus"></font-awesome-icon>
-    </h2>
-    <h4>Ansedel</h4>
+    <b-avatar size="200px">
 
-    <h4 v-if="person.sex === 'MAN'">
-    </h4>
+    </b-avatar>
+    <p>{{ this.person }}</p>
+    <h1>
+      {{ this.person.full_name }}
+      <font-awesome-icon v-if="person.sex !== 'UNKNOWN'" :icon="person.sex === 'MAN' ? 'mars' : 'venus'" size="lg"/>
+    </h1>
+    <b-row>
+      <b-col cols="4" class="person-info-column">
+        <h4>{{ Lang('ppage.birth.heading') }}</h4>
+        <p>Född {{ this.person.age }} år sedan</p>
 
-    <p v-if="this.person.age">Född {{this.person.age}} år sedan</p>
-    <p v-else>Född ? år sedan</p>
-    <div class="row">
-      <div class="col-md-4">
-        <p class="text-center font-weight-bold">Född</p>
-        <WellCell v-bind:date="formatDate(this.person.birth_date)"
-                  v-bind:location="formatLocation(this.person.birth_location)"></WellCell>
-      </div>
-      <div class="col-md-4">
-        <p class="text-center font-weight-bold">Död</p>
-        <WellCell v-bind:date="formatDate(this.person.death_date)"
-                  v-bind:location="formatLocation(this.person.death_location)"></WellCell>
+        <h4>{{ Lang('ppage.birth.heading') }}</h4>
+        <DateLocationProp
+          type="birth"
+          :date="elvis(person, 'birth.date')"
+          :location="elvis(person, 'birth.location')"
+          :notes="elvis(person, 'birth.notes')"/>
 
-      </div>
-      <div class="col-md-4">
-        <p class="text-center font-weight-bold">Begravd</p>
-        <WellCell v-bind:date="formatDate(person.bury_date)"
-                  v-bind:location="formatLocation(this.person.bury_location)"></WellCell>
-      </div>
-    </div>
+        <h4>{{ Lang('ppage.death.heading') }}</h4>
+        <p>{{ formatDate(elvis(this.person, 'death.date')) }}</p>
+        <p>{{ formatLocation(elvis(this.person, 'death.location')) }}</p>
 
-    <b-container>
-      <b-row>
-        <b-col>
-          <h4>Fader</h4>
-          <name-link :person="father"></name-link>
-        </b-col>
-        <b-col>
-          <h4>Moder</h4>
-          <name-link :person="mother"/>
-        </b-col>
-      </b-row>
-    </b-container>
+        <h4>{{Lang('ppage.burial.heading')}}</h4>
+        <p>{{ formatDate(elvis(this.person, 'burial.date')) }}</p>
+        <p>{{ formatLocation(elvis(this.person, 'burial.location')) }}</p>
 
-    <h4 v-if="siblings.length > 0">Syskon</h4>
-    <ul class="person-list">
-      <li v-for="sib in siblings" :key="sib.id">
-        <name-link :person="sib"></name-link>
-      </li>
-    </ul>
-
-    <h4 v-if="children.length > 0">Barn</h4>
-    <ul class="person-list">
-      <li v-for="child in children" :key="child.id">
-        <name-link :person="child"></name-link>
-      </li>
-    </ul>
-    <h4>Anteckningar</h4>
-    <p>{{person.notes}}</p>
+        <h4>{{ Lang('ppage.note') }}</h4>
+        <p>{{ this.person.notes }}</p>
+      </b-col>
+      <b-col cols="7">
+        <h1>HO!</h1>
+      </b-col>
+    </b-row>
 
   </div>
 </template>
 
 <script>
-  import WellCell from './WellCell';
-  import {FETCH_PERSON_BY_ID} from '../../../store/actions.type';
-  import NameLink from '../../person/NameLink';
+import {FETCH_PERSON_BY_ID} from '../../../store/actions.type';
+import NameLink from '../../person/NameLink';
+import DateLocationProp from '@/components/pages/PersonalFilePage/DateLocationProp';
 
-  export default {
-    name: 'PersonalFilePage',
-    components: {NameLink, WellCell},
-    data() {
-      return {
-        person: null,
-        father: null,
-        mother: null,
-        siblings: [],
-        children: [],
-      };
-    },
-    created() {
-      const id = this.$route.params.id;
-      this.$store.dispatch(FETCH_PERSON_BY_ID, id)
-        .then(data => {
-          this.person = data;
+export default {
+  name: 'PersonalFilePage',
+  components: {DateLocationProp, NameLink},
+  data() {
+    return {
+      person: null,
+      father: null,
+      mother: null,
+      siblings: [],
+      children: [],
+    };
+  },
+  created() {
+    const id = this.$route.params.id;
+    this.$store.dispatch(FETCH_PERSON_BY_ID, id)
+      .then(data => {
+        this.person = data;
 
-          if (this.person.father) {
-            this.$store.dispatch(FETCH_PERSON_BY_ID, this.person.father)
-              .then(data => {
-                this.father = data;
-                if (this.person.mother) {
-                  this.$store.dispatch(FETCH_PERSON_BY_ID, this.person.mother)
-                    .then(data => {
-                      this.mother = data;
-                    });
-                }
-              });
-          }
+        if (this.person.father) {
+          this.$store.dispatch(FETCH_PERSON_BY_ID, this.person.father)
+            .then(data => {
+              this.father = data;
+              if (this.person.mother) {
+                this.$store.dispatch(FETCH_PERSON_BY_ID, this.person.mother)
+                  .then(data => {
+                    this.mother = data;
+                  });
+              }
+            });
+        }
 
-          for (const child of this.person.children) {
-            this.$store.dispatch(FETCH_PERSON_BY_ID, child)
-              .then(data => {
-                this.children.push(data);
-              })
-              .catch(err => console.log(err));
-          }
+        for (const child of this.person.children) {
+          this.$store.dispatch(FETCH_PERSON_BY_ID, child)
+            .then(data => {
+              this.children.push(data);
+            })
+            .catch(err => console.log(err));
+        }
 
-          for (const sib of this.person.siblings) {
-            this.$store.dispatch(FETCH_PERSON_BY_ID, sib)
-              .then(data => {
-                this.siblings.push(data);
-              })
-              .catch(err => console.log(err));
-          }
-        })
-        .catch(err => {
-          console.log(err);
-          this.$router.replace({name: 'MissingPage'});
-        });
-    },
-  };
+        for (const sib of this.person.siblings) {
+          this.$store.dispatch(FETCH_PERSON_BY_ID, sib)
+            .then(data => {
+              this.siblings.push(data);
+            })
+            .catch(err => console.log(err));
+        }
+      })
+      .catch(err => {
+        console.log(err);
+        this.$router.replace({name: 'MissingPage'});
+      });
+  },
+};
 </script>
 
 <style scoped>
 
-  .person-list {
-    list-style-type: none;
-  }
+.person-list {
+  list-style-type: none;
+}
 
 </style>

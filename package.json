@@ -6,7 +6,7 @@
   "main": "src/main.js",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "webpack",
     "lint": "vue-cli-service lint",
     "start": "node server.js"
   },
@@ -15,26 +15,28 @@
   },
   "author": "Sebastian Hegardt",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.32",
+    "@fortawesome/free-solid-svg-icons": "^5.15.1",
+    "@fortawesome/vue-fontawesome": "^2.0.0",
     "@popperjs/core": "^2.5.4",
     "axios": "^0.19.2",
     "bootstrap": "^4.5.3",
     "bootstrap-vue": "^2.19.0",
     "core-js": "^2.6.11",
     "d3": "^5.16.0",
+    "date-fns": "^2.16.1",
     "dotenv-webpack": "^1.8.0",
     "express": "^4.17.1",
     "jquery": "^3.5.1",
     "leaflet": "^1.7.1",
     "leaflet-geosearch": "^2.7.0",
-    "moment": "^2.29.1",
     "mongoose": "^5.10.14",
     "qs": "^6.9.4",
     "serve-static": "^1.14.1",
     "vue": "^2.6.12",
     "vue-router": "^3.4.9",
     "vuetable-2": "^1.7.5",
-    "vuex": "^3.5.1",
-    "webpack": "^4.44.2"
+    "vuex": "^3.5.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.12.1",
@@ -47,7 +49,9 @@
     "lint-staged": "^8.1.5",
     "node-sass": "^4.14.1",
     "sass-loader": "^10.1.0",
-    "vue-template-compiler": "^2.6.12"
+    "vue-template-compiler": "^2.6.12",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^4.2.0"
   },
   "postcss": {
     "plugins": {

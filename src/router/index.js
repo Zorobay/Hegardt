@@ -15,7 +15,7 @@ import RecipePage from '../components/pages/RecipePage/RecipePage';
 
 Vue.use(VueRouter);
 
-export default new VueRouter({
+const router = new VueRouter({
   routes: [
     {
       path: '/',
@@ -79,3 +79,5 @@ export default new VueRouter({
       component: MissingPage,
     }],
 });
+
+export default router;

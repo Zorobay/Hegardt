@@ -32,20 +32,10 @@
         perPage: 50,
         fields: [
           "link",
-          {
-            key: "first_name",
-            sortable: true,
-          },
-          {
-            key: "last_name",
-            sortable: true
-          },
-          {
-            key: "birth_date",
-            sortable: true,
-            formatter: "formatDate"
-          },
-          {key: "death_date", sortable: true, formatter: "formatDate"},
+          {key: "first_name", sortable: true},
+          {key: "last_name", sortable: true},
+          {key: "birth.date", label: "Birth Date", sortable: true, formatter: "formatDate"},
+          {key: "death.date", label: "Death Date", sortable: true, formatter: "formatDate"},
           {key: "occupation", sortable: true, formatter: "formatOccupations"}]
       }
     },

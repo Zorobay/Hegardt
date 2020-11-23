@@ -99,13 +99,13 @@
         return !!(e && e.match(this.email_regexp));
       },
       invalidPassword() {
-        return "Password must be longer than 6 symbols!";
+        return "Password must be longer than 8 symbols!";
       },
       passwordState() {
         let p = this.form.password;
         if (p.length === 0)
           return null;
-        return !!(p.length >= 6);
+        return (p.length >= 8);
       },
       invalidConfirmPassword() {
         return "Passwords do not match!";
@@ -115,7 +115,7 @@
         let cp = this.form.confirmPassword;
         if (!this.passwordState || cp.length === 0)
           return null;
-        return !!(p === cp);
+        return (p === cp);
       },
       userIdState() {
         let id = this.form.person_id;
@@ -136,18 +136,18 @@
         };
         UserService.registerUser(user)
           .then(res => {
-            if (res.status === 200) {
+            if (res.status === 201) {
               this.success = true;
             }
           })
           .catch(err => {
             if (err.response.status === 422) {
-              let data = err.response.data;
+              let data = err.response.data.errors;
               if (data.length > 1) {
                 throw err;
               } else {
                 let err0 = data[0];
-                if (err0.msg.code === "USER_EXISTS") {
+                if (err0.param === "email") {
                   this.failed_exists = true;
                 }
               }
