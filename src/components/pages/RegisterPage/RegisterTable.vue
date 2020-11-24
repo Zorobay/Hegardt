@@ -24,32 +24,32 @@
 <script>
 
   export default {
-    name: "RegisterTable",
-    props: ["items"],
+    name: 'RegisterTable',
+    props: ['items'],
     data() {
       return {
         currentPage: 1,
         perPage: 50,
         fields: [
-          "link",
-          {key: "first_name", sortable: true},
-          {key: "last_name", sortable: true},
-          {key: "birth.date", label: "Birth Date", sortable: true, formatter: "formatDate"},
-          {key: "death.date", label: "Death Date", sortable: true, formatter: "formatDate"},
-          {key: "occupation", sortable: true, formatter: "formatOccupations"}]
-      }
+          'link',
+          {key: 'first_name', sortable: true},
+          {key: 'last_name', sortable: true},
+          {key: 'birth.date', label: 'Birth Date', sortable: true, formatter: 'formatDate'},
+          {key: 'death.date', label: 'Death Date', sortable: true, formatter: 'formatDate'},
+          {key: 'occupation', sortable: true, formatter: 'formatOccupations'}],
+      };
     },
     methods: {
-      getIdURL: function (id) {
-        return "#/person/id/" + id;
-      }
+      getIdURL: function(id) {
+        return '#/person/id/' + id;
+      },
     },
     computed: {
       rows() {
         return this.items.length;
-      }
-    }
-  }
+      },
+    },
+  };
 </script>
 
 <style scoped>

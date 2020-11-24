@@ -43,7 +43,8 @@
         <b-form-group
           :invalid-feedback="invalidUserId"
           :state="userIdState"
-          description="If you exist in the database, please enter your ID. The ID is the last part of the url (after the /id/) of a personal file, like this: hegardt/person/id/000000000000000000100182"
+          description="If you exist in the database, please enter your ID. The ID is the last part of the url (after the /id/) of a personal file,
+           like this: hegardt/person/id/000000000000000000100182"
           label="Personal Database ID"
           label-for="person-id-input"
         >
@@ -63,76 +64,82 @@
 </template>
 
 <script>
-  import {UserService} from "../../../common/api.service";
+  import {UserService} from '../../../common/api.service';
 
   const ObjectId = require('mongoose').Types.ObjectId;
 
   export default {
-    name: "SignupPage",
+    name: 'SignupPage',
     data() {
       return {
         form: {
-          email: "",
-          password: "",
-          confirmPassword: "",
-          person_id: ""
+          email: '',
+          password: '',
+          confirmPassword: '',
+          person_id: '',
         },
-        email_regexp: new RegExp(`(.+)@(.+)\\.(.+)`),
+        email_regexp: new RegExp('(.+)@(.+)\\.(.+)'),
         success: false,
-        failed_exists: false
-      }
+        failed_exists: false,
+      };
     },
     computed: {
       invalidEmail() {
-        if (this.failed_exists)
-          return "A user with that email already exists!";
-        else
-          return "Please enter a valid email address.";
+        if (this.failed_exists) {
+          return 'A user with that email already exists!';
+        } else {
+          return 'Please enter a valid email address.';
+        }
       },
       emailState() {
-        if (this.failed_exists)
+        if (this.failed_exists) {
           return false;
+        }
 
-        let e = this.form.email;
-        if (e.length === 0)
+        const e = this.form.email;
+        if (e.length === 0) {
           return null;
+        }
         return !!(e && e.match(this.email_regexp));
       },
       invalidPassword() {
-        return "Password must be longer than 8 symbols!";
+        return 'Password must be longer than 8 symbols!';
       },
       passwordState() {
-        let p = this.form.password;
-        if (p.length === 0)
+        const p = this.form.password;
+        if (p.length === 0) {
           return null;
+        }
         return (p.length >= 8);
       },
       invalidConfirmPassword() {
-        return "Passwords do not match!";
+        return 'Passwords do not match!';
       },
       confirmPasswordState() {
-        let p = this.form.password;
-        let cp = this.form.confirmPassword;
-        if (!this.passwordState || cp.length === 0)
+        const p = this.form.password;
+        const cp = this.form.confirmPassword;
+        if (!this.passwordState || cp.length === 0) {
           return null;
+        }
         return (p === cp);
       },
       userIdState() {
-        let id = this.form.person_id;
-        if (!id)
+        const id = this.form.person_id;
+        if (!id) {
           return null;
-        return !!(ObjectId.isValid(id) && ObjectId(id).toString() === id);
+        }
+        return !!(ObjectId.isValid(id) && new ObjectId(id).toString() === id);
       },
       invalidUserId() {
-        return "This is not a valid ID!";
-      }
+        return 'This is not a valid ID!';
+      },
     },
     methods: {
       onSubmit() {
-        let user = {
+        const user = {
           email: this.form.email,
           password: this.form.password,
-          person_id: this.form.person_id
+          person_id: this.form.person_id,
         };
         UserService.registerUser(user)
           .then(res => {
@@ -142,12 +149,12 @@
           })
           .catch(err => {
             if (err.response.status === 422) {
-              let data = err.response.data.errors;
+              const data = err.response.data.errors;
               if (data.length > 1) {
                 throw err;
               } else {
-                let err0 = data[0];
-                if (err0.param === "email") {
+                const err0 = data[0];
+                if (err0.param === 'email') {
                   this.failed_exists = true;
                 }
               }
@@ -157,8 +164,8 @@
           });
       },
 
-    }
-  }
+    },
+  };
 </script>
 
 <style scoped>
