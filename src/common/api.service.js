@@ -1,5 +1,4 @@
 const API_BASE = `${process.env.VUE_APP_API_BASE_URL}/`;
-console.log(`API_BASE: ${API_BASE}`);
 
 const RECIPE_ALL = API_BASE + 'recipe/all';
 const RECIPE_NAME = API_BASE + 'recipe/title/';

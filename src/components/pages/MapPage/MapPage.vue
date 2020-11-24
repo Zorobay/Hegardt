@@ -10,48 +10,49 @@
 </template>
 
 <script>
-  import LeafletMap from "./LeafletMap";
-  import {FETCH_ALL_PEOPLE} from "../../../store/actions.type";
-  import MapControls from "./MapControls";
-  import ConditionModel from "../../../common/ConditionModel";
+  import {FETCH_ALL_PEOPLE} from '@/store/actions.type';
+  import LeafletMap from '@/components/pages/MapPage/LeafletMap';
+  import MapControls from '@/components/pages/MapPage/MapControls';
+  import ConditionModel from '@/common/ConditionModel';
 
   export default {
-    name: "MapPage",
+    name: 'MapPage',
     components: {MapControls, LeafletMap},
     data() {
       return {
         people: [],
         fPeople: [],
         loaded: false,
-      }
+      };
     },
     computed: {
       mapSettings() {
         return this.$store.getters.mapSettings;
-      }
+      },
     },
     watch: {
       mapSettings: {
         deep: true,
         handler(newVal, oldVal) {
           this.filterPeople();
-        }
-      }
+        },
+      },
     },
     methods: {
       filterPeople() {
-        let cm = new ConditionModel();
+        const cm = new ConditionModel();
 
-        if (!this.mapSettings.checked.includes("dead"))
-          cm.addCondition("is_dead", false);
+        if (!this.mapSettings.checked.includes('dead')) {
+          cm.addCondition('is_dead', false);
+        }
 
         console.log(this.fPeople.length);
         this.fPeople = this.people.filter(p => {
-          cm.evalutate(p);
+          cm.evaluate(p);
         });
 
         console.log(this.fPeople.length);
-      }
+      },
     },
     created() {
       if (this.$store.getters.allPeopleFetched) {
@@ -66,8 +67,8 @@
             this.loaded = true;
           });
       }
-    }
-  }
+    },
+  };
 </script>
 
 <style scoped>

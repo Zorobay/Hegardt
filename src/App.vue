@@ -8,8 +8,8 @@
 </template>
 
 <script>
-  import Navbar from './components/navbar/Navbar';
   import {CHANGE_LANGUAGE} from './store/actions.type';
+  import Navbar from '@/components/navbar/Navbar';
 
   export default {
     name: 'app',
@@ -24,7 +24,7 @@
     created() {
       // Load default language English
       this.$store.dispatch(CHANGE_LANGUAGE, this.defaultLang)
-        .then(res => console.log(`Loaded language file for default language code [${this.defaultLang}]`));
+        .then(_ => console.log(`Loaded language file for default language code [${this.defaultLang}]`));
     },
   };
 </script>

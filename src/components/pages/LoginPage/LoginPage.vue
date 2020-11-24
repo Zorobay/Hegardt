@@ -32,26 +32,27 @@
   import {UserService} from '@/common/api.service';
 
   export default {
-    name: "LoginPage",
+    name: 'LoginPage',
     data() {
       return {
         missingUserAlert: false,
         wrongPass: false,
         form: {
-          email: "",
-          password: ""
-        }
-      }
+          email: '',
+          password: '',
+        },
+      };
     },
     computed: {
-      passwordInvalid(){
-        return "Invalid Password!";
+      passwordInvalid() {
+        return 'Invalid Password!';
       },
       passwordState() {
-        if (this.wrongPass)
+        if (this.wrongPass) {
           return false;
+        }
         return null;
-      }
+      },
     },
     methods: {
       onSubmit() {
@@ -64,16 +65,16 @@
           .catch(err => {
             const res = err.response;
             if (res.status === 401) { // Authentication error!
-              if (res.data.code === "WRONG_LOGIN_INFORMATION") {
+              if (res.data.code === 'WRONG_LOGIN_INFORMATION') {
                 this.wrongPass = true;
-              } else if (res.data.code === "USER_MISSING") {
+              } else if (res.data.code === 'USER_MISSING') {
                 this.missingUserAlert = true;
               }
             }
           });
-      }
-    }
-  }
+      },
+    },
+  };
 </script>
 
 <style scoped>

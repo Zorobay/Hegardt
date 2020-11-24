@@ -15,7 +15,7 @@
 </template>
 
 <script>
-  import {CHANGE_MAP_SETTINGS} from '../../../store/actions.type';
+  import {CHANGE_MAP_SETTINGS} from '@/store/actions.type';
 
   export default {
     name: 'MapControls',

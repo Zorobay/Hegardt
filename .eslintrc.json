@@ -19,6 +19,7 @@
     "vue"
   ],
   "rules": {
+    "require-jsdoc": "off",
     "vue/script-indent": [
       "error",
       2,

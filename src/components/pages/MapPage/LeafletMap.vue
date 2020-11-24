@@ -5,11 +5,11 @@
 </template>
 
 <script>
-  import * as L from "leaflet";
-  import GeoSearcher from "../../../common/GeoSearcher";
+  import * as L from 'leaflet';
+  import GeoSearcher from '@/common/GeoSearcher';
 
   export default {
-    props: ["people"],
+    props: ['people'],
     data() {
       return {
         geosearcher: null,
@@ -20,26 +20,27 @@
         layers: [],
         mapProviders: {
           openstreet: {
-            url: "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
-            attrib: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, &copy; <a href="https://carto.com/attribution">CARTO</a>'
+            url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+            attrib: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, ' +
+              '&copy; <a href="https://carto.com/attribution">CARTO</a>',
           },
           mapc: {
-            url: "http://tiles.mapc.org/basemap/{z}/{x}/{y}.png",
-            attrib: "Tiles by <a href=\"http://mapc.org\">MAPC</a>, Data by <a href=\"http://mass.gov/mgis\">MassGIS</a>"
-          }
+            url: 'http://tiles.mapc.org/basemap/{z}/{x}/{y}.png',
+            attrib: 'Tiles by <a href="http://mapc.org">MAPC</a>, Data by <a href="http://mass.gov/mgis">MassGIS</a>',
+          },
         },
         markerIcon: L.icon({
-          iconUrl: "icons/standing-up-man.png",
+          iconUrl: 'icons/standing-up-man.png',
           iconSize: [20, 24],
-          iconAnchor: [5, 10]
-        })
-      }
+          iconAnchor: [5, 10],
+        }),
+      };
     },
     mounted() {
       this.initMap();
       this.addMarkers();
     },
-    name: "LeafletMap",
+    name: 'LeafletMap',
     methods: {
       initMap() {
         this.geosearcher = new GeoSearcher();
@@ -50,30 +51,31 @@
           {
             maxZoom: 18,
             attribution: this.mapProviders.openstreet.attrib,
-          }
+          },
         );
         this.tileLayer.addTo(this.map);
       },
       addMarkers() {
-        for (let p of this.people) {
-          if (!p.birth_location)
+        for (const p of this.people) {
+          if (!elvis(p, 'birth.location')) {
             continue;
+          }
 
-          let longitude = p.birth_location.longitude;
-          let latitude = p.birth_location.latitude;
+          const longitude = p.birth_location.longitude;
+          const latitude = p.birth_location.latitude;
 
           if (longitude && latitude) {
-            let marker = L.marker([latitude, longitude], {icon: this.markerIcon})
+            const marker = L.marker([latitude, longitude], {icon: this.markerIcon})
               .on('click', function() {
-                this.$router.push({name: "PersonalFile", params: {id: p._id}})
+                // TODO Invalid 'this'? this.$router.push({name: 'PersonalFile', params: {id: p._id}});
               })
               .addTo(this.map);
-            marker.bindTooltip(p.full_name, {className: "tooltip", permanent: false, opacity: 0.7});
+            marker.bindTooltip(p.full_name, {className: 'tooltip', permanent: false, opacity: 0.7});
           }
         }
       },
-    }
-  }
+    },
+  };
 </script>
 
 <style scoped>

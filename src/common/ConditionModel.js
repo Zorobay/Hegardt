@@ -1,6 +1,5 @@
 export default class ConditionModel {
-
-  constructor(){
+  constructor() {
     this.conditions = {};
   }
 
@@ -8,8 +7,8 @@ export default class ConditionModel {
     this.conditions[key] = value;
   }
 
-  evalutate(obj) {
-    for (let k in this.conditions) {
+  evaluate(obj) {
+    for (const k in this.conditions) {
       if (obj[k] === undefined || obj[k] !== this.conditions[k]) {
         return false;
       }

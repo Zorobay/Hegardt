@@ -4,7 +4,7 @@
       <router-link
         :to="{name: 'PersonalFile', params: {id: person._id}}">{{person.full_name}}
       </router-link>
-      <span class="badge badge-info">{{formatDate(person.birth_date)}}</span>
+      <span class="badge badge-info">{{formatDate(elvis(person, 'birth.date'))}}</span>
     </h6>
     <h6 v-else>?</h6>
   </div>

@@ -11,9 +11,8 @@
 </template>
 
 <script>
-  import RegisterTable from './RegisterTable';
-  import {FETCH_ALL_PEOPLE} from '../../../store/actions.type';
-  import {mapGetters} from 'vuex';
+  import {FETCH_ALL_PEOPLE} from '@/store/actions.type';
+  import RegisterTable from '@/components/pages/RegisterPage/RegisterTable';
 
   export default {
     name: 'RegisterPage',

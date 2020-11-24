@@ -42,8 +42,7 @@
 
 <script>
   import SearchForm from './SearchForm';
-  import {SET_LANGUAGE} from '../../store/mutations.type';
-  import {CHANGE_LANGUAGE} from '../../store/actions.type';
+  import {CHANGE_LANGUAGE} from '@/store/actions.type';
 
   export default {
     name: 'Navbar',

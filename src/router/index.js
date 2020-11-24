@@ -10,8 +10,6 @@ import SignupPage from '../components/pages/SignupPage/SignupPage.vue';
 import PersonalFilePage from '../components/pages/PersonalFilePage/PersonalFilePage.vue';
 import LoginPage from '../components/pages/LoginPage/LoginPage.vue';
 import FamilyTreePage from '../components/pages/FamilyTreePage/FamilyTreePage.vue';
-import RecipesPage from '../components/pages/RecipesPage/RecipesPage';
-import RecipePage from '../components/pages/RecipePage/RecipePage';
 
 Vue.use(VueRouter);
 
@@ -41,16 +39,6 @@ const router = new VueRouter({
       path: '/hegardt/person/id/:id',
       name: 'PersonalFile',
       component: PersonalFilePage,
-    },
-    {
-      path: '/recipes',
-      name: 'RecipesPage',
-      component: RecipesPage,
-    },
-    {
-      path: '/recipe/:title',
-      name: 'RecipePage',
-      component: RecipePage,
     },
     {
       path: '/hegardt/map',

@@ -1,7 +1,7 @@
 import '../scss/custom.scss';
 import '@/assets/global.css';
-import formatDate from 'date-fns/format'
-import get from 'lodash/get';
+import formatDate from 'date-fns/format';
+import get from 'lodash';
 
 import Vue from 'vue';
 import Vuex from 'vuex';
@@ -16,12 +16,12 @@ import router from './router';
 import App from './App.vue';
 
 // Fontawesome icons
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { faVenus, faMars, faStickyNote } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import {library} from '@fortawesome/fontawesome-svg-core';
+import {faVenus, faMars, faStickyNote} from '@fortawesome/free-solid-svg-icons';
+import {FontAwesomeIcon} from '@fortawesome/vue-fontawesome';
 
 library.add(faVenus, faMars, faStickyNote);
-Vue.component('font-awesome-icon', FontAwesomeIcon)
+Vue.component('font-awesome-icon', FontAwesomeIcon);
 
 Vue.use(BootstrapVue);
 Vue.use(IconsPlugin);
@@ -30,7 +30,6 @@ Vue.config.productionTip = false;
 
 // Import and use leaflet for maps
 import {Icon} from 'leaflet';
-
 
 
 // import "leaflet.icon.glyph";
@@ -56,7 +55,7 @@ Vue.mixin({
     },
     formatDate: function(dateObject) {
       if (!dateObject || !dateObject.date) {
-        return ''
+        return '';
       }
 
       let formatString = '';
@@ -66,9 +65,9 @@ Vue.mixin({
       }
 
       if (dateObject.month) {
-        formatString += '-MM'
+        formatString += '-MM';
         if (dateObject.day) {
-          formatString += '-dd'
+          formatString += '-dd';
         }
       }
 
@@ -89,7 +88,7 @@ Vue.mixin({
     },
     elvis: function(obj, path) {
       return get(obj, path);
-    }
+    },
   },
 });
 

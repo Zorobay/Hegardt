@@ -1,12 +1,12 @@
 {
   "name": "client",
-  "version": "0.1.0",
+  "version": "1.1.0",
   "description": "The frontend of hegardt.se",
   "private": true,
   "main": "src/main.js",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "webpack",
+    "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "start": "node server.js"
   },
@@ -30,6 +30,7 @@
     "jquery": "^3.5.1",
     "leaflet": "^1.7.1",
     "leaflet-geosearch": "^2.7.0",
+    "lodash": "^4.17.20",
     "mongoose": "^5.10.14",
     "qs": "^6.9.4",
     "serve-static": "^1.14.1",
@@ -41,14 +42,16 @@
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.12.1",
     "@vue/cli-plugin-eslint": "^3.12.1",
-    "@vue/cli-service": "^3.12.1",
+    "@vue/cli-service": "^4.5.9",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.8.0",
     "eslint-config-google": "^0.14.0",
     "eslint-plugin-vue": "^6.2.2",
+    "file-loader": "^6.2.0",
     "lint-staged": "^8.1.5",
     "node-sass": "^4.14.1",
     "sass-loader": "^10.1.0",
+    "vue-loader": "^15.9.5",
     "vue-template-compiler": "^2.6.12",
     "webpack": "^4.44.2",
     "webpack-cli": "^4.2.0"
