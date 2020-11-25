@@ -1,4 +1,4 @@
-import {OpenStreetMapProvider} from "leaflet-geosearch";
+import {OpenStreetMapProvider} from 'leaflet-geosearch';
 
 export default class GeoSearcher {
   constructor() {

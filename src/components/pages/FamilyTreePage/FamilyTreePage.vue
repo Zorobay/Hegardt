@@ -29,22 +29,22 @@
 </template>
 
 <script>
-  import * as d3 from "d3";
+  import * as d3 from 'd3';
 
 
   export default {
-    name: "FamilyTreePage",
+    name: 'FamilyTreePage',
     data() {
       return {
         data: [{
-          id: 1, name: "Sebastian", children: [{id: 2, name: "Anna", children: []},
-            {id: 3, name: "Sören", children: []}]
+          id: 1, name: 'Sebastian', children: [{id: 2, name: 'Anna', children: []},
+                                               {id: 3, name: 'Sören', children: []}],
         }],
         selected: null,
         settings: {
-          strokeColor: "#29B5FF",
-          width: 100
-        }
+          strokeColor: '#29B5FF',
+          width: 100,
+        },
       };
     },
     computed: {
@@ -54,46 +54,46 @@
         root.dy = this.settings.width / (root.height + 1);
         return d3.cluster().nodeSize([root.dx, root.dy])(root);
       },
-      nodes: function () {
-        var that = this;
+      nodes() {
         if (this.tree) {
           return this.tree.descendants().map(d => {
-            let x = (200 + d.x) + "px";
-            let y = parseInt(-1 * d.y + 30) + "px";
+            // const x = (200 + d.x) + 'px';
+            // const y = parseInt(-1 * d.y + 30) + 'px';
             return {
               id: d.id,
               r: 2.5,
               text: d.id,
               textpos: {
                 x: d.children ? -8 : 8,
-                y: 3
+                y: 3,
               },
               textStyle: {
-                textAnchor: d.children ? "end" : "start"
-              }
+                textAnchor: d.children ? 'end' : 'start',
+              },
             };
           });
         }
+        return new Map();
       },
-      links: function () {
-        return this.tree.descendants().slice(1).map(function (d) {
-          let x = d.x + 200, parent_x = d.parent.x + 200;
-          let y = parseInt(-1 * d.y + 30);
-          let parent_y = parseInt(-1 * d.parent.y + 30);
+      links() {
+        return this.tree.descendants().slice(1).map(function(d) {
+          const x = d.x + 200; const parentX = d.parent.x + 200;
+          const y = parseInt(-1 * d.y + 30);
+          const parentY = parseInt(-1 * d.parent.y + 30);
           return {
             id: d.id,
-            d: "M" + x + "," + y + "L" + parent_x + "," + parent_y,
+            d: 'M' + x + ',' + y + 'L' + parentX + ',' + parentY,
           };
         });
-      }
+      },
 
     },
     methods: {
-      select: function (index, node) {
+      select: function(index, node) {
         this.selected = index;
-      }
-    }
-  }
+      },
+    },
+  };
 </script>
 
 <style scoped>

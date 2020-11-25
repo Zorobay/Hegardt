@@ -20,20 +20,20 @@
 </template>
 
 <script>
-  import PeopleService from "../../../common/api.service";
+  import PeopleService from '../../../common/api.service';
 
   export default {
-    name: "HegardtPage",
+    name: 'HegardtPage',
     data() {
       return {
         stats: {},
-      }
+      };
     },
     created() {
       PeopleService.getStats()
         .then(stats => this.stats = stats);
-    }
-  }
+    },
+  };
 </script>
 
 <style scoped>
