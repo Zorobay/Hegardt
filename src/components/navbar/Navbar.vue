@@ -17,7 +17,7 @@
           <b-dropdown-item :to="{name: 'FamilyTreePage'}">Family Tree</b-dropdown-item>
         </b-nav-item-dropdown>
 
-        <b-nav-item-dropdown v-bind:text="Lang('menu.other_projects')">
+        <b-nav-item-dropdown :text="Lang('menu.other_projects')">
           <b-dropdown-item href="#/recipes">{{ Lang('menu.recipes') }}</b-dropdown-item>
         </b-nav-item-dropdown>
       </b-navbar-nav>
