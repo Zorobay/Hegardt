@@ -3,13 +3,16 @@ const API_BASE = `${process.env.VUE_APP_API_BASE_URL}/`;
 const RECIPE_ALL = API_BASE + 'recipe/all';
 const RECIPE_NAME = API_BASE + 'recipe/title/';
 
-const PEOPLE_ID = API_BASE + 'person/id/';
+const PERSON_ID = API_BASE + 'person/id/';
+const PERSON_COMPLETE_ID = API_BASE + 'person/complete/';
 const PEOPLE_ALL = API_BASE + 'person/all';
 const PEOPLE_NAME = API_BASE + 'person/query/name/';
 const PEOPLE_STATS = API_BASE + 'person/stats';
 
 const USER_REGISTER = API_BASE + 'user/register';
 const USER_AUTHENTICATE = API_BASE + 'user/authenticate';
+
+const LANGUAGE_FILE = '/lang/';
 
 import axios from 'axios';
 import qs from 'qs';
@@ -43,7 +46,11 @@ const PeopleService = {
   },
 
   async getPersonById(id) {
-    return this._get(PEOPLE_ID + id);
+    return this._get(PERSON_ID + id);
+  },
+
+  async getCompletePersonById(id) {
+    return this._get(PERSON_COMPLETE_ID + id);
   },
 
   async getPersonsByName(query) {
@@ -76,6 +83,14 @@ export const RecipeService = {
 
   async getRecipeByTitle(title) {
     return this._get(RECIPE_NAME + title);
+  },
+};
+
+export const LanguageService = {
+  ...Service,
+
+  getLanguageFile(file) {
+    return this._get(LANGUAGE_FILE + file);
   },
 };
 

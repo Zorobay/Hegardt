@@ -26,7 +26,7 @@
 </template>
 
 <script>
-  import {FETCH_PEOPLE_BY_NAME} from '../../store/actions.type';
+  import {FETCH_PERSON_BY_NAME} from '../../store/actions.type';
 
   export default {
     name: 'SearchForm',
@@ -45,7 +45,7 @@
       searchCallback() {
         this.showDropdown = true;
         if (this.query.length > 0) {
-          this.$store.dispatch(FETCH_PEOPLE_BY_NAME, this.query)
+          this.$store.dispatch(FETCH_PERSON_BY_NAME, this.query)
             .then(data => {
               this.results = data;
             })

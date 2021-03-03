@@ -1,5 +1,6 @@
 import {SET_LANGUAGE, SET_LANGUAGE_DICT} from './mutations.type';
 import {CHANGE_LANGUAGE} from './actions.type';
+import {LanguageService} from '@/common/api.service';
 
 export const state = {
   language: 'en',
@@ -10,22 +11,13 @@ export const actions = {
   [CHANGE_LANGUAGE](context, lang) {
     if (lang === 'en' || lang === 'se') {
       context.commit(SET_LANGUAGE, lang);
-      const xhr = new XMLHttpRequest();
-      xhr.open('GET', `/lang/${lang}.json`, false);
-      // xhr.responseType = 'json';
-      xhr.onload = function() {
-        if (xhr.status !== 200) {
-          console.error(`Failed to retrieve language file ${lang}.json`);
-        } else {
-          try {
-            context.commit(SET_LANGUAGE_DICT, JSON.parse(xhr.responseText));
-          } catch (e) {
-            console.error('Could not parse response as JSON: ' + xhr.responseText);
-          }
-        }
-      };
-
-      xhr.send();
+      LanguageService.getLanguageFile(`${lang}.json`)
+          .then(data => {
+            context.commit(SET_LANGUAGE_DICT, data);
+          })
+          .catch(err => {
+            console.error(`Failed to retrieve language file ${lang}.json\nReason: ${err}`);
+          });
     }
   },
 };

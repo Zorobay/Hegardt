@@ -1,7 +1,6 @@
-import {FETCH_ALL_PEOPLE, FETCH_PERSON_BY_ID, FETCH_PEOPLE_BY_NAME} from './actions.type';
+import {FETCH_ALL_PEOPLE, FETCH_COMPLETE_PERSON_BY_ID, FETCH_PERSON_BY_ID, FETCH_PERSON_BY_NAME} from './actions.type';
 import PeopleService from '../common/api.service';
 import {ADD_PERSON_TO_HASH, SET_ALL_PEOPLE} from './mutations.type';
-
 
 export const state = {
   allPeopleFetched: false,
@@ -39,7 +38,7 @@ export const actions = {
           });
     }
   },
-  async [FETCH_PEOPLE_BY_NAME](context, keyword) {
+  async [FETCH_PERSON_BY_NAME](context, keyword) {
     const processed = keyword.split(' ').map(t => `(.*${t})`);
     const reg = new RegExp(processed, 'ig');
 
@@ -49,8 +48,15 @@ export const actions = {
         resolve(subset);
       });
     } else {
-      return PeopleService.getPersonsByName(keyword);
+      return PeopleService.getPersonsByName(keyword)
+          .then(person => {
+            context.commit(ADD_PERSON_TO_HASH, person);
+            return person;
+          });
     }
+  },
+  async [FETCH_COMPLETE_PERSON_BY_ID](context, id) {
+    return PeopleService.getCompletePersonById(id);
   },
   async [FETCH_ALL_PEOPLE](context) {
     return PeopleService.getAllPersons()

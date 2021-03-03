@@ -1,7 +1,7 @@
 import '../scss/custom.scss';
-import '@/assets/global.css';
+import '../public/global.css';
 import formatDate from 'date-fns/format';
-import get from 'lodash';
+import _get from 'lodash/get';
 
 import Vue from 'vue';
 import Vuex from 'vuex';
@@ -44,7 +44,8 @@ Icon.Default.mergeOptions({
 Vue.mixin({
   methods: {
     Lang(path) {
-      return get(this.$store.getters.languageDict, path);
+      const value = _get(this.$store.getters.languageDict, path);
+      return value ? value : path;
     },
     formatRange: function(range) {
       let out = range[0];
@@ -87,7 +88,7 @@ Vue.mixin({
       }
     },
     elvis: function(obj, path) {
-      return get(obj, path);
+      return _get(obj, path);
     },
   },
 });

@@ -9,7 +9,7 @@
         </b-popover>
       </a>
     </h4>
-    <p>{{ formatDate(this.date) }}</p>
+    <p>{{ formatDate(date) }}</p>
     <p>
       {{ formatLocation(this.location) }}
       <a v-if="elvis(this.location, 'notes')" :id="locNotesId">
