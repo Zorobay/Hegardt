@@ -1,7 +1,9 @@
 import '../scss/custom.scss';
 import '../public/global.css';
 import formatDate from 'date-fns/format';
+import {enUS, sv} from 'date-fns/locale';
 import _get from 'lodash/get';
+import language from '@/common/enums/language';
 
 import Vue from 'vue';
 import Vuex from 'vuex';
@@ -43,18 +45,32 @@ Icon.Default.mergeOptions({
 // Define vue mixins
 Vue.mixin({
   methods: {
-    Lang(path) {
+    Text(path) {
       const value = _get(this.$store.getters.languageDict, path);
       return value ? value : path;
     },
-    formatRange: function(range) {
+    getLanguage() {
+      return this.$store.getters.language;
+    },
+    getLocale() {
+      const lang = this.getLanguage();
+      switch (lang) {
+        case language.ENGLISH:
+          return enUS;
+        case language.SWEDISH:
+          return sv;
+        default:
+          throw Error(`Could not find locale for language ${lang} as it is not supported!`);
+      }
+    },
+    formatRange(range) {
       let out = range[0];
       if (range[1]) {
         out += ` - ${range[1]}`;
       }
       return out;
     },
-    formatDate: function(dateObject) {
+    formatDate(dateObject) {
       if (!dateObject || !dateObject.date) {
         return '';
       }
@@ -74,20 +90,53 @@ Vue.mixin({
 
       return formatDate(new Date(dateObject.date), formatString);
     },
-    formatOccupations: function(occupations) {
+    prettyDate(dateObject) {
+      if (!dateObject || !dateObject.date) {
+        return '';
+      }
+      const locale = this.getLocale();
+
+      if (this.isCompleteDate(dateObject) && dateObject.date) {
+        return formatDate(new Date(dateObject.date), 'cccc, d MMMM yyyy', {locale: locale});
+      } else {
+        const date = new Date();
+        let format = '';
+
+        if (dateObject.day) {
+          date.setDate(dateObject.date);
+          format += 'd';
+        }
+
+        if (dateObject.month) {
+          date.setMonth(dateObject.month);
+          format += ' MMMM';
+        }
+
+        if (dateObject.year) {
+          date.setFullYear(dateObject.year);
+          format += ' yyyy';
+        }
+
+        return formatDate(date, format, {locale: locale}).trim();
+      }
+    },
+    isCompleteDate: function (dateObject) {
+      return dateObject.year && dateObject.month && dateObject.day;
+    },
+    formatOccupations: function (occupations) {
       if (occupations == null) {
         return '?';
       } else {
         return occupations.join(', ');
       }
     },
-    formatLocation: function(location) {
+    formatLocation: function (location) {
       if (location) {
         const locs = [location.city, location.region, location.country];
         return locs.filter(l => !!l).join(', ');
       }
     },
-    elvis: function(obj, path) {
+    elvis: function (obj, path) {
       return _get(obj, path);
     },
   },

@@ -1,15 +1,17 @@
 import {SET_LANGUAGE, SET_LANGUAGE_DICT} from './mutations.type';
 import {CHANGE_LANGUAGE} from './actions.type';
 import {LanguageService} from '@/common/api.service';
+import language from '@/common/enums/language';
+
 
 export const state = {
-  language: 'en',
+  language: language.ENGLISH,
   languageDict: {},
 };
 
 export const actions = {
   [CHANGE_LANGUAGE](context, lang) {
-    if (lang === 'en' || lang === 'se') {
+    if (Object.values(language).includes(lang)) {
       context.commit(SET_LANGUAGE, lang);
       LanguageService.getLanguageFile(`${lang}.json`)
           .then(data => {

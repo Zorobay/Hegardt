@@ -1,6 +1,6 @@
 import {FETCH_ALL_RECIPES, FETCH_RECIPE_BY_TITLE} from './actions.type';
 import {ADD_RECIPE_TO_HASH, SET_ALL_RECIPES} from './mutations.type';
-import {RecipeService} from '../common/api.service';
+import {RecipeService} from '@/common/api.service';
 
 
 export const state = {

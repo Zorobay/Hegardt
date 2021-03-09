@@ -1,5 +1,4 @@
 export default class JSONPerson {
-
   constructor(person) {
     this.json_person = {};
     this.setPerson(person);
@@ -20,7 +19,8 @@ export default class JSONPerson {
 
   /**
    * Returns a simple JSON representation of this person with only the properties needed to draw a family tree.
-   * @return {Object}
+   * @param {Object} person  a person object to slim down
+   * @return {null|Object|{}}
    */
   toFamilyTreeJson(person) {
     return JSONPerson.toSimpleJSON(person, ['id', 'full_name', 'mother', 'father', 'children', 'siblings', 'spouses']);

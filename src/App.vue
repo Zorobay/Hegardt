@@ -4,6 +4,7 @@
     <b-container class="app">
       <router-view :key="$route.fullPath"/>
     </b-container>
+
   </div>
 </template>
 

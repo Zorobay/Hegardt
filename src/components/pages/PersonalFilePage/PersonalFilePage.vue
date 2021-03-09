@@ -11,34 +11,8 @@
       <font-awesome-icon v-if="person.sex !== 'UNKNOWN'" :icon="person.sex === 'MAN' ? 'mars' : 'venus'" size="lg"/>
     </h1>
     <b-row>
-      <b-col class="person-info-column" cols="4">
-        <p>Född {{ this.person.age }} år sedan</p>
-
-        <DateLocationProp
-          :date="elvis(person, 'birth.date')"
-          :heading="Lang('ppage.birth.heading')"
-          :location="elvis(person, 'birth.location')"
-          :notes="elvis(person, 'birth.notes')"
-          type="birth"/>
-
-        <DateLocationProp
-          :date="elvis(person, 'death.date')"
-          :heading="Lang('ppage.death.heading')"
-          :location="elvis(person, 'death.location')"
-          :notes="elvis(person, 'death.notes')"
-          type="death"
-        />
-
-        <DateLocationProp
-          :date="elvis(person, 'burial.date')"
-          :heading="Lang('ppage.burial.heading')"
-          :location="elvis(person, 'burial.location')"
-          :notes="elvis(person, 'burial.notes')"
-          type="burial"
-        />
-
-        <h4>{{ Lang('ppage.note') }}</h4>
-        <p>{{ this.person.notes }}</p>
+      <b-col cols="4">
+        <info-side-bar :person="this.person"/>
       </b-col>
       <b-col cols="7">
         <close-family-tree
@@ -52,13 +26,13 @@
 
 <script>
   import {FETCH_COMPLETE_PERSON_BY_ID} from '@/store/actions.type';
-  import DateLocationProp from '@/components/pages/PersonalFilePage/DateLocationProp';
   import CloseFamilyTree from '@/components/pages/PersonalFilePage/CloseFamilyTree';
   import JSONPerson from '@/common/JSONPerson';
+  import InfoSideBar from '@/components/pages/PersonalFilePage/InfoSideBar/InfoSideBar';
 
   export default {
     name: 'PersonalFilePage',
-    components: {CloseFamilyTree, DateLocationProp},
+    components: {InfoSideBar, CloseFamilyTree},
     data() {
       return {
         person: null,
@@ -134,9 +108,5 @@
 </script>
 
 <style scoped>
-
-.person-list {
-  list-style-type: none;
-}
 
 </style>
