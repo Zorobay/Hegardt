@@ -120,23 +120,23 @@ Vue.mixin({
         return formatDate(date, format, {locale: locale}).trim();
       }
     },
-    isCompleteDate: function (dateObject) {
+    isCompleteDate: function(dateObject) {
       return dateObject.year && dateObject.month && dateObject.day;
     },
-    formatOccupations: function (occupations) {
+    formatOccupations: function(occupations) {
       if (occupations == null) {
         return '?';
       } else {
         return occupations.join(', ');
       }
     },
-    formatLocation: function (location) {
+    formatLocation: function(location) {
       if (location) {
         const locs = [location.city, location.region, location.country];
         return locs.filter(l => !!l).join(', ');
       }
     },
-    elvis: function (obj, path) {
+    elvis: function(obj, path) {
       return _get(obj, path);
     },
   },

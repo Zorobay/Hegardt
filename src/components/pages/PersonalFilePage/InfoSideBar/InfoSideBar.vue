@@ -18,13 +18,13 @@
 </template>
 
 <script>
-import DateLocation from '@/components/pages/PersonalFilePage/InfoSideBar/DateLocation';
+  import DateLocation from '@/components/pages/PersonalFilePage/InfoSideBar/DateLocation';
 
-export default {
-  name: 'InfoSideBar',
-  components: {DateLocation},
-  props: ['person'],
-};
+  export default {
+    name: 'InfoSideBar',
+    components: {DateLocation},
+    props: ['person'],
+  };
 </script>
 
 <style scoped type="scss">
