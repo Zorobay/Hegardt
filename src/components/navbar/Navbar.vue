@@ -6,7 +6,7 @@
 
     <b-collapse id="nav-collapse" is-nav>
 
-      <!--Left aligned nav items-->n
+      <!--Left aligned nav items-->
       <b-navbar-nav>
         <b-nav-item href="#/">{{ Text('menu.home') }}</b-nav-item>
 
