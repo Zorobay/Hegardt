@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-@import "style/personal_file.scss";
+@import "style/global.scss";
+@import "style/personalFilePage.scss";
+@import "style/familyTree.scss";
 
 .app {
     font-family: 'Open Sans', Helvetica, Arial, sans-serif;

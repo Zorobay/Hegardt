@@ -2,15 +2,23 @@
   "menu": {
     "language": "Språk",
     "home": "Hem",
-    "other_projects": "Andra Project",
+    "otherProjects": "Andra Project",
     "register": "Register",
     "recipes": "Recept",
     "map": "Karta",
     "swedish": "Svenska",
     "english": "Engelska"
   },
+  "creditPage": {
+    "heading": "Credits",
+    "iconCredit": {
+      "heading": "Ikoner"
+    }
+  },
   "ppage": {
-    "note": "Notering",
+    "note": {
+      "heading": "Beskrivning"
+    },
     "birth": {
       "heading": "Födelse"
     },
@@ -19,6 +27,21 @@
     },
     "burial": {
       "heading": "Begravning"
+    },
+    "occupations": {
+      "heading": "Yrken"
+    },
+    "references": {
+      "heading": "Referenser"
+    },
+    "familyTree": {
+      "marriageInfo": "mer info",
+      "marriageModal": {
+        "title": "Information om giftemål",
+        "date": "Datum",
+        "location": "Plats",
+        "notes": "Noteringar"
+      }
     }
   }
 }
