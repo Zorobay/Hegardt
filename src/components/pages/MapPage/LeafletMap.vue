@@ -70,7 +70,7 @@
                 // TODO Invalid 'this'? this.$router.push({name: 'PersonalFile', params: {id: p._id}});
               })
               .addTo(this.map);
-            marker.bindTooltip(p.full_name, {className: 'tooltip', permanent: false, opacity: 0.7});
+            marker.bindTooltip(p.fullName, {className: 'tooltip', permanent: false, opacity: 0.7});
           }
         }
       },

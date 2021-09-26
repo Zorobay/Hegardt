@@ -1,48 +1,46 @@
 <template>
+  <div v-if="this.person" class="personal-file-page">
+    <img src="icons/blank-avatar.svg" width="20%"/>
 
-  <div v-if="this.person">
-    <b-avatar size="200px">
-
-    </b-avatar>
     <collapsible-text :text="person" id-prefix="person-json"/>
-
     <h1>
-      {{ this.person.full_name }}
+      {{ this.person.fullName }}
       <font-awesome-icon v-if="person.sex !== 'UNKNOWN'" :icon="person.sex === 'MAN' ? 'mars' : 'venus'" size="lg"/>
     </h1>
-    <b-row>
-      <b-col cols="5">
-        <info-side-bar :person="this.person"/>
-      </b-col>
-      <b-col cols="7">
-        <close-family-tree2
+
+    <p>{{elvis(person, 'notes')}}</p>
+    <div class="what">
+      <personal-info-table
+        :person="person"
+      />
+    </div>
+
+    <h3>Family Tree</h3>
+    <close-family-tree
           :person="person"
           :mother="mother"
           :father="father"
+          :siblings="siblings"
           :children="children"
           :spouses="spouses"
           :marriages="marriages"
         />
-      </b-col>
-    </b-row>
 
   </div>
 </template>
 
 <script>
   import {FETCH_COMPLETE_PERSON_BY_ID} from '@/store/actions.type';
-  import JSONPerson from '@/common/JSONPerson';
-  import InfoSideBar from '@/components/pages/PersonalFilePage/InfoSideBar/InfoSideBar';
   import CollapsibleText from '@/components/common/CollapsibleText';
-  import CloseFamilyTree2 from '@/components/pages/PersonalFilePage/FamilyTree/CloseFamilyTree2';
+  import CloseFamilyTree from '@/components/pages/PersonalFilePage/FamilyTree/CloseFamilyTree';
+  import PersonalInfoTable from '@/components/pages/PersonalFilePage/PersonalInfoTable/PersonalInfoTable';
 
   export default {
     name: 'PersonalFilePage',
-    components: {CollapsibleText, InfoSideBar, CloseFamilyTree2},
+    components: {PersonalInfoTable, CollapsibleText, CloseFamilyTree},
     data() {
       return {
         person: null,
-        json_person: null,
         father: null,
         mother: null,
         siblings: [],
@@ -65,19 +63,11 @@
           this.children = data.children;
           this.siblings = data.siblings;
           this.spouses = data.spouses;
-          this.setJsonPerson();
         })
         .catch(err => {
           console.log(err);
           this.$router.replace({name: 'MissingPage'});
         });
-    },
-    methods: {
-      setJsonPerson() {
-        this.json_person = new JSONPerson(this.person);
-        this.json_person.setMother(this.mother);
-        this.json_person.setFather(this.father);
-      },
     },
   };
 </script>

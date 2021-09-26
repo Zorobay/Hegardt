@@ -1,5 +1,7 @@
 <template>
   <div>
+    <h1>{{ Text('creditPage.heading') }}</h1>
+    <h2>{{ Text('creditPage.iconCredit.heading') }}</h2>
     <div>
       Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from
       <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>

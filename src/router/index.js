@@ -36,7 +36,7 @@ const router = new VueRouter({
       component: FamilyTreePage,
     },
     {
-      path: '/hegardt/person/id/:id',
+      path: '/hegardt/person/:id',
       name: 'PersonalFile',
       component: PersonalFilePage,
     },
@@ -47,7 +47,7 @@ const router = new VueRouter({
     },
     {
       path: '/credit',
-      name: 'Credit',
+      name: 'CreditPage',
       component: CreditPage,
     },
     {

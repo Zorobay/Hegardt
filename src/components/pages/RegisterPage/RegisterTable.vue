@@ -14,8 +14,7 @@
 
       <!-- A custom formatted column -->
       <template v-slot:cell(link)="data">
-        <router-link v-bind:to="{name: 'PersonalFile', params: {id: data.item._id}}">GO
-        </router-link>
+        <router-link v-bind:to="{name: 'PersonalFile', params: {id: data.item.id}}">GO</router-link>
       </template>
     </b-table>
   </div>
@@ -32,8 +31,8 @@
         perPage: 50,
         fields: [
           'link',
-          {key: 'first_name', sortable: true},
-          {key: 'last_name', sortable: true},
+          {key: 'firstName', sortable: true},
+          {key: 'lastName', sortable: true},
           {key: 'birth.date', label: 'Birth Date', sortable: true, formatter: 'formatDate'},
           {key: 'death.date', label: 'Death Date', sortable: true, formatter: 'formatDate'},
           {key: 'occupation', sortable: true, formatter: 'formatOccupations'}],

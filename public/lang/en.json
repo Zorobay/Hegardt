@@ -2,23 +2,15 @@
   "menu": {
     "language": "Language",
     "home": "Home",
-    "otherProjects": "Other Projects",
+    "other_projects": "Other Projects",
     "register": "Register",
     "recipes": "Recipes",
     "map": "Map",
     "swedish": "Swedish",
     "english": "English"
   },
-  "creditPage": {
-    "heading": "Credits",
-    "iconCredit": {
-      "heading": "Icons"
-    }
-  },
   "ppage": {
-    "note": {
-      "heading": "Description"
-    },
+    "note": "Note",
     "birth": {
       "heading": "Birth"
     },
@@ -27,21 +19,6 @@
     },
     "burial": {
       "heading": "Burial"
-    },
-    "occupations": {
-      "heading": "Occupations"
-    },
-    "references": {
-      "heading": "References"
-    },
-    "familyTree": {
-      "marriageInfo": "more info",
-      "marriageModal": {
-        "title": "Marriage details",
-        "date": "Date",
-        "location": "Location",
-        "notes": "Notes"
-      }
     }
   }
 }
