@@ -3,7 +3,7 @@ const API_BASE = `${process.env.VUE_APP_API_BASE_URL}/`;
 const RECIPE_ALL = API_BASE + 'recipe/all';
 const RECIPE_NAME = API_BASE + 'recipe/title/';
 
-const PERSON_ID = API_BASE + 'person/id/';
+const PERSON_ID = API_BASE + 'person/';
 const PERSON_COMPLETE_ID = API_BASE + 'person/complete/';
 const PEOPLE_ALL = API_BASE + 'person/all';
 const PEOPLE_NAME = API_BASE + 'person/query/name/';
