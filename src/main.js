@@ -8,6 +8,7 @@ import language from '@/common/enums/language';
 import Vue from 'vue';
 import Vuex from 'vuex';
 import store from './store';
+import UUID, {uuid} from 'vue-uuid';
 
 // Import Bootstrap and Bootstrap Vue
 import {BootstrapVue, IconsPlugin} from 'bootstrap-vue';
@@ -19,19 +20,19 @@ import App from './App.vue';
 
 // Fontawesome icons
 import {library} from '@fortawesome/fontawesome-svg-core';
-import {faVenus, faMars, faStickyNote} from '@fortawesome/free-solid-svg-icons';
+import {faChevronDown, faChevronUp, faMars, faPlusCircle, faStickyNote, faVenus} from '@fortawesome/free-solid-svg-icons';
 import {FontAwesomeIcon} from '@fortawesome/vue-fontawesome';
+// Import and use leaflet for maps
+import {Icon} from 'leaflet';
 
-library.add(faVenus, faMars, faStickyNote);
+library.add(faVenus, faMars, faStickyNote, faChevronDown, faChevronUp, faPlusCircle);
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 
 Vue.use(BootstrapVue);
 Vue.use(IconsPlugin);
 Vue.use(Vuex);
+Vue.use(UUID);
 Vue.config.productionTip = false;
-
-// Import and use leaflet for maps
-import {Icon} from 'leaflet';
 
 
 // import "leaflet.icon.glyph";
@@ -42,7 +43,7 @@ Icon.Default.mergeOptions({
   shadowUrl: require('leaflet/dist/images/marker-shadow.png'),
 });
 
-// Define vue mixins
+// Define vue global mixins
 Vue.mixin({
   methods: {
     Text(path) {
@@ -138,6 +139,25 @@ Vue.mixin({
     },
     elvis: function(obj, path) {
       return _get(obj, path);
+    },
+    toName: function(s) {
+      return s[0].toUpperCase() + s.slice(1, s.length);
+    },
+    addIds(list) {
+      if (list) {
+        return list.map(el => {
+          if (el instanceof Object) {
+            return {
+              ...el, id: uuid.v4(),
+            };
+          } else {
+            return {
+              content: el, id: uuid.v4(),
+            };
+          }
+        });
+      }
+      return list;
     },
   },
 });

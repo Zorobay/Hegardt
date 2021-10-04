@@ -39,7 +39,7 @@
     },
     methods: {
       resultClicked(res) {
-        this.query = res.full_name;
+        this.query = res.fullName;
         this.$router.push({name: 'PersonalFile', params: {id: res._id}});
       },
       searchCallback() {

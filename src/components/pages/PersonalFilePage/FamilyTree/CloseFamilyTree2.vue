@@ -18,19 +18,19 @@
     <!-- Current Person and edge to first marriage-->
     <person-node :id="personId" :height="node.height" :person="person" :width="node.width"
                  :x="fromPercentagePosX(50)" :y="fromPercentagePosY(50)" current="true"/>
-    <edge v-if="spouses.length > 0" :end-node-id="marriageId(spouses[0])" :start-node-id="personId"
+    <edge v-if="marriages.length > 0" :end-node-id="marriageId(marriages[0])" :start-node-id="personId"
           end-anchor="right" start-anchor="bottom"/>
 
 
     <!-- Spouses, marriages and children-->
-    <g v-for="(spouse, spouseIndex) in spouses" :key="spouseId(spouse)">
+    <g v-for="(spouse, spouseIndex) in marriages" :key="spouseId(spouse)">
       <person-node :id="spouseId(spouse)" :height="node.height" :person="spouse" :width="node.width"
                    :x="spousePositionX(spouseIndex)" :y="fromPercentagePosY(50)"/>
       <marriage-node :id="marriageId(spouse)" :height="marriageNode.height"
                      :marriage="findMarriageFromSpouse(spouse)" :width="marriageNode.width"
                      :x="marriagePositionX(spouseIndex)" :y="fromPercentagePosY(62.5)"/>
       <edge :end-node-id="marriageId(spouse)" :start-node-id="spouseId(spouse)" end-anchor="top" start-anchor="bottom"/>
-      <edge v-if="spouseIndex > 0" :end-node-id="marriageId(spouse)" :start-node-id="marriageId(spouses[spouseIndex-1])"
+      <edge v-if="spouseIndex > 0" :end-node-id="marriageId(spouse)" :start-node-id="marriageId(marriages[spouseIndex-1])"
             end-anchor="right" start-anchor="left"/>
 
       <!-- Children and edges -->
@@ -43,10 +43,10 @@
     </g>
 
     <!-- Grid -->
-    <line :x1="500" :x2="500" stroke-dasharray="4" style="stroke-width: 1; stroke: black; opacity: 30%;" y1="0%"
-          y2="100%"/>
-    <line stroke-dasharray="4" style="stroke-width: 1; stroke: black; opacity: 30%" x1="0%" x2="100%" y1="50%"
-          y2="50%"/>
+<!--    <line :x1="500" :x2="500" stroke-dasharray="4" style="stroke-width: 1; stroke: black; opacity: 30%;" y1="0%"-->
+<!--          y2="100%"/>-->
+<!--    <line stroke-dasharray="4" style="stroke-width: 1; stroke: black; opacity: 30%" x1="0%" x2="100%" y1="50%"-->
+<!--          y2="50%"/>-->
 
   </svg-container>
 </template>
@@ -61,7 +61,7 @@
   export default {
     name: 'CloseFamilyTree2',
     components: {MarriageNode, SvgContainer, PersonNode, Edge},
-    props: ['person', 'mother', 'father', 'children', 'spouses', 'marriages'],
+    props: ['person', 'mother', 'father', 'children', 'marriages', 'spouses'],
     data: function() {
       return {
         canvas_width: 1000,
@@ -71,7 +71,7 @@
         selfYPerc: 50,
         childrenYPerc: 75,
         numChildren: this.children ? this.children.length : 0,
-        numSpouses: this.spouses ? this.spouses.length : 0,
+        numMarriages: this.marriages ? this.marriages.length : 0,
         node: {
           width: 200,
           height: 100,
@@ -115,8 +115,8 @@
         return `edge-${startPerson.id} -> ${endPerson.id}`;
       },
       findMarriageFromSpouse(spouse) {
-        const marriages = this.person.spouses;
-        const marriage = marriages.filter(m => m._id === spouse.id);
+        const marriages = this.person.marriages;
+        const marriage = marriages.filter(m => m.personId === spouse.id);
         return marriage.length >= 1 ? marriage[0] : null;
       },
       findChildrenFromSpouse(spouse) {

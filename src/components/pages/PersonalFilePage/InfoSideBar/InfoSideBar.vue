@@ -1,6 +1,6 @@
 <template>
   <div class="person-info-sidebar">
-    <p>Född {{ person.age }} år sedan</p>
+<!--    <p>Född {{ person.age }} år sedan</p>-->
 
     <info-sidebar-row :heading-note="elvis(person, 'birth.notes')"
                       :info="prettyDate(elvis(person, 'birth.date'))"
@@ -20,10 +20,17 @@
                       :sub-info="formatLocation(elvis(person, 'burial.location'))"
                       heading-key="ppage.burial.heading"
                       id-prefix="burial"/>
-    <info-sidebar-row v-if="elvis(person, 'notes')"
-                      :info="elvis(person, 'notes')"
+    <info-sidebar-row v-if="elvis(person, 'occupations')"
+                      :info="elvis(person, 'occupations')"
+                      heading-key="ppage.occupations.heading"
+                      id-prefix="occupations"/>
+    <info-sidebar-row :info="elvis(person, 'notes')"
                       heading-key="ppage.note.heading"
                       id-prefix="notes"/>
+    <info-sidebar-row v-if="elvis(person, 'references').length > 0"
+                      :info="elvis(person, 'references')"
+                      heading-key="ppage.references.heading"
+                      id-prefix="references"/>
   </div>
 </template>
 
@@ -39,6 +46,8 @@
 
 <style scoped type="scss">
 .person-info-sidebar {
+  padding-top: 1%;
+  padding-bottom: 1%;
   background-color: #f0f0f0;
   border-radius: 15px;
 }

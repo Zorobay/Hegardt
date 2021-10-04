@@ -17,14 +17,14 @@
         :transform="textCenterTransform" :width="textBoxWidth"
         :x="x"
         :y="y">
-        <p class="person-node-name">{{ person.full_name }}</p>
+        <p class="person-node-name">{{ person.fullName }}</p>
       </foreignObject>
     </router-link>
   </g>
 </template>
 
 <script>
-  import sex from '@/common/enums/sex';
+  import Sex from '@/common/enums/sex';
   import NodeMixin from '@/components/pages/PersonalFilePage/FamilyTree/mixins/NodeMixin';
 
   export default {
@@ -34,7 +34,7 @@
     data() {
       return {
         isCurrent: !!this.current,
-        sex: this.person.sex === sex.UNKNOWN ? null : this.person.sex,
+        sex: this.person.sex === Sex.UNKNOWN ? null : this.person.sex,
       };
     },
     computed: {

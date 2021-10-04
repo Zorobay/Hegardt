@@ -1,7 +1,7 @@
 <template>
   <div id="svg-container" class="svg-container">
-    <p>viewBox: {{ viewBoxPretty }}</p>
-    <p>mousePos: {{mousePos }}</p>
+<!--    <p>viewBox: {{ viewBoxPretty }}</p>-->
+<!--    <p>mousePos: {{mousePos }}</p>-->
 
     <svg viewBox="0 0 1000 1000" id="svg-canvas-outer">
       <svg :viewBox="viewBox" id="svg-canvas-inner">

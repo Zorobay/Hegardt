@@ -12,7 +12,7 @@
     <b-tbody>
       <b-tr>
         <b-td stacked-heading="Antal personer">{{stats.count}}</b-td>
-        <b-td stacked-heading="Storlek (Mb)">{{stats.size / 1024 / 1024}}</b-td>
+        <b-td stacked-heading="Storlek (MB)">{{sizeInMB}}</b-td>
       </b-tr>
     </b-tbody>
     </b-table-simple>
@@ -21,6 +21,7 @@
 
 <script>
   import PeopleService from '../../../common/api.service';
+  import _ from 'lodash';
 
   export default {
     name: 'HegardtPage',
@@ -32,6 +33,12 @@
     created() {
       PeopleService.getStats()
         .then(stats => this.stats = stats);
+    },
+    computed: {
+      sizeInMB() {
+        const sizeMB = (this.stats.size ? this.stats.size : 0) / 1024 / 1024;
+        return _.round(sizeMB, 2);
+      },
     },
   };
 </script>

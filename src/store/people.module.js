@@ -43,7 +43,7 @@ export const actions = {
     const reg = new RegExp(processed, 'ig');
 
     if (false) { // Find people by filtering the existing collection
-      const subset = state.peoples.filter(p => p.full_name.match(reg));
+      const subset = state.peoples.filter(p => p.fullName.match(reg));
       return new Promise((resolve, reject) => {
         resolve(subset);
       });
@@ -61,7 +61,9 @@ export const actions = {
   async [FETCH_ALL_PEOPLE](context) {
     return PeopleService.getAllPersons()
         .then(data => {
-          context.commit(SET_ALL_PEOPLE, data);
+          if (data) {
+            context.commit(SET_ALL_PEOPLE, data);
+          }
           return data;
         });
   },
