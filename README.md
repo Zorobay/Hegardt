@@ -1,79 +1,68 @@
-# Hegardt Frontend
+# hegardt-nuxt
 
-## TODO
-- [x] Update gender of all people by parsing HTML (father, mother or grandfather, grandmother)...
-- [x] Store people and recipes as a HashMap in the store to allow for fast retrieval with ID
-- [ ] Implement **webpack**
-- [ ] Implement login functionality
-- [ ] Implement admin mode to edit people and upload new people
-- [ ] Implement function to choose **language**!
-  - [x] Implement language button
-  - [ ] Implement the language in most elements on the site.
-  - [ ] Save language file to local storage (validate age of it too)
-  - [ ] Set active class to dropdown item when clicked
-- [ ] Features in `PersonalFilePage`
-  - [x] Add birth date to the right of all names (links)
-  - [x] Fix children
-  - [x] Fix siblings
-- [ ] Features in `search-form`
-  - [x] Get search function to work again
-  - [ ] Show birth date in small print under the name in results
-  - [ ] Searching for `Johan Hegardt` now matches ALL Johan...not what we want.
-  - [x] Disable chrome form fill
-  - [ ] Enable arrow keys to be used in the result list (go over to a modified dropdown list?)
-- [ ] Features in `People map`
-  - [ ] Implement linking to PersonalFile when clicking on a marker in map
-  - Filtering (in a `Form` inside a `Collapse`)
-    - [ ] Gender
-    - [ ] Name
-    - [x] Dead or alive
-    - [ ] Location by born/dead/buried
-- [ ] `SignupPage`
-    - [ ] Check that the personal ID exists, and print the name that it links to.
-    - [ ] Check that email is not already registered!
-- [ ] **CV**
-- [ ] **Recipes**
-    - [x] Upload recipes to collection
-    - [x] Create recipe Model
-    - [x] List all recipes
-    - [x] Recipe page
-    - [ ] Creat a table of contents sidebar
-## Running the web app
-
-Run the frontend using: 
+## Build Setup
 
 ```bash
-npm run serve --fix
+# install dependencies
+$ npm install
+
+# serve with hot reload at localhost:3000
+$ npm run dev
+
+# build for production and launch server
+$ npm run build
+$ npm run start
+
+# generate static project
+$ npm run generate
 ```
 
-## Development
+For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
 
-### Install npm dependencies
-First, install all the dependencies:
-```npm
-npm install
-```
+## Special Directories
 
-### Define environment variables
+You can create the following extra directories, some of which have special behaviors. Only `pages` is required; you can delete them if you don't want to use their functionality.
 
-Create a `.env` file in the root directory and define the following variables
+### `assets`
 
-```.env
-# Requires the prefix VUE_APP and url requires http/https:// protocol
-VUE_APP_API_BASE_URL=<http://url:port>  
-```
+The assets directory contains your uncompiled assets such as Stylus or Sass files, images, or fonts.
 
-### Setup heroku
-Install the [heroku CLI](https://devcenter.heroku.com/articles/heroku-cli) if not already installed: 
+More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/assets).
 
-Open console and login to heroku using `heroku login`. Find the heroku project name using `heroku list`.
+### `components`
 
-Finally, add the gir remote to be able to push new changes to heroku:
+The components directory contains your Vue.js components. Components make up the different parts of your page and can be reused and imported into your pages, layouts and even other components.
 
-```
-heroku git:remote -a <project name> -r heroku
-```
+More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/components).
 
-### Push changes to heroku and git
+### `layouts`
 
-Changes can be pushed to git ONLY using `git push origin master` and to heroku ONLY using `git push heroku master`.
+Layouts are a great help when you want to change the look and feel of your Nuxt app, whether you want to include a sidebar or have distinct layouts for mobile and desktop.
+
+More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/layouts).
+
+### `pages`
+
+This directory contains your application views and routes. Nuxt will read all the `*.vue` files inside this directory and setup Vue Router automatically.
+
+More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/get-started/routing).
+
+### `plugins`
+
+The plugins directory contains JavaScript plugins that you want to run before instantiating the root Vue.js Application. This is the place to add Vue plugins and to inject functions or constants. Every time you need to use `Vue.use()`, you should create a file in `plugins/` and add its path to plugins in `nuxt.config.js`.
+
+More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/plugins).
+
+### `static`
+
+This directory contains your static files. Each file inside this directory is mapped to `/`.
+
+Example: `/static/robots.txt` is mapped as `/robots.txt`.
+
+More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/static).
+
+### `store`
+
+This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
+
+More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
