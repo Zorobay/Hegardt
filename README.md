@@ -1,11 +1,29 @@
-# Hegardt.se
+# hegardt
 
-## Setup
+## Project Setup
 
-## External Docs
+```sh
+npm install
+```
 
-### Setup guide
-https://waelyasmina.medium.com/a-guide-into-using-handlebars-with-your-express-js-application-22b944443b65
+### Compile and Hot-Reload for Development
 
-### Bootstrap 5.3 components
-https://getbootstrap.com/docs/5.3/customize/components/
+```sh
+npm run dev
+```
+
+### Compile and Minify for Production
+
+```sh
+npm run build
+```
+
+### Lint with [ESLint](https://eslint.org/)
+
+```sh
+npm run lint
+```
+
+## Personal docs
+
+UX inspo: https://media.cdn.gladly.com/orgs/ZkpQ7SY1QbeWMlNKwKiNtw/assets/TB9BKKIARCiHvMqPoDVivQ/d0213bd5-a2e6-448e-ba78-ce96f3999707.png

@@ -1,17 +1,28 @@
-import persons from '../db/persons.js';
+import persons from "@/data/persons.js";
 
-export default class PersonService {
+class PersonService {
 
-    constructor() {
-        this._personsList = []
-        debugger;
+  constructor() {
+    this._data = persons
+    this._dataList = this._personsToList(persons)
+  }
+
+  _personsToList(persons) {
+    let out = []
+    for (const id in persons) {
+      const person = persons[id]
+      out.push(person)
     }
+    return out
+  }
 
-    getPersonById(id) {
-        return persons[id]
-    }
+  getAllPersonsList() {
+    return this._dataList
+  }
 
-    getAllPersons() {
-        return persons
-    }
+  getPersonById(id) {
+    return this._data[id]
+  }
 }
+
+export default new PersonService()
