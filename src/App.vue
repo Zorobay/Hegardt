@@ -9,7 +9,7 @@ import Navbar from "@/components/Navbar.vue";
   </header>
 
   <div class="container">
-    <RouterView/>
+    <RouterView :key="$route.path"/>
   </div>
 </template>
 

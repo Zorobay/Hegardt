@@ -23,6 +23,35 @@ class PersonService {
   getPersonById(id) {
     return this._data[id]
   }
+
+  getChilrenOfPersonById(id) {
+    const person = this.getPersonById(id);
+    const out = [];
+
+    if (person) {
+      const childIds = person.children;
+      for(const childId of childIds) {
+        out.push(this.getPersonById(childId));
+      }
+    }
+    return out;
+  }
+
+  getSiblingsOfPersonById(id) {
+    const person = this.getPersonById(id);
+    const out = [];
+
+    if (person) {
+      const mother = this.getPersonById(person.mother);
+      const father = this.getPersonById(person.father);
+
+      const childrenIds = new Set([...mother?.children, ...father?.children]);
+      for (const childId of childrenIds) {
+        out.push(this.getPersonById(childId));
+      }
+    }
+    return out;
+  }
 }
 
 export default new PersonService()

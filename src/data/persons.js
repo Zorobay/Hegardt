@@ -10,7 +10,7 @@ const persons = {
         "year": 1575
       },
       "location": null,
-      "notes": "F\u00f6dd sannolikt omkr 1575."
+      "notes": "Född sannolikt omkr 1575."
     },
     "burial": {
       "date": {
@@ -22,8 +22,8 @@ const persons = {
         "year": 1620
       },
       "location": {
-        "city": "\u00d8 H\u00f6jst",
-        "country": " Danmark",
+        "city": "Ø Höjst",
+        "country": "Danmark",
         "notes": "",
         "region": "",
         "latitude": 55.47306,
@@ -73,8 +73,8 @@ const persons = {
         "year": 1610
       },
       "location": {
-        "city": "\u00d8 H\u00f6jst",
-        "country": " Danmark",
+        "city": "Ø Höjst",
+        "country": "Danmark",
         "notes": "",
         "region": "",
         "latitude": 55.47306,
@@ -120,7 +120,7 @@ const persons = {
         "year": 1605
       },
       "location": null,
-      "notes": "F\u00f6dd omkr 1605."
+      "notes": "Född omkr 1605."
     },
     "burial": {
       "date": null,
@@ -143,7 +143,7 @@ const persons = {
       },
       "location": {
         "city": "Amsterdam",
-        "country": " Nederl\u00e4nderna",
+        "country": "Nederländerna",
         "notes": "",
         "region": "",
         "latitude": 52.36994,
@@ -172,7 +172,7 @@ const persons = {
     ],
     "middleNames": [],
     "mother": null,
-    "notes": "D\u00f6d i mars 1639 i Amsterdam, Nederl\u00e4nderna. [1]",
+    "notes": "Död i mars 1639 i Amsterdam, Nederländerna. [1]",
     "occupations": [],
     "references": [
       "se Peters dagbok"
@@ -204,7 +204,7 @@ const persons = {
     "marriages": [],
     "middleNames": [],
     "mother": null,
-    "notes": "D\u00f6pt 1611-11-16.",
+    "notes": "Döpt 1611-11-16.",
     "occupations": [],
     "references": [],
     "sex": "UNKNOWN",
@@ -297,10 +297,10 @@ const persons = {
     "lastName": "Hegardt",
     "marriages": [],
     "middleNames": [
-      "J\u00fcrgen"
+      "Jürgen"
     ],
     "mother": 4,
-    "notes": "Den tredje av de s\u00f6ner, som n\u00e4mns i Peters dagbok.",
+    "notes": "Den tredje av de söner, som nämns i Peters dagbok.",
     "occupations": [],
     "references": [
       "se Peters dagbok"
@@ -319,7 +319,7 @@ const persons = {
         "year": 1634
       },
       "location": null,
-      "notes": "F\u00f6dd 1634 eller 1635."
+      "notes": "Född 1634 eller 1635."
     },
     "burial": {
       "date": null,
@@ -342,7 +342,7 @@ const persons = {
     "marriages": [],
     "middleNames": [],
     "mother": 4,
-    "notes": "Ej namngiven i dagboken. Sannolikt namn efter farfadern? \u00d8vriga uppgifter har ej sp\u00e5rats.",
+    "notes": "Ej namngiven i dagboken. Sannolikt namn efter farfadern? Øvriga uppgifter har ej spårats.",
     "occupations": [],
     "references": [
       "se Peters dagbok"
@@ -362,7 +362,7 @@ const persons = {
       },
       "location": {
         "city": "Borkar",
-        "country": " Danmark",
+        "country": "Danmark",
         "notes": "",
         "region": "",
         "latitude": 55.67567,
@@ -414,7 +414,7 @@ const persons = {
     ],
     "middleNames": [],
     "mother": null,
-    "notes": "(Tab 1 i GS).\nFlyttade i b\u00f6rjan av 1700-talet till Sverige och var inspektor p\u00e5 Svenstorp hos sin kusin Maria Gyllenkrok (tab 99).",
+    "notes": "(Tab 1 i GS).\nFlyttade i början av 1700-talet till Sverige och var inspektor på Svenstorp hos sin kusin Maria Gyllenkrok (tab 99).",
     "occupations": [],
     "references": [
       "se Peters dagbok"
@@ -434,7 +434,7 @@ const persons = {
       },
       "location": {
         "city": "Braderup",
-        "country": " Danmark",
+        "country": "Danmark",
         "notes": "",
         "region": "",
         "latitude": 55.1219,
@@ -565,9 +565,9 @@ const persons = {
       "Josias"
     ],
     "mother": 10,
-    "notes": "(Tab 2 i GS).\nFlyttade omkring 1730 till Uddevalla fr\u00e5n Danmark.",
+    "notes": "(Tab 2 i GS).\nFlyttade omkring 1730 till Uddevalla från Danmark.",
     "occupations": [
-      "Handlande och fr\u00e5n 1748 r\u00e5dman d\u00e4r"
+      "Handlande och från 1748 rådman där"
     ],
     "references": [],
     "sex": "MAN",
@@ -585,7 +585,7 @@ const persons = {
       },
       "location": {
         "city": "Rendsburg",
-        "country": " Tyskland",
+        "country": "Tyskland",
         "notes": "",
         "region": "",
         "latitude": 54.2996,
@@ -649,7 +649,7 @@ const persons = {
     ],
     "middleNames": [],
     "mother": 10,
-    "notes": "Lysning togs ut 1:a g\u00e5ngen 1741-05-24.\nFlyttade till Sverige 1730-40.\nVar 1741 tullskrivare i Varberg. Blev sedermera tullinspektor p\u00e5 Marstrand.",
+    "notes": "Lysning togs ut 1:a gången 1741-05-24.\nFlyttade till Sverige 1730-40.\nVar 1741 tullskrivare i Varberg. Blev sedermera tullinspektor på Marstrand.",
     "occupations": [
       "Tullinspektor"
     ],
@@ -814,7 +814,7 @@ const persons = {
     ],
     "middleNames": [],
     "mother": 15,
-    "notes": "(Tab 2:3 i GS).\nMakarna instiftade genom gemensamt testamente 1772 Gustafsbergs barnhus p\u00e5 egendomen Baggetofta invid Uddevalla. (Ang Knape, se Biogr lex, del 6, \"N\u00e5gra minnesanteckningar om Gustafsbergs barnhus\", Udd 1906 och Grenfelt \"Gustafsbergs barnhus och badort\", Udd 1926.)",
+    "notes": "(Tab 2:3 i GS).\nMakarna instiftade genom gemensamt testamente 1772 Gustafsbergs barnhus på egendomen Baggetofta invid Uddevalla. (Ang Knape, se Biogr lex, del 6, \"Några minnesanteckningar om Gustafsbergs barnhus\", Udd 1906 och Grenfelt \"Gustafsbergs barnhus och badort\", Udd 1926.)",
     "occupations": [],
     "references": [],
     "sex": "UNKNOWN",
@@ -831,7 +831,7 @@ const persons = {
         "year": 1740
       },
       "location": {
-        "city": "p\u00e5 Saltk\u00e4llan i Foss ",
+        "city": "på Saltkällan i Foss",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -1120,7 +1120,7 @@ const persons = {
           "year": 1765
         },
         "location": {
-          "city": "Malm\u00f6",
+          "city": "Malmö",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -1147,14 +1147,14 @@ const persons = {
     ],
     "middleNames": [],
     "mother": 15,
-    "notes": "(Tab 3 i GS).\n(Brodern Johannes sv\u00e4gerska).\n\u00c4gde L\u00e4nderiet Annegreteberg samt \u00e5tskilliga sm\u00e4rre tomter och jordlotter utanf\u00f6r staden samt efterl\u00e4mnade en r\u00e4tt ansenlig f\u00f6rm\u00f6genhet.",
+    "notes": "(Tab 3 i GS).\n(Brodern Johannes svägerska).\nÄgde Länderiet Annegreteberg samt åtskilliga smärre tomter och jordlotter utanför staden samt efterlämnade en rätt ansenlig förmögenhet.",
     "occupations": [
       "Handlande och skeppsredare",
-      "Samt fr\u00e5n 1764 r\u00e5dman i uddevalla"
+      "Samt från 1764 rådman i uddevalla"
     ],
     "references": [
       "Lysning 13/2 1765",
-      "d\u00f6df\u00f6dd"
+      "dödfödd"
     ],
     "sex": "MAN",
     "id": 18
@@ -1316,7 +1316,7 @@ const persons = {
     "mother": 15,
     "notes": "(Tab 25 i GS).",
     "occupations": [
-      "Handlande och r\u00e5dman i uddevalla"
+      "Handlande och rådman i uddevalla"
     ],
     "references": [],
     "sex": "MAN",
@@ -1427,7 +1427,7 @@ const persons = {
           "year": 1765
         },
         "location": {
-          "city": "Malm\u00f6",
+          "city": "Malmö",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -1443,7 +1443,7 @@ const persons = {
     "occupations": [],
     "references": [
       "Lysning 13/2 1765",
-      "d\u00f6df\u00f6dd"
+      "dödfödd"
     ],
     "sex": "WOMAN",
     "id": 29
@@ -1493,7 +1493,7 @@ const persons = {
         "year": 1835
       },
       "location": {
-        "city": "p\u00e5 Annegreteberg i Uddevalla",
+        "city": "på Annegreteberg i Uddevalla",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -1583,7 +1583,7 @@ const persons = {
     "notes": "(Tab 3:6 i GS).",
     "occupations": [],
     "references": [
-      "d\u00f6df\u00f6dd"
+      "dödfödd"
     ],
     "sex": "UNKNOWN",
     "id": 31
@@ -1625,8 +1625,8 @@ const persons = {
         "year": 1810
       },
       "location": {
-        "city": "Okome pr\u00e4stg\u00e5rd",
-        "country": " \u00d8rby",
+        "city": "Okome prästgård",
+        "country": "Ørby",
         "notes": "",
         "region": "",
         "latitude": 58.45716,
@@ -1679,7 +1679,7 @@ const persons = {
         "year": 1752
       },
       "location": {
-        "city": "\u00d8rby",
+        "city": "Ørby",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -1705,8 +1705,8 @@ const persons = {
         "year": 1825
       },
       "location": {
-        "city": "Okome pr\u00e4stg\u00e5rd",
-        "country": " \u00d8rby",
+        "city": "Okome prästgård",
+        "country": "Ørby",
         "notes": "",
         "region": "",
         "latitude": 58.45716,
@@ -1810,8 +1810,8 @@ const persons = {
           "year": 1808
         },
         "location": {
-          "city": "Visnum pr\u00e4stg\u00e5rd",
-          "country": " Visnum",
+          "city": "Visnum prästgård",
+          "country": "Visnum",
           "notes": "",
           "region": ""
         },
@@ -1822,7 +1822,7 @@ const persons = {
     "mother": 29,
     "notes": "(Tab 3:8 i GS).",
     "occupations": [
-      "Gods\u00e4gare"
+      "Godsägare"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -1839,7 +1839,7 @@ const persons = {
         "year": 1787
       },
       "location": {
-        "city": "V\u00e4nersborg",
+        "city": "Vänersborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -1890,8 +1890,8 @@ const persons = {
           "year": 1808
         },
         "location": {
-          "city": "Visnum pr\u00e4stg\u00e5rd",
-          "country": " Visnum",
+          "city": "Visnum prästgård",
+          "country": "Visnum",
           "notes": "",
           "region": ""
         },
@@ -1997,7 +1997,7 @@ const persons = {
         "year": 1802
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -2052,7 +2052,7 @@ const persons = {
       },
       "location": {
         "city": "Edinburgh",
-        "country": " Skottland",
+        "country": "Skottland",
         "notes": "",
         "region": "",
         "latitude": 55.95438,
@@ -2077,7 +2077,7 @@ const persons = {
         "year": 1848
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -2262,9 +2262,9 @@ const persons = {
       "Bernhard"
     ],
     "mother": 30,
-    "notes": "(Tab 4 i GS).\nStudent i Lund 1795. Juridisk examen d\u00e4r 1796 3/5 (examen juridicum et historicum) samt responderade f\u00f6r en akademisk avhandling \"de infinito numine nobis incomprehensibile\". Eo kanslist vid utrikes statsexpeditionen febr 1797. Studerade vid Uppsala universitet v\u00e5rterminerna 1797 och 1799. Tj\u00e4nstgjorde vid riksdagen i Norrk\u00f6ping 1800. Legationssekreterare vid beskickningen till riksf\u00f6rsamlingen i Regensburg 1801 4/6 - aug 1806. Protokollssekreterare vid utrikes statsexpeditionen 1807 25/5. Utn\u00e4mnd till legationssekreterare i Wien sommaren 1810 (ankom dit 1811), samt charg\u00e9 d'affaires d\u00e4r aug 1812 - juli 1816. Kanslir\u00e5d 1817 26/3. S\u00e4ndes samma \u00e5r i juni i s\u00e4rskilt uppdrag till engelska hovet och var april - aug svenskt s\u00e4ndebud i K\u00f6penhamn.\nRNO 1817 7/10. Adlad (med bibeh\u00e5llet namn) med anledning av Carl Johans kr\u00f6ning 1818 11/5 (introducerad 1819 under nr 2262).\nLedamot av rikets allm\u00e4nna \u00e4renders beredning 1819. Statssekreterare f\u00f6r handel- och finans\u00e4renden 1820 aug - dec och d\u00e4runder ledamot av generaltulldirektionen. Ledamot av finanskommitten 1822 och av konvojkommissariatet 1825. Revisor \u00f6ver bankodiskontverket 1826-1829 och 1832.\nBevistade riksdagarna 1823 (ledamot av expeditionsutskottet, vald till suppleant f\u00f6r riksg\u00e4ldsfullm\u00e4ktige), 1828-1830 (ledamot av sammansatta stats- och bankoutskottet, vald till suppleant f\u00f6r bankofullm\u00e4ktige), 1834?1835 (ledamot av konstitutionsutskottet samt av n\u00e4mnden f\u00f6r val av justitieombudsman); vald till riksg\u00e4ldsfullm\u00e4ktige). Bankofullm\u00e4ktig 1832 1/2 - 1834 och riksg\u00e4ldsfullm\u00e4ktig sept 1834 till sin d\u00f6d. Recentior i frimurarlogen S:t Erik 1800.\nH var en synnerligen skicklig \u00e4mbetsman och en framst\u00e5ende diplomat. J D Valerius skrev om honom med anledning av hans fr\u00e5nf\u00e4lle, bl a f\u00f6ljande: \"Om man vill skapa sig ett m\u00e4nniskoideal av of\u00f6renbara motsatser, huvudet klart men hetsigt, nordisk karakt\u00e4r och sydl\u00e4ndskt lynne, den f\u00f6rra energisk och ob\u00f6jlig, det senare vekligt och \u00f6mt\u00e5ligt som sensitivan, --- och om d\u00e4rav likv\u00e4l uppkommer ett \u00e4delt, harmoniskt helt --- s\u00e5 skulle bilden framst\u00e5 f\u00f6rverkligad i Kristian Bernhard Hegardt. Rik p\u00e5 begrepp och kunskaper, anv\u00e4nd i m\u00e5ngfaldiga allm\u00e4nna v\u00e4rv, var han en djup t\u00e4nkare, kall diplomat, mogen statsman, sansad talare.\nK\u00e4rleken till r\u00e4ttvisa och ljus, hatet mot allt vr\u00e5ngt och dunkelt bragte honom dock ofta i feber, n\u00e4r han, ren och genomskinlig till b\u00e5de avsikt och system, vederlades med fraser eller av sorlet nedtystades. Men h\u00e5llande m\u00e5tta i saken, om ej i s\u00e4ttet, aldrig \u00f6vergivande det enda parti han fullf\u00f6ljde - \u00f6vertygelsens -, frisinnigt medborgerlig och lika frisinnigt konungskt, uppn\u00e5dde han slutligen m\u00e5let och m\u00f6ttes av f\u00f6rtroende.\nS\u00e5som enskild man kunde han, med ett ord, n\u00e4mnas efterd\u00f6mlig.\nSin v\u00e4rld h\u00e4r nere fann han i den \u00e4lskv\u00e4rda husliga kretsen, och skattade f\u00f6r \u00f6vrigt t\u00e4mligen ringa ett liv, som pl\u00e5gorna l\u00e5ngsamt f\u00f6rt\u00e4rde. Hans h\u00f6gre syften och f\u00f6rhoppning uttrycktes ock av sj\u00e4lva hans riddare valspr\u00e5k: ovan skyn (supra nubem).\" H:s rikhaltiga brevv\u00e4xling (bl a med Carl XIV Johan) f\u00f6rvaras hos \u00e4ttens huvudman.",
+    "notes": "(Tab 4 i GS).\nStudent i Lund 1795. Juridisk examen där 1796 3/5 (examen juridicum et historicum) samt responderade för en akademisk avhandling \"de infinito numine nobis incomprehensibile\". Eo kanslist vid utrikes statsexpeditionen febr 1797. Studerade vid Uppsala universitet vårterminerna 1797 och 1799. Tjänstgjorde vid riksdagen i Norrköping 1800. Legationssekreterare vid beskickningen till riksförsamlingen i Regensburg 1801 4/6 - aug 1806. Protokollssekreterare vid utrikes statsexpeditionen 1807 25/5. Utnämnd till legationssekreterare i Wien sommaren 1810 (ankom dit 1811), samt chargé d'affaires där aug 1812 - juli 1816. Kansliråd 1817 26/3. Sändes samma år i juni i särskilt uppdrag till engelska hovet och var april - aug svenskt sändebud i Köpenhamn.\nRNO 1817 7/10. Adlad (med bibehållet namn) med anledning av Carl Johans kröning 1818 11/5 (introducerad 1819 under nr 2262).\nLedamot av rikets allmänna ärenders beredning 1819. Statssekreterare för handel- och finansärenden 1820 aug - dec och därunder ledamot av generaltulldirektionen. Ledamot av finanskommitten 1822 och av konvojkommissariatet 1825. Revisor över bankodiskontverket 1826-1829 och 1832.\nBevistade riksdagarna 1823 (ledamot av expeditionsutskottet, vald till suppleant för riksgäldsfullmäktige), 1828-1830 (ledamot av sammansatta stats- och bankoutskottet, vald till suppleant för bankofullmäktige), 1834?1835 (ledamot av konstitutionsutskottet samt av nämnden för val av justitieombudsman); vald till riksgäldsfullmäktige). Bankofullmäktig 1832 1/2 - 1834 och riksgäldsfullmäktig sept 1834 till sin död. Recentior i frimurarlogen S:t Erik 1800.\nH var en synnerligen skicklig ämbetsman och en framstående diplomat. J D Valerius skrev om honom med anledning av hans frånfälle, bl a följande: \"Om man vill skapa sig ett människoideal av oförenbara motsatser, huvudet klart men hetsigt, nordisk karaktär och sydländskt lynne, den förra energisk och oböjlig, det senare vekligt och ömtåligt som sensitivan, --- och om därav likväl uppkommer ett ädelt, harmoniskt helt --- så skulle bilden framstå förverkligad i Kristian Bernhard Hegardt. Rik på begrepp och kunskaper, använd i mångfaldiga allmänna värv, var han en djup tänkare, kall diplomat, mogen statsman, sansad talare.\nKärleken till rättvisa och ljus, hatet mot allt vrångt och dunkelt bragte honom dock ofta i feber, när han, ren och genomskinlig till både avsikt och system, vederlades med fraser eller av sorlet nedtystades. Men hållande måtta i saken, om ej i sättet, aldrig övergivande det enda parti han fullföljde - övertygelsens -, frisinnigt medborgerlig och lika frisinnigt konungskt, uppnådde han slutligen målet och möttes av förtroende.\nSåsom enskild man kunde han, med ett ord, nämnas efterdömlig.\nSin värld här nere fann han i den älskvärda husliga kretsen, och skattade för övrigt tämligen ringa ett liv, som plågorna långsamt förtärde. Hans högre syften och förhoppning uttrycktes ock av själva hans riddare valspråk: ovan skyn (supra nubem).\" H:s rikhaltiga brevväxling (bl a med Carl XIV Johan) förvaras hos ättens huvudman.",
     "occupations": [
-      "Kanslir\u00e5d"
+      "Kansliråd"
     ],
     "references": [],
     "sex": "MAN",
@@ -2350,7 +2350,7 @@ const persons = {
     ],
     "middleNames": [],
     "mother": 30,
-    "notes": "(Tab 10 i GS).\nVar fr\u00e5n 1819 bosatt i Uddevalla.",
+    "notes": "(Tab 10 i GS).\nVar från 1819 bosatt i Uddevalla.",
     "occupations": [
       "Grosshandlare och skeppsredare i stockholm"
     ],
@@ -2468,7 +2468,7 @@ const persons = {
         "year": 1823
       },
       "location": {
-        "city": "p\u00e5 Bj\u00f6rkb\u00e4ck i Uddevalla",
+        "city": "på Björkbäck i Uddevalla",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -2508,7 +2508,7 @@ const persons = {
     "mother": null,
     "notes": "",
     "occupations": [
-      "\u00d8verstel\u00f6jtnant vid arm\u00e9ns flotta"
+      "Øverstelöjtnant vid arméns flotta"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -2783,7 +2783,7 @@ const persons = {
         "year": 1878
       },
       "location": {
-        "city": "p\u00e5 Ekeberg i Sk\u00e4rv",
+        "city": "på Ekeberg i Skärv",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -2926,7 +2926,7 @@ const persons = {
         "year": 1906
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -2980,7 +2980,7 @@ const persons = {
         "year": 1811
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -3006,7 +3006,7 @@ const persons = {
         "year": 1856
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -3084,7 +3084,7 @@ const persons = {
         "year": 1914
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -3153,7 +3153,7 @@ const persons = {
         "year": 1877
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -3190,9 +3190,9 @@ const persons = {
       "Bernhard"
     ],
     "mother": 62,
-    "notes": "(Tab 5 i GS).\nBlev sedermera handelsbokh\u00e5llare i G\u00f6teborg. \u00c4gde\u00e5ren1855-61 Segerfors bruk i Arvika.",
+    "notes": "(Tab 5 i GS).\nBlev sedermera handelsbokhållare i Göteborg. Ägdeåren1855-61 Segerfors bruk i Arvika.",
     "occupations": [
-      "Bruks\u00e4gare i v\u00e4rmland mm"
+      "Bruksägare i värmland mm"
     ],
     "references": [],
     "sex": "MAN",
@@ -3353,7 +3353,7 @@ const persons = {
         "year": 1816
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -3379,7 +3379,7 @@ const persons = {
         "year": 1883
       },
       "location": {
-        "city": "p\u00e5 sin g\u00e5rd Ekeberg i Sk\u00e4rv",
+        "city": "på sin gård Ekeberg i Skärv",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -3413,7 +3413,7 @@ const persons = {
       }
     ],
     "middleNames": [
-      "T\u00f6rner"
+      "Törner"
     ],
     "mother": null,
     "notes": "",
@@ -3495,7 +3495,7 @@ const persons = {
         "year": 1828
       },
       "location": {
-        "city": "p\u00e5 Skog i Frykerud ",
+        "city": "på Skog i Frykerud",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -3528,7 +3528,7 @@ const persons = {
         "year": 1908
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -3541,7 +3541,7 @@ const persons = {
     "father": 92,
     "fileId": "0000000049",
     "firstName": "Josefina",
-    "lastName": "Kihl\u00e9n",
+    "lastName": "Kihlén",
     "marriages": [
       {
         "date": {
@@ -3582,7 +3582,7 @@ const persons = {
         "year": 1856
       },
       "location": {
-        "city": "p\u00e5 Segerfors bruk i Arvika landsf\u00f6rsamling ",
+        "city": "på Segerfors bruk i Arvika landsförsamling",
         "country": "Sverige",
         "notes": "",
         "region": ""
@@ -3612,7 +3612,7 @@ const persons = {
         "year": 1928
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -3644,9 +3644,9 @@ const persons = {
       "Bernhard"
     ],
     "mother": 83,
-    "notes": "Studentexamen i G\u00f6teborg 1874. Examen till r\u00e4tteg\u00e5ngsverken 1879. Eo Notarie i G\u00f6ta hovr\u00e4tt samma \u00e5r. Kansliexamen 1890. V h\u00e4radsh\u00f6vding 1882. Kammarf\u00f6rvant vid stadskamrerarkontoret i G\u00f6teborg 1885 - 1895. Sekreterare f\u00f6r styrelsen f\u00f6r G\u00f6teborgs hamn 1892. Sekreterare hos stadsfullm\u00e4ktige i samma stad 1895 - 1926. \u00d8verf\u00f6rmyndare i G\u00f6teborg. RVO 1903, RNO 1914 och KVO 1923.\nH\u00e4radsh\u00f6vding Hegardt fick under sitt 31-\u00e5riga sekreterarskap hos stadsfullm\u00e4ktige vid olika tillf\u00e4llen r\u00f6na m\u00e5nga bevis p\u00e5 dessas f\u00f6rtroende och h\u00f6ga uppskattning av det s\u00e4tt, p\u00e5 vilket han f\u00f6rvaltade sitt \u00e4mbete. Ett ytterligare bevis h\u00e4rp\u00e5 gavs honom vid det sista sammantr\u00e4de, d\u00e4r han tj\u00e4nstgjorde, d\u00e5 ordf\u00f6randen framf\u00f6rde fullm\u00e4ktiges tack \"f\u00f6r det utomordentligt plikttroget och med utomordentligt nit utr\u00e4ttat arbete\", framh\u00e5llande bl a \u00e4ven \"det v\u00e4nliga och tillm\u00f6tesg\u00e5ende s\u00e4tt, varmed v\u00e5r sekreterare behandlat de olika stadsfullm\u00e4ktigegenerationerna, det alla f\u00e5tt k\u00e4nna, som v\u00e4nt sig till honom. Han \u00e4r och har alltid varit stadsfullm\u00e4ktiges v\u00e4n och han har behandlat dem alla lika.\n--- Alla kommande generationer m\u00e5tte erinras om det f\u00f6rtj\u00e4nstfulla arbete som h\u00e4radsh\u00f6vding Hegardt nedlagt i stadens tj\u00e4nst, samt f\u00f6r \u00e5t oss alla i minnet bevara v\u00e5r nu avg\u00e5ende sekreterare, anh\u00e5ller stadsfullm\u00e4ktiges presidium motionsledes f\u00e5 f\u00f6resl\u00e5, att stadsfullm\u00e4ktige m\u00e5tte l\u00e5ta utf\u00f6ra h\u00e4radsh\u00f6vding Hegardts portr\u00e4tt i olja att upph\u00e4ngas i stadsfullm\u00e4ktiges kansli.",
+    "notes": "Studentexamen i Göteborg 1874. Examen till rättegångsverken 1879. Eo Notarie i Göta hovrätt samma år. Kansliexamen 1890. V häradshövding 1882. Kammarförvant vid stadskamrerarkontoret i Göteborg 1885 - 1895. Sekreterare för styrelsen för Göteborgs hamn 1892. Sekreterare hos stadsfullmäktige i samma stad 1895 - 1926. Øverförmyndare i Göteborg. RVO 1903, RNO 1914 och KVO 1923.\nHäradshövding Hegardt fick under sitt 31-åriga sekreterarskap hos stadsfullmäktige vid olika tillfällen röna många bevis på dessas förtroende och höga uppskattning av det sätt, på vilket han förvaltade sitt ämbete. Ett ytterligare bevis härpå gavs honom vid det sista sammanträde, där han tjänstgjorde, då ordföranden framförde fullmäktiges tack \"för det utomordentligt plikttroget och med utomordentligt nit uträttat arbete\", framhållande bl a även \"det vänliga och tillmötesgående sätt, varmed vår sekreterare behandlat de olika stadsfullmäktigegenerationerna, det alla fått känna, som vänt sig till honom. Han är och har alltid varit stadsfullmäktiges vän och han har behandlat dem alla lika.\n--- Alla kommande generationer måtte erinras om det förtjänstfulla arbete som häradshövding Hegardt nedlagt i stadens tjänst, samt för åt oss alla i minnet bevara vår nu avgående sekreterare, anhåller stadsfullmäktiges presidium motionsledes få föreslå, att stadsfullmäktige måtte låta utföra häradshövding Hegardts porträtt i olja att upphängas i stadsfullmäktiges kansli.",
     "occupations": [
-      "V h\u00e4radsh\u00f6vding 1921"
+      "V häradshövding 1921"
     ],
     "references": [],
     "sex": "MAN",
@@ -3663,7 +3663,7 @@ const persons = {
         "year": 1857
       },
       "location": {
-        "city": "p\u00e5 Segerfors bruk i Arvika landsf\u00f6rsamling ",
+        "city": "på Segerfors bruk i Arvika landsförsamling",
         "country": "Sverige",
         "notes": "",
         "region": ""
@@ -3686,7 +3686,7 @@ const persons = {
         "year": 1896
       },
       "location": {
-        "city": "Alings\u00e5s",
+        "city": "Alingsås",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -3741,7 +3741,7 @@ const persons = {
         "year": 1846
       },
       "location": {
-        "city": "Torsh\u00e4lla",
+        "city": "Torshälla",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -3767,7 +3767,7 @@ const persons = {
         "year": 1894
       },
       "location": {
-        "city": "p\u00e5 Altorp i Herrljunga",
+        "city": "på Altorp i Herrljunga",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -3804,7 +3804,7 @@ const persons = {
     "mother": null,
     "notes": "(Tab 6 i GS).",
     "occupations": [
-      "Postm\u00e4stare i herrljunga"
+      "Postmästare i herrljunga"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -3821,7 +3821,7 @@ const persons = {
         "year": 1859
       },
       "location": {
-        "city": "p\u00e5 Segerfors bruk i Arvika landsf\u00f6rsamling ",
+        "city": "på Segerfors bruk i Arvika landsförsamling",
         "country": "Sverige",
         "notes": "",
         "region": ""
@@ -3844,7 +3844,7 @@ const persons = {
         "year": 1904
       },
       "location": {
-        "city": "p\u00e5 V\u00e4rnarp i V\u00e4stra Ryd",
+        "city": "på Värnarp i Västra Ryd",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -3869,7 +3869,7 @@ const persons = {
           "year": 1892
         },
         "location": {
-          "city": "G\u00f6teborg",
+          "city": "Göteborg",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -3898,7 +3898,7 @@ const persons = {
         "year": 1853
       },
       "location": {
-        "city": "G\u00e5rdeby",
+        "city": "Gårdeby",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -3924,7 +3924,7 @@ const persons = {
         "year": 1918
       },
       "location": {
-        "city": "V\u00e4stra Ryd",
+        "city": "Västra Ryd",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -3949,7 +3949,7 @@ const persons = {
           "year": 1892
         },
         "location": {
-          "city": "G\u00f6teborg",
+          "city": "Göteborg",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -3963,7 +3963,7 @@ const persons = {
     "mother": null,
     "notes": "(Tab 5:32 i GS).",
     "occupations": [
-      "Landsfiskal i ydre h\u00e4rads s\u00f6dra distrikt"
+      "Landsfiskal i ydre härads södra distrikt"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -3980,7 +3980,7 @@ const persons = {
         "year": 1861
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -4006,7 +4006,7 @@ const persons = {
         "year": 1862
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -4042,7 +4042,7 @@ const persons = {
         "year": 1863
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -4068,7 +4068,7 @@ const persons = {
         "year": 1864
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -4104,7 +4104,7 @@ const persons = {
         "year": 1867
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -4130,7 +4130,7 @@ const persons = {
         "year": 1898
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -4166,7 +4166,7 @@ const persons = {
         "year": 1857
       },
       "location": {
-        "city": "Torsh\u00e4lla",
+        "city": "Torshälla",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -4199,7 +4199,7 @@ const persons = {
         "year": 1939
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -4248,7 +4248,7 @@ const persons = {
         "year": 1891
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -4279,7 +4279,7 @@ const persons = {
         "year": 1983
       },
       "location": {
-        "city": "Stillings\u00f6n",
+        "city": "Stillingsön",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -4304,7 +4304,7 @@ const persons = {
           "year": 1921
         },
         "location": {
-          "city": "G\u00f6teborg",
+          "city": "Göteborg",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -4314,7 +4314,7 @@ const persons = {
     ],
     "middleNames": [],
     "mother": 93,
-    "notes": "(Tab 7 i GS).\nD\u00f6d 1983-03-26 p\u00e5 Stillings\u00f6n.\nStudentexamen i G\u00f6teborg 1911. Fil kand 1914, fil lic 1917 och fil dr 1918. L\u00e4rare vid N Kalmar l\u00e4ns folkh\u00f6gskola 1919. Rektor vid n\u00e4mnda folkh\u00f6gskola och lantmannaskola i Gamleby 1923.\nHar utgivit en del vetenskapliga avhandlingar, av vilka kan n\u00e4mnas \"Bidrag till intuitionsbegreppet f\u00f6re Kant\" och \"Religion och sj\u00e4lstr\u00e4ning. Dessutom har han medarbetat i en hel del dagliga tidningar och tidskrifter i litter\u00e4ra, filosofiska och pedagogiska \u00e4mnen. Han har bedrivit en omfattande f\u00f6rel\u00e4sningsverksamhet.\nInnehar en hel del brev och handlingar betr\u00e4ffande sl\u00e4kten \u00e4nda fr\u00e5n 1700-talet, sl\u00e4ktsaker o d som g\u00e5tt i arv betr\u00e4ffande huvudm\u00e4nnen inom den adliga grenen. \u00c4ttens sk\u00f6ldebrev f\u00f6rvaras fn p\u00e5 Riddarhuset i Stockholm. Se i \u00f6vrigt vad som st\u00e5r om Christian Bernhard Hegardts brevsamling.",
+    "notes": "(Tab 7 i GS).\nDöd 1983-03-26 på Stillingsön.\nStudentexamen i Göteborg 1911. Fil kand 1914, fil lic 1917 och fil dr 1918. Lärare vid N Kalmar läns folkhögskola 1919. Rektor vid nämnda folkhögskola och lantmannaskola i Gamleby 1923.\nHar utgivit en del vetenskapliga avhandlingar, av vilka kan nämnas \"Bidrag till intuitionsbegreppet före Kant\" och \"Religion och själsträning. Dessutom har han medarbetat i en hel del dagliga tidningar och tidskrifter i litterära, filosofiska och pedagogiska ämnen. Han har bedrivit en omfattande föreläsningsverksamhet.\nInnehar en hel del brev och handlingar beträffande släkten ända från 1700-talet, släktsaker o d som gått i arv beträffande huvudmännen inom den adliga grenen. Ättens sköldebrev förvaras fn på Riddarhuset i Stockholm. Se i övrigt vad som står om Christian Bernhard Hegardts brevsamling.",
     "occupations": [
       "Fil dr"
     ],
@@ -4333,7 +4333,7 @@ const persons = {
         "year": 1893
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -4366,7 +4366,7 @@ const persons = {
         "year": 1988
       },
       "location": {
-        "city": "Str\u00f6mstad",
+        "city": "Strömstad",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -4401,9 +4401,9 @@ const persons = {
     ],
     "middleNames": [],
     "mother": 93,
-    "notes": "(Tab 8 i GS).\nHuvudman f\u00f6r adliga grenen Studentexamen i G\u00f6teborg 1912. med kand i Uppsala 1914 och med lic i Stockholm 1924. Provinsiall\u00e4karf\u00f6rordnanden 1920 - 1926 i Lycksele, Mal\u00e5 och T\u00e4rend\u00f6. Assistentl\u00e4kare 1924 - 25 vid Sahlgrenska sjukhuset i G\u00f6teborg och M\u00f6lndals lasarett. Provinsiall\u00e4kare i Junsele 1926 - 31, i Str\u00f6mstads distrikt 1946 - 56. Efter denna tid praktiserande l\u00e4kare i Str\u00f6mstad. Dessutom varit j\u00e4rnv\u00e4gs-, dispens\u00e4r- och skoll\u00e4kare i Str\u00f6mstad. Landstingsledamot 1939 - 46. Ledamot av stadsfullm\u00e4ktige i Str\u00f6mstad 1936 - 56. RNO.",
+    "notes": "(Tab 8 i GS).\nHuvudman för adliga grenen Studentexamen i Göteborg 1912. med kand i Uppsala 1914 och med lic i Stockholm 1924. Provinsialläkarförordnanden 1920 - 1926 i Lycksele, Malå och Tärendö. Assistentläkare 1924 - 25 vid Sahlgrenska sjukhuset i Göteborg och Mölndals lasarett. Provinsialläkare i Junsele 1926 - 31, i Strömstads distrikt 1946 - 56. Efter denna tid praktiserande läkare i Strömstad. Dessutom varit järnvägs-, dispensär- och skolläkare i Strömstad. Landstingsledamot 1939 - 46. Ledamot av stadsfullmäktige i Strömstad 1936 - 56. RNO.",
     "occupations": [
-      "Leg l\u00e4kare"
+      "Leg läkare"
     ],
     "references": [],
     "sex": "MAN",
@@ -4420,7 +4420,7 @@ const persons = {
         "year": 1894
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -4475,7 +4475,7 @@ const persons = {
         },
         "location": {
           "city": "Kapstaden",
-          "country": " Sydafrika",
+          "country": "Sydafrika",
           "notes": "",
           "region": ""
         },
@@ -4484,7 +4484,7 @@ const persons = {
     ],
     "middleNames": [],
     "mother": 93,
-    "notes": "(Tab 9 i GS).\nStudentexamen i G\u00f6teborg 1914. Examen vid G\u00f6teborgs handelsinstitut 1915. Anst\u00e4lld vid Rederi AB Transatlantics kontor i G\u00f6teborg 1916. 1920 uts\u00e4nd att starta och f\u00f6rest\u00e5 bolagets kontor i Kapstaden. 1923 bolagets huvudrepresentant f\u00f6r hela Syd? och Ostafrika. 1932 utn\u00e4mnd till svensk konsul f\u00f6r Kapstaden och Kapprovinsen. Grundade 1925 Svenska f\u00f6reningen i Kapstaden. Hade under krigs\u00e5ren hand om finska och japanska intressen. Tf svensk generalkonsul 1944. 1944 chef f\u00f6r Rederi AB Transatlantics kontor i Stockholm. Ledamot av Sveriges Flotta och i Utlandssvenskarna f\u00f6rening. RVO, RNO, Kungliga Patriotiska s\u00e4llskapets stora guldmedalj.",
+    "notes": "(Tab 9 i GS).\nStudentexamen i Göteborg 1914. Examen vid Göteborgs handelsinstitut 1915. Anställd vid Rederi AB Transatlantics kontor i Göteborg 1916. 1920 utsänd att starta och förestå bolagets kontor i Kapstaden. 1923 bolagets huvudrepresentant för hela Syd? och Ostafrika. 1932 utnämnd till svensk konsul för Kapstaden och Kapprovinsen. Grundade 1925 Svenska föreningen i Kapstaden. Hade under krigsåren hand om finska och japanska intressen. Tf svensk generalkonsul 1944. 1944 chef för Rederi AB Transatlantics kontor i Stockholm. Ledamot av Sveriges Flotta och i Utlandssvenskarna förening. RVO, RNO, Kungliga Patriotiska sällskapets stora guldmedalj.",
     "occupations": [
       "Svensk konsul i kapstaden"
     ],
@@ -4503,7 +4503,7 @@ const persons = {
         "year": 1896
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -4534,7 +4534,7 @@ const persons = {
         "year": 1969
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -4559,7 +4559,7 @@ const persons = {
           "year": 1927
         },
         "location": {
-          "city": "Link\u00f6ping",
+          "city": "Linköping",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -4569,9 +4569,9 @@ const persons = {
     ],
     "middleNames": [],
     "mother": 93,
-    "notes": "(Tab 6:28 i GS).\nR\u00e5dman i G\u00f6teborg 1936-63.\nStudentexamen i G\u00f6teborg 1914. Jur kand 1919. Eo notarie i G\u00f6ta hovr\u00e4tt samma \u00e5r. Tingstj\u00e4nstg\u00f6ring vid Askim m fl h\u00e4raders domsaga 1920. Efter provtj\u00e4nstg\u00f6ring ex notarie hos magistraten och r\u00e5dhusr\u00e4tten i G\u00f6teborg 1921. Assessor vid r\u00e5dhusr\u00e4tten 1929, r\u00e5dman d\u00e4r 1937. KNO.",
+    "notes": "(Tab 6:28 i GS).\nRådman i Göteborg 1936-63.\nStudentexamen i Göteborg 1914. Jur kand 1919. Eo notarie i Göta hovrätt samma år. Tingstjänstgöring vid Askim m fl häraders domsaga 1920. Efter provtjänstgöring ex notarie hos magistraten och rådhusrätten i Göteborg 1921. Assessor vid rådhusrätten 1929, rådman där 1937. KNO.",
     "occupations": [
-      "R\u00e5dman"
+      "Rådman"
     ],
     "references": [],
     "sex": "MAN",
@@ -4588,7 +4588,7 @@ const persons = {
         "year": 1897
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -4614,7 +4614,7 @@ const persons = {
         "year": 1939
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -4639,7 +4639,7 @@ const persons = {
           "year": 1936
         },
         "location": {
-          "city": "G\u00f6teborg",
+          "city": "Göteborg",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -4649,9 +4649,9 @@ const persons = {
     ],
     "middleNames": [],
     "mother": 93,
-    "notes": "(Tab 6:29 i GS).\nFr\u00e5n h\u00f6sten 1917 studerande vid Technicum i Alt Stelitz.\nIngenj\u00f6rsexamen d\u00e4r 1919.",
+    "notes": "(Tab 6:29 i GS).\nFrån hösten 1917 studerande vid Technicum i Alt Stelitz.\nIngenjörsexamen där 1919.",
     "occupations": [
-      "Ingenj\u00f6r"
+      "Ingenjör"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -4686,7 +4686,7 @@ const persons = {
         "year": 1985
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -4698,8 +4698,8 @@ const persons = {
     },
     "father": null,
     "fileId": "0000000064",
-    "firstName": "M\u00e4rta",
-    "lastName": "H\u00f6gsten",
+    "firstName": "Märta",
+    "lastName": "Högsten",
     "marriages": [
       {
         "date": {
@@ -4711,7 +4711,7 @@ const persons = {
           "year": 1936
         },
         "location": {
-          "city": "G\u00f6teborg",
+          "city": "Göteborg",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -4741,7 +4741,7 @@ const persons = {
         "year": 1898
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -4767,7 +4767,7 @@ const persons = {
         "year": 1987
       },
       "location": {
-        "city": "M\u00f6lndal",
+        "city": "Mölndal",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -4792,7 +4792,7 @@ const persons = {
           "year": 1921
         },
         "location": {
-          "city": "G\u00f6teborg",
+          "city": "Göteborg",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -4819,7 +4819,7 @@ const persons = {
         "year": 1893
       },
       "location": {
-        "city": "p\u00e5 Toresta g\u00e5rd i Nykyrka ",
+        "city": "på Toresta gård i Nykyrka",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -4862,7 +4862,7 @@ const persons = {
           "year": 1921
         },
         "location": {
-          "city": "G\u00f6teborg",
+          "city": "Göteborg",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -4930,7 +4930,7 @@ const persons = {
           "year": 1921
         },
         "location": {
-          "city": "G\u00f6teborg",
+          "city": "Göteborg",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -4944,7 +4944,7 @@ const persons = {
       "Charlotta"
     ],
     "mother": 126,
-    "notes": "D\u00f6d 1974-07-16 p\u00e5 Stillings\u00f6n.",
+    "notes": "Död 1974-07-16 på Stillingsön.",
     "occupations": [],
     "references": [],
     "sex": "WOMAN",
@@ -4991,7 +4991,7 @@ const persons = {
     "marriages": [],
     "middleNames": [],
     "mother": 104,
-    "notes": "Adress Erik Dahlbergsgatan 41, 115 32 STOCKHOLM.\n(Tab 7:19 i GS).\nStudentexamen 1941 i G\u00f6teborg (O).\nFil mag 1948 i Uppsala (C).\nBor i Stockholm (AB).",
+    "notes": "Adress Erik Dahlbergsgatan 41, 115 32 STOCKHOLM.\n(Tab 7:19 i GS).\nStudentexamen 1941 i Göteborg (O).\nFil mag 1948 i Uppsala (C).\nBor i Stockholm (AB).",
     "occupations": [
       "Museiintendent"
     ],
@@ -5046,7 +5046,7 @@ const persons = {
           "year": 1948
         },
         "location": {
-          "city": "V\u00e4strum",
+          "city": "Västrum",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -5056,7 +5056,7 @@ const persons = {
     ],
     "middleNames": [],
     "mother": 104,
-    "notes": "Adress H\u00e5leb\u00e4cken 6166, 440 92 SVANESUND.\n(Tab 7:35 i GS).\nStudentexamen 1943 i V\u00e4stervik (H).\nFolkskoll\u00e4rarexamen 1947 och fil mag 1959.\nBor i Svanesund (O).",
+    "notes": "Adress Hålebäcken 6166, 440 92 SVANESUND.\n(Tab 7:35 i GS).\nStudentexamen 1943 i Västervik (H).\nFolkskollärarexamen 1947 och fil mag 1959.\nBor i Svanesund (O).",
     "occupations": [
       "Adjunkt"
     ],
@@ -5090,7 +5090,7 @@ const persons = {
     },
     "father": null,
     "fileId": "0000000070",
-    "firstName": "G\u00f6sta",
+    "firstName": "Gösta",
     "lastName": "Ivarsson",
     "marriages": [
       {
@@ -5103,7 +5103,7 @@ const persons = {
           "year": 1948
         },
         "location": {
-          "city": "V\u00e4strum",
+          "city": "Västrum",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -5159,7 +5159,7 @@ const persons = {
         "year": 1975
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -5385,7 +5385,7 @@ const persons = {
     },
     "father": null,
     "fileId": "0000000075",
-    "firstName": "P\u00e4r",
+    "firstName": "Pär",
     "lastName": "Hegardt",
     "marriages": [
       {
@@ -5398,7 +5398,7 @@ const persons = {
           "year": 1988
         },
         "location": {
-          "city": "p\u00e5 Moffett Naval Airstation",
+          "city": "på Moffett Naval Airstation",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -5408,7 +5408,7 @@ const persons = {
     ],
     "middleNames": [],
     "mother": 108,
-    "notes": "Adress 820 Caymus St, Napa, Californien 94559, USA.\nUtbildad pilot; flyginstrukt\u00f6r f\u00f6r Japanese Airlines.\nBor i Napa, Californien, USA.",
+    "notes": "Adress 820 Caymus St, Napa, Californien 94559, USA.\nUtbildad pilot; flyginstruktör för Japanese Airlines.\nBor i Napa, Californien, USA.",
     "occupations": [
       "Pilot vid japan airlines"
     ],
@@ -5460,7 +5460,7 @@ const persons = {
         "year": 1980
       },
       "location": {
-        "city": "Str\u00f6mstad",
+        "city": "Strömstad",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -5473,7 +5473,7 @@ const persons = {
     "father": 135,
     "fileId": "0000000076",
     "firstName": "Ebba",
-    "lastName": "Sj\u00f6quist",
+    "lastName": "Sjöquist",
     "marriages": [
       {
         "date": {
@@ -5514,7 +5514,7 @@ const persons = {
         "year": 1922
       },
       "location": {
-        "city": "Mal\u00e5tr\u00e4sk",
+        "city": "Malåträsk",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -5555,9 +5555,9 @@ const persons = {
     ],
     "middleNames": [],
     "mother": 109,
-    "notes": "Adress 1990 Tovan, S Korsviken, 459 00 LJUNGSKILE.\n(Tab 8:23 i GS).\nGenomg\u00e5tt Vasa kommunala flickskola i G\u00f6teborg, Bar-Lockinstitutet i Stockholm, Gamleby folkh\u00f6gskola samt Steneby sl\u00f6jdskolor.\nMentalsk\u00f6terskeutbildning vid Lillhagens sjukhus,Hisings-Backa 1959. G\u00f6teborgs sjuksk\u00f6terskeskola 1961-63. Avdelningssk\u00f6terska vid Lillhagens sjukhus 1963-67. F\u00f6rest\u00e5ndare vid G\u00f6teborgs socialf\u00f6rvaltning 1967-83. Pensionerades 1983.\nBor i Ljungskile (O).",
+    "notes": "Adress 1990 Tovan, S Korsviken, 459 00 LJUNGSKILE.\n(Tab 8:23 i GS).\nGenomgått Vasa kommunala flickskola i Göteborg, Bar-Lockinstitutet i Stockholm, Gamleby folkhögskola samt Steneby slöjdskolor.\nMentalsköterskeutbildning vid Lillhagens sjukhus,Hisings-Backa 1959. Göteborgs sjuksköterskeskola 1961-63. Avdelningssköterska vid Lillhagens sjukhus 1963-67. Föreståndare vid Göteborgs socialförvaltning 1967-83. Pensionerades 1983.\nBor i Ljungskile (O).",
     "occupations": [
-      "Leg sjuksk\u00f6terska"
+      "Leg sjuksköterska"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -5626,7 +5626,7 @@ const persons = {
         "year": 1926
       },
       "location": {
-        "city": "T\u00e4rend\u00f6",
+        "city": "Tärendö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -5662,7 +5662,7 @@ const persons = {
           "year": 1947
         },
         "location": {
-          "city": "Str\u00f6mstad",
+          "city": "Strömstad",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -5676,7 +5676,7 @@ const persons = {
     "mother": 109,
     "notes": "(Tab 8:24 i GS).\nBor i Uppsala (C).",
     "occupations": [
-      "Adress 1990 l\u00f6vs\u00e5ngarev\u00e4gen 1",
+      "Adress 1990 lövsångarevägen 1",
       "752 52  uppsala"
     ],
     "references": [],
@@ -5722,7 +5722,7 @@ const persons = {
           "year": 1947
         },
         "location": {
-          "city": "Str\u00f6mstad",
+          "city": "Strömstad",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -5781,7 +5781,7 @@ const persons = {
     "marriages": [],
     "middleNames": [],
     "mother": 109,
-    "notes": "Adress \u00d8fre Slottsgatan 8 B, 753 10 UPPSALA.\nStudentexamen 1949, fil kand 1954 i Uppsala.\nBor i Uppsala (C).",
+    "notes": "Adress Øfre Slottsgatan 8 B, 753 10 UPPSALA.\nStudentexamen 1949, fil kand 1954 i Uppsala.\nBor i Uppsala (C).",
     "occupations": [
       "Bibliotekarie"
     ],
@@ -5840,7 +5840,7 @@ const persons = {
           "year": 1956
         },
         "location": {
-          "city": "Str\u00f6mstad",
+          "city": "Strömstad",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -5852,7 +5852,7 @@ const persons = {
       "Marianne"
     ],
     "mother": 109,
-    "notes": "Adress Ostrongatan 12, 421 79 V FR\u00d8LUNDA.\nSkild 1989.\nStudentexamen 1950, fil mag 1957.\nBor i V\u00e4stra Fr\u00f6lunda (O).",
+    "notes": "Adress Ostrongatan 12, 421 79 V FRØLUNDA.\nSkild 1989.\nStudentexamen 1950, fil mag 1957.\nBor i Västra Frölunda (O).",
     "occupations": [
       "Adjunkt"
     ],
@@ -5871,7 +5871,7 @@ const persons = {
         "year": 1930
       },
       "location": {
-        "city": "Str\u00e4ngn\u00e4s",
+        "city": "Strängnäs",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -5911,7 +5911,7 @@ const persons = {
           "year": 1956
         },
         "location": {
-          "city": "Str\u00f6mstad",
+          "city": "Strömstad",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -5928,7 +5928,7 @@ const persons = {
     "mother": null,
     "notes": "",
     "occupations": [
-      "R\u00e5dman vid l\u00e4nsr\u00e4tten i g\u00f6teborg och bohusl\u00e4n"
+      "Rådman vid länsrätten i göteborg och bohuslän"
     ],
     "references": [],
     "sex": "MAN",
@@ -5945,7 +5945,7 @@ const persons = {
         "year": 1935
       },
       "location": {
-        "city": "Str\u00f6mstad",
+        "city": "Strömstad",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -5991,9 +5991,9 @@ const persons = {
       "Agneta"
     ],
     "mother": 109,
-    "notes": "Adress Pontus Viknersgatan 1, 411 32 G\u00d8TEBORG.\nSkild 1963.\nStudentexamen 1954.\nIngenj\u00f6rsexamen 1978.\nCTH (Chalmers) R.O.T. 1984.\nByggkontrollant vid Vasa SH, tekn avd.\nBor i G\u00f6teborg (O).",
+    "notes": "Adress Pontus Viknersgatan 1, 411 32 GØTEBORG.\nSkild 1963.\nStudentexamen 1954.\nIngenjörsexamen 1978.\nCTH (Chalmers) R.O.T. 1984.\nByggkontrollant vid Vasa SH, tekn avd.\nBor i Göteborg (O).",
     "occupations": [
-      "Byggnadsingenj\u00f6r"
+      "Byggnadsingenjör"
     ],
     "references": [],
     "sex": "WOMAN",
@@ -6010,7 +6010,7 @@ const persons = {
         "year": 1942
       },
       "location": {
-        "city": "Str\u00f6mstad",
+        "city": "Strömstad",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -6048,7 +6048,7 @@ const persons = {
           "year": 1967
         },
         "location": {
-          "city": "G\u00f6teborg",
+          "city": "Göteborg",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -6060,10 +6060,10 @@ const persons = {
       "Christina"
     ],
     "mother": 109,
-    "notes": "Adress Drottninggatan 40 C, 702 22 \u00d8REBRO.\nSkild 1989.\nStudentexamen 1961 i G\u00f6teborg (O).\nFil kand 1965 i Uppsala (C).\nTysk medicinsk Staatsexamen 1970 i Tyskland.\nSvensk leg l\u00e4kare 1973.\nSpecialist i allm\u00e4n medicin 1976.\n1977-85 distrikts\u00f6verl\u00e4kare i \u00d8rebro. Distrikts\u00f6verl\u00e4kare. V\u00e5rdcentralchef vid Haga v\u00e5rdcentral i \u00d8rebro 1985-88.\n1982-87 styrelseledamot i Svensk f\u00f6rening f\u00f6r Allm\u00e4nmedicin.\nArbetar sedan 1988 med personlighetsutredning och \"alternativmedicin\" Bor i \u00d8rebro (T).",
+    "notes": "Adress Drottninggatan 40 C, 702 22 ØREBRO.\nSkild 1989.\nStudentexamen 1961 i Göteborg (O).\nFil kand 1965 i Uppsala (C).\nTysk medicinsk Staatsexamen 1970 i Tyskland.\nSvensk leg läkare 1973.\nSpecialist i allmän medicin 1976.\n1977-85 distriktsöverläkare i Ørebro. Distriktsöverläkare. Vårdcentralchef vid Haga vårdcentral i Ørebro 1985-88.\n1982-87 styrelseledamot i Svensk förening för Allmänmedicin.\nArbetar sedan 1988 med personlighetsutredning och \"alternativmedicin\" Bor i Ørebro (T).",
     "occupations": [
-      "Leg l\u00e4kare",
-      "Spec i allm\u00e4nmedicin"
+      "Leg läkare",
+      "Spec i allmänmedicin"
     ],
     "references": [],
     "sex": "WOMAN",
@@ -6080,8 +6080,8 @@ const persons = {
         "year": 1942
       },
       "location": {
-        "city": "Horn\u00e4s",
-        "country": " Norge",
+        "city": "Hornäs",
+        "country": "Norge",
         "notes": "",
         "region": "",
         "latitude": 59.33312,
@@ -6118,7 +6118,7 @@ const persons = {
           "year": 1967
         },
         "location": {
-          "city": "G\u00f6teborg",
+          "city": "Göteborg",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -6130,7 +6130,7 @@ const persons = {
     "mother": null,
     "notes": "",
     "occupations": [
-      "\u00d8verl\u00e4kare vid regionsjukhuset i \u00f6rebro"
+      "Øverläkare vid regionsjukhuset i örebro"
     ],
     "references": [],
     "sex": "MAN",
@@ -6147,7 +6147,7 @@ const persons = {
         "year": 1974
       },
       "location": {
-        "city": "\u00d8rebro",
+        "city": "Ørebro",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -6170,12 +6170,12 @@ const persons = {
     },
     "father": 145,
     "fileId": "0000000087",
-    "firstName": "Bj\u00f6rn",
+    "firstName": "Björn",
     "lastName": "Hegardt",
     "marriages": [],
     "middleNames": [],
     "mother": 115,
-    "notes": "Adress Drottninggatan 40 C, 702 22 \u00d8REBRO.\nBor i \u00d8rebro (T).",
+    "notes": "Adress Drottninggatan 40 C, 702 22 ØREBRO.\nBor i Ørebro (T).",
     "occupations": [
       "Studerande"
     ],
@@ -6194,7 +6194,7 @@ const persons = {
         "year": 1901
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -6249,7 +6249,7 @@ const persons = {
         },
         "location": {
           "city": "Kapstaden",
-          "country": " Sydafrika",
+          "country": "Sydafrika",
           "notes": "",
           "region": ""
         },
@@ -6276,7 +6276,7 @@ const persons = {
       },
       "location": {
         "city": "Kapstaden",
-        "country": " Sydafrika",
+        "country": "Sydafrika",
         "notes": "",
         "region": "",
         "latitude": -33.91909,
@@ -6315,7 +6315,7 @@ const persons = {
         },
         "location": {
           "city": "Kapstaden",
-          "country": " Sydafrika",
+          "country": "Sydafrika",
           "notes": "",
           "region": ""
         },
@@ -6332,7 +6332,7 @@ const persons = {
         },
         "location": {
           "city": "Kapstaden",
-          "country": " Sydafrika",
+          "country": "Sydafrika",
           "notes": "",
           "region": ""
         },
@@ -6343,7 +6343,7 @@ const persons = {
     "mother": 116,
     "notes": "Adress APT 1, 9500 Sao Roque, Ponta Delgada, Azorerna.\n(Tab 9:26 i GS).\nBor i Sao Rouque, Azorerna.",
     "occupations": [
-      "Direkt\u00f6r"
+      "Direktör"
     ],
     "references": [],
     "sex": "MAN",
@@ -6361,7 +6361,7 @@ const persons = {
       },
       "location": {
         "city": "Kapstaden",
-        "country": " Sydafrika",
+        "country": "Sydafrika",
         "notes": "",
         "region": "",
         "latitude": -33.91909,
@@ -6410,7 +6410,7 @@ const persons = {
     ],
     "middleNames": [],
     "mother": 116,
-    "notes": "Adress Ban\u00e9rv\u00e4gen 3 A, 182 62 DJURSHOLM.\n(Tab 9:27 i GS).\nBor i Djursholm (AB).",
+    "notes": "Adress Banérvägen 3 A, 182 62 DJURSHOLM.\n(Tab 9:27 i GS).\nBor i Djursholm (AB).",
     "occupations": [
       "Jurist"
     ],
@@ -6461,7 +6461,7 @@ const persons = {
         },
         "location": {
           "city": "Kapstaden",
-          "country": " Sydafrika",
+          "country": "Sydafrika",
           "notes": "",
           "region": ""
         },
@@ -6516,7 +6516,7 @@ const persons = {
         },
         "location": {
           "city": "Kapstaden",
-          "country": " Sydafrika",
+          "country": "Sydafrika",
           "notes": "",
           "region": ""
         },
@@ -6542,7 +6542,7 @@ const persons = {
         "year": 1955
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -6569,7 +6569,7 @@ const persons = {
       },
       "location": {
         "city": "Johannesburg",
-        "country": " Sydafrika",
+        "country": "Sydafrika",
         "notes": "",
         "region": "",
         "latitude": -26.20495,
@@ -6589,7 +6589,7 @@ const persons = {
     "mother": 149,
     "notes": "",
     "occupations": [
-      "Resebyr\u00e5tj\u00e4nsteman"
+      "Resebyråtjänsteman"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -6607,7 +6607,7 @@ const persons = {
       },
       "location": {
         "city": "Kapstaden",
-        "country": " Sydafrika",
+        "country": "Sydafrika",
         "notes": "",
         "region": "",
         "latitude": -33.91909,
@@ -6643,7 +6643,7 @@ const persons = {
         },
         "location": {
           "city": "Kapstaden",
-          "country": " Sydafrika",
+          "country": "Sydafrika",
           "notes": "",
           "region": ""
         },
@@ -6656,7 +6656,7 @@ const persons = {
     "mother": 149,
     "notes": "Adress 58 Sparrow Cres, Flamingo Viei 7450, Cape Town, Sydafrika.\nProduction Management diploma vid PM Institute,Sydafrika1983.\nBA vid University of South Africa.\nBor i Kapstaden, Sydafrika.",
     "occupations": [
-      "Konstn\u00e4r"
+      "Konstnär"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -6785,7 +6785,7 @@ const persons = {
       "Peder"
     ],
     "mother": 153,
-    "notes": "Adress Chemin de Hamo 20, CH1261 Chavonnes de Bogis, Schweiz.\nCivilekonom vid HEC 1978 i Lausanne, Schweiz.\nJur kand 1982 i Stockholm (AB).\nBor i Chavonnes de Bogis, Schweiz.\nArbetar som finansiell r\u00e5dgivare hos JS Gadd och CiE S.A. i Gen\u00e8ve.",
+    "notes": "Adress Chemin de Hamo 20, CH1261 Chavonnes de Bogis, Schweiz.\nCivilekonom vid HEC 1978 i Lausanne, Schweiz.\nJur kand 1982 i Stockholm (AB).\nBor i Chavonnes de Bogis, Schweiz.\nArbetar som finansiell rådgivare hos JS Gadd och CiE S.A. i Genève.",
     "occupations": [
       "Controller"
     ],
@@ -6852,7 +6852,7 @@ const persons = {
       "Elisabeth"
     ],
     "mother": 153,
-    "notes": "Adress Krokv\u00e4gen 1, 182 74 STOCKSUND.\nBor i Stocksund (AB).",
+    "notes": "Adress Krokvägen 1, 182 74 STOCKSUND.\nBor i Stocksund (AB).",
     "occupations": [
       "Vd"
     ],
@@ -6872,7 +6872,7 @@ const persons = {
       },
       "location": {
         "city": "Porto",
-        "country": " Portogal",
+        "country": "Portogal",
         "notes": "",
         "region": "",
         "latitude": 41.14584,
@@ -6921,7 +6921,7 @@ const persons = {
     "mother": 161,
     "notes": "",
     "occupations": [
-      "Bankdirekt\u00f6r"
+      "Bankdirektör"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -6939,9 +6939,9 @@ const persons = {
       },
       "location": {
         "city": "Buffalo",
-        "country": " USA",
+        "country": "USA",
         "notes": "",
-        "region": " New York",
+        "region": "New York",
         "latitude": 42.88545,
         "longitude": -78.87846,
         "fetchStatus": "FETCHED"
@@ -6969,7 +6969,7 @@ const persons = {
         "year": 1983
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -6994,7 +6994,7 @@ const persons = {
           "year": 1927
         },
         "location": {
-          "city": "Link\u00f6ping",
+          "city": "Linköping",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -7023,7 +7023,7 @@ const persons = {
         "year": 1928
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -7071,9 +7071,9 @@ const persons = {
       "Maria"
     ],
     "mother": 119,
-    "notes": "Adress \u00d8verby pl 9058, Unden\u00e4s, 546 00 KARLSBORG.\nBor i Unden\u00e4s.",
+    "notes": "Adress Øverby pl 9058, Undenäs, 546 00 KARLSBORG.\nBor i Undenäs.",
     "occupations": [
-      "F\u00f6rskoll\u00e4rare"
+      "Förskollärare"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -7091,7 +7091,7 @@ const persons = {
       },
       "location": {
         "city": "Fredriksberg",
-        "country": " Danmark",
+        "country": "Danmark",
         "notes": "",
         "region": "",
         "latitude": 55.67996,
@@ -7129,7 +7129,7 @@ const persons = {
     "father": null,
     "fileId": "0000000101",
     "firstName": "Poul",
-    "lastName": "L\u00fctken",
+    "lastName": "Lütken",
     "marriages": [
       {
         "date": {
@@ -7155,7 +7155,7 @@ const persons = {
     "mother": null,
     "notes": "",
     "occupations": [
-      "Kaptainl\u00f6jtnant"
+      "Kaptainlöjtnant"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -7172,7 +7172,7 @@ const persons = {
         "year": 1932
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -7227,9 +7227,9 @@ const persons = {
       "Margareta"
     ],
     "mother": 119,
-    "notes": "Adress Slottsgatan 4 B, 296 31 \u00c5HUS.\nSkild 1959.\nSkild 1976.\nJur kand 1959 i Lund (M).\nTingsmeritering 1959-61 vid Skarabygdens domsaga i Skara.\nHedersdoktor (Lan), Californian Lutheran University imaj1989.\nArbetat med informations- och samh\u00e4llskontaktfr\u00e5gor, socialpolitik, utbildningspolitik mm inom SAF. Ledamot/expert iflera officiella organ och arbetsmarknadskommitt\u00e9er inom n\u00e4mnda omr\u00e5den. Ledamot/expert av statliga utredningar som Kompetenskommitt\u00e9n (KK), kommitt\u00e9n f\u00f6r studiest\u00f6d \u00e5t vuxna (SVUX) och kommitt\u00e9n f\u00f6r f\u00f6rs\u00f6ksverksamhet med vuxenutbildning (F\u00d8VUX). Statssekreterare i handelsdepartementet (fp) \u00e5ren 1978-79 samt 1981-82. Anst\u00e4lld i utrikesdepartementet 1980.\nBitr\u00e4dande kabinettsekreterare 1980-81. Ordf\u00f6rande i Tipstj\u00e4nst 1980-82.\nLedamot/suppleant i bl a Svensk exportkredit, Sveriges Investeringsbank 1980-82. Deltagande i ett flertal konferenser inom ILO, OECD, Efta, Nordiska r\u00e5det m fl. Generalkonsul i Los Angeles 1982-89. Sedan 1989 ambassad\u00f6r i republiken Irland.\nBor i \u00c5hus (L).",
+    "notes": "Adress Slottsgatan 4 B, 296 31 ÅHUS.\nSkild 1959.\nSkild 1976.\nJur kand 1959 i Lund (M).\nTingsmeritering 1959-61 vid Skarabygdens domsaga i Skara.\nHedersdoktor (Lan), Californian Lutheran University imaj1989.\nArbetat med informations- och samhällskontaktfrågor, socialpolitik, utbildningspolitik mm inom SAF. Ledamot/expert iflera officiella organ och arbetsmarknadskommittéer inom nämnda områden. Ledamot/expert av statliga utredningar som Kompetenskommittén (KK), kommittén för studiestöd åt vuxna (SVUX) och kommittén för försöksverksamhet med vuxenutbildning (FØVUX). Statssekreterare i handelsdepartementet (fp) åren 1978-79 samt 1981-82. Anställd i utrikesdepartementet 1980.\nBiträdande kabinettsekreterare 1980-81. Ordförande i Tipstjänst 1980-82.\nLedamot/suppleant i bl a Svensk exportkredit, Sveriges Investeringsbank 1980-82. Deltagande i ett flertal konferenser inom ILO, OECD, Efta, Nordiska rådet m fl. Generalkonsul i Los Angeles 1982-89. Sedan 1989 ambassadör i republiken Irland.\nBor i Åhus (L).",
     "occupations": [
-      "Fd ambassad\u00f6r"
+      "Fd ambassadör"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -7246,7 +7246,7 @@ const persons = {
         "year": 1939
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -7286,9 +7286,9 @@ const persons = {
       "Christian"
     ],
     "mother": 119,
-    "notes": "Adress Stillings\u00f6n 6235, 440 92 SVANESUND.\nOforskat Gift n\u00e4r och var (sid 1).\nLeg l\u00e4kare 1971 och allm\u00e4nl\u00e4kare 1976.\nBor i Svanesund (O).",
+    "notes": "Adress Stillingsön 6235, 440 92 SVANESUND.\nOforskat Gift när och var (sid 1).\nLeg läkare 1971 och allmänläkare 1976.\nBor i Svanesund (O).",
     "occupations": [
-      "Distriktsl\u00e4kare"
+      "Distriktsläkare"
     ],
     "references": [],
     "sex": "MAN",
@@ -7305,7 +7305,7 @@ const persons = {
         "year": 1968
       },
       "location": {
-        "city": "V\u00e4nersborg",
+        "city": "Vänersborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -7354,7 +7354,7 @@ const persons = {
         "year": 1942
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -7387,9 +7387,9 @@ const persons = {
       "Birgitta"
     ],
     "mother": 119,
-    "notes": "Adress Bildradiogatan 12, 421 34 V FR\u00d8LUNDA.\nLeg sjuksk\u00f6terska 1968 i Stockholm (AB).\nDistriktssk\u00f6terskeutbildning 1984 i G\u00f6teborg (O).\nBor i V\u00e4stra Fr\u00f6lunda (O).",
+    "notes": "Adress Bildradiogatan 12, 421 34 V FRØLUNDA.\nLeg sjuksköterska 1968 i Stockholm (AB).\nDistriktssköterskeutbildning 1984 i Göteborg (O).\nBor i Västra Frölunda (O).",
     "occupations": [
-      "Distriktssk\u00f6terska"
+      "Distriktssköterska"
     ],
     "references": [],
     "sex": "WOMAN",
@@ -7967,7 +7967,7 @@ const persons = {
         "year": 1867
       },
       "location": {
-        "city": "p\u00e5 sin g\u00e5rd Fagerdala i V\u00e4rmd\u00f6",
+        "city": "på sin gård Fagerdala i Värmdö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -8004,7 +8004,7 @@ const persons = {
       "Bernhard"
     ],
     "mother": 70,
-    "notes": "(Tab 10:78 i GS).\nVistades 1829-36 p\u00e5 Gustafsbergs barnhus, f\u00f6r att senare \u00e4gna sig \u00e5t handel i Uddevalla. Avlade lantm\u00e4tarexamen 1843, blev vice lantm\u00e4tare 1848 och kommissionslantm\u00e4tare 1855. Allt i Stockholms l\u00e4n.",
+    "notes": "(Tab 10:78 i GS).\nVistades 1829-36 på Gustafsbergs barnhus, för att senare ägna sig åt handel i Uddevalla. Avlade lantmätarexamen 1843, blev vice lantmätare 1848 och kommissionslantmätare 1855. Allt i Stockholms län.",
     "occupations": [],
     "references": [],
     "sex": "UNKNOWN",
@@ -8021,7 +8021,7 @@ const persons = {
         "year": 1817
       },
       "location": {
-        "city": "\u00d8stra Ving\u00e5ker",
+        "city": "Østra Vingåker",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -8047,7 +8047,7 @@ const persons = {
         "year": 1901
       },
       "location": {
-        "city": "\u00d8rebro",
+        "city": "Ørebro",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -8142,7 +8142,7 @@ const persons = {
     "marriages": [],
     "middleNames": [],
     "mother": 70,
-    "notes": "(Tab 10:79 i GS).\nVistades \u00e5ren 1836-41 p\u00e5 Gustafsbergs barnhus, f\u00f6rattsenare \u00e4gna sig \u00e5t handel i Falk\u00f6ping, men \u00e5terv\u00e4ndesnarttill Uddevalla, d\u00e4r han blev handelsbokh\u00e5llare.",
+    "notes": "(Tab 10:79 i GS).\nVistades åren 1836-41 på Gustafsbergs barnhus, förattsenare ägna sig åt handel i Falköping, men återvändesnarttill Uddevalla, där han blev handelsbokhållare.",
     "occupations": [],
     "references": [],
     "sex": "UNKNOWN",
@@ -8323,7 +8323,7 @@ const persons = {
     "mother": 173,
     "notes": "(Tab 12 i GS).",
     "occupations": [
-      "Snickare i sandsj\u00f6n"
+      "Snickare i sandsjön"
     ],
     "references": [],
     "sex": "MAN",
@@ -8383,7 +8383,7 @@ const persons = {
           "year": 1873
         },
         "location": {
-          "city": "R\u00e4mmen",
+          "city": "Rämmen",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -8412,7 +8412,7 @@ const persons = {
         "year": 1850
       },
       "location": {
-        "city": "R\u00e4mmen",
+        "city": "Rämmen",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -8438,7 +8438,7 @@ const persons = {
         "year": 1919
       },
       "location": {
-        "city": "\u00c5nimskog",
+        "city": "Ånimskog",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -8451,7 +8451,7 @@ const persons = {
     "father": null,
     "fileId": "0000000119",
     "firstName": "Jan",
-    "lastName": "Tr\u00e4ff",
+    "lastName": "Träff",
     "marriages": [
       {
         "date": {
@@ -8463,7 +8463,7 @@ const persons = {
           "year": 1873
         },
         "location": {
-          "city": "R\u00e4mmen",
+          "city": "Rämmen",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -8674,7 +8674,7 @@ const persons = {
       "Gustaf"
     ],
     "mother": 173,
-    "notes": "(Tab 16 i GS).\nDe sista \u00e5ren hade han en skomakeriverkstad.",
+    "notes": "(Tab 16 i GS).\nDe sista åren hade han en skomakeriverkstad.",
     "occupations": [
       "Skomakare"
     ],
@@ -8932,7 +8932,7 @@ const persons = {
     "mother": null,
     "notes": "",
     "occupations": [
-      "F\u00f6rman vid karlstads vattenledningsverk"
+      "Förman vid karlstads vattenledningsverk"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -9029,7 +9029,7 @@ const persons = {
         "year": 1874
       },
       "location": {
-        "city": "Gr\u00e4smark",
+        "city": "Gräsmark",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -9068,7 +9068,7 @@ const persons = {
     "father": null,
     "fileId": "0000000127",
     "firstName": "Erik",
-    "lastName": "H\u00f6gf\u00e4ldt",
+    "lastName": "Högfäldt",
     "marriages": [
       {
         "date": {
@@ -9334,7 +9334,7 @@ const persons = {
       "Maria"
     ],
     "mother": 188,
-    "notes": "(Tab 12:46 i GS).\nInnehade syatelier och damskr\u00e4dderi i Stockholm.",
+    "notes": "(Tab 12:46 i GS).\nInnehade syatelier och damskrädderi i Stockholm.",
     "occupations": [],
     "references": [],
     "sex": "UNKNOWN",
@@ -9952,9 +9952,9 @@ const persons = {
         },
         "location": {
           "city": "Winnipeg",
-          "country": " Canada",
+          "country": "Canada",
           "notes": "",
-          "region": " Manitoba"
+          "region": "Manitoba"
         },
         "personId": 228
       },
@@ -9968,7 +9968,7 @@ const persons = {
       "Alexius"
     ],
     "mother": 188,
-    "notes": "(Tab 14 i GS).\nUtflyttad till Canada 1907 fr\u00e5n Nordmark (S).\nVid \u00e5rsskiftet 1936-37 innehade han Hegardts General Store, Groceries, Hardware, Gas and Oils i Menisino, Manitoba, Canada.\n1938 bodde de i Piney, Manitoba, Canada; samma slags aff\u00e4r d\u00e4r.",
+    "notes": "(Tab 14 i GS).\nUtflyttad till Canada 1907 från Nordmark (S).\nVid årsskiftet 1936-37 innehade han Hegardts General Store, Groceries, Hardware, Gas and Oils i Menisino, Manitoba, Canada.\n1938 bodde de i Piney, Manitoba, Canada; samma slags affär där.",
     "occupations": [],
     "references": [],
     "sex": "MAN",
@@ -10012,7 +10012,7 @@ const persons = {
       },
       "location": {
         "city": "Molkom",
-        "country": " Karlstad",
+        "country": "Karlstad",
         "notes": "",
         "region": "",
         "latitude": 59.60141,
@@ -10092,7 +10092,7 @@ const persons = {
       },
       "location": {
         "city": "Molkom",
-        "country": " Karlstad",
+        "country": "Karlstad",
         "notes": "",
         "region": "",
         "latitude": 59.60141,
@@ -10130,7 +10130,7 @@ const persons = {
     "mother": null,
     "notes": "",
     "occupations": [
-      "F\u00f6rest\u00e5ndare f\u00f6r normarksbergs godsstation"
+      "Föreståndare för normarksbergs godsstation"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -10213,9 +10213,9 @@ const persons = {
       "Hilmer"
     ],
     "mother": 188,
-    "notes": "(Tab 15 i GS).\nInnehade fr\u00e5n 1926 Hegardts livs i Sundbyberg.",
+    "notes": "(Tab 15 i GS).\nInnehade från 1926 Hegardts livs i Sundbyberg.",
     "occupations": [
-      "K\u00f6pman"
+      "Köpman"
     ],
     "references": [],
     "sex": "MAN",
@@ -10283,7 +10283,7 @@ const persons = {
           "year": 1917
         },
         "location": {
-          "city": "R\u00e4mmen",
+          "city": "Rämmen",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -10361,7 +10361,7 @@ const persons = {
           "year": 1917
         },
         "location": {
-          "city": "R\u00e4mmen",
+          "city": "Rämmen",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -10802,7 +10802,7 @@ const persons = {
         "year": 1971
       },
       "location": {
-        "city": "Pite\u00e5",
+        "city": "Piteå",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -10825,14 +10825,14 @@ const persons = {
     },
     "father": 122,
     "fileId": "0000000150",
-    "firstName": "\u00c5sa",
+    "firstName": "Åsa",
     "lastName": "Hegardt",
     "marriages": [],
     "middleNames": [
       "Christina"
     ],
     "mother": 168,
-    "notes": "Adress Stillings\u00f6n 405, 440 92 SVANESUND.\nBor i Svanesund (O).",
+    "notes": "Adress Stillingsön 405, 440 92 SVANESUND.\nBor i Svanesund (O).",
     "occupations": [
       "Studerande"
     ],
@@ -10897,9 +10897,9 @@ const persons = {
         },
         "location": {
           "city": "Winnipeg",
-          "country": " Canada",
+          "country": "Canada",
           "notes": "",
-          "region": " Manitoba"
+          "region": "Manitoba"
         },
         "personId": 196
       }
@@ -10926,9 +10926,9 @@ const persons = {
       },
       "location": {
         "city": "West Valley",
-        "country": " USA",
+        "country": "USA",
         "notes": "",
-        "region": " Minnesota",
+        "region": "Minnesota",
         "latitude": 45.74884,
         "longitude": -93.01734,
         "fetchStatus": "FETCHED"
@@ -10952,9 +10952,9 @@ const persons = {
       },
       "location": {
         "city": "Grunthal",
-        "country": " Canada",
+        "country": "Canada",
         "notes": "",
-        "region": " Manitoba",
+        "region": "Manitoba",
         "latitude": 49.40668,
         "longitude": -96.85132,
         "fetchStatus": "FETCHED"
@@ -10992,9 +10992,9 @@ const persons = {
       },
       "location": {
         "city": "Winnipeg",
-        "country": " Canada",
+        "country": "Canada",
         "notes": "",
-        "region": " Manitoba",
+        "region": "Manitoba",
         "latitude": 49.89953,
         "longitude": -97.14113,
         "fetchStatus": "FETCHED"
@@ -11024,9 +11024,9 @@ const persons = {
       },
       "location": {
         "city": "Enderby",
-        "country": " Canada",
+        "country": "Canada",
         "notes": "",
-        "region": " BC",
+        "region": "BC",
         "latitude": 50.5509,
         "longitude": -119.14016,
         "fetchStatus": "FETCHED"
@@ -11049,9 +11049,9 @@ const persons = {
         },
         "location": {
           "city": "Vernon",
-          "country": " Canada",
+          "country": "Canada",
           "notes": "",
-          "region": " BC"
+          "region": "BC"
         },
         "personId": 242
       }
@@ -11062,7 +11062,7 @@ const persons = {
     "mother": 228,
     "notes": "(Tab 14:53 i GS).",
     "occupations": [
-      "Skogsavverkningsentrepren\u00f6r"
+      "Skogsavverkningsentreprenör"
     ],
     "references": [],
     "sex": "MAN",
@@ -11080,9 +11080,9 @@ const persons = {
       },
       "location": {
         "city": "Vancouver",
-        "country": " Canada",
+        "country": "Canada",
         "notes": "",
-        "region": " BC",
+        "region": "BC",
         "latitude": 49.26038,
         "longitude": -123.11336,
         "fetchStatus": "FETCHED"
@@ -11122,9 +11122,9 @@ const persons = {
         },
         "location": {
           "city": "Vernon",
-          "country": " Canada",
+          "country": "Canada",
           "notes": "",
-          "region": " BC"
+          "region": "BC"
         },
         "personId": 230
       }
@@ -11135,7 +11135,7 @@ const persons = {
     "mother": null,
     "notes": "",
     "occupations": [
-      "Sjuksk\u00f6terska"
+      "Sjuksköterska"
     ],
     "references": [],
     "sex": "WOMAN",
@@ -11153,9 +11153,9 @@ const persons = {
       },
       "location": {
         "city": "Enderby",
-        "country": " Canada",
+        "country": "Canada",
         "notes": "",
-        "region": " BC",
+        "region": "BC",
         "latitude": 50.5509,
         "longitude": -119.14016,
         "fetchStatus": "FETCHED"
@@ -11192,9 +11192,9 @@ const persons = {
         },
         "location": {
           "city": "Salmon Arm",
-          "country": " Canada",
+          "country": "Canada",
           "notes": "",
-          "region": " BC"
+          "region": "BC"
         },
         "personId": 248
       }
@@ -11223,9 +11223,9 @@ const persons = {
       },
       "location": {
         "city": "Enderby",
-        "country": " Canada",
+        "country": "Canada",
         "notes": "",
-        "region": " BC",
+        "region": "BC",
         "latitude": 50.5509,
         "longitude": -119.14016,
         "fetchStatus": "FETCHED"
@@ -11259,9 +11259,9 @@ const persons = {
         },
         "location": {
           "city": "Enderby",
-          "country": " Canada",
+          "country": "Canada",
           "notes": "",
-          "region": " BC"
+          "region": "BC"
         },
         "personId": 251
       }
@@ -11272,7 +11272,7 @@ const persons = {
     "mother": 242,
     "notes": "Adress Box 33, Grindrod, BC, V0E 1V0, Canada.\nBor i Grindrod, BC, Canada.",
     "occupations": [
-      "Sjuksk\u00f6terska"
+      "Sjuksköterska"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -11290,9 +11290,9 @@ const persons = {
       },
       "location": {
         "city": "Armstrong",
-        "country": " Canada",
+        "country": "Canada",
         "notes": "",
-        "region": " BC",
+        "region": "BC",
         "latitude": 50.44179,
         "longitude": -119.18316,
         "fetchStatus": "FETCHED"
@@ -11326,9 +11326,9 @@ const persons = {
         },
         "location": {
           "city": "Enderby",
-          "country": " Canada",
+          "country": "Canada",
           "notes": "",
-          "region": " BC"
+          "region": "BC"
         },
         "personId": 244
       }
@@ -11355,9 +11355,9 @@ const persons = {
       },
       "location": {
         "city": "Enderby",
-        "country": " Canada",
+        "country": "Canada",
         "notes": "",
-        "region": " BC",
+        "region": "BC",
         "latitude": 50.5509,
         "longitude": -119.14016,
         "fetchStatus": "FETCHED"
@@ -11395,9 +11395,9 @@ const persons = {
         },
         "location": {
           "city": "Salmon Arm",
-          "country": " Canada",
+          "country": "Canada",
           "notes": "",
-          "region": " BC"
+          "region": "BC"
         },
         "personId": 252
       }
@@ -11408,7 +11408,7 @@ const persons = {
     "mother": 242,
     "notes": "Adress 1330-12 Ave SE, Salmon Arm, BC, V1E 2C7, Canada.\nBor i Salmon Arm, BC, Canada.",
     "occupations": [
-      "L\u00e4rare"
+      "Lärare"
     ],
     "references": [],
     "sex": "MAN",
@@ -11426,9 +11426,9 @@ const persons = {
       },
       "location": {
         "city": "Enderby",
-        "country": " Canada",
+        "country": "Canada",
         "notes": "",
-        "region": " BC",
+        "region": "BC",
         "latitude": 50.5509,
         "longitude": -119.14016,
         "fetchStatus": "FETCHED"
@@ -11462,9 +11462,9 @@ const persons = {
         },
         "location": {
           "city": "Enderby",
-          "country": " Canada",
+          "country": "Canada",
           "notes": "",
-          "region": " BC"
+          "region": "BC"
         },
         "personId": 256
       }
@@ -11497,9 +11497,9 @@ const persons = {
       },
       "location": {
         "city": "Enderby",
-        "country": " Canada",
+        "country": "Canada",
         "notes": "",
-        "region": " BC",
+        "region": "BC",
         "latitude": 50.5509,
         "longitude": -119.14016,
         "fetchStatus": "FETCHED"
@@ -11523,9 +11523,9 @@ const persons = {
       },
       "location": {
         "city": "Enderby",
-        "country": " Canada",
+        "country": "Canada",
         "notes": "",
-        "region": " BC",
+        "region": "BC",
         "latitude": 50.5509,
         "longitude": -119.14016,
         "fetchStatus": "FETCHED"
@@ -11559,9 +11559,9 @@ const persons = {
       },
       "location": {
         "city": "Salmon Arm",
-        "country": " Canada",
+        "country": "Canada",
         "notes": "",
-        "region": " BC",
+        "region": "BC",
         "latitude": 50.70318,
         "longitude": -119.26884,
         "fetchStatus": "FETCHED"
@@ -11598,9 +11598,9 @@ const persons = {
         },
         "location": {
           "city": "Salmon Arm",
-          "country": " Canada",
+          "country": "Canada",
           "notes": "",
-          "region": " BC"
+          "region": "BC"
         },
         "personId": 243
       }
@@ -11629,9 +11629,9 @@ const persons = {
       },
       "location": {
         "city": "Salmon Arm",
-        "country": " Canada",
+        "country": "Canada",
         "notes": "",
-        "region": " BC",
+        "region": "BC",
         "latitude": 50.70318,
         "longitude": -119.26884,
         "fetchStatus": "FETCHED"
@@ -11677,9 +11677,9 @@ const persons = {
       },
       "location": {
         "city": "Burnaby",
-        "country": " Canada",
+        "country": "Canada",
         "notes": "",
-        "region": " BC",
+        "region": "BC",
         "latitude": 49.24475,
         "longitude": -122.97334,
         "fetchStatus": "FETCHED"
@@ -11717,9 +11717,9 @@ const persons = {
         },
         "location": {
           "city": "Salmon Arm",
-          "country": " Canada",
+          "country": "Canada",
           "notes": "",
-          "region": " BC"
+          "region": "BC"
         },
         "personId": 245
       }
@@ -11746,9 +11746,9 @@ const persons = {
       },
       "location": {
         "city": "Salmon Arm",
-        "country": " Canada",
+        "country": "Canada",
         "notes": "",
-        "region": " BC",
+        "region": "BC",
         "latitude": 50.70318,
         "longitude": -119.26884,
         "fetchStatus": "FETCHED"
@@ -11792,7 +11792,7 @@ const persons = {
         "year": 1894
       },
       "location": {
-        "city": "L\u00e5ngared",
+        "city": "Långared",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -11921,7 +11921,7 @@ const persons = {
       "Maria"
     ],
     "mother": 232,
-    "notes": "(Tab 15:56 i GS).\nGenomg\u00e5tt barnav\u00e5rds- och hush\u00e5llsskola.",
+    "notes": "(Tab 15:56 i GS).\nGenomgått barnavårds- och hushållsskola.",
     "occupations": [],
     "references": [],
     "sex": "UNKNOWN",
@@ -11987,7 +11987,7 @@ const persons = {
       "Gunnar"
     ],
     "mother": 232,
-    "notes": "Adress Eskaderv 14, 183 54 T\u00c4BY.\n(Tab 15:57 i GS).\nBor i Stockholm (AB).",
+    "notes": "Adress Eskaderv 14, 183 54 TÄBY.\n(Tab 15:57 i GS).\nBor i Stockholm (AB).",
     "occupations": [
       "Grafiker"
     ],
@@ -12006,7 +12006,7 @@ const persons = {
         "year": 1926
       },
       "location": {
-        "city": "L\u00e5ngbro",
+        "city": "Långbro",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -12029,8 +12029,8 @@ const persons = {
     },
     "father": null,
     "fileId": "0000000168",
-    "firstName": "Hj\u00f6rdis",
-    "lastName": "Skogstr\u00f6m",
+    "firstName": "Hjördis",
+    "lastName": "Skogström",
     "marriages": [
       {
         "date": {
@@ -12100,7 +12100,7 @@ const persons = {
         "year": 1919
       },
       "location": {
-        "city": "Eksj\u00f6",
+        "city": "Eksjö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -12171,7 +12171,7 @@ const persons = {
         "year": 1919
       },
       "location": {
-        "city": "Eksj\u00f6",
+        "city": "Eksjö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -12196,7 +12196,7 @@ const persons = {
           "year": 1885
         },
         "location": {
-          "city": "Tran\u00e5s",
+          "city": "Tranås",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -12225,7 +12225,7 @@ const persons = {
         "year": 1849
       },
       "location": {
-        "city": "S\u00e4by",
+        "city": "Säby",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -12251,7 +12251,7 @@ const persons = {
         "year": 1923
       },
       "location": {
-        "city": "Tran\u00e5s",
+        "city": "Tranås",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -12276,7 +12276,7 @@ const persons = {
           "year": 1885
         },
         "location": {
-          "city": "Tran\u00e5s",
+          "city": "Tranås",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -12331,7 +12331,7 @@ const persons = {
         "year": 1905
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -12350,7 +12350,7 @@ const persons = {
       "Gotthard"
     ],
     "mother": 179,
-    "notes": "(Tab 19:76 i GS).\nBlev handelsbitr\u00e4de i Svanesund, sedermera handelsbokh\u00e5llare i Grebbestad och G\u00f6teborg samt slutligen kontorschef hos firman \u00d8rnberg och Andersson i sistn\u00e4mnda stad.",
+    "notes": "(Tab 19:76 i GS).\nBlev handelsbiträde i Svanesund, sedermera handelsbokhållare i Grebbestad och Göteborg samt slutligen kontorschef hos firman Ørnberg och Andersson i sistnämnda stad.",
     "occupations": [],
     "references": [],
     "sex": "UNKNOWN",
@@ -12586,7 +12586,7 @@ const persons = {
     "mother": null,
     "notes": "",
     "occupations": [
-      "F\u00f6rman vid casco i nacka"
+      "Förman vid casco i nacka"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -12687,9 +12687,9 @@ const persons = {
       "Valfrid"
     ],
     "mother": 202,
-    "notes": "(Tab 17 i GS).\nFlyttade till Stockholm 1927.\nArbetade d\u00e5 som f\u00f6rs\u00e4ljare i m\u00f6bel- och kl\u00e4desbranschen. Fortsatte med detta till 1947. D\u00e4refter egen k\u00f6pman i choklad och konfektyr.",
+    "notes": "(Tab 17 i GS).\nFlyttade till Stockholm 1927.\nArbetade då som försäljare i möbel- och klädesbranschen. Fortsatte med detta till 1947. Därefter egen köpman i choklad och konfektyr.",
     "occupations": [
-      "K\u00f6pman"
+      "Köpman"
     ],
     "references": [],
     "sex": "MAN",
@@ -12706,7 +12706,7 @@ const persons = {
         "year": 1901
       },
       "location": {
-        "city": "J\u00e4rna kbfd",
+        "city": "Järna kbfd",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -12766,7 +12766,7 @@ const persons = {
     "mother": 202,
     "notes": "(Tab 18 i GS).\nTvilling med Ragnhild* Sofia Hegardt.",
     "occupations": [
-      "Reparat\u00f6r"
+      "Reparatör"
     ],
     "references": [],
     "sex": "MAN",
@@ -12783,7 +12783,7 @@ const persons = {
         "year": 1901
       },
       "location": {
-        "city": "J\u00e4rna kbfd",
+        "city": "Järna kbfd",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -12914,7 +12914,7 @@ const persons = {
     "mother": null,
     "notes": "",
     "occupations": [
-      "Inspekt\u00f6r"
+      "Inspektör"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -12931,7 +12931,7 @@ const persons = {
         "year": 1907
       },
       "location": {
-        "city": "J\u00e4rna kbfd",
+        "city": "Järna kbfd",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -12957,7 +12957,7 @@ const persons = {
         "year": 1908
       },
       "location": {
-        "city": "J\u00e4rna kbfd",
+        "city": "Järna kbfd",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -12993,7 +12993,7 @@ const persons = {
         "year": 1909
       },
       "location": {
-        "city": "J\u00e4rna kbfd",
+        "city": "Järna kbfd",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -13138,7 +13138,7 @@ const persons = {
     "mother": null,
     "notes": "",
     "occupations": [
-      "Avdelningschef p\u00e5 bpa"
+      "Avdelningschef på bpa"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -13155,7 +13155,7 @@ const persons = {
         "year": 1912
       },
       "location": {
-        "city": "J\u00e4rna kbfd",
+        "city": "Järna kbfd",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -13236,7 +13236,7 @@ const persons = {
       },
       "location": {
         "city": "Sontorp",
-        "country": " H\u00e4llestad",
+        "country": "Hällestad",
         "notes": "",
         "region": "",
         "latitude": 58.74029,
@@ -13260,7 +13260,7 @@ const persons = {
     },
     "father": 278,
     "fileId": "0000000184",
-    "firstName": "M\u00e4rta",
+    "firstName": "Märta",
     "lastName": "Andersson",
     "marriages": [
       {
@@ -13344,7 +13344,7 @@ const persons = {
     "father": null,
     "fileId": "0000000185",
     "firstName": "Astrid",
-    "lastName": "How\u00e9n",
+    "lastName": "Howén",
     "marriages": [
       {
         "date": {
@@ -13385,7 +13385,7 @@ const persons = {
         "year": 1922
       },
       "location": {
-        "city": "i Finsp\u00e5ng ",
+        "city": "i Finspång",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -13429,7 +13429,7 @@ const persons = {
       "Ingalill"
     ],
     "mother": 266,
-    "notes": "Adress Oxelv\u00e4gen 21#138 00 \u00c4LTA###Holsg\u00e5rd.\n(Tab 17:66 i GS).\nStudentexamen 1952 i Stockholm (AB).\nSekreterarkurs 1954 i Stockholm (AB).\n20 po\u00e4ng sociologi 1973.\nBor i \u00c4lta, Nacka (AB).",
+    "notes": "Adress Oxelvägen 21#138 00 ÄLTA###Holsgård.\n(Tab 17:66 i GS).\nStudentexamen 1952 i Stockholm (AB).\nSekreterarkurs 1954 i Stockholm (AB).\n20 poäng sociologi 1973.\nBor i Älta, Nacka (AB).",
     "occupations": [
       "Fd chefssekreterare"
     ],
@@ -13503,7 +13503,7 @@ const persons = {
     "mother": 267,
     "notes": "Bor i Vallentuna (AB).",
     "occupations": [
-      "Adress bergv\u00e4gen 64",
+      "Adress bergvägen 64",
       "186 41  vallentuna"
     ],
     "references": [],
@@ -13534,7 +13534,7 @@ const persons = {
     "father": null,
     "fileId": "0000000188",
     "firstName": "Ma-Lou",
-    "lastName": "Nordenskj\u00f6ld",
+    "lastName": "Nordenskjöld",
     "marriages": [
       {
         "date": {
@@ -13623,7 +13623,7 @@ const persons = {
     "mother": 267,
     "notes": "Bor i Danderyd (AB).",
     "occupations": [
-      "Adress aug wahlstr\u00f6ms v\u00e4g 1",
+      "Adress aug wahlströms väg 1",
       "182 31  danderyd"
     ],
     "references": [],
@@ -13734,7 +13734,7 @@ const persons = {
     "mother": 280,
     "notes": "Bor i Vallentuna (AB).",
     "occupations": [
-      "Adress bergv\u00e4gen 64",
+      "Adress bergvägen 64",
       "186 41  vallentuna"
     ],
     "references": [],
@@ -13782,7 +13782,7 @@ const persons = {
     "mother": 280,
     "notes": "Bor i Vallentuna (AB).",
     "occupations": [
-      "Adress bergv\u00e4gen 64",
+      "Adress bergvägen 64",
       "186 41  vallentuna"
     ],
     "references": [],
@@ -13848,7 +13848,7 @@ const persons = {
       },
       "location": {
         "city": "Kapstaden",
-        "country": " Sydafrika",
+        "country": "Sydafrika",
         "notes": "",
         "region": "",
         "latitude": -33.91909,
@@ -13884,7 +13884,7 @@ const persons = {
         },
         "location": {
           "city": "Kapstaden",
-          "country": " Sydafrika",
+          "country": "Sydafrika",
           "notes": "",
           "region": ""
         },
@@ -13897,7 +13897,7 @@ const persons = {
     "mother": null,
     "notes": "",
     "occupations": [
-      "Direkt\u00f6r"
+      "Direktör"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -14016,7 +14016,7 @@ const persons = {
     "mother": 271,
     "notes": "Bor i Sundbyberg (AB).",
     "occupations": [
-      "Adress franstorpsv\u00e4gen 27",
+      "Adress franstorpsvägen 27",
       "172 36  sundbyberg"
     ],
     "references": [],
@@ -14035,7 +14035,7 @@ const persons = {
       },
       "location": {
         "city": "Kingston",
-        "country": " Jamaica",
+        "country": "Jamaica",
         "notes": "",
         "region": "",
         "latitude": 17.97092,
@@ -14064,7 +14064,7 @@ const persons = {
       "Austin"
     ],
     "mother": 123,
-    "notes": "Adress Modulatorg 17, 421 34 V FR\u00d8LUNDA.\nBor i V\u00e4stra Fr\u00f6lunda (O).",
+    "notes": "Adress Modulatorg 17, 421 34 V FRØLUNDA.\nBor i Västra Frölunda (O).",
     "occupations": [
       "Studerande"
     ],
@@ -14228,7 +14228,7 @@ const persons = {
         "year": 1846
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -14265,9 +14265,9 @@ const persons = {
       "Henrik"
     ],
     "mother": 30,
-    "notes": "(Tab 20 i GS).\nFirman hette G H Hegardt och Co (i kompanjonskap med hustruns systerson Oskar Andr\u00e9n). Illitterat r\u00e5dman i G\u00f6teborg fr\u00e5n \u00e5r 1834 eller 1835.",
+    "notes": "(Tab 20 i GS).\nFirman hette G H Hegardt och Co (i kompanjonskap med hustruns systerson Oskar Andrén). Illitterat rådman i Göteborg från år 1834 eller 1835.",
     "occupations": [
-      "Grosshandlare i g\u00f6teborg"
+      "Grosshandlare i göteborg"
     ],
     "references": [],
     "sex": "MAN",
@@ -14352,7 +14352,7 @@ const persons = {
         "year": 1810
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -14378,7 +14378,7 @@ const persons = {
         "year": 1812
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -14412,7 +14412,7 @@ const persons = {
         "year": 1812
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -14438,7 +14438,7 @@ const persons = {
         "year": 1881
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -14463,7 +14463,7 @@ const persons = {
           "year": 1840
         },
         "location": {
-          "city": "G\u00f6teborg",
+          "city": "Göteborg",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -14492,7 +14492,7 @@ const persons = {
         "year": 1802
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -14518,7 +14518,7 @@ const persons = {
         "year": 1867
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -14543,7 +14543,7 @@ const persons = {
           "year": 1840
         },
         "location": {
-          "city": "G\u00f6teborg",
+          "city": "Göteborg",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -14572,7 +14572,7 @@ const persons = {
         "year": 1813
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -14598,7 +14598,7 @@ const persons = {
         "year": 1813
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -14632,7 +14632,7 @@ const persons = {
         "year": 1814
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -14658,7 +14658,7 @@ const persons = {
         "year": 1889
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -14694,7 +14694,7 @@ const persons = {
         "year": 1816
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -14725,7 +14725,7 @@ const persons = {
       },
       "location": {
         "city": "Sontorp",
-        "country": " V\u00e4rnamo",
+        "country": "Värnamo",
         "notes": "",
         "region": "",
         "latitude": 57.18641,
@@ -14761,7 +14761,7 @@ const persons = {
       "Leopold"
     ],
     "mother": 287,
-    "notes": "(Tab 21 i GS).\nLeopold var syssling med sin hustru.\nEfter skolg\u00e5ng i G\u00f6teborg kom H p\u00e5 kontor hos sin morbror, major Koch p\u00e5 V\u00e5gs\u00e4ter och stannade d\u00e4r till 1844. Fick detta \u00e5r burskap som borgare och grosshandlare i Uddevalla. \u00c4gde \u00e5ren 1844-1851 S\u00f6rviks herrg\u00e5rd i Herrestad vid Uddevalla. Sedan dels arrenderade, dels f\u00f6rvaltade han efter varandra Tanums pr\u00e4stg\u00e5rd i Bohusl\u00e4n, Longs kaptensbost\u00e4lle i Long (Skarab), Asp\u00f6 herrg\u00e5rd n\u00e4ra Sk\u00f6vde samt Norrhorja i V\u00e4rnamo. Uppsade burskapet 1854.",
+    "notes": "(Tab 21 i GS).\nLeopold var syssling med sin hustru.\nEfter skolgång i Göteborg kom H på kontor hos sin morbror, major Koch på Vågsäter och stannade där till 1844. Fick detta år burskap som borgare och grosshandlare i Uddevalla. Ägde åren 1844-1851 Sörviks herrgård i Herrestad vid Uddevalla. Sedan dels arrenderade, dels förvaltade han efter varandra Tanums prästgård i Bohuslän, Longs kaptensboställe i Long (Skarab), Aspö herrgård nära Skövde samt Norrhorja i Värnamo. Uppsade burskapet 1854.",
     "occupations": [
       "Grosshandlare"
     ],
@@ -14780,7 +14780,7 @@ const persons = {
         "year": 1825
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -14806,7 +14806,7 @@ const persons = {
         "year": 1902
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -14831,7 +14831,7 @@ const persons = {
           "year": 1845
         },
         "location": {
-          "city": "G\u00f6teborg",
+          "city": "Göteborg",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -15001,7 +15001,7 @@ const persons = {
           "year": 1870
         },
         "location": {
-          "city": "Vass\u00e4nda",
+          "city": "Vassända",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -15010,12 +15010,12 @@ const persons = {
       }
     ],
     "middleNames": [
-      "Mika\u00ebl"
+      "Mikaël"
     ],
     "mother": 297,
-    "notes": "(Tab 22 i GS).\nGenomgick, efter skolg\u00e5ng i Uddevalla och J\u00f6nk\u00f6ping, \u00e5ren 1862-63 Askenstedtska privata handelsinstitut i Uddevalla och hade, fr\u00e5n sistn\u00e4mnda \u00e5r anst\u00e4llning som bokh\u00e5llare hos firman W Thorburns s\u00f6ner i Uddevalla. Ledamot av styrelsen f\u00f6r Uddevalla museum 1869 och fr\u00e5n 1870 tillika dess sekreterare.\n\"Redbar, skicklig och m\u00e5ngkunnig i sitt yrke, blev han v\u00e4rderad av principaler och yrkesbr\u00f6der samt ofta anlitad om r\u00e5d och upplysningar av l\u00e5ngt \u00e4ldre personer. Redan tidigt anv\u00e4ndes han ocks\u00e5 i olika, mer eller mindre offentliga v\u00e4rv, s\u00e5som inom fattigv\u00e5rden, frivilliga brand? och skarpskyttek\u00e5ren samt varjehanda f\u00f6reningar. Hans livliga och vetgiriga sinne var dessutom icke allenast f\u00f6r alla dagens fr\u00e5gor, utan \u00e4ven f\u00f6r f\u00f6rflutna tiders minnen. I m\u00e5nga \u00e5r nitisk medlem av museistyrelsen h\u00e4rst\u00e4des, intresserade han sig d\u00e4r med f\u00f6rk\u00e4rlek f\u00f6r konst? och fornsaker samt numismatik. ---\" Begravdes 23/5 i n\u00e4rvaro av en \"or\u00e4knelig m\u00e4nniskomassa\". (Bohusl tidn 1875 21/5 och 23/5.)",
+    "notes": "(Tab 22 i GS).\nGenomgick, efter skolgång i Uddevalla och Jönköping, åren 1862-63 Askenstedtska privata handelsinstitut i Uddevalla och hade, från sistnämnda år anställning som bokhållare hos firman W Thorburns söner i Uddevalla. Ledamot av styrelsen för Uddevalla museum 1869 och från 1870 tillika dess sekreterare.\n\"Redbar, skicklig och mångkunnig i sitt yrke, blev han värderad av principaler och yrkesbröder samt ofta anlitad om råd och upplysningar av långt äldre personer. Redan tidigt användes han också i olika, mer eller mindre offentliga värv, såsom inom fattigvården, frivilliga brand? och skarpskyttekåren samt varjehanda föreningar. Hans livliga och vetgiriga sinne var dessutom icke allenast för alla dagens frågor, utan även för förflutna tiders minnen. I många år nitisk medlem av museistyrelsen härstädes, intresserade han sig där med förkärlek för konst? och fornsaker samt numismatik. ---\" Begravdes 23/5 i närvaro av en \"oräknelig människomassa\". (Bohusl tidn 1875 21/5 och 23/5.)",
     "occupations": [
-      "Bokh\u00e5llare"
+      "Bokhållare"
     ],
     "references": [],
     "sex": "MAN",
@@ -15239,7 +15239,7 @@ const persons = {
     "mother": null,
     "notes": "",
     "occupations": [
-      "Kommend\u00f6rkapten av 1:a graden"
+      "Kommendörkapten av 1:a graden"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -15256,7 +15256,7 @@ const persons = {
         "year": 1849
       },
       "location": {
-        "city": "Vass\u00e4nda",
+        "city": "Vassända",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -15299,7 +15299,7 @@ const persons = {
     "father": 310,
     "fileId": "0000000214",
     "firstName": "Anna",
-    "lastName": "Carlstr\u00f6m",
+    "lastName": "Carlström",
     "marriages": [
       {
         "date": {
@@ -15311,7 +15311,7 @@ const persons = {
           "year": 1870
         },
         "location": {
-          "city": "Vass\u00e4nda",
+          "city": "Vassända",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -15370,7 +15370,7 @@ const persons = {
         "year": 1919
       },
       "location": {
-        "city": "V\u00e4nersborg",
+        "city": "Vänersborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -15408,9 +15408,9 @@ const persons = {
       "Henrik"
     ],
     "mother": 304,
-    "notes": "(Tab 23 i GS).\nEfter avslutade skolstudier i V\u00e4nersborg hade han plats som handelsbitr\u00e4de dels i denna stad, dels i Sk\u00f6vde och G\u00f6teborg samt etablerade 1900 egen manufakturaff\u00e4r i V\u00e4nersborg, vilken han innehade till sin d\u00f6d.\n\"Henrik Hegardt har varit en redbar och kunnig k\u00f6pman, som \u00e5tnjutit allas odelade f\u00f6rtroende, d\u00e4rtill tj\u00e4nstvillig och \u00e4gnade ett gott s\u00e4tt mot kunderna. Med sitt enkla gladlynta v\u00e4sen f\u00f6rv\u00e4rvade han m\u00e5nga v\u00e4nner och var en omtyckt ordensbroder. Inom s\u00e5v\u00e4l frimurarorden som Par Bricole intog han h\u00f6ga grader.\" (\u00c4lvsb l\u00e4ns annonsblad 1919 30/8.)",
+    "notes": "(Tab 23 i GS).\nEfter avslutade skolstudier i Vänersborg hade han plats som handelsbiträde dels i denna stad, dels i Skövde och Göteborg samt etablerade 1900 egen manufakturaffär i Vänersborg, vilken han innehade till sin död.\n\"Henrik Hegardt har varit en redbar och kunnig köpman, som åtnjutit allas odelade förtroende, därtill tjänstvillig och ägnade ett gott sätt mot kunderna. Med sitt enkla gladlynta väsen förvärvade han många vänner och var en omtyckt ordensbroder. Inom såväl frimurarorden som Par Bricole intog han höga grader.\" (Älvsb läns annonsblad 1919 30/8.)",
     "occupations": [
-      "K\u00f6pman"
+      "Köpman"
     ],
     "references": [],
     "sex": "MAN",
@@ -15427,7 +15427,7 @@ const persons = {
         "year": 1870
       },
       "location": {
-        "city": "Trollh\u00e4ttan",
+        "city": "Trollhättan",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -15456,7 +15456,7 @@ const persons = {
         "year": 1939
       },
       "location": {
-        "city": "V\u00e4stervik",
+        "city": "Västervik",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -15563,7 +15563,7 @@ const persons = {
           "year": 1908
         },
         "location": {
-          "city": "S\u00e4ffle",
+          "city": "Säffle",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -15576,7 +15576,7 @@ const persons = {
       "Leopold"
     ],
     "mother": 304,
-    "notes": "(Tab 24 i GS).\nEfter avslutade studier vid V\u00e4nersborgs l\u00e4roverk genomgick han G\u00f6teborgs Handelsinstitut, d\u00e4r han gick ut 1892.\nInnehade d\u00e4refter grossistfirma i kolonialvaror i V\u00e4nersborg under en f\u00f6ljd av \u00e5r. Blev d\u00e4refter representant f\u00f6r st\u00f6rre firmor i samma bransch.\nMedlem av Odd Fellows under sin V\u00e4nersborgstid.",
+    "notes": "(Tab 24 i GS).\nEfter avslutade studier vid Vänersborgs läroverk genomgick han Göteborgs Handelsinstitut, där han gick ut 1892.\nInnehade därefter grossistfirma i kolonialvaror i Vänersborg under en följd av år. Blev därefter representant för större firmor i samma bransch.\nMedlem av Odd Fellows under sin Vänersborgstid.",
     "occupations": [],
     "references": [],
     "sex": "MAN",
@@ -15619,7 +15619,7 @@ const persons = {
         "year": 1883
       },
       "location": {
-        "city": "V\u00e4nersborg",
+        "city": "Vänersborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -15749,7 +15749,7 @@ const persons = {
         "year": 1808
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -15775,7 +15775,7 @@ const persons = {
         "year": 1870
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -15800,7 +15800,7 @@ const persons = {
           "year": 1845
         },
         "location": {
-          "city": "G\u00f6teborg",
+          "city": "Göteborg",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -15907,7 +15907,7 @@ const persons = {
         "year": 1903
       },
       "location": {
-        "city": "V\u00e4nersborg",
+        "city": "Vänersborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -15939,7 +15939,7 @@ const persons = {
         "year": 1947
       },
       "location": {
-        "city": "V\u00e4stervik",
+        "city": "Västervik",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -15976,7 +15976,7 @@ const persons = {
       "Henrik"
     ],
     "mother": 311,
-    "notes": "(Tab 23:88 i GS).\nMed lic 1930 i Lund (M).\nE l\u00e4kare vid Lunds hospital och asyl 1930.\nAssistenl\u00e4kare och underl\u00e4kare vid l\u00e4nslasarettet i V\u00e4nersborg 1930-1932. Innehaft f\u00f6rordnanden som stads- och provisiall\u00e4kare.\nAndre lasarettsl\u00e4kare 1932 i V\u00e4stervik (H).\nF\u00f6rste lasarettsl\u00e4kare 1933 och f\u00f6rste stadsl\u00e4kare i V\u00e4stervik fr\u00e5n 1935 till sin d\u00f6d.",
+    "notes": "(Tab 23:88 i GS).\nMed lic 1930 i Lund (M).\nE läkare vid Lunds hospital och asyl 1930.\nAssistenläkare och underläkare vid länslasarettet i Vänersborg 1930-1932. Innehaft förordnanden som stads- och provisialläkare.\nAndre lasarettsläkare 1932 i Västervik (H).\nFörste lasarettsläkare 1933 och förste stadsläkare i Västervik från 1935 till sin död.",
     "occupations": [],
     "references": [],
     "sex": "MAN",
@@ -16047,9 +16047,9 @@ const persons = {
       "Ingeborg"
     ],
     "mother": 338,
-    "notes": "Adress St Tr\u00e4dg\u00e5rdsgatan 15 A? 543 35 V\u00c4STERVIK.",
+    "notes": "Adress St Trädgårdsgatan 15 A? 543 35 VÄSTERVIK.",
     "occupations": [
-      "Fd skolk\u00f6ksl\u00e4rarinna"
+      "Fd skolkökslärarinna"
     ],
     "references": [],
     "sex": "WOMAN",
@@ -16066,7 +16066,7 @@ const persons = {
         "year": 1907
       },
       "location": {
-        "city": "V\u00e4nersborg",
+        "city": "Vänersborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -16092,7 +16092,7 @@ const persons = {
         "year": 1948
       },
       "location": {
-        "city": "L\u00e4ggesta",
+        "city": "Läggesta",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -16117,7 +16117,7 @@ const persons = {
           "year": 1928
         },
         "location": {
-          "city": "V\u00e4nersborg",
+          "city": "Vänersborg",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -16148,7 +16148,7 @@ const persons = {
         "year": 1900
       },
       "location": {
-        "city": "Ume\u00e5",
+        "city": "Umeå",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -16184,7 +16184,7 @@ const persons = {
           "year": 1928
         },
         "location": {
-          "city": "V\u00e4nersborg",
+          "city": "Vänersborg",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -16198,7 +16198,7 @@ const persons = {
     "mother": null,
     "notes": "",
     "occupations": [
-      "L\u00f6jtnant"
+      "Löjtnant"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -16241,7 +16241,7 @@ const persons = {
         "year": 1933
       },
       "location": {
-        "city": "V\u00e4stervik",
+        "city": "Västervik",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -16279,7 +16279,7 @@ const persons = {
         "year": 1933
       },
       "location": {
-        "city": "V\u00e4stervik",
+        "city": "Västervik",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -16305,7 +16305,7 @@ const persons = {
         "year": 1941
       },
       "location": {
-        "city": "V\u00e4stervik",
+        "city": "Västervik",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -16342,7 +16342,7 @@ const persons = {
         "year": 1933
       },
       "location": {
-        "city": "V\u00e4stervik",
+        "city": "Västervik",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -16378,7 +16378,7 @@ const persons = {
           "year": 1961
         },
         "location": {
-          "city": "V\u00e4stervik",
+          "city": "Västervik",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -16390,7 +16390,7 @@ const persons = {
       "Birgitta"
     ],
     "mother": 332,
-    "notes": "Adress Malma Ringv\u00e4g 7, 752 45 UPPSALA.\nFil mag 1959.\nBor i Uppsala (C).",
+    "notes": "Adress Malma Ringväg 7, 752 45 UPPSALA.\nFil mag 1959.\nBor i Uppsala (C).",
     "occupations": [
       "Adjunkt"
     ],
@@ -16445,7 +16445,7 @@ const persons = {
           "year": 1961
         },
         "location": {
-          "city": "V\u00e4stervik",
+          "city": "Västervik",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -16474,7 +16474,7 @@ const persons = {
         "year": 1936
       },
       "location": {
-        "city": "V\u00e4stervik",
+        "city": "Västervik",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -16503,7 +16503,7 @@ const persons = {
         "year": 1998
       },
       "location": {
-        "city": "\u00c5karp",
+        "city": "Åkarp",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -16528,7 +16528,7 @@ const persons = {
           "year": 1971
         },
         "location": {
-          "city": "Hosj\u00f6",
+          "city": "Hosjö",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -16540,7 +16540,7 @@ const persons = {
       "Peter"
     ],
     "mother": 332,
-    "notes": "Studentexamen 1955 i V\u00e4stervik (H).\nHandelsgymnasieexamen 1958 vid G\u00f6teborgs handelsinstitut. Hochschule f\u00fcr Welthandel, Wien, \u00d8sterrike 1965-67.",
+    "notes": "Studentexamen 1955 i Västervik (H).\nHandelsgymnasieexamen 1958 vid Göteborgs handelsinstitut. Hochschule für Welthandel, Wien, Østerrike 1965-67.",
     "occupations": [
       "Bankkamrer"
     ],
@@ -16598,7 +16598,7 @@ const persons = {
           "year": 1971
         },
         "location": {
-          "city": "Hosj\u00f6",
+          "city": "Hosjö",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -16608,9 +16608,9 @@ const persons = {
     ],
     "middleNames": [],
     "mother": null,
-    "notes": "Adress Hornsgatan 5, 234 32 LOMMA.\nStudentexamen 1960.\nSm\u00e5skoll\u00e4rarexamen 1962.",
+    "notes": "Adress Hornsgatan 5, 234 32 LOMMA.\nStudentexamen 1960.\nSmåskollärarexamen 1962.",
     "occupations": [
-      "L\u00e5gstadiel\u00e4rare"
+      "Lågstadielärare"
     ],
     "references": [],
     "sex": "WOMAN",
@@ -16627,7 +16627,7 @@ const persons = {
         "year": 1943
       },
       "location": {
-        "city": "V\u00e4stervik",
+        "city": "Västervik",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -16657,9 +16657,9 @@ const persons = {
       "Magnus"
     ],
     "mother": 332,
-    "notes": "Adress R\u00e5dhusgatan 28, 593 33 V\u00c4STERVIK.\nStudentexamen 1963 i V\u00e4stervik (H).\nFil mag 1967 i Uppsala (C).\nBor i V\u00e4stervik (H).",
+    "notes": "Adress Rådhusgatan 28, 593 33 VÄSTERVIK.\nStudentexamen 1963 i Västervik (H).\nFil mag 1967 i Uppsala (C).\nBor i Västervik (H).",
     "occupations": [
-      "Marknadsdirekt\u00f6r"
+      "Marknadsdirektör"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -16706,7 +16706,7 @@ const persons = {
       "Peter"
     ],
     "mother": 342,
-    "notes": "Adress Hornsgatan 5, 234 32 LOMMA.\nBor i \u00c5karp (M).",
+    "notes": "Adress Hornsgatan 5, 234 32 LOMMA.\nBor i Åkarp (M).",
     "occupations": [
       "Studerande"
     ],
@@ -16755,7 +16755,7 @@ const persons = {
       "Monica"
     ],
     "mother": 342,
-    "notes": "Adress Hornsgatan 5, 234 32 LOMMA.\n1994.\nBor i \u00c5karp (M).",
+    "notes": "Adress Hornsgatan 5, 234 32 LOMMA.\n1994.\nBor i Åkarp (M).",
     "occupations": [
       "Studerande"
     ],
@@ -16774,7 +16774,7 @@ const persons = {
         "year": 1885
       },
       "location": {
-        "city": "\u00d8stra F\u00e5gelvik",
+        "city": "Østra Fågelvik",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -16827,7 +16827,7 @@ const persons = {
           "year": 1908
         },
         "location": {
-          "city": "S\u00e4ffle",
+          "city": "Säffle",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -17077,7 +17077,7 @@ const persons = {
         "year": 1757
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -17103,7 +17103,7 @@ const persons = {
         "year": 1815
       },
       "location": {
-        "city": "\u00c5sbr\u00e4cka",
+        "city": "Åsbräcka",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -17116,7 +17116,7 @@ const persons = {
     "father": 350,
     "fileId": "0000000239",
     "firstName": "Anna",
-    "lastName": "Gj\u00e6dda",
+    "lastName": "Gjædda",
     "marriages": [
       {
         "date": {
@@ -17237,7 +17237,7 @@ const persons = {
         "year": 1748
       },
       "location": {
-        "city": "\u00d8verkalix",
+        "city": "Øverkalix",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -17545,9 +17545,9 @@ const persons = {
       "Johansson"
     ],
     "mother": 43,
-    "notes": "(Tab 26 i GS).\nDubbelkusin med sin hustru.\nPeter som var tidigt utvecklad och visade stor l\u00e4tthet f\u00f6r studier, blev \u00e5r 1783, redan innan han fyllt tolv \u00e5r, inskriven vid Lunds universitet. Han valde emellertid inte den l\u00e4rda banan, utan f\u00f6ljde i faderns fotsp\u00e5r och vann 1795 burskap som handlande i Uddevalla och \u00f6ppnade d\u00e4r, i kompanjonskap med handlanden Wallenkamp, grosshandelsr\u00f6relse.\n\"Med en fullkomlig underbyggnad i det vetenskapliga av hans yrke och med en livlig sj\u00e4l, som aldrig fann utsikten f\u00f6r sin verkning h\u00e4mmad, var naturligt att hans aff\u00e4rer skulle bli av betydenhet och drift.\" Lyckan var honom emellertid inte bev\u00e5gen, firman m\u00e5ste likvideras. Han ingick d\u00e4refter nytt bolag med sin broder Kristian och denna r\u00f6relse drevs med stor framg\u00e5ng, s\u00e5 att firman kunde st\u00e5 emot verkningarna av s\u00e5v\u00e4l den brand, som 1806 \u00f6delade Uddevalla, som \u00e4ven den efter fredsslutet 1814 utbrutna allm\u00e4nna krisen inom handelsv\u00e4rlden. F\u00f6ljderna av denna kris var dock inte \u00e4nnu \u00f6vervunna, d\u00e5 han endast 49-\u00e5rig of\u00f6rmodat gick bort.\nDen kraftfulle och verksamme mannen hade flitigt tagits i anspr\u00e5k f\u00f6r olika v\u00e4rv. Efter 1806 \u00e5rs brand \"kallade f\u00f6rtroendet hans verksamhet till flera kommitt\u00e9er, varibland s\u00e4rskilt m\u00e5 n\u00e4mnas berednings-, medlings- och f\u00f6reningskommitt\u00e9n, vars ordf\u00f6rande han blev och vars f\u00f6rem\u00e5l han bragte till slut. N\u00e5got sk\u00f6nare f\u00f6rtroende kunde aldrig erh\u00e5llas ---, n\u00e5gra \u00e4dlare handlingar kunde aldrig f\u00f6retes, \u00e4n de av Hegardt framlagda, att, efter billighetens regler och med fr\u00e4mjande av allm\u00e4nt gagn och enskild r\u00e4tt, f\u00f6rlika medlemmars stridigheter och f\u00f6rekomma alltid b\u00e5de obehagliga och kostsamma r\u00e4tteg\u00e5ngar dem emellan, utan annan avsikt och vederg\u00e4llning \u00e4n den, som efter tiden sk\u00f6rdas.\" Till riksdagen 1809 valdes han som representant i borgarst\u00e5ndet f\u00f6r Uddevalla m fl st\u00e4der. Vidare var han en l\u00e4ngre tid ordf\u00f6rande f\u00f6r stadens \u00e4ldste och f\u00f6r Uddevalla handelssocietet samt chef f\u00f6r handelsb\u00e5rlaget fr\u00e5n b\u00f6rjan av 1811 till sin d\u00f6d.\n\"I handelssocieteten gjorde han den 28 januari 1813 sitt intr\u00e4de med ett tal om handeln, som vittnade om insikt i dess historia och om smak i stilen. Fr\u00e5n detta sysslande tog han avsked den 28 januari 1820.\" Genom Peters inflytande fick Uddevalla f\u00f6r n\u00e5gon tid inf\u00f6rselsr\u00e4tt f\u00f6r utl\u00e4ndskt br\u00e4nnvin, vilket gav staden betydande ekonomiska f\u00f6rdelar.\n\"Men det var icke allena i sitt yrke och i sin borgarplikt, som framlidne Hegardt \u00e4gde ett avgjort f\u00f6retr\u00e4de; han var \u00e4ven fr\u00e5n de sk\u00f6na konsternas v\u00e4rld m\u00e4ktig att leda k\u00e4nslan och smaken. I ett musikaliskt n\u00f6je utgjorde han ofta ledstj\u00e4rnan och hans talent att traktera sin fl\u00f6jt, att styra harmonin, tillvann honom aktning och tillgivenhet.\" Ovanst\u00e5ende \u00e4r h\u00e4mtat ur en parentation \u00f6ver Peter Johansson Hegardt, som vid femtio\u00e5rsminnet av hans f\u00f6delse h\u00f6lls vid \"allm\u00e4n sammankomst\" (sannolikt i handelssocieten) och som avslutades med f\u00f6ljande ord: \"Det \u00e4r ej heller andra motiv \u00e4n v\u00e4nskapens och \u00f6vertygelsens --- som lett mitt f\u00f6retag i f\u00f6rening med den egennytta, att s\u00e4rdeles \u00e5t de yngre borgarna inom hans klass giva exempel och uppmuntran; att genom verksamhet och \u00e4dla g\u00e4rningar, genom v\u00e5rdad dygd och gudsfruktan, g\u00f6ra sig aktade i tiden, saknade i d\u00f6den och h\u00e5gkomna i graven.\" Peter var ocks\u00e5 r\u00e5dman i Uddevalla.",
+    "notes": "(Tab 26 i GS).\nDubbelkusin med sin hustru.\nPeter som var tidigt utvecklad och visade stor lätthet för studier, blev år 1783, redan innan han fyllt tolv år, inskriven vid Lunds universitet. Han valde emellertid inte den lärda banan, utan följde i faderns fotspår och vann 1795 burskap som handlande i Uddevalla och öppnade där, i kompanjonskap med handlanden Wallenkamp, grosshandelsrörelse.\n\"Med en fullkomlig underbyggnad i det vetenskapliga av hans yrke och med en livlig själ, som aldrig fann utsikten för sin verkning hämmad, var naturligt att hans affärer skulle bli av betydenhet och drift.\" Lyckan var honom emellertid inte bevågen, firman måste likvideras. Han ingick därefter nytt bolag med sin broder Kristian och denna rörelse drevs med stor framgång, så att firman kunde stå emot verkningarna av såväl den brand, som 1806 ödelade Uddevalla, som även den efter fredsslutet 1814 utbrutna allmänna krisen inom handelsvärlden. Följderna av denna kris var dock inte ännu övervunna, då han endast 49-årig oförmodat gick bort.\nDen kraftfulle och verksamme mannen hade flitigt tagits i anspråk för olika värv. Efter 1806 års brand \"kallade förtroendet hans verksamhet till flera kommittéer, varibland särskilt må nämnas berednings-, medlings- och föreningskommittén, vars ordförande han blev och vars föremål han bragte till slut. Något skönare förtroende kunde aldrig erhållas ---, några ädlare handlingar kunde aldrig företes, än de av Hegardt framlagda, att, efter billighetens regler och med främjande av allmänt gagn och enskild rätt, förlika medlemmars stridigheter och förekomma alltid både obehagliga och kostsamma rättegångar dem emellan, utan annan avsikt och vedergällning än den, som efter tiden skördas.\" Till riksdagen 1809 valdes han som representant i borgarståndet för Uddevalla m fl städer. Vidare var han en längre tid ordförande för stadens äldste och för Uddevalla handelssocietet samt chef för handelsbårlaget från början av 1811 till sin död.\n\"I handelssocieteten gjorde han den 28 januari 1813 sitt inträde med ett tal om handeln, som vittnade om insikt i dess historia och om smak i stilen. Från detta sysslande tog han avsked den 28 januari 1820.\" Genom Peters inflytande fick Uddevalla för någon tid införselsrätt för utländskt brännvin, vilket gav staden betydande ekonomiska fördelar.\n\"Men det var icke allena i sitt yrke och i sin borgarplikt, som framlidne Hegardt ägde ett avgjort företräde; han var även från de sköna konsternas värld mäktig att leda känslan och smaken. I ett musikaliskt nöje utgjorde han ofta ledstjärnan och hans talent att traktera sin flöjt, att styra harmonin, tillvann honom aktning och tillgivenhet.\" Ovanstående är hämtat ur en parentation över Peter Johansson Hegardt, som vid femtioårsminnet av hans födelse hölls vid \"allmän sammankomst\" (sannolikt i handelssocieten) och som avslutades med följande ord: \"Det är ej heller andra motiv än vänskapens och övertygelsens --- som lett mitt företag i förening med den egennytta, att särdeles åt de yngre borgarna inom hans klass giva exempel och uppmuntran; att genom verksamhet och ädla gärningar, genom vårdad dygd och gudsfruktan, göra sig aktade i tiden, saknade i döden och hågkomna i graven.\" Peter var också rådman i Uddevalla.",
     "occupations": [
-      "Grosshandlare och r\u00e5dman"
+      "Grosshandlare och rådman"
     ],
     "references": [
       "se tab 6"
@@ -17769,7 +17769,7 @@ const persons = {
     "mother": null,
     "notes": "",
     "occupations": [
-      "Handlande och \u00e5ren 1804"
+      "Handlande och åren 1804"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -17857,7 +17857,7 @@ const persons = {
     ],
     "middleNames": [],
     "mother": 43,
-    "notes": "(Tab 38 i GS).\nGrosshandlare i Uddevalla i kompanjonskap med sin bror Peter \u00e5ren 1800-1816. Sistn\u00e4mnda \u00e5r uppsade han burskapet som borgare.\nK\u00f6pte efter stadens brand 1806 egendomen Samner\u00f6d i B\u00e4vne sn intill Uddevalla, d\u00e4r han sedan var bosatt till 1855, d\u00e5 egendomen s\u00e5ldes.",
+    "notes": "(Tab 38 i GS).\nGrosshandlare i Uddevalla i kompanjonskap med sin bror Peter åren 1800-1816. Sistnämnda år uppsade han burskapet som borgare.\nKöpte efter stadens brand 1806 egendomen Samneröd i Bävne sn intill Uddevalla, där han sedan var bosatt till 1855, då egendomen såldes.",
     "occupations": [
       "Grosshandlare"
     ],
@@ -17902,7 +17902,7 @@ const persons = {
         "year": 1850
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -17954,7 +17954,7 @@ const persons = {
         "year": 1772
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -17980,7 +17980,7 @@ const persons = {
         "year": 1819
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -18019,7 +18019,7 @@ const persons = {
     "mother": 365,
     "notes": "",
     "occupations": [
-      "Tullf\u00f6rvaltare i g\u00f6teborg"
+      "Tullförvaltare i göteborg"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -18193,7 +18193,7 @@ const persons = {
         "year": 1868
       },
       "location": {
-        "city": "p\u00e5 tingsst\u00e4llet Skansen i Kungsbacka",
+        "city": "på tingsstället Skansen i Kungsbacka",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -18228,9 +18228,9 @@ const persons = {
     ],
     "middleNames": [],
     "mother": 318,
-    "notes": "(Tab 27 i GS).\nJohannes sattes h\u00f6sten 1806, efter branden i Uddevalla, tillsammans med de yngre br\u00f6derna i pension i Halland, d\u00e4r de undervisades av informatorer (bl a sedermera \u00e4rkebiskop Reuterdahl) och var d\u00e4r till 1811. Student i Lund 1815. Kameralexamen 1816. Student i Uppsala 1817. Hovr\u00e4ttsexamen samma \u00e5r. Auskultant i Svea hovr\u00e4tt samma \u00e5r. Extra kanslist i bondest\u00e5ndet vid urtima riksdagen 1817 ? 1818.\nEo kanslist vid justitief\u00f6rdelningen av Kungl Maj:ts kansli 1818. Eo notarie i Svea hovr\u00e4tt samma \u00e5r. Auskultant i G\u00f6ta hovr\u00e4tt samma \u00e5r. Hade detta \u00e5r och 1819 \u00e5tskilliga domarf\u00f6rordnanden i Bohusl\u00e4n.\nUppf\u00f6rd p\u00e5 f\u00f6rslag till borgm\u00e4stare i Str\u00f6mstad 1819 och i Uddevalla samma \u00e5r. Borgm\u00e4stare i Str\u00f6mstad samma \u00e5r (installerad 4/6 av kungl Maj:ts befallningshavandes i G\u00f6teborg ombud kanslir\u00e5det Karl Bernhard Hegardt). Riksdagsman i borgarst\u00e5ndet f\u00f6r Str\u00f6mstad, Marstrand och Kung\u00e4lv vid 1823 \u00e5rs riksdag och ledamot av ekonomiutskottet, samt f\u00f6r Str\u00f6mstad och \u00d8stersund vid 1840?1841 \u00e5rs riksdag och ledamot av lagutskottet. H\u00e4radsh\u00f6vding i Fj\u00e4re och Viske h\u00e4raders domsaga 1848 och d\u00f6d i tj\u00e4nsten. Johannes som hade anseende som en skicklig \u00e4mbetsman, var personligen god och v\u00e4lvillig, musikaliskt beg\u00e5vad och en ej o\u00e4ven portr\u00e4ttecknare.\nSom portr\u00e4ttecknare skall Johannes ha utf\u00f6rt teckningarna som finns i GS : nr 12 Kristian, nr 5 Anna Elisabet Bratt, nr 104 Peter Johansson. Av Peter Johansson finns en kopia utf\u00f6rd 1861 av A Hallin (i S H:son Hegardts \u00e4go). Ut\u00f6ver dessa finns en originalteckning av samme Peter Johansson, som ocks\u00e5 skall vara utf\u00f6rd av Johannes. Teckningen finns f\u00f6rvarad i sl\u00e4ktarkivet.",
+    "notes": "(Tab 27 i GS).\nJohannes sattes hösten 1806, efter branden i Uddevalla, tillsammans med de yngre bröderna i pension i Halland, där de undervisades av informatorer (bl a sedermera ärkebiskop Reuterdahl) och var där till 1811. Student i Lund 1815. Kameralexamen 1816. Student i Uppsala 1817. Hovrättsexamen samma år. Auskultant i Svea hovrätt samma år. Extra kanslist i bondeståndet vid urtima riksdagen 1817 ? 1818.\nEo kanslist vid justitiefördelningen av Kungl Maj:ts kansli 1818. Eo notarie i Svea hovrätt samma år. Auskultant i Göta hovrätt samma år. Hade detta år och 1819 åtskilliga domarförordnanden i Bohuslän.\nUppförd på förslag till borgmästare i Strömstad 1819 och i Uddevalla samma år. Borgmästare i Strömstad samma år (installerad 4/6 av kungl Maj:ts befallningshavandes i Göteborg ombud kanslirådet Karl Bernhard Hegardt). Riksdagsman i borgarståndet för Strömstad, Marstrand och Kungälv vid 1823 års riksdag och ledamot av ekonomiutskottet, samt för Strömstad och Østersund vid 1840?1841 års riksdag och ledamot av lagutskottet. Häradshövding i Fjäre och Viske häraders domsaga 1848 och död i tjänsten. Johannes som hade anseende som en skicklig ämbetsman, var personligen god och välvillig, musikaliskt begåvad och en ej oäven porträttecknare.\nSom porträttecknare skall Johannes ha utfört teckningarna som finns i GS : nr 12 Kristian, nr 5 Anna Elisabet Bratt, nr 104 Peter Johansson. Av Peter Johansson finns en kopia utförd 1861 av A Hallin (i S H:son Hegardts ägo). Utöver dessa finns en originalteckning av samme Peter Johansson, som också skall vara utförd av Johannes. Teckningen finns förvarad i släktarkivet.",
     "occupations": [
-      "Borgm\u00e4stare och r\u00e5dman"
+      "Borgmästare och rådman"
     ],
     "references": [],
     "sex": "MAN",
@@ -18290,7 +18290,7 @@ const persons = {
     "marriages": [],
     "middleNames": [],
     "mother": 318,
-    "notes": "(Tab 26:150 i GS).\nGenomgick Malm\u00f6 skola 1808-1815. Student i Lund 1815 och i Uppsala 1817. Kansliexamen 1818. Eo kanslist i hovkanslerexpeditionen samma \u00e5r och i kommerskollegium 1820. Kopist i f\u00f6rstn\u00e4mnda expedition 1823 och kanslist 1826. PV i Kungl Maj:ts kansli 1837 och i hovkanslerexpeditionen 1838. Arkivarie i justitiestatsexpeditionen 1840-1845, d\u00e5 han erh\u00f6ll avsked. Uppb\u00f6rdstullf\u00f6rvaltare i Stockholm 1847. RVO 1853.\n\"Vi hava --- att omn\u00e4mna bortg\u00e5ngen ur tiden av en man, vilken of\u00f6rtrutet och nitiskt tj\u00e4nat staten i n\u00e4ra 52 \u00e5r. H hade olyckan att f\u00f6r ett par m\u00e5nader sedan halka omkull p\u00e5 Drottninggatan, utanf\u00f6r det s k landsh\u00f6vdinge\u00e4mbetets hus, varvid han erh\u00f6ll en sv\u00e5r skada i h\u00f6ften, vilken v\u00e4l nu p\u00e5skyndat den \u00e5ldrige tj\u00e4nstemannens slut. Han hade i n\u00e5gra och 20 \u00e5r h\u00e4rst\u00e4des uppburit den betydande tulluppb\u00f6rd, vilken influtit vid denna Sveriges oj\u00e4mf\u00f6rligt st\u00f6rsta tullf\u00f6rvaltningsplats.\" (Posttidn 3/3 1870.)",
+    "notes": "(Tab 26:150 i GS).\nGenomgick Malmö skola 1808-1815. Student i Lund 1815 och i Uppsala 1817. Kansliexamen 1818. Eo kanslist i hovkanslerexpeditionen samma år och i kommerskollegium 1820. Kopist i förstnämnda expedition 1823 och kanslist 1826. PV i Kungl Maj:ts kansli 1837 och i hovkanslerexpeditionen 1838. Arkivarie i justitiestatsexpeditionen 1840-1845, då han erhöll avsked. Uppbördstullförvaltare i Stockholm 1847. RVO 1853.\n\"Vi hava --- att omnämna bortgången ur tiden av en man, vilken oförtrutet och nitiskt tjänat staten i nära 52 år. H hade olyckan att för ett par månader sedan halka omkull på Drottninggatan, utanför det s k landshövdingeämbetets hus, varvid han erhöll en svår skada i höften, vilken väl nu påskyndat den åldrige tjänstemannens slut. Han hade i några och 20 år härstädes uppburit den betydande tulluppbörd, vilken influtit vid denna Sveriges ojämförligt största tullförvaltningsplats.\" (Posttidn 3/3 1870.)",
     "occupations": [],
     "references": [],
     "sex": "UNKNOWN",
@@ -18334,7 +18334,7 @@ const persons = {
       },
       "location": {
         "city": "Marseille",
-        "country": " Frankrike",
+        "country": "Frankrike",
         "notes": "",
         "region": "",
         "latitude": 43.29337,
@@ -18355,7 +18355,7 @@ const persons = {
     "mother": 318,
     "notes": "(Tab 26:151 i GS).",
     "occupations": [
-      "Handelsbokh\u00e5llare i alicante",
+      "Handelsbokhållare i alicante",
       "Spanien"
     ],
     "references": [],
@@ -18399,7 +18399,7 @@ const persons = {
         "year": 1866
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -18416,7 +18416,7 @@ const persons = {
     "marriages": [],
     "middleNames": [],
     "mother": 318,
-    "notes": "(Tab 26:152 i GS).\n\"Redan f\u00f6r m\u00e5nga \u00e5r tillbaka hade han dragit sig ifr\u00e5n den egentliga aff\u00e4rsv\u00e4rlden och levde nu som gammal ungkarl s\u00e5 gott som uteslutande f\u00f6r tvenne f\u00f6rem\u00e5l: politiken och musiken. F\u00e5 m\u00e4nniskor torde b\u00e4ttre \u00e4n han ha f\u00f6ljt med vad som tilldrog sig b\u00e5de p\u00e5 den stora sk\u00e5debanan, d\u00e4r nationers \u00f6den avg\u00f6ras, och p\u00e5 den mindre, d\u00e4r kommunens viktiga fr\u00e5gor dragas fram p\u00e5 scenen. Till f\u00f6ljd d\u00e4rav var han en passionerad tidningsl\u00e4sare och man kunde vara \u00f6vertygad om att, lika s\u00e4kert som solen g\u00e5r upp om morgonen och ner om aftonen, lika s\u00e4kert framtr\u00e4dde H morgon och afton strax f\u00f6re tidningarnas ankomst p\u00e5 Siemens Kaf\u00e9s horisont, det kaf\u00e9, d\u00e4r han sedan m\u00e5nga \u00e5r brukade intaga sina alltid enkla och m\u00e5ttliga morgon? och aftonm\u00e5ltider. D\u00e5 fanns det f\u00f6r honom ingenting k\u00e4rare \u00e4n att tr\u00e4ffa p\u00e5 en person, med vilken han kunde f\u00e5 diskutera, och en s\u00e5dan fattades vanligen icke.\nOch nu avgjordes v\u00e4rldens \u00f6den som en dans, Napoleons och Bismarcks finaste diplomatiska finter f\u00f6rutsades eller kommenterades och detta vanligen med en s\u00e5 ytterlig h\u00e4ftig het, att den som icke k\u00e4nde till f\u00f6rh\u00e5llandena l\u00e4tteligen kunde tro, att den spenslige, \u00e4nnu vid 65 \u00e5r ungdomligt r\u00f6rliga gubben med de livliga \u00f6gonen, det m\u00f6rka h\u00e5ret och den n\u00e5got sydl\u00e4ndska ansiktsf\u00e4rgen, var p\u00e5 allvar uppretad. Men n\u00e5gra minuter d\u00e4refter var han \u00e5ter lugn och v\u00e4nlig igen.\nSak samma var det n\u00e4r talet f\u00f6ll p\u00e5 musik, samma h\u00e4ftighet, samma utmanande ord och \u00e5tb\u00f6rder. Men under allt detta var H i grund och botten alltid svenskt och fosterl\u00e4ndskt sinnad, och detta kom m\u00e5ngen, som m\u00e5h\u00e4nda eljest skulle ha st\u00f6tt sig p\u00e5 hans Menschen-schreckerei, att \u00f6verse med ett och annat omilt uttryck, sp\u00e5rande under de h\u00e4ftiga orden den goda meningen.\nDen gamle politikern har nu g\u00e5tt till vila; \u00e4nnu aftonen f\u00f6re sin d\u00f6d deltog han med samma v\u00e4rma i en politisk debatt p\u00e5 den vanliga arenan. Morgonen kom, posten anl\u00e4nde, men den som alltid s\u00e5 oroligt avvaktat dess ankomst kom icke, och innan aftontidningen hunnit utdelas hade den tr\u00f6tte anden flyktat h\u00e4n till de rymder, 'd\u00e4r allting skall varda uppenbarat.\" (G\u00f6teborgsposten 22/12 1866.)",
+    "notes": "(Tab 26:152 i GS).\n\"Redan för många år tillbaka hade han dragit sig ifrån den egentliga affärsvärlden och levde nu som gammal ungkarl så gott som uteslutande för tvenne föremål: politiken och musiken. Få människor torde bättre än han ha följt med vad som tilldrog sig både på den stora skådebanan, där nationers öden avgöras, och på den mindre, där kommunens viktiga frågor dragas fram på scenen. Till följd därav var han en passionerad tidningsläsare och man kunde vara övertygad om att, lika säkert som solen går upp om morgonen och ner om aftonen, lika säkert framträdde H morgon och afton strax före tidningarnas ankomst på Siemens Kafés horisont, det kafé, där han sedan många år brukade intaga sina alltid enkla och måttliga morgon? och aftonmåltider. Då fanns det för honom ingenting kärare än att träffa på en person, med vilken han kunde få diskutera, och en sådan fattades vanligen icke.\nOch nu avgjordes världens öden som en dans, Napoleons och Bismarcks finaste diplomatiska finter förutsades eller kommenterades och detta vanligen med en så ytterlig häftig het, att den som icke kände till förhållandena lätteligen kunde tro, att den spenslige, ännu vid 65 år ungdomligt rörliga gubben med de livliga ögonen, det mörka håret och den något sydländska ansiktsfärgen, var på allvar uppretad. Men några minuter därefter var han åter lugn och vänlig igen.\nSak samma var det när talet föll på musik, samma häftighet, samma utmanande ord och åtbörder. Men under allt detta var H i grund och botten alltid svenskt och fosterländskt sinnad, och detta kom mången, som måhända eljest skulle ha stött sig på hans Menschen-schreckerei, att överse med ett och annat omilt uttryck, spårande under de häftiga orden den goda meningen.\nDen gamle politikern har nu gått till vila; ännu aftonen före sin död deltog han med samma värma i en politisk debatt på den vanliga arenan. Morgonen kom, posten anlände, men den som alltid så oroligt avvaktat dess ankomst kom icke, och innan aftontidningen hunnit utdelas hade den trötte anden flyktat hän till de rymder, 'där allting skall varda uppenbarat.\" (Göteborgsposten 22/12 1866.)",
     "occupations": [
       "Grosshandlare"
     ],
@@ -18638,7 +18638,7 @@ const persons = {
     "death": {
       "date": null,
       "location": {
-        "city": "i n\u00e4rheten av",
+        "city": "i närheten av",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -18657,10 +18657,10 @@ const persons = {
       "Bernhard"
     ],
     "mother": 318,
-    "notes": "(Tab 26:156 i GS).\nDog troligen genom hunger och t\u00f6rst.",
+    "notes": "(Tab 26:156 i GS).\nDog troligen genom hunger och törst.",
     "occupations": [],
     "references": [
-      "enl anm av h\u00e4radsh\u00f6vding Hegardt"
+      "enl anm av häradshövding Hegardt"
     ],
     "sex": "UNKNOWN",
     "id": 326
@@ -18824,7 +18824,7 @@ const persons = {
         "year": 1896
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -18843,7 +18843,7 @@ const persons = {
       "Emilie"
     ],
     "mother": 318,
-    "notes": "(Tab 26:159 i GS).\nEfter systern Mariannes d\u00f6d flyttade Emilie till G\u00f6teborg.",
+    "notes": "(Tab 26:159 i GS).\nEfter systern Mariannes död flyttade Emilie till Göteborg.",
     "occupations": [],
     "references": [],
     "sex": "UNKNOWN",
@@ -18922,7 +18922,7 @@ const persons = {
         "year": 1805
       },
       "location": {
-        "city": "p\u00e5 Blomsberg i Skee ",
+        "city": "på Blomsberg i Skee",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -18957,7 +18957,7 @@ const persons = {
         "year": 1896
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -19012,7 +19012,7 @@ const persons = {
         "year": 1825
       },
       "location": {
-        "city": "Str\u00f6mstad",
+        "city": "Strömstad",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -19038,7 +19038,7 @@ const persons = {
         "year": 1892
       },
       "location": {
-        "city": "\u00d8rebro",
+        "city": "Ørebro",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -19057,7 +19057,7 @@ const persons = {
       "Maximilian"
     ],
     "mother": 367,
-    "notes": "(Tab 27:106 i GS).\nStudent vid Lunds universitet 1842 och avlade d\u00e4r juridisk prelimin\u00e4rexamen, men m\u00e5ste p g a sjukdom avbryta den akademiska banan. Studerade sedermera lantbrukssk\u00f6tsel i Skottland. F\u00f6rvaltade en tid Gottenvik i R\u00f6n\u00f6 sn (\u00d8sterg) och \u00e4gde sedan N\u00e4refors i Uvered sn (Skarab) samt arrenderade slutligen fr\u00e5n 1876 till sin d\u00f6d Irvingholm i Tysslinge sn (\u00d8rebro).\n\"En av alla omtyckt, stilla och v\u00e4ns\u00e4ll man. --- Af de kommunala uppdrag, som H innehade, m\u00e5 h\u00e4r n\u00e4mnas ordf\u00f6randeskap i kommunaln\u00e4mnden och brandstodsn\u00e4mnden.\" (Ner Alleh 9/5 1892.)",
+    "notes": "(Tab 27:106 i GS).\nStudent vid Lunds universitet 1842 och avlade där juridisk preliminärexamen, men måste p g a sjukdom avbryta den akademiska banan. Studerade sedermera lantbruksskötsel i Skottland. Förvaltade en tid Gottenvik i Rönö sn (Østerg) och ägde sedan Närefors i Uvered sn (Skarab) samt arrenderade slutligen från 1876 till sin död Irvingholm i Tysslinge sn (Ørebro).\n\"En av alla omtyckt, stilla och vänsäll man. --- Af de kommunala uppdrag, som H innehade, må här nämnas ordförandeskap i kommunalnämnden och brandstodsnämnden.\" (Ner Alleh 9/5 1892.)",
     "occupations": [],
     "references": [],
     "sex": "UNKNOWN",
@@ -19074,7 +19074,7 @@ const persons = {
         "year": 1827
       },
       "location": {
-        "city": "Str\u00f6mstad",
+        "city": "Strömstad",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -19100,7 +19100,7 @@ const persons = {
         "year": 1843
       },
       "location": {
-        "city": "Str\u00f6mstad",
+        "city": "Strömstad",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -19136,7 +19136,7 @@ const persons = {
         "year": 1827
       },
       "location": {
-        "city": "Str\u00f6mstad",
+        "city": "Strömstad",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -19207,7 +19207,7 @@ const persons = {
       "Josias"
     ],
     "mother": 367,
-    "notes": "(Tab 28 i GS).\nGenomgick Str\u00f6mstads storskola och G\u00f6teborgs gymnasium samt avlade studentexamen i Uppsala 1847. Volont\u00e4r vid V\u00e4stg\u00f6tadals regemente 1846. Furir 1847, kommenderad med regementet till Danmark 1848. Officersexamen 1849, underl\u00f6jtnant vid regementet samma \u00e5r, l\u00f6jtnant 1851, 2:e adjutant 1852 och 1:e adjutant 1853. 2:e kapten 1864, 1:e kapten och kompanichef 1872. Major i arm\u00e9n 1878 och avsked ur arm\u00e9n 1882. RSO 1873.\nVar \u00f6verkontroll\u00f6r vid br\u00e4nnvinstillverkningen 1876-1897 och kontrollant vid denaturering av br\u00e4nnvin inom Stockholms stad 1897 till sin d\u00f6d.\n\u00d8verbef\u00e4lhavare f\u00f6r Norra Hallands frivilliga skyttef\u00f6rening 1864 och f\u00f6r Alings\u00e5s d:o 1864-1872. \u00c4gde Dom\u00f6 i Hj\u00e4rp\u00e5s (Skarab) 1856-1860.",
+    "notes": "(Tab 28 i GS).\nGenomgick Strömstads storskola och Göteborgs gymnasium samt avlade studentexamen i Uppsala 1847. Volontär vid Västgötadals regemente 1846. Furir 1847, kommenderad med regementet till Danmark 1848. Officersexamen 1849, underlöjtnant vid regementet samma år, löjtnant 1851, 2:e adjutant 1852 och 1:e adjutant 1853. 2:e kapten 1864, 1:e kapten och kompanichef 1872. Major i armén 1878 och avsked ur armén 1882. RSO 1873.\nVar överkontrollör vid brännvinstillverkningen 1876-1897 och kontrollant vid denaturering av brännvin inom Stockholms stad 1897 till sin död.\nØverbefälhavare för Norra Hallands frivilliga skytteförening 1864 och för Alingsås d:o 1864-1872. Ägde Domö i Hjärpås (Skarab) 1856-1860.",
     "occupations": [
       "Major"
     ],
@@ -19226,7 +19226,7 @@ const persons = {
         "year": 1831
       },
       "location": {
-        "city": "Str\u00f6mstad",
+        "city": "Strömstad",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -19256,7 +19256,7 @@ const persons = {
         "year": 1903
       },
       "location": {
-        "city": "\u00d8rebro",
+        "city": "Ørebro",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -19288,10 +19288,10 @@ const persons = {
       "Bernhard"
     ],
     "mother": 367,
-    "notes": "(Tab 34 i GS).\nKadett vid krigsakademin 1845 och utexaminerad 1850. Underl\u00f6jtnant vid V\u00e4stg\u00f6tadals regemente samma \u00e5r och avancerade sedan till major 1878 vid samma regemente. \u00d8verstel\u00f6jtnant och 1:e major vid Nerikes regemente 1882 samt avsked 1886. Genomgick GCI 1852-53. \u00d8verbef\u00e4lhavare f\u00f6r V\u00e4nersborgs frivilliga skarpskyttef\u00f6rening 1862-63. Stadsfullm\u00e4ktig i V\u00e4nersborg 1867-82 och ordf\u00f6rande i dr\u00e4tselkammaren 1872-82. Ledamot av styrelsen f\u00f6r V\u00e4nersborgs enskilda bank 1867-82. Verkst\u00e4llande direkt\u00f6r i Uddevalla - V\u00e4nersborg - Herrljunga j\u00e4rnv\u00e4g 1872-82. Ordf\u00f6rande i styrelsen f\u00f6r \u00d8rebro enskilda bank 1892-1903. RSO 1874 och KVO 1899.\n\u00c4gde Irvingsholm och Latorp bruk, b\u00e5da i Tysslinge sn (\u00d8rebro).\n\"S\u00e5som lantbrukare och ekonom har han sakkunnigt f\u00f6rvaltat sina stora egendomar. --- F\u00f6r \u00d8rebro-Svart\u00e5 j\u00e4rnv\u00e4g hyste han livligt intresse och bidrog i sin m\u00e5n att f\u00f6ra den f\u00f6rbindelsen igenom. Senaste tiden har han ock genom att l\u00e5ta taga elektrisk kraft till hj\u00e4lp i jordbruksdriften visat, att han fortfarande f\u00f6rstod att f\u00f6lja med sin tid. I \u00d8rebro spritf\u00f6rs\u00e4ljningsbolag var han en av revisorerna och vid Hush\u00e5llningss\u00e4llskapets nyligen firade 100-\u00e5rsfest hade vi tillf\u00e4lle erinra om hans medverkan i dess tj\u00e4nst. --- H var en reslig, mager man med skarpa drag, som lystes upp av ett par v\u00e4nliga \u00f6gon.\" (Ner Alleh 20/2 1903.)",
+    "notes": "(Tab 34 i GS).\nKadett vid krigsakademin 1845 och utexaminerad 1850. Underlöjtnant vid Västgötadals regemente samma år och avancerade sedan till major 1878 vid samma regemente. Øverstelöjtnant och 1:e major vid Nerikes regemente 1882 samt avsked 1886. Genomgick GCI 1852-53. Øverbefälhavare för Vänersborgs frivilliga skarpskytteförening 1862-63. Stadsfullmäktig i Vänersborg 1867-82 och ordförande i drätselkammaren 1872-82. Ledamot av styrelsen för Vänersborgs enskilda bank 1867-82. Verkställande direktör i Uddevalla - Vänersborg - Herrljunga järnväg 1872-82. Ordförande i styrelsen för Ørebro enskilda bank 1892-1903. RSO 1874 och KVO 1899.\nÄgde Irvingsholm och Latorp bruk, båda i Tysslinge sn (Ørebro).\n\"Såsom lantbrukare och ekonom har han sakkunnigt förvaltat sina stora egendomar. --- För Ørebro-Svartå järnväg hyste han livligt intresse och bidrog i sin mån att föra den förbindelsen igenom. Senaste tiden har han ock genom att låta taga elektrisk kraft till hjälp i jordbruksdriften visat, att han fortfarande förstod att följa med sin tid. I Ørebro spritförsäljningsbolag var han en av revisorerna och vid Hushållningssällskapets nyligen firade 100-årsfest hade vi tillfälle erinra om hans medverkan i dess tjänst. --- H var en reslig, mager man med skarpa drag, som lystes upp av ett par vänliga ögon.\" (Ner Alleh 20/2 1903.)",
     "occupations": [
-      "Gods\u00e4gare",
-      "\u00d8verstel\u00f6jtnant"
+      "Godsägare",
+      "Øverstelöjtnant"
     ],
     "references": [],
     "sex": "MAN",
@@ -19308,7 +19308,7 @@ const persons = {
         "year": 1833
       },
       "location": {
-        "city": "Str\u00f6mstad",
+        "city": "Strömstad",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -19334,7 +19334,7 @@ const persons = {
         "year": 1898
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -19353,7 +19353,7 @@ const persons = {
     "mother": 367,
     "notes": "(Tab 27:142 i GS).",
     "occupations": [
-      "Grosshandlare i g\u00f6teborg"
+      "Grosshandlare i göteborg"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -19370,7 +19370,7 @@ const persons = {
         "year": 1839
       },
       "location": {
-        "city": "Str\u00f6mstad",
+        "city": "Strömstad",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -19396,7 +19396,7 @@ const persons = {
         "year": 1911
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -19477,7 +19477,7 @@ const persons = {
         "year": 1896
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -19518,7 +19518,7 @@ const persons = {
     "mother": null,
     "notes": "",
     "occupations": [
-      "Audit\u00f6r och h\u00e4radsh\u00f6vding"
+      "Auditör och häradshövding"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -19535,7 +19535,7 @@ const persons = {
         "year": 1840
       },
       "location": {
-        "city": "Str\u00f6mstad",
+        "city": "Strömstad",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -19565,7 +19565,7 @@ const persons = {
         "year": 1879
       },
       "location": {
-        "city": "p\u00e5 Bj\u00f6rkedalen i G\u00f6teborg",
+        "city": "på Björkedalen i Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -19602,7 +19602,7 @@ const persons = {
       "Kristian"
     ],
     "mother": 367,
-    "notes": "(Tab 36 i GS).\nStudentexamen i Lund 1857. Jur prel examen 1858. Examen f\u00f6r intr\u00e4de vid rikets r\u00e4tteg\u00e5ngsverk 1861. Auskultant i hovr\u00e4tten \u00f6ver Sk\u00e5ne och Blekinge samma \u00e5r och i G\u00f6ta hovr\u00e4tt 1863. Tj\u00e4nstgjorde som bitr\u00e4de \u00e5t lantdomare \u00e5ren 1861?66 och fr\u00e5n 1866 i G\u00f6teborgs poliskammare. Polissekreterare d\u00e4r 1869. Sekreterare i fattigv\u00e5rdsstyrelsen samma \u00e5r. Hade \u00e5ren 1869?73 \u00e5tskilliga f\u00f6rordnanden som stadsnotarie. Blev sterbhusnotarie 1874.\n\u00c4r liksom sin hustru gravsatt p\u00e5 Fristads kyrkog\u00e5rd i von Kochska familjegraven.",
+    "notes": "(Tab 36 i GS).\nStudentexamen i Lund 1857. Jur prel examen 1858. Examen för inträde vid rikets rättegångsverk 1861. Auskultant i hovrätten över Skåne och Blekinge samma år och i Göta hovrätt 1863. Tjänstgjorde som biträde åt lantdomare åren 1861?66 och från 1866 i Göteborgs poliskammare. Polissekreterare där 1869. Sekreterare i fattigvårdsstyrelsen samma år. Hade åren 1869?73 åtskilliga förordnanden som stadsnotarie. Blev sterbhusnotarie 1874.\nÄr liksom sin hustru gravsatt på Fristads kyrkogård i von Kochska familjegraven.",
     "occupations": [
       "Jurist"
     ],
@@ -19621,7 +19621,7 @@ const persons = {
         "year": 1846
       },
       "location": {
-        "city": "Str\u00f6mstad",
+        "city": "Strömstad",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -19647,7 +19647,7 @@ const persons = {
         "year": 1911
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -19667,7 +19667,7 @@ const persons = {
       "Vilhelm"
     ],
     "mother": 367,
-    "notes": "(Tab 27:149 i GS).\nMogenhetsexamen i G\u00f6teborg 1866. Student i Uppsala samma \u00e5r. juridisk prelimin\u00e4rexamen 1867. Hovr\u00e4ttsexamen 1870. Auskultant i G\u00f6ta hovr\u00e4tt 1871 och eo notarie d\u00e4r samma \u00e5r. Tf domhavande i Fj\u00e4re och Viske h\u00e4raders domsaga sammanlagt 2 m\u00e5nader under 1872 och 1873. V h\u00e4radsh\u00f6vding 1873. Hade \u00e5ren 1876, 1878 och 1879 f\u00f6rordnanden som sekreterare i G\u00f6teborgs fattigv\u00e5rdsstyrelse och 1881-1883 som stadsnotarie vid r\u00e5dhusr\u00e4tten. Kanslist hos stadsauktuarien 1879. Polisnotarie 1884. Polissekreterare samma \u00e5r och stadsauktuarie 1894 till sin d\u00f6d (allt i G\u00f6teborg).\n\"Hegardt var av ett r\u00e4tt inbundet v\u00e4sen. Bakom den till synes str\u00e4va ytan doldes emellertid ett utomordentligt gott hj\u00e4rta och en hj\u00e4lpsamhet som aldrig tvekade, d\u00e5 det g\u00e4llde att r\u00e4cka en n\u00f6dst\u00e4lld en st\u00f6djande hand. I sitt arbete var han utpr\u00e4glat punktlig och noggrann, och ett m\u00f6nster av plikttrohet. (G\u00f6teb H & Sj tidn 10/7 1911.) Francis var en framst\u00e5ende violinist och medlem i ett enskilt kammarmusiks\u00e4llskap.",
+    "notes": "(Tab 27:149 i GS).\nMogenhetsexamen i Göteborg 1866. Student i Uppsala samma år. juridisk preliminärexamen 1867. Hovrättsexamen 1870. Auskultant i Göta hovrätt 1871 och eo notarie där samma år. Tf domhavande i Fjäre och Viske häraders domsaga sammanlagt 2 månader under 1872 och 1873. V häradshövding 1873. Hade åren 1876, 1878 och 1879 förordnanden som sekreterare i Göteborgs fattigvårdsstyrelse och 1881-1883 som stadsnotarie vid rådhusrätten. Kanslist hos stadsauktuarien 1879. Polisnotarie 1884. Polissekreterare samma år och stadsauktuarie 1894 till sin död (allt i Göteborg).\n\"Hegardt var av ett rätt inbundet väsen. Bakom den till synes sträva ytan doldes emellertid ett utomordentligt gott hjärta och en hjälpsamhet som aldrig tvekade, då det gällde att räcka en nödställd en stödjande hand. I sitt arbete var han utpräglat punktlig och noggrann, och ett mönster av plikttrohet. (Göteb H & Sj tidn 10/7 1911.) Francis var en framstående violinist och medlem i ett enskilt kammarmusiksällskap.",
     "occupations": [
       "Stadsauktuarie"
     ],
@@ -19686,7 +19686,7 @@ const persons = {
         "year": 1834
       },
       "location": {
-        "city": "p\u00e5 St M\u00e5\u00e5 i Fj\u00e4r\u00e5s ",
+        "city": "på St Måå i Fjärås",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -19775,7 +19775,7 @@ const persons = {
         "year": 1854
       },
       "location": {
-        "city": "p\u00e5 Kjellshagen i V\u00e4nersborg ",
+        "city": "på Kjellshagen i Vänersborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -19829,7 +19829,7 @@ const persons = {
         },
         "location": {
           "city": "Paris",
-          "country": " Frankrike",
+          "country": "Frankrike",
           "notes": "",
           "region": ""
         },
@@ -19840,7 +19840,7 @@ const persons = {
       "Johannes"
     ],
     "mother": 378,
-    "notes": "(Tab 29 i GS).\nMogenhetsexamen 1874 i V\u00e4nersborg (P).\nHandelsbokh\u00e5llare i G\u00f6teborg 1874-76. Flyttade 1876 till Paris, Frankrike, d\u00e4r han idkade grosshandel till 1901, d\u00e5 han \u00e5terv\u00e4nde till Sverige.",
+    "notes": "(Tab 29 i GS).\nMogenhetsexamen 1874 i Vänersborg (P).\nHandelsbokhållare i Göteborg 1874-76. Flyttade 1876 till Paris, Frankrike, där han idkade grosshandel till 1901, då han återvände till Sverige.",
     "occupations": [
       "Grosshandlare"
     ],
@@ -19859,7 +19859,7 @@ const persons = {
         "year": 1857
       },
       "location": {
-        "city": "p\u00e5 Dom\u00f6 ",
+        "city": "på Domö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -19895,7 +19895,7 @@ const persons = {
       },
       "location": {
         "city": "Haro",
-        "country": " Spanien",
+        "country": "Spanien",
         "notes": "",
         "region": "",
         "latitude": 42.57778,
@@ -19920,7 +19920,7 @@ const persons = {
         },
         "location": {
           "city": "Haro",
-          "country": " Spanien",
+          "country": "Spanien",
           "notes": "",
           "region": ""
         },
@@ -19931,7 +19931,7 @@ const persons = {
       "Vilhelm"
     ],
     "mother": 378,
-    "notes": "(Tab 30 i GS).\nUtflyttad till Haro, Spanien 1884 fr\u00e5n G\u00f6teborg (O).\nHandelsbokh\u00e5llare i Varberg 1877 och i G\u00f6teborg 1878-1884. Flyttade 1884 till Spanien och idkade grosshandel i Huelva, Sevilla, Haro och Bilbao. 1898 flyttade han till Oslo och var grosshandlare d\u00e4r till 1901, d\u00e5 han \u00e5terv\u00e4nde till Spanien och bosatte sig i Haro. Konverterade till katolicism 1890.",
+    "notes": "(Tab 30 i GS).\nUtflyttad till Haro, Spanien 1884 från Göteborg (O).\nHandelsbokhållare i Varberg 1877 och i Göteborg 1878-1884. Flyttade 1884 till Spanien och idkade grosshandel i Huelva, Sevilla, Haro och Bilbao. 1898 flyttade han till Oslo och var grosshandlare där till 1901, då han återvände till Spanien och bosatte sig i Haro. Konverterade till katolicism 1890.",
     "occupations": [
       "Grosshandlare"
     ],
@@ -19950,7 +19950,7 @@ const persons = {
         "year": 1859
       },
       "location": {
-        "city": "Dom\u00f6",
+        "city": "Domö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -19981,9 +19981,9 @@ const persons = {
       },
       "location": {
         "city": "Oakland",
-        "country": " USA",
+        "country": "USA",
         "notes": "",
-        "region": " Californien",
+        "region": "Californien",
         "latitude": 37.80508,
         "longitude": -122.27307,
         "fetchStatus": "FETCHED"
@@ -20006,9 +20006,9 @@ const persons = {
         },
         "location": {
           "city": "Beardstown",
-          "country": " USA",
+          "country": "USA",
           "notes": "",
-          "region": " Illinois"
+          "region": "Illinois"
         },
         "personId": 408
       }
@@ -20017,9 +20017,9 @@ const persons = {
       "Bernhard"
     ],
     "mother": 378,
-    "notes": "(Tab 31 i GS).\nGenomgick Bor\u00e5s tekniska elementarl\u00e4roverk 1874?1877. Nivell\u00f6r vid byggandet av Lidk\u00f6ping - H\u00e5kanstorps j\u00e4rnv\u00e4g 1877-1878 och av Bor\u00e5s - Herrljunga j\u00e4rnv\u00e4g 1878-1880.\n1880 flyttade han till USA. Var \u00e5ren 1881-1906 anst\u00e4lld som ingenj\u00f6r vid F\u00f6renta staternas v\u00e4g- och vattenbyggnadsk\u00e5r och fick i denna egenskap 1890 i uppdrag att som chefsingenj\u00f6r f\u00f6rest\u00e5 bef\u00e4stningsarbetena vid Colombiaflodens utlopp i Stilla havet.\nH\u00e4r utf\u00f6rdes under hans ledning, i n\u00e4rheten av staden Astoria i Oregon, Fort Stevens m fl f\u00e4stningsverk samt omfattande hamnf\u00f6rb\u00e4ttringar, som byggandet av v\u00e5gbrytare mm, arbeten som tog 15 \u00e5r och vilkas omfattning framg\u00e5r av att hamndjupet \u00f6kades fr\u00e5n 20 till 46 fot vid l\u00e5gvatten.\nD\u00e4refter bosatte han sig i Portland, Oregon, som konsulterande ingenj\u00f6r och direkt\u00f6r i The Western Oregon Trust Company.\nAnst\u00e4lldes 1912 som chefsingenj\u00f6r vid de beslutade hamnanl\u00e4ggningarna i Portland och skapade d\u00e4r ett hamnsystem, som anses som det fr\u00e4msta p\u00e5 USA:s v\u00e4stkust.\nUnder 1925-1926 gjorde han tillsammans med tv\u00e5 andra ingenj\u00f6rer upp en plan f\u00f6r hamnanl\u00e4ggningarna i Oakland, Californien och uts\u00e5gs till chefsingenj\u00f6r f\u00f6r dessa anl\u00e4ggningar. Efter dessas fullbordande blev han hamndirekt\u00f6r i Oakland och avgick fr\u00e5n denna tj\u00e4nst 1931 p g a oh\u00e4lsa.",
+    "notes": "(Tab 31 i GS).\nGenomgick Borås tekniska elementarläroverk 1874?1877. Nivellör vid byggandet av Lidköping - Håkanstorps järnväg 1877-1878 och av Borås - Herrljunga järnväg 1878-1880.\n1880 flyttade han till USA. Var åren 1881-1906 anställd som ingenjör vid Förenta staternas väg- och vattenbyggnadskår och fick i denna egenskap 1890 i uppdrag att som chefsingenjör förestå befästningsarbetena vid Colombiaflodens utlopp i Stilla havet.\nHär utfördes under hans ledning, i närheten av staden Astoria i Oregon, Fort Stevens m fl fästningsverk samt omfattande hamnförbättringar, som byggandet av vågbrytare mm, arbeten som tog 15 år och vilkas omfattning framgår av att hamndjupet ökades från 20 till 46 fot vid lågvatten.\nDärefter bosatte han sig i Portland, Oregon, som konsulterande ingenjör och direktör i The Western Oregon Trust Company.\nAnställdes 1912 som chefsingenjör vid de beslutade hamnanläggningarna i Portland och skapade där ett hamnsystem, som anses som det främsta på USA:s västkust.\nUnder 1925-1926 gjorde han tillsammans med två andra ingenjörer upp en plan för hamnanläggningarna i Oakland, Californien och utsågs till chefsingenjör för dessa anläggningar. Efter dessas fullbordande blev han hamndirektör i Oakland och avgick från denna tjänst 1931 p g a ohälsa.",
     "occupations": [
-      "Chefsingenj\u00f6r"
+      "Chefsingenjör"
     ],
     "references": [],
     "sex": "MAN",
@@ -20066,7 +20066,7 @@ const persons = {
         "year": 1946
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -20091,7 +20091,7 @@ const persons = {
           "year": 1891
         },
         "location": {
-          "city": "Str\u00f6mstad",
+          "city": "Strömstad",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -20103,7 +20103,7 @@ const persons = {
       "Evald"
     ],
     "mother": 378,
-    "notes": "(Tab 32 i GS).\nMogenhetsexamen i Skara 1881. Handelsbokh\u00e5llare i G\u00f6teborg 1881-1896. Sistn\u00e4mnda \u00e5r chef f\u00f6r firman Ludvig Holming & Co i Malm\u00f6. L\u00e4mnade 1934 i samband med en sv\u00e5r sjukdom kompanjonskapet och arbetet.\nIntresserad medlem av Odd Fellows, som han tillh\u00f6rt sedan G\u00f6teborgstiden. Tillh\u00f6rde Skaradj\u00e4knarnas f\u00f6rening. Livligt intresserad av s\u00e5v\u00e4l Malm\u00f6 som G\u00f6teborgs snabba utveckling.\nG\u00e4stfri och s\u00e4llskaplig, s\u00e5ng- och musikintresserad liksom sin maka. F\u00f6rdragsamhet och mjukare s\u00e4tt eftertr\u00e4dde med \u00e5ren tidigare stridbarhet och str\u00e4nghet. Anspr\u00e5ksl\u00f6s f\u00f6r egen del k\u00e4nde han givandets gl\u00e4dje. V\u00e4l medveten om \u00e4gandets f\u00f6rpliktelser gjorde han gott utan m\u00e5nga \u00e5th\u00e4vor. Humor och gladlynthet \u00e4gde han i rikt m\u00e5tt. Utrustad med f\u00f6rn\u00f6jsamhet och en mycket god h\u00e4lsa fick han, till stor gl\u00e4dje f\u00f6r de sina, beh\u00e5lla full vig\u00f6r livet ut.\nMycket sl\u00e4ktk\u00e4r levde han sina senare \u00e5r n\u00e4stan helt f\u00f6r d\u00f6ttrar och familjekretsen i vidare bem\u00e4rkelse.",
+    "notes": "(Tab 32 i GS).\nMogenhetsexamen i Skara 1881. Handelsbokhållare i Göteborg 1881-1896. Sistnämnda år chef för firman Ludvig Holming & Co i Malmö. Lämnade 1934 i samband med en svår sjukdom kompanjonskapet och arbetet.\nIntresserad medlem av Odd Fellows, som han tillhört sedan Göteborgstiden. Tillhörde Skaradjäknarnas förening. Livligt intresserad av såväl Malmö som Göteborgs snabba utveckling.\nGästfri och sällskaplig, sång- och musikintresserad liksom sin maka. Fördragsamhet och mjukare sätt efterträdde med åren tidigare stridbarhet och stränghet. Anspråkslös för egen del kände han givandets glädje. Väl medveten om ägandets förpliktelser gjorde han gott utan många åthävor. Humor och gladlynthet ägde han i rikt mått. Utrustad med förnöjsamhet och en mycket god hälsa fick han, till stor glädje för de sina, behålla full vigör livet ut.\nMycket släktkär levde han sina senare år nästan helt för döttrar och familjekretsen i vidare bemärkelse.",
     "occupations": [],
     "references": [],
     "sex": "MAN",
@@ -20120,7 +20120,7 @@ const persons = {
         "year": 1866
       },
       "location": {
-        "city": "Alings\u00e5s",
+        "city": "Alingsås",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -20146,7 +20146,7 @@ const persons = {
         "year": 1916
       },
       "location": {
-        "city": "Norrk\u00f6ping",
+        "city": "Norrköping",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -20166,7 +20166,7 @@ const persons = {
       "Eleonora"
     ],
     "mother": 378,
-    "notes": "(Tab 28:127 i GS).\nGenomgick elementarskola f\u00f6r flickor i Lidk\u00f6ping 1876-1884 och h\u00f6gre l\u00e4rarinneseminarium i Stockholm 1884-1887. Vistades i Tyskland och Frankrike 1891-1893. L\u00e4rarinna vid Arvika flickskola 1893-1899, vid Whitlockska skolan i Stockholm 1899-1900, vid Norrt\u00e4lje flickskola 1900-1903 och vid Nya Elementarskolan f\u00f6r flickor i Norrk\u00f6ping 1903-1916.\n\"Alla som k\u00e4nde henne n\u00e4rmare visste vilken stark, helgjuten personlighet hon var. Intet svek bodde hos henne. Skulle en kort sammanfattning givas av hennes v\u00e4sen passar b\u00e4st det ordet sanning. Hon \u00e4lskade sanningen, levde i sanningen. Ren och klar var hon i ord och g\u00e4rning, omutligt r\u00e4ttr\u00e5dig. Men hon var ock barmh\u00e4rtig och god mer \u00e4n de flesta. --- Plikttrogen var hon till det yttersta. Och till sanning och plikttrohet ville hon fostra den ungdom hon hade hand om. S\u00e5som l\u00e4rarinna var hon i s\u00e4llsynt grad framst\u00e5ende, s\u00e5v\u00e4l i kunskaper som i f\u00f6rm\u00e5gan att undervisa ---.\" (Norrk Tidn 12/4 1916.)",
+    "notes": "(Tab 28:127 i GS).\nGenomgick elementarskola för flickor i Lidköping 1876-1884 och högre lärarinneseminarium i Stockholm 1884-1887. Vistades i Tyskland och Frankrike 1891-1893. Lärarinna vid Arvika flickskola 1893-1899, vid Whitlockska skolan i Stockholm 1899-1900, vid Norrtälje flickskola 1900-1903 och vid Nya Elementarskolan för flickor i Norrköping 1903-1916.\n\"Alla som kände henne närmare visste vilken stark, helgjuten personlighet hon var. Intet svek bodde hos henne. Skulle en kort sammanfattning givas av hennes väsen passar bäst det ordet sanning. Hon älskade sanningen, levde i sanningen. Ren och klar var hon i ord och gärning, omutligt rättrådig. Men hon var ock barmhärtig och god mer än de flesta. --- Plikttrogen var hon till det yttersta. Och till sanning och plikttrohet ville hon fostra den ungdom hon hade hand om. Såsom lärarinna var hon i sällsynt grad framstående, såväl i kunskaper som i förmågan att undervisa ---.\" (Norrk Tidn 12/4 1916.)",
     "occupations": [],
     "references": [],
     "sex": "UNKNOWN",
@@ -20183,7 +20183,7 @@ const persons = {
         "year": 1868
       },
       "location": {
-        "city": "Alings\u00e5s",
+        "city": "Alingsås",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -20251,9 +20251,9 @@ const persons = {
       "Josias"
     ],
     "mother": 378,
-    "notes": "(Tab 33 i GS).\nF\u00f6rfattare till \"Gamla sl\u00e4ktboken\".\nMogenhetsexamen i Skara 1887. Volont\u00e4r vid Bohusl\u00e4ns regemente 1887, sergeant 1888, officersexamen 1889, underl\u00f6jtnant samma \u00e5r; l\u00f6jtnant 1899; aspirant vid generalstaben 1899-1901. Stabsadjutant och l\u00f6jtnant d\u00e4r 1902 och kapten 1903. Kapten i Bohusl\u00e4ns regemente samma \u00e5r, vid V\u00e4stg\u00f6ta regemente 1907 och \u00e5ter generalstaben 1910. \u00d8veradjutant och major d\u00e4r samma \u00e5r. \u00d8verstel\u00f6jtnant i staben 1913 och. vid Hallands regemente 1914. Tf chef f\u00f6r detta regemente 1915. \u00d8verste i regementet 1916 och dess chef 1917. Chef f\u00f6r 1:a brigaden 1920 samt generalmajor och chef f\u00f6r 6:e arm\u00e9f\u00f6rdelningen 1926.\nGenomgick krigsh\u00f6gskolan 1896?1898. Kommenderad till Ryssland 1902. Milit\u00e4rattach\u00e9 i Tokyo 1901-1905 och under tiden d\u00e4r (1904-1905) vid 1:a japanska f\u00e4ltarm\u00e9n i Kina. Generall\u00f6jtnant i arm\u00e9n 1933. Avsked med skyldighet att intr\u00e4da i generalitetets reserv 1933. Ur reserven 1938.\n1:e l\u00e4rare i krigskonst vid krigsh\u00f6gskolan 1907-1909. Stabschef vid 3:e arm\u00e9f\u00f6rdelningen 1910-1912. Chef f\u00f6r inf skjutskolan 1913-1915. Ledamot av styrelsen f\u00f6r landstormsf\u00f6reningarnas centralf\u00f6rbund 1913?1919 och ordf\u00f6rande i dess verkst\u00e4llande utskott 1913?1915. Sakkunnig f\u00f6r inf skjutskolans f\u00f6rl\u00e4ggning mm 1913-1914 och 1917-1918 samt utarbetande av nytt inf exercisreglemente 1923-1924. RSO 1910, RVO 2:a kl 1919 och 1:a kl 1922, landst GM samma \u00e5r, JHSO 1905, RFrHL 1906, JFM 1907 och led Kr V A 1913. Tilldelad Hallands- Nordv\u00e4stra Sk\u00e5nes landstormsf\u00f6rbunds guldmedalj vid f\u00f6rbundets 20-\u00e5rsjubileum 1928. Komm av Finlands vita Ros 1:a kl 1933. K Fr H L 1930. K msth O 1933. R C XIII O 1936.\nHar innehaft diverse kommunala och likartade uppdrag i Halmstad. Fr\u00e5n 1936 kanslichef i Svenska Frimurarorden.",
+    "notes": "(Tab 33 i GS).\nFörfattare till \"Gamla släktboken\".\nMogenhetsexamen i Skara 1887. Volontär vid Bohusläns regemente 1887, sergeant 1888, officersexamen 1889, underlöjtnant samma år; löjtnant 1899; aspirant vid generalstaben 1899-1901. Stabsadjutant och löjtnant där 1902 och kapten 1903. Kapten i Bohusläns regemente samma år, vid Västgöta regemente 1907 och åter generalstaben 1910. Øveradjutant och major där samma år. Øverstelöjtnant i staben 1913 och. vid Hallands regemente 1914. Tf chef för detta regemente 1915. Øverste i regementet 1916 och dess chef 1917. Chef för 1:a brigaden 1920 samt generalmajor och chef för 6:e arméfördelningen 1926.\nGenomgick krigshögskolan 1896?1898. Kommenderad till Ryssland 1902. Militärattaché i Tokyo 1901-1905 och under tiden där (1904-1905) vid 1:a japanska fältarmén i Kina. Generallöjtnant i armén 1933. Avsked med skyldighet att inträda i generalitetets reserv 1933. Ur reserven 1938.\n1:e lärare i krigskonst vid krigshögskolan 1907-1909. Stabschef vid 3:e arméfördelningen 1910-1912. Chef för inf skjutskolan 1913-1915. Ledamot av styrelsen för landstormsföreningarnas centralförbund 1913?1919 och ordförande i dess verkställande utskott 1913?1915. Sakkunnig för inf skjutskolans förläggning mm 1913-1914 och 1917-1918 samt utarbetande av nytt inf exercisreglemente 1923-1924. RSO 1910, RVO 2:a kl 1919 och 1:a kl 1922, landst GM samma år, JHSO 1905, RFrHL 1906, JFM 1907 och led Kr V A 1913. Tilldelad Hallands- Nordvästra Skånes landstormsförbunds guldmedalj vid förbundets 20-årsjubileum 1928. Komm av Finlands vita Ros 1:a kl 1933. K Fr H L 1930. K msth O 1933. R C XIII O 1936.\nHar innehaft diverse kommunala och likartade uppdrag i Halmstad. Från 1936 kanslichef i Svenska Frimurarorden.",
     "occupations": [
-      "Generall\u00f6jtnant"
+      "Generallöjtnant"
     ],
     "references": [],
     "sex": "MAN",
@@ -20270,7 +20270,7 @@ const persons = {
         "year": 1876
       },
       "location": {
-        "city": "Lidk\u00f6ping",
+        "city": "Lidköping",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -20296,7 +20296,7 @@ const persons = {
         "year": 1969
       },
       "location": {
-        "city": "p\u00e5 Marielunds sjukhem i Liding\u00f6",
+        "city": "på Marielunds sjukhem i Lidingö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -20315,7 +20315,7 @@ const persons = {
       "Elisabet"
     ],
     "mother": 378,
-    "notes": "(Tab 28:133 i GS).\nGenomgick elementarskolan f\u00f6r flickor i Lidk\u00f6ping 1885-91 och Schwartzska skolan i Stockholm 1891-93. Anst\u00e4lld vid St\u00e4dernas allm\u00e4nna brandstodsbolag i Stockholm 1897 och huvudkass\u00f6r sedan 1914. Avgick med pension 1941, men kvarstod i tj\u00e4nst ytterliggare n\u00e5gra \u00e5r. Tilldelad bolagets f\u00f6rtj\u00e4nstmedalj i guld vid dess 100-\u00e5rsjubileum 1928.",
+    "notes": "(Tab 28:133 i GS).\nGenomgick elementarskolan för flickor i Lidköping 1885-91 och Schwartzska skolan i Stockholm 1891-93. Anställd vid Städernas allmänna brandstodsbolag i Stockholm 1897 och huvudkassör sedan 1914. Avgick med pension 1941, men kvarstod i tjänst ytterliggare några år. Tilldelad bolagets förtjänstmedalj i guld vid dess 100-årsjubileum 1928.",
     "occupations": [],
     "references": [],
     "sex": "UNKNOWN",
@@ -20373,7 +20373,7 @@ const persons = {
     "father": 422,
     "fileId": "0000000283",
     "firstName": "Agnes",
-    "lastName": "L\u00f6nnroth",
+    "lastName": "Lönnroth",
     "marriages": [
       {
         "date": {
@@ -20386,7 +20386,7 @@ const persons = {
         },
         "location": {
           "city": "Paris",
-          "country": " Frankrike",
+          "country": "Frankrike",
           "notes": "",
           "region": ""
         },
@@ -20416,7 +20416,7 @@ const persons = {
       },
       "location": {
         "city": "Paris",
-        "country": " Frankrike",
+        "country": "Frankrike",
         "notes": "",
         "region": "",
         "latitude": 48.85717,
@@ -20441,7 +20441,7 @@ const persons = {
         "year": 1988
       },
       "location": {
-        "city": "T\u00e4by",
+        "city": "Täby",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -20460,7 +20460,7 @@ const persons = {
       "Helene"
     ],
     "mother": 397,
-    "notes": "(Tab 29:110 i GS).\nStudentexamen 1917 vid Whitlockska skolan i Stockholm.\nSpr\u00e5kstudier vid Stockholms borgarskola 1919.\nKanslibitr\u00e4de vid Vattenfallsstyrelsen 1919.\nStenograf och maskinskriverska p\u00e5 Sv Elverksf\u00f6reningenssekreteriat 1927.\nKontorist vid \u00c4lvkarleby kraftverk 1940.\nF\u00f6rste kontorist vid Kungl Vattenfallsstyrelsen 1946.\nEo kansliskrivare 1948.\nKansliskrivare 1949.\nF\u00f6rste kansliskrivare 1949.\nKontorsskrivare och handsekreterare \u00e5t generaldirekt\u00f6ren 1953.\nErh\u00f6ll guldmedalj 6:e storl \"F\u00f6r nit och redlighet i rikets tj\u00e4nst\" 1949.",
+    "notes": "(Tab 29:110 i GS).\nStudentexamen 1917 vid Whitlockska skolan i Stockholm.\nSpråkstudier vid Stockholms borgarskola 1919.\nKanslibiträde vid Vattenfallsstyrelsen 1919.\nStenograf och maskinskriverska på Sv Elverksföreningenssekreteriat 1927.\nKontorist vid Älvkarleby kraftverk 1940.\nFörste kontorist vid Kungl Vattenfallsstyrelsen 1946.\nEo kansliskrivare 1948.\nKansliskrivare 1949.\nFörste kansliskrivare 1949.\nKontorsskrivare och handsekreterare åt generaldirektören 1953.\nErhöll guldmedalj 6:e storl \"För nit och redlighet i rikets tjänst\" 1949.",
     "occupations": [],
     "references": [],
     "sex": "UNKNOWN",
@@ -20478,7 +20478,7 @@ const persons = {
       },
       "location": {
         "city": "Haro",
-        "country": " Spanien",
+        "country": "Spanien",
         "notes": "",
         "region": "",
         "latitude": 42.57778,
@@ -20513,7 +20513,7 @@ const persons = {
       },
       "location": {
         "city": "Haro",
-        "country": " Spanien",
+        "country": "Spanien",
         "notes": "",
         "region": "",
         "latitude": 42.57778,
@@ -20538,7 +20538,7 @@ const persons = {
         },
         "location": {
           "city": "Haro",
-          "country": " Spanien",
+          "country": "Spanien",
           "notes": "",
           "region": ""
         },
@@ -20568,7 +20568,7 @@ const persons = {
       },
       "location": {
         "city": "Haro",
-        "country": " Spanien",
+        "country": "Spanien",
         "notes": "",
         "region": "",
         "latitude": 42.57778,
@@ -20594,7 +20594,7 @@ const persons = {
       },
       "location": {
         "city": "Haro",
-        "country": " Spanien",
+        "country": "Spanien",
         "notes": "",
         "region": "",
         "latitude": 42.57778,
@@ -20633,7 +20633,7 @@ const persons = {
       },
       "location": {
         "city": "Bilbao",
-        "country": " Spanien",
+        "country": "Spanien",
         "notes": "",
         "region": "",
         "latitude": 43.2689,
@@ -20659,7 +20659,7 @@ const persons = {
       },
       "location": {
         "city": "Bilbao",
-        "country": " Spanien",
+        "country": "Spanien",
         "notes": "",
         "region": "",
         "latitude": 43.2689,
@@ -20697,7 +20697,7 @@ const persons = {
       },
       "location": {
         "city": "Bilbao",
-        "country": " Spanien",
+        "country": "Spanien",
         "notes": "",
         "region": "",
         "latitude": 43.2689,
@@ -20723,7 +20723,7 @@ const persons = {
       },
       "location": {
         "city": "Haro",
-        "country": " Spanien",
+        "country": "Spanien",
         "notes": "",
         "region": "",
         "latitude": 42.57778,
@@ -20748,7 +20748,7 @@ const persons = {
         },
         "location": {
           "city": "Haro",
-          "country": " Spanien",
+          "country": "Spanien",
           "notes": "",
           "region": ""
         },
@@ -20761,7 +20761,7 @@ const persons = {
       "Hegardt"
     ],
     "mother": 399,
-    "notes": "(Tab 30:114 i GS).\nExamen fr\u00e5n handelsh\u00f6gskolan i Bilbao 1916. Efter ett par kontorsanst\u00e4llningar fick han plats hos handelshuset Girard och Co (export\u00f6rer av conjak och eau-de-vie) i Tonnay Charente i Frankrike. Efter \u00e5terkomst till Bilbao 1918 b\u00f6rjade han d\u00e4r samma \u00e5r som banktj\u00e4nsteman vid Banco de Viscaya. Flyttade 1921 till samma banks kontor i Haro, d\u00e4r han arbetade som kamrer.",
+    "notes": "(Tab 30:114 i GS).\nExamen från handelshögskolan i Bilbao 1916. Efter ett par kontorsanställningar fick han plats hos handelshuset Girard och Co (exportörer av conjak och eau-de-vie) i Tonnay Charente i Frankrike. Efter återkomst till Bilbao 1918 började han där samma år som banktjänsteman vid Banco de Viscaya. Flyttade 1921 till samma banks kontor i Haro, där han arbetade som kamrer.",
     "occupations": [],
     "references": [],
     "sex": "UNKNOWN",
@@ -20779,7 +20779,7 @@ const persons = {
       },
       "location": {
         "city": "Haro",
-        "country": " Spanien",
+        "country": "Spanien",
         "notes": "",
         "region": "",
         "latitude": 42.57778,
@@ -20815,7 +20815,7 @@ const persons = {
         },
         "location": {
           "city": "Haro",
-          "country": " Spanien",
+          "country": "Spanien",
           "notes": "",
           "region": ""
         },
@@ -20844,7 +20844,7 @@ const persons = {
       },
       "location": {
         "city": "Haro",
-        "country": " Spanien",
+        "country": "Spanien",
         "notes": "",
         "region": "",
         "latitude": 42.57778,
@@ -20870,7 +20870,7 @@ const persons = {
       },
       "location": {
         "city": "Tolosa",
-        "country": " Spanien",
+        "country": "Spanien",
         "notes": "",
         "region": "",
         "latitude": 43.13408,
@@ -20908,7 +20908,7 @@ const persons = {
       },
       "location": {
         "city": "Oslo",
-        "country": " Norge",
+        "country": "Norge",
         "notes": "",
         "region": "",
         "latitude": 59.91234,
@@ -20934,7 +20934,7 @@ const persons = {
       },
       "location": {
         "city": "Tolosa",
-        "country": " Spanien",
+        "country": "Spanien",
         "notes": "",
         "region": "",
         "latitude": 43.13408,
@@ -20972,7 +20972,7 @@ const persons = {
       },
       "location": {
         "city": "Bilbao",
-        "country": " Spanien",
+        "country": "Spanien",
         "notes": "",
         "region": "",
         "latitude": 43.2689,
@@ -20998,7 +20998,7 @@ const persons = {
       },
       "location": {
         "city": "Haro",
-        "country": " Spanien",
+        "country": "Spanien",
         "notes": "",
         "region": "",
         "latitude": 42.57778,
@@ -21035,7 +21035,7 @@ const persons = {
       },
       "location": {
         "city": "Haro",
-        "country": " Spanien",
+        "country": "Spanien",
         "notes": "",
         "region": "",
         "latitude": 42.57778,
@@ -21067,7 +21067,7 @@ const persons = {
       },
       "location": {
         "city": "Zaragosa",
-        "country": " Spanien",
+        "country": "Spanien",
         "notes": "",
         "region": "",
         "latitude": 41.65183,
@@ -21092,7 +21092,7 @@ const persons = {
         },
         "location": {
           "city": "Zaragosa",
-          "country": " Spanien",
+          "country": "Spanien",
           "notes": "",
           "region": ""
         },
@@ -21122,7 +21122,7 @@ const persons = {
       },
       "location": {
         "city": "Zaragosa",
-        "country": " Spanien",
+        "country": "Spanien",
         "notes": "",
         "region": "",
         "latitude": 41.65183,
@@ -21164,7 +21164,7 @@ const persons = {
         },
         "location": {
           "city": "Zaragosa",
-          "country": " Spanien",
+          "country": "Spanien",
           "notes": "",
           "region": ""
         },
@@ -21195,7 +21195,7 @@ const persons = {
       },
       "location": {
         "city": "Bilbao",
-        "country": " Spanien",
+        "country": "Spanien",
         "notes": "",
         "region": "",
         "latitude": 43.2689,
@@ -21221,7 +21221,7 @@ const persons = {
       },
       "location": {
         "city": "Bilbao",
-        "country": " Spanien",
+        "country": "Spanien",
         "notes": "",
         "region": "",
         "latitude": 43.2689,
@@ -21258,7 +21258,7 @@ const persons = {
       },
       "location": {
         "city": "Zaragosa",
-        "country": " Spanien",
+        "country": "Spanien",
         "notes": "",
         "region": "",
         "latitude": 41.65183,
@@ -21294,7 +21294,7 @@ const persons = {
         },
         "location": {
           "city": "Zaragosa",
-          "country": " Spanien",
+          "country": "Spanien",
           "notes": "",
           "region": ""
         },
@@ -21328,7 +21328,7 @@ const persons = {
       },
       "location": {
         "city": "Logrono",
-        "country": " Spanien",
+        "country": "Spanien",
         "notes": "",
         "region": "",
         "latitude": 42.46591,
@@ -21364,7 +21364,7 @@ const persons = {
         },
         "location": {
           "city": "Zaragosa",
-          "country": " Spanien",
+          "country": "Spanien",
           "notes": "",
           "region": ""
         },
@@ -21394,7 +21394,7 @@ const persons = {
       },
       "location": {
         "city": "Zaragosa",
-        "country": " Spanien",
+        "country": "Spanien",
         "notes": "",
         "region": "",
         "latitude": 41.65183,
@@ -21436,7 +21436,7 @@ const persons = {
         },
         "location": {
           "city": "Bilbao",
-          "country": " Spanien",
+          "country": "Spanien",
           "notes": "",
           "region": ""
         },
@@ -21448,7 +21448,7 @@ const persons = {
       "Garcia"
     ],
     "mother": 406,
-    "notes": "Adress Ave de las Torres 35 6 V, Zaragoza, Spanien.\nChef f\u00f6r Zaragoza brandk\u00e5r.\nIntresserad av filateli, klassisk musik och sk\u00f6nlitteratur.\nBor i Zaragosa, Spanien.",
+    "notes": "Adress Ave de las Torres 35 6 V, Zaragoza, Spanien.\nChef för Zaragoza brandkår.\nIntresserad av filateli, klassisk musik och skönlitteratur.\nBor i Zaragosa, Spanien.",
     "occupations": [
       "Stadsarkitekt"
     ],
@@ -21468,7 +21468,7 @@ const persons = {
       },
       "location": {
         "city": "Bilbao",
-        "country": " Spanien",
+        "country": "Spanien",
         "notes": "",
         "region": "",
         "latitude": 43.2689,
@@ -21510,7 +21510,7 @@ const persons = {
         },
         "location": {
           "city": "Bilbao",
-          "country": " Spanien",
+          "country": "Spanien",
           "notes": "",
           "region": ""
         },
@@ -21523,7 +21523,7 @@ const persons = {
     "mother": 439,
     "notes": "",
     "occupations": [
-      "L\u00e4rare"
+      "Lärare"
     ],
     "references": [],
     "sex": "WOMAN",
@@ -21541,7 +21541,7 @@ const persons = {
       },
       "location": {
         "city": "Zaragosa",
-        "country": " Spanien",
+        "country": "Spanien",
         "notes": "",
         "region": "",
         "latitude": 41.65183,
@@ -21579,7 +21579,7 @@ const persons = {
         },
         "location": {
           "city": "Zaragosa",
-          "country": " Spanien",
+          "country": "Spanien",
           "notes": "",
           "region": ""
         },
@@ -21590,7 +21590,7 @@ const persons = {
       "Garcia"
     ],
     "mother": 406,
-    "notes": "Adress Duquesa Orleans 50-1, 08034 Barcelona, Spanien.\nFil lic i kemi 1961 i Zaragoza. Fil dr i kemi 1966. Docent i kemi vid universitetet i Zaragoza 1967. Bitr\u00e4dande professor i biokemi vid universitetet i Barcelona 1974 och professor 1981. Prefekt vid biokemiska instutionen vid universitetet i Barcelona 1977.\nVice dekanus vid Farmacih\u00f6gskolan 1980-83. Vice ordf\u00f6rande i Spanska biokemiska f\u00f6reningen fr\u00e5n 1986. Har publicerat \u00e5tskilliga avhandlingar inom biokemi och har vid flera tillf\u00e4llen varit engagerad som f\u00f6rel\u00e4sare vid olika seminarier i bl a USA.\nBor i Barcelona, Spanien.",
+    "notes": "Adress Duquesa Orleans 50-1, 08034 Barcelona, Spanien.\nFil lic i kemi 1961 i Zaragoza. Fil dr i kemi 1966. Docent i kemi vid universitetet i Zaragoza 1967. Biträdande professor i biokemi vid universitetet i Barcelona 1974 och professor 1981. Prefekt vid biokemiska instutionen vid universitetet i Barcelona 1977.\nVice dekanus vid Farmacihögskolan 1980-83. Vice ordförande i Spanska biokemiska föreningen från 1986. Har publicerat åtskilliga avhandlingar inom biokemi och har vid flera tillfällen varit engagerad som föreläsare vid olika seminarier i bl a USA.\nBor i Barcelona, Spanien.",
     "occupations": [
       "Professor"
     ],
@@ -21610,7 +21610,7 @@ const persons = {
       },
       "location": {
         "city": "Zaragosa",
-        "country": " Spanien",
+        "country": "Spanien",
         "notes": "",
         "region": "",
         "latitude": 41.65183,
@@ -21648,7 +21648,7 @@ const persons = {
         },
         "location": {
           "city": "Zaragosa",
-          "country": " Spanien",
+          "country": "Spanien",
           "notes": "",
           "region": ""
         },
@@ -21680,7 +21680,7 @@ const persons = {
       },
       "location": {
         "city": "Zaragosa",
-        "country": " Spanien",
+        "country": "Spanien",
         "notes": "",
         "region": "",
         "latitude": 41.65183,
@@ -21716,7 +21716,7 @@ const persons = {
         },
         "location": {
           "city": "Zaragosa",
-          "country": " Spanien",
+          "country": "Spanien",
           "notes": "",
           "region": ""
         },
@@ -21748,7 +21748,7 @@ const persons = {
       },
       "location": {
         "city": "Zaragosa",
-        "country": " Spanien",
+        "country": "Spanien",
         "notes": "",
         "region": "",
         "latitude": 41.65183,
@@ -21784,7 +21784,7 @@ const persons = {
         },
         "location": {
           "city": "Zaragosa",
-          "country": " Spanien",
+          "country": "Spanien",
           "notes": "",
           "region": ""
         },
@@ -21813,7 +21813,7 @@ const persons = {
       },
       "location": {
         "city": "Zaragosa",
-        "country": " Spanien",
+        "country": "Spanien",
         "notes": "",
         "region": "",
         "latitude": 41.65183,
@@ -21853,7 +21853,7 @@ const persons = {
         },
         "location": {
           "city": "Barbastro",
-          "country": " Spanien",
+          "country": "Spanien",
           "notes": "",
           "region": ""
         },
@@ -21862,7 +21862,7 @@ const persons = {
     ],
     "middleNames": [
       "Alfonso",
-      "Jos\u00e9"
+      "José"
     ],
     "mother": 406,
     "notes": "Adress Calle del Rio 31-9 D, Miranda de Ebro, Burgos, Spanien.\nBor i Burgos, Spanien.",
@@ -21885,7 +21885,7 @@ const persons = {
       },
       "location": {
         "city": "Barbastro",
-        "country": " Spanien",
+        "country": "Spanien",
         "notes": "",
         "region": "",
         "latitude": 42.0361,
@@ -21925,7 +21925,7 @@ const persons = {
         },
         "location": {
           "city": "Barbastro",
-          "country": " Spanien",
+          "country": "Spanien",
           "notes": "",
           "region": ""
         },
@@ -21955,7 +21955,7 @@ const persons = {
       },
       "location": {
         "city": "Zaragosa",
-        "country": " Spanien",
+        "country": "Spanien",
         "notes": "",
         "region": "",
         "latitude": 41.65183,
@@ -22004,7 +22004,7 @@ const persons = {
       },
       "location": {
         "city": "Zaragosa",
-        "country": " Spanien",
+        "country": "Spanien",
         "notes": "",
         "region": "",
         "latitude": 41.65183,
@@ -22053,7 +22053,7 @@ const persons = {
       },
       "location": {
         "city": "Zaragosa",
-        "country": " Spanien",
+        "country": "Spanien",
         "notes": "",
         "region": "",
         "latitude": 41.65183,
@@ -22079,7 +22079,7 @@ const persons = {
       },
       "location": {
         "city": "Zaragosa",
-        "country": " Spanien",
+        "country": "Spanien",
         "notes": "",
         "region": "",
         "latitude": 41.65183,
@@ -22115,7 +22115,7 @@ const persons = {
       },
       "location": {
         "city": "Zaragosa",
-        "country": " Spanien",
+        "country": "Spanien",
         "notes": "",
         "region": "",
         "latitude": 41.65183,
@@ -22166,7 +22166,7 @@ const persons = {
       },
       "location": {
         "city": "Zaragosa",
-        "country": " Spanien",
+        "country": "Spanien",
         "notes": "",
         "region": "",
         "latitude": 41.65183,
@@ -22217,7 +22217,7 @@ const persons = {
       },
       "location": {
         "city": "Barcelona",
-        "country": " Spanien",
+        "country": "Spanien",
         "notes": "",
         "region": "",
         "latitude": 41.38804,
@@ -22264,7 +22264,7 @@ const persons = {
       },
       "location": {
         "city": "Burgos",
-        "country": " Spanien",
+        "country": "Spanien",
         "notes": "",
         "region": "",
         "latitude": 42.34126,
@@ -22313,7 +22313,7 @@ const persons = {
       },
       "location": {
         "city": "Burgos",
-        "country": " Spanien",
+        "country": "Spanien",
         "notes": "",
         "region": "",
         "latitude": 42.34126,
@@ -22362,7 +22362,7 @@ const persons = {
       },
       "location": {
         "city": "Burgos",
-        "country": " Spanien",
+        "country": "Spanien",
         "notes": "",
         "region": "",
         "latitude": 42.34126,
@@ -22409,9 +22409,9 @@ const persons = {
       },
       "location": {
         "city": "Beardstown",
-        "country": " USA",
+        "country": "USA",
         "notes": "",
-        "region": " Illinois",
+        "region": "Illinois",
         "latitude": 40.01549,
         "longitude": -90.43295,
         "fetchStatus": "FETCHED"
@@ -22439,9 +22439,9 @@ const persons = {
       },
       "location": {
         "city": "Portland",
-        "country": " USA",
+        "country": "USA",
         "notes": "",
-        "region": " Oregon",
+        "region": "Oregon",
         "latitude": 45.51179,
         "longitude": -122.67563,
         "fetchStatus": "FETCHED"
@@ -22464,9 +22464,9 @@ const persons = {
         },
         "location": {
           "city": "Beardstown",
-          "country": " USA",
+          "country": "USA",
           "notes": "",
-          "region": " Illinois"
+          "region": "Illinois"
         },
         "personId": 381
       }
@@ -22493,9 +22493,9 @@ const persons = {
       },
       "location": {
         "city": "Beardstown",
-        "country": " USA",
+        "country": "USA",
         "notes": "",
-        "region": " Illinois",
+        "region": "Illinois",
         "latitude": 40.01549,
         "longitude": -90.43295,
         "fetchStatus": "FETCHED"
@@ -22519,9 +22519,9 @@ const persons = {
       },
       "location": {
         "city": "Portland",
-        "country": " USA",
+        "country": "USA",
         "notes": "",
-        "region": " Oregon",
+        "region": "Oregon",
         "latitude": 45.51179,
         "longitude": -122.67563,
         "fetchStatus": "FETCHED"
@@ -22544,9 +22544,9 @@ const persons = {
         },
         "location": {
           "city": "Portland",
-          "country": " USA",
+          "country": "USA",
           "notes": "",
-          "region": " Oregon"
+          "region": "Oregon"
         },
         "personId": 452
       }
@@ -22555,7 +22555,7 @@ const persons = {
       "Norbury"
     ],
     "mother": 408,
-    "notes": "(Tab 31:120 i GS).\nUtexaminerad fr\u00e5n ekonomisk h\u00f6gskola i Portland.",
+    "notes": "(Tab 31:120 i GS).\nUtexaminerad från ekonomisk högskola i Portland.",
     "occupations": [
       "Handlande"
     ],
@@ -22575,9 +22575,9 @@ const persons = {
       },
       "location": {
         "city": "Bethany",
-        "country": " USA",
+        "country": "USA",
         "notes": "",
-        "region": " Oregon",
+        "region": "Oregon",
         "latitude": 45.55364,
         "longitude": -122.83681,
         "fetchStatus": "FETCHED"
@@ -22601,9 +22601,9 @@ const persons = {
       },
       "location": {
         "city": "Portland",
-        "country": " USA",
+        "country": "USA",
         "notes": "",
-        "region": " Oregon",
+        "region": "Oregon",
         "latitude": 45.51179,
         "longitude": -122.67563,
         "fetchStatus": "FETCHED"
@@ -22626,9 +22626,9 @@ const persons = {
         },
         "location": {
           "city": "Portland",
-          "country": " USA",
+          "country": "USA",
           "notes": "",
-          "region": " Oregon"
+          "region": "Oregon"
         },
         "personId": 409
       }
@@ -22653,9 +22653,9 @@ const persons = {
       },
       "location": {
         "city": "Fort Stevens",
-        "country": " USA",
+        "country": "USA",
         "notes": "",
-        "region": " Oregon",
+        "region": "Oregon",
         "latitude": 46.20159,
         "longitude": -123.96076,
         "fetchStatus": "FETCHED"
@@ -22689,9 +22689,9 @@ const persons = {
         },
         "location": {
           "city": "Oakland",
-          "country": " USA",
+          "country": "USA",
           "notes": "",
-          "region": " Californien"
+          "region": "Californien"
         },
         "personId": 455
       }
@@ -22723,7 +22723,7 @@ const persons = {
       },
       "location": {
         "city": "Ostheim",
-        "country": " Tyskland",
+        "country": "Tyskland",
         "notes": "",
         "region": "",
         "latitude": 51.0792,
@@ -22749,9 +22749,9 @@ const persons = {
       },
       "location": {
         "city": "Tigard",
-        "country": " USA",
+        "country": "USA",
         "notes": "",
-        "region": " Oregon",
+        "region": "Oregon",
         "latitude": 45.4254,
         "longitude": -122.76575,
         "fetchStatus": "FETCHED"
@@ -22774,9 +22774,9 @@ const persons = {
         },
         "location": {
           "city": "Oakland",
-          "country": " USA",
+          "country": "USA",
           "notes": "",
-          "region": " Californien"
+          "region": "Californien"
         },
         "personId": 410
       }
@@ -22785,7 +22785,7 @@ const persons = {
     "mother": null,
     "notes": "",
     "occupations": [
-      "Fastighetsm\u00e4klare"
+      "Fastighetsmäklare"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -22803,9 +22803,9 @@ const persons = {
       },
       "location": {
         "city": "Fort Stevens",
-        "country": " USA",
+        "country": "USA",
         "notes": "",
-        "region": " Oregon",
+        "region": "Oregon",
         "latitude": 46.20159,
         "longitude": -123.96076,
         "fetchStatus": "FETCHED"
@@ -22829,9 +22829,9 @@ const persons = {
       },
       "location": {
         "city": "Tigard",
-        "country": " USA",
+        "country": "USA",
         "notes": "",
-        "region": " Oregon",
+        "region": "Oregon",
         "latitude": 45.4254,
         "longitude": -122.76575,
         "fetchStatus": "FETCHED"
@@ -22864,7 +22864,7 @@ const persons = {
         "year": 1863
       },
       "location": {
-        "city": "\u00d8rebro",
+        "city": "Ørebro",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -22894,7 +22894,7 @@ const persons = {
         "year": 1925
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -22907,7 +22907,7 @@ const persons = {
     "father": 457,
     "fileId": "0000000321",
     "firstName": "Elin",
-    "lastName": "Bl\u00fccher",
+    "lastName": "Blücher",
     "marriages": [
       {
         "date": {
@@ -22919,7 +22919,7 @@ const persons = {
           "year": 1891
         },
         "location": {
-          "city": "Str\u00f6mstad",
+          "city": "Strömstad",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -22948,7 +22948,7 @@ const persons = {
         "year": 1892
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -22974,7 +22974,7 @@ const persons = {
         "year": 1982
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -22994,7 +22994,7 @@ const persons = {
       "Lovisa"
     ],
     "mother": 412,
-    "notes": "(Tab 32:124 i GS).\nNormalskolekompetens 1909. Elev vid Malm\u00f6 musikkonservatorium 1909-1911. Spr\u00e5kstudier i Berlin 1911 vid B\u00f6ttinger Studienhaus (Deutsches Institut f\u00fcr Ausl\u00e4nder). Extraelev vid Fackskolan Brog\u00e5rd i lanthush\u00e5ll sommaren 1912 . Utexaminerad fr\u00e5n Fackskolans f\u00f6r huslig ekonomi A-kurs 1914. Deltagit i diverse f\u00f6rel\u00e4snings- och fortbildningskurser anordnade i Uppsala eller p\u00e5 annat h\u00e5ll av SSLF.\nL\u00e4rarinna vid Anna och Eva Bunths skola i Malm\u00f6 1915-1937. Vikarierat vid Lunds stads folkskolor 1917. F\u00f6rest\u00e5tt sockerfabrikens i Arl\u00f6v arbetarek\u00f6k 1917-1919. Tj\u00e4nstgjort vid S\u00f6vestads forts\u00e4ttningsskola 1921 och 1924-1925 och i Upp\u00e5kra 1922-1923. Anst\u00e4lld vid Fosie folkskolor och senare, efter inkorporering, inom Malm\u00f6 skoldistrikt 1923-1936. \u00d8verflyttad till Kommunala Flickskolan i Malm\u00f6 1937 och ordinarie \u00f6vningsl\u00e4rare d\u00e4r 1939. Avgick med pension 1957. GMfmf.",
+    "notes": "(Tab 32:124 i GS).\nNormalskolekompetens 1909. Elev vid Malmö musikkonservatorium 1909-1911. Språkstudier i Berlin 1911 vid Böttinger Studienhaus (Deutsches Institut für Ausländer). Extraelev vid Fackskolan Brogård i lanthushåll sommaren 1912 . Utexaminerad från Fackskolans för huslig ekonomi A-kurs 1914. Deltagit i diverse föreläsnings- och fortbildningskurser anordnade i Uppsala eller på annat håll av SSLF.\nLärarinna vid Anna och Eva Bunths skola i Malmö 1915-1937. Vikarierat vid Lunds stads folkskolor 1917. Förestått sockerfabrikens i Arlöv arbetarekök 1917-1919. Tjänstgjort vid Sövestads fortsättningsskola 1921 och 1924-1925 och i Uppåkra 1922-1923. Anställd vid Fosie folkskolor och senare, efter inkorporering, inom Malmö skoldistrikt 1923-1936. Øverflyttad till Kommunala Flickskolan i Malmö 1937 och ordinarie övningslärare där 1939. Avgick med pension 1957. GMfmf.",
     "occupations": [],
     "references": [],
     "sex": "UNKNOWN",
@@ -23011,7 +23011,7 @@ const persons = {
         "year": 1894
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -23037,7 +23037,7 @@ const persons = {
         "year": 1987
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -23049,14 +23049,14 @@ const persons = {
     },
     "father": 382,
     "fileId": "0000000323",
-    "firstName": "M\u00e4rta",
+    "firstName": "Märta",
     "lastName": "Hegardt",
     "marriages": [],
     "middleNames": [
       "Katarina"
     ],
     "mother": 412,
-    "notes": "(Tab 32:125 i GS).\nUtexaminerad fr\u00e5n Malm\u00f6 h\u00f6gre elementarl\u00e4roverk f\u00f6r flickor 1910. Studerade vid Malm\u00f6 tekniska skola 1911-1912 och genomgick Tekniska skolan i Stockholm 1913-1917. Utexaminerad teckningsl\u00e4rare sistn\u00e4mnda \u00e5r. Innehade skolans stipendium 1916-1917 samt genomgick sommarkursen i tr\u00e4sl\u00f6jd vid N\u00e4\u00e4s 1915 och 1916.\nVikarierande teckningsl\u00e4rare vid Uppsala enskilda l\u00e4roverk och privatgymnasium 1917-1919 och undervisade under samma tid vid fackskolan f\u00f6r huslig ekonomi. Ordinarie teckningsl\u00e4rare vid Statens samskola i Haparanda 1919 samt undervisade vid Statens sm\u00e5skoleseminarium och Tekniska aftonskolan d\u00e4r. Blev teckningsl\u00e4rare vid Statens folkskoleseminarium i H\u00e4rn\u00f6sand 1925. Fr\u00e5n 1936 teckningsl\u00e4rare vid Malm\u00f6 realskola.",
+    "notes": "(Tab 32:125 i GS).\nUtexaminerad från Malmö högre elementarläroverk för flickor 1910. Studerade vid Malmö tekniska skola 1911-1912 och genomgick Tekniska skolan i Stockholm 1913-1917. Utexaminerad teckningslärare sistnämnda år. Innehade skolans stipendium 1916-1917 samt genomgick sommarkursen i träslöjd vid Nääs 1915 och 1916.\nVikarierande teckningslärare vid Uppsala enskilda läroverk och privatgymnasium 1917-1919 och undervisade under samma tid vid fackskolan för huslig ekonomi. Ordinarie teckningslärare vid Statens samskola i Haparanda 1919 samt undervisade vid Statens småskoleseminarium och Tekniska aftonskolan där. Blev teckningslärare vid Statens folkskoleseminarium i Härnösand 1925. Från 1936 teckningslärare vid Malmö realskola.",
     "occupations": [],
     "references": [],
     "sex": "UNKNOWN",
@@ -23073,7 +23073,7 @@ const persons = {
         "year": 1896
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -23100,7 +23100,7 @@ const persons = {
       },
       "location": {
         "city": "Ballenstadt",
-        "country": " Tyskland",
+        "country": "Tyskland",
         "notes": "",
         "region": "",
         "latitude": 51.72322,
@@ -23119,7 +23119,7 @@ const persons = {
       "August"
     ],
     "mother": 412,
-    "notes": "(Tab 32:126 i GS).\nReservofficersaspirant vid Hallands regemente 1918.\nReservofficersexamen 1919, fanjunkare i regementet samma \u00e5r.\nF\u00e4nrik i reserven samma \u00e5r och underl\u00f6jtnant 1921. Student vid Polytechnicum i C\u00f6then, Tyskland 1918 och 1919 vid Fresenius tekniska institut i Wiesbaden, Tyskland, d\u00e4r han 1923 avlade avg\u00e5ngsexamen.",
+    "notes": "(Tab 32:126 i GS).\nReservofficersaspirant vid Hallands regemente 1918.\nReservofficersexamen 1919, fanjunkare i regementet samma år.\nFänrik i reserven samma år och underlöjtnant 1921. Student vid Polytechnicum i Cöthen, Tyskland 1918 och 1919 vid Fresenius tekniska institut i Wiesbaden, Tyskland, där han 1923 avlade avgångsexamen.",
     "occupations": [],
     "references": [],
     "sex": "UNKNOWN",
@@ -23136,7 +23136,7 @@ const persons = {
         "year": 1880
       },
       "location": {
-        "city": "p\u00e5 Tvetaberg i Tveta ",
+        "city": "på Tvetaberg i Tveta",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -23276,7 +23276,7 @@ const persons = {
           "year": 1932
         },
         "location": {
-          "city": "\u00c5re",
+          "city": "Åre",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -23305,10 +23305,10 @@ const persons = {
       "Elisabet"
     ],
     "mother": 416,
-    "notes": "(Tab 33:129 i GS).\nStudentexamen 1926. I Spanien juni - juli 1925. Handelskurs vid Bar-Lock-institutet i Stockholm 1926-27. Ant\u00e4lld vid f\u00f6rs\u00e4krings AB Fylgia 1927-28. Sekreterare vid \u00d8stersunds l\u00e4nslasarett 1928-31. Sekreterare vid tidskriften V\u00e5rt F\u00f6rsvar i Stockholm 1931-32.\nBor i T\u00e4by (AB).",
+    "notes": "(Tab 33:129 i GS).\nStudentexamen 1926. I Spanien juni - juli 1925. Handelskurs vid Bar-Lock-institutet i Stockholm 1926-27. Antälld vid försäkrings AB Fylgia 1927-28. Sekreterare vid Østersunds länslasarett 1928-31. Sekreterare vid tidskriften Vårt Försvar i Stockholm 1931-32.\nBor i Täby (AB).",
     "occupations": [
-      "Adress eskaderv\u00e4gen 34",
-      "183 54  t\u00e4by"
+      "Adress eskadervägen 34",
+      "183 54  täby"
     ],
     "references": [],
     "sex": "WOMAN",
@@ -23325,7 +23325,7 @@ const persons = {
         "year": 1900
       },
       "location": {
-        "city": "Nyk\u00f6ping",
+        "city": "Nyköping",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -23364,7 +23364,7 @@ const persons = {
     "father": 466,
     "fileId": "0000000327",
     "firstName": "Tore",
-    "lastName": "Gr\u00e4slund",
+    "lastName": "Gräslund",
     "marriages": [
       {
         "date": {
@@ -23376,7 +23376,7 @@ const persons = {
           "year": 1932
         },
         "location": {
-          "city": "\u00c5re",
+          "city": "Åre",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -23407,7 +23407,7 @@ const persons = {
         "year": 1897
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -23437,7 +23437,7 @@ const persons = {
         "year": 1972
       },
       "location": {
-        "city": "H\u00f6l\u00f6",
+        "city": "Hölö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -23493,7 +23493,7 @@ const persons = {
         "year": 1908
       },
       "location": {
-        "city": "p\u00e5 Karlberg i Solna ",
+        "city": "på Karlberg i Solna",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -23531,7 +23531,7 @@ const persons = {
           "year": 1929
         },
         "location": {
-          "city": "\u00d8stersund",
+          "city": "Østersund",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -23544,9 +23544,9 @@ const persons = {
       "Maria"
     ],
     "mother": 416,
-    "notes": "(Tab 33:130 i GS).\nAvg\u00e5ngsexamen fr\u00e5n klass 8 i Halmstad flickskola 1926. I England till 1927 och d\u00e4refter elev vid \u00d8stersunds lasarett. Fr\u00e5n h\u00f6sten samma \u00e5r elev vid GCI i Stockholm. Kunde dock inte fullf\u00f6lja denna utbildning p g a skada. Avg\u00e5ngsexamen fr\u00e5n s\u00e4llskapet Barnav\u00e5rd i Stockholm 1929.\nBor i Vallentuna (AB).",
+    "notes": "(Tab 33:130 i GS).\nAvgångsexamen från klass 8 i Halmstad flickskola 1926. I England till 1927 och därefter elev vid Østersunds lasarett. Från hösten samma år elev vid GCI i Stockholm. Kunde dock inte fullfölja denna utbildning p g a skada. Avgångsexamen från sällskapet Barnavård i Stockholm 1929.\nBor i Vallentuna (AB).",
     "occupations": [
-      "Adress roseng\u00e5rden 33",
+      "Adress rosengården 33",
       "186 33  vallentuna"
     ],
     "references": [],
@@ -23609,7 +23609,7 @@ const persons = {
           "year": 1929
         },
         "location": {
-          "city": "\u00d8stersund",
+          "city": "Østersund",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -23621,7 +23621,7 @@ const persons = {
       "Allan"
     ],
     "mother": 471,
-    "notes": "Startade p\u00e5 40-talet egen byr\u00e5 i Stockholm 'John Wendlers Revisionsbyr\u00e5' och som han drev n\u00e4stan till sin d\u00f6d 1971. Var skicklig sportfiskare.",
+    "notes": "Startade på 40-talet egen byrå i Stockholm 'John Wendlers Revisionsbyrå' och som han drev nästan till sin död 1971. Var skicklig sportfiskare.",
     "occupations": [
       "Auktoriserad revisor med praktik i england",
       "Belgien och berlin"
@@ -23641,7 +23641,7 @@ const persons = {
         "year": 1910
       },
       "location": {
-        "city": "Sk\u00f6vde",
+        "city": "Skövde",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -23708,7 +23708,7 @@ const persons = {
       "Margareta"
     ],
     "mother": 416,
-    "notes": "(Tab 33:131 i GS).\n8-\u00e5rig flickskola 1927 i \u00d8stersund, hush\u00e5llsskola i Norrbyv\u00e4lle.\nUtbildning i maskinskrivning och stenografi i \u00d8stersund. Arbetat som au pair i London 1928 och som stenograf och maskinskriverska p\u00e5 svenska Livf\u00f6rs\u00e4kringsanstalten Trygg 1929-35.",
+    "notes": "(Tab 33:131 i GS).\n8-årig flickskola 1927 i Østersund, hushållsskola i Norrbyvälle.\nUtbildning i maskinskrivning och stenografi i Østersund. Arbetat som au pair i London 1928 och som stenograf och maskinskriverska på svenska Livförsäkringsanstalten Trygg 1929-35.",
     "occupations": [],
     "references": [],
     "sex": "WOMAN",
@@ -23785,9 +23785,9 @@ const persons = {
       "Bastiat"
     ],
     "mother": 477,
-    "notes": "Student 1927 i \u00d8stersund (Z).\nEfter officersexamen var han verksam vid G\u00f6ta artilleriregemente, vid Norrbottens artillerik\u00e5r i Boden och fr\u00e5n 1952 vid Wendes artilleriregemente i Kristianstad.\nEfter sin pensionering som officer var han avd chef vid Ahsell och \u00c5gren AB i G\u00f6teborg 1964 - 1973.\nGustaf och Margareta flyttade till Lund 1979.\nUnder 30- och 40-talen var Gustaf framg\u00e5ngsrik t\u00e4vlingsryttare.\nD\u00e4refter blev golf hans stora fritidsintresse som ocks\u00e5 delades av Margareta.",
+    "notes": "Student 1927 i Østersund (Z).\nEfter officersexamen var han verksam vid Göta artilleriregemente, vid Norrbottens artillerikår i Boden och från 1952 vid Wendes artilleriregemente i Kristianstad.\nEfter sin pensionering som officer var han avd chef vid Ahsell och Ågren AB i Göteborg 1964 - 1973.\nGustaf och Margareta flyttade till Lund 1979.\nUnder 30- och 40-talen var Gustaf framgångsrik tävlingsryttare.\nDärefter blev golf hans stora fritidsintresse som också delades av Margareta.",
     "occupations": [
-      "\u00d8verstel\u00f6jtnant"
+      "Øverstelöjtnant"
     ],
     "references": [],
     "sex": "MAN",
@@ -23855,7 +23855,7 @@ const persons = {
       "Elisabet"
     ],
     "mother": 416,
-    "notes": "Adress Knektabacken 1 B, 372 00 RONNEBY.\n(Tab 33:132 i GS).\nStudentexamen 1932 i \u00d8stersund (Z).\nSocionomexamen 1936 i Stockholm (AB).\nHar fem barn, varav tv\u00e5 b\u00e4r namnet Hegardt (se nedan).\nBor i Ronneby (K).",
+    "notes": "Adress Knektabacken 1 B, 372 00 RONNEBY.\n(Tab 33:132 i GS).\nStudentexamen 1932 i Østersund (Z).\nSocionomexamen 1936 i Stockholm (AB).\nHar fem barn, varav två bär namnet Hegardt (se nedan).\nBor i Ronneby (K).",
     "occupations": [
       "Socionom"
     ],
@@ -23937,12 +23937,12 @@ const persons = {
       }
     ],
     "middleNames": [
-      "G\u00f6sta"
+      "Gösta"
     ],
     "mother": null,
     "notes": "",
     "occupations": [
-      "Provinsiall\u00e4kare"
+      "Provinsialläkare"
     ],
     "references": [],
     "sex": "MAN",
@@ -23960,9 +23960,9 @@ const persons = {
       },
       "location": {
         "city": "Salmon Arm",
-        "country": " Canada",
+        "country": "Canada",
         "notes": "",
-        "region": " BC",
+        "region": "BC",
         "latitude": 50.70318,
         "longitude": -119.26884,
         "fetchStatus": "FETCHED"
@@ -24071,9 +24071,9 @@ const persons = {
       "Peter"
     ],
     "mother": 420,
-    "notes": "Adress Skepparegatan 36, 260 40 VIKEN.\nSkild 1985.\nStudentexamen 1962 i Ronneby (K).\nMed kand 1964 i Uppsala och med lic 1970 i G\u00f6teborg. Studerat vid Oxford University, Brasenose College, England 1964-65. Underl\u00e4kare vid Barnsjukhuset i G\u00f6teborg 1970-72. Underl\u00e4kare vid barnkliniken i Helsingborg 1972-76. Avdelningsl\u00e4kare vid samma klinik 1976-83.\nFr\u00e5n 1984 privatpraktiserande barnl\u00e4kare i Helsingborg. Uf\u00f6rt visst forskningsarbete r\u00f6rande enzymer i br\u00f6stmj\u00f6lken (publ).\nBor i Viken (M).",
+    "notes": "Adress Skepparegatan 36, 260 40 VIKEN.\nSkild 1985.\nStudentexamen 1962 i Ronneby (K).\nMed kand 1964 i Uppsala och med lic 1970 i Göteborg. Studerat vid Oxford University, Brasenose College, England 1964-65. Underläkare vid Barnsjukhuset i Göteborg 1970-72. Underläkare vid barnkliniken i Helsingborg 1972-76. Avdelningsläkare vid samma klinik 1976-83.\nFrån 1984 privatpraktiserande barnläkare i Helsingborg. Ufört visst forskningsarbete rörande enzymer i bröstmjölken (publ).\nBor i Viken (M).",
     "occupations": [
-      "Privatpraktiserande barnl\u00e4kare"
+      "Privatpraktiserande barnläkare"
     ],
     "references": [],
     "sex": "MAN",
@@ -24091,9 +24091,9 @@ const persons = {
       },
       "location": {
         "city": "Salmon Arm",
-        "country": " Canada",
+        "country": "Canada",
         "notes": "",
-        "region": " BC",
+        "region": "BC",
         "latitude": 50.70318,
         "longitude": -119.26884,
         "fetchStatus": "FETCHED"
@@ -24138,9 +24138,9 @@ const persons = {
       },
       "location": {
         "city": "Salmon Arm",
-        "country": " Canada",
+        "country": "Canada",
         "notes": "",
-        "region": " BC",
+        "region": "BC",
         "latitude": 50.70318,
         "longitude": -119.26884,
         "fetchStatus": "FETCHED"
@@ -24223,7 +24223,7 @@ const persons = {
           "year": 1975
         },
         "location": {
-          "city": "V\u00e4stra Ingelstad",
+          "city": "Västra Ingelstad",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -24233,9 +24233,9 @@ const persons = {
     ],
     "middleNames": [],
     "mother": 420,
-    "notes": "Adress Sk\u00e5rby Junibacken, 271 91 YSTAD.\nStudentexamen 1969 i Ronneby (K).\nDiplomerad fr\u00e5n Grafiska Institutet (DGI) 1984.\nAnst\u00e4lld 1978 - 1990 vid Str\u00e5lfors Dataprodukter som s\u00e4ljare.\nSedan 1991 egen f\u00f6retagare, \u00e4r del\u00e4gare i Blankett-Gruppen.\nBor i Sk\u00e5rby (M).",
+    "notes": "Adress Skårby Junibacken, 271 91 YSTAD.\nStudentexamen 1969 i Ronneby (K).\nDiplomerad från Grafiska Institutet (DGI) 1984.\nAnställd 1978 - 1990 vid Strålfors Dataprodukter som säljare.\nSedan 1991 egen företagare, är delägare i Blankett-Gruppen.\nBor i Skårby (M).",
     "occupations": [
-      "Egen f\u00f6retagare"
+      "Egen företagare"
     ],
     "references": [],
     "sex": "MAN",
@@ -24252,7 +24252,7 @@ const persons = {
         "year": 1971
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -24282,7 +24282,7 @@ const persons = {
       "Peter"
     ],
     "mother": 482,
-    "notes": "Adress Sk\u00f6rdev\u00e4gen 121, 263 54 H\u00d8GAN\u00c4S.\nBor i H\u00f6gan\u00e4s (M).",
+    "notes": "Adress Skördevägen 121, 263 54 HØGANÄS.\nBor i Höganäs (M).",
     "occupations": [
       "Arkitektstuderande"
     ],
@@ -24331,7 +24331,7 @@ const persons = {
       "Elisabeth"
     ],
     "mother": 482,
-    "notes": "Adress Sk\u00f6rdev\u00e4gen 121, 263 54 H\u00d8GAN\u00c4S.\nBor i H\u00f6gan\u00e4s (M).",
+    "notes": "Adress Skördevägen 121, 263 54 HØGANÄS.\nBor i Höganäs (M).",
     "occupations": [
       "Studerande"
     ],
@@ -24380,7 +24380,7 @@ const persons = {
       "Peter"
     ],
     "mother": 482,
-    "notes": "Adress Viktoriagatan 14, 3, 411 25 G\u00d8TEBORG.\nBor i G\u00f6teborg (O).",
+    "notes": "Adress Viktoriagatan 14, 3, 411 25 GØTEBORG.\nBor i Göteborg (O).",
     "occupations": [
       "Medicine studerande"
     ],
@@ -24438,7 +24438,7 @@ const persons = {
           "year": 1975
         },
         "location": {
-          "city": "V\u00e4stra Ingelstad",
+          "city": "Västra Ingelstad",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -24451,7 +24451,7 @@ const persons = {
       "Estelle"
     ],
     "mother": 491,
-    "notes": "Apoteksteknikerexamen 1978 i Malm\u00f6 (M).",
+    "notes": "Apoteksteknikerexamen 1978 i Malmö (M).",
     "occupations": [],
     "references": [],
     "sex": "WOMAN",
@@ -24468,7 +24468,7 @@ const persons = {
         "year": 1974
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -24498,7 +24498,7 @@ const persons = {
       "Austin"
     ],
     "mother": 123,
-    "notes": "Adress Modulatorg 17, 421 34 V FR\u00d8LUNDA.\nBor i V\u00e4stra Fr\u00f6lunda (O).",
+    "notes": "Adress Modulatorg 17, 421 34 V FRØLUNDA.\nBor i Västra Frölunda (O).",
     "occupations": [
       "Studerande"
     ],
@@ -24545,7 +24545,7 @@ const persons = {
     "father": null,
     "fileId": "0000000345",
     "firstName": "Bodil",
-    "lastName": "Seg\u00e6us",
+    "lastName": "Segæus",
     "marriages": [
       {
         "date": {
@@ -24616,7 +24616,7 @@ const persons = {
       "Jessica"
     ],
     "mother": 488,
-    "notes": "Adress Mariedalsv\u00e4gen 37, 217 45 MALM\u00d8.\nBor i Malm\u00f6 (M).",
+    "notes": "Adress Mariedalsvägen 37, 217 45 MALMØ.\nBor i Malmö (M).",
     "occupations": [
       "Studerande"
     ],
@@ -24714,7 +24714,7 @@ const persons = {
         "year": 1918
       },
       "location": {
-        "city": "\u00d8rebro",
+        "city": "Ørebro",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -24764,7 +24764,7 @@ const persons = {
         "year": 1864
       },
       "location": {
-        "city": "p\u00e5 Latorp ",
+        "city": "på Latorp",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -24790,7 +24790,7 @@ const persons = {
         "year": 1868
       },
       "location": {
-        "city": "V\u00e4nersborg",
+        "city": "Vänersborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -24827,7 +24827,7 @@ const persons = {
         "year": 1865
       },
       "location": {
-        "city": "V\u00e4nersborg",
+        "city": "Vänersborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -24853,7 +24853,7 @@ const persons = {
         "year": 1939
       },
       "location": {
-        "city": "p\u00e5 Latorpsbruk",
+        "city": "på Latorpsbruk",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -24900,7 +24900,7 @@ const persons = {
         "year": 1830
       },
       "location": {
-        "city": "p\u00e5 Huseby i Skatel\u00f6v ",
+        "city": "på Huseby i Skatelöv",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -24926,7 +24926,7 @@ const persons = {
         "year": 1896
       },
       "location": {
-        "city": "p\u00e5 Ekebyholm i Rimbo",
+        "city": "på Ekebyholm i Rimbo",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -24960,7 +24960,7 @@ const persons = {
     "mother": null,
     "notes": "",
     "occupations": [
-      "\u00d8verste"
+      "Øverste"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -24977,7 +24977,7 @@ const persons = {
         "year": 1869
       },
       "location": {
-        "city": "V\u00e4nersborg",
+        "city": "Vänersborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -25033,7 +25033,7 @@ const persons = {
           "year": 1897
         },
         "location": {
-          "city": "V\u00e4ster\u00e5s",
+          "city": "Västerås",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -25046,10 +25046,10 @@ const persons = {
       "Bernhard"
     ],
     "mother": 386,
-    "notes": "(Tab 35 i GS).\nStudentexamen i \u00d8rebro 1889. Volont\u00e4r vid Livregementets husark\u00e5r 1889. Sergeant 1890. Officersexamen 1891. L\u00f6jtnant 1899. Avsked med tillst\u00e5nd att kvarst\u00e5 i reserven 1903. Ryttm\u00e4stare i reserven 1909 och avsked ur reserven 1929.\nGenomgick ridskolan 1892?93 och skjutskolan 1897 samt GCI 1898?99. Ledamot av styrelsen f\u00f6r Ultuna lantbruksinstitut 1915. Ledamot av riksdagens 1:a kammare f\u00f6r \u00d8rebro l\u00e4n 1918?19. RVO 1911, RNO 1925 och KrVO 1930.\n\u00c4gde Latorps bruk och fr\u00e5n 1919 Thors\u00e4tra g\u00e5rd i V Ryd (Upps).",
+    "notes": "(Tab 35 i GS).\nStudentexamen i Ørebro 1889. Volontär vid Livregementets husarkår 1889. Sergeant 1890. Officersexamen 1891. Löjtnant 1899. Avsked med tillstånd att kvarstå i reserven 1903. Ryttmästare i reserven 1909 och avsked ur reserven 1929.\nGenomgick ridskolan 1892?93 och skjutskolan 1897 samt GCI 1898?99. Ledamot av styrelsen för Ultuna lantbruksinstitut 1915. Ledamot av riksdagens 1:a kammare för Ørebro län 1918?19. RVO 1911, RNO 1925 och KrVO 1930.\nÄgde Latorps bruk och från 1919 Thorsätra gård i V Ryd (Upps).",
     "occupations": [
-      "Gods\u00e4gare",
-      "Ryttm\u00e4stare"
+      "Godsägare",
+      "Ryttmästare"
     ],
     "references": [],
     "sex": "MAN",
@@ -25110,7 +25110,7 @@ const persons = {
     "father": 502,
     "fileId": "0000000353",
     "firstName": "Hedvig",
-    "lastName": "Bj\u00f6rnstr\u00f6m",
+    "lastName": "Björnström",
     "marriages": [
       {
         "date": {
@@ -25122,7 +25122,7 @@ const persons = {
           "year": 1897
         },
         "location": {
-          "city": "V\u00e4ster\u00e5s",
+          "city": "Västerås",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -25152,7 +25152,7 @@ const persons = {
         "year": 1898
       },
       "location": {
-        "city": "p\u00e5 Irvingsholm ",
+        "city": "på Irvingsholm",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -25208,7 +25208,7 @@ const persons = {
       "Augusta"
     ],
     "mother": 496,
-    "notes": "(Tab 35:138 i GS).\nGenomgick i hemmet 8 klasser och en forts\u00e4ttningsklass till 1916.\nBirgittaskolans kl\u00e4ds\u00f6mnadskurs och \u00c5kerstr\u00f6ms hush\u00e5llsskola i Stockholm 1916-17 samt Enerots handarbetsseminarium i Stockholm 1917-18.",
+    "notes": "(Tab 35:138 i GS).\nGenomgick i hemmet 8 klasser och en fortsättningsklass till 1916.\nBirgittaskolans klädsömnadskurs och Åkerströms hushållsskola i Stockholm 1916-17 samt Enerots handarbetsseminarium i Stockholm 1917-18.",
     "occupations": [],
     "references": [],
     "sex": "UNKNOWN",
@@ -25225,7 +25225,7 @@ const persons = {
         "year": 1892
       },
       "location": {
-        "city": "p\u00e5 Myckelby i \u00d8vergran ",
+        "city": "på Myckelby i Øvergran",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -25251,7 +25251,7 @@ const persons = {
         "year": 1932
       },
       "location": {
-        "city": "\u00d8rebro",
+        "city": "Ørebro",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -25306,7 +25306,7 @@ const persons = {
         "year": 1900
       },
       "location": {
-        "city": "p\u00e5 Iringsholm ",
+        "city": "på Iringsholm",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -25373,7 +25373,7 @@ const persons = {
       "Henriksson"
     ],
     "mother": 496,
-    "notes": "(Tab 35:139 i GS).\nAvg\u00e5ngsbetyg fr\u00e5n Lundsbergs skola 1920. Reservofficersaspirant vid Kungl Livregementets dragoner (K2) samma \u00e5r; reservofficersexamen; officersaspirant; f\u00e4nrik i reserven, allt 1921. Officersexamen 1923 och f\u00e4nrik samma \u00e5r, samt underl\u00f6jtnant 1924. Avsked 1926 med tillst\u00e5nd att kvarst\u00e5 i reserven. L\u00f6jtnant i Kungl Livregementets till h\u00e4st (K1) reserv 1928 och ryttm\u00e4stare 1937. Kapten vid Kungl Livregementets grenadj\u00e4rer (I3) 1940 och major 1945. Major i arm\u00e9ns reservstat 1948 och major i I3:s reserv 1955.\nGenomgick ridskola 1924-25 och provtj\u00e4nstgjorde 1926 vid S\u00f6dra Sk\u00e5nska infanteriregementet (I21) i Lund f\u00f6r ev transport till infanteriet. Kaptenskurs vid Upplands infanteriregemente (I8) 1937. Tj\u00e4nstgjorde som underr\u00e4ttelseofficer vid andra arm\u00e9k\u00e5rsstaben (Boden) 1939 och 1940. Skvadronschef vid 1 kavalleribrigaden 1940-48, kompani- och bataljonschef vid I3, h\u00e4runder bl a f\u00e4ltbataljonschef 1944 samt chef f\u00f6r vinterutbildningsbataljonen i f\u00e4lt 1946. Deltog som sambandsofficer och kontrollant vid norska polis-truppernas f\u00e4lttj\u00e4nstg\u00f6ring i H\u00e4lsingland 1945.\nElev vid Infanteriskjutskolan 1941 och 1943 samt taktisk kurs vid infanteri-SS f\u00f6r regementsofficerare 1946 och 1950. L\u00e4gerchef vid utbildning av fria j\u00e4gare f\u00f6r milo i Torsby 1944 och i Dalarna 1945. Stallofficer, chefsh\u00e4stdetaljen 1943 och 1946. Gymnastik? och idrottsofficer 1947. Taktisk kurs f\u00f6r regementsofficerare vid I12 1946. Gjorde v\u00e4xeltj\u00e4nstg\u00f6ring vid Bergslagens artilleriregemente (A9) 1948. Dagmajor mm vid I1 1948.\nHade 1943 arm\u00e9chefens uppdrag att efter egna utf\u00f6rda praktiska f\u00f6rs\u00f6k f\u00f6r arm\u00e9ns r\u00e4kning utforma instruktion f\u00f6r kl\u00f6vjning och provisorisk kl\u00f6vjning. 1943?48 erh\u00e5llit flerfaldiga uppdrag av milobef\u00e4lhavaren och sekundchefen att inom milit\u00e4romr\u00e5det och regementet ordna t\u00e4vlingar i skytte, skidor, modern femkamp, ryttart\u00e4vlingar samt f\u00e4ltt\u00e4vlingar.\n1941?48 ordf\u00f6rande i I3:s idrottsf\u00f6rening, 1954 dess hedersledamot. 1940?43 sekreterare i \u00d8rebro f\u00e4ltrittklubb och ordf\u00f6rande d\u00e4r 1943-48. Fr\u00e5n 1950 medlem i Djursholms Ridklubbs styrelse.\nEfter jordbrukspraktik och avg\u00e5ng fr\u00e5n aktiv milit\u00e4rtj\u00e4nst 1926 genomgick S H Hammenh\u00f6gs Lantmannaskola 1927. Blev 1929 inspektor p\u00e5 Thors\u00e4tra s\u00e4teri till faderns d\u00f6d 1934, varefter han \u00f6vertog s\u00e4teriet som var k\u00e4nt f\u00f6r sin h\u00f6ga beteskultur och goda kreatursbes\u00e4ttningar. S H har i skrift, f\u00f6redrag och radio framtr\u00e4tt i jordbruksfr\u00e5gor. G\u00e5rden s\u00e5ldes 1940 p g a kriget.\nS H hade en hel del kommunala och andra uppdrag, bl a 1931-33 som sekreterare i Uppsala l\u00e4ns Skogs\u00e4garf\u00f6rening och sedermera d\u00e4rvid fr\u00e4mst till \u00f6verg\u00e5ng fr\u00e5n ideell till ekonomisk f\u00f6rening samt f\u00f6r sammanslutningen av landets skogs\u00e4garf\u00f6reningar till Sveriges Skogs\u00e4garf\u00f6rbund i vars interimsstyrelse han blev medlem.\nHan var i flera omg\u00e5ngar ledamot i taxeringsn\u00e4mnd. M\u00e5ng\u00e5rig ordf\u00f6rande i V\u00e4stra Ryds bilfraktf\u00f6rening. Ledamot av Ryds och N\u00e4s eldistributionsf\u00f6rening.\n\u00c5ren 1937-39 var han anst\u00e4lld p\u00e5 deltid vid Ekonomibyggnader AB som sakkunnig i jordbruksfr\u00e5gor, med tj\u00e4nsteresor i hela landet. Var 1948-49 medlem av premieringsn\u00e4mndens arbetsutskott.\nEfter avg\u00e5ng fr\u00e5n aktiv tj\u00e4nst 1948 var S H anst\u00e4lld 1949?52 vid AB Optimus med fastighetsf\u00f6rvaltningsuppdrag, 1952 vid och organisat\u00f6r av Brandf\u00f6rs\u00e4kringsverkets nystartade reassuransavdelning och 1954 som chef f\u00f6r Bore? Brandf\u00f6rs\u00e4kringsverks gemensamma fastighetsf\u00f6rvaltning. (1952-60 medlem i styrelsen f\u00f6r dess konstf\u00f6rening och dess ordf\u00f6rande 1952-58). 1960 chef f\u00f6r Stockholms fastighetsf\u00f6renings byr\u00e5 f\u00f6r bytes\u00e4renden.\nSom intresserad fotograf har han sedan ungdomen sj\u00e4lv fotograferat och dessutom samlat foton fr\u00e5n f\u00f6r\u00e4ldrars och farf\u00f6r\u00e4ldrars tid och har i sin \u00e4go en stor samling foton fr\u00e5n fyra generationer.\nS H har utpr\u00e4glat praktiska anlag, \u00e4r natur\u00e4lskare och \u00e4ven konst- musik- och s\u00e5ngintresserad. Han har tagit lektioner i b\u00e5de violinspelning och s\u00e5ng som tenorbaryton, men fick sluta spela p g a fingerskada. \u00c4r \u00e4ven intresserad tecknare. Alltsedan ungdomen \u00e4r idrottsintresset framtr\u00e4dande och han har med icke ringa framg\u00e5ng deltagit i t\u00e4vlingar i s\u00e5v\u00e4l allm\u00e4n idrott som fotboll, skytte, skidor, ridning, orientering och f\u00e4ltt\u00e4vlingar varom en stor prissamling b\u00e4r vittne.\nInnehar skytte M, gev\u00e4r och kpist, F\u00e4ltidrottsm\u00e4rke G, Riksidrotts-m\u00e4rke G och skidl\u00f6parm\u00e4rke Elit. RSO.\nSten Hegardt tog initiativet till den 1961 den 5-6 augusti bildade Hegardtska sl\u00e4ktf\u00f6reningen och blev dess f\u00f6rste ordf\u00f6rande. Han har ocks\u00e5 varit drivkraften bakom uppdateringen av sl\u00e4ktkalendern samt vidare forskning av sl\u00e4ktens r\u00f6tter.",
+    "notes": "(Tab 35:139 i GS).\nAvgångsbetyg från Lundsbergs skola 1920. Reservofficersaspirant vid Kungl Livregementets dragoner (K2) samma år; reservofficersexamen; officersaspirant; fänrik i reserven, allt 1921. Officersexamen 1923 och fänrik samma år, samt underlöjtnant 1924. Avsked 1926 med tillstånd att kvarstå i reserven. Löjtnant i Kungl Livregementets till häst (K1) reserv 1928 och ryttmästare 1937. Kapten vid Kungl Livregementets grenadjärer (I3) 1940 och major 1945. Major i arméns reservstat 1948 och major i I3:s reserv 1955.\nGenomgick ridskola 1924-25 och provtjänstgjorde 1926 vid Södra Skånska infanteriregementet (I21) i Lund för ev transport till infanteriet. Kaptenskurs vid Upplands infanteriregemente (I8) 1937. Tjänstgjorde som underrättelseofficer vid andra armékårsstaben (Boden) 1939 och 1940. Skvadronschef vid 1 kavalleribrigaden 1940-48, kompani- och bataljonschef vid I3, härunder bl a fältbataljonschef 1944 samt chef för vinterutbildningsbataljonen i fält 1946. Deltog som sambandsofficer och kontrollant vid norska polis-truppernas fälttjänstgöring i Hälsingland 1945.\nElev vid Infanteriskjutskolan 1941 och 1943 samt taktisk kurs vid infanteri-SS för regementsofficerare 1946 och 1950. Lägerchef vid utbildning av fria jägare för milo i Torsby 1944 och i Dalarna 1945. Stallofficer, chefshästdetaljen 1943 och 1946. Gymnastik? och idrottsofficer 1947. Taktisk kurs för regementsofficerare vid I12 1946. Gjorde växeltjänstgöring vid Bergslagens artilleriregemente (A9) 1948. Dagmajor mm vid I1 1948.\nHade 1943 arméchefens uppdrag att efter egna utförda praktiska försök för arméns räkning utforma instruktion för klövjning och provisorisk klövjning. 1943?48 erhållit flerfaldiga uppdrag av milobefälhavaren och sekundchefen att inom militärområdet och regementet ordna tävlingar i skytte, skidor, modern femkamp, ryttartävlingar samt fälttävlingar.\n1941?48 ordförande i I3:s idrottsförening, 1954 dess hedersledamot. 1940?43 sekreterare i Ørebro fältrittklubb och ordförande där 1943-48. Från 1950 medlem i Djursholms Ridklubbs styrelse.\nEfter jordbrukspraktik och avgång från aktiv militärtjänst 1926 genomgick S H Hammenhögs Lantmannaskola 1927. Blev 1929 inspektor på Thorsätra säteri till faderns död 1934, varefter han övertog säteriet som var känt för sin höga beteskultur och goda kreatursbesättningar. S H har i skrift, föredrag och radio framträtt i jordbruksfrågor. Gården såldes 1940 p g a kriget.\nS H hade en hel del kommunala och andra uppdrag, bl a 1931-33 som sekreterare i Uppsala läns Skogsägarförening och sedermera därvid främst till övergång från ideell till ekonomisk förening samt för sammanslutningen av landets skogsägarföreningar till Sveriges Skogsägarförbund i vars interimsstyrelse han blev medlem.\nHan var i flera omgångar ledamot i taxeringsnämnd. Mångårig ordförande i Västra Ryds bilfraktförening. Ledamot av Ryds och Näs eldistributionsförening.\nÅren 1937-39 var han anställd på deltid vid Ekonomibyggnader AB som sakkunnig i jordbruksfrågor, med tjänsteresor i hela landet. Var 1948-49 medlem av premieringsnämndens arbetsutskott.\nEfter avgång från aktiv tjänst 1948 var S H anställd 1949?52 vid AB Optimus med fastighetsförvaltningsuppdrag, 1952 vid och organisatör av Brandförsäkringsverkets nystartade reassuransavdelning och 1954 som chef för Bore? Brandförsäkringsverks gemensamma fastighetsförvaltning. (1952-60 medlem i styrelsen för dess konstförening och dess ordförande 1952-58). 1960 chef för Stockholms fastighetsförenings byrå för bytesärenden.\nSom intresserad fotograf har han sedan ungdomen själv fotograferat och dessutom samlat foton från föräldrars och farföräldrars tid och har i sin ägo en stor samling foton från fyra generationer.\nS H har utpräglat praktiska anlag, är naturälskare och även konst- musik- och sångintresserad. Han har tagit lektioner i både violinspelning och sång som tenorbaryton, men fick sluta spela p g a fingerskada. Är även intresserad tecknare. Alltsedan ungdomen är idrottsintresset framträdande och han har med icke ringa framgång deltagit i tävlingar i såväl allmän idrott som fotboll, skytte, skidor, ridning, orientering och fälttävlingar varom en stor prissamling bär vittne.\nInnehar skytte M, gevär och kpist, Fältidrottsmärke G, Riksidrotts-märke G och skidlöparmärke Elit. RSO.\nSten Hegardt tog initiativet till den 1961 den 5-6 augusti bildade Hegardtska släktföreningen och blev dess förste ordförande. Han har också varit drivkraften bakom uppdateringen av släktkalendern samt vidare forskning av släktens rötter.",
     "occupations": [
       "Major"
     ],
@@ -25392,7 +25392,7 @@ const persons = {
         "year": 1902
       },
       "location": {
-        "city": "p\u00e5 Irvingsholm ",
+        "city": "på Irvingsholm",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -25460,9 +25460,9 @@ const persons = {
       "Henriksson"
     ],
     "mother": 496,
-    "notes": "(Tab 35:140 i GS).\nStudentexamen 1920 vid Lundsberg. J\u00e4gm\u00e4stare 1926.\nPrivatpraktiserande verksamhet 1926-30. Anst\u00e4lldes 1930 vid Katrinefors AB som chefsassistent och tj\u00e4nstgjorde d\u00e4r som skogschef fr\u00e5n 1938.\n\"\u00c5r 1964 blev han slottsfogde vid Drottningholm, Tullgarn och Rosenberg, en befattning som han innehade till 1974. Han uts\u00e5gs till hovj\u00e4gm\u00e4stare 1966.\n1949 fungerade han som konsult i skogsfr\u00e5gor i British Columbia.\nOrdf\u00f6rande i Lundsbergs fastighets AB och stiftelsen Lundsbergs skola 1956-64. Ledamot i kommunalfullm\u00e4ktige 1943, ordf\u00f6rande 1949-51. Ledamot i folkskolestyrelsen 1944, ordf\u00f6rande 1949-51. Ledamot av Skogs- och lantbruksakademien fr\u00e5n 1961.\nSom slottsfogde vid Drottningholms slott var Stig Hegardt speciellt intresserad av de olika renoverings- och tillbyggnadsprojekten under de g\u00e5ngna \u00e5rhundradena fram till Gustaf VI Adolfs insatser f\u00f6r slottets restaurering. Dessutom \u00e4gnade han stort intresse \u00e5t slottstr\u00e4dg\u00e5rdens sk\u00f6tsel.\nSina intryck och kunskaper f\u00f6rmedlade han i boken 'Drottningholm under 400 \u00e5r' som kom ut 1974. Han har \u00e4ven skrivit boken 'Alkvettern. Ett gammalt gods anor', 1946, och bl a bidragit med artiklar i skogsfr\u00e5gor. ---\" (Sv D 2/9 1986.)",
+    "notes": "(Tab 35:140 i GS).\nStudentexamen 1920 vid Lundsberg. Jägmästare 1926.\nPrivatpraktiserande verksamhet 1926-30. Anställdes 1930 vid Katrinefors AB som chefsassistent och tjänstgjorde där som skogschef från 1938.\n\"År 1964 blev han slottsfogde vid Drottningholm, Tullgarn och Rosenberg, en befattning som han innehade till 1974. Han utsågs till hovjägmästare 1966.\n1949 fungerade han som konsult i skogsfrågor i British Columbia.\nOrdförande i Lundsbergs fastighets AB och stiftelsen Lundsbergs skola 1956-64. Ledamot i kommunalfullmäktige 1943, ordförande 1949-51. Ledamot i folkskolestyrelsen 1944, ordförande 1949-51. Ledamot av Skogs- och lantbruksakademien från 1961.\nSom slottsfogde vid Drottningholms slott var Stig Hegardt speciellt intresserad av de olika renoverings- och tillbyggnadsprojekten under de gångna århundradena fram till Gustaf VI Adolfs insatser för slottets restaurering. Dessutom ägnade han stort intresse åt slottsträdgårdens skötsel.\nSina intryck och kunskaper förmedlade han i boken 'Drottningholm under 400 år' som kom ut 1974. Han har även skrivit boken 'Alkvettern. Ett gammalt gods anor', 1946, och bl a bidragit med artiklar i skogsfrågor. ---\" (Sv D 2/9 1986.)",
     "occupations": [
-      "J\u00e4gm\u00e4stare",
+      "Jägmästare",
       "Skogschef"
     ],
     "references": [],
@@ -25480,7 +25480,7 @@ const persons = {
         "year": 1904
       },
       "location": {
-        "city": "p\u00e5 Latorp ",
+        "city": "på Latorp",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -25529,9 +25529,9 @@ const persons = {
       "Hedvig"
     ],
     "mother": 496,
-    "notes": "(Tab 35:141 i GS).\nAvg\u00e5ngsexamne fr\u00e5n Anna Sandstr\u00f6ms flickskola 1920. Genomgick samma skolas forts\u00e4ttningskurs 1921 samt linne- och kl\u00e4ds\u00f6mnadskurs 1921-22. Vistades 1922-23 i pension i Schweiz.\nGenomgick 1924 Gunillaskolan i Uppsala och 1925 biblioteks-, hatts\u00f6mnads- och R\u00f6dakorskurs i Stockholm. Arbetade tv\u00e5 \u00e5r som sm\u00e5skoll\u00e4rare vid Lyceumskola f\u00f6r flickor. Efter studier i psykologi arbetade hon tv\u00e5 \u00e5r vid familjer\u00e5dgivningsbyr\u00e5.\nBor i Vallentuna (AB).",
+    "notes": "(Tab 35:141 i GS).\nAvgångsexamne från Anna Sandströms flickskola 1920. Genomgick samma skolas fortsättningskurs 1921 samt linne- och klädsömnadskurs 1921-22. Vistades 1922-23 i pension i Schweiz.\nGenomgick 1924 Gunillaskolan i Uppsala och 1925 biblioteks-, hattsömnads- och Rödakorskurs i Stockholm. Arbetade två år som småskollärare vid Lyceumskola för flickor. Efter studier i psykologi arbetade hon två år vid familjerådgivningsbyrå.\nBor i Vallentuna (AB).",
     "occupations": [
-      "Adress roseng\u00e5rdsv\u00e4gen 3",
+      "Adress rosengårdsvägen 3",
       "186 33  vallentuna"
     ],
     "references": [],
@@ -25600,7 +25600,7 @@ const persons = {
     "notes": "",
     "occupations": [
       "Kapten",
-      "Direkt\u00f6r"
+      "Direktör"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -25742,9 +25742,9 @@ const persons = {
       "Josias"
     ],
     "mother": 504,
-    "notes": "Adress Eketorpsv\u00e4gen 9, 182 61 DJURSHOLM.\nStudentexamen 1951 i Djursholm. 1954-55 University of Wisconsin i Madison, Usa. Jur kand 1959. Tingsnatarie i Mora 1959-62. 1955-59 medarbetare i Sveriges radios utlandsprogram. 1962-64 sekreterare i Exportkreditn\u00e4mnden. 1964-65 sekreterare vid Skogs- och lantarbetsgivaref\u00f6reningen. Sedan 1966 anst\u00e4lld vid SIDA (styrelsen f\u00f6r internationell utveckling). F\u00f6rst som byr\u00e5direkt\u00f6r, d\u00e4refter som bist\u00e5ndsattach\u00e9 i Pakistan och Indien. \u00c5ren 1973-80 var han avdelningsdirekt\u00f6r, f\u00f6r att \u00e5ren 1980-82 tj\u00e4nstg\u00f6ra som bist\u00e5ndschef i Bangladesh. Fr\u00e5n 1982 avdelningsdirekt\u00f6r.\nBor i Djursholm (AB).",
+    "notes": "Adress Eketorpsvägen 9, 182 61 DJURSHOLM.\nStudentexamen 1951 i Djursholm. 1954-55 University of Wisconsin i Madison, Usa. Jur kand 1959. Tingsnatarie i Mora 1959-62. 1955-59 medarbetare i Sveriges radios utlandsprogram. 1962-64 sekreterare i Exportkreditnämnden. 1964-65 sekreterare vid Skogs- och lantarbetsgivareföreningen. Sedan 1966 anställd vid SIDA (styrelsen för internationell utveckling). Först som byrådirektör, därefter som biståndsattaché i Pakistan och Indien. Åren 1973-80 var han avdelningsdirektör, för att åren 1980-82 tjänstgöra som biståndschef i Bangladesh. Från 1982 avdelningsdirektör.\nBor i Djursholm (AB).",
     "occupations": [
-      "Avdelningsdirekt\u00f6r vid sida"
+      "Avdelningsdirektör vid sida"
     ],
     "references": [],
     "sex": "MAN",
@@ -25807,7 +25807,7 @@ const persons = {
       "Catharina"
     ],
     "mother": 504,
-    "notes": "Studentexamen 1956 i Djursholm. Spr\u00e5kstudier i Cambridge, England 1957. Bar-Lock handelsinstitut 1958/59.",
+    "notes": "Studentexamen 1956 i Djursholm. Språkstudier i Cambridge, England 1957. Bar-Lock handelsinstitut 1958/59.",
     "occupations": [
       "Chefssekreterare"
     ],
@@ -25826,7 +25826,7 @@ const persons = {
         "year": 1946
       },
       "location": {
-        "city": "\u00d8rebro",
+        "city": "Ørebro",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -25878,9 +25878,9 @@ const persons = {
       "Margareta"
     ],
     "mother": 504,
-    "notes": "Adress Bj\u00f6rnstorps station, 240 13 GENARP.\nBor i Bj\u00f6rnstorp, Genarp (M).",
+    "notes": "Adress Björnstorps station, 240 13 GENARP.\nBor i Björnstorp, Genarp (M).",
     "occupations": [
-      "Utbildad sekreterare och flygv\u00e4rdinna"
+      "Utbildad sekreterare och flygvärdinna"
     ],
     "references": [],
     "sex": "WOMAN",
@@ -26120,7 +26120,7 @@ const persons = {
       "Marianne"
     ],
     "mother": 517,
-    "notes": "Adress Magnus Ladul\u00e5sgatan 33, 118 65 STOCKHOLM.\nStudentexamen 1985.\nCivilekonom 1990.\nSedan januari 1991 p\u00e5 Aff\u00e4rsdata inom Bonnier Information Semics.\nBor i Stockholm (AB).",
+    "notes": "Adress Magnus Ladulåsgatan 33, 118 65 STOCKHOLM.\nStudentexamen 1985.\nCivilekonom 1990.\nSedan januari 1991 på Affärsdata inom Bonnier Information Semics.\nBor i Stockholm (AB).",
     "occupations": [
       "Civilekonom"
     ],
@@ -26192,7 +26192,7 @@ const persons = {
     "mother": 529,
     "notes": "",
     "occupations": [
-      "Direkt\u00f6r"
+      "Direktör"
     ],
     "references": [],
     "sex": "MAN",
@@ -26210,9 +26210,9 @@ const persons = {
       },
       "location": {
         "city": "Toronto",
-        "country": " Canada",
+        "country": "Canada",
         "notes": "",
-        "region": " Ontario",
+        "region": "Ontario",
         "latitude": 43.64869,
         "longitude": -79.38544,
         "fetchStatus": "FETCHED"
@@ -26260,9 +26260,9 @@ const persons = {
       },
       "location": {
         "city": "Toronto",
-        "country": " Canada",
+        "country": "Canada",
         "notes": "",
-        "region": " Ontario",
+        "region": "Ontario",
         "latitude": 43.64869,
         "longitude": -79.38544,
         "fetchStatus": "FETCHED"
@@ -26353,7 +26353,7 @@ const persons = {
     "father": null,
     "fileId": "0000000371",
     "firstName": "Deal",
-    "lastName": "Wikstr\u00f6m",
+    "lastName": "Wikström",
     "marriages": [
       {
         "date": {
@@ -26394,7 +26394,7 @@ const persons = {
         "year": 1932
       },
       "location": {
-        "city": "p\u00e5 Alkvettern i Bjurtj\u00e4rn ",
+        "city": "på Alkvettern i Bjurtjärn",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -26434,7 +26434,7 @@ const persons = {
           "year": 1953
         },
         "location": {
-          "city": "Bjurtj\u00e4rn",
+          "city": "Bjurtjärn",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -26446,7 +26446,7 @@ const persons = {
       "Stigsdotter"
     ],
     "mother": 508,
-    "notes": "Realexamen i Karlskoga. Diplom i franska vid Sorbonne, Paris 1952.\nGenomg\u00e5tt 1-\u00e5rig hush\u00e5llsskola i Uppsala 1950-51. 1-\u00e5rig sekreterarkurs vid Barlockinstitutet i Stockholm 1952-53.\nBor i Tucson, Arizona, USA.",
+    "notes": "Realexamen i Karlskoga. Diplom i franska vid Sorbonne, Paris 1952.\nGenomgått 1-årig hushållsskola i Uppsala 1950-51. 1-årig sekreterarkurs vid Barlockinstitutet i Stockholm 1952-53.\nBor i Tucson, Arizona, USA.",
     "occupations": [
       "Adress 5470 n via velazquez",
       "Tucson",
@@ -26469,9 +26469,9 @@ const persons = {
       },
       "location": {
         "city": "Glendale",
-        "country": " USA",
+        "country": "USA",
         "notes": "",
-        "region": " Californien",
+        "region": "Californien",
         "latitude": 34.14633,
         "longitude": -118.24864,
         "fetchStatus": "FETCHED"
@@ -26508,7 +26508,7 @@ const persons = {
           "year": 1953
         },
         "location": {
-          "city": "Bjurtj\u00e4rn",
+          "city": "Bjurtjärn",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -26520,7 +26520,7 @@ const persons = {
       "D"
     ],
     "mother": 535,
-    "notes": "Examen vid University of California, Berkely 1956.\nSorbonne 1951 - 52.\nAnst\u00e4lld vid Schlitz Brewing Co och senare efter dess sammanslagning med Stroh Brewery Co d\u00e4rst\u00e4des. Har haft sex m\u00e5naders uppdrag i Spanien 1961.\nPensionerad 1989.",
+    "notes": "Examen vid University of California, Berkely 1956.\nSorbonne 1951 - 52.\nAnställd vid Schlitz Brewing Co och senare efter dess sammanslagning med Stroh Brewery Co därstädes. Har haft sex månaders uppdrag i Spanien 1961.\nPensionerad 1989.",
     "occupations": [
       "Vice vd vid media service",
       "Stroh brewery co"
@@ -26540,7 +26540,7 @@ const persons = {
         "year": 1934
       },
       "location": {
-        "city": "p\u00e5 Alkvettern i Bjurtj\u00e4rn ",
+        "city": "på Alkvettern i Bjurtjärn",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -26568,9 +26568,9 @@ const persons = {
     "marriages": [],
     "middleNames": [],
     "mother": 508,
-    "notes": "Adress Sigurdsv\u00e4gen 14, 182 64 DJURSHOLM.\nStudentexamen 1955 vid Lundsberg. Diplomkaufmann vid Wirtschafthauptschule i Mannheim 1962. Ekonomiassistent vid Nohab 1962-66, vid Bofors 1967-68. Fr\u00e5n 1968 till 1971 var han ekonomichef vid Nohab. 1971-74 Controller vid Aremo-divisionen/Swedish Match, 1975-77 operation analysis d\u00e4r och 1978-81 divisionschef. 1982-83 VD vid Scandiaconsult AB, samt fr\u00e5n 1984 VvD vid AB Carl Munters.\nBor i Djursholm (AB).",
+    "notes": "Adress Sigurdsvägen 14, 182 64 DJURSHOLM.\nStudentexamen 1955 vid Lundsberg. Diplomkaufmann vid Wirtschafthauptschule i Mannheim 1962. Ekonomiassistent vid Nohab 1962-66, vid Bofors 1967-68. Från 1968 till 1971 var han ekonomichef vid Nohab. 1971-74 Controller vid Aremo-divisionen/Swedish Match, 1975-77 operation analysis där och 1978-81 divisionschef. 1982-83 VD vid Scandiaconsult AB, samt från 1984 VvD vid AB Carl Munters.\nBor i Djursholm (AB).",
     "occupations": [
-      "Direkt\u00f6r"
+      "Direktör"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -26587,7 +26587,7 @@ const persons = {
         "year": 1938
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -26635,9 +26635,9 @@ const persons = {
       "Stigsdotter"
     ],
     "mother": 508,
-    "notes": "Adress Narzissenweg 3, CH-4102 Binningen, Schweiz.\nRealexamen 1954 i Karlskoga (T).\nF\u00f6rskoll\u00e4rarexamen 1961 i Stockholm (AB).\nF\u00f6rskoll\u00e4rare i Stockholm fr\u00e5n 1962. Speciall\u00e4rarutbildning 1967-68 i Stockholm.\nBor i Binningen, Schweiz.",
+    "notes": "Adress Narzissenweg 3, CH-4102 Binningen, Schweiz.\nRealexamen 1954 i Karlskoga (T).\nFörskollärarexamen 1961 i Stockholm (AB).\nFörskollärare i Stockholm från 1962. Speciallärarutbildning 1967-68 i Stockholm.\nBor i Binningen, Schweiz.",
     "occupations": [
-      "F\u00f6rskoll\u00e4rare"
+      "Förskollärare"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -26655,7 +26655,7 @@ const persons = {
       },
       "location": {
         "city": "Goslar",
-        "country": " Tyskland",
+        "country": "Tyskland",
         "notes": "",
         "region": "",
         "latitude": 51.90684,
@@ -26678,7 +26678,7 @@ const persons = {
     "father": 539,
     "fileId": "0000000376",
     "firstName": "Carl-Fredrik",
-    "lastName": "L\u00f6bbeke",
+    "lastName": "Löbbeke",
     "marriages": [
       {
         "date": {
@@ -26708,7 +26708,7 @@ const persons = {
     "mother": 538,
     "notes": "",
     "occupations": [
-      "Verkst\u00e4llande direkt\u00f6r"
+      "Verkställande direktör"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -26756,7 +26756,7 @@ const persons = {
       "Bernhard"
     ],
     "mother": 153,
-    "notes": "Adress Invernessv\u00e4gen 9, 182 76 STOCKSUND.\nCivilekonom 1986 i Stockholm (AB).\nArbetar sedan 1978 vid ASEA i V\u00e4ster\u00e5s.\nBor i Stocksund (AB).",
+    "notes": "Adress Invernessvägen 9, 182 76 STOCKSUND.\nCivilekonom 1986 i Stockholm (AB).\nArbetar sedan 1978 vid ASEA i Västerås.\nBor i Stocksund (AB).",
     "occupations": [
       "Civilekonom"
     ],
@@ -26859,7 +26859,7 @@ const persons = {
         "year": 1873
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -26887,7 +26887,7 @@ const persons = {
         "year": 1926
       },
       "location": {
-        "city": "p\u00e5 Vallhof i Jumkil",
+        "city": "på Vallhof i Jumkil",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -26922,9 +26922,9 @@ const persons = {
     ],
     "middleNames": [],
     "mother": 391,
-    "notes": "(Tab 37 i GS).\nStudentexamen 1892 i Stockholm. Lantbrukselev p\u00e5 \u00d8sterby i R\u00e5by, Rekarne sn 1892-93. Elev vid Ultuna lantbruksinstitut 1893-95. Bokh\u00e5llare p\u00e5 S\u00f6dertuna i Frustuna sn 1895-97. Inspektor p\u00e5 Spellinge i V Harg sn 1897-98. Bokh\u00e5llare p\u00e5 \u00d8sterby 1898?99. Arrenderade Bemersberg i Skattunge sn 1899-1920. Var d\u00e4refter bosatt p\u00e5 Staby i Giresta sn till 1922 fr\u00e5n vilken tid och till 1923 han arrenderade Str\u00f6msn\u00e4s i Bred sn. \u00c4gde och brukade sedan 1923 Vallhof.\n\"Med den avlidne har en av Uppsala l\u00e4ns fr\u00e4msta jordbrukare g\u00e5tt av tiden. ... Han arrenderade den under Kipplingebergs fideikommiss h\u00f6rande egendomen Bemersberg. Med utm\u00e4rkt nit och skicklighet \u00e4gnade han sig \u00e5t g\u00e5rdens f\u00f6rvaltning ... och innehade f\u00f6r n\u00e5gon kortare tid Str\u00f6msn\u00e4s i Bred sn. Genom sitt energiska, skickliga arbete har han bragt denna egendom i utm\u00e4rkt kultur. ...\nHelt givet togs H med s\u00e5 framst\u00e5ende egenskaper inom jordbruksomr\u00e5det i anspr\u00e5k f\u00f6r det arbete till dettas b\u00e4sta, som utvecklas av v\u00e5rt hush\u00e5llningss\u00e4llskap. Under \u00e5ren 1909?1912 fungerade han som ordf\u00f6rande i B\u00e4linge?Norunda hush\u00e5llningsgille, i vilken egenskap han hade s\u00e4te och st\u00e4mma i det d\u00e5varande f\u00f6rvaltningsutskottet. Sedan dettas omorganisation 1925 var han ordf\u00f6rande inom \u00c5kerby och Jumkils hush\u00e5llningskrets. Den h\u00e4dang\u00e5ngne har \u00e4ven bekl\u00e4tt flera kommunala uppdrag, och p\u00e5 den tid j\u00e4rnv\u00e4gsfr\u00e5gorna i Uppland samlade st\u00f6rre intresse \u00e4n nu var han en av de st\u00f6rsta ivrarna f\u00f6r Kerstinbobanan. ... H\u00f6gt v\u00e4rderad f\u00f6r sitt f\u00f6rsynta, redbara och v\u00e4ns\u00e4lla v\u00e4sen.\" (Tidn Uppsala 27/5 1926.)",
+    "notes": "(Tab 37 i GS).\nStudentexamen 1892 i Stockholm. Lantbrukselev på Østerby i Råby, Rekarne sn 1892-93. Elev vid Ultuna lantbruksinstitut 1893-95. Bokhållare på Södertuna i Frustuna sn 1895-97. Inspektor på Spellinge i V Harg sn 1897-98. Bokhållare på Østerby 1898?99. Arrenderade Bemersberg i Skattunge sn 1899-1920. Var därefter bosatt på Staby i Giresta sn till 1922 från vilken tid och till 1923 han arrenderade Strömsnäs i Bred sn. Ägde och brukade sedan 1923 Vallhof.\n\"Med den avlidne har en av Uppsala läns främsta jordbrukare gått av tiden. ... Han arrenderade den under Kipplingebergs fideikommiss hörande egendomen Bemersberg. Med utmärkt nit och skicklighet ägnade han sig åt gårdens förvaltning ... och innehade för någon kortare tid Strömsnäs i Bred sn. Genom sitt energiska, skickliga arbete har han bragt denna egendom i utmärkt kultur. ...\nHelt givet togs H med så framstående egenskaper inom jordbruksområdet i anspråk för det arbete till dettas bästa, som utvecklas av vårt hushållningssällskap. Under åren 1909?1912 fungerade han som ordförande i Bälinge?Norunda hushållningsgille, i vilken egenskap han hade säte och stämma i det dåvarande förvaltningsutskottet. Sedan dettas omorganisation 1925 var han ordförande inom Åkerby och Jumkils hushållningskrets. Den hädangångne har även beklätt flera kommunala uppdrag, och på den tid järnvägsfrågorna i Uppland samlade större intresse än nu var han en av de största ivrarna för Kerstinbobanan. ... Högt värderad för sitt försynta, redbara och vänsälla väsen.\" (Tidn Uppsala 27/5 1926.)",
     "occupations": [
-      "Gods\u00e4gare"
+      "Godsägare"
     ],
     "references": [],
     "sex": "MAN",
@@ -26941,7 +26941,7 @@ const persons = {
         "year": 1875
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -26992,7 +26992,7 @@ const persons = {
           "year": 1902
         },
         "location": {
-          "city": "Sk\u00f6vde",
+          "city": "Skövde",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -27002,7 +27002,7 @@ const persons = {
     ],
     "middleNames": [],
     "mother": 391,
-    "notes": "(Tab 36:147 i GS).\nGenomgick Sk\u00f6vde elementarskola f\u00f6r flickor. En av stiftarna av och vice ordf\u00f6rande i damf\u00f6reningen \"Lifbojen\" i Stockholm.",
+    "notes": "(Tab 36:147 i GS).\nGenomgick Skövde elementarskola för flickor. En av stiftarna av och vice ordförande i damföreningen \"Lifbojen\" i Stockholm.",
     "occupations": [],
     "references": [],
     "sex": "UNKNOWN",
@@ -27070,7 +27070,7 @@ const persons = {
           "year": 1902
         },
         "location": {
-          "city": "Sk\u00f6vde",
+          "city": "Skövde",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -27085,7 +27085,7 @@ const persons = {
     "mother": null,
     "notes": "",
     "occupations": [
-      "Civilingenj\u00f6r"
+      "Civilingenjör"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -27102,7 +27102,7 @@ const persons = {
         "year": 1876
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -27147,7 +27147,7 @@ const persons = {
       "Maja"
     ],
     "mother": 391,
-    "notes": "(Tab 36:148 i GS).\nGenomgick Sk\u00f6vde flickskola och Schwartzska skolan i Stockholm (examen d\u00e4r 1893) samt Tekniska skolan i Stockholm 1893-94.\nF\u00f6restod \u00e5ren 1905-15 studentpensionat i Uppsala och 1915-19 broderns hush\u00e5ll p\u00e5 Bennersberg. \u00c4gnade sig med framg\u00e5ng \u00e5t akvarellm\u00e5lning.",
+    "notes": "(Tab 36:148 i GS).\nGenomgick Skövde flickskola och Schwartzska skolan i Stockholm (examen där 1893) samt Tekniska skolan i Stockholm 1893-94.\nFörestod åren 1905-15 studentpensionat i Uppsala och 1915-19 broderns hushåll på Bennersberg. Ägnade sig med framgång åt akvarellmålning.",
     "occupations": [],
     "references": [],
     "sex": "UNKNOWN",
@@ -27164,7 +27164,7 @@ const persons = {
         "year": 1892
       },
       "location": {
-        "city": "p\u00e5 Staby ",
+        "city": "på Staby",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -27192,7 +27192,7 @@ const persons = {
         "year": 1977
       },
       "location": {
-        "city": "Norrk\u00f6ping",
+        "city": "Norrköping",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -27273,7 +27273,7 @@ const persons = {
         "year": 2000
       },
       "location": {
-        "city": "Norrk\u00f6ping",
+        "city": "Norrköping",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -27292,9 +27292,9 @@ const persons = {
       "Kristina"
     ],
     "mother": 542,
-    "notes": "(Tab 37:146 i GS).\nStudentexamen 1945 i Stockholm (AB).\nMed kand 1948 i Stockholm (AB).\nMed lic och leg l\u00e4kare 1953 i Stockholm (AB).\nSpecialist i barna\u00e5lderns inv\u00e4rtes sjukdomar 1960 och i barn- och ungdomspsykiatri 1974. 1953-55 diverse underl\u00e4karvikariat.\n1955-58 underl\u00e4kare vid Norrk\u00f6pings lasaretts barnklinik.\nInfektionskliniken 1958-60 och medicinkliniken 1960-61.\n1961-75 privatpraktiserande barnl\u00e4kare i Norrk\u00f6ping. Fr\u00e5n 1975 och fram till sin pensionering 1990 \u00f6verl\u00e4kare vid barn- och ungdomspsykiatriska verksamheten i Norrk\u00f6ping.",
+    "notes": "(Tab 37:146 i GS).\nStudentexamen 1945 i Stockholm (AB).\nMed kand 1948 i Stockholm (AB).\nMed lic och leg läkare 1953 i Stockholm (AB).\nSpecialist i barnaålderns invärtes sjukdomar 1960 och i barn- och ungdomspsykiatri 1974. 1953-55 diverse underläkarvikariat.\n1955-58 underläkare vid Norrköpings lasaretts barnklinik.\nInfektionskliniken 1958-60 och medicinkliniken 1960-61.\n1961-75 privatpraktiserande barnläkare i Norrköping. Från 1975 och fram till sin pensionering 1990 överläkare vid barn- och ungdomspsykiatriska verksamheten i Norrköping.",
     "occupations": [
-      "Barnl\u00e4kare och barnpsykiater"
+      "Barnläkare och barnpsykiater"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -27347,8 +27347,8 @@ const persons = {
         "year": 1856
       },
       "location": {
-        "city": "p\u00e5 Samner\u00f6d i Samner\u00f6d",
-        "country": " B\u00e4ve",
+        "city": "på Samneröd i Samneröd",
+        "country": "Bäve",
         "notes": "",
         "region": "",
         "latitude": 58.36827,
@@ -27490,7 +27490,7 @@ const persons = {
         "year": 1871
       },
       "location": {
-        "city": "p\u00e5 Drottningholm i Lov\u00f6",
+        "city": "på Drottningholm i Lovö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -27527,9 +27527,9 @@ const persons = {
       "Lechard"
     ],
     "mother": 354,
-    "notes": "(Tab 39 i GS).\nStudent i Lund 1822 och i Uppsala 1827. Studerade f\u00f6rst juridik, sedan medicin. Med kand h\u00f6sten 1840. Med lic 1843 och kir magister 1846. Underl\u00e4kare vid Allm\u00e4nna garnisonssjukhuset i Stockholm 1834-35. Stipendiat i f\u00e4ltl\u00e4kark\u00e5ren 1835 och pension\u00e4r 1841. Tjf bataljonsl\u00e4kare vid Livregementets dragonk\u00e5r 1835 och tf s\u00e5dan samma \u00e5r. Extra bataljonsl\u00e4kare vid instruktionsbataljonen p\u00e5 Drottningholm 1836 och vid Upplands regementes rekrytkompani d\u00e4r 1845.\nSlottsl\u00e4kare p\u00e5 Drottningholm 1843, bataljonsl\u00e4kare 1847, 1:e d:o 1852 och regementsl\u00e4kare 1859 allt vid dragonk\u00e5ren. D\u00f6d i tj\u00e4nsten.\nH var liksom fadern best\u00e4md och fordrade lydnad, men r\u00e4ttvis och personligen \u00e4lskv\u00e4rd man, mycket omtyckt av dragonerna. Hans g\u00e4stfria hem, prytt av fyra behagfulla d\u00f6ttrar, var en uppskattad tillflykt f\u00f6r de dragonofficerare, som var kommenderade till Drottningholm (dit k\u00e5rens exercisskadron, rekryt- och remontm\u00f6ten var f\u00f6rlagda), och dessa visade sin tacksamhet genom att resa en minnesv\u00e5rd p\u00e5 hans grav p\u00e5 Lov\u00f6 kyrkog\u00e5rd, samt genom att ansl\u00e5 medel till minnesv\u00e5rdens framtida underh\u00e5ll.",
+    "notes": "(Tab 39 i GS).\nStudent i Lund 1822 och i Uppsala 1827. Studerade först juridik, sedan medicin. Med kand hösten 1840. Med lic 1843 och kir magister 1846. Underläkare vid Allmänna garnisonssjukhuset i Stockholm 1834-35. Stipendiat i fältläkarkåren 1835 och pensionär 1841. Tjf bataljonsläkare vid Livregementets dragonkår 1835 och tf sådan samma år. Extra bataljonsläkare vid instruktionsbataljonen på Drottningholm 1836 och vid Upplands regementes rekrytkompani där 1845.\nSlottsläkare på Drottningholm 1843, bataljonsläkare 1847, 1:e d:o 1852 och regementsläkare 1859 allt vid dragonkåren. Död i tjänsten.\nH var liksom fadern bestämd och fordrade lydnad, men rättvis och personligen älskvärd man, mycket omtyckt av dragonerna. Hans gästfria hem, prytt av fyra behagfulla döttrar, var en uppskattad tillflykt för de dragonofficerare, som var kommenderade till Drottningholm (dit kårens exercisskadron, rekryt- och remontmöten var förlagda), och dessa visade sin tacksamhet genom att resa en minnesvård på hans grav på Lovö kyrkogård, samt genom att anslå medel till minnesvårdens framtida underhåll.",
     "occupations": [
-      "Regementsl\u00e4kare"
+      "Regementsläkare"
     ],
     "references": [],
     "sex": "MAN",
@@ -27546,8 +27546,8 @@ const persons = {
         "year": 1808
       },
       "location": {
-        "city": "Samner\u00f6d",
-        "country": " B\u00e4ve",
+        "city": "Samneröd",
+        "country": "Bäve",
         "notes": "",
         "region": "",
         "latitude": 58.36834,
@@ -27575,7 +27575,7 @@ const persons = {
         "year": 1905
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -27600,8 +27600,8 @@ const persons = {
           "year": 1829
         },
         "location": {
-          "city": "Samner\u00f6d",
-          "country": " B\u00e4ve",
+          "city": "Samneröd",
+          "country": "Bäve",
           "notes": "",
           "region": ""
         },
@@ -27627,7 +27627,7 @@ const persons = {
         "year": 1798
       },
       "location": {
-        "city": "p\u00e5 Gustafsberg i Uddevalla ",
+        "city": "på Gustafsberg i Uddevalla",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -27681,8 +27681,8 @@ const persons = {
           "year": 1829
         },
         "location": {
-          "city": "Samner\u00f6d",
-          "country": " B\u00e4ve",
+          "city": "Samneröd",
+          "country": "Bäve",
           "notes": "",
           "region": ""
         },
@@ -27770,7 +27770,7 @@ const persons = {
         "year": 1812
       },
       "location": {
-        "city": "p\u00e5 Samner\u00f6d i B\u00e4ve ",
+        "city": "på Samneröd i Bäve",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -27796,7 +27796,7 @@ const persons = {
         "year": 1812
       },
       "location": {
-        "city": "p\u00e5 Samner\u00f6d i B\u00e4ve",
+        "city": "på Samneröd i Bäve",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -27830,7 +27830,7 @@ const persons = {
         "year": 1814
       },
       "location": {
-        "city": "p\u00e5 Samner\u00f6d i B\u00e4ve ",
+        "city": "på Samneröd i Bäve",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -27881,8 +27881,8 @@ const persons = {
           "year": 1842
         },
         "location": {
-          "city": "Samner\u00f6d",
-          "country": " B\u00e4ve",
+          "city": "Samneröd",
+          "country": "Bäve",
           "notes": "",
           "region": ""
         },
@@ -27910,7 +27910,7 @@ const persons = {
         "year": 1804
       },
       "location": {
-        "city": "V\u00e4ster\u00e5s",
+        "city": "Västerås",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -27961,8 +27961,8 @@ const persons = {
           "year": 1842
         },
         "location": {
-          "city": "Samner\u00f6d",
-          "country": " B\u00e4ve",
+          "city": "Samneröd",
+          "country": "Bäve",
           "notes": "",
           "region": ""
         },
@@ -27992,7 +27992,7 @@ const persons = {
         "year": 1816
       },
       "location": {
-        "city": "p\u00e5 Samner\u00f6d i B\u00e4ve ",
+        "city": "på Samneröd i Bäve",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -28026,7 +28026,7 @@ const persons = {
         "year": 1903
       },
       "location": {
-        "city": "Starrk\u00e4rr",
+        "city": "Starrkärr",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -28051,7 +28051,7 @@ const persons = {
           "year": 1852
         },
         "location": {
-          "city": "G\u00f6teborg",
+          "city": "Göteborg",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -28063,7 +28063,7 @@ const persons = {
       "Josias"
     ],
     "mother": 354,
-    "notes": "(Tab 40 i GS).\nStudent i Uppsala 1837. Teoretisk och praktisk teol examen 1841. Pr\u00e4stvigd 1842. Disputerade f\u00f6r pastoralexamen 1853 och avlade denna examen 1859.\nVar \u00e5ren 1838-40 informator hos friherre N Silfersch\u00f6ld p\u00e5 Koberg. Adjunkt i Forsh\u00e4lla f\u00f6rsamling hos sv\u00e5gerns bror, kyrkoherde Karl Ullman 1842-45. Adjunkt i domkyrkof\u00f6rsamlingen i G\u00f6teborg 1845. Tf vice pastor d\u00e4r 1847 och vice pastor 1856 samt 1862 kyrkoherde i Starrk\u00e4rrs pastorat, d\u00e4r han sedan verkade i n\u00e4ra 40 \u00e5r och sl\u00f6t sina dagar som stiftets senior. Kontraktsprost i domprosteriets norra kontrakt 1865-91. Ledamot av G\u00f6teborgs bibels\u00e4llskap 1853 och av \u00c4lvsborgs l\u00e4ns hush\u00e5llningss\u00e4llskap 1865. LVO 1885.\nHans liv och verksamhet \"framgick i det stilla, ty H h\u00f6rde aldrig till dem, som g\u00f6ra mycket buller av sig. F\u00f6r n\u00e5got s\u00e5dant var han varken anlagd eller h\u00e5gad. Tv\u00e4rtom var han en fridens och d\u00e4rtill en k\u00e4rlekens man. Utan att vara p\u00e5 huvudets v\u00e4gnar i s\u00e4rskilt framst\u00e5ende grad utrustad saknade han d\u00e4rf\u00f6r ej g\u00e5vor. Han hade framf\u00f6r allt ganska goda predikog\u00e5vor, med vilka han ock med trohet ockrade; och d\u00e5 h\u00e4rtill kommer, att han \u00e4ven var beg\u00e5vad med en god m\u00e4ssr\u00f6st, kunde han b\u00e5de som homilet och liturg g\u00f6ra sig g\u00e4llande, varf\u00f6r han ock var en g\u00e4rna h\u00f6rd f\u00f6rsamlingsl\u00e4rare. L\u00e4gga vi d\u00e4rtill, att han hade ett yttre utseende i h\u00f6g grad f\u00f6r sig, samt att hans upptr\u00e4dande pr\u00e4glades av v\u00e4rdighet och allvar, m\u00e5 vi v\u00e4l om honom s\u00e4ga att han i ordets b\u00e5de egentliga och goda bem\u00e4rkelse var 'en pr\u00e4st i sin prydno'.\nH hade ett varmt hj\u00e4rta f\u00f6r m\u00e4nniskors n\u00f6d, och detta ej blott f\u00f6r dem, som dvaldes i hans n\u00e4rmaste omgivning. Han hade tv\u00e4rtom f\u00f6r kristendomens och den kristna k\u00e4rlekens universalism b\u00e5de en vidstr\u00e4ckt syn och en innerlig nit\u00e4lskan. H\u00e4rav var en f\u00f6ljd, att han p\u00e5 en tid, d\u00e5 det kyrkliga missionsintresset \u00e4nnu till det mesta l\u00e5g nere bland v\u00e5rt folk och icke minst inom v\u00e5rt stift, \u00e5dagalade ett \u00f6ppet sinne f\u00f6r hednafolkens n\u00f6d och d\u00e4rmed \u00e4ven f\u00f6r missionens heliga sak samt i allm\u00e4nhet f\u00f6r kyrkans k\u00e4rleksverksamhet \u00e5t olika sidor. N\u00e4r d\u00e4rf\u00f6r v\u00e5r svenska kyrka uppr\u00e4ttat sin egen missionsverksamhet, l\u00e5g denna honom mycket om hj\u00e4rtat. --- I sin umg\u00e4ngelse var H en behaglig och \u00e4lskv\u00e4rd man med ett nobelt och fint s\u00e4tt. D\u00e4r vilade s a s en ljuv och angen\u00e4m doft \u00f6ver hela hans upptr\u00e4dande; ja, d\u00e4r var ock i vissa avseenden i hans v\u00e4sende och s\u00e4tt n\u00e5got kvinnligt vekt, p\u00e5 samma g\u00e5ng han i andra avseenden var manligt h\u00e4rdad mer \u00e4n de flesta. I senare h\u00e4nseendet till\u00e5ta vi oss erinra om, hurusom de ej var ovanligt att f\u00e5 se den onekligen vackre mannen \u00e4nda in p\u00e5 \u00e5lderdomen kalla vinterdagar vandra p\u00e5 stiftstadens gator, kl\u00e4dd endast i sin pr\u00e4stdr\u00e4kt utan n\u00e5gra ytterplagg. Vi skola ock sent gl\u00f6mma den b\u00e5de friska och \u00e4dla patriarkaliska gestalten, s\u00e5dan den tedde sig f\u00f6r oss, n\u00e4r han \u00e4nnu p\u00e5 den sena \u00e5lderns dagar med livligt intresse deltog i v\u00e5ra pr\u00e4sts\u00e4llskapssammantr\u00e4den eller andra dylika m\u00f6ten. --- H hade utan tvivel en estetisk l\u00e4ggning; f\u00f6r sk\u00f6n konst var han d\u00e4rf\u00f6r ock intresserad och ville g\u00e4rna njuta d\u00e4rav. Men framf\u00f6r allt var han intresserad av sin heliga kallelse som en Herrans tj\u00e4nare i prediko\u00e4mbetet; och han tog d\u00e4rf\u00f6r ock sin \u00e4mbetsg\u00e4rning p\u00e5 helt allvar. Det k\u00e4ndes ock p\u00e5kostande f\u00f6r honom att f\u00f6r \u00e5lderdomsskr\u00f6plighetens skull n\u00f6dgas l\u00e4mna allt mer och mer av detsamma. Han h\u00f6rdes ofta de senare \u00e5ren yttra sin undergivna f\u00f6rundran d\u00e4r\u00f6ver, att \u00d8verherden l\u00e4t honom g\u00e5 kvar s\u00e5 l\u00e4nge, allt mer och mer oduglig f\u00f6r \u00e4mbetets verk, under det att m\u00e5nga yngre medarbetare kallades bort fr\u00e5n \u00e4mbetsf\u00e4ltet. M\u00e5h\u00e4nda l\u00e5g det sanning uti, vad vi vid ett s\u00e5dant tillf\u00e4lle h\u00f6rde en vida yngre \u00e4mbetsbroder \u00e4n den gamle yttra, n\u00e4mligen att Herren l\u00e5ter kanske den gamle leva d\u00e4rf\u00f6r, att 'vi yngre skola ha n\u00e5got att se p\u00e5'. Och vi tro, att han var v\u00e4rd att 'se p\u00e5', att han i mer \u00e4n ett avseende var f\u00f6r oss f\u00f6red\u00f6mlig. ---\" (G\u00f6teborgs Stift-tidning 16/7 1903. Utf\u00f6rlig biografi se Carl S Lindblad \"Till minnet av Lechard Josias Hegardt\", G\u00f6teborg 1910.) Under de senare \u00e5ren av sitt liv var H blind. Tacksamma f\u00f6rsamlingsbor har rest en minnesv\u00e5rd p\u00e5 hans grav.",
+    "notes": "(Tab 40 i GS).\nStudent i Uppsala 1837. Teoretisk och praktisk teol examen 1841. Prästvigd 1842. Disputerade för pastoralexamen 1853 och avlade denna examen 1859.\nVar åren 1838-40 informator hos friherre N Silferschöld på Koberg. Adjunkt i Forshälla församling hos svågerns bror, kyrkoherde Karl Ullman 1842-45. Adjunkt i domkyrkoförsamlingen i Göteborg 1845. Tf vice pastor där 1847 och vice pastor 1856 samt 1862 kyrkoherde i Starrkärrs pastorat, där han sedan verkade i nära 40 år och slöt sina dagar som stiftets senior. Kontraktsprost i domprosteriets norra kontrakt 1865-91. Ledamot av Göteborgs bibelsällskap 1853 och av Älvsborgs läns hushållningssällskap 1865. LVO 1885.\nHans liv och verksamhet \"framgick i det stilla, ty H hörde aldrig till dem, som göra mycket buller av sig. För något sådant var han varken anlagd eller hågad. Tvärtom var han en fridens och därtill en kärlekens man. Utan att vara på huvudets vägnar i särskilt framstående grad utrustad saknade han därför ej gåvor. Han hade framför allt ganska goda predikogåvor, med vilka han ock med trohet ockrade; och då härtill kommer, att han även var begåvad med en god mässröst, kunde han både som homilet och liturg göra sig gällande, varför han ock var en gärna hörd församlingslärare. Lägga vi därtill, att han hade ett yttre utseende i hög grad för sig, samt att hans uppträdande präglades av värdighet och allvar, må vi väl om honom säga att han i ordets både egentliga och goda bemärkelse var 'en präst i sin prydno'.\nH hade ett varmt hjärta för människors nöd, och detta ej blott för dem, som dvaldes i hans närmaste omgivning. Han hade tvärtom för kristendomens och den kristna kärlekens universalism både en vidsträckt syn och en innerlig nitälskan. Härav var en följd, att han på en tid, då det kyrkliga missionsintresset ännu till det mesta låg nere bland vårt folk och icke minst inom vårt stift, ådagalade ett öppet sinne för hednafolkens nöd och därmed även för missionens heliga sak samt i allmänhet för kyrkans kärleksverksamhet åt olika sidor. När därför vår svenska kyrka upprättat sin egen missionsverksamhet, låg denna honom mycket om hjärtat. --- I sin umgängelse var H en behaglig och älskvärd man med ett nobelt och fint sätt. Där vilade s a s en ljuv och angenäm doft över hela hans uppträdande; ja, där var ock i vissa avseenden i hans väsende och sätt något kvinnligt vekt, på samma gång han i andra avseenden var manligt härdad mer än de flesta. I senare hänseendet tillåta vi oss erinra om, hurusom de ej var ovanligt att få se den onekligen vackre mannen ända in på ålderdomen kalla vinterdagar vandra på stiftstadens gator, klädd endast i sin prästdräkt utan några ytterplagg. Vi skola ock sent glömma den både friska och ädla patriarkaliska gestalten, sådan den tedde sig för oss, när han ännu på den sena ålderns dagar med livligt intresse deltog i våra prästsällskapssammanträden eller andra dylika möten. --- H hade utan tvivel en estetisk läggning; för skön konst var han därför ock intresserad och ville gärna njuta därav. Men framför allt var han intresserad av sin heliga kallelse som en Herrans tjänare i predikoämbetet; och han tog därför ock sin ämbetsgärning på helt allvar. Det kändes ock påkostande för honom att för ålderdomsskröplighetens skull nödgas lämna allt mer och mer av detsamma. Han hördes ofta de senare åren yttra sin undergivna förundran däröver, att Øverherden lät honom gå kvar så länge, allt mer och mer oduglig för ämbetets verk, under det att många yngre medarbetare kallades bort från ämbetsfältet. Måhända låg det sanning uti, vad vi vid ett sådant tillfälle hörde en vida yngre ämbetsbroder än den gamle yttra, nämligen att Herren låter kanske den gamle leva därför, att 'vi yngre skola ha något att se på'. Och vi tro, att han var värd att 'se på', att han i mer än ett avseende var för oss föredömlig. ---\" (Göteborgs Stift-tidning 16/7 1903. Utförlig biografi se Carl S Lindblad \"Till minnet av Lechard Josias Hegardt\", Göteborg 1910.) Under de senare åren av sitt liv var H blind. Tacksamma församlingsbor har rest en minnesvård på hans grav.",
     "occupations": [
       "Kontraktsprost"
     ],
@@ -28082,7 +28082,7 @@ const persons = {
         "year": 1818
       },
       "location": {
-        "city": "p\u00e5 Samner\u00f6d i B\u00e4ve ",
+        "city": "på Samneröd i Bäve",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -28133,8 +28133,8 @@ const persons = {
           "year": 1840
         },
         "location": {
-          "city": "Samner\u00f6d",
-          "country": " B\u00e4ve",
+          "city": "Samneröd",
+          "country": "Bäve",
           "notes": "",
           "region": ""
         },
@@ -28163,7 +28163,7 @@ const persons = {
         "year": 1801
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -28189,7 +28189,7 @@ const persons = {
         "year": 1870
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -28214,8 +28214,8 @@ const persons = {
           "year": 1840
         },
         "location": {
-          "city": "Samner\u00f6d",
-          "country": " B\u00e4ve",
+          "city": "Samneröd",
+          "country": "Bäve",
           "notes": "",
           "region": ""
         },
@@ -28243,7 +28243,7 @@ const persons = {
         "year": 1820
       },
       "location": {
-        "city": "p\u00e5 Samner\u00f6d i B\u00e4ve ",
+        "city": "på Samneröd i Bäve",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -28269,7 +28269,7 @@ const persons = {
         "year": 1910
       },
       "location": {
-        "city": "Alings\u00e5s",
+        "city": "Alingsås",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -28294,8 +28294,8 @@ const persons = {
           "year": 1841
         },
         "location": {
-          "city": "Samner\u00f6d",
-          "country": " B\u00e4ve",
+          "city": "Samneröd",
+          "country": "Bäve",
           "notes": "",
           "region": ""
         },
@@ -28323,7 +28323,7 @@ const persons = {
         "year": 1809
       },
       "location": {
-        "city": "V\u00e4rnamo",
+        "city": "Värnamo",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -28374,8 +28374,8 @@ const persons = {
           "year": 1841
         },
         "location": {
-          "city": "Samner\u00f6d",
-          "country": " B\u00e4ve",
+          "city": "Samneröd",
+          "country": "Bäve",
           "notes": "",
           "region": ""
         },
@@ -28403,7 +28403,7 @@ const persons = {
         "year": 1816
       },
       "location": {
-        "city": "Muns\u00f6",
+        "city": "Munsö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -28434,7 +28434,7 @@ const persons = {
         "year": 1895
       },
       "location": {
-        "city": "Alings\u00e5s",
+        "city": "Alingsås",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -28447,7 +28447,7 @@ const persons = {
     "father": 571,
     "fileId": "0000000399",
     "firstName": "Karolina",
-    "lastName": "Wahll\u00f6f",
+    "lastName": "Wahllöf",
     "marriages": [
       {
         "date": {
@@ -28488,7 +28488,7 @@ const persons = {
         "year": 1844
       },
       "location": {
-        "city": "p\u00e5 Drottningholm i Lov\u00f6 ",
+        "city": "på Drottningholm i Lovö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -28514,7 +28514,7 @@ const persons = {
         "year": 1913
       },
       "location": {
-        "city": "Alings\u00e5s",
+        "city": "Alingsås",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -28551,7 +28551,7 @@ const persons = {
         "year": 1846
       },
       "location": {
-        "city": "p\u00e5 Drottningholm i Lov\u00f6 ",
+        "city": "på Drottningholm i Lovö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -28671,7 +28671,7 @@ const persons = {
     "father": null,
     "fileId": "0000000402",
     "firstName": "Adolf",
-    "lastName": "Cedrschi\u00f6ld",
+    "lastName": "Cedrschiöld",
     "marriages": [
       {
         "date": {
@@ -28712,7 +28712,7 @@ const persons = {
         "year": 1847
       },
       "location": {
-        "city": "p\u00e5 Drottningholm i Lov\u00f6 ",
+        "city": "på Drottningholm i Lovö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -28778,7 +28778,7 @@ const persons = {
         "year": 1841
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -28804,7 +28804,7 @@ const persons = {
         "year": 1894
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -28843,7 +28843,7 @@ const persons = {
     "mother": null,
     "notes": "",
     "occupations": [
-      "Gods\u00e4gare"
+      "Godsägare"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -28860,7 +28860,7 @@ const persons = {
         "year": 1850
       },
       "location": {
-        "city": "p\u00e5 Drottningholm i Lov\u00f6 ",
+        "city": "på Drottningholm i Lovö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -28886,7 +28886,7 @@ const persons = {
         "year": 1891
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -28941,7 +28941,7 @@ const persons = {
         "year": 1833
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -28967,7 +28967,7 @@ const persons = {
         "year": 1911
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -28980,7 +28980,7 @@ const persons = {
     "father": null,
     "fileId": "0000000406",
     "firstName": "Per",
-    "lastName": "W\u00e5hlstedt",
+    "lastName": "Wåhlstedt",
     "marriages": [
       {
         "date": {
@@ -29021,7 +29021,7 @@ const persons = {
         "year": 1824
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -29055,7 +29055,7 @@ const persons = {
         "year": 1889
       },
       "location": {
-        "city": "Starrk\u00e4rr",
+        "city": "Starrkärr",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -29080,7 +29080,7 @@ const persons = {
           "year": 1852
         },
         "location": {
-          "city": "G\u00f6teborg",
+          "city": "Göteborg",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -29109,7 +29109,7 @@ const persons = {
         "year": 1856
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -29135,7 +29135,7 @@ const persons = {
         "year": 1887
       },
       "location": {
-        "city": "Starrk\u00e4rr",
+        "city": "Starrkärr",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -29154,7 +29154,7 @@ const persons = {
       "Kristian"
     ],
     "mother": 560,
-    "notes": "(Tab 40:174 i GS).\nStudentexamen 1876.\nVolont\u00e4r vid Bohusl\u00e4ns regemente 1877.\nElev vid Krigsh\u00f6gskolan samma \u00e5r.\nOfficersexamen 1878.\nUnderl\u00f6jtnant vid n\u00e4mnda regemente samma \u00e5r.\nVistades 1885-86 p\u00e5 Madeira f\u00f6r att f\u00f6rs\u00f6ka bota den lungsjukdom, som han dog av 1887.",
+    "notes": "(Tab 40:174 i GS).\nStudentexamen 1876.\nVolontär vid Bohusläns regemente 1877.\nElev vid Krigshögskolan samma år.\nOfficersexamen 1878.\nUnderlöjtnant vid nämnda regemente samma år.\nVistades 1885-86 på Madeira för att försöka bota den lungsjukdom, som han dog av 1887.",
     "occupations": [],
     "references": [],
     "sex": "UNKNOWN",
@@ -29171,7 +29171,7 @@ const persons = {
         "year": 1857
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -29240,9 +29240,9 @@ const persons = {
       "Lechard"
     ],
     "mother": 560,
-    "notes": "(Tab 41 i GS).\nStudentexamen 1878 i G\u00f6teborg. Med fil kand 1884 i Uppsala och med kand 1889 i Stockholm. Med lic och leg l\u00e4kare d\u00e4r 1894. Leg sjukgymnast 1888. F\u00f6restod sjukgymnastiken vid Raml\u00f6sa h\u00e4lsobrunn 1888-92. Praktiserande l\u00e4kare i Helsingborg sedan 1894. Hade under en l\u00e5ng f\u00f6ljd av \u00e5r fr\u00e5n 1897 till 1915 \u00e5rligen l\u00e4ngre eller kortare tider f\u00f6rordnande som tf distriktsl\u00e4kare i Helsingborg. Blev ordinarie s\u00e5dan 1915. Besiktningsl\u00e4kare f\u00f6r minder\u00e5riga anst\u00e4llda vid industrier 1901. Skoll\u00e4kare 1905 och f\u00f6retagsl\u00e4kare vid Helsingborgs Kopparverk 1906. L\u00e4kare vid stadens observationsplats f\u00f6r fartyg fr\u00e5n smittad ort 1914.\nMedlem av Helsingborgs nykterhetsn\u00e4mnd sedan 1916 och sedan 1919 av medicinalstyrelsen f\u00f6rordnad revisor i F\u00f6reningen f\u00f6r bist\u00e5nd \u00e5t vanf\u00f6ra i Sk\u00e5ne.\n\"Sin fr\u00e4msta l\u00e4karg\u00e4rning har han kanske presterat s\u00e5som skoll\u00e4kare vid Helsingborgs folkskolor. P\u00e5 detta sitt verksamhetsomr\u00e5de har dr Hegardt nedlagt ett osj\u00e4lviskt och h\u00f6gt uppskattat arbete. I samband d\u00e4rmed st\u00e5r det stora och fruktbringande intresse han visat sommarkoloniverksamheten. F\u00f6r ungdomens fysiska fostran har dr Hegardt varit en ivrig f\u00f6rk\u00e4mpe och ej minst s\u00e5som m\u00e5ng\u00e5rig ordf\u00f6rande i Helsingborgs sims\u00e4llskap har han i detta avseende utr\u00e4ttat ett gott arbete.\" (Utdrag ur artikel i Helsingborgstidn vid H:s 70-\u00e5rsdag 1927) Dr Hegardt var initiativtagare till grundandet av F\u00f6reningen Mj\u00f6lkdroppen i Helsingborg, som var f\u00f6reg\u00e5ngare till nutidens barnav\u00e5rdscentral. F\u00f6reningen bildades 1904.\nDr Hegardt var ocks\u00e5, vad man nuf\u00f6rtiden kallar frisksportare. Om det skrev en Helsingborgstidning vid H:s 65-\u00e5rsdag: \" --- Dessutom \u00e4r dr Hegardt nestor i den lilla heroiska trupp helsingborgare, som kallas vinterbadare och ytterrockskl\u00e4dda och i all synnerhet p\u00e4lskl\u00e4dda herrar v\u00e4cker hans med\u00f6mkan.\nTrots de 65 \u00e5ren har hans h\u00e4rdade heroism inte f\u00e5tt den minsta lilla kn\u00e4ck, medan m\u00e5nga mycket yngre av oss andra, som i ungdomligt \u00f6vermod stodo som hj\u00e4ltar vid kavajidealet, p\u00e5 grund av begynnande skr\u00f6plighet krupit in i allt tjockare ytterplagg. Vi g\u00f6r honn\u00f6r \u00e5t 65-\u00e5ringen, som i vinter s\u00e5v\u00e4l som sommar promenerar omkring i v\u00e5r bl\u00e5siga stad i fladdrande, okn\u00e4ppt kavaj! ---\" En s\u00e4rdeles kall vinter stod det ocks\u00e5 att l\u00e4sa att \"Idag \u00e4r det kallt, ty dr Hegardt har kn\u00e4ppt \u00f6versta knappen i kavajen!\" Vid H:s bortg\u00e5ng skrev en Helsingborgstidning: \" --- Genom sitt sympatiska och fl\u00e4rdfria v\u00e4sen har dr Hegardt gjort sig allm\u00e4nt omtyckt och v\u00e4rderad. Nu vid hans bortg\u00e5ng skall hans minne beh\u00e5llas i tacksam erinran av alla, unga som gamla, vilka kommit i f\u00f6rbindelse med den gamle, gode doktorn.\"",
+    "notes": "(Tab 41 i GS).\nStudentexamen 1878 i Göteborg. Med fil kand 1884 i Uppsala och med kand 1889 i Stockholm. Med lic och leg läkare där 1894. Leg sjukgymnast 1888. Förestod sjukgymnastiken vid Ramlösa hälsobrunn 1888-92. Praktiserande läkare i Helsingborg sedan 1894. Hade under en lång följd av år från 1897 till 1915 årligen längre eller kortare tider förordnande som tf distriktsläkare i Helsingborg. Blev ordinarie sådan 1915. Besiktningsläkare för minderåriga anställda vid industrier 1901. Skolläkare 1905 och företagsläkare vid Helsingborgs Kopparverk 1906. Läkare vid stadens observationsplats för fartyg från smittad ort 1914.\nMedlem av Helsingborgs nykterhetsnämnd sedan 1916 och sedan 1919 av medicinalstyrelsen förordnad revisor i Föreningen för bistånd åt vanföra i Skåne.\n\"Sin främsta läkargärning har han kanske presterat såsom skolläkare vid Helsingborgs folkskolor. På detta sitt verksamhetsområde har dr Hegardt nedlagt ett osjälviskt och högt uppskattat arbete. I samband därmed står det stora och fruktbringande intresse han visat sommarkoloniverksamheten. För ungdomens fysiska fostran har dr Hegardt varit en ivrig förkämpe och ej minst såsom mångårig ordförande i Helsingborgs simsällskap har han i detta avseende uträttat ett gott arbete.\" (Utdrag ur artikel i Helsingborgstidn vid H:s 70-årsdag 1927) Dr Hegardt var initiativtagare till grundandet av Föreningen Mjölkdroppen i Helsingborg, som var föregångare till nutidens barnavårdscentral. Föreningen bildades 1904.\nDr Hegardt var också, vad man nuförtiden kallar frisksportare. Om det skrev en Helsingborgstidning vid H:s 65-årsdag: \" --- Dessutom är dr Hegardt nestor i den lilla heroiska trupp helsingborgare, som kallas vinterbadare och ytterrocksklädda och i all synnerhet pälsklädda herrar väcker hans medömkan.\nTrots de 65 åren har hans härdade heroism inte fått den minsta lilla knäck, medan många mycket yngre av oss andra, som i ungdomligt övermod stodo som hjältar vid kavajidealet, på grund av begynnande skröplighet krupit in i allt tjockare ytterplagg. Vi gör honnör åt 65-åringen, som i vinter såväl som sommar promenerar omkring i vår blåsiga stad i fladdrande, oknäppt kavaj! ---\" En särdeles kall vinter stod det också att läsa att \"Idag är det kallt, ty dr Hegardt har knäppt översta knappen i kavajen!\" Vid H:s bortgång skrev en Helsingborgstidning: \" --- Genom sitt sympatiska och flärdfria väsen har dr Hegardt gjort sig allmänt omtyckt och värderad. Nu vid hans bortgång skall hans minne behållas i tacksam erinran av alla, unga som gamla, vilka kommit i förbindelse med den gamle, gode doktorn.\"",
     "occupations": [
-      "Stadsl\u00e4kare"
+      "Stadsläkare"
     ],
     "references": [],
     "sex": "MAN",
@@ -29259,7 +29259,7 @@ const persons = {
         "year": 1858
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -29310,7 +29310,7 @@ const persons = {
           "year": 1886
         },
         "location": {
-          "city": "G\u00f6teborg",
+          "city": "Göteborg",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -29339,7 +29339,7 @@ const persons = {
         "year": 1830
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -29390,7 +29390,7 @@ const persons = {
           "year": 1886
         },
         "location": {
-          "city": "G\u00f6teborg",
+          "city": "Göteborg",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -29407,7 +29407,7 @@ const persons = {
           "year": 1894
         },
         "location": {
-          "city": "Starrk\u00e4rr",
+          "city": "Starrkärr",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -29436,7 +29436,7 @@ const persons = {
         "year": 1859
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -29462,7 +29462,7 @@ const persons = {
         "year": 1885
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -29498,7 +29498,7 @@ const persons = {
         "year": 1861
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -29549,7 +29549,7 @@ const persons = {
           "year": 1894
         },
         "location": {
-          "city": "Starrk\u00e4rr",
+          "city": "Starrkärr",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -29561,7 +29561,7 @@ const persons = {
       "Teresia"
     ],
     "mother": 560,
-    "notes": "(Tab 40:182 i GS).\nTeresia var kusin och sv\u00e4gerska med sin man.",
+    "notes": "(Tab 40:182 i GS).\nTeresia var kusin och svägerska med sin man.",
     "occupations": [],
     "references": [],
     "sex": "UNKNOWN",
@@ -29578,7 +29578,7 @@ const persons = {
         "year": 1865
       },
       "location": {
-        "city": "Starrk\u00e4rr",
+        "city": "Starrkärr",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -29641,7 +29641,7 @@ const persons = {
         "year": 1867
       },
       "location": {
-        "city": "Starrk\u00e4rr",
+        "city": "Starrkärr",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -29686,7 +29686,7 @@ const persons = {
           "year": 1901
         },
         "location": {
-          "city": "Starrk\u00e4rr",
+          "city": "Starrkärr",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -29715,7 +29715,7 @@ const persons = {
         "year": 1867
       },
       "location": {
-        "city": "p\u00e5 Lindholmen i Lundby ",
+        "city": "på Lindholmen i Lundby",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -29768,7 +29768,7 @@ const persons = {
           "year": 1901
         },
         "location": {
-          "city": "Starrk\u00e4rr",
+          "city": "Starrkärr",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -29780,7 +29780,7 @@ const persons = {
       "Severin"
     ],
     "mother": null,
-    "notes": "Kapellpredikant p\u00e5 K\u00e4ring\u00f6n",
+    "notes": "Kapellpredikant på Käringön",
     "occupations": [],
     "references": [],
     "sex": "MAN",
@@ -29797,7 +29797,7 @@ const persons = {
         "year": 1865
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -30009,7 +30009,7 @@ const persons = {
       "Lechard"
     ],
     "mother": 577,
-    "notes": "(Tab 41:177 i GS).\nStudentexamen 1916 i Helsingborg. Teol fil examen 1922 och teol kand 1928 i Lund. Prakt teol prov 1929 samt pr\u00e4stvigd samma \u00e5r. Missiv i Sturk\u00f6?Tjurk\u00f6 pastorat i Blekinge 192931. Kyrkoherde i Sj\u00f6rups och Katsl\u00f6sa pastorat i Malm\u00f6hus l\u00e4n vid Sk\u00e5nes sydkust 1931 med tilltr\u00e4de 1933. Avgick med pension 1961. Kontraktsprost i Ljunits och Herrestads kontrakt 1949.61. LVO.\nOrdf\u00f6rande i Sj\u00f6rups och Katsl\u00f6sas barnav\u00e5rdsn\u00e4mnder och skolstyrelser 1932?52. Vid storkommunernas genomf\u00f6rande 1952 ordf\u00f6rande i Ljunits storkommuns skolstyrelse 1952-58. Hemv\u00e4rnsman 1940?61 samt stf hemv\u00e4rnsomr\u00e5desbef\u00e4lhavare fr\u00e5n 1948. Hemv\u00e4rnets tj\u00e4nstem\u00e4rken i silver, guld och guld med emalj samt tilldelad hemv\u00e4rnets f\u00f6rtj\u00e4nstmedalj i silver 1957.\n\"... Under prosten Hegardts studietid var den s k liberala teologien s\u00e5 gott som allenar\u00e5dande. Som f\u00f6rkunnare har prosten f\u00f6rst\u00e5tt tillgodog\u00f6ra sig det best\u00e5ende i denna, men kastat loss fr\u00e5n det tidsbest\u00e4mda, utan att d\u00e4rf\u00f6r f\u00f6rsv\u00e4ra sig \u00e5t n\u00e5gon viss teologisk eller kyrklig moderiktning. Ej heller \u00e4r han ben\u00e4gen att utan vidare inf\u00f6ra nyheter i f\u00f6rsamlingsarbetet. Kritiskt betraktar han allt nytt efterhand som det kommer fram och avg\u00f6r sj\u00e4lv, vad han anser sig b\u00f6ra acceptera.\nDet g\u00e5r v\u00e4l samman med hans frimodiga v\u00e4sen som alltid gjort honom uppskattad liksom hans tj\u00e4nstaktighet och of\u00f6r\u00e4nderligt v\u00e4nliga s\u00e4tt mot alla. Han har d\u00e4rf\u00f6r blivit v\u00e4rderad i alla kretsar och f\u00f6rv\u00e4rvat sig tillgivna v\u00e4nner inom sina f\u00f6rsamlingar och vida omkring ....\" (Y A 13/4 1957 vid H:s 60?\u00e5rsdag.) \"... Vi, hans gamla kontraktister, gl\u00f6mmer aldrig hur glatt och v\u00e4nligt han tog emot oss i Sj\u00f6rups pr\u00e4stg\u00e5rd antingen vi kom till kvartalskonventet eller f\u00f6r att bara h\u00e4lsa p\u00e5. Som kontraktsprost var han aldrig den str\u00e4nge chefen. Han f\u00f6redrog att leda oss med mild hand och i synnerhet v\u00e5ra konvent begagnade han sig av f\u00f6r att i samtalets form f\u00e5 fason p\u00e5 v\u00e5ra gemensamma angel\u00e4genheter och f\u00f6retag. Det m\u00e5 nu ha g\u00e4llt f\u00f6rsamlingslivet eller samlingen i kontraktssammanhang.\nF\u00f6r min inre blick ser jag Helge Hegardt st\u00e5 d\u00e4r mitt ibland oss och med ett gott, n\u00e5gon g\u00e5ng spjuveraktigt, leende g\u00f6ra sina till\u00e4gg och om s\u00e5 beh\u00f6vdes gjuta olja p\u00e5 de heta diskussionens heta v\u00e5gor. Och n\u00e4r jag ser honom s\u00e5,sl\u00e5r det mig att det ligger n\u00e5got symboliskt i att han fick en god br\u00e5d d\u00f6d. Ett l\u00e5ngsamt avtynande hade p\u00e5 n\u00e5got s\u00e4tt inte g\u00e5tt ihop med hans livfulla personlighet....\nUnder den tid prosten Hegardt verkade i Sj\u00f6rup och Katsl\u00f6sa satt han intill kommunindelningsreformen som skolr\u00e5dsordf\u00f6rande i b\u00e5da f\u00f6rsamlingarna och genomf\u00f6rde en v\u00e4sentlig f\u00f6rb\u00e4ttring av skolv\u00e4sendet d\u00e4r. Ljunits storkommun visste ocks\u00e5 att begagna sig av den erfarne skolmannen. Prosten Hegardt var s\u00e5lunda ordf\u00f6rande i Ljunits skolstyrelse sedan dess tillkomst.\nF\u00f6re storkommuns tid var prosten Hegardt i m\u00e5nga \u00e5r ordf\u00f6rande i Sj\u00f6rups och Katsl\u00f6sa barnav\u00e5rdsn\u00e4mnder. Han var ocks\u00e5 kyrkost\u00e4mmornas ordf\u00f6rande. I dessa befattningar och som ordf\u00f6rande i f\u00f6rsamlingarnas kyrkor\u00e5d visade han sig alltid m\u00e5n om kyrkorna. Ett synligt resultat h\u00e4rav var bland andra den pietetsfulla restaureringen av Sj\u00f6rups vackra kyrka....\nMatlagskamraterna under hans vistelse vid universitetet i Lund sp\u00e5dde att teologie studeranden Helge Hegardt skulle bli kontraktsprost. Ocks\u00e5 anf\u00f6rtrodde honom stiftets biskop den 5 oktober 1959 det v\u00f6rdiga prost\u00e4mbetet i Ljunits och Herrestads kontrakt. F\u00f6r den initierade kom denna utn\u00e4mning inte som en \u00f6verraskning. ....\" (SDS 25/8 1964)",
+    "notes": "(Tab 41:177 i GS).\nStudentexamen 1916 i Helsingborg. Teol fil examen 1922 och teol kand 1928 i Lund. Prakt teol prov 1929 samt prästvigd samma år. Missiv i Sturkö?Tjurkö pastorat i Blekinge 192931. Kyrkoherde i Sjörups och Katslösa pastorat i Malmöhus län vid Skånes sydkust 1931 med tillträde 1933. Avgick med pension 1961. Kontraktsprost i Ljunits och Herrestads kontrakt 1949.61. LVO.\nOrdförande i Sjörups och Katslösas barnavårdsnämnder och skolstyrelser 1932?52. Vid storkommunernas genomförande 1952 ordförande i Ljunits storkommuns skolstyrelse 1952-58. Hemvärnsman 1940?61 samt stf hemvärnsområdesbefälhavare från 1948. Hemvärnets tjänstemärken i silver, guld och guld med emalj samt tilldelad hemvärnets förtjänstmedalj i silver 1957.\n\"... Under prosten Hegardts studietid var den s k liberala teologien så gott som allenarådande. Som förkunnare har prosten förstått tillgodogöra sig det bestående i denna, men kastat loss från det tidsbestämda, utan att därför försvära sig åt någon viss teologisk eller kyrklig moderiktning. Ej heller är han benägen att utan vidare införa nyheter i församlingsarbetet. Kritiskt betraktar han allt nytt efterhand som det kommer fram och avgör själv, vad han anser sig böra acceptera.\nDet går väl samman med hans frimodiga väsen som alltid gjort honom uppskattad liksom hans tjänstaktighet och oföränderligt vänliga sätt mot alla. Han har därför blivit värderad i alla kretsar och förvärvat sig tillgivna vänner inom sina församlingar och vida omkring ....\" (Y A 13/4 1957 vid H:s 60?årsdag.) \"... Vi, hans gamla kontraktister, glömmer aldrig hur glatt och vänligt han tog emot oss i Sjörups prästgård antingen vi kom till kvartalskonventet eller för att bara hälsa på. Som kontraktsprost var han aldrig den stränge chefen. Han föredrog att leda oss med mild hand och i synnerhet våra konvent begagnade han sig av för att i samtalets form få fason på våra gemensamma angelägenheter och företag. Det må nu ha gällt församlingslivet eller samlingen i kontraktssammanhang.\nFör min inre blick ser jag Helge Hegardt stå där mitt ibland oss och med ett gott, någon gång spjuveraktigt, leende göra sina tillägg och om så behövdes gjuta olja på de heta diskussionens heta vågor. Och när jag ser honom så,slår det mig att det ligger något symboliskt i att han fick en god bråd död. Ett långsamt avtynande hade på något sätt inte gått ihop med hans livfulla personlighet....\nUnder den tid prosten Hegardt verkade i Sjörup och Katslösa satt han intill kommunindelningsreformen som skolrådsordförande i båda församlingarna och genomförde en väsentlig förbättring av skolväsendet där. Ljunits storkommun visste också att begagna sig av den erfarne skolmannen. Prosten Hegardt var sålunda ordförande i Ljunits skolstyrelse sedan dess tillkomst.\nFöre storkommuns tid var prosten Hegardt i många år ordförande i Sjörups och Katslösa barnavårdsnämnder. Han var också kyrkostämmornas ordförande. I dessa befattningar och som ordförande i församlingarnas kyrkoråd visade han sig alltid mån om kyrkorna. Ett synligt resultat härav var bland andra den pietetsfulla restaureringen av Sjörups vackra kyrka....\nMatlagskamraterna under hans vistelse vid universitetet i Lund spådde att teologie studeranden Helge Hegardt skulle bli kontraktsprost. Också anförtrodde honom stiftets biskop den 5 oktober 1959 det vördiga prostämbetet i Ljunits och Herrestads kontrakt. För den initierade kom denna utnämning inte som en överraskning. ....\" (SDS 25/8 1964)",
     "occupations": [
       "Kontraktsprost"
     ],
@@ -30073,7 +30073,7 @@ const persons = {
       "Lechard"
     ],
     "mother": 577,
-    "notes": "(Tab 41:178 i GS).\nHandelsexamen 1916 i Helsingborg (M).\nAnst\u00e4lld vid AB Fallenius och Leffler i G\u00f6teborg 1916-17 och vid Brand- och livf\u00f6rs\u00e4krings AB Svea d\u00e4r 1919 samt 1919-20 i Comptoir du Nord i Dunkerque, Frankrike. Vistades sedan f\u00f6rst i Paris, d\u00e4refter i St Dye sur Loire invid Blois till 1921 och genomgick samma \u00e5r Pitman's School i London.\n1923-27 anst\u00e4lld vid Texas Co AB i Stodkholm och Malm\u00f6.\n1929-36 vid AB Naftasyndikatet i Helsingborg. Under \u00e5ren 1937-39 drev han egen firma i Stockholm under firma Hegardt och Co. Fr\u00e5n 1939 kamrer vid Canos i P\u00e5arp, d\u00e4r han arbetade till 1962, d\u00e5 han insjuknade i cancer och avled tv\u00e5 \u00e5r senare.\nStyrelseledamot i Helsingborgs Sims\u00e4llskap och sekreterare i t\u00e4vlingsutskottet 1932-36. Mycket duktig t\u00e4vlingssimmare i yngre dagar. Litter\u00e4rt intresserad.",
+    "notes": "(Tab 41:178 i GS).\nHandelsexamen 1916 i Helsingborg (M).\nAnställd vid AB Fallenius och Leffler i Göteborg 1916-17 och vid Brand- och livförsäkrings AB Svea där 1919 samt 1919-20 i Comptoir du Nord i Dunkerque, Frankrike. Vistades sedan först i Paris, därefter i St Dye sur Loire invid Blois till 1921 och genomgick samma år Pitman's School i London.\n1923-27 anställd vid Texas Co AB i Stodkholm och Malmö.\n1929-36 vid AB Naftasyndikatet i Helsingborg. Under åren 1937-39 drev han egen firma i Stockholm under firma Hegardt och Co. Från 1939 kamrer vid Canos i Påarp, där han arbetade till 1962, då han insjuknade i cancer och avled två år senare.\nStyrelseledamot i Helsingborgs Simsällskap och sekreterare i tävlingsutskottet 1932-36. Mycket duktig tävlingssimmare i yngre dagar. Litterärt intresserad.",
     "occupations": [
       "Kamrer"
     ],
@@ -30198,7 +30198,7 @@ const persons = {
     },
     "father": 593,
     "fileId": "0000000422",
-    "firstName": "M\u00e4rta",
+    "firstName": "Märta",
     "lastName": "Heyden",
     "marriages": [
       {
@@ -30272,8 +30272,8 @@ const persons = {
         "year": 1996
       },
       "location": {
-        "city": "Abbek\u00e5s",
-        "country": " Skivarp",
+        "city": "Abbekås",
+        "country": "Skivarp",
         "notes": "",
         "region": "",
         "latitude": 55.38608,
@@ -30297,7 +30297,7 @@ const persons = {
           "year": 1958
         },
         "location": {
-          "city": "Skellefte\u00e5",
+          "city": "Skellefteå",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -30314,7 +30314,7 @@ const persons = {
           "year": 1992
         },
         "location": {
-          "city": "ombord p\u00e5 S/Y Gita II",
+          "city": "ombord på S/Y Gita II",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -30326,9 +30326,9 @@ const persons = {
       "Lechard"
     ],
     "mother": 586,
-    "notes": "Ingenj\u00f6rsexamen 1953 i Malm\u00f6 (M).\nAnst\u00e4lld 1955 vid Tetra Pak AB i Lund. Under \u00e5ren 1958-64 servicechef f\u00f6r Tetra Pak i Toronto, Canada. Sedan 1964 tillbaka vid Tetra Pak i Lund.",
+    "notes": "Ingenjörsexamen 1953 i Malmö (M).\nAnställd 1955 vid Tetra Pak AB i Lund. Under åren 1958-64 servicechef för Tetra Pak i Toronto, Canada. Sedan 1964 tillbaka vid Tetra Pak i Lund.",
     "occupations": [
-      "Ingenj\u00f6r"
+      "Ingenjör"
     ],
     "references": [],
     "sex": "MAN",
@@ -30386,7 +30386,7 @@ const persons = {
           "year": 1954
         },
         "location": {
-          "city": "Sj\u00f6rup",
+          "city": "Sjörup",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -30396,9 +30396,9 @@ const persons = {
     ],
     "middleNames": [],
     "mother": 586,
-    "notes": "Adress Nils Holgerssons v\u00e4g 32, 274 56 ABBEK\u00c5S.\nNormalskolekompetens 1951 i Lund (M).\nF\u00f6rs\u00e4kringstj\u00e4nsteman vid Sk\u00e5ne-Malm\u00f6 till 1955. Fr\u00e5n 1978 l\u00e4karsekreterare vid njurkliniken vid Lunds lasarett.\nBor i Abbek\u00e5s, Skivarp (M).",
+    "notes": "Adress Nils Holgerssons väg 32, 274 56 ABBEKÅS.\nNormalskolekompetens 1951 i Lund (M).\nFörsäkringstjänsteman vid Skåne-Malmö till 1955. Från 1978 läkarsekreterare vid njurkliniken vid Lunds lasarett.\nBor i Abbekås, Skivarp (M).",
     "occupations": [
-      "L\u00e4karsekreterare"
+      "Läkarsekreterare"
     ],
     "references": [],
     "sex": "WOMAN",
@@ -30416,7 +30416,7 @@ const persons = {
       },
       "location": {
         "city": "Eneryda",
-        "country": " Vislanda",
+        "country": "Vislanda",
         "notes": "",
         "region": "",
         "latitude": 56.78706,
@@ -30456,7 +30456,7 @@ const persons = {
           "year": 1954
         },
         "location": {
-          "city": "Sj\u00f6rup",
+          "city": "Sjörup",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -30468,9 +30468,9 @@ const persons = {
       "Olof"
     ],
     "mother": null,
-    "notes": "Oforskat Fullst\u00e4ndiga uppgifter om f\u00f6r\u00e4ldrar (sid 4).",
+    "notes": "Oforskat Fullständiga uppgifter om föräldrar (sid 4).",
     "occupations": [
-      "Ingenj\u00f6r"
+      "Ingenjör"
     ],
     "references": [],
     "sex": "MAN",
@@ -30527,7 +30527,7 @@ const persons = {
           "year": 1965
         },
         "location": {
-          "city": "Malm\u00f6",
+          "city": "Malmö",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -30539,9 +30539,9 @@ const persons = {
       "Lechard"
     ],
     "mother": 586,
-    "notes": "Adress Genv\u00e4gen 5, 232 02 \u00c5KARP.\nSedan 1961 anst\u00e4lld vid AB Tetra Pak i Lund.\nBor i \u00c5karp (M).",
+    "notes": "Adress Genvägen 5, 232 02 ÅKARP.\nSedan 1961 anställd vid AB Tetra Pak i Lund.\nBor i Åkarp (M).",
     "occupations": [
-      "Ingenj\u00f6r"
+      "Ingenjör"
     ],
     "references": [],
     "sex": "MAN",
@@ -30558,7 +30558,7 @@ const persons = {
         "year": 1937
       },
       "location": {
-        "city": "Sj\u00f6rup",
+        "city": "Sjörup",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -30594,7 +30594,7 @@ const persons = {
           "year": 1973
         },
         "location": {
-          "city": "Sj\u00f6rup",
+          "city": "Sjörup",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -30604,9 +30604,9 @@ const persons = {
     ],
     "middleNames": [],
     "mother": 586,
-    "notes": "Adress Tord\u00f6nsv\u00e4gen 4 H, 222 27 LUND.\nNormalskolekompetens 1956 i Ystad (M).\nLeg sjuksk\u00f6terska 1960 i Lund (M).\nFr\u00e5n 1966 mottagningssk\u00f6terska p\u00e5 njurkliniken vid Lunds lasarett.\nBor i Lund (M).",
+    "notes": "Adress Tordönsvägen 4 H, 222 27 LUND.\nNormalskolekompetens 1956 i Ystad (M).\nLeg sjuksköterska 1960 i Lund (M).\nFrån 1966 mottagningssköterska på njurkliniken vid Lunds lasarett.\nBor i Lund (M).",
     "occupations": [
-      "Leg sjuksk\u00f6terska"
+      "Leg sjuksköterska"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -30659,7 +30659,7 @@ const persons = {
           "year": 1973
         },
         "location": {
-          "city": "Sj\u00f6rup",
+          "city": "Sjörup",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -30673,7 +30673,7 @@ const persons = {
     "mother": null,
     "notes": "Driver egen firma, ARLO-pack.",
     "occupations": [
-      "Ingenj\u00f6r",
+      "Ingenjör",
       "Fabrikant"
     ],
     "references": [],
@@ -30762,9 +30762,9 @@ const persons = {
       "Lechard"
     ],
     "mother": 586,
-    "notes": "Adress Sp\u00e5rsn\u00f6gatan 19, 226 52 LUND.\nStudentexamen 1965 i Lund (M).\nArbetade \u00e5ren 1973-88 vid intagningsn\u00e4mnden f\u00f6r gymnasieskolan i Lund, Malm\u00f6 och Trelleborg. 1989-91 anst\u00e4lld vid l\u00e4nsskoln\u00e4mnden i Malm\u00f6hus l\u00e4n, Malm\u00f6. Sedan 1992 IT-konsult vid kyrkof\u00f6rvaltningen Lund. Redakt\u00f6r f\u00f6r \"nya sl\u00e4ktkalendern\".\nBor i Lund (M).",
+    "notes": "Adress Spårsnögatan 19, 226 52 LUND.\nStudentexamen 1965 i Lund (M).\nArbetade åren 1973-88 vid intagningsnämnden för gymnasieskolan i Lund, Malmö och Trelleborg. 1989-91 anställd vid länsskolnämnden i Malmöhus län, Malmö. Sedan 1992 IT-konsult vid kyrkoförvaltningen Lund. Redaktör för \"nya släktkalendern\".\nBor i Lund (M).",
     "occupations": [
-      "Byr\u00e5direkt\u00f6r"
+      "Byrådirektör"
     ],
     "references": [],
     "sex": "MAN",
@@ -30781,7 +30781,7 @@ const persons = {
         "year": 1933
       },
       "location": {
-        "city": "Skellefte\u00e5",
+        "city": "Skellefteå",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -30836,7 +30836,7 @@ const persons = {
           "year": 1958
         },
         "location": {
-          "city": "Skellefte\u00e5",
+          "city": "Skellefteå",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -30868,9 +30868,9 @@ const persons = {
       },
       "location": {
         "city": "Toronto",
-        "country": " Canada",
+        "country": "Canada",
         "notes": "",
-        "region": " Ontario",
+        "region": "Ontario",
         "latitude": 43.64869,
         "longitude": -79.38544,
         "fetchStatus": "FETCHED"
@@ -30917,9 +30917,9 @@ const persons = {
       "Lechard"
     ],
     "mother": 594,
-    "notes": "Adress Kakelv\u00e4gen ?, 227 34 LUND.\nCivilingenj\u00f6rsexamen 1984 i Lund (M).\nSedan 1985 anst\u00e4lld vid Statoil Petrokemi i Stenungsund.\nArbetar sedan 1992 vid Tetra Laval AB, Lund.\nBor i Lund (M).",
+    "notes": "Adress Kakelvägen ?, 227 34 LUND.\nCivilingenjörsexamen 1984 i Lund (M).\nSedan 1985 anställd vid Statoil Petrokemi i Stenungsund.\nArbetar sedan 1992 vid Tetra Laval AB, Lund.\nBor i Lund (M).",
     "occupations": [
-      "Civilingenj\u00f6r"
+      "Civilingenjör"
     ],
     "references": [],
     "sex": "MAN",
@@ -30937,9 +30937,9 @@ const persons = {
       },
       "location": {
         "city": "Toronto",
-        "country": " Canada",
+        "country": "Canada",
         "notes": "",
-        "region": " Ontario",
+        "region": "Ontario",
         "latitude": 43.64869,
         "longitude": -79.38544,
         "fetchStatus": "FETCHED"
@@ -30971,7 +30971,7 @@ const persons = {
       "Tekn stud"
     ],
     "references": [],
-    "sex": "UNKNOWN",
+    "sex": "MAN",
     "id": 597
   },
   "598": {
@@ -31005,7 +31005,7 @@ const persons = {
         "year": 2004
       },
       "location": {
-        "city": "Sj\u00f6rup",
+        "city": "Sjörup",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -31039,7 +31039,7 @@ const persons = {
     "mother": 594,
     "notes": "Studentexamen 1985 i Ystad (M).",
     "occupations": [
-      "Konstn\u00e4r"
+      "Konstnär"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -31056,7 +31056,7 @@ const persons = {
         "year": 1937
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -31096,7 +31096,7 @@ const persons = {
           "year": 1965
         },
         "location": {
-          "city": "Malm\u00f6",
+          "city": "Malmö",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -31111,7 +31111,7 @@ const persons = {
     "mother": 619,
     "notes": "",
     "occupations": [
-      "Leg sjuksk\u00f6terska"
+      "Leg sjuksköterska"
     ],
     "references": [],
     "sex": "WOMAN",
@@ -31159,7 +31159,7 @@ const persons = {
       "Lechard"
     ],
     "mother": 604,
-    "notes": "Adress \u00d8 Vallgatan 33, 223 61 LUND.\nStudentexamen 1985 i Lund (M).\nReservofficer 1987.\nBor i Lund (M).",
+    "notes": "Adress Ø Vallgatan 33, 223 61 LUND.\nStudentexamen 1985 i Lund (M).\nReservofficer 1987.\nBor i Lund (M).",
     "occupations": [
       "Studerande"
     ],
@@ -31214,7 +31214,7 @@ const persons = {
       "Sofia"
     ],
     "mother": 604,
-    "notes": "Adress P\u00e4ronv\u00e4gen 19, 232 02 \u00c5KARP.\nStudentexamen i Lund (M).\nBor i \u00c5karp (M).",
+    "notes": "Adress Päronvägen 19, 232 02 ÅKARP.\nStudentexamen i Lund (M).\nBor i Åkarp (M).",
     "occupations": [
       "Kantor"
     ],
@@ -31264,7 +31264,7 @@ const persons = {
       "Emilia"
     ],
     "mother": 604,
-    "notes": "Adress N Skolgatan 18, 211 52 MALM\u00d8.\nBor i \u00c5karp (M).",
+    "notes": "Adress N Skolgatan 18, 211 52 MALMØ.\nBor i Åkarp (M).",
     "occupations": [
       "Studerande"
     ],
@@ -31283,7 +31283,7 @@ const persons = {
         "year": 1945
       },
       "location": {
-        "city": "J\u00f6nk\u00f6ping",
+        "city": "Jönköping",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -31403,7 +31403,7 @@ const persons = {
       "Viktoria"
     ],
     "mother": 624,
-    "notes": "Genomg\u00e5tt 2-\u00e5rig gymnasieutbildning vid Komvux, Lund 1987.\n1988-91 anst\u00e4lld vid Skandia f\u00f6rs\u00e4kringsbolag i Malm\u00f6. 1991 - 2000 anst\u00e4lld vid AB Draco, sedermera Astra Zeneca i Lund.",
+    "notes": "Genomgått 2-årig gymnasieutbildning vid Komvux, Lund 1987.\n1988-91 anställd vid Skandia försäkringsbolag i Malmö. 1991 - 2000 anställd vid AB Draco, sedermera Astra Zeneca i Lund.",
     "occupations": [
       "Sekreterare"
     ],
@@ -31452,7 +31452,7 @@ const persons = {
       "Lechard"
     ],
     "mother": 609,
-    "notes": "Adress Dahlstr\u00f6msgatan 4 D, 414 65 G\u00d8TEBORG.\nBor i G\u00f6teborg (O).",
+    "notes": "Adress Dahlströmsgatan 4 D, 414 65 GØTEBORG.\nBor i Göteborg (O).",
     "occupations": [
       "Studerande"
     ],
@@ -31502,7 +31502,7 @@ const persons = {
       "Lechard"
     ],
     "mother": 610,
-    "notes": "Adress Folkparksv\u00e4gen 5, 227 56 LUND.\nBor i Lund (M).",
+    "notes": "Adress Folkparksvägen 5, 227 56 LUND.\nBor i Lund (M).",
     "occupations": [
       "Studerande"
     ],
@@ -31552,7 +31552,7 @@ const persons = {
       "Lechard"
     ],
     "mother": 610,
-    "notes": "Adress Sp\u00e5rsn\u00f6gatan 19, 226 52 LUND.\nBor.",
+    "notes": "Adress Spårsnögatan 19, 226 52 LUND.\nBor.",
     "occupations": [
       "Studerande"
     ],
@@ -31621,7 +31621,7 @@ const persons = {
         "year": 1714
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -31752,9 +31752,9 @@ const persons = {
     ],
     "middleNames": [],
     "mother": 22,
-    "notes": "(Tab 42:192 i GS).\nSkrivare vid sj\u00f6tullkontoret i Marstrand.\nMaterialskrivare vid 4:e fortifikationsbrigaden 1763-02-22.",
+    "notes": "(Tab 42:192 i GS).\nSkrivare vid sjötullkontoret i Marstrand.\nMaterialskrivare vid 4:e fortifikationsbrigaden 1763-02-22.",
     "occupations": [
-      "Stadskass\u00f6r i marstrand"
+      "Stadskassör i marstrand"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -31771,7 +31771,7 @@ const persons = {
         "year": 1748
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -31962,7 +31962,7 @@ const persons = {
     ],
     "middleNames": [],
     "mother": 22,
-    "notes": "(Tab 42:194 i GS).\nGenom inb\u00f6rdes testamente av 17/1 1802 donerade makarna en summa (som 1901 hade vuxit till 4000 kr) till s\u00e5dana fattiga i Marstrand, vilka icke anlita den allm\u00e4nna fattigv\u00e5rden. Donationen utbetalades efter Katarinas d\u00f6d 1816.",
+    "notes": "(Tab 42:194 i GS).\nGenom inbördes testamente av 17/1 1802 donerade makarna en summa (som 1901 hade vuxit till 4000 kr) till sådana fattiga i Marstrand, vilka icke anlita den allmänna fattigvården. Donationen utbetalades efter Katarinas död 1816.",
     "occupations": [],
     "references": [],
     "sex": "UNKNOWN",
@@ -32036,7 +32036,7 @@ const persons = {
     "mother": null,
     "notes": "",
     "occupations": [
-      "Grosshandlare och r\u00e5dman"
+      "Grosshandlare och rådman"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -32083,7 +32083,7 @@ const persons = {
     "mother": null,
     "notes": "",
     "occupations": [
-      "Ambassad\u00f6r"
+      "Ambassadör"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -32128,7 +32128,7 @@ const persons = {
     "mother": null,
     "notes": "",
     "occupations": [
-      "L\u00e4ns\u00e5klagare"
+      "Länsåklagare"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -32161,7 +32161,7 @@ const persons = {
     "father": null,
     "fileId": "0000000452",
     "firstName": "Sten",
-    "lastName": "Holsg\u00e5rd",
+    "lastName": "Holsgård",
     "marriages": [
       {
         "date": {
@@ -32269,9 +32269,9 @@ const persons = {
       },
       "location": {
         "city": "Bralone",
-        "country": " Canada",
+        "country": "Canada",
         "notes": "",
-        "region": " BC",
+        "region": "BC",
         "latitude": 50.85523,
         "longitude": -122.8359,
         "fetchStatus": "FETCHED"
@@ -32305,9 +32305,9 @@ const persons = {
         },
         "location": {
           "city": "Enderby",
-          "country": " Canada",
+          "country": "Canada",
           "notes": "",
-          "region": " BC"
+          "region": "BC"
         },
         "personId": 246
       }
@@ -32483,7 +32483,7 @@ const persons = {
           "year": 1988
         },
         "location": {
-          "city": "p\u00e5 Moffett Naval Airstation",
+          "city": "på Moffett Naval Airstation",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -32679,8 +32679,8 @@ const persons = {
         "year": 1910
       },
       "location": {
-        "city": "Land\u00f6n",
-        "country": " Fj\u00e4lkinge",
+        "city": "Landön",
+        "country": "Fjälkinge",
         "notes": "",
         "region": "",
         "latitude": 55.97951,
@@ -32708,7 +32708,7 @@ const persons = {
         "year": 2004
       },
       "location": {
-        "city": "\u00c5hus",
+        "city": "Åhus",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -32721,7 +32721,7 @@ const persons = {
     "father": 634,
     "fileId": "0000000461",
     "firstName": "Signe",
-    "lastName": "Borgstr\u00f6m",
+    "lastName": "Borgström",
     "marriages": [
       {
         "date": {
@@ -32745,7 +32745,7 @@ const persons = {
     "mother": 633,
     "notes": "",
     "occupations": [
-      "S\u00f6mmerska"
+      "Sömmerska"
     ],
     "references": [],
     "sex": "WOMAN",
@@ -32762,7 +32762,7 @@ const persons = {
         "year": 1960
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -32804,9 +32804,9 @@ const persons = {
       "Maria"
     ],
     "mother": 114,
-    "notes": "Adress Billdals hagenv\u00e4gen 31, 427 37 BILLDAL.\nStuderat statsvetenskap och informationsteknik vid universitetet i G\u00f6teborg. Egen f\u00f6retagare: Extradata med utbildning inom dataomr\u00e5det.\nBor i G\u00f6teborg (O).",
+    "notes": "Adress Billdals hagenvägen 31, 427 37 BILLDAL.\nStuderat statsvetenskap och informationsteknik vid universitetet i Göteborg. Egen företagare: Extradata med utbildning inom dataområdet.\nBor i Göteborg (O).",
     "occupations": [
-      "Egen f\u00f6retagare"
+      "Egen företagare"
     ],
     "references": [],
     "sex": "WOMAN",
@@ -32823,7 +32823,7 @@ const persons = {
         "year": 1962
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -32862,7 +32862,7 @@ const persons = {
       "Richard"
     ],
     "mother": 114,
-    "notes": "Adress Gamla S\u00e4r\u00f6v\u00e4gen, Pl 6915, 430 41 KULLAVIK.\nBor i G\u00f6teborg (O).",
+    "notes": "Adress Gamla Särövägen, Pl 6915, 430 41 KULLAVIK.\nBor i Göteborg (O).",
     "occupations": [
       "Ekon stud och jur stud"
     ],
@@ -32908,7 +32908,7 @@ const persons = {
     "father": null,
     "fileId": "0000000464",
     "firstName": "Lars",
-    "lastName": "Elfstr\u00f6m",
+    "lastName": "Elfström",
     "marriages": [
       {
         "date": {
@@ -32964,7 +32964,7 @@ const persons = {
     ],
     "middleNames": [],
     "mother": null,
-    "notes": "Oforskat Fullst\u00e4ndiga uppgifter (sid 1).\nOforskat Fullst\u00e4ndiga uppgifter om f\u00f6r\u00e4ldrar (sid 4).",
+    "notes": "Oforskat Fullständiga uppgifter (sid 1).\nOforskat Fullständiga uppgifter om föräldrar (sid 4).",
     "occupations": [],
     "references": [],
     "sex": "WOMAN",
@@ -32981,7 +32981,7 @@ const persons = {
         "year": 1902
       },
       "location": {
-        "city": "V\u00e4stervik",
+        "city": "Västervik",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -33008,7 +33008,7 @@ const persons = {
     "father": 644,
     "fileId": "0000000466",
     "firstName": "Berta",
-    "lastName": "Gr\u00f6nlund",
+    "lastName": "Grönlund",
     "marriages": [
       {
         "date": {
@@ -33061,7 +33061,7 @@ const persons = {
     "father": null,
     "fileId": "0000000467",
     "firstName": "Paul",
-    "lastName": "Wahll\u00f6f",
+    "lastName": "Wahllöf",
     "marriages": [
       {
         "date": null,
@@ -33155,7 +33155,7 @@ const persons = {
     "mother": null,
     "notes": "",
     "occupations": [
-      "Biskop i g\u00f6teborg"
+      "Biskop i göteborg"
     ],
     "references": [],
     "sex": "MAN",
@@ -33423,7 +33423,7 @@ const persons = {
     "mother": 648,
     "notes": "",
     "occupations": [
-      "Vice h\u00e4radsh\u00f6vding"
+      "Vice häradshövding"
     ],
     "references": [],
     "sex": "MAN",
@@ -33545,7 +33545,7 @@ const persons = {
     "mother": null,
     "notes": "",
     "occupations": [
-      "Folkskolinspekt\u00f6r"
+      "Folkskolinspektör"
     ],
     "references": [],
     "sex": "MAN",
@@ -33573,7 +33573,7 @@ const persons = {
     "father": null,
     "fileId": "0000000478",
     "firstName": "Elna",
-    "lastName": "\u00c5slander",
+    "lastName": "Åslander",
     "marriages": [
       {
         "date": null,
@@ -33620,7 +33620,7 @@ const persons = {
         "year": 1965
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -33682,7 +33682,7 @@ const persons = {
         "year": 1985
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -33813,7 +33813,7 @@ const persons = {
     "father": null,
     "fileId": "0000000483",
     "firstName": "Beata",
-    "lastName": "L\u00f6nn",
+    "lastName": "Lönn",
     "marriages": [
       {
         "date": null,
@@ -33897,7 +33897,7 @@ const persons = {
     "father": null,
     "fileId": "0000000485",
     "firstName": "Maria",
-    "lastName": "\u00d8rtengren",
+    "lastName": "Ørtengren",
     "marriages": [
       {
         "date": null,
@@ -33979,7 +33979,7 @@ const persons = {
     "father": null,
     "fileId": "0000000487",
     "firstName": "Maria",
-    "lastName": "R\u00f6hl",
+    "lastName": "Röhl",
     "marriages": [
       {
         "date": null,
@@ -34019,7 +34019,7 @@ const persons = {
     "father": null,
     "fileId": "0000000488",
     "firstName": "Sven",
-    "lastName": "Kihl\u00e9n",
+    "lastName": "Kihlén",
     "marriages": [
       {
         "date": null,
@@ -34031,7 +34031,7 @@ const persons = {
     "mother": null,
     "notes": "",
     "occupations": [
-      "Ekonomidirekt\u00f6r"
+      "Ekonomidirektör"
     ],
     "references": [],
     "sex": "MAN",
@@ -34109,7 +34109,7 @@ const persons = {
     "mother": null,
     "notes": "",
     "occupations": [
-      "Postm\u00e4stare"
+      "Postmästare"
     ],
     "references": [],
     "sex": "MAN",
@@ -34191,7 +34191,7 @@ const persons = {
     "mother": null,
     "notes": "",
     "occupations": [
-      "Redakt\u00f6r"
+      "Redaktör"
     ],
     "references": [],
     "sex": "MAN",
@@ -34233,7 +34233,7 @@ const persons = {
     "mother": null,
     "notes": "",
     "occupations": [
-      "Kostn\u00e4rinna"
+      "Kostnärinna"
     ],
     "references": [],
     "sex": "WOMAN",
@@ -34261,7 +34261,7 @@ const persons = {
     "father": null,
     "fileId": "0000000494",
     "firstName": "Victor",
-    "lastName": "Sj\u00f6qvist",
+    "lastName": "Sjöqvist",
     "marriages": [
       {
         "date": null,
@@ -34273,7 +34273,7 @@ const persons = {
     "mother": null,
     "notes": "",
     "occupations": [
-      "K\u00f6pman"
+      "Köpman"
     ],
     "references": [],
     "sex": "MAN",
@@ -34301,7 +34301,7 @@ const persons = {
     "father": null,
     "fileId": "0000000495",
     "firstName": "Selma",
-    "lastName": "T\u00e4rnlund",
+    "lastName": "Tärnlund",
     "marriages": [
       {
         "date": null,
@@ -34353,7 +34353,7 @@ const persons = {
     "mother": null,
     "notes": "",
     "occupations": [
-      "Sj\u00f6kapten"
+      "Sjökapten"
     ],
     "references": [],
     "sex": "MAN",
@@ -34381,7 +34381,7 @@ const persons = {
     "father": null,
     "fileId": "0000000497",
     "firstName": "Maria",
-    "lastName": "Engstr\u00f6m",
+    "lastName": "Engström",
     "marriages": [
       {
         "date": null,
@@ -34433,7 +34433,7 @@ const persons = {
     "mother": null,
     "notes": "",
     "occupations": [
-      "Ingenj\u00f6r"
+      "Ingenjör"
     ],
     "references": [],
     "sex": "MAN",
@@ -34461,7 +34461,7 @@ const persons = {
     "father": null,
     "fileId": "0000000499",
     "firstName": "Blenda",
-    "lastName": "S\u00e4fstr\u00f6m",
+    "lastName": "Säfström",
     "marriages": [
       {
         "date": null,
@@ -34578,7 +34578,7 @@ const persons = {
     },
     "father": null,
     "fileId": "0000000502",
-    "firstName": "J\u00f6ns",
+    "firstName": "Jöns",
     "lastName": "Berggren",
     "marriages": [
       {
@@ -34619,7 +34619,7 @@ const persons = {
     "father": null,
     "fileId": "0000000503",
     "firstName": "Kristina",
-    "lastName": "Kn\u00f6ppel",
+    "lastName": "Knöppel",
     "marriages": [
       {
         "date": null,
@@ -34749,7 +34749,7 @@ const persons = {
     "mother": null,
     "notes": "",
     "occupations": [
-      "Hus\u00e4gare"
+      "Husägare"
     ],
     "references": [],
     "sex": "MAN",
@@ -34829,7 +34829,7 @@ const persons = {
     "mother": null,
     "notes": "",
     "occupations": [
-      "Lokomotivf\u00f6rare"
+      "Lokomotivförare"
     ],
     "references": [],
     "sex": "MAN",
@@ -35128,7 +35128,7 @@ const persons = {
         "year": 1917
       },
       "location": {
-        "city": "p\u00e5 B\u00e4ckaskog i Kristianstad ",
+        "city": "på Bäckaskog i Kristianstad",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -35169,7 +35169,7 @@ const persons = {
     "mother": null,
     "notes": "",
     "occupations": [
-      "Direkt\u00f6r"
+      "Direktör"
     ],
     "references": [],
     "sex": "MAN",
@@ -35186,8 +35186,8 @@ const persons = {
         "year": 1915
       },
       "location": {
-        "city": "p\u00e5 Skabersj\u00f6 i Skabersj\u00f6",
-        "country": " Skabersj\u00f6 ",
+        "city": "på Skabersjö i Skabersjö",
+        "country": "Skabersjö",
         "notes": "",
         "region": "",
         "latitude": 55.54579,
@@ -35429,7 +35429,7 @@ const persons = {
     "mother": null,
     "notes": "",
     "occupations": [
-      "Hemmans\u00e4gare"
+      "Hemmansägare"
     ],
     "references": [],
     "sex": "MAN",
@@ -35497,7 +35497,7 @@ const persons = {
     "father": null,
     "fileId": "0000000524",
     "firstName": "Emil",
-    "lastName": "Gr\u00f6nlund",
+    "lastName": "Grönlund",
     "marriages": [
       {
         "date": null,
@@ -35667,7 +35667,7 @@ const persons = {
     "mother": null,
     "notes": "",
     "occupations": [
-      "Grosshandlare och h\u00e4radsh\u00f6vding"
+      "Grosshandlare och häradshövding"
     ],
     "references": [],
     "sex": "MAN",
@@ -35735,7 +35735,7 @@ const persons = {
     "father": null,
     "fileId": "0000000530",
     "firstName": "Johan",
-    "lastName": "Carlstr\u00f6m",
+    "lastName": "Carlström",
     "marriages": [
       {
         "date": null,
@@ -36125,7 +36125,7 @@ const persons = {
     "father": null,
     "fileId": "0000000538",
     "firstName": "Hans",
-    "lastName": "Gj\u00e6dda",
+    "lastName": "Gjædda",
     "marriages": [
       {
         "date": null,
@@ -36165,7 +36165,7 @@ const persons = {
     "father": null,
     "fileId": "0000000539",
     "firstName": "Gunilla",
-    "lastName": "\u00d8hrwall",
+    "lastName": "Øhrwall",
     "marriages": [
       {
         "date": null,
@@ -36218,7 +36218,7 @@ const persons = {
       "von"
     ],
     "mother": null,
-    "notes": "Adliga \u00e4tten nr 2244.",
+    "notes": "Adliga ätten nr 2244.",
     "occupations": [
       "Major"
     ],
@@ -36288,7 +36288,7 @@ const persons = {
     },
     "father": null,
     "fileId": "0000000542",
-    "firstName": "J\u00f6ns",
+    "firstName": "Jöns",
     "lastName": "Jeanson",
     "marriages": [
       {
@@ -36329,7 +36329,7 @@ const persons = {
     "father": null,
     "fileId": "0000000543",
     "firstName": "Karolina",
-    "lastName": "Gyllensv\u00e4rd",
+    "lastName": "Gyllensvärd",
     "marriages": [
       {
         "date": null,
@@ -36369,7 +36369,7 @@ const persons = {
     "father": null,
     "fileId": "0000000544",
     "firstName": "Albert",
-    "lastName": "L\u00f6nnroth",
+    "lastName": "Lönnroth",
     "marriages": [
       {
         "date": null,
@@ -36466,7 +36466,7 @@ const persons = {
     "mother": null,
     "notes": "",
     "occupations": [
-      "K\u00f6pman"
+      "Köpman"
     ],
     "references": [],
     "sex": "MAN",
@@ -36525,7 +36525,7 @@ const persons = {
       },
       "location": {
         "city": "Vitoria",
-        "country": " Spanien",
+        "country": "Spanien",
         "notes": "",
         "region": "",
         "latitude": 42.84227,
@@ -36553,7 +36553,7 @@ const persons = {
       },
       "location": {
         "city": "Zaragosa",
-        "country": " Spanien",
+        "country": "Spanien",
         "notes": "",
         "region": "",
         "latitude": 41.65183,
@@ -36595,7 +36595,7 @@ const persons = {
       },
       "location": {
         "city": "Yurre",
-        "country": " Spanien",
+        "country": "Spanien",
         "notes": "",
         "region": "",
         "latitude": 42.87695,
@@ -36651,7 +36651,7 @@ const persons = {
       },
       "location": {
         "city": "Corella",
-        "country": " Spanien",
+        "country": "Spanien",
         "notes": "",
         "region": "",
         "latitude": 42.11506,
@@ -36715,7 +36715,7 @@ const persons = {
       },
       "location": {
         "city": "Cadreita",
-        "country": " Spanien",
+        "country": "Spanien",
         "notes": "",
         "region": "",
         "latitude": 42.21715,
@@ -36872,7 +36872,7 @@ const persons = {
     "mother": null,
     "notes": "",
     "occupations": [
-      "Gods\u00e4gare"
+      "Godsägare"
     ],
     "references": [],
     "sex": "MAN",
@@ -36938,7 +36938,7 @@ const persons = {
     "father": null,
     "fileId": "0000000556",
     "firstName": "August",
-    "lastName": "Bl\u00fccher",
+    "lastName": "Blücher",
     "marriages": [
       {
         "date": null,
@@ -36950,7 +36950,7 @@ const persons = {
     "mother": null,
     "notes": "",
     "occupations": [
-      "Ingenj\u00f6r"
+      "Ingenjör"
     ],
     "references": [],
     "sex": "MAN",
@@ -37033,7 +37033,7 @@ const persons = {
     "mother": null,
     "notes": "",
     "occupations": [
-      "Dom\u00e4nintendent"
+      "Domänintendent"
     ],
     "references": [],
     "sex": "MAN",
@@ -37084,7 +37084,7 @@ const persons = {
       "date": null,
       "location": {
         "city": "Gammalstorp",
-        "country": " Tibro",
+        "country": "Tibro",
         "notes": "",
         "region": "",
         "latitude": 56.10386,
@@ -37108,8 +37108,8 @@ const persons = {
     },
     "father": null,
     "fileId": "0000000560",
-    "firstName": "H\u00e5kan",
-    "lastName": "J\u00f6nsson",
+    "firstName": "Håkan",
+    "lastName": "Jönsson",
     "marriages": [
       {
         "date": null,
@@ -37119,7 +37119,7 @@ const persons = {
     ],
     "middleNames": [],
     "mother": null,
-    "notes": "Tog namnet Wendler.\nBrukade g\u00e5rden S\u00f6ran, sedermera aff\u00e4rsman i Halmstad.",
+    "notes": "Tog namnet Wendler.\nBrukade gården Söran, sedermera affärsman i Halmstad.",
     "occupations": [],
     "references": [],
     "sex": "MAN",
@@ -37296,7 +37296,7 @@ const persons = {
     "mother": null,
     "notes": "",
     "occupations": [
-      "Ink\u00f6pschef"
+      "Inköpschef"
     ],
     "references": [],
     "sex": "MAN",
@@ -37394,7 +37394,7 @@ const persons = {
     "mother": null,
     "notes": "",
     "occupations": [
-      "Gods\u00e4gare"
+      "Godsägare"
     ],
     "references": [],
     "sex": "MAN",
@@ -37462,7 +37462,7 @@ const persons = {
     "father": null,
     "fileId": "0000000568",
     "firstName": "Johan",
-    "lastName": "Bj\u00f6rnstr\u00f6m",
+    "lastName": "Björnström",
     "marriages": [
       {
         "date": null,
@@ -37594,7 +37594,7 @@ const persons = {
         "year": 1874
       },
       "location": {
-        "city": "Esl\u00f6v",
+        "city": "Eslöv",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -37698,7 +37698,7 @@ const persons = {
     "father": null,
     "fileId": "0000000573",
     "firstName": "Ingrid",
-    "lastName": "S\u00f6derbaum",
+    "lastName": "Söderbaum",
     "marriages": [
       {
         "date": null,
@@ -37974,7 +37974,7 @@ const persons = {
     "father": null,
     "fileId": "0000000580",
     "firstName": "Kurt",
-    "lastName": "L\u00f6bbeke",
+    "lastName": "Löbbeke",
     "marriages": [
       {
         "date": null,
@@ -38066,7 +38066,7 @@ const persons = {
     "mother": 376,
     "notes": "",
     "occupations": [
-      "Gods\u00e4gare"
+      "Godsägare"
     ],
     "references": [],
     "sex": "MAN",
@@ -38148,7 +38148,7 @@ const persons = {
     "mother": null,
     "notes": "",
     "occupations": [
-      "Gods\u00e4gare"
+      "Godsägare"
     ],
     "references": [],
     "sex": "MAN",
@@ -38228,7 +38228,7 @@ const persons = {
     "mother": null,
     "notes": "",
     "occupations": [
-      "Tullf\u00f6rvaltare"
+      "Tullförvaltare"
     ],
     "references": [],
     "sex": "MAN",
@@ -38412,7 +38412,7 @@ const persons = {
     "mother": null,
     "notes": "",
     "occupations": [
-      "Grosshandlare och r\u00e5dman"
+      "Grosshandlare och rådman"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -38455,7 +38455,7 @@ const persons = {
     "father": 664,
     "fileId": "0000000590",
     "firstName": "Karin",
-    "lastName": "Bj\u00f6rkman",
+    "lastName": "Björkman",
     "marriages": [
       {
         "date": {
@@ -38481,7 +38481,7 @@ const persons = {
     "mother": 663,
     "notes": "",
     "occupations": [
-      "F\u00f6rlagsredakt\u00f6r"
+      "Förlagsredaktör"
     ],
     "references": [],
     "sex": "WOMAN",
@@ -38508,8 +38508,8 @@ const persons = {
     },
     "father": null,
     "fileId": "0000000591",
-    "firstName": "F\u00f6rnamn",
-    "lastName": "Bj\u00f6rkman",
+    "firstName": "Förnamn",
+    "lastName": "Björkman",
     "marriages": [
       {
         "date": null,
@@ -38546,7 +38546,7 @@ const persons = {
     },
     "father": null,
     "fileId": "0000000592",
-    "firstName": "F\u00f6rnamn",
+    "firstName": "Förnamn",
     "lastName": "Efternamn",
     "marriages": [
       {
@@ -38575,9 +38575,9 @@ const persons = {
       },
       "location": {
         "city": "Vellejo",
-        "country": " USA",
+        "country": "USA",
         "notes": "",
-        "region": " Californien",
+        "region": "Californien",
         "latitude": 32.8414,
         "longitude": -116.96588,
         "fetchStatus": "FETCHED"
@@ -38652,7 +38652,7 @@ const persons = {
         "year": 1863
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -38772,7 +38772,7 @@ const persons = {
         "year": 1703
       },
       "location": null,
-      "notes": "F\u00f6dd omkring 1703."
+      "notes": "Född omkring 1703."
     },
     "burial": {
       "date": null,
@@ -38835,7 +38835,7 @@ const persons = {
         "year": 1690
       },
       "location": null,
-      "notes": "F\u00f6dd omkring 1690."
+      "notes": "Född omkring 1690."
     },
     "burial": {
       "date": null,
@@ -38890,7 +38890,7 @@ const persons = {
     "mother": null,
     "notes": "",
     "occupations": [
-      "Bagarm\u00e4stare"
+      "Bagarmästare"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -39163,7 +39163,7 @@ const persons = {
           "year": 1992
         },
         "location": {
-          "city": "ombord p\u00e5 S/Y Gita II",
+          "city": "ombord på S/Y Gita II",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -39175,7 +39175,7 @@ const persons = {
       "Vivianne"
     ],
     "mother": null,
-    "notes": "Adress Fredrika Wallis v\u00e4g 11, 274 56 ABBEK\u00c5S.\nOforskat Fullst\u00e4ndiga uppgifter om f\u00f6r\u00e4ldrar (sid 4).\nTransportekonomisk examen vid H\u00f6gskolan i V\u00e4xj\u00f6 1984 i V\u00e4xj\u00f6 (G).",
+    "notes": "Adress Fredrika Wallis väg 11, 274 56 ABBEKÅS.\nOforskat Fullständiga uppgifter om föräldrar (sid 4).\nTransportekonomisk examen vid Högskolan i Växjö 1984 i Växjö (G).",
     "occupations": [
       "Skeppningschef"
     ],
@@ -39195,7 +39195,7 @@ const persons = {
       },
       "location": {
         "city": "Geneve",
-        "country": " Schweiz",
+        "country": "Schweiz",
         "notes": "",
         "region": "",
         "latitude": 46.20833,
@@ -39341,7 +39341,7 @@ const persons = {
     "father": 461,
     "fileId": "0000000606",
     "firstName": "Mats",
-    "lastName": "Gr\u00e4slund",
+    "lastName": "Gräslund",
     "marriages": [],
     "middleNames": [
       "Peter"
@@ -39382,7 +39382,7 @@ const persons = {
     "father": 461,
     "fileId": "0000000607",
     "firstName": "Bo",
-    "lastName": "Gr\u00e4slund",
+    "lastName": "Gräslund",
     "marriages": [],
     "middleNames": [
       "Albert"
@@ -39423,7 +39423,7 @@ const persons = {
     "father": 461,
     "fileId": "0000000608",
     "firstName": "Anna",
-    "lastName": "Gr\u00e4slund",
+    "lastName": "Gräslund",
     "marriages": [
       {
         "date": null,
@@ -39461,7 +39461,7 @@ const persons = {
     "father": null,
     "fileId": "0000000609",
     "firstName": "Lars",
-    "lastName": "Halld\u00e9n",
+    "lastName": "Halldén",
     "marriages": [
       {
         "date": null,
@@ -39501,7 +39501,7 @@ const persons = {
     "father": null,
     "fileId": "0000000610",
     "firstName": "Albert",
-    "lastName": "Gr\u00e4slund",
+    "lastName": "Gräslund",
     "marriages": [
       {
         "date": null,
@@ -39707,7 +39707,7 @@ const persons = {
     "father": null,
     "fileId": "0000000615",
     "firstName": "Sofia",
-    "lastName": "Lilliestr\u00e5hle",
+    "lastName": "Lilliestråhle",
     "marriages": [
       {
         "date": null,
@@ -39737,7 +39737,7 @@ const persons = {
         "year": 1938
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -39778,8 +39778,8 @@ const persons = {
           "year": 1962
         },
         "location": {
-          "city": "K\u00f6penhamn",
-          "country": " Danmark",
+          "city": "Köpenhamn",
+          "country": "Danmark",
           "notes": "",
           "region": ""
         },
@@ -39790,7 +39790,7 @@ const persons = {
       "Margareta"
     ],
     "mother": 419,
-    "notes": "Student 1957 i Kristianstad (L).\nSekreterarutbildning i G\u00f6teborg (O).\nEtt \u00e5r p\u00e5 Irland =195-9=-.\nArbetade d\u00e4refter p\u00e5 universitetet i Lund fram till gifterm\u00e5let.",
+    "notes": "Student 1957 i Kristianstad (L).\nSekreterarutbildning i Göteborg (O).\nEtt år på Irland =195-9=-.\nArbetade därefter på universitetet i Lund fram till giftermålet.",
     "occupations": [
       "Sekreterare"
     ],
@@ -39838,7 +39838,7 @@ const persons = {
     "father": null,
     "fileId": "0000000617",
     "firstName": "Bengt",
-    "lastName": "Th\u00f6rn",
+    "lastName": "Thörn",
     "marriages": [
       {
         "date": {
@@ -39850,8 +39850,8 @@ const persons = {
           "year": 1962
         },
         "location": {
-          "city": "K\u00f6penhamn",
-          "country": " Danmark",
+          "city": "Köpenhamn",
+          "country": "Danmark",
           "notes": "",
           "region": ""
         },
@@ -39859,12 +39859,12 @@ const persons = {
       }
     ],
     "middleNames": [
-      "\u00c5ke"
+      "Åke"
     ],
     "mother": null,
-    "notes": "Student 1957 i Kristianstad (L).\nOfficersutbildning. Verksam vid pansartrupperna i H\u00e4ssleholm.",
+    "notes": "Student 1957 i Kristianstad (L).\nOfficersutbildning. Verksam vid pansartrupperna i Hässleholm.",
     "occupations": [
-      "\u00d8verste"
+      "Øverste"
     ],
     "references": [],
     "sex": "MAN",
@@ -39897,7 +39897,7 @@ const persons = {
     "father": 670,
     "fileId": "0000000618",
     "firstName": "Staffan",
-    "lastName": "Th\u00f6rn",
+    "lastName": "Thörn",
     "marriages": [],
     "middleNames": [],
     "mother": 474,
@@ -39934,7 +39934,7 @@ const persons = {
     "father": 670,
     "fileId": "0000000619",
     "firstName": "Christer",
-    "lastName": "Th\u00f6rn",
+    "lastName": "Thörn",
     "marriages": [],
     "middleNames": [],
     "mother": 474,
@@ -39971,7 +39971,7 @@ const persons = {
     "father": 670,
     "fileId": "0000000620",
     "firstName": "Pontus",
-    "lastName": "Th\u00f6rn",
+    "lastName": "Thörn",
     "marriages": [],
     "middleNames": [],
     "mother": 474,
@@ -40008,7 +40008,7 @@ const persons = {
     "father": 670,
     "fileId": "0000000621",
     "firstName": "Olof",
-    "lastName": "Th\u00f6rn",
+    "lastName": "Thörn",
     "marriages": [],
     "middleNames": [],
     "mother": 474,
@@ -40029,7 +40029,7 @@ const persons = {
         "year": 1942
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -40067,8 +40067,8 @@ const persons = {
           "year": 1971
         },
         "location": {
-          "city": "B\u00e4ckaskog",
-          "country": " B\u00e4ckaskog",
+          "city": "Bäckaskog",
+          "country": "Bäckaskog",
           "notes": "",
           "region": ""
         },
@@ -40079,9 +40079,9 @@ const persons = {
       "Ulrika"
     ],
     "mother": 419,
-    "notes": "Skild 1985 .\nStudentexamen 1961 .\nSjuksk\u00f6terskeexamen 1965 .\nV\u00e5rdl\u00e4rarexamen 1970 .\nFil kand 1989 .\nAnst\u00e4lld som h\u00f6gskolel\u00e4rare vid v\u00e5rdh\u00f6gskolan i Malm\u00f6 sedan =197-1=-.",
+    "notes": "Skild 1985 .\nStudentexamen 1961 .\nSjuksköterskeexamen 1965 .\nVårdlärarexamen 1970 .\nFil kand 1989 .\nAnställd som högskolelärare vid vårdhögskolan i Malmö sedan =197-1=-.",
     "occupations": [
-      "V\u00e5rdh\u00f6gskolel\u00e4rare"
+      "Vårdhögskolelärare"
     ],
     "references": [],
     "sex": "WOMAN",
@@ -40098,7 +40098,7 @@ const persons = {
         "year": 1942
       },
       "location": {
-        "city": "H\u00f6rby",
+        "city": "Hörby",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -40136,8 +40136,8 @@ const persons = {
           "year": 1971
         },
         "location": {
-          "city": "B\u00e4ckaskog",
-          "country": " B\u00e4ckaskog",
+          "city": "Bäckaskog",
+          "country": "Bäckaskog",
           "notes": "",
           "region": ""
         },
@@ -40204,7 +40204,7 @@ const persons = {
         "year": 1946
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -40252,7 +40252,7 @@ const persons = {
       "Bastiat"
     ],
     "mother": 419,
-    "notes": "Studentexamen 1965 .\nUniversitetsstudier i internationell ekonomi vid London school of economics. Anst\u00e4lld vid institutet f\u00f6r ekonomi vid Stockholms universitet.\nRiksdagsledamot f\u00f6r Folkpartiet fr\u00e5n 1991.\nProfessor vid centrum f\u00f6r Stilla havs- och Asienstudier 1992.",
+    "notes": "Studentexamen 1965 .\nUniversitetsstudier i internationell ekonomi vid London school of economics. Anställd vid institutet för ekonomi vid Stockholms universitet.\nRiksdagsledamot för Folkpartiet från 1991.\nProfessor vid centrum för Stilla havs- och Asienstudier 1992.",
     "occupations": [
       "Professor"
     ],
@@ -40299,7 +40299,7 @@ const persons = {
     "father": null,
     "fileId": "0000000626",
     "firstName": "Lena",
-    "lastName": "Sj\u00f6str\u00f6m",
+    "lastName": "Sjöström",
     "marriages": [
       {
         "date": {
@@ -40318,9 +40318,9 @@ const persons = {
       "Margareta"
     ],
     "mother": null,
-    "notes": "Studentexamen 1964 .\nVerksam som skolsk\u00f6terska vid internationella skolan i Stockholm.",
+    "notes": "Studentexamen 1964 .\nVerksam som skolsköterska vid internationella skolan i Stockholm.",
     "occupations": [
-      "Leg sjuksk\u00f6terska"
+      "Leg sjuksköterska"
     ],
     "references": [],
     "sex": "WOMAN",
@@ -40490,7 +40490,7 @@ const persons = {
       "Caroline"
     ],
     "mother": 681,
-    "notes": "Studentexamen 1986 i Simrishamn (L).\nCivilingenj\u00f6rsexamen 1992 i Lund (M).",
+    "notes": "Studentexamen 1986 i Simrishamn (L).\nCivilingenjörsexamen 1992 i Lund (M).",
     "occupations": [],
     "references": [],
     "sex": "WOMAN",
@@ -40508,7 +40508,7 @@ const persons = {
       },
       "location": {
         "city": "Lesa",
-        "country": " Italien",
+        "country": "Italien",
         "notes": "",
         "region": "",
         "latitude": 45.83189,
@@ -40576,7 +40576,7 @@ const persons = {
     "father": null,
     "fileId": "0000000632",
     "firstName": "Birgitta",
-    "lastName": "T\u00e4gstr\u00f6m",
+    "lastName": "Tägström",
     "marriages": [],
     "middleNames": [
       "Maria"
@@ -40600,7 +40600,7 @@ const persons = {
       },
       "location": {
         "city": "Lesa",
-        "country": " Italien",
+        "country": "Italien",
         "notes": "",
         "region": "",
         "latitude": 45.83189,
@@ -40678,7 +40678,7 @@ const persons = {
     "father": null,
     "fileId": "0000000634",
     "firstName": "Birgitta",
-    "lastName": "T\u00e4gstr\u00f6m",
+    "lastName": "Tägström",
     "marriages": [
       {
         "date": null,
@@ -40708,9 +40708,9 @@ const persons = {
       },
       "location": {
         "city": "Dearfield",
-        "country": " USA",
+        "country": "USA",
         "notes": "",
-        "region": " Illinois",
+        "region": "Illinois",
         "latitude": 41.32679,
         "longitude": -88.3046,
         "fetchStatus": "FETCHED"
@@ -40740,7 +40740,7 @@ const persons = {
     "notes": "",
     "occupations": [],
     "references": [],
-    "sex": "UNKNOWN",
+    "sex": "MAN",
     "id": 618
   },
   "532": {
@@ -40755,9 +40755,9 @@ const persons = {
       },
       "location": {
         "city": "Berkeley",
-        "country": " USA",
+        "country": "USA",
         "notes": "",
-        "region": " Californien",
+        "region": "Californien",
         "latitude": 37.86988,
         "longitude": -122.27054,
         "fetchStatus": "FETCHED"
@@ -40796,9 +40796,9 @@ const persons = {
         },
         "location": {
           "city": "Kansas City",
-          "country": " USA",
+          "country": "USA",
           "notes": "",
-          "region": " Kansas"
+          "region": "Kansas"
         },
         "personId": 685
       }
@@ -40807,7 +40807,7 @@ const persons = {
       "Dale"
     ],
     "mother": 509,
-    "notes": "Studerat vid universitet i Kansas.\nFram till 1993 anst\u00e4lld vid Amaco Oil, Denver. D\u00e4refter vid samma f\u00f6retag i Houston.",
+    "notes": "Studerat vid universitet i Kansas.\nFram till 1993 anställd vid Amaco Oil, Denver. Därefter vid samma företag i Houston.",
     "occupations": [],
     "references": [],
     "sex": "MAN",
@@ -40858,9 +40858,9 @@ const persons = {
         },
         "location": {
           "city": "Kansas City",
-          "country": " USA",
+          "country": "USA",
           "notes": "",
-          "region": " Kansas"
+          "region": "Kansas"
         },
         "personId": 532
       }
@@ -41033,9 +41033,9 @@ const persons = {
       },
       "location": {
         "city": "Berkeley",
-        "country": " USA",
+        "country": "USA",
         "notes": "",
-        "region": " Californien",
+        "region": "Californien",
         "latitude": 37.86988,
         "longitude": -122.27054,
         "fetchStatus": "FETCHED"
@@ -41097,9 +41097,9 @@ const persons = {
       },
       "location": {
         "city": "Middletown",
-        "country": " USA",
+        "country": "USA",
         "notes": "",
-        "region": " Ohio",
+        "region": "Ohio",
         "latitude": 39.51163,
         "longitude": -84.40286,
         "fetchStatus": "FETCHED"
@@ -41199,9 +41199,9 @@ const persons = {
       },
       "location": {
         "city": "Great Falls",
-        "country": " USA",
+        "country": "USA",
         "notes": "",
-        "region": " Montana",
+        "region": "Montana",
         "latitude": 47.50739,
         "longitude": -111.30597,
         "fetchStatus": "FETCHED"
@@ -41261,9 +41261,9 @@ const persons = {
       },
       "location": {
         "city": "Salt lake City",
-        "country": " USA",
+        "country": "USA",
         "notes": "",
-        "region": " Utah",
+        "region": "Utah",
         "latitude": 40.76031,
         "longitude": -111.88822,
         "fetchStatus": "FETCHED"
@@ -41318,7 +41318,7 @@ const persons = {
         "year": 1905
       },
       "location": {
-        "city": "K\u00e4ring\u00f6n",
+        "city": "Käringön",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -41439,7 +41439,7 @@ const persons = {
         "year": 1758
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -41488,7 +41488,7 @@ const persons = {
         "year": 1712
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -41531,7 +41531,7 @@ const persons = {
     "marriages": [],
     "middleNames": [],
     "mother": 697,
-    "notes": "(Tab 43:196 i GS).\nD\u00f6pt 1712-07-29 i Malm\u00f6 (M).\nStudent 1728 i Lund (M).",
+    "notes": "(Tab 43:196 i GS).\nDöpt 1712-07-29 i Malmö (M).\nStudent 1728 i Lund (M).",
     "occupations": [
       "Registrator"
     ],
@@ -41550,7 +41550,7 @@ const persons = {
         "year": 1713
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -41610,7 +41610,7 @@ const persons = {
           "year": 1750
         },
         "location": {
-          "city": "G\u00e4vle",
+          "city": "Gävle",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -41620,9 +41620,9 @@ const persons = {
     ],
     "middleNames": [],
     "mother": 697,
-    "notes": "(Tab 44 i GS).\nKyrkof\u00f6rest\u00e5ndare i Caroli f\u00f6rsamling fr\u00e5n 1763 till 1767, d\u00e5 han flyttade till Stockholm. Riksdagsman i borgarst\u00e5ndet f\u00f6r Malm\u00f6 1761-62.",
+    "notes": "(Tab 44 i GS).\nKyrkoföreståndare i Caroli församling från 1763 till 1767, då han flyttade till Stockholm. Riksdagsman i borgarståndet för Malmö 1761-62.",
     "occupations": [
-      "Handlande och fabrik\u00f6r i malm\u00f6"
+      "Handlande och fabrikör i malmö"
     ],
     "references": [],
     "sex": "MAN",
@@ -41639,7 +41639,7 @@ const persons = {
         "year": 1715
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -41671,7 +41671,7 @@ const persons = {
         "year": 1772
       },
       "location": {
-        "city": "G\u00e4vle",
+        "city": "Gävle",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -41696,7 +41696,7 @@ const persons = {
           "year": 1747
         },
         "location": {
-          "city": "G\u00e4vle",
+          "city": "Gävle",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -41713,7 +41713,7 @@ const persons = {
           "year": 1760
         },
         "location": {
-          "city": "G\u00e4vle",
+          "city": "Gävle",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -41723,9 +41723,9 @@ const persons = {
     ],
     "middleNames": [],
     "mother": 697,
-    "notes": "(Tab 58 i GS).\nStudent i Lund 1731-42 och i Uppsala 1741-44.\nMed dr 1744 i Uppsala (C).\nPraktiserande l\u00e4kare f\u00f6rst i Stockholm, sedan i Uddevalla och slutligen i G\u00e4vle fr\u00e5n 1754 till sin d\u00f6d 1772.",
+    "notes": "(Tab 58 i GS).\nStudent i Lund 1731-42 och i Uppsala 1741-44.\nMed dr 1744 i Uppsala (C).\nPraktiserande läkare först i Stockholm, sedan i Uddevalla och slutligen i Gävle från 1754 till sin död 1772.",
     "occupations": [
-      "Stadsl\u00e4kare i g\u00e4vle"
+      "Stadsläkare i gävle"
     ],
     "references": [],
     "sex": "MAN",
@@ -41742,7 +41742,7 @@ const persons = {
         "year": 1717
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -41804,7 +41804,7 @@ const persons = {
         "year": 1718
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -41847,7 +41847,7 @@ const persons = {
     "marriages": [],
     "middleNames": [],
     "mother": 697,
-    "notes": "(Tab 43:263 i GS).\nStudent i Lund 1731. F\u00e4ltnotarie 1743. Advokatfiskal i kommerskollegium 1747 och assessor d\u00e4r 1759 (eller 1757). Kommerser\u00e5d 1767.\n\"Han var en arbetsam \u00e4mbetsman; men l\u00e4tt och v\u00e4nlig i umg\u00e4nget. Var fattig r\u00e4ttss\u00f6kande fann i honom alltid en \u00f6mhj\u00e4rtad f\u00f6respr\u00e5kare. En sn\u00e4ll arbetare var s\u00e4ker om hans uppmuntran. En medell\u00f6s sl\u00f6jd-idkare fann i honom en f\u00f6rl\u00e4ggare, som mera s\u00e5g p\u00e5 n\u00f6jet att n\u00e4ra sl\u00f6jden \u00e4n egen vinning. Utom dess b\u00e5de skrev han och talte f\u00f6r frihet i sl\u00f6jder och n\u00e4ringar. Till kl\u00e4dedr\u00e4kten var han allvarsam och enkel, ehuru v\u00e4lm\u00e5ende man. Till seder ostrafflig; av medelm\u00e5ttig v\u00e4xt och n\u00e5got mager. De senare \u00e5ren sjuklig. Medbr\u00f6der, underhavande och v\u00e4nner, men isynnerhet fattige sl\u00f6jdidkare, s\u00f6rja och sakna honom.\" (Nya Alm Tidningen 11/8 1773.)",
+    "notes": "(Tab 43:263 i GS).\nStudent i Lund 1731. Fältnotarie 1743. Advokatfiskal i kommerskollegium 1747 och assessor där 1759 (eller 1757). Kommerseråd 1767.\n\"Han var en arbetsam ämbetsman; men lätt och vänlig i umgänget. Var fattig rättssökande fann i honom alltid en ömhjärtad förespråkare. En snäll arbetare var säker om hans uppmuntran. En medellös slöjd-idkare fann i honom en förläggare, som mera såg på nöjet att nära slöjden än egen vinning. Utom dess både skrev han och talte för frihet i slöjder och näringar. Till klädedräkten var han allvarsam och enkel, ehuru välmående man. Till seder ostrafflig; av medelmåttig växt och något mager. De senare åren sjuklig. Medbröder, underhavande och vänner, men isynnerhet fattige slöjdidkare, sörja och sakna honom.\" (Nya Alm Tidningen 11/8 1773.)",
     "occupations": [],
     "references": [],
     "sex": "UNKNOWN",
@@ -41864,7 +41864,7 @@ const persons = {
         "year": 1720
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -41890,7 +41890,7 @@ const persons = {
         "year": 1754
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -41907,7 +41907,7 @@ const persons = {
     "marriages": [],
     "middleNames": [],
     "mother": 697,
-    "notes": "(Tab 43:264 i GS).\nStudent i Lund 1737. Fil mag 1743 och pr\u00e4stvigd 1746. Bataljons-predikant vid Garnisonsregementet (Prins Gustafs) i Malm\u00f6 samma \u00e5r. Kommenderad med regementet till Landskrona 1746?47, p\u00e5 Carlstens f\u00e4stning 1747?49, i Karlskrona 1750?52 och till Sveaborg 1752?54. Enl Sj\u00f6str\u00f6m, Sk\u00e5nska nationen i Lund, hade han vid sin d\u00f6d f\u00f6rslagsrum till V Sallerups pastorat och var gift (\"enkan hette Helena\").",
+    "notes": "(Tab 43:264 i GS).\nStudent i Lund 1737. Fil mag 1743 och prästvigd 1746. Bataljons-predikant vid Garnisonsregementet (Prins Gustafs) i Malmö samma år. Kommenderad med regementet till Landskrona 1746?47, på Carlstens fästning 1747?49, i Karlskrona 1750?52 och till Sveaborg 1752?54. Enl Sjöström, Skånska nationen i Lund, hade han vid sin död förslagsrum till V Sallerups pastorat och var gift (\"enkan hette Helena\").",
     "occupations": [],
     "references": [],
     "sex": "UNKNOWN",
@@ -41924,7 +41924,7 @@ const persons = {
         "year": 1723
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -41957,7 +41957,7 @@ const persons = {
         "year": 1783
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -41999,9 +41999,9 @@ const persons = {
     ],
     "middleNames": [],
     "mother": 697,
-    "notes": "(Tab 59 i GS).\nEfterl\u00e4mnade en r\u00e4tt ansenlig f\u00f6rm\u00f6genhet.",
+    "notes": "(Tab 59 i GS).\nEfterlämnade en rätt ansenlig förmögenhet.",
     "occupations": [
-      "Handlande i malm\u00f6"
+      "Handlande i malmö"
     ],
     "references": [],
     "sex": "MAN",
@@ -42018,7 +42018,7 @@ const persons = {
         "year": 1730
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -42046,7 +42046,7 @@ const persons = {
         "year": 1784
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -42071,7 +42071,7 @@ const persons = {
           "year": 1750
         },
         "location": {
-          "city": "Malm\u00f6",
+          "city": "Malmö",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -42101,7 +42101,7 @@ const persons = {
       },
       "location": {
         "city": "Greifswald",
-        "country": " Tyskland",
+        "country": "Tyskland",
         "notes": "",
         "region": "",
         "latitude": 54.09731,
@@ -42128,7 +42128,7 @@ const persons = {
         "year": 1776
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -42153,7 +42153,7 @@ const persons = {
           "year": 1750
         },
         "location": {
-          "city": "Malm\u00f6",
+          "city": "Malmö",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -42167,7 +42167,7 @@ const persons = {
     "mother": null,
     "notes": "",
     "occupations": [
-      "Pastor primarius i tyska f\u00f6rsamlingen i malm\u00f6"
+      "Pastor primarius i tyska församlingen i malmö"
     ],
     "references": [],
     "sex": "MAN",
@@ -42184,7 +42184,7 @@ const persons = {
         "year": 1728
       },
       "location": {
-        "city": "G\u00e4vle",
+        "city": "Gävle",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -42244,7 +42244,7 @@ const persons = {
           "year": 1750
         },
         "location": {
-          "city": "G\u00e4vle",
+          "city": "Gävle",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -42273,7 +42273,7 @@ const persons = {
         "year": 1751
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -42326,7 +42326,7 @@ const persons = {
         "year": 1753
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -42411,7 +42411,7 @@ const persons = {
         "year": 1754
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -42480,7 +42480,7 @@ const persons = {
     ],
     "middleNames": [],
     "mother": 708,
-    "notes": "(Tab 54 i GS).\nHans hustru var sv\u00e4gerska till hans bror.\n\u00c4gde sockerbruket vid Wollmar Yxhullsgatan och egendomen \u00d8rnsberg i Br\u00e4nnkyrka.",
+    "notes": "(Tab 54 i GS).\nHans hustru var svägerska till hans bror.\nÄgde sockerbruket vid Wollmar Yxhullsgatan och egendomen Ørnsberg i Brännkyrka.",
     "occupations": [
       "Grosshandlare i stockholm"
     ],
@@ -42499,7 +42499,7 @@ const persons = {
         "year": 1756
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -42525,7 +42525,7 @@ const persons = {
         "year": 1759
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -42561,7 +42561,7 @@ const persons = {
         "year": 1757
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -42597,8 +42597,8 @@ const persons = {
         "year": 1823
       },
       "location": {
-        "city": "p\u00e5 Ulriksdal",
-        "country": " Solna",
+        "city": "på Ulriksdal",
+        "country": "Solna",
         "notes": "",
         "region": "",
         "latitude": 59.38725,
@@ -42620,9 +42620,9 @@ const persons = {
     ],
     "middleNames": [],
     "mother": 708,
-    "notes": "(Tab 56 i GS).\n\"Den 23/6 1772 begav han sig ut p\u00e5 sin f\u00f6rsta sj\u00f6resa och under en s\u00e5dan begick han den 13/6 1779 f\u00f6rsta g\u00e5ngen H Nattvard i svensk-finska f\u00f6rsamlingen i Reval. Han emottog skepparefartyg 1784 och \u00e5terv\u00e4nde hem f\u00f6rst 1790, vilket \u00e5r den 6/3 han blev konstituerad till f\u00e4nrik vid Arm\u00e9ns flotta och erh\u00f6ll bef\u00e4l \u00e5 m\u00f6rsareb\u00e5ten nr 4.\nUnder detta \u00e5rs krig bevistade han striderna vid Reval, Fredrikshamn och Bj\u00f6rk\u00f6 \u00e4vensom slaget vid Svensksund den 9/7, varefter han erh\u00f6ll den mindre guldmedaljen.\nSin konfirmationsfullmakt fick han daterad den 22/7 med tur fr\u00e5n den 6/5, men med l\u00f6n p\u00e5 extra stat.\nS\u00e5som chef \u00e5 kanonslupen nr 47 beordrades han den 25/2 1808 till Malm\u00f6 och i egenskap av chef f\u00f6r d\u00e4ckade kanonslupen nr 11 bevistade han striden vid Ratan och Pite\u00e5 \u00e4lv i augusti 1809. \u00c5r 1812 tj\u00e4nstgjorde han s\u00e5som (sekond)chef \u00e5 gal\u00e4ren 'Stockholm' och 1813-1814 \u00e5 gal\u00e4ren 'Sm\u00e5land' p\u00e5 expeditionen fr\u00e5n Stockholm till Pommern samt vidare till Landskrona och Karlskrona. Avsked 1820 30/11.\nGiktbruten, n\u00e4stan lam i b\u00e5da h\u00e4nderna och utan pension blev han p\u00e5 ans\u00f6kan antagen till invalid den 28 augusti 1822. --- Begraven p\u00e5 Solna kyrkog\u00e5rd.\" (Bergstr\u00f6m, Invalidinr\u00e4ttningen p\u00e5 Ulriksdal.) H, som \u00e4ven i officiella handlingar n\u00e4mns som 'underl\u00f6jtnant', antogs 1789 15/10 till \u00f6ver- och uppb\u00f6rdsskeppare vid arm\u00e9ns flotta. Vid denna tj\u00e4nstgjorde han, utom ovanst\u00e5ende tider, \u00e4ven \u00e5ret 1792. Under \u00e5ren 1793-1807 f\u00f6rde han handelsfartyg p\u00e5 \u00d8stersj\u00f6hamnar.",
+    "notes": "(Tab 56 i GS).\n\"Den 23/6 1772 begav han sig ut på sin första sjöresa och under en sådan begick han den 13/6 1779 första gången H Nattvard i svensk-finska församlingen i Reval. Han emottog skepparefartyg 1784 och återvände hem först 1790, vilket år den 6/3 han blev konstituerad till fänrik vid Arméns flotta och erhöll befäl å mörsarebåten nr 4.\nUnder detta års krig bevistade han striderna vid Reval, Fredrikshamn och Björkö ävensom slaget vid Svensksund den 9/7, varefter han erhöll den mindre guldmedaljen.\nSin konfirmationsfullmakt fick han daterad den 22/7 med tur från den 6/5, men med lön på extra stat.\nSåsom chef å kanonslupen nr 47 beordrades han den 25/2 1808 till Malmö och i egenskap av chef för däckade kanonslupen nr 11 bevistade han striden vid Ratan och Piteå älv i augusti 1809. År 1812 tjänstgjorde han såsom (sekond)chef å galären 'Stockholm' och 1813-1814 å galären 'Småland' på expeditionen från Stockholm till Pommern samt vidare till Landskrona och Karlskrona. Avsked 1820 30/11.\nGiktbruten, nästan lam i båda händerna och utan pension blev han på ansökan antagen till invalid den 28 augusti 1822. --- Begraven på Solna kyrkogård.\" (Bergström, Invalidinrättningen på Ulriksdal.) H, som även i officiella handlingar nämns som 'underlöjtnant', antogs 1789 15/10 till över- och uppbördsskeppare vid arméns flotta. Vid denna tjänstgjorde han, utom ovanstående tider, även året 1792. Under åren 1793-1807 förde han handelsfartyg på Østersjöhamnar.",
     "occupations": [
-      "Sj\u00f6kapten"
+      "Sjökapten"
     ],
     "references": [],
     "sex": "MAN",
@@ -42639,7 +42639,7 @@ const persons = {
         "year": 1759
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -42658,7 +42658,7 @@ const persons = {
     "death": {
       "date": null,
       "location": {
-        "city": "i Malm\u00f6",
+        "city": "i Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -42692,7 +42692,7 @@ const persons = {
         "year": 1763
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -42752,7 +42752,7 @@ const persons = {
         "year": 1766
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -42833,7 +42833,7 @@ const persons = {
       },
       "location": {
         "city": "Wismar",
-        "country": " Tyskland",
+        "country": "Tyskland",
         "notes": "",
         "region": "",
         "latitude": 53.89026,
@@ -42871,7 +42871,7 @@ const persons = {
     "father": null,
     "fileId": "0000000928",
     "firstName": "Fredrik",
-    "lastName": "G\u00f6rges",
+    "lastName": "Görges",
     "marriages": [
       {
         "date": {
@@ -43141,7 +43141,7 @@ const persons = {
       },
       "location": {
         "city": "Rostock",
-        "country": " Tyskland",
+        "country": "Tyskland",
         "notes": "",
         "region": "",
         "latitude": 54.07904,
@@ -43291,7 +43291,7 @@ const persons = {
     ],
     "middleNames": [],
     "mother": 735,
-    "notes": "(Tab 46 i GS).\nRNO. \"Var en av huvudstadens \u00e4ldste och mest ansedde samt l\u00e4nge en av dess st\u00f6rste j\u00e4rnexport\u00f6rer.\" (St D 7/4 1857). Rec 1814 i frimurarlogen S:t Erik.",
+    "notes": "(Tab 46 i GS).\nRNO. \"Var en av huvudstadens äldste och mest ansedde samt länge en av dess störste järnexportörer.\" (St D 7/4 1857). Rec 1814 i frimurarlogen S:t Erik.",
     "occupations": [
       "Grosshandlare i stockholm under firma j f erdman o co"
     ],
@@ -43455,7 +43455,7 @@ const persons = {
     "mother": null,
     "notes": "",
     "occupations": [
-      "Stadsm\u00e4klare i stockholm"
+      "Stadsmäklare i stockholm"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -43678,9 +43678,9 @@ const persons = {
     ],
     "middleNames": [],
     "mother": 762,
-    "notes": "(Tab 47 i GS).\nEo tj\u00e4nsteman i K Maj:ts kansli 1846. Eo notarie i kommerskollegium samma \u00e5r, kanslist 1853, notarie 1856, tf sekreterare 1859 och ordinarie sekreterare 1861. Hade flera f\u00f6rordnanden som kommerser\u00e5d. Generalkonsul i K\u00f6penhamn 1882. RNO. Rec 1846 i frimurarlogen S:t Erik, F A B d\u00e4r 1853-55 och rec 1849 i Arla Coldinuorden.\nH var \"en duglig, plikttrogen och i h\u00f6g grad arbetsam man, vilken d\u00e4rj\u00e4mte \u00e4gde ett humant och \u00e4lskligt v\u00e4sen. H:s utn\u00e4mning till den post, han vid sin d\u00f6d bekl\u00e4dde, h\u00e4lsades d\u00e4rf\u00f6r p\u00e5 sin tid av alla med bifall. Det faller av sig sj\u00e4lvt att n\u00e5gra mognade frukter av denna hans verksamhet i grannlandet icke kan i anseende till dess kortvarighet f\u00f6rv\u00e4ntas, men hans hj\u00e4lpsamhet mot beh\u00f6vande landsm\u00e4n skall l\u00e4nge leva i tacksamt minne hos m\u00e5ngen.\nLika trogen i pliktens uppfyllande, lika vinnande var H i sitt enskilda liv; han var en full\u00e4ndad gentleman, och antalet av hans v\u00e4nner \u00e4r mycket stort.\" (St D 3/12 1884.)",
+    "notes": "(Tab 47 i GS).\nEo tjänsteman i K Maj:ts kansli 1846. Eo notarie i kommerskollegium samma år, kanslist 1853, notarie 1856, tf sekreterare 1859 och ordinarie sekreterare 1861. Hade flera förordnanden som kommerseråd. Generalkonsul i Köpenhamn 1882. RNO. Rec 1846 i frimurarlogen S:t Erik, F A B där 1853-55 och rec 1849 i Arla Coldinuorden.\nH var \"en duglig, plikttrogen och i hög grad arbetsam man, vilken därjämte ägde ett humant och älskligt väsen. H:s utnämning till den post, han vid sin död beklädde, hälsades därför på sin tid av alla med bifall. Det faller av sig självt att några mognade frukter av denna hans verksamhet i grannlandet icke kan i anseende till dess kortvarighet förväntas, men hans hjälpsamhet mot behövande landsmän skall länge leva i tacksamt minne hos mången.\nLika trogen i pliktens uppfyllande, lika vinnande var H i sitt enskilda liv; han var en fulländad gentleman, och antalet av hans vänner är mycket stort.\" (St D 3/12 1884.)",
     "occupations": [
-      "Generalkonsul i k\u00f6penhamn",
+      "Generalkonsul i köpenhamn",
       "Danmark"
     ],
     "references": [],
@@ -43817,7 +43817,7 @@ const persons = {
     "father": null,
     "fileId": "0000000940",
     "firstName": "Karl",
-    "lastName": "Cram\u00e9r",
+    "lastName": "Cramér",
     "marriages": [
       {
         "date": {
@@ -43843,7 +43843,7 @@ const persons = {
     "mother": null,
     "notes": "",
     "occupations": [
-      "Kassadirekt\u00f6r i sj\u00f6f\u00f6rs\u00e4krings ab \u00e4gir"
+      "Kassadirektör i sjöförsäkrings ab ägir"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -43919,18 +43919,18 @@ const persons = {
         },
         "location": {
           "city": "Ontonogan",
-          "country": " USA",
+          "country": "USA",
           "notes": "",
-          "region": " Michigan"
+          "region": "Michigan"
         },
         "personId": 777
       }
     ],
     "middleNames": [],
     "mother": 762,
-    "notes": "(Tab 50 i GS).\nUtflyttad till USA 1857 fr\u00e5n Stockholm (AB).\nAmerikanskt medborgarskap i juli 1858.\nFlyttade som gammal tillbaka till Sverige och ligger begravd i Stockholm.",
+    "notes": "(Tab 50 i GS).\nUtflyttad till USA 1857 från Stockholm (AB).\nAmerikanskt medborgarskap i juli 1858.\nFlyttade som gammal tillbaka till Sverige och ligger begravd i Stockholm.",
     "occupations": [
-      "K\u00f6pman"
+      "Köpman"
     ],
     "references": [],
     "sex": "MAN",
@@ -44054,7 +44054,7 @@ const persons = {
     "mother": 762,
     "notes": "(Tab 46:227 i GS).",
     "occupations": [
-      "Kontorist i sj\u00f6f\u00f6rs\u00e4krings ab \u00e4gir"
+      "Kontorist i sjöförsäkrings ab ägir"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -44185,7 +44185,7 @@ const persons = {
         "year": 1932
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -44210,8 +44210,8 @@ const persons = {
           "year": 1899
         },
         "location": {
-          "city": "K\u00f6penhamn",
-          "country": " Danmark",
+          "city": "Köpenhamn",
+          "country": "Danmark",
           "notes": "",
           "region": ""
         },
@@ -44220,9 +44220,9 @@ const persons = {
     ],
     "middleNames": [],
     "mother": 772,
-    "notes": "(Tab 48 i GS).\nEfter att ha avlagt studentexamen i Uppsala 1875 \u00e4gnade han sig \u00e5t juridiska studier och avlade hovr\u00e4ttsexamen 1880, varp\u00e5 han samma \u00e5r blev eo notarie i Svea hovr\u00e4tt. Fyra \u00e5r senare utn\u00e4mndes H till vice h\u00e4radsh\u00f6vding och \u00e5r 1884 slog han sig ned som praktiserande advokat i Malm\u00f6. D\u00e4r innehade han Hegardts advokatbyr\u00e5, som under hans skickliga ledning snart nog tillvann sig ett synnerligen gott anseende och erh\u00f6ll en omfattande kundkrets.\nSedan 1887 var h\u00e4radsh\u00f6vding Hegardt ledamot av Sveriges Advokatsamfund. H var verksam in i det sista, var en synnerligen driftig och dugande man, vilken gjorde en betydande insats i stadens n\u00e4ringsliv. Han var bl a juridiskt ombud f\u00f6r Margarinfabriken Zenith, som han \u00e4ven var med om att stifta.\n\u00c4ven i Malm\u00f6 Kaffekompani samt i Sj\u00f6f\u00f6rs\u00e4kringsbolaget \u00d8resund var han en av stiftarna samt styrelseledamot. I aktiebolaget Herman Gotthardt och Malm\u00f6 Takpappsfabrik var han styrelseordf\u00f6rande samt stiftare. RVO 1919 och av RSt St O.",
+    "notes": "(Tab 48 i GS).\nEfter att ha avlagt studentexamen i Uppsala 1875 ägnade han sig åt juridiska studier och avlade hovrättsexamen 1880, varpå han samma år blev eo notarie i Svea hovrätt. Fyra år senare utnämndes H till vice häradshövding och år 1884 slog han sig ned som praktiserande advokat i Malmö. Där innehade han Hegardts advokatbyrå, som under hans skickliga ledning snart nog tillvann sig ett synnerligen gott anseende och erhöll en omfattande kundkrets.\nSedan 1887 var häradshövding Hegardt ledamot av Sveriges Advokatsamfund. H var verksam in i det sista, var en synnerligen driftig och dugande man, vilken gjorde en betydande insats i stadens näringsliv. Han var bl a juridiskt ombud för Margarinfabriken Zenith, som han även var med om att stifta.\nÄven i Malmö Kaffekompani samt i Sjöförsäkringsbolaget Øresund var han en av stiftarna samt styrelseledamot. I aktiebolaget Herman Gotthardt och Malmö Takpappsfabrik var han styrelseordförande samt stiftare. RVO 1919 och av RSt St O.",
     "occupations": [
-      "H\u00e4radsh\u00f6vding"
+      "Häradshövding"
     ],
     "references": [],
     "sex": "MAN",
@@ -44302,7 +44302,7 @@ const persons = {
     ],
     "middleNames": [],
     "mother": 772,
-    "notes": "(Tab 49 i GS).\nBlev efter att ha praktiserat hos olika aff\u00e4rsm\u00e4n, prokurist hos firman Anders Berg & Co, som han \u00f6vertog 1894 och innehade till sin d\u00f6d. Var dessutom verkst\u00e4llande direkt\u00f6r i Kontors? och Magasins AB M\u00e4laren, i fastighets AB Sophia och i Stockholm?J\u00e4rna torv AB.\nFirman Berg & Co var en av huvudstadens st\u00f6rsta grossister i hampa och lin, och H hade anseende som en synnerligen verksam, driftig och skicklig aff\u00e4rsman. Han bidrog verksamt till tillkomsten av Sofi Almquists samskolas pr\u00e4ktiga skollokaler samt l\u00e4t p\u00e5 uppdrag av Privata l\u00e4rarinneseminariet uppf\u00f6ra dess tidsenliga skollokaler. Vid invigningen av detta senare 1905 framf\u00f6rdes av styrelsens ordf\u00f6rande ett tack \"fr\u00e4mst till byggherren, grosshandlare Hegardt, f\u00f6r hans i m\u00e5nga avseenden storartade frikostighet\".",
+    "notes": "(Tab 49 i GS).\nBlev efter att ha praktiserat hos olika affärsmän, prokurist hos firman Anders Berg & Co, som han övertog 1894 och innehade till sin död. Var dessutom verkställande direktör i Kontors? och Magasins AB Mälaren, i fastighets AB Sophia och i Stockholm?Järna torv AB.\nFirman Berg & Co var en av huvudstadens största grossister i hampa och lin, och H hade anseende som en synnerligen verksam, driftig och skicklig affärsman. Han bidrog verksamt till tillkomsten av Sofi Almquists samskolas präktiga skollokaler samt lät på uppdrag av Privata lärarinneseminariet uppföra dess tidsenliga skollokaler. Vid invigningen av detta senare 1905 framfördes av styrelsens ordförande ett tack \"främst till byggherren, grosshandlare Hegardt, för hans i många avseenden storartade frikostighet\".",
     "occupations": [
       "Grosshandlare"
     ],
@@ -44364,7 +44364,7 @@ const persons = {
     "marriages": [],
     "middleNames": [],
     "mother": 772,
-    "notes": "(Tab 47:211 i GS).\nUnder senare delen av 1890-talet och till sin bror Ivars d\u00f6d 1905 anst\u00e4lld p\u00e5 dennes grosshandelskontor. D\u00e4refter fr\u00e5n 1908 i Kommerskollegium till pensioneringen 1928.",
+    "notes": "(Tab 47:211 i GS).\nUnder senare delen av 1890-talet och till sin bror Ivars död 1905 anställd på dennes grosshandelskontor. Därefter från 1908 i Kommerskollegium till pensioneringen 1928.",
     "occupations": [],
     "references": [],
     "sex": "UNKNOWN",
@@ -44381,8 +44381,8 @@ const persons = {
         "year": 1872
       },
       "location": {
-        "city": "K\u00f6penhamn",
-        "country": " Danmark",
+        "city": "Köpenhamn",
+        "country": "Danmark",
         "notes": "",
         "region": "",
         "latitude": 55.67567,
@@ -44411,7 +44411,7 @@ const persons = {
         "year": 1958
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -44436,8 +44436,8 @@ const persons = {
           "year": 1899
         },
         "location": {
-          "city": "K\u00f6penhamn",
-          "country": " Danmark",
+          "city": "Köpenhamn",
+          "country": "Danmark",
           "notes": "",
           "region": ""
         },
@@ -44451,7 +44451,7 @@ const persons = {
     "mother": 792,
     "notes": "Vasamedaljen i guld av 8:e storleken 1921-06-06..",
     "occupations": [
-      "Framst\u00e5ende s\u00e5ngerska"
+      "Framstående sångerska"
     ],
     "references": [],
     "sex": "WOMAN",
@@ -44468,7 +44468,7 @@ const persons = {
         "year": 1900
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -44497,7 +44497,7 @@ const persons = {
         "year": 2000
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -44522,7 +44522,7 @@ const persons = {
           "year": 1921
         },
         "location": {
-          "city": "Malm\u00f6",
+          "city": "Malmö",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -44552,7 +44552,7 @@ const persons = {
       "Emmy"
     ],
     "mother": 786,
-    "notes": "(Tab 48:206 i GS).\nFlickskola i Malm\u00f6 och Hind\u00e5s. 1928-29 restaurangskola i Stockholm.\nExamen d\u00e4rifr\u00e5n 1929.\n1930 hovm\u00e4starinna p\u00e5 Stockholmsutst\u00e4llningarna. 1931-33 v\u00e4rdinna p\u00e5 Siljansborgs Turisthotell i R\u00e4ttvik. Sommaren 1935 hovm\u00e4starinna p\u00e5 Solidan, Skansen i Stockholm. 1957-59 kamrer p\u00e5 Falserbo golfklubb. 1960-61 i Vancouver, Canada, men \u00e5terkom till golfklubben 1961-62.",
+    "notes": "(Tab 48:206 i GS).\nFlickskola i Malmö och Hindås. 1928-29 restaurangskola i Stockholm.\nExamen därifrån 1929.\n1930 hovmästarinna på Stockholmsutställningarna. 1931-33 värdinna på Siljansborgs Turisthotell i Rättvik. Sommaren 1935 hovmästarinna på Solidan, Skansen i Stockholm. 1957-59 kamrer på Falserbo golfklubb. 1960-61 i Vancouver, Canada, men återkom till golfklubben 1961-62.",
     "occupations": [],
     "references": [],
     "sex": "WOMAN",
@@ -44592,7 +44592,7 @@ const persons = {
           "year": 1921
         },
         "location": {
-          "city": "Malm\u00f6",
+          "city": "Malmö",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -44619,7 +44619,7 @@ const persons = {
         "year": 1948
       },
       "location": {
-        "city": "Link\u00f6ping",
+        "city": "Linköping",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -44659,7 +44659,7 @@ const persons = {
         },
         "location": {
           "city": "Vreta kloster",
-          "country": " Link\u00f6ping",
+          "country": "Linköping",
           "notes": "",
           "region": ""
         },
@@ -44668,9 +44668,9 @@ const persons = {
     ],
     "middleNames": [],
     "mother": 796,
-    "notes": "L\u00e5gstadiel\u00e4rarexamen 1971 i Malm\u00f6 (M).\nTj\u00e4nstg\u00f6ringar i Malm\u00f6, Norrk\u00f6ping, Lidk\u00f6ping, Stockholm och Simrishamn, f\u00f6retr\u00e4desvis med invandrarundervisning Bor i Vallby (L).",
+    "notes": "Lågstadielärarexamen 1971 i Malmö (M).\nTjänstgöringar i Malmö, Norrköping, Lidköping, Stockholm och Simrishamn, företrädesvis med invandrarundervisning Bor i Vallby (L).",
     "occupations": [
-      "L\u00e4rare"
+      "Lärare"
     ],
     "references": [],
     "sex": "WOMAN",
@@ -44687,7 +44687,7 @@ const persons = {
         "year": 1902
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -44713,7 +44713,7 @@ const persons = {
         "year": 1985
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -44738,7 +44738,7 @@ const persons = {
           "year": 1924
         },
         "location": {
-          "city": "Malm\u00f6",
+          "city": "Malmö",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -44755,7 +44755,7 @@ const persons = {
           "year": 1935
         },
         "location": {
-          "city": "Malm\u00f6",
+          "city": "Malmö",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -44782,7 +44782,7 @@ const persons = {
         "year": 1902
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -44810,7 +44810,7 @@ const persons = {
         "year": 1954
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -44835,7 +44835,7 @@ const persons = {
           "year": 1926
         },
         "location": {
-          "city": "Malm\u00f6",
+          "city": "Malmö",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -44848,7 +44848,7 @@ const persons = {
       "Birgitta"
     ],
     "mother": 786,
-    "notes": "(Tab 48:208 i GS).\nEfter avslutad skolg\u00e5ng i Malm\u00f6 bedrev hon spr\u00e5kstudier i K\u00f6penhamn vid Couvent de l'Assomption och i Paris, Frankrike.",
+    "notes": "(Tab 48:208 i GS).\nEfter avslutad skolgång i Malmö bedrev hon språkstudier i Köpenhamn vid Couvent de l'Assomption och i Paris, Frankrike.",
     "occupations": [],
     "references": [],
     "sex": "WOMAN",
@@ -44893,7 +44893,7 @@ const persons = {
         "year": 1949
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -44918,7 +44918,7 @@ const persons = {
           "year": 1926
         },
         "location": {
-          "city": "Malm\u00f6",
+          "city": "Malmö",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -45072,7 +45072,7 @@ const persons = {
     },
     "father": 774,
     "fileId": "0000000956",
-    "firstName": "M\u00e4rta",
+    "firstName": "Märta",
     "lastName": "Hegardt",
     "marriages": [
       {
@@ -45085,7 +45085,7 @@ const persons = {
           "year": 1917
         },
         "location": {
-          "city": "Saltsj\u00f6baden",
+          "city": "Saltsjöbaden",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -45095,7 +45095,7 @@ const persons = {
     ],
     "middleNames": [],
     "mother": 790,
-    "notes": "(Tab 49:210 i GS).\nStudentexamen 1909 i Stockholm (AB).\nCivilekonomexamen 1912 i Stockholm (AB).\n(Hon var Sveriges f\u00f6rsta kvinnliga civilekonom!).\nVar f\u00f6re gifterm\u00e5let anst\u00e4lld i Stockholms Enskilda Bank och Inteckningsbanken.",
+    "notes": "(Tab 49:210 i GS).\nStudentexamen 1909 i Stockholm (AB).\nCivilekonomexamen 1912 i Stockholm (AB).\n(Hon var Sveriges första kvinnliga civilekonom!).\nVar före giftermålet anställd i Stockholms Enskilda Bank och Inteckningsbanken.",
     "occupations": [],
     "references": [],
     "sex": "UNKNOWN",
@@ -45136,7 +45136,7 @@ const persons = {
     "father": null,
     "fileId": "0000000957",
     "firstName": "Sven",
-    "lastName": "L\u00f6fdahl",
+    "lastName": "Löfdahl",
     "marriages": [
       {
         "date": {
@@ -45148,7 +45148,7 @@ const persons = {
           "year": 1917
         },
         "location": {
-          "city": "Saltsj\u00f6baden",
+          "city": "Saltsjöbaden",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -45180,7 +45180,7 @@ const persons = {
       },
       "location": {
         "city": "Worben",
-        "country": " Schweiz",
+        "country": "Schweiz",
         "notes": "",
         "region": "",
         "latitude": 47.09879,
@@ -45213,9 +45213,9 @@ const persons = {
       },
       "location": {
         "city": "Redlands",
-        "country": " USA",
+        "country": "USA",
         "notes": "",
-        "region": " Californien",
+        "region": "Californien",
         "latitude": 34.05538,
         "longitude": -117.18259,
         "fetchStatus": "FETCHED"
@@ -45238,9 +45238,9 @@ const persons = {
         },
         "location": {
           "city": "Ontonogan",
-          "country": " USA",
+          "country": "USA",
           "notes": "",
-          "region": " Michigan"
+          "region": "Michigan"
         },
         "personId": 767
       }
@@ -45267,9 +45267,9 @@ const persons = {
       },
       "location": {
         "city": "Ontonogan",
-        "country": " USA",
+        "country": "USA",
         "notes": "",
-        "region": " Michigan",
+        "region": "Michigan",
         "latitude": 46.8735,
         "longitude": -89.31753,
         "fetchStatus": "FETCHED"
@@ -45296,9 +45296,9 @@ const persons = {
       },
       "location": {
         "city": "Duluth",
-        "country": " USA",
+        "country": "USA",
         "notes": "",
-        "region": " Minnesota",
+        "region": "Minnesota",
         "latitude": 46.78796,
         "longitude": -92.09985,
         "fetchStatus": "FETCHED"
@@ -45321,18 +45321,18 @@ const persons = {
         },
         "location": {
           "city": "Seneca",
-          "country": " USA",
+          "country": "USA",
           "notes": "",
-          "region": " Kansas"
+          "region": "Kansas"
         },
         "personId": 812
       }
     ],
     "middleNames": [],
     "mother": 777,
-    "notes": "(Tab 51 i GS).\nKom vid nio \u00e5rs \u00e5lder med sina f\u00f6r\u00e4ldrar till Duluth, USA, d\u00e4r han sedan tillbringade hela sitt liv med undantag f\u00f6r \u00e5ren 1879-87, d\u00e5 familjen bodde i Calumet, Michigan.\nF\u00f6re avflyttningen dit var han anst\u00e4lld i Duluths gamla sparbank. Vid \u00e5terkomsten till Duluth blev han bokh\u00e5llare i American Exchange National Bank. I denna bank blev han till slut bankdirekt\u00f6r.\n1909 blev han vice ordf\u00f6rande i Duluth Clearing House Association och under en l\u00e5ng tid hade han hand om den ekonomiska f\u00f6rvaltningen vid Pilgrim Congregational church.\n\"Under H:s l\u00e5nga vistelse i Duluth var hans verksamhet f\u00f6rbunden med en m\u00e5ngfald f\u00f6retag, som bidrog till stadens v\u00e4xt och dess utveckling till en av nordv\u00e4stra Amerikas ledande bank- och handelscentrum.\" \"H var ett vackert exempel p\u00e5 flit hederlighet, plikttrohet och ih\u00e4rdighet, som med stadiga steg f\u00f6rde honom upp till den ledande plats, han vid sin d\u00f6d innehade. --- I sin aff\u00e4rsverksamhet gynnad av en oavbruten och markerad framg\u00e5ng var H personligen \u00e4del och v\u00e4ns\u00e4ll samt rik p\u00e5 good will, som tog sig uttryck i v\u00e4lg\u00f6renhet av m\u00e5nga slag. Han var en kyrklig man, vars religi\u00f6sa uppfattning fick lysa \u00f6ver hans dagliga liv, hans yrkesut\u00f6vning och hans f\u00f6rh\u00e5llande till n\u00e4stan. Hela sitt vackra och nyttiga liv underst\u00f6dde H livligt varje f\u00f6retagsamhet, som syftade till hans stads, hans fosterlands och till v\u00e4rldens utveckling och f\u00f6rb\u00e4ttring. \u00c4delt tj\u00e4nade han Duluth, och Duluth \u00e4r full av sorg \u00f6ver hans bortg\u00e5ng.\" (Pressklipp ur Duluthpressen.)",
+    "notes": "(Tab 51 i GS).\nKom vid nio års ålder med sina föräldrar till Duluth, USA, där han sedan tillbringade hela sitt liv med undantag för åren 1879-87, då familjen bodde i Calumet, Michigan.\nFöre avflyttningen dit var han anställd i Duluths gamla sparbank. Vid återkomsten till Duluth blev han bokhållare i American Exchange National Bank. I denna bank blev han till slut bankdirektör.\n1909 blev han vice ordförande i Duluth Clearing House Association och under en lång tid hade han hand om den ekonomiska förvaltningen vid Pilgrim Congregational church.\n\"Under H:s långa vistelse i Duluth var hans verksamhet förbunden med en mångfald företag, som bidrog till stadens växt och dess utveckling till en av nordvästra Amerikas ledande bank- och handelscentrum.\" \"H var ett vackert exempel på flit hederlighet, plikttrohet och ihärdighet, som med stadiga steg förde honom upp till den ledande plats, han vid sin död innehade. --- I sin affärsverksamhet gynnad av en oavbruten och markerad framgång var H personligen ädel och vänsäll samt rik på good will, som tog sig uttryck i välgörenhet av många slag. Han var en kyrklig man, vars religiösa uppfattning fick lysa över hans dagliga liv, hans yrkesutövning och hans förhållande till nästan. Hela sitt vackra och nyttiga liv understödde H livligt varje företagsamhet, som syftade till hans stads, hans fosterlands och till världens utveckling och förbättring. Ädelt tjänade han Duluth, och Duluth är full av sorg över hans bortgång.\" (Pressklipp ur Duluthpressen.)",
     "occupations": [
-      "Bankdirekt\u00f6r"
+      "Bankdirektör"
     ],
     "references": [],
     "sex": "MAN",
@@ -45350,9 +45350,9 @@ const persons = {
       },
       "location": {
         "city": "Ontonogan",
-        "country": " USA",
+        "country": "USA",
         "notes": "",
-        "region": " Michigan",
+        "region": "Michigan",
         "latitude": 46.8735,
         "longitude": -89.31753,
         "fetchStatus": "FETCHED"
@@ -45376,9 +45376,9 @@ const persons = {
       },
       "location": {
         "city": "Redlands",
-        "country": " USA",
+        "country": "USA",
         "notes": "",
-        "region": " Californien",
+        "region": "Californien",
         "latitude": 34.05538,
         "longitude": -117.18259,
         "fetchStatus": "FETCHED"
@@ -45394,7 +45394,7 @@ const persons = {
       "Louise"
     ],
     "mother": 777,
-    "notes": "(Tab 50:217 i GS).\nUtbildade sig till l\u00e4rare och undervisade i skolor i Calumet, Michigan; Seattle, Washington; Redlands och Long Beach, Californien. Efter det hon slutat undervisa ledde hon resor runt v\u00e4rlden.",
+    "notes": "(Tab 50:217 i GS).\nUtbildade sig till lärare och undervisade i skolor i Calumet, Michigan; Seattle, Washington; Redlands och Long Beach, Californien. Efter det hon slutat undervisa ledde hon resor runt världen.",
     "occupations": [],
     "references": [],
     "sex": "UNKNOWN",
@@ -45412,9 +45412,9 @@ const persons = {
       },
       "location": {
         "city": "Ontonogan",
-        "country": " USA",
+        "country": "USA",
         "notes": "",
-        "region": " Michigan",
+        "region": "Michigan",
         "latitude": 46.8735,
         "longitude": -89.31753,
         "fetchStatus": "FETCHED"
@@ -45441,9 +45441,9 @@ const persons = {
       },
       "location": {
         "city": "Los Angeles",
-        "country": " USA",
+        "country": "USA",
         "notes": "",
-        "region": " Californien",
+        "region": "Californien",
         "latitude": 34.05357,
         "longitude": -118.24545,
         "fetchStatus": "FETCHED"
@@ -45466,18 +45466,18 @@ const persons = {
         },
         "location": {
           "city": "Homcock",
-          "country": " USA",
+          "country": "USA",
           "notes": "",
-          "region": " Michigan"
+          "region": "Michigan"
         },
         "personId": 815
       }
     ],
     "middleNames": [],
     "mother": 777,
-    "notes": "(Tab 52 i GS).\nL\u00e4ste vid University of Michigan. Anst\u00e4lld vid koppargruvorna i Ducktown, Tennessee, USA, d\u00e4r han blev \u00f6veringenj\u00f6r. Familjen flyttade p g a Ivars h\u00e4lsa till Redlands, Californien, USA.",
+    "notes": "(Tab 52 i GS).\nLäste vid University of Michigan. Anställd vid koppargruvorna i Ducktown, Tennessee, USA, där han blev överingenjör. Familjen flyttade p g a Ivars hälsa till Redlands, Californien, USA.",
     "occupations": [
-      "\u00d8veringenj\u00f6r"
+      "Øveringenjör"
     ],
     "references": [],
     "sex": "MAN",
@@ -45495,9 +45495,9 @@ const persons = {
       },
       "location": {
         "city": "Cleveland",
-        "country": " USA",
+        "country": "USA",
         "notes": "",
-        "region": " Ohio",
+        "region": "Ohio",
         "latitude": 41.50473,
         "longitude": -81.69074,
         "fetchStatus": "FETCHED"
@@ -45521,9 +45521,9 @@ const persons = {
       },
       "location": {
         "city": "San Marino",
-        "country": " USA",
+        "country": "USA",
         "notes": "",
-        "region": " Californien",
+        "region": "Californien",
         "latitude": 34.12215,
         "longitude": -118.10501,
         "fetchStatus": "FETCHED"
@@ -45546,9 +45546,9 @@ const persons = {
         },
         "location": {
           "city": "Seattle",
-          "country": " USA",
+          "country": "USA",
           "notes": "",
-          "region": " Washington"
+          "region": "Washington"
         },
         "personId": 818
       }
@@ -45575,9 +45575,9 @@ const persons = {
       },
       "location": {
         "city": "Dodgeville",
-        "country": " USA",
+        "country": "USA",
         "notes": "",
-        "region": " Wisconsin",
+        "region": "Wisconsin",
         "latitude": 42.9605,
         "longitude": -90.13038,
         "fetchStatus": "FETCHED"
@@ -45601,9 +45601,9 @@ const persons = {
       },
       "location": {
         "city": "San Marino",
-        "country": " USA",
+        "country": "USA",
         "notes": "",
-        "region": " Californien",
+        "region": "Californien",
         "latitude": 34.12215,
         "longitude": -118.10501,
         "fetchStatus": "FETCHED"
@@ -45626,9 +45626,9 @@ const persons = {
         },
         "location": {
           "city": "Seattle",
-          "country": " USA",
+          "country": "USA",
           "notes": "",
-          "region": " Washington"
+          "region": "Washington"
         },
         "personId": 781
       }
@@ -45657,9 +45657,9 @@ const persons = {
       },
       "location": {
         "city": "Duluth",
-        "country": " USA",
+        "country": "USA",
         "notes": "",
-        "region": " Minnesota",
+        "region": "Minnesota",
         "latitude": 46.78796,
         "longitude": -92.09985,
         "fetchStatus": "FETCHED"
@@ -45708,9 +45708,9 @@ const persons = {
         },
         "location": {
           "city": "Redlands",
-          "country": " USA",
+          "country": "USA",
           "notes": "",
-          "region": " Californien"
+          "region": "Californien"
         },
         "personId": 819
       }
@@ -45719,7 +45719,7 @@ const persons = {
     "mother": 777,
     "notes": "(Tab 50:220 i GS).\nUndervisade i Seattle, Washington och Redlands, Californien.",
     "occupations": [
-      "L\u00e4rare"
+      "Lärare"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -45737,9 +45737,9 @@ const persons = {
       },
       "location": {
         "city": "Oswego",
-        "country": " USA",
+        "country": "USA",
         "notes": "",
-        "region": " Illinois",
+        "region": "Illinois",
         "latitude": 41.68327,
         "longitude": -88.35285,
         "fetchStatus": "FETCHED"
@@ -45788,9 +45788,9 @@ const persons = {
         },
         "location": {
           "city": "Redlands",
-          "country": " USA",
+          "country": "USA",
           "notes": "",
-          "region": " Californien"
+          "region": "Californien"
         },
         "personId": 782
       }
@@ -45801,7 +45801,7 @@ const persons = {
     "mother": null,
     "notes": "",
     "occupations": [
-      "Direkt\u00f6r"
+      "Direktör"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -45819,9 +45819,9 @@ const persons = {
       },
       "location": {
         "city": "Duluth",
-        "country": " USA",
+        "country": "USA",
         "notes": "",
-        "region": " Minnesota",
+        "region": "Minnesota",
         "latitude": 46.78796,
         "longitude": -92.09985,
         "fetchStatus": "FETCHED"
@@ -45850,9 +45850,9 @@ const persons = {
       },
       "location": {
         "city": "Downey",
-        "country": " USA",
+        "country": "USA",
         "notes": "",
-        "region": " Californien",
+        "region": "Californien",
         "latitude": 33.94077,
         "longitude": -118.12768,
         "fetchStatus": "FETCHED"
@@ -45875,7 +45875,7 @@ const persons = {
         },
         "location": {
           "city": "Colorado",
-          "country": " USA",
+          "country": "USA",
           "notes": "",
           "region": ""
         },
@@ -45886,7 +45886,7 @@ const persons = {
       "Bernhard"
     ],
     "mother": 777,
-    "notes": "(Tab 53 i GS).\nHan studerade redovisning p\u00e5 ekonomisk h\u00f6gskola. I b\u00f6rjan av 1900-talet flyttade han till Arizona, d\u00e4r han arbetade som bokh\u00e5llare vid Old Dominion Mine i Globe och d\u00e4r han senare blev chef f\u00f6r gruvan.\nEfter en tid l\u00e4mnade han gruvan och investerade i Globe Hardware Co. Han var ocks\u00e5 intresserad av fruktodling och k\u00f6pte 1918 en apelsinodling i Downey, Californien, d\u00e4r han bodde i m\u00e5nga \u00e5r med sin familj p\u00e5 Tweedy Lane.\nSenare k\u00f6pte han land i San Marcos och utvecklade en avocadoodling. Omkring 1950 k\u00f6pte han en egendom i Pauma Valley och b\u00f6rjade en ny citrusfrukts- och avocadoodling d\u00e4r.\nN\u00e4r han bodde i Downey var han f\u00f6rtroendevald i det lokala skoldistriktet och direktor f\u00f6r Arroya Ditch and Water Co.",
+    "notes": "(Tab 53 i GS).\nHan studerade redovisning på ekonomisk högskola. I början av 1900-talet flyttade han till Arizona, där han arbetade som bokhållare vid Old Dominion Mine i Globe och där han senare blev chef för gruvan.\nEfter en tid lämnade han gruvan och investerade i Globe Hardware Co. Han var också intresserad av fruktodling och köpte 1918 en apelsinodling i Downey, Californien, där han bodde i många år med sin familj på Tweedy Lane.\nSenare köpte han land i San Marcos och utvecklade en avocadoodling. Omkring 1950 köpte han en egendom i Pauma Valley och började en ny citrusfrukts- och avocadoodling där.\nNär han bodde i Downey var han förtroendevald i det lokala skoldistriktet och direktor för Arroya Ditch and Water Co.",
     "occupations": [],
     "references": [],
     "sex": "MAN",
@@ -45904,7 +45904,7 @@ const persons = {
       },
       "location": {
         "city": "Mantorville",
-        "country": " USA",
+        "country": "USA",
         "notes": "",
         "region": "",
         "latitude": 44.06834,
@@ -45933,9 +45933,9 @@ const persons = {
       },
       "location": {
         "city": "Pasadena",
-        "country": " USA",
+        "country": "USA",
         "notes": "",
-        "region": " Californien",
+        "region": "Californien",
         "latitude": 34.14745,
         "longitude": -118.14427,
         "fetchStatus": "FETCHED"
@@ -45958,9 +45958,9 @@ const persons = {
         },
         "location": {
           "city": "Seneca",
-          "country": " USA",
+          "country": "USA",
           "notes": "",
-          "region": " Kansas"
+          "region": "Kansas"
         },
         "personId": 778
       }
@@ -45987,9 +45987,9 @@ const persons = {
       },
       "location": {
         "city": "Duluth",
-        "country": " USA",
+        "country": "USA",
         "notes": "",
-        "region": " Minnesota",
+        "region": "Minnesota",
         "latitude": 46.78796,
         "longitude": -92.09985,
         "fetchStatus": "FETCHED"
@@ -46023,9 +46023,9 @@ const persons = {
         },
         "location": {
           "city": "Duluth",
-          "country": " USA",
+          "country": "USA",
           "notes": "",
-          "region": " Minnesota"
+          "region": "Minnesota"
         },
         "personId": 827
       },
@@ -46040,9 +46040,9 @@ const persons = {
         },
         "location": {
           "city": "Duluth",
-          "country": " USA",
+          "country": "USA",
           "notes": "",
-          "region": " Minnesota"
+          "region": "Minnesota"
         },
         "personId": 828
       },
@@ -46057,9 +46057,9 @@ const persons = {
         },
         "location": {
           "city": "Duluth",
-          "country": " USA",
+          "country": "USA",
           "notes": "",
-          "region": " Minnesota"
+          "region": "Minnesota"
         },
         "personId": 829
       }
@@ -46068,7 +46068,7 @@ const persons = {
       "Marie"
     ],
     "mother": 812,
-    "notes": "(Tab 51:215 i GS).\nExamen fr\u00e5n Mt Vernon Seminary (som nu \u00e4r ett College) 1916 i Washington DC, USA. Medlem av Optima Society.",
+    "notes": "(Tab 51:215 i GS).\nExamen från Mt Vernon Seminary (som nu är ett College) 1916 i Washington DC, USA. Medlem av Optima Society.",
     "occupations": [],
     "references": [],
     "sex": "UNKNOWN",
@@ -46107,9 +46107,9 @@ const persons = {
         },
         "location": {
           "city": "Duluth",
-          "country": " USA",
+          "country": "USA",
           "notes": "",
-          "region": " Minnesota"
+          "region": "Minnesota"
         },
         "personId": 813
       }
@@ -46162,9 +46162,9 @@ const persons = {
       },
       "location": {
         "city": "Duluth",
-        "country": " USA",
+        "country": "USA",
         "notes": "",
-        "region": " Minnesota",
+        "region": "Minnesota",
         "latitude": 46.78796,
         "longitude": -92.09985,
         "fetchStatus": "FETCHED"
@@ -46187,9 +46187,9 @@ const persons = {
         },
         "location": {
           "city": "Duluth",
-          "country": " USA",
+          "country": "USA",
           "notes": "",
-          "region": " Minnesota"
+          "region": "Minnesota"
         },
         "personId": 813
       }
@@ -46216,9 +46216,9 @@ const persons = {
       },
       "location": {
         "city": "Sterling",
-        "country": " USA",
+        "country": "USA",
         "notes": "",
-        "region": " Kansas",
+        "region": "Kansas",
         "latitude": 38.21121,
         "longitude": -98.20688,
         "fetchStatus": "FETCHED"
@@ -46252,9 +46252,9 @@ const persons = {
         },
         "location": {
           "city": "Duluth",
-          "country": " USA",
+          "country": "USA",
           "notes": "",
-          "region": " Minnesota"
+          "region": "Minnesota"
         },
         "personId": 813
       }
@@ -46281,9 +46281,9 @@ const persons = {
       },
       "location": {
         "city": "Duluth",
-        "country": " USA",
+        "country": "USA",
         "notes": "",
-        "region": " Minnesota",
+        "region": "Minnesota",
         "latitude": 46.78796,
         "longitude": -92.09985,
         "fetchStatus": "FETCHED"
@@ -46307,9 +46307,9 @@ const persons = {
       },
       "location": {
         "city": "Pasadena",
-        "country": " USA",
+        "country": "USA",
         "notes": "",
-        "region": " Californien",
+        "region": "Californien",
         "latitude": 34.14745,
         "longitude": -118.14427,
         "fetchStatus": "FETCHED"
@@ -46325,7 +46325,7 @@ const persons = {
       "Gordon"
     ],
     "mother": 812,
-    "notes": "(Tab 51:216 i GS).\nExamen 1919 fr\u00e5n Williams College. Var f\u00f6rst Anst\u00e4lld i First American Bank i Duluth och blev senare vice ordf\u00f6rande d\u00e4r. Medlem i Duluth Rotary och aktiv inom kyrkan.",
+    "notes": "(Tab 51:216 i GS).\nExamen 1919 från Williams College. Var först Anställd i First American Bank i Duluth och blev senare vice ordförande där. Medlem i Duluth Rotary och aktiv inom kyrkan.",
     "occupations": [],
     "references": [],
     "sex": "UNKNOWN",
@@ -46343,9 +46343,9 @@ const persons = {
       },
       "location": {
         "city": "Hartford",
-        "country": " USA",
+        "country": "USA",
         "notes": "",
-        "region": " Conneticut",
+        "region": "Conneticut",
         "latitude": 41.76381,
         "longitude": -72.67397,
         "fetchStatus": "FETCHED"
@@ -46389,9 +46389,9 @@ const persons = {
         },
         "location": {
           "city": "Homcock",
-          "country": " USA",
+          "country": "USA",
           "notes": "",
-          "region": " Michigan"
+          "region": "Michigan"
         },
         "personId": 780
       }
@@ -46402,7 +46402,7 @@ const persons = {
     "mother": 830,
     "notes": "",
     "occupations": [
-      "Barnl\u00e4kare"
+      "Barnläkare"
     ],
     "references": [],
     "sex": "WOMAN",
@@ -46420,9 +46420,9 @@ const persons = {
       },
       "location": {
         "city": "Calumet",
-        "country": " USA",
+        "country": "USA",
         "notes": "",
-        "region": " Michigan",
+        "region": "Michigan",
         "latitude": 47.24608,
         "longitude": -88.45377,
         "fetchStatus": "FETCHED"
@@ -46446,9 +46446,9 @@ const persons = {
       },
       "location": {
         "city": "Gettysburg",
-        "country": " USA",
+        "country": "USA",
         "notes": "",
-        "region": " Pennsylvania",
+        "region": "Pennsylvania",
         "latitude": 39.83054,
         "longitude": -77.23113,
         "fetchStatus": "FETCHED"
@@ -46464,7 +46464,7 @@ const persons = {
       "Moore"
     ],
     "mother": 815,
-    "notes": "(Tab 52:219 i GS).\nAntogs vid krigsskolan i West Point 1919 och utexaminerades 1923.\nGick in vid amerikanska flygvapnet och omkom tragiskt n\u00e4r hans flygplan, under ett \u00e5skv\u00e4der, fl\u00f6g in i ett berg.",
+    "notes": "(Tab 52:219 i GS).\nAntogs vid krigsskolan i West Point 1919 och utexaminerades 1923.\nGick in vid amerikanska flygvapnet och omkom tragiskt när hans flygplan, under ett åskväder, flög in i ett berg.",
     "occupations": [],
     "references": [],
     "sex": "UNKNOWN",
@@ -46482,9 +46482,9 @@ const persons = {
       },
       "location": {
         "city": "Ducktown",
-        "country": " USA",
+        "country": "USA",
         "notes": "",
-        "region": " Tennessee",
+        "region": "Tennessee",
         "latitude": 35.03488,
         "longitude": -84.38255,
         "fetchStatus": "FETCHED"
@@ -46508,9 +46508,9 @@ const persons = {
       },
       "location": {
         "city": "Los Angeles",
-        "country": " USA",
+        "country": "USA",
         "notes": "",
-        "region": " Californien",
+        "region": "Californien",
         "latitude": 34.05357,
         "longitude": -118.24545,
         "fetchStatus": "FETCHED"
@@ -46526,7 +46526,7 @@ const persons = {
       "Louise"
     ],
     "mother": 815,
-    "notes": "(Tab 52:220 i GS).\nEfter avslutad skolg\u00e5ng i Los Angeles, studerade hon balett i sju \u00e5r och framtr\u00e4dde p\u00e5 Hollywood Bowl. Hon dansade vid Ebell teatern.\nHennes grupp, Staes-Valova, dansade vid premi\u00e4ren p\u00e5 Shrine Auditorium och Collisseum.\nI m\u00e5nga \u00e5r undervisade Marie, k\u00e4nd som Valova, i balett och producerade m\u00e5nga program f\u00f6r opera och konserter tills hon drog sig tillbaka.",
+    "notes": "(Tab 52:220 i GS).\nEfter avslutad skolgång i Los Angeles, studerade hon balett i sju år och framträdde på Hollywood Bowl. Hon dansade vid Ebell teatern.\nHennes grupp, Staes-Valova, dansade vid premiären på Shrine Auditorium och Collisseum.\nI många år undervisade Marie, känd som Valova, i balett och producerade många program för opera och konserter tills hon drog sig tillbaka.",
     "occupations": [
       "Koreograf"
     ],
@@ -46546,9 +46546,9 @@ const persons = {
       },
       "location": {
         "city": "Chatham",
-        "country": " Canada",
+        "country": "Canada",
         "notes": "",
-        "region": " New Brunswick",
+        "region": "New Brunswick",
         "latitude": 47.05556,
         "longitude": -65.34757,
         "fetchStatus": "FETCHED"
@@ -46577,9 +46577,9 @@ const persons = {
       },
       "location": {
         "city": "Downey",
-        "country": " USA",
+        "country": "USA",
         "notes": "",
-        "region": " Californien",
+        "region": "Californien",
         "latitude": 33.94077,
         "longitude": -118.12768,
         "fetchStatus": "FETCHED"
@@ -46602,7 +46602,7 @@ const persons = {
         },
         "location": {
           "city": "Colorado",
-          "country": " USA",
+          "country": "USA",
           "notes": "",
           "region": ""
         },
@@ -46631,9 +46631,9 @@ const persons = {
       },
       "location": {
         "city": "Globe",
-        "country": " USA",
+        "country": "USA",
         "notes": "",
-        "region": " Arizona",
+        "region": "Arizona",
         "latitude": 33.39592,
         "longitude": -110.7892,
         "fetchStatus": "FETCHED"
@@ -46657,9 +46657,9 @@ const persons = {
       },
       "location": {
         "city": "Globe",
-        "country": " USA",
+        "country": "USA",
         "notes": "",
-        "region": " Arizona",
+        "region": "Arizona",
         "latitude": 33.39592,
         "longitude": -110.7892,
         "fetchStatus": "FETCHED"
@@ -46691,9 +46691,9 @@ const persons = {
       },
       "location": {
         "city": "Globe",
-        "country": " USA",
+        "country": "USA",
         "notes": "",
-        "region": " Arizona",
+        "region": "Arizona",
         "latitude": 33.39592,
         "longitude": -110.7892,
         "fetchStatus": "FETCHED"
@@ -46730,9 +46730,9 @@ const persons = {
         },
         "location": {
           "city": "Los Angeles",
-          "country": " USA",
+          "country": "USA",
           "notes": "",
-          "region": " Californien"
+          "region": "Californien"
         },
         "personId": 834
       },
@@ -46747,9 +46747,9 @@ const persons = {
         },
         "location": {
           "city": "Riverside",
-          "country": " USA",
+          "country": "USA",
           "notes": "",
-          "region": " Californien"
+          "region": "Californien"
         },
         "personId": 835
       }
@@ -46760,7 +46760,7 @@ const persons = {
     "mother": 820,
     "notes": "Adress P.O Box 966, Pauma Valley, Californien 92061, USA.\n(Tab 53:222 i GS).\nBor i Pauma Valley, Californien, USA.",
     "occupations": [
-      "Plantage\u00e4gare"
+      "Plantageägare"
     ],
     "references": [],
     "sex": "MAN",
@@ -46778,9 +46778,9 @@ const persons = {
       },
       "location": {
         "city": "Globe",
-        "country": " USA",
+        "country": "USA",
         "notes": "",
-        "region": " Arizona",
+        "region": "Arizona",
         "latitude": 33.39592,
         "longitude": -110.7892,
         "fetchStatus": "FETCHED"
@@ -46804,9 +46804,9 @@ const persons = {
       },
       "location": {
         "city": "Globe",
-        "country": " USA",
+        "country": "USA",
         "notes": "",
-        "region": " Arizona",
+        "region": "Arizona",
         "latitude": 33.39592,
         "longitude": -110.7892,
         "fetchStatus": "FETCHED"
@@ -46840,9 +46840,9 @@ const persons = {
       },
       "location": {
         "city": "Globe",
-        "country": " USA",
+        "country": "USA",
         "notes": "",
-        "region": " Arizona",
+        "region": "Arizona",
         "latitude": 33.39592,
         "longitude": -110.7892,
         "fetchStatus": "FETCHED"
@@ -46881,9 +46881,9 @@ const persons = {
         },
         "location": {
           "city": "Los Angeles",
-          "country": " USA",
+          "country": "USA",
           "notes": "",
-          "region": " Californien"
+          "region": "Californien"
         },
         "personId": 838
       }
@@ -46892,9 +46892,9 @@ const persons = {
       "Edward"
     ],
     "mother": 820,
-    "notes": "Adress 321 Calle Fiesta, San Clemente, Californien 92672, USA.\n(Tab 53:223 i GS).\nBA i elenergi 1932 vid California Institute of Technology (Cal Tech) i Pasadena, Californien, USA. Var i n\u00e4ra 40 \u00e5r anst\u00e4lld som ingenj\u00f6r vid Pasadena Telephone Co. Pensionerades 1974.\nBor i San Clemente, Californien, USA.",
+    "notes": "Adress 321 Calle Fiesta, San Clemente, Californien 92672, USA.\n(Tab 53:223 i GS).\nBA i elenergi 1932 vid California Institute of Technology (Cal Tech) i Pasadena, Californien, USA. Var i nära 40 år anställd som ingenjör vid Pasadena Telephone Co. Pensionerades 1974.\nBor i San Clemente, Californien, USA.",
     "occupations": [
-      "Ingenj\u00f6r"
+      "Ingenjör"
     ],
     "references": [],
     "sex": "MAN",
@@ -46912,9 +46912,9 @@ const persons = {
       },
       "location": {
         "city": "Riverside",
-        "country": " USA",
+        "country": "USA",
         "notes": "",
-        "region": " Californien",
+        "region": "Californien",
         "latitude": 33.98171,
         "longitude": -117.37404,
         "fetchStatus": "FETCHED"
@@ -46941,9 +46941,9 @@ const persons = {
       },
       "location": {
         "city": "Los Angeles",
-        "country": " USA",
+        "country": "USA",
         "notes": "",
-        "region": " Californien",
+        "region": "Californien",
         "latitude": 34.05357,
         "longitude": -118.24545,
         "fetchStatus": "FETCHED"
@@ -46966,9 +46966,9 @@ const persons = {
         },
         "location": {
           "city": "Los Angeles",
-          "country": " USA",
+          "country": "USA",
           "notes": "",
-          "region": " Californien"
+          "region": "Californien"
         },
         "personId": 822
       }
@@ -46977,7 +46977,7 @@ const persons = {
     "mother": 843,
     "notes": "",
     "occupations": [
-      "L\u00e4rare"
+      "Lärare"
     ],
     "references": [],
     "sex": "WOMAN",
@@ -46995,9 +46995,9 @@ const persons = {
       },
       "location": {
         "city": "Long Beach",
-        "country": " USA",
+        "country": "USA",
         "notes": "",
-        "region": " Californien",
+        "region": "Californien",
         "latitude": 33.76672,
         "longitude": -118.1924,
         "fetchStatus": "FETCHED"
@@ -47031,9 +47031,9 @@ const persons = {
         },
         "location": {
           "city": "Riverside",
-          "country": " USA",
+          "country": "USA",
           "notes": "",
-          "region": " Californien"
+          "region": "Californien"
         },
         "personId": 822
       }
@@ -47060,9 +47060,9 @@ const persons = {
       },
       "location": {
         "city": "Whittier",
-        "country": " USA",
+        "country": "USA",
         "notes": "",
-        "region": " Californien",
+        "region": "Californien",
         "latitude": 33.97542,
         "longitude": -118.03386,
         "fetchStatus": "FETCHED"
@@ -47101,9 +47101,9 @@ const persons = {
         },
         "location": {
           "city": "Studic City",
-          "country": " USA",
+          "country": "USA",
           "notes": "",
-          "region": " Californien"
+          "region": "Californien"
         },
         "personId": 845
       }
@@ -47112,9 +47112,9 @@ const persons = {
       "Crawford"
     ],
     "mother": 834,
-    "notes": "Adress 2239 Via Oeste, Fallbrook, Californien 92028, USA.\nBA i ekonomi vid Pomona College 1960. Har arbetat som b\u00f6rsm\u00e4klare sedan dess och \u00e4r nu anst\u00e4lld hos Dean Witter i Fallbrook, Californien, USA. \u00c4r sedan m\u00e5nga \u00e5r medlem i Rotary och \u00e4r nu direkt\u00f6r d\u00e4r.\nBor i Fallbrook, Californien, USA.",
+    "notes": "Adress 2239 Via Oeste, Fallbrook, Californien 92028, USA.\nBA i ekonomi vid Pomona College 1960. Har arbetat som börsmäklare sedan dess och är nu anställd hos Dean Witter i Fallbrook, Californien, USA. Är sedan många år medlem i Rotary och är nu direktör där.\nBor i Fallbrook, Californien, USA.",
     "occupations": [
-      "B\u00f6rsm\u00e4klare"
+      "Börsmäklare"
     ],
     "references": [],
     "sex": "MAN",
@@ -47132,9 +47132,9 @@ const persons = {
       },
       "location": {
         "city": "Whittier",
-        "country": " USA",
+        "country": "USA",
         "notes": "",
-        "region": " Californien",
+        "region": "Californien",
         "latitude": 33.97542,
         "longitude": -118.03386,
         "fetchStatus": "FETCHED"
@@ -47168,9 +47168,9 @@ const persons = {
         },
         "location": {
           "city": "Downey",
-          "country": " USA",
+          "country": "USA",
           "notes": "",
-          "region": " Californien"
+          "region": "Californien"
         },
         "personId": 850
       }
@@ -47179,9 +47179,9 @@ const persons = {
       "Marie"
     ],
     "mother": 834,
-    "notes": "Adress 27932 Winding Way, Malibu, Californien 90265, USA.\nHar AB-examen och l\u00e4rarlegitimation 1965 fr\u00e5n University of California i Los Angeles, USA. Arbetar som l\u00e4rare sedan 1965.\nBor i Malibu, Californien, USA.",
+    "notes": "Adress 27932 Winding Way, Malibu, Californien 90265, USA.\nHar AB-examen och lärarlegitimation 1965 från University of California i Los Angeles, USA. Arbetar som lärare sedan 1965.\nBor i Malibu, Californien, USA.",
     "occupations": [
-      "L\u00e4rare"
+      "Lärare"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -47220,9 +47220,9 @@ const persons = {
         },
         "location": {
           "city": "Downey",
-          "country": " USA",
+          "country": "USA",
           "notes": "",
-          "region": " Californien"
+          "region": "Californien"
         },
         "personId": 837
       }
@@ -47231,9 +47231,9 @@ const persons = {
       "Wayne"
     ],
     "mother": null,
-    "notes": "Utexaminerad fr\u00e5n Los Angeles State College.",
+    "notes": "Utexaminerad från Los Angeles State College.",
     "occupations": [
-      "L\u00e4rare"
+      "Lärare"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -47251,9 +47251,9 @@ const persons = {
       },
       "location": {
         "city": "Hollywood",
-        "country": " USA",
+        "country": "USA",
         "notes": "",
-        "region": " Californien",
+        "region": "Californien",
         "latitude": 34.10156,
         "longitude": -118.33708,
         "fetchStatus": "FETCHED"
@@ -47292,9 +47292,9 @@ const persons = {
         },
         "location": {
           "city": "Studic City",
-          "country": " USA",
+          "country": "USA",
           "notes": "",
-          "region": " Californien"
+          "region": "Californien"
         },
         "personId": 836
       }
@@ -47321,9 +47321,9 @@ const persons = {
       },
       "location": {
         "city": "Lynwood",
-        "country": " USA",
+        "country": "USA",
         "notes": "",
-        "region": " Californien",
+        "region": "Californien",
         "latitude": 33.92783,
         "longitude": -118.19927,
         "fetchStatus": "FETCHED"
@@ -47370,9 +47370,9 @@ const persons = {
       },
       "location": {
         "city": "Los Angeles",
-        "country": " USA",
+        "country": "USA",
         "notes": "",
-        "region": " Californien",
+        "region": "Californien",
         "latitude": 34.05357,
         "longitude": -118.24545,
         "fetchStatus": "FETCHED"
@@ -47419,9 +47419,9 @@ const persons = {
       },
       "location": {
         "city": "Los Angeles",
-        "country": " USA",
+        "country": "USA",
         "notes": "",
-        "region": " Californien",
+        "region": "Californien",
         "latitude": 34.05357,
         "longitude": -118.24545,
         "fetchStatus": "FETCHED"
@@ -47468,9 +47468,9 @@ const persons = {
       },
       "location": {
         "city": "Los Angeles",
-        "country": " USA",
+        "country": "USA",
         "notes": "",
-        "region": " Californien",
+        "region": "Californien",
         "latitude": 34.05357,
         "longitude": -118.24545,
         "fetchStatus": "FETCHED"
@@ -47517,9 +47517,9 @@ const persons = {
       },
       "location": {
         "city": "Rochester",
-        "country": " USA",
+        "country": "USA",
         "notes": "",
-        "region": " New York",
+        "region": "New York",
         "latitude": 43.1558,
         "longitude": -77.61632,
         "fetchStatus": "FETCHED"
@@ -47558,9 +47558,9 @@ const persons = {
         },
         "location": {
           "city": "Los Angeles",
-          "country": " USA",
+          "country": "USA",
           "notes": "",
-          "region": " Californien"
+          "region": "Californien"
         },
         "personId": 824
       }
@@ -47587,9 +47587,9 @@ const persons = {
       },
       "location": {
         "city": "Whittier",
-        "country": " USA",
+        "country": "USA",
         "notes": "",
-        "region": " Californien",
+        "region": "Californien",
         "latitude": 33.97542,
         "longitude": -118.03386,
         "fetchStatus": "FETCHED"
@@ -47623,9 +47623,9 @@ const persons = {
         },
         "location": {
           "city": "Palos Verdes",
-          "country": " USA",
+          "country": "USA",
           "notes": "",
-          "region": " Californien"
+          "region": "Californien"
         },
         "personId": 855
       }
@@ -47634,9 +47634,9 @@ const persons = {
       "Carol"
     ],
     "mother": 838,
-    "notes": "Adress 268 St Katherines Road, Las Canada, Californien 91011, USA.\nBS i undervisning vid University of Southern California i Los Angeles.\nArbetat som l\u00e4rare i Glendale Unified School District i m\u00e5nga \u00e5r.\nBor i Las Canada, Californien, USA.",
+    "notes": "Adress 268 St Katherines Road, Las Canada, Californien 91011, USA.\nBS i undervisning vid University of Southern California i Los Angeles.\nArbetat som lärare i Glendale Unified School District i många år.\nBor i Las Canada, Californien, USA.",
     "occupations": [
-      "L\u00e4rare"
+      "Lärare"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -47654,9 +47654,9 @@ const persons = {
       },
       "location": {
         "city": "Van Nuys",
-        "country": " USA",
+        "country": "USA",
         "notes": "",
-        "region": " Californien",
+        "region": "Californien",
         "latitude": 34.18439,
         "longitude": -118.44652,
         "fetchStatus": "FETCHED"
@@ -47690,9 +47690,9 @@ const persons = {
         },
         "location": {
           "city": "Palos Verdes",
-          "country": " USA",
+          "country": "USA",
           "notes": "",
-          "region": " Californien"
+          "region": "Californien"
         },
         "personId": 839
       }
@@ -47719,9 +47719,9 @@ const persons = {
       },
       "location": {
         "city": "Los Angeles",
-        "country": " USA",
+        "country": "USA",
         "notes": "",
-        "region": " Californien",
+        "region": "Californien",
         "latitude": 34.05357,
         "longitude": -118.24545,
         "fetchStatus": "FETCHED"
@@ -47758,9 +47758,9 @@ const persons = {
         },
         "location": {
           "city": "Palos Verdes",
-          "country": " USA",
+          "country": "USA",
           "notes": "",
-          "region": " Californien"
+          "region": "Californien"
         },
         "personId": 858
       }
@@ -47789,9 +47789,9 @@ const persons = {
       },
       "location": {
         "city": "Long Beach",
-        "country": " USA",
+        "country": "USA",
         "notes": "",
-        "region": " Californien",
+        "region": "Californien",
         "latitude": 33.76672,
         "longitude": -118.1924,
         "fetchStatus": "FETCHED"
@@ -47828,9 +47828,9 @@ const persons = {
         },
         "location": {
           "city": "Palos Verdes",
-          "country": " USA",
+          "country": "USA",
           "notes": "",
-          "region": " Californien"
+          "region": "Californien"
         },
         "personId": 840
       }
@@ -47859,9 +47859,9 @@ const persons = {
       },
       "location": {
         "city": "Whittier",
-        "country": " USA",
+        "country": "USA",
         "notes": "",
-        "region": " Californien",
+        "region": "Californien",
         "latitude": 33.97542,
         "longitude": -118.03386,
         "fetchStatus": "FETCHED"
@@ -47898,9 +47898,9 @@ const persons = {
         },
         "location": {
           "city": "Los Angeles",
-          "country": " USA",
+          "country": "USA",
           "notes": "",
-          "region": " Californien"
+          "region": "Californien"
         },
         "personId": 863
       }
@@ -47909,9 +47909,9 @@ const persons = {
       "Lawrence"
     ],
     "mother": 838,
-    "notes": "Adress 8 Celeste Place, Rolling Hills Est, Californien 90274, USA.\nUtexaminerad 1971 fr\u00e5n University of Southern California Dental School. Har sedan dess arbetat som tandl\u00e4kare i Long Beach.\nBor i Rolling Hills, Californien, USA.",
+    "notes": "Adress 8 Celeste Place, Rolling Hills Est, Californien 90274, USA.\nUtexaminerad 1971 från University of Southern California Dental School. Har sedan dess arbetat som tandläkare i Long Beach.\nBor i Rolling Hills, Californien, USA.",
     "occupations": [
-      "Tandl\u00e4kare"
+      "Tandläkare"
     ],
     "references": [],
     "sex": "MAN",
@@ -47929,9 +47929,9 @@ const persons = {
       },
       "location": {
         "city": "Downey",
-        "country": " USA",
+        "country": "USA",
         "notes": "",
-        "region": " Californien",
+        "region": "Californien",
         "latitude": 33.94077,
         "longitude": -118.12768,
         "fetchStatus": "FETCHED"
@@ -47968,9 +47968,9 @@ const persons = {
         },
         "location": {
           "city": "Laguna Beach",
-          "country": " USA",
+          "country": "USA",
           "notes": "",
-          "region": " Californien"
+          "region": "Californien"
         },
         "personId": 866
       }
@@ -47979,7 +47979,7 @@ const persons = {
       "Karl"
     ],
     "mother": 838,
-    "notes": "Adress 1611 Sierra Alta, Santa Ana, Californien 92672, USA.\nUtexaminerades 1981 med en BS i datavetenskap fr\u00e5n University of California i Irvine. \u00c4r nu anst\u00e4lld vid Genisco Computers i Costa Mesa.\nBor i Santa Ana, Californien, USA.",
+    "notes": "Adress 1611 Sierra Alta, Santa Ana, Californien 92672, USA.\nUtexaminerades 1981 med en BS i datavetenskap från University of California i Irvine. Är nu anställd vid Genisco Computers i Costa Mesa.\nBor i Santa Ana, Californien, USA.",
     "occupations": [
       "Programmerare"
     ],
@@ -47999,9 +47999,9 @@ const persons = {
       },
       "location": {
         "city": "San Diego",
-        "country": " USA",
+        "country": "USA",
         "notes": "",
-        "region": " Californien",
+        "region": "Californien",
         "latitude": 32.71568,
         "longitude": -117.16171,
         "fetchStatus": "FETCHED"
@@ -48038,9 +48038,9 @@ const persons = {
         },
         "location": {
           "city": "Los Angeles",
-          "country": " USA",
+          "country": "USA",
           "notes": "",
-          "region": " Californien"
+          "region": "Californien"
         },
         "personId": 841
       }
@@ -48067,9 +48067,9 @@ const persons = {
       },
       "location": {
         "city": "Los Angeles",
-        "country": " USA",
+        "country": "USA",
         "notes": "",
-        "region": " Californien",
+        "region": "Californien",
         "latitude": 34.05357,
         "longitude": -118.24545,
         "fetchStatus": "FETCHED"
@@ -48096,7 +48096,7 @@ const persons = {
       "Richard"
     ],
     "mother": 863,
-    "notes": "Adress 8 Celeste Place, Rolling Hills Est, Californien 90274, USA.\nExamen fr\u00e5n College i San Diego. Anst\u00e4lld vid American City Morgage Co, Long Beach, Californien, USA som revisor.\nBor i Rolling Hills, Californien, USA.",
+    "notes": "Adress 8 Celeste Place, Rolling Hills Est, Californien 90274, USA.\nExamen från College i San Diego. Anställd vid American City Morgage Co, Long Beach, Californien, USA som revisor.\nBor i Rolling Hills, Californien, USA.",
     "occupations": [
       "Revisor"
     ],
@@ -48116,9 +48116,9 @@ const persons = {
       },
       "location": {
         "city": "Long Beach",
-        "country": " USA",
+        "country": "USA",
         "notes": "",
-        "region": " Californien",
+        "region": "Californien",
         "latitude": 33.76672,
         "longitude": -118.1924,
         "fetchStatus": "FETCHED"
@@ -48165,9 +48165,9 @@ const persons = {
       },
       "location": {
         "city": "Pasadena",
-        "country": " USA",
+        "country": "USA",
         "notes": "",
-        "region": " Californien",
+        "region": "Californien",
         "latitude": 34.14745,
         "longitude": -118.14427,
         "fetchStatus": "FETCHED"
@@ -48204,9 +48204,9 @@ const persons = {
         },
         "location": {
           "city": "Laguna Beach",
-          "country": " USA",
+          "country": "USA",
           "notes": "",
-          "region": " Californien"
+          "region": "Californien"
         },
         "personId": 842
       }
@@ -48755,7 +48755,7 @@ const persons = {
     "mother": 740,
     "notes": "(Tab 54:235 i GS).",
     "occupations": [
-      "Grosshandlare och sockerbruks\u00e4gare i stockholm"
+      "Grosshandlare och sockerbruksägare i stockholm"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -48802,7 +48802,7 @@ const persons = {
         "year": 1829
       },
       "location": {
-        "city": "Pite\u00e5",
+        "city": "Piteå",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -49300,7 +49300,7 @@ const persons = {
       "Maria"
     ],
     "mother": 748,
-    "notes": "(Tab 56:243 i GS).\nD\u00f6pt 1786-10-18.",
+    "notes": "(Tab 56:243 i GS).\nDöpt 1786-10-18.",
     "occupations": [],
     "references": [],
     "sex": "UNKNOWN",
@@ -49409,9 +49409,9 @@ const persons = {
       "Vilhelm"
     ],
     "mother": 748,
-    "notes": "(Tab 56:245 i GS).\nUtflyttad till Nordamerika fr\u00e5n Stockholm (AB).",
+    "notes": "(Tab 56:245 i GS).\nUtflyttad till Nordamerika från Stockholm (AB).",
     "occupations": [
-      "Tobaksfabrik\u00f6r i stockholm"
+      "Tobaksfabrikör i stockholm"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -49618,9 +49618,9 @@ const persons = {
       "Lorenz"
     ],
     "mother": 748,
-    "notes": "(Tab 56:248 i GS).\nGick vid unga \u00e5r till sj\u00f6ss och f\u00f6rde l\u00e4nge fartyg ? bl a briggen 'Beate Marie' ? med spannm\u00e5lslaster mellan Odessa och Marseille. Var 1740-46 bosatt p\u00e5 sin g\u00e5rd Grinda i V\u00e4rmd\u00f6 sn och 1746-50 p\u00e5 \u00d8verby i Bettna sn, vilken han ocks\u00e5 \u00e4gde och d\u00e4r han s\u00e4rskilt \u00e4gnade sig \u00e5t sin passion, fiske, samt fr\u00e5n sistn\u00e4mnda \u00e5r i Stockholm. Han skall ha \u00e4gt det vackraste 'gubbansikte' man kunde f\u00e5 se, inramat i silvervita lockar.",
+    "notes": "(Tab 56:248 i GS).\nGick vid unga år till sjöss och förde länge fartyg ? bl a briggen 'Beate Marie' ? med spannmålslaster mellan Odessa och Marseille. Var 1740-46 bosatt på sin gård Grinda i Värmdö sn och 1746-50 på Øverby i Bettna sn, vilken han också ägde och där han särskilt ägnade sig åt sin passion, fiske, samt från sistnämnda år i Stockholm. Han skall ha ägt det vackraste 'gubbansikte' man kunde få se, inramat i silvervita lockar.",
     "occupations": [
-      "Sj\u00f6kapten"
+      "Sjökapten"
     ],
     "references": [],
     "sex": "MAN",
@@ -49663,7 +49663,7 @@ const persons = {
         "year": 1867
       },
       "location": {
-        "city": "p\u00e5 Dalar\u00f6 i Stockholm",
+        "city": "på Dalarö i Stockholm",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -49695,7 +49695,7 @@ const persons = {
       "Rosalie"
     ],
     "mother": 748,
-    "notes": "(Tab 56:251 i GS).\nMarie beskrivs som en lugn och stillsam kvinna. Hennes man, allm\u00e4nt kallad 'Danvikskungen', var en barsk och respektingivande man, som - efter d\u00e5tida f\u00f6rh\u00e5llanden - samlade en respektingivande f\u00f6rm\u00f6genhet.",
+    "notes": "(Tab 56:251 i GS).\nMarie beskrivs som en lugn och stillsam kvinna. Hennes man, allmänt kallad 'Danvikskungen', var en barsk och respektingivande man, som - efter dåtida förhållanden - samlade en respektingivande förmögenhet.",
     "occupations": [],
     "references": [],
     "sex": "UNKNOWN",
@@ -49989,7 +49989,7 @@ const persons = {
       "Rosalie"
     ],
     "mother": 880,
-    "notes": "(Tab 57:249 i GS).\nFru Kjebon var en viljestark och praktisk kvinna och st\u00e4llde i hemmet p\u00e5 gammaldags kraftigt man\u00e9r. Hennes make var en god, r\u00e4ttfram och tillg\u00e4nglig person med stort sinne f\u00f6r humor, mycket skicklig i sitt yrke samt i besittning av ovanliga kroppskrafter, som till\u00e4t honom att in i sena \u00e5lderdomen sk\u00f6ta sina f\u00f6rr\u00e4ttningar under allehanda strapatser.",
+    "notes": "(Tab 57:249 i GS).\nFru Kjebon var en viljestark och praktisk kvinna och ställde i hemmet på gammaldags kraftigt manér. Hennes make var en god, rättfram och tillgänglig person med stort sinne för humor, mycket skicklig i sitt yrke samt i besittning av ovanliga kroppskrafter, som tillät honom att in i sena ålderdomen sköta sina förrättningar under allehanda strapatser.",
     "occupations": [],
     "references": [],
     "sex": "UNKNOWN",
@@ -50069,7 +50069,7 @@ const persons = {
     "mother": null,
     "notes": "",
     "occupations": [
-      "Kommissionslantm\u00e4tare"
+      "Kommissionslantmätare"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -50086,7 +50086,7 @@ const persons = {
         "year": 1836
       },
       "location": {
-        "city": "V\u00e4rmd\u00f6",
+        "city": "Värmdö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -50206,7 +50206,7 @@ const persons = {
     "father": null,
     "fileId": "0000001030",
     "firstName": "Lorenz",
-    "lastName": "Segerstr\u00f6m",
+    "lastName": "Segerström",
     "marriages": [
       {
         "date": {
@@ -50232,7 +50232,7 @@ const persons = {
     "mother": null,
     "notes": "",
     "occupations": [
-      "Stadsm\u00e4klare"
+      "Stadsmäklare"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -50272,7 +50272,7 @@ const persons = {
         "year": 1759
       },
       "location": {
-        "city": "G\u00e4vle",
+        "city": "Gävle",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -50297,7 +50297,7 @@ const persons = {
           "year": 1747
         },
         "location": {
-          "city": "G\u00e4vle",
+          "city": "Gävle",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -50324,7 +50324,7 @@ const persons = {
         "year": 1736
       },
       "location": {
-        "city": "G\u00e4vle",
+        "city": "Gävle",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -50352,7 +50352,7 @@ const persons = {
         "year": 1821
       },
       "location": {
-        "city": "G\u00e4vle",
+        "city": "Gävle",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -50377,7 +50377,7 @@ const persons = {
           "year": 1760
         },
         "location": {
-          "city": "G\u00e4vle",
+          "city": "Gävle",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -50448,7 +50448,7 @@ const persons = {
     "lastName": "Hegardt",
     "marriages": [],
     "middleNames": [
-      "Isra\u00ebl"
+      "Israël"
     ],
     "mother": 717,
     "notes": "(Tab 58:257i GS).",
@@ -50494,7 +50494,7 @@ const persons = {
         "year": 1822
       },
       "location": {
-        "city": "G\u00e4vle",
+        "city": "Gävle",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -50519,7 +50519,7 @@ const persons = {
           "year": 1773
         },
         "location": {
-          "city": "G\u00e4vle",
+          "city": "Gävle",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -50574,7 +50574,7 @@ const persons = {
         "year": 1803
       },
       "location": {
-        "city": "G\u00e4vle",
+        "city": "Gävle",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -50599,7 +50599,7 @@ const persons = {
           "year": 1773
         },
         "location": {
-          "city": "G\u00e4vle",
+          "city": "Gävle",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -50654,7 +50654,7 @@ const persons = {
         "year": 1757
       },
       "location": {
-        "city": "G\u00e4vle",
+        "city": "Gävle",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -50752,7 +50752,7 @@ const persons = {
         "year": 1761
       },
       "location": {
-        "city": "G\u00e4vle",
+        "city": "Gävle",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -50778,7 +50778,7 @@ const persons = {
         "year": 1831
       },
       "location": {
-        "city": "G\u00e4vle",
+        "city": "Gävle",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -50803,7 +50803,7 @@ const persons = {
           "year": 1782
         },
         "location": {
-          "city": "G\u00e4vle",
+          "city": "Gävle",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -50850,7 +50850,7 @@ const persons = {
         "year": 1808
       },
       "location": {
-        "city": "G\u00e4vle",
+        "city": "Gävle",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -50863,7 +50863,7 @@ const persons = {
     "father": null,
     "fileId": "0000001039",
     "firstName": "Johan",
-    "lastName": "Wikstr\u00f6m",
+    "lastName": "Wikström",
     "marriages": [
       {
         "date": {
@@ -50875,7 +50875,7 @@ const persons = {
           "year": 1782
         },
         "location": {
-          "city": "G\u00e4vle",
+          "city": "Gävle",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -50904,7 +50904,7 @@ const persons = {
         "year": 1728
       },
       "location": {
-        "city": "Aus\u00e5s",
+        "city": "Ausås",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -50932,7 +50932,7 @@ const persons = {
         "year": 1758
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -50981,7 +50981,7 @@ const persons = {
         "year": 1740
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -51013,7 +51013,7 @@ const persons = {
         "year": 1773
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -51060,7 +51060,7 @@ const persons = {
         "year": 1756
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -51086,7 +51086,7 @@ const persons = {
         "year": 1826
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -51111,7 +51111,7 @@ const persons = {
           "year": 1775
         },
         "location": {
-          "city": "Malm\u00f6",
+          "city": "Malmö",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -51158,7 +51158,7 @@ const persons = {
         "year": 1793
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -51183,7 +51183,7 @@ const persons = {
           "year": 1775
         },
         "location": {
-          "city": "Malm\u00f6",
+          "city": "Malmö",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -51214,7 +51214,7 @@ const persons = {
         "year": 1762
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -51240,7 +51240,7 @@ const persons = {
         "year": 1841
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -51265,7 +51265,7 @@ const persons = {
           "year": 1781
         },
         "location": {
-          "city": "Malm\u00f6",
+          "city": "Malmö",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -51296,7 +51296,7 @@ const persons = {
         "year": 1763
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -51322,7 +51322,7 @@ const persons = {
         "year": 1787
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -51347,7 +51347,7 @@ const persons = {
           "year": 1783
         },
         "location": {
-          "city": "Malm\u00f6",
+          "city": "Malmö",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -51394,7 +51394,7 @@ const persons = {
         "year": 1802
       },
       "location": {
-        "city": "p\u00e5 sin g\u00e5rd H\u00e5kanstorp",
+        "city": "på sin gård Håkanstorp",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -51419,7 +51419,7 @@ const persons = {
           "year": 1783
         },
         "location": {
-          "city": "Malm\u00f6",
+          "city": "Malmö",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -51431,7 +51431,7 @@ const persons = {
     "mother": null,
     "notes": "",
     "occupations": [
-      "Kyrkoinspekt\u00f6r"
+      "Kyrkoinspektör"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -51448,7 +51448,7 @@ const persons = {
         "year": 1764
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -51477,7 +51477,7 @@ const persons = {
         "year": 1824
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -51502,7 +51502,7 @@ const persons = {
           "year": 1787
         },
         "location": {
-          "city": "Malm\u00f6",
+          "city": "Malmö",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -51512,7 +51512,7 @@ const persons = {
     ],
     "middleNames": [],
     "mother": 724,
-    "notes": "(Tab 59:269 i GS).\nGustafva Borg H-dt sk\u00e4nkte 1824 en inv\u00e4ndigt f\u00f6rgylld oblatask av silver, som v\u00e4gde 245 gr, till Caroli kyrka i Malm\u00f6.",
+    "notes": "(Tab 59:269 i GS).\nGustafva Borg H-dt skänkte 1824 en invändigt förgylld oblatask av silver, som vägde 245 gr, till Caroli kyrka i Malmö.",
     "occupations": [],
     "references": [],
     "sex": "WOMAN",
@@ -51529,7 +51529,7 @@ const persons = {
         "year": 1755
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -51558,7 +51558,7 @@ const persons = {
         "year": 1817
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -51583,7 +51583,7 @@ const persons = {
           "year": 1787
         },
         "location": {
-          "city": "Malm\u00f6",
+          "city": "Malmö",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -51595,7 +51595,7 @@ const persons = {
     "mother": null,
     "notes": "",
     "occupations": [
-      "Tullf\u00f6rvaltare"
+      "Tullförvaltare"
     ],
     "references": [],
     "sex": "MAN",
@@ -51612,7 +51612,7 @@ const persons = {
         "year": 1766
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -51638,7 +51638,7 @@ const persons = {
         "year": 1831
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -51685,7 +51685,7 @@ const persons = {
         "year": 1755
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -51711,7 +51711,7 @@ const persons = {
         "year": 1820
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -51760,7 +51760,7 @@ const persons = {
         "year": 1771
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -51786,7 +51786,7 @@ const persons = {
         "year": 1790
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -51811,7 +51811,7 @@ const persons = {
           "year": 1787
         },
         "location": {
-          "city": "Malm\u00f6",
+          "city": "Malmö",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -51864,7 +51864,7 @@ const persons = {
         "year": 1814
       },
       "location": {
-        "city": "p\u00e5 Vegeholm i Str\u00f6velstorp",
+        "city": "på Vegeholm i Strövelstorp",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -51889,7 +51889,7 @@ const persons = {
           "year": 1787
         },
         "location": {
-          "city": "Malm\u00f6",
+          "city": "Malmö",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -51954,7 +51954,7 @@ const persons = {
           "year": 1924
         },
         "location": {
-          "city": "Malm\u00f6",
+          "city": "Malmö",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -51966,7 +51966,7 @@ const persons = {
     "mother": null,
     "notes": "",
     "occupations": [
-      "Sj\u00f6kapten"
+      "Sjökapten"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -52004,7 +52004,7 @@ const persons = {
           "year": 1935
         },
         "location": {
-          "city": "Malm\u00f6",
+          "city": "Malmö",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -52016,7 +52016,7 @@ const persons = {
     "mother": null,
     "notes": "",
     "occupations": [
-      "Banktj\u00e4nsteman"
+      "Banktjänsteman"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -52034,9 +52034,9 @@ const persons = {
       },
       "location": {
         "city": "Orange",
-        "country": " USA",
+        "country": "USA",
         "notes": "",
-        "region": " Californien",
+        "region": "Californien",
         "latitude": 33.78787,
         "longitude": -117.85071,
         "fetchStatus": "FETCHED"
@@ -52080,7 +52080,7 @@ const persons = {
         "year": 1696
       },
       "location": {
-        "city": "Skabersj\u00f6",
+        "city": "Skabersjö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -52108,7 +52108,7 @@ const persons = {
         "year": 1743
       },
       "location": {
-        "city": "Skabersj\u00f6",
+        "city": "Skabersjö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -52160,7 +52160,7 @@ const persons = {
         "year": 1656
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -52196,7 +52196,7 @@ const persons = {
         "year": 1725
       },
       "location": {
-        "city": "Skabersj\u00f6",
+        "city": "Skabersjö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -52221,7 +52221,7 @@ const persons = {
           "year": 1683
         },
         "location": {
-          "city": "Malm\u00f6",
+          "city": "Malmö",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -52335,7 +52335,7 @@ const persons = {
     "father": null,
     "fileId": "0000001061",
     "firstName": "Anna",
-    "lastName": "M\u00f6rt",
+    "lastName": "Mört",
     "marriages": [
       {
         "date": null,
@@ -52391,7 +52391,7 @@ const persons = {
     "mother": null,
     "notes": "",
     "occupations": [
-      "Packhusst\u00e4mpelm\u00e4stare"
+      "Packhusstämpelmästare"
     ],
     "references": [],
     "sex": "MAN",
@@ -52420,7 +52420,7 @@ const persons = {
     "father": null,
     "fileId": "0000001063",
     "firstName": "Eva",
-    "lastName": "H\u00f6gberg",
+    "lastName": "Högberg",
     "marriages": [
       {
         "date": null,
@@ -52472,7 +52472,7 @@ const persons = {
     "mother": null,
     "notes": "",
     "occupations": [
-      "Tullf\u00f6rvaltare"
+      "Tullförvaltare"
     ],
     "references": [],
     "sex": "MAN",
@@ -52500,7 +52500,7 @@ const persons = {
     "father": null,
     "fileId": "0000001065",
     "firstName": "Sofia",
-    "lastName": "Str\u00f6mberg",
+    "lastName": "Strömberg",
     "marriages": [
       {
         "date": null,
@@ -52631,12 +52631,12 @@ const persons = {
       }
     ],
     "middleNames": [
-      "J\u00f6rgen"
+      "Jörgen"
     ],
     "mother": null,
     "notes": "",
     "occupations": [
-      "Etatsr\u00e5d"
+      "Etatsråd"
     ],
     "references": [],
     "sex": "MAN",
@@ -52716,7 +52716,7 @@ const persons = {
     "mother": null,
     "notes": "",
     "occupations": [
-      "Direkt\u00f6r"
+      "Direktör"
     ],
     "references": [],
     "sex": "MAN",
@@ -52744,7 +52744,7 @@ const persons = {
     "father": null,
     "fileId": "0000001071",
     "firstName": "Olivia",
-    "lastName": "Holm\u00e9n",
+    "lastName": "Holmén",
     "marriages": [
       {
         "date": null,
@@ -52874,7 +52874,7 @@ const persons = {
     "mother": null,
     "notes": "",
     "occupations": [
-      "L\u00e4kare"
+      "Läkare"
     ],
     "references": [],
     "sex": "MAN",
@@ -53630,9 +53630,9 @@ const persons = {
       },
       "location": {
         "city": "Irvine",
-        "country": " USA",
+        "country": "USA",
         "notes": "",
-        "region": " Californien",
+        "region": "Californien",
         "latitude": 33.6873,
         "longitude": -117.82591,
         "fetchStatus": "FETCHED"
@@ -53988,7 +53988,7 @@ const persons = {
         "year": 1930
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -54024,7 +54024,7 @@ const persons = {
           "year": 1952
         },
         "location": {
-          "city": "Malm\u00f6",
+          "city": "Malmö",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -54033,15 +54033,15 @@ const persons = {
       }
     ],
     "middleNames": [
-      "Ir\u00e8ne",
+      "Irène",
       "Karin",
       "Doris",
       "Veronica"
     ],
     "mother": 789,
-    "notes": "Ingenj\u00f6rsexamen vid Malm\u00f6 h\u00f6gre tekniska l\u00e4roverk 1952.\n\u00c5lderdomshemsf\u00f6rest\u00e5ndareutbildning vid Kommunala h\u00f6gskolan i Malm\u00f6 1980. F\u00f6rest\u00e5ndare Celciusg\u00e5rden, Malm\u00f6 1980-1983. F\u00f6rest\u00e5ndare vid Sorgenfri Servicecentrum, Malm\u00f6 fr\u00e5n 1983.",
+    "notes": "Ingenjörsexamen vid Malmö högre tekniska läroverk 1952.\nÅlderdomshemsföreståndareutbildning vid Kommunala högskolan i Malmö 1980. Föreståndare Celciusgården, Malmö 1980-1983. Föreståndare vid Sorgenfri Servicecentrum, Malmö från 1983.",
     "occupations": [
-      "F\u00f6rest\u00e5ndare"
+      "Föreståndare"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -54101,7 +54101,7 @@ const persons = {
           "year": 1952
         },
         "location": {
-          "city": "Malm\u00f6",
+          "city": "Malmö",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -54110,13 +54110,13 @@ const persons = {
       }
     ],
     "middleNames": [
-      "B\u00f6rje"
+      "Börje"
     ],
     "mother": null,
-    "notes": "Ingenj\u00f6rsexamen vid Malm\u00f6 h\u00f6gre tekniska l\u00e4roverk 1951.\nH\u00f6gre f\u00f6retagsekonomisk examen 1967. Fil kand (sociologi, handelsr\u00e4tt) vid Lunds universitet 1981.",
+    "notes": "Ingenjörsexamen vid Malmö högre tekniska läroverk 1951.\nHögre företagsekonomisk examen 1967. Fil kand (sociologi, handelsrätt) vid Lunds universitet 1981.",
     "occupations": [
-      "Ingenj\u00f6r",
-      "F\u00f6retagsekonom"
+      "Ingenjör",
+      "Företagsekonom"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -54134,9 +54134,9 @@ const persons = {
       },
       "location": {
         "city": "Los Angeles",
-        "country": " USA",
+        "country": "USA",
         "notes": "",
-        "region": " Californien",
+        "region": "Californien",
         "latitude": 34.05357,
         "longitude": -118.24545,
         "fetchStatus": "FETCHED"
@@ -54165,7 +54165,7 @@ const persons = {
     "mother": 840,
     "notes": "BA i Matematik-Dator vetenskap vid UCLA, Los Angeles",
     "occupations": [
-      "Vice vd f\u00f6r after"
+      "Vice vd för after"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -54183,9 +54183,9 @@ const persons = {
       },
       "location": {
         "city": "Los Angeles",
-        "country": " USA",
+        "country": "USA",
         "notes": "",
-        "region": " Californien",
+        "region": "Californien",
         "latitude": 34.05357,
         "longitude": -118.24545,
         "fetchStatus": "FETCHED"
@@ -54231,7 +54231,7 @@ const persons = {
         "year": 1947
       },
       "location": {
-        "city": "i Finsp\u00e5ng ",
+        "city": "i Finspång",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -54258,7 +54258,7 @@ const persons = {
     "father": 916,
     "fileId": "0000001106",
     "firstName": "Bengt",
-    "lastName": "Holmstr\u00f6m",
+    "lastName": "Holmström",
     "marriages": [
       {
         "date": {
@@ -54271,7 +54271,7 @@ const persons = {
         },
         "location": {
           "city": "Vreta kloster",
-          "country": " Link\u00f6ping",
+          "country": "Linköping",
           "notes": "",
           "region": ""
         },
@@ -54280,7 +54280,7 @@ const persons = {
     ],
     "middleNames": [],
     "mother": 915,
-    "notes": "Jur kand 1972 i Lund (M).\nTingstj\u00e4nstg\u00f6ring vid Lidk\u00f6pings tingsr\u00e4tt. Kronofogde i Norrk\u00f6ping.\nAvdelningsdir vid Riksskatteverket, Stockholm.\nKronofogde i Malm\u00f6 sedan 1990.",
+    "notes": "Jur kand 1972 i Lund (M).\nTingstjänstgöring vid Lidköpings tingsrätt. Kronofogde i Norrköping.\nAvdelningsdir vid Riksskatteverket, Stockholm.\nKronofogde i Malmö sedan 1990.",
     "occupations": [
       "Kronofogde"
     ],
@@ -54299,7 +54299,7 @@ const persons = {
         "year": 1923
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -54337,7 +54337,7 @@ const persons = {
           "year": 1944
         },
         "location": {
-          "city": "Malm\u00f6",
+          "city": "Malmö",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -54349,10 +54349,10 @@ const persons = {
       "Carola"
     ],
     "mother": 787,
-    "notes": "Adress G\u00e4ddv\u00e4gen 27, 582 58 LINK\u00d8PING.\nFolkskoll\u00e4rarexamen, fil kand.\nL\u00e4rare vid Link\u00f6pings grundskolor. L\u00e4rarutbildare.\nBor i Link\u00f6ping (E).",
+    "notes": "Adress Gäddvägen 27, 582 58 LINKØPING.\nFolkskollärarexamen, fil kand.\nLärare vid Linköpings grundskolor. Lärarutbildare.\nBor i Linköping (E).",
     "occupations": [
-      "Folkskoll\u00e4rare",
-      "F\u00f6rfattare"
+      "Folkskollärare",
+      "Författare"
     ],
     "references": [],
     "sex": "WOMAN",
@@ -54397,7 +54397,7 @@ const persons = {
         "year": 1950
       },
       "location": {
-        "city": "\u00d8stra Hoby",
+        "city": "Østra Hoby",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -54410,7 +54410,7 @@ const persons = {
     "father": 918,
     "fileId": "0000001109",
     "firstName": "Carl",
-    "lastName": "M\u00f6ller",
+    "lastName": "Möller",
     "marriages": [
       {
         "date": {
@@ -54490,7 +54490,7 @@ const persons = {
           "year": 1944
         },
         "location": {
-          "city": "Malm\u00f6",
+          "city": "Malmö",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -54502,7 +54502,7 @@ const persons = {
       "Lennart"
     ],
     "mother": null,
-    "notes": "Oforskat Fullst\u00e4ndiga uppgifter (sid 3).",
+    "notes": "Oforskat Fullständiga uppgifter (sid 3).",
     "occupations": [
       "Officer vid lv2"
     ],
@@ -54551,7 +54551,7 @@ const persons = {
     "marriages": [],
     "middleNames": [],
     "mother": 920,
-    "notes": "1985 - 1990 Controller vid ABB. 1991 - 1994 Sakkunnig vid kommunikationsdepartementet. Fr\u00e5n 1995 anst\u00e4lld vid Unisource i Amsterdam, Holland.",
+    "notes": "1985 - 1990 Controller vid ABB. 1991 - 1994 Sakkunnig vid kommunikationsdepartementet. Från 1995 anställd vid Unisource i Amsterdam, Holland.",
     "occupations": [
       "Civilekonom"
     ],
@@ -54571,7 +54571,7 @@ const persons = {
       },
       "location": {
         "city": "Hegardt",
-        "country": " Danmark",
+        "country": "Danmark",
         "notes": "",
         "region": "",
         "latitude": 55.67567,
@@ -54611,7 +54611,7 @@ const persons = {
         "year": 1711
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -54636,7 +54636,7 @@ const persons = {
           "year": 1671
         },
         "location": {
-          "city": "Malm\u00f6",
+          "city": "Malmö",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -54653,7 +54653,7 @@ const persons = {
           "year": 1681
         },
         "location": {
-          "city": "Malm\u00f6",
+          "city": "Malmö",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -54663,9 +54663,9 @@ const persons = {
     ],
     "middleNames": [],
     "mother": 4,
-    "notes": "F\u00f6rfattare till \"Peters dagbok\".\nFlyttade 1655 till Sverige och Malm\u00f6. Extra r\u00e5dman 1687 och ordinarie 1692. Erbj\u00f6ds 1699 \u00e4mbetet som politiborgm\u00e4stare, men avb\u00f6jde. Erh\u00f6ll avsked fr\u00e5n r\u00e5dmanssysslan 1700.\nH var en av initiativtagarna till uppf\u00f6randet av Caroli kyrka och till bildandet av tyska f\u00f6rsamlingen i Malm\u00f6 (p\u00e5 vilket kungligt brev utf\u00e4rdades 1683 19/3). Han var dessutom en av de tv\u00e5 kyrkv\u00e4rdarna och f\u00f6rest\u00e5ndarna f\u00f6r kyrkbygget och kvarstod som s\u00e5dan till sin d\u00f6d.\n\"Hegardt var genom sin beg\u00e5vning, sin rikedom och sina sl\u00e4ktf\u00f6rbindelser en av Malm\u00f6 stads fr\u00e4mste m\u00e4n p\u00e5 sin tid. Av sin samtid var han s\u00e4kerligen den, som genom enskild, storslagen offervillighet mest bidragit till Tyska kyrkans fullbordande\" (Isberg, Malm\u00f6 stads kr\u00f6nikebok, III).\nH \u00e4gde flera fastigheter i Malm\u00f6 samt ink\u00f6pte 1697 godset Svenstorp i Igel\u00f6sa och Odarsl\u00f6vs socknar, som han 1707 \u00f6verl\u00e4t p\u00e5 sin sv\u00e4rson, Stjernblad.",
+    "notes": "Författare till \"Peters dagbok\".\nFlyttade 1655 till Sverige och Malmö. Extra rådman 1687 och ordinarie 1692. Erbjöds 1699 ämbetet som politiborgmästare, men avböjde. Erhöll avsked från rådmanssysslan 1700.\nH var en av initiativtagarna till uppförandet av Caroli kyrka och till bildandet av tyska församlingen i Malmö (på vilket kungligt brev utfärdades 1683 19/3). Han var dessutom en av de två kyrkvärdarna och föreståndarna för kyrkbygget och kvarstod som sådan till sin död.\n\"Hegardt var genom sin begåvning, sin rikedom och sina släktförbindelser en av Malmö stads främste män på sin tid. Av sin samtid var han säkerligen den, som genom enskild, storslagen offervillighet mest bidragit till Tyska kyrkans fullbordande\" (Isberg, Malmö stads krönikebok, III).\nH ägde flera fastigheter i Malmö samt inköpte 1697 godset Svenstorp i Igelösa och Odarslövs socknar, som han 1707 överlät på sin svärson, Stjernblad.",
     "occupations": [
-      "R\u00e5dman"
+      "Rådman"
     ],
     "references": [
       "se Peters dagbok",
@@ -54686,7 +54686,7 @@ const persons = {
         "year": 1652
       },
       "location": null,
-      "notes": "F\u00f6dd omkring 1652."
+      "notes": "Född omkring 1652."
     },
     "burial": {
       "date": null,
@@ -54722,7 +54722,7 @@ const persons = {
           "year": 1671
         },
         "location": {
-          "city": "Malm\u00f6",
+          "city": "Malmö",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -54781,7 +54781,7 @@ const persons = {
         "year": 1713
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -54806,7 +54806,7 @@ const persons = {
           "year": 1681
         },
         "location": {
-          "city": "Malm\u00f6",
+          "city": "Malmö",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -54833,7 +54833,7 @@ const persons = {
         "year": 1672
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -54926,7 +54926,7 @@ const persons = {
         "year": 1673
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -54959,7 +54959,7 @@ const persons = {
         "year": 1763
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -54995,7 +54995,7 @@ const persons = {
         "year": 1674
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -55028,7 +55028,7 @@ const persons = {
         "year": 1674
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -55064,7 +55064,7 @@ const persons = {
         "year": 1675
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -55090,7 +55090,7 @@ const persons = {
         "year": 1675
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -55126,7 +55126,7 @@ const persons = {
         "year": 1676
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -55159,7 +55159,7 @@ const persons = {
         "year": 1758
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -55202,7 +55202,7 @@ const persons = {
         "year": 1659
       },
       "location": {
-        "city": "Herr\u00f6d",
+        "city": "Herröd",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -55272,7 +55272,7 @@ const persons = {
         "year": 1677
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -55298,7 +55298,7 @@ const persons = {
         "year": 1677
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -55334,7 +55334,7 @@ const persons = {
         "year": 1678
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -55367,7 +55367,7 @@ const persons = {
         "year": 1679
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -55403,7 +55403,7 @@ const persons = {
         "year": 1683
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -55446,7 +55446,7 @@ const persons = {
         "year": 1762
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -55471,7 +55471,7 @@ const persons = {
           "year": 1710
         },
         "location": {
-          "city": "Malm\u00f6",
+          "city": "Malmö",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -55488,7 +55488,7 @@ const persons = {
           "year": 1732
         },
         "location": {
-          "city": "Malm\u00f6",
+          "city": "Malmö",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -55498,9 +55498,9 @@ const persons = {
     ],
     "middleNames": [],
     "mother": 923,
-    "notes": "(Tab 61 i GS).\nH erh\u00f6ll under tiden 1697-1705 i utlandet utbildning i handel och manufakturer. F\u00f6restod d\u00e4refter faderns handel till 1710, d\u00e5 han erh\u00f6ll burskap som egen handlare och drev bl a kl\u00e4deshandel. 1714 f\u00f6rordnades han av magistraten - d\u00e5 endast 31 \u00e5r - till f\u00f6rman f\u00f6r stadens \u00e4ldste samt valdes 1719 till riksdagsman f\u00f6r Malm\u00f6 och uts\u00e5gs till ledamot av sekreta utskottet.\n1720 kallades han enh\u00e4lligt till r\u00e5dman, men undanbad sig f\u00f6rtroendet. Uppsattes 1721 p\u00e5 f\u00f6rslag till justitieborgm\u00e4stare. Utn\u00e4mndes 1726 till politiborgm\u00e4stare och var \u00e5ren 1715?62 kyrkv\u00e4rd i Caroli f\u00f6rsamling.\n1718 erh\u00f6ll han privilegium p\u00e5 det nedlagda manufakturiet i Malm\u00f6, men begagnade sig ej av detsamma. I st\u00e4llet anlade han tillsammans med sin 2:a frus styvfar, handlanden och krigskommissarien Erasmus Cleve, en ylle- och kl\u00e4desfabrik, p\u00e5 vilken de 1726 erh\u00f6ll kungligt privilegium, med r\u00e4tt att bekl\u00e4da bl a tv\u00e5 infanteri- och tv\u00e5 kavalleriregementen i Sk\u00e5ne samt artillerigarnisonerna i Sk\u00e5ne och Karlshamn. Denna fabrik, som 1733 sysselsatte 99 personer, \u00f6vertog H efter Cleves d\u00f6d 1741 ensam och drev den med framg\u00e5ng till sitt fr\u00e5nf\u00e4lle.\nH, som ibland titulerades '\u00f6verkommissarie' \u00e4gde fastigheter i Malm\u00f6 och jordegendomar utanf\u00f6r staden samt efterl\u00e4mnade stor f\u00f6rm\u00f6genhet. 1742 ink\u00f6pte han av Cleves sterbhus B\u00f6rringe kloster, som han 1745 s\u00e5lde till greve Joakim Beck-Friis.\nVid hans begravning i Caroli kyrka den 28/7 utdelades ett sorgekv\u00e4de, som f\u00f6rfattats av Lars Anton Berg.",
+    "notes": "(Tab 61 i GS).\nH erhöll under tiden 1697-1705 i utlandet utbildning i handel och manufakturer. Förestod därefter faderns handel till 1710, då han erhöll burskap som egen handlare och drev bl a klädeshandel. 1714 förordnades han av magistraten - då endast 31 år - till förman för stadens äldste samt valdes 1719 till riksdagsman för Malmö och utsågs till ledamot av sekreta utskottet.\n1720 kallades han enhälligt till rådman, men undanbad sig förtroendet. Uppsattes 1721 på förslag till justitieborgmästare. Utnämndes 1726 till politiborgmästare och var åren 1715?62 kyrkvärd i Caroli församling.\n1718 erhöll han privilegium på det nedlagda manufakturiet i Malmö, men begagnade sig ej av detsamma. I stället anlade han tillsammans med sin 2:a frus styvfar, handlanden och krigskommissarien Erasmus Cleve, en ylle- och klädesfabrik, på vilken de 1726 erhöll kungligt privilegium, med rätt att bekläda bl a två infanteri- och två kavalleriregementen i Skåne samt artillerigarnisonerna i Skåne och Karlshamn. Denna fabrik, som 1733 sysselsatte 99 personer, övertog H efter Cleves död 1741 ensam och drev den med framgång till sitt frånfälle.\nH, som ibland titulerades 'överkommissarie' ägde fastigheter i Malmö och jordegendomar utanför staden samt efterlämnade stor förmögenhet. 1742 inköpte han av Cleves sterbhus Börringe kloster, som han 1745 sålde till greve Joakim Beck-Friis.\nVid hans begravning i Caroli kyrka den 28/7 utdelades ett sorgekväde, som författats av Lars Anton Berg.",
     "occupations": [
-      "Borgm\u00e4stare i malm\u00f6"
+      "Borgmästare i malmö"
     ],
     "references": [
       "se Peters dagbok",
@@ -55520,7 +55520,7 @@ const persons = {
         "year": 1682
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -55558,7 +55558,7 @@ const persons = {
     },
     "father": 7,
     "fileId": "0000001207",
-    "firstName": "J\u00f6ran",
+    "firstName": "Jöran",
     "lastName": "Hegardt",
     "marriages": [],
     "middleNames": [],
@@ -55584,7 +55584,7 @@ const persons = {
         "year": 1685
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -55642,7 +55642,7 @@ const persons = {
         },
         "location": {
           "city": "Greifswald",
-          "country": " Tyskland",
+          "country": "Tyskland",
           "notes": "",
           "region": ""
         },
@@ -55651,7 +55651,7 @@ const persons = {
     ],
     "middleNames": [],
     "mother": 923,
-    "notes": "(Tab 60:323 i GS).\nStudent i Lund 1702 och i Rostock 1705. Fil mag 1706 i Rostock. Studerade 1708?09 vid universitetet i Greifswald och blev d\u00e4r 1708 teol baccalaureus. Reste 1709 till England och var 1710?12 pastor vid den nyinr\u00e4ttade, ur den svenskdanska f\u00f6rsamlingen utbrutna svenska f\u00f6rsamlingen i London. Blev, efter att ha varit uppf\u00f6rd p\u00e5 f\u00f6rslag till eo professor i kyrkohistoria vid Lunds universitet, 1710 i maj av kungliga senaten utn\u00e4mnd till befattningen.\nTeol dr i Greifswald 1714. Tilltr\u00e4dde detta \u00e5r sin professur. Tredje teol professor i Lund samt kyrkoherde i Vallk\u00e4rra och St\u00e5ngby prebende?pastorat 1716. Prost i Torna kontrakt samma \u00e5r. Andre teol professor samt kyrkoherde i Upp\u00e5kra och Flackarp prebende?pastorat 1718 och prost i Bara kontrakt samma \u00e5r. F\u00f6rste teol professor och domprost i Lund 1728. Var rektor vid universitetet 1719?27 samt presiderade vid pr\u00e4stm\u00f6tet i Lund 1722.\nI London bodde han i tre \u00e5r hos den ryktbare Edzardus, som invigde honom till pr\u00e4st\u00e4mbetet och av vilken han vid avresan fr\u00e5n London fick det betyg \"att han genomg\u00e5tt alla den hebreiska grundtextens b\u00f6cker med de rabbinska kommentariernas j\u00e4mf\u00f6rande och d\u00e4rj\u00e4mte f\u00f6rskaffat sig en tillr\u00e4cklig kunskap i de \u00e4ldre orientalska spr\u00e5ken: kaldeiskan, arabiskan och persiskan\".\n(Enl en artikel i Sv Dagbladet 31/5 1936 valde den nya svenska f\u00f6rsamlingen H till kyrkoherde den 20/3 1710, varefter han den 26/3 pr\u00e4stvigdes ? i strid med den svenska kyrkans ordning ? av den engelske orientalisten dr Edzardus och installerades samma dag.) P\u00e5 egen och f\u00f6rsamlingens \u00f6nskan fick han, fast han var utn\u00e4mnd till professor, kungens tillst\u00e5nd att stanna i London, tills han hemkallades av konsistorium 1712. Innan han \u00e5terv\u00e4nde hem bes\u00f6kte han \u00e5tskilliga fr\u00e4mmande orter och uppeh\u00f6ll sig l\u00e4ngre eller kortare tid i Oxford, Cambridge, Amsterdam, Leyden, Utrecht, Rostock och Greifswald, d\u00e4r han disputerade f\u00f6r teol doktorsgraden.\nKarl XII bodde fr\u00e5n b\u00f6rjan av september 1716 till mitten av juli 1718 (med ett par l\u00e4ngre avbrott f\u00f6r vistelse i Str\u00f6mstad och de norska gr\u00e4nstrakterna) hos domprost H i dennes hus i Lund (huset mot St S\u00f6dergatan vid Katedralskolan). Som en yttring av sin bev\u00e5genhet bar kungen H:s son Karl till dopet, upph\u00f6jde 1717 hans fru och barn i adligt st\u00e5nd under namn von Hegardt (adl \u00e4tten nr 1536) samt bevistade \u00e4ven H:s installationsf\u00f6rel\u00e4sning som tredje teol professor.",
+    "notes": "(Tab 60:323 i GS).\nStudent i Lund 1702 och i Rostock 1705. Fil mag 1706 i Rostock. Studerade 1708?09 vid universitetet i Greifswald och blev där 1708 teol baccalaureus. Reste 1709 till England och var 1710?12 pastor vid den nyinrättade, ur den svenskdanska församlingen utbrutna svenska församlingen i London. Blev, efter att ha varit uppförd på förslag till eo professor i kyrkohistoria vid Lunds universitet, 1710 i maj av kungliga senaten utnämnd till befattningen.\nTeol dr i Greifswald 1714. Tillträdde detta år sin professur. Tredje teol professor i Lund samt kyrkoherde i Vallkärra och Stångby prebende?pastorat 1716. Prost i Torna kontrakt samma år. Andre teol professor samt kyrkoherde i Uppåkra och Flackarp prebende?pastorat 1718 och prost i Bara kontrakt samma år. Förste teol professor och domprost i Lund 1728. Var rektor vid universitetet 1719?27 samt presiderade vid prästmötet i Lund 1722.\nI London bodde han i tre år hos den ryktbare Edzardus, som invigde honom till prästämbetet och av vilken han vid avresan från London fick det betyg \"att han genomgått alla den hebreiska grundtextens böcker med de rabbinska kommentariernas jämförande och därjämte förskaffat sig en tillräcklig kunskap i de äldre orientalska språken: kaldeiskan, arabiskan och persiskan\".\n(Enl en artikel i Sv Dagbladet 31/5 1936 valde den nya svenska församlingen H till kyrkoherde den 20/3 1710, varefter han den 26/3 prästvigdes ? i strid med den svenska kyrkans ordning ? av den engelske orientalisten dr Edzardus och installerades samma dag.) På egen och församlingens önskan fick han, fast han var utnämnd till professor, kungens tillstånd att stanna i London, tills han hemkallades av konsistorium 1712. Innan han återvände hem besökte han åtskilliga främmande orter och uppehöll sig längre eller kortare tid i Oxford, Cambridge, Amsterdam, Leyden, Utrecht, Rostock och Greifswald, där han disputerade för teol doktorsgraden.\nKarl XII bodde från början av september 1716 till mitten av juli 1718 (med ett par längre avbrott för vistelse i Strömstad och de norska gränstrakterna) hos domprost H i dennes hus i Lund (huset mot St Södergatan vid Katedralskolan). Som en yttring av sin bevågenhet bar kungen H:s son Karl till dopet, upphöjde 1717 hans fru och barn i adligt stånd under namn von Hegardt (adl ätten nr 1536) samt bevistade även H:s installationsföreläsning som tredje teol professor.",
     "occupations": [
       "Domprost"
     ],
@@ -55672,7 +55672,7 @@ const persons = {
         "year": 1686
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -55698,7 +55698,7 @@ const persons = {
         "year": 1753
       },
       "location": {
-        "city": "p\u00e5 Svenstorp i Igel\u00f6sa",
+        "city": "på Svenstorp i Igelösa",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -55723,7 +55723,7 @@ const persons = {
           "year": 1702
         },
         "location": {
-          "city": "Malm\u00f6",
+          "city": "Malmö",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -55740,7 +55740,7 @@ const persons = {
           "year": 1706
         },
         "location": {
-          "city": "Malm\u00f6",
+          "city": "Malmö",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -55762,7 +55762,7 @@ const persons = {
     ],
     "middleNames": [],
     "mother": 923,
-    "notes": "(Tab 60:329 i GS).\nMakarna \u00e4r begravda i Igel\u00f6sa kyrka, d\u00e4r Maria l\u00e4t s\u00e4tta upp ett epitafium \u00e4ven \u00f6ver sin tredje man (Gyllenkrok).\nMaria H var en h\u00f6gt beg\u00e5vad, kraftfull och myndig dam, som v\u00e4l f\u00f6rvaltade sina stora \u00e4godelar, och kring vars person folkfantasin spunnit m\u00e5nga s\u00e4gner.\nI sitt f\u00f6rsta \u00e4ktenskap med r\u00e5dmannen Hack Persson, adlad Tholijn i Karlshamn, hade hon en son Hakvin, vilken adopterades av hennes 2:a man samt adlades och introducerades p\u00e5 denna \u00e4tts nummer. Till f\u00f6rm\u00e5n f\u00f6r honom och hans efterkommande gjorde hon 1743 St Markie i Andersl\u00f6v till fideikommiss. Detta gods hade hon \u00e4rvt efter Josua Stjernblad. Samtidigt gjorde hon Svenstorp till fideikommiss f\u00f6r sl\u00e4kten Gyllenkrok.\nEfter sin f\u00f6rsta makes d\u00f6d gifte hon om sig med Karl XII:s generalkrigskommissaire Stjernblad.\nAv sv\u00e4rfadern Hegardt \u00f6vertog Stjernblad dennes k\u00f6p av Svenstorp slott och gods. \u00c5r 1714 k\u00f6pte han \u00e4ven Stora Markie.\nN\u00e4r Stjernblad dog \u00e5r 1717 \u00e4rvde hustrun Maria de b\u00e5da godsen m.\nDen nu mycket rika Maria gifte sig \u00e5r 1723 f\u00f6r tredje g\u00e5ngen med Karl XII:s ber\u00f6mde general, Axel Gyllenkrok (friherre 1727). I \u00e4ktenskapet f\u00f6ddes en son, Fredrik Gustaf.\nEfter makens d\u00f6d (1730) bosatte sig Maria, nu friherrinna, p\u00e5 Svenstorp. \u00c5r 1743 instiftade hon f\u00f6r sina s\u00f6ner tvenne fideikommiss. Sonen Stiernblad fick Stora Markie och sonen Gyllenkrok Svenstorp. Hon f\u00f6rbeh\u00f6ll sig dock r\u00e4tten att disponera \u00f6ver egendomarna under sin livstid. I fideikommissbreven har best\u00e4mts att de kunna givas som morgong\u00e5va.\nMaria Hegardts son med Gyllenkrok fick Svenstorps fideikommiss.\nMaria Hegardt bodde efter maken Gyllenkroks d\u00f6d (1730) p\u00e5 Svenstorp. (Utdrag ur k\u00e5seri av Eug\u00e9ne Flygare)",
+    "notes": "(Tab 60:329 i GS).\nMakarna är begravda i Igelösa kyrka, där Maria lät sätta upp ett epitafium även över sin tredje man (Gyllenkrok).\nMaria H var en högt begåvad, kraftfull och myndig dam, som väl förvaltade sina stora ägodelar, och kring vars person folkfantasin spunnit många sägner.\nI sitt första äktenskap med rådmannen Hack Persson, adlad Tholijn i Karlshamn, hade hon en son Hakvin, vilken adopterades av hennes 2:a man samt adlades och introducerades på denna ätts nummer. Till förmån för honom och hans efterkommande gjorde hon 1743 St Markie i Anderslöv till fideikommiss. Detta gods hade hon ärvt efter Josua Stjernblad. Samtidigt gjorde hon Svenstorp till fideikommiss för släkten Gyllenkrok.\nEfter sin första makes död gifte hon om sig med Karl XII:s generalkrigskommissaire Stjernblad.\nAv svärfadern Hegardt övertog Stjernblad dennes köp av Svenstorp slott och gods. År 1714 köpte han även Stora Markie.\nNär Stjernblad dog år 1717 ärvde hustrun Maria de båda godsen m.\nDen nu mycket rika Maria gifte sig år 1723 för tredje gången med Karl XII:s berömde general, Axel Gyllenkrok (friherre 1727). I äktenskapet föddes en son, Fredrik Gustaf.\nEfter makens död (1730) bosatte sig Maria, nu friherrinna, på Svenstorp. År 1743 instiftade hon för sina söner tvenne fideikommiss. Sonen Stiernblad fick Stora Markie och sonen Gyllenkrok Svenstorp. Hon förbehöll sig dock rätten att disponera över egendomarna under sin livstid. I fideikommissbreven har bestämts att de kunna givas som morgongåva.\nMaria Hegardts son med Gyllenkrok fick Svenstorps fideikommiss.\nMaria Hegardt bodde efter maken Gyllenkroks död (1730) på Svenstorp. (Utdrag ur kåseri av Eugéne Flygare)",
     "occupations": [],
     "references": [
       "se Peters dagbok"
@@ -55824,7 +55824,7 @@ const persons = {
           "year": 1702
         },
         "location": {
-          "city": "Malm\u00f6",
+          "city": "Malmö",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -55890,7 +55890,7 @@ const persons = {
           "year": 1706
         },
         "location": {
-          "city": "Malm\u00f6",
+          "city": "Malmö",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -55900,9 +55900,9 @@ const persons = {
     ],
     "middleNames": [],
     "mother": null,
-    "notes": "Begraven i Igel\u00f6sa, d\u00e4r \u00e4nkan l\u00e4t s\u00e4tta upp ett epitafium \u00f6ver honom.",
+    "notes": "Begraven i Igelösa, där änkan lät sätta upp ett epitafium över honom.",
     "occupations": [
-      "Tull\u00f6verinspektor i sk\u00e5ne"
+      "Tullöverinspektor i skåne"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -55919,8 +55919,8 @@ const persons = {
         "year": 1665
       },
       "location": {
-        "city": "\u00c5bo",
-        "country": " Finland",
+        "city": "Åbo",
+        "country": "Finland",
         "notes": "",
         "region": "",
         "latitude": 60.4528,
@@ -55945,7 +55945,7 @@ const persons = {
         "year": 1730
       },
       "location": {
-        "city": "p\u00e5 Svenstorp i Igel\u00f6sa",
+        "city": "på Svenstorp i Igelösa",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -55978,7 +55978,7 @@ const persons = {
     "notes": "",
     "occupations": [
       "Friherre",
-      "Generall\u00f6jtnant och landsh\u00f6vding i g\u00f6teborg och bohus l\u00e4n"
+      "Generallöjtnant och landshövding i göteborg och bohus län"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -55995,7 +55995,7 @@ const persons = {
         "year": 1688
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -56021,7 +56021,7 @@ const persons = {
         "year": 1688
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -56057,7 +56057,7 @@ const persons = {
         "year": 1689
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -56090,7 +56090,7 @@ const persons = {
         "year": 1689
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -56158,7 +56158,7 @@ const persons = {
         "year": 1730
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -56183,7 +56183,7 @@ const persons = {
           "year": 1710
         },
         "location": {
-          "city": "Malm\u00f6",
+          "city": "Malmö",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -56195,7 +56195,7 @@ const persons = {
       "Katarina"
     ],
     "mother": 970,
-    "notes": "D\u00f6pt 1691-09-01 i Landskrona (M).",
+    "notes": "Döpt 1691-09-01 i Landskrona (M).",
     "occupations": [],
     "references": [
       "Gravsatt i Vellinge"
@@ -56214,7 +56214,7 @@ const persons = {
         "year": 1699
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -56240,7 +56240,7 @@ const persons = {
         "year": 1708
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -56276,7 +56276,7 @@ const persons = {
         "year": 1711
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -56308,7 +56308,7 @@ const persons = {
         "year": 1769
       },
       "location": {
-        "city": "H\u00e5stad",
+        "city": "Håstad",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -56333,7 +56333,7 @@ const persons = {
           "year": 1737
         },
         "location": {
-          "city": "H\u00e5sl\u00f6v",
+          "city": "Håslöv",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -56350,7 +56350,7 @@ const persons = {
           "year": 1757
         },
         "location": {
-          "city": "Fr\u00e4nninge",
+          "city": "Fränninge",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -56379,7 +56379,7 @@ const persons = {
         "year": 1712
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -56413,7 +56413,7 @@ const persons = {
         "year": 1753
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -56438,7 +56438,7 @@ const persons = {
           "year": 1739
         },
         "location": {
-          "city": "Malm\u00f6",
+          "city": "Malmö",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -56455,7 +56455,7 @@ const persons = {
           "year": 1741
         },
         "location": {
-          "city": "Malm\u00f6",
+          "city": "Malmö",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -56482,9 +56482,9 @@ const persons = {
     ],
     "middleNames": [],
     "mother": 943,
-    "notes": "(Tab 64 i GS).\nVar f\u00f6rst faktor vid faderns kl\u00e4desfabrik, men grundade sedan sj\u00e4lv en dylik \u00e5r 1740., vilken han drev till sin d\u00f6d. Idkade ocks\u00e5 handel samt \u00e4gde en g\u00e5rd i Malm\u00f6.",
+    "notes": "(Tab 64 i GS).\nVar först faktor vid faderns klädesfabrik, men grundade sedan själv en dylik år 1740., vilken han drev till sin död. Idkade också handel samt ägde en gård i Malmö.",
     "occupations": [
-      "Kl\u00e4desfabrik\u00f6r"
+      "Klädesfabrikör"
     ],
     "references": [],
     "sex": "MAN",
@@ -56501,7 +56501,7 @@ const persons = {
         "year": 1714
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -56532,7 +56532,7 @@ const persons = {
         "year": 1757
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -56544,7 +56544,7 @@ const persons = {
     },
     "father": 932,
     "fileId": "0000001219",
-    "firstName": "J\u00f6ran",
+    "firstName": "Jöran",
     "lastName": "Hegardt",
     "marriages": [
       {
@@ -56557,7 +56557,7 @@ const persons = {
           "year": 1748
         },
         "location": {
-          "city": "Malm\u00f6",
+          "city": "Malmö",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -56567,9 +56567,9 @@ const persons = {
     ],
     "middleNames": [],
     "mother": 943,
-    "notes": "(Tab 61:298 i GS).\nStudent i Lund 1727. Studerade juridik d\u00e4r till 1737. Stadsnotarie i Malm\u00f6 1738 och samma \u00e5r auskultant vid r\u00e5dstuvu och k\u00e4mn\u00e4rsr\u00e4tten i Stockholm samt var notarie vid riksdagens protokolldeputation. Tf stadssekreterare i Malm\u00f6 1740 och eo r\u00e5dman 1747. Avsked fr\u00e5n stadsnotarietj\u00e4nsten samma \u00e5r. Fick burskap som handlande i Malm\u00f6 1747. \u00c4gde g\u00e5rd i Malm\u00f6.",
+    "notes": "(Tab 61:298 i GS).\nStudent i Lund 1727. Studerade juridik där till 1737. Stadsnotarie i Malmö 1738 och samma år auskultant vid rådstuvu och kämnärsrätten i Stockholm samt var notarie vid riksdagens protokolldeputation. Tf stadssekreterare i Malmö 1740 och eo rådman 1747. Avsked från stadsnotarietjänsten samma år. Fick burskap som handlande i Malmö 1747. Ägde gård i Malmö.",
     "occupations": [
-      "R\u00e5dman"
+      "Rådman"
     ],
     "references": [],
     "sex": "MAN",
@@ -56586,7 +56586,7 @@ const persons = {
         "year": 1716
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -56612,7 +56612,7 @@ const persons = {
         "year": 1716
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -56646,7 +56646,7 @@ const persons = {
         "year": 1717
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -56682,7 +56682,7 @@ const persons = {
           "year": 1747
         },
         "location": {
-          "city": "Malm\u00f6",
+          "city": "Malmö",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -56711,7 +56711,7 @@ const persons = {
         "year": 1705
       },
       "location": {
-        "city": "p\u00e5 Krapperup i Brunnby ",
+        "city": "på Krapperup i Brunnby",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -56737,7 +56737,7 @@ const persons = {
         "year": 1761
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -56762,7 +56762,7 @@ const persons = {
           "year": 1747
         },
         "location": {
-          "city": "Malm\u00f6",
+          "city": "Malmö",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -56774,9 +56774,9 @@ const persons = {
       "Fredrik"
     ],
     "mother": null,
-    "notes": "Enligt Barfod, \"M\u00e4rkv\u00e4rdigheter etc\" f\u00f6ll Tollsten \"i mj\u00e4ltsjuka, f\u00f6r att han till husets behov n\u00f6dgades r\u00f6ra sitt kapital samt fattade till slut det or\u00e5det att kasta sig i slottsgraven\"",
+    "notes": "Enligt Barfod, \"Märkvärdigheter etc\" föll Tollsten \"i mjältsjuka, för att han till husets behov nödgades röra sitt kapital samt fattade till slut det orådet att kasta sig i slottsgraven\"",
     "occupations": [
-      "R\u00e5dman i malm\u00f6"
+      "Rådman i malmö"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -56793,7 +56793,7 @@ const persons = {
         "year": 1719
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -56819,7 +56819,7 @@ const persons = {
         "year": 1760
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -56838,7 +56838,7 @@ const persons = {
     "mother": 943,
     "notes": "(Tab 61:305 i GS).\nStudent i Lund 1738.",
     "occupations": [
-      "Handlande i malm\u00f6"
+      "Handlande i malmö"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -56855,7 +56855,7 @@ const persons = {
         "year": 1720
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -56881,7 +56881,7 @@ const persons = {
         "year": 1772
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -56990,7 +56990,7 @@ const persons = {
     "mother": null,
     "notes": "",
     "occupations": [
-      "Tullf\u00f6rvaltare i karlshamn"
+      "Tullförvaltare i karlshamn"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -57007,7 +57007,7 @@ const persons = {
         "year": 1722
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -57069,7 +57069,7 @@ const persons = {
         "year": 1723
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -57095,7 +57095,7 @@ const persons = {
         "year": 1804
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -57120,7 +57120,7 @@ const persons = {
           "year": 1751
         },
         "location": {
-          "city": "Malm\u00f6",
+          "city": "Malmö",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -57151,7 +57151,7 @@ const persons = {
         "year": 1718
       },
       "location": {
-        "city": "H\u00e5sl\u00f6v",
+        "city": "Håslöv",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -57202,7 +57202,7 @@ const persons = {
           "year": 1751
         },
         "location": {
-          "city": "Malm\u00f6",
+          "city": "Malmö",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -57233,7 +57233,7 @@ const persons = {
         "year": 1725
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -57259,7 +57259,7 @@ const persons = {
         "year": 1725
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -57295,7 +57295,7 @@ const persons = {
         "year": 1726
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -57321,7 +57321,7 @@ const persons = {
         "year": 1726
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -57357,7 +57357,7 @@ const persons = {
         "year": 1727
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -57403,12 +57403,12 @@ const persons = {
       "Ludvig"
     ],
     "mother": 943,
-    "notes": "(Tab 61:311 i GS).\nH \u00f6vertog efter faderns d\u00f6d det av denne drivna ylle? och kl\u00e4dnadsmanufakturiet. R\u00f6relsen gick emellertid med stigande f\u00f6rlust, s\u00e4rskilt i samband med den stora handelskrisen 1763 och p g a att det statsunderst\u00f6d, som tidigare kommit industrin till del, drogs in sedan m\u00f6sspartiet f\u00e5tt makten 1765. Fabriken lades ner av \u00e4nkan 1767. \u00c4gde hus i Malm\u00f6.",
+    "notes": "(Tab 61:311 i GS).\nH övertog efter faderns död det av denne drivna ylle? och klädnadsmanufakturiet. Rörelsen gick emellertid med stigande förlust, särskilt i samband med den stora handelskrisen 1763 och p g a att det statsunderstöd, som tidigare kommit industrin till del, drogs in sedan mösspartiet fått makten 1765. Fabriken lades ner av änkan 1767. Ägde hus i Malmö.",
     "occupations": [
-      "Kl\u00e4desfabrik\u00f6r"
+      "Klädesfabrikör"
     ],
     "references": [
-      "f\u00f6re juli, d\u00e5 vigselboken b\u00f6rjar"
+      "före juli, då vigselboken börjar"
     ],
     "sex": "MAN",
     "id": 956
@@ -57424,7 +57424,7 @@ const persons = {
         "year": 1730
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -57456,7 +57456,7 @@ const persons = {
         "year": 1771
       },
       "location": {
-        "city": "H\u00e5sl\u00f6v",
+        "city": "Håslöv",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -57481,7 +57481,7 @@ const persons = {
           "year": 1761
         },
         "location": {
-          "city": "Skan\u00f6r",
+          "city": "Skanör",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -57493,9 +57493,9 @@ const persons = {
       "Herman"
     ],
     "mother": 943,
-    "notes": "(Tab 67 i GS).\nStudent 1745 i Lund (M).\nFil mag 1757 och pr\u00e4stvigd 1759.",
+    "notes": "(Tab 67 i GS).\nStudent 1745 i Lund (M).\nFil mag 1757 och prästvigd 1759.",
     "occupations": [
-      "Vice pastor i skan\u00f6r"
+      "Vice pastor i skanör"
     ],
     "references": [],
     "sex": "MAN",
@@ -57512,7 +57512,7 @@ const persons = {
         "year": 1698
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -57542,7 +57542,7 @@ const persons = {
         "year": 1759
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -57567,7 +57567,7 @@ const persons = {
           "year": 1732
         },
         "location": {
-          "city": "Malm\u00f6",
+          "city": "Malmö",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -57596,7 +57596,7 @@ const persons = {
         "year": 1733
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -57622,7 +57622,7 @@ const persons = {
         "year": 1733
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -57658,7 +57658,7 @@ const persons = {
         "year": 1734
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -57684,7 +57684,7 @@ const persons = {
         "year": 1735
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -57720,7 +57720,7 @@ const persons = {
         "year": 1736
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -57746,7 +57746,7 @@ const persons = {
         "year": 1811
       },
       "location": {
-        "city": "p\u00e5 St Bjellerup i Bj\u00e4llerup",
+        "city": "på St Bjellerup i Bjällerup",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -57771,7 +57771,7 @@ const persons = {
           "year": 1759
         },
         "location": {
-          "city": "Malm\u00f6",
+          "city": "Malmö",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -57800,7 +57800,7 @@ const persons = {
         "year": 1724
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -57826,7 +57826,7 @@ const persons = {
         "year": 1813
       },
       "location": {
-        "city": "p\u00e5 St Bjellerup i Bj\u00e4llerup",
+        "city": "på St Bjellerup i Bjällerup",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -57839,7 +57839,7 @@ const persons = {
     "father": null,
     "fileId": "0000001237",
     "firstName": "Johan",
-    "lastName": "Gr\u00f6ningen",
+    "lastName": "Gröningen",
     "marriages": [
       {
         "date": {
@@ -57851,7 +57851,7 @@ const persons = {
           "year": 1759
         },
         "location": {
-          "city": "Malm\u00f6",
+          "city": "Malmö",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -57866,7 +57866,7 @@ const persons = {
     "mother": null,
     "notes": "",
     "occupations": [
-      "Hovj\u00e4gm\u00e4stare och krigsr\u00e5d"
+      "Hovjägmästare och krigsråd"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -57893,7 +57893,7 @@ const persons = {
     },
     "father": null,
     "fileId": "0000001238",
-    "firstName": "J\u00f6ns",
+    "firstName": "Jöns",
     "lastName": "Bager",
     "marriages": [
       {
@@ -57990,7 +57990,7 @@ const persons = {
         "year": 1755
       },
       "location": {
-        "city": "H\u00e5sl\u00f6v",
+        "city": "Håslöv",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -58020,7 +58020,7 @@ const persons = {
           "year": 1737
         },
         "location": {
-          "city": "H\u00e5sl\u00f6v",
+          "city": "Håslöv",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -58087,7 +58087,7 @@ const persons = {
         "year": 1677
       },
       "location": {
-        "city": "Sj\u00e4levad",
+        "city": "Själevad",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -58165,7 +58165,7 @@ const persons = {
         "year": 1737
       },
       "location": {
-        "city": "H\u00e5sl\u00f6v",
+        "city": "Håslöv",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -58219,7 +58219,7 @@ const persons = {
         "year": 1740
       },
       "location": {
-        "city": "H\u00e5sl\u00f6v",
+        "city": "Håslöv",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -58245,7 +58245,7 @@ const persons = {
         "year": 1814
       },
       "location": {
-        "city": "R\u00e4ng",
+        "city": "Räng",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -58270,7 +58270,7 @@ const persons = {
           "year": 1772
         },
         "location": {
-          "city": "H\u00e5sl\u00f6v",
+          "city": "Håslöv",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -58299,7 +58299,7 @@ const persons = {
         "year": 1731
       },
       "location": {
-        "city": "Skan\u00f6r",
+        "city": "Skanör",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -58325,7 +58325,7 @@ const persons = {
         "year": 1808
       },
       "location": {
-        "city": "H\u00e5sl\u00f6v",
+        "city": "Håslöv",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -58338,7 +58338,7 @@ const persons = {
     "father": null,
     "fileId": "0000001245",
     "firstName": "Lars",
-    "lastName": "Laur\u00e9n",
+    "lastName": "Laurén",
     "marriages": [
       {
         "date": {
@@ -58350,7 +58350,7 @@ const persons = {
           "year": 1772
         },
         "location": {
-          "city": "H\u00e5sl\u00f6v",
+          "city": "Håslöv",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -58379,7 +58379,7 @@ const persons = {
         "year": 1742
       },
       "location": {
-        "city": "H\u00e5sl\u00f6v",
+        "city": "Håslöv",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -58432,7 +58432,7 @@ const persons = {
           "year": 1775
         },
         "location": {
-          "city": "R\u00e4ng",
+          "city": "Räng",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -58442,12 +58442,12 @@ const persons = {
     ],
     "middleNames": [],
     "mother": 972,
-    "notes": "(Tab 62:286 i GS).\n(Hustrun var hans kusin, se ovan tab 99).\nStudent i Lund 1760 och studerade d\u00e4r teologi. Eo tullskrivare 1774 i Malm\u00f6. Tullskrivare i Lund 1784 och sedan tullf\u00f6rvaltare d\u00e4r.",
+    "notes": "(Tab 62:286 i GS).\n(Hustrun var hans kusin, se ovan tab 99).\nStudent i Lund 1760 och studerade där teologi. Eo tullskrivare 1774 i Malmö. Tullskrivare i Lund 1784 och sedan tullförvaltare där.",
     "occupations": [
-      "Tullf\u00f6rvaltare i lund"
+      "Tullförvaltare i lund"
     ],
     "references": [
-      "d\u00f6df\u00f6dd"
+      "dödfödd"
     ],
     "sex": "MAN",
     "id": 976
@@ -58463,7 +58463,7 @@ const persons = {
         "year": 1744
       },
       "location": {
-        "city": "H\u00e5sl\u00f6v",
+        "city": "Håslöv",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -58489,7 +58489,7 @@ const persons = {
         "year": 1745
       },
       "location": {
-        "city": "H\u00e5sl\u00f6v",
+        "city": "Håslöv",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -58523,7 +58523,7 @@ const persons = {
         "year": 1747
       },
       "location": {
-        "city": "H\u00e5sl\u00f6v",
+        "city": "Håslöv",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -58586,7 +58586,7 @@ const persons = {
     ],
     "middleNames": [],
     "mother": 972,
-    "notes": "(Tab 62:288 i GS).\nStudent i Lund 1725. H\u00f6ll 1731 parentation p\u00e5 latin \u00f6ver en avliden student Stridsberg. Blev samma \u00e5r informator hos hovmarskalken friherre A von D\u00fcben i Stockholm och 1732 huspr\u00e4st hos denne. Pr\u00e4stvigd 1732 i Uppsala. Fil mag i Lund 1734. F\u00f6reslogs 1735 av kanslikollegium till kyrkoherde vid svenska f\u00f6rsamlingen i London och rekommenderades samma \u00e5r av greve Arvid Horn till kyrkoherde i H\u00e5sl\u00f6v och Boderups pastorat. Till denna tj\u00e4nst utn\u00e4mndes han 1736 \u00e4nnu ej fyllda 25 \u00e5r. Vice kontraktsprost i Skytts kontrakt 1760. Fungerade vid pr\u00e4stm\u00f6ten som opponens, vice pr\u00e6ses och orator. Var en ansedd och kunnig man samt god predikant.\n\"Under prosten Hegardts tid \u00e5r 1748 uppkom v\u00e5deld, varvid hela pr\u00e4stg\u00e5rden brann ner i grunden och varvid mycken v\u00e4rdefull egendom gick f\u00f6rlorad, d\u00e4ribland biblioteket. Detta gav emellertid prosten anledning att i en bok 'Haslovensia et Boderupiensia' anteckna allt vad han ur minnet och genom forskning kunnat uppleta av historiska minnen, s\u00e4gner och ber\u00e4ttelser m. Han synes ha varit s\u00e4rskilt danad till fornforskare och historieskrivare och har d\u00e4rigenom l\u00e4mnat ett k\u00e4rt minne efter sig \u00e5t efterv\u00e4rlden\". (Malmgren)",
+    "notes": "(Tab 62:288 i GS).\nStudent i Lund 1725. Höll 1731 parentation på latin över en avliden student Stridsberg. Blev samma år informator hos hovmarskalken friherre A von Düben i Stockholm och 1732 huspräst hos denne. Prästvigd 1732 i Uppsala. Fil mag i Lund 1734. Föreslogs 1735 av kanslikollegium till kyrkoherde vid svenska församlingen i London och rekommenderades samma år av greve Arvid Horn till kyrkoherde i Håslöv och Boderups pastorat. Till denna tjänst utnämndes han 1736 ännu ej fyllda 25 år. Vice kontraktsprost i Skytts kontrakt 1760. Fungerade vid prästmöten som opponens, vice præses och orator. Var en ansedd och kunnig man samt god predikant.\n\"Under prosten Hegardts tid år 1748 uppkom vådeld, varvid hela prästgården brann ner i grunden och varvid mycken värdefull egendom gick förlorad, däribland biblioteket. Detta gav emellertid prosten anledning att i en bok 'Haslovensia et Boderupiensia' anteckna allt vad han ur minnet och genom forskning kunnat uppleta av historiska minnen, sägner och berättelser m. Han synes ha varit särskilt danad till fornforskare och historieskrivare och har därigenom lämnat ett kärt minne efter sig åt eftervärlden\". (Malmgren)",
     "occupations": [
       "Komminister"
     ],
@@ -58623,8 +58623,8 @@ const persons = {
         "year": 1771
       },
       "location": {
-        "city": "S H\u00e5sl\u00f6v",
-        "country": " H\u00e5sl\u00f6v",
+        "city": "S Håslöv",
+        "country": "Håslöv",
         "notes": "",
         "region": "",
         "latitude": 56.41374,
@@ -58636,7 +58636,7 @@ const persons = {
     "father": 1020,
     "fileId": "0000001249",
     "firstName": "Elisabet",
-    "lastName": "Gripensch\u00fctz",
+    "lastName": "Gripenschütz",
     "marriages": [
       {
         "date": {
@@ -58648,7 +58648,7 @@ const persons = {
           "year": 1757
         },
         "location": {
-          "city": "Fr\u00e4nninge",
+          "city": "Fränninge",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -58688,7 +58688,7 @@ const persons = {
     "father": null,
     "fileId": "0000001250",
     "firstName": "Anders",
-    "lastName": "Gripensch\u00fctz",
+    "lastName": "Gripenschütz",
     "marriages": [
       {
         "date": null,
@@ -58755,7 +58755,7 @@ const persons = {
         "year": 1722
       },
       "location": {
-        "city": "Aus\u00e5s",
+        "city": "Ausås",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -58783,7 +58783,7 @@ const persons = {
         "year": 1776
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -58890,7 +58890,7 @@ const persons = {
           "year": 1775
         },
         "location": {
-          "city": "R\u00e4ng",
+          "city": "Räng",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -58905,7 +58905,7 @@ const persons = {
     "notes": "",
     "occupations": [],
     "references": [
-      "d\u00f6df\u00f6dd"
+      "dödfödd"
     ],
     "sex": "WOMAN",
     "id": 1015
@@ -58985,7 +58985,7 @@ const persons = {
         "year": 1720
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -59013,7 +59013,7 @@ const persons = {
         "year": 1772
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -59095,7 +59095,7 @@ const persons = {
     "notes": "",
     "occupations": [],
     "references": [
-      "d\u00f6df\u00f6dd"
+      "dödfödd"
     ],
     "sex": "UNKNOWN",
     "id": 1016
@@ -59123,7 +59123,7 @@ const persons = {
         "year": 1784
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -59146,7 +59146,7 @@ const persons = {
         "year": 1784
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -59159,7 +59159,7 @@ const persons = {
     "father": 1024,
     "fileId": "0000001257",
     "firstName": "Katarina",
-    "lastName": "Kr\u00f6ger",
+    "lastName": "Kröger",
     "marriages": [
       {
         "date": {
@@ -59211,7 +59211,7 @@ const persons = {
     "father": null,
     "fileId": "0000001258",
     "firstName": "Karl",
-    "lastName": "Kr\u00f6ger",
+    "lastName": "Kröger",
     "marriages": [
       {
         "date": null,
@@ -59280,7 +59280,7 @@ const persons = {
         "year": 1753
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -59306,7 +59306,7 @@ const persons = {
         "year": 1834
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -59331,7 +59331,7 @@ const persons = {
           "year": 1781
         },
         "location": {
-          "city": "Malm\u00f6",
+          "city": "Malmö",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -59341,9 +59341,9 @@ const persons = {
     ],
     "middleNames": [],
     "mother": 657,
-    "notes": "(Tab 64:297 i GS).\n\u00c4gde vid sin d\u00f6d \"V\u00e4rdshus- och teaterbyggnaden\" (Stadt Hamburg).",
+    "notes": "(Tab 64:297 i GS).\nÄgde vid sin död \"Värdshus- och teaterbyggnaden\" (Stadt Hamburg).",
     "occupations": [
-      "Handlande i malm\u00f6 fr\u00e5n 1779"
+      "Handlande i malmö från 1779"
     ],
     "references": [
       "Se tabell 98"
@@ -59362,7 +59362,7 @@ const persons = {
         "year": 1783
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -59388,7 +59388,7 @@ const persons = {
         "year": 1847
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -59413,7 +59413,7 @@ const persons = {
           "year": 1806
         },
         "location": {
-          "city": "Malm\u00f6",
+          "city": "Malmö",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -59442,7 +59442,7 @@ const persons = {
         "year": 1782
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -59485,7 +59485,7 @@ const persons = {
           "year": 1806
         },
         "location": {
-          "city": "Malm\u00f6",
+          "city": "Malmö",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -59542,7 +59542,7 @@ const persons = {
         "year": 1740
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -59567,7 +59567,7 @@ const persons = {
           "year": 1739
         },
         "location": {
-          "city": "Malm\u00f6",
+          "city": "Malmö",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -59579,7 +59579,7 @@ const persons = {
       "Brita"
     ],
     "mother": 1026,
-    "notes": "D\u00f6pt 1723-03-14 i Helsingborg (M).",
+    "notes": "Döpt 1723-03-14 i Helsingborg (M).",
     "occupations": [],
     "references": [],
     "sex": "WOMAN",
@@ -59619,7 +59619,7 @@ const persons = {
     "mother": null,
     "notes": "",
     "occupations": [
-      "R\u00e5dman"
+      "Rådman"
     ],
     "references": [],
     "sex": "MAN",
@@ -59674,7 +59674,7 @@ const persons = {
         "year": 1740
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -59695,7 +59695,7 @@ const persons = {
       },
       "location": {
         "city": "Helsingfors",
-        "country": " Finland",
+        "country": "Finland",
         "notes": "",
         "region": "",
         "latitude": 60.17116,
@@ -59716,7 +59716,7 @@ const persons = {
       },
       "location": {
         "city": "Helsingfors",
-        "country": " Finland",
+        "country": "Finland",
         "notes": "",
         "region": "",
         "latitude": 60.17116,
@@ -59732,10 +59732,10 @@ const persons = {
     "marriages": [],
     "middleNames": [],
     "mother": 979,
-    "notes": "(Tab 64:291 i GS).\nUtflyttad till \u00c5bo, Finland 1763-02-11 fr\u00e5n Malm\u00f6 (M).\nFlyttade till \u00c5bo fr\u00e5n Malm\u00f6 1763. K\u00f6pte 'linne? och cattunstryckeriet' i \u00c5bo 1754 f\u00f6r 30.000 daler. Erh\u00f6ll burskap som borgare i \u00c5bo 1764.\nI slutet av 1766 m\u00e5ste han beg\u00e4ra sig i konkurs och ? sannolikt ? i slutet av 1769 eller 1770 s\u00e5ldes fabriken till f\u00e4rgaren A Conradi.\n\u00c5r 1774 uppsade han sitt burskap i \u00c5bo och f\u00f6rklarade att han skulle flytta till Helsingfors. Troligen skedde flyttningen redan 1773, d\u00e5 han \u00e4r upptagen i mantalsl\u00e4ngden f\u00f6r 1774, vilken \u00e4r daterade 1773.\nI Helsingfors k\u00f6pte han 1773 av f\u00e4rgaren Friedrich K\u00f6pke dennes g\u00e5rd och f\u00e4rgeri i den s k Gammelstaden, dock utan att kunna fullg\u00f6ra sina f\u00f6rbindelser.",
+    "notes": "(Tab 64:291 i GS).\nUtflyttad till Åbo, Finland 1763-02-11 från Malmö (M).\nFlyttade till Åbo från Malmö 1763. Köpte 'linne? och cattunstryckeriet' i Åbo 1754 för 30.000 daler. Erhöll burskap som borgare i Åbo 1764.\nI slutet av 1766 måste han begära sig i konkurs och ? sannolikt ? i slutet av 1769 eller 1770 såldes fabriken till färgaren A Conradi.\nÅr 1774 uppsade han sitt burskap i Åbo och förklarade att han skulle flytta till Helsingfors. Troligen skedde flyttningen redan 1773, då han är upptagen i mantalslängden för 1774, vilken är daterade 1773.\nI Helsingfors köpte han 1773 av färgaren Friedrich Köpke dennes gård och färgeri i den s k Gammelstaden, dock utan att kunna fullgöra sina förbindelser.",
     "occupations": [],
     "references": [
-      "\u00c5bo kyrkoarkivs kommissionsbok"
+      "Åbo kyrkoarkivs kommissionsbok"
     ],
     "sex": "UNKNOWN",
     "id": 981
@@ -59751,7 +59751,7 @@ const persons = {
         "year": 1723
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -59783,7 +59783,7 @@ const persons = {
         "year": 1751
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -59808,7 +59808,7 @@ const persons = {
           "year": 1741
         },
         "location": {
-          "city": "Malm\u00f6",
+          "city": "Malmö",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -59845,7 +59845,7 @@ const persons = {
     },
     "father": null,
     "fileId": "0000001268",
-    "firstName": "J\u00f6ran",
+    "firstName": "Jöran",
     "lastName": "Weijer",
     "marriages": [
       {
@@ -59915,7 +59915,7 @@ const persons = {
         "year": 1742
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -59941,7 +59941,7 @@ const persons = {
         "year": 1742
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -59957,7 +59957,7 @@ const persons = {
     "lastName": "Hegardt",
     "marriages": [],
     "middleNames": [
-      "J\u00f6ran"
+      "Jöran"
     ],
     "mother": 980,
     "notes": "(tab 64:292 i GS).",
@@ -59977,7 +59977,7 @@ const persons = {
         "year": 1743
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -60003,7 +60003,7 @@ const persons = {
         "year": 1744
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -60039,7 +60039,7 @@ const persons = {
         "year": 1745
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -60065,7 +60065,7 @@ const persons = {
         "year": 1749
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -60077,7 +60077,7 @@ const persons = {
     },
     "father": 946,
     "fileId": "0000001272",
-    "firstName": "J\u00f6ran",
+    "firstName": "Jöran",
     "lastName": "Hegardt",
     "marriages": [],
     "middleNames": [],
@@ -60099,7 +60099,7 @@ const persons = {
         "year": 1747
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -60125,7 +60125,7 @@ const persons = {
         "year": 1821
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -60150,7 +60150,7 @@ const persons = {
           "year": 1765
         },
         "location": {
-          "city": "Malm\u00f6",
+          "city": "Malmö",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -60205,7 +60205,7 @@ const persons = {
         "year": 1825
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -60230,7 +60230,7 @@ const persons = {
           "year": 1765
         },
         "location": {
-          "city": "Malm\u00f6",
+          "city": "Malmö",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -60259,7 +60259,7 @@ const persons = {
         "year": 1750
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -60285,7 +60285,7 @@ const persons = {
         "year": 1750
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -60321,7 +60321,7 @@ const persons = {
         "year": 1720
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -60352,7 +60352,7 @@ const persons = {
         "year": 1792
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -60377,7 +60377,7 @@ const persons = {
           "year": 1748
         },
         "location": {
-          "city": "Malm\u00f6",
+          "city": "Malmö",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -60486,7 +60486,7 @@ const persons = {
         "year": 1749
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -60506,7 +60506,7 @@ const persons = {
         "year": 1803
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -60527,7 +60527,7 @@ const persons = {
         "year": 1803
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -60546,7 +60546,7 @@ const persons = {
       "Katarina"
     ],
     "mother": 987,
-    "notes": "(Tab 65:299 i GS).\nD\u00f6pt 1749-07-17 i Malm\u00f6 (M).",
+    "notes": "(Tab 65:299 i GS).\nDöpt 1749-07-17 i Malmö (M).",
     "occupations": [],
     "references": [],
     "sex": "UNKNOWN",
@@ -60563,7 +60563,7 @@ const persons = {
         "year": 1750
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -60589,7 +60589,7 @@ const persons = {
         "year": 1791
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -60606,7 +60606,7 @@ const persons = {
     "marriages": [],
     "middleNames": [],
     "mother": 987,
-    "notes": "(Tab 65:300 i GS).\n\u00c4gde 1785 kl\u00e4des- och strumpfabriken \"Hoppet\" i Malm\u00f6.",
+    "notes": "(Tab 65:300 i GS).\nÄgde 1785 klädes- och strumpfabriken \"Hoppet\" i Malmö.",
     "occupations": [],
     "references": [],
     "sex": "UNKNOWN",
@@ -60623,7 +60623,7 @@ const persons = {
         "year": 1752
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -60649,7 +60649,7 @@ const persons = {
         "year": 1837
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -60666,9 +60666,9 @@ const persons = {
     "marriages": [],
     "middleNames": [],
     "mother": 987,
-    "notes": "(Tab 65:301 i GS).\n\u00d8vertog efter brodern Mattias kl\u00e4desfabriken \"Hoppet\", som han drev till 1814, d\u00e5 fabriken lades ner. \u00c4gde g\u00e5rd i Malm\u00f6.",
+    "notes": "(Tab 65:301 i GS).\nØvertog efter brodern Mattias klädesfabriken \"Hoppet\", som han drev till 1814, då fabriken lades ner. Ägde gård i Malmö.",
     "occupations": [
-      "Kl\u00e4desfabrik\u00f6r"
+      "Klädesfabrikör"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -60685,7 +60685,7 @@ const persons = {
         "year": 1757
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -60711,7 +60711,7 @@ const persons = {
         "year": 1841
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -60736,7 +60736,7 @@ const persons = {
           "year": 1789
         },
         "location": {
-          "city": "Malm\u00f6",
+          "city": "Malmö",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -60783,8 +60783,8 @@ const persons = {
         "year": 1816
       },
       "location": {
-        "city": "Helsing\u00f6r",
-        "country": " Danmark",
+        "city": "Helsingör",
+        "country": "Danmark",
         "notes": "",
         "region": "",
         "latitude": 56.03343,
@@ -60808,7 +60808,7 @@ const persons = {
           "year": 1789
         },
         "location": {
-          "city": "Malm\u00f6",
+          "city": "Malmö",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -60835,7 +60835,7 @@ const persons = {
         "year": 1744
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -60864,7 +60864,7 @@ const persons = {
         "year": 1808
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -60896,10 +60896,10 @@ const persons = {
       "Margareta"
     ],
     "mother": 1034,
-    "notes": "D\u00f6pt 1744-03-27 i Malm\u00f6 (M).",
+    "notes": "Döpt 1744-03-27 i Malmö (M).",
     "occupations": [],
     "references": [
-      "f\u00f6re juli, d\u00e5 vigselboken b\u00f6rjar"
+      "före juli, då vigselboken börjar"
     ],
     "sex": "WOMAN",
     "id": 996
@@ -60925,7 +60925,7 @@ const persons = {
     },
     "father": null,
     "fileId": "0000001285",
-    "firstName": "J\u00f6ns",
+    "firstName": "Jöns",
     "lastName": "Rosenlund",
     "marriages": [
       {
@@ -60938,7 +60938,7 @@ const persons = {
     "mother": null,
     "notes": "",
     "occupations": [
-      "R\u00e5dman och lasarettssyssloman"
+      "Rådman och lasarettssyssloman"
     ],
     "references": [],
     "sex": "MAN",
@@ -60995,7 +60995,7 @@ const persons = {
         "year": 1764
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -61065,7 +61065,7 @@ const persons = {
         "year": 1761
       },
       "location": {
-        "city": "p\u00e5 Lindholmen i Svedala ",
+        "city": "på Lindholmen i Svedala",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -61118,7 +61118,7 @@ const persons = {
     "mother": null,
     "notes": "",
     "occupations": [
-      "Kvartersm\u00e4stare"
+      "Kvartersmästare"
     ],
     "references": [],
     "sex": "MAN",
@@ -61135,7 +61135,7 @@ const persons = {
         "year": 1766
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -61161,7 +61161,7 @@ const persons = {
         "year": 1767
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -61197,7 +61197,7 @@ const persons = {
         "year": 1737
       },
       "location": {
-        "city": "Skan\u00f6r",
+        "city": "Skanör",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -61229,7 +61229,7 @@ const persons = {
         "year": 1804
       },
       "location": {
-        "city": "H\u00f6k\u00f6pinge",
+        "city": "Hököpinge",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -61254,7 +61254,7 @@ const persons = {
           "year": 1761
         },
         "location": {
-          "city": "Skan\u00f6r",
+          "city": "Skanör",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -61306,7 +61306,7 @@ const persons = {
     "mother": null,
     "notes": "",
     "occupations": [
-      "Borgm\u00e4stare i skan\u00f6r"
+      "Borgmästare i skanör"
     ],
     "references": [],
     "sex": "MAN",
@@ -61334,7 +61334,7 @@ const persons = {
     "father": null,
     "fileId": "0000001292",
     "firstName": "Helena",
-    "lastName": "S\u00f6rensdotter",
+    "lastName": "Sörensdotter",
     "marriages": [
       {
         "date": null,
@@ -61363,7 +61363,7 @@ const persons = {
         "year": 1764
       },
       "location": {
-        "city": "Skan\u00f6r",
+        "city": "Skanör",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -61389,7 +61389,7 @@ const persons = {
         "year": 1766
       },
       "location": {
-        "city": "Skan\u00f6r",
+        "city": "Skanör",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -61425,7 +61425,7 @@ const persons = {
         "year": 1763
       },
       "location": {
-        "city": "Skan\u00f6r",
+        "city": "Skanör",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -61532,7 +61532,7 @@ const persons = {
     "father": null,
     "fileId": "0000001295",
     "firstName": "Gustaf",
-    "lastName": "Isop\u00e6dius",
+    "lastName": "Isopædius",
     "marriages": [
       {
         "date": null,
@@ -61544,7 +61544,7 @@ const persons = {
     "mother": null,
     "notes": "",
     "occupations": [
-      "Komminister i alunda och morkarla f\u00f6rsamlingar"
+      "Komminister i alunda och morkarla församlingar"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -61561,7 +61561,7 @@ const persons = {
         "year": 1767
       },
       "location": {
-        "city": "Skan\u00f6r",
+        "city": "Skanör",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -61587,7 +61587,7 @@ const persons = {
         "year": 1823
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -61605,7 +61605,7 @@ const persons = {
       {
         "date": null,
         "location": {
-          "city": "(f\u00f6re) 1797",
+          "city": "(före) 1797",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -61652,7 +61652,7 @@ const persons = {
         "year": 1813
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -61665,12 +61665,12 @@ const persons = {
     "father": null,
     "fileId": "0000001297",
     "firstName": "Olof",
-    "lastName": "Ahlstr\u00f6m",
+    "lastName": "Ahlström",
     "marriages": [
       {
         "date": null,
         "location": {
-          "city": "(f\u00f6re) 1797",
+          "city": "(före) 1797",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -61682,7 +61682,7 @@ const persons = {
     "mother": null,
     "notes": "",
     "occupations": [
-      "Hamnfogde i malm\u00f6"
+      "Hamnfogde i malmö"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -61699,7 +61699,7 @@ const persons = {
         "year": 1769
       },
       "location": {
-        "city": "Skan\u00f6r",
+        "city": "Skanör",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -61788,7 +61788,7 @@ const persons = {
     "mother": null,
     "notes": "",
     "occupations": [
-      "Underl\u00f6jtnant vid artilleriet"
+      "Underlöjtnant vid artilleriet"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -61805,7 +61805,7 @@ const persons = {
         "year": 1772
       },
       "location": {
-        "city": "H\u00e5sl\u00f6v",
+        "city": "Håslöv",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -61853,7 +61853,7 @@ const persons = {
       },
       "location": {
         "city": "Greifswald",
-        "country": " Tyskland",
+        "country": "Tyskland",
         "notes": "",
         "region": "",
         "latitude": 54.09731,
@@ -61910,7 +61910,7 @@ const persons = {
         },
         "location": {
           "city": "Greifswald",
-          "country": " Tyskland",
+          "country": "Tyskland",
           "notes": "",
           "region": ""
         },
@@ -61963,7 +61963,7 @@ const persons = {
     "mother": null,
     "notes": "",
     "occupations": [
-      "\u00d8verdirekt\u00f6r vid pommerska lantkassan och borgm\u00e4stare"
+      "Øverdirektör vid pommerska lantkassan och borgmästare"
     ],
     "references": [],
     "sex": "MAN",
@@ -61991,7 +61991,7 @@ const persons = {
     "father": null,
     "fileId": "0000001303",
     "firstName": "Liboria",
-    "lastName": "Trendelenburg-Sch\u00f6nenwalde",
+    "lastName": "Trendelenburg-Schönenwalde",
     "marriages": [
       {
         "date": null,
@@ -62103,7 +62103,7 @@ const persons = {
         "year": 1780
       },
       "location": {
-        "city": "p\u00e5 sin egendom Berga i H\u00f6gsby",
+        "city": "på sin egendom Berga i Högsby",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -62135,7 +62135,7 @@ const persons = {
       "Fredrik"
     ],
     "mother": 961,
-    "notes": "(Tab 68:324 i GS).\nStuderade vid Lunds universitet, d\u00e4r han 1739 disputerade. Auskultant i G\u00f6ta Hovr\u00e4tt 1738. vice advokatfiskal 1739, kanslist 1740, extra notarie 1743, sekreterare 1747, eo assessor 1750 och ordinarie assessor 1752 samt revisionssekreterare 1756. F\u00f6rr\u00e4ttade justitiekansler\u00e4mbetet 1757 samt var \u00e5ren 1758 och 59 ledamot av en kunglig kommission. Stadssekreterare 1762. Ledamot i riddaresyner\u00e4tt 1755 samt tv\u00e5 g\u00e5nger \u00e5r 1763. Vid 1769 \u00e5rs riksdag uppf\u00f6rdes han tv\u00e5 g\u00e5nger p\u00e5 f\u00f6rslag till riksr\u00e5d. \u00c5r 1770 var han ledamot i pommerska kommissionen i Stralsund samt f\u00f6restod, utom ovann\u00e4mnda \u00e5r, vid flera tillf\u00e4llen justitiekansler\u00e4mbetet.\nRNO 1770. Upph\u00f6jd till friherrligt st\u00e5nd 1771 (frih \u00e4tten nr 288). KNO 1772 (valspr\u00e5k: post fata vivit honor). \u00c4gde f\u00f6rutom egendomen Berga, som \u00e4rvdes av hans systerson Henrik af Harmens, \u00e4ven \u00c5sebo i H\u00f6gsby.",
+    "notes": "(Tab 68:324 i GS).\nStuderade vid Lunds universitet, där han 1739 disputerade. Auskultant i Göta Hovrätt 1738. vice advokatfiskal 1739, kanslist 1740, extra notarie 1743, sekreterare 1747, eo assessor 1750 och ordinarie assessor 1752 samt revisionssekreterare 1756. Förrättade justitiekanslerämbetet 1757 samt var åren 1758 och 59 ledamot av en kunglig kommission. Stadssekreterare 1762. Ledamot i riddaresynerätt 1755 samt två gånger år 1763. Vid 1769 års riksdag uppfördes han två gånger på förslag till riksråd. År 1770 var han ledamot i pommerska kommissionen i Stralsund samt förestod, utom ovannämnda år, vid flera tillfällen justitiekanslerämbetet.\nRNO 1770. Upphöjd till friherrligt stånd 1771 (frih ätten nr 288). KNO 1772 (valspråk: post fata vivit honor). Ägde förutom egendomen Berga, som ärvdes av hans systerson Henrik af Harmens, även Åsebo i Högsby.",
     "occupations": [],
     "references": [],
     "sex": "UNKNOWN",
@@ -62170,7 +62170,7 @@ const persons = {
         "year": 1796
       },
       "location": {
-        "city": "p\u00e5 Berga i H\u00f6gsby",
+        "city": "på Berga i Högsby",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -62183,7 +62183,7 @@ const persons = {
     "father": 1046,
     "fileId": "0000001306",
     "firstName": "Anna",
-    "lastName": "af \u00c5minne",
+    "lastName": "af Åminne",
     "marriages": [
       {
         "date": {
@@ -62245,7 +62245,7 @@ const persons = {
     "mother": null,
     "notes": "",
     "occupations": [
-      "\u00d8verste",
+      "Øverste",
       "Friherre"
     ],
     "references": [],
@@ -62274,7 +62274,7 @@ const persons = {
     "father": null,
     "fileId": "0000001308",
     "firstName": "Anna",
-    "lastName": "Sj\u00f6blad",
+    "lastName": "Sjöblad",
     "marriages": [
       {
         "date": null,
@@ -62309,7 +62309,7 @@ const persons = {
       },
       "location": {
         "city": "Riga",
-        "country": " Lettland",
+        "country": "Lettland",
         "notes": "",
         "region": "",
         "latitude": 56.94598,
@@ -62503,7 +62503,7 @@ const persons = {
       "Liboria"
     ],
     "mother": 961,
-    "notes": "(Tab 68:326 i GS).\n\u00c4gde sedan 1783 \u00c5sebo, som hon \u00e4rvde efter sin bror. Deras son \u00e4rvde farbrodern Peter Fredriks egendom Berga.",
+    "notes": "(Tab 68:326 i GS).\nÄgde sedan 1783 Åsebo, som hon ärvde efter sin bror. Deras son ärvde farbrodern Peter Fredriks egendom Berga.",
     "occupations": [],
     "references": [],
     "sex": "UNKNOWN",
@@ -62688,7 +62688,7 @@ const persons = {
         "year": 1727
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -62765,7 +62765,7 @@ const persons = {
         "year": 1681
       },
       "location": {
-        "city": "Skabersj\u00f6",
+        "city": "Skabersjö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -62777,7 +62777,7 @@ const persons = {
     },
     "father": 1050,
     "fileId": "0000001315",
-    "firstName": "J\u00f6rgen",
+    "firstName": "Jörgen",
     "lastName": "Faxe",
     "marriages": [
       {
@@ -62804,7 +62804,7 @@ const persons = {
       }
     ],
     "middleNames": [
-      "G\u00f6ran"
+      "Göran"
     ],
     "mother": 1049,
     "notes": "",
@@ -62826,7 +62826,7 @@ const persons = {
         "year": 1738
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -62862,7 +62862,7 @@ const persons = {
         "year": 1705
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -63015,7 +63015,7 @@ const persons = {
       "Louise"
     ],
     "mother": 588,
-    "notes": "Oforskat Gift n\u00e4r och var (sid 1).\nBor i S\u00f6dra Sandby (M).",
+    "notes": "Oforskat Gift när och var (sid 1).\nBor i Södra Sandby (M).",
     "occupations": [
       "Rektor"
     ],
@@ -63063,9 +63063,9 @@ const persons = {
     ],
     "middleNames": [],
     "mother": 588,
-    "notes": "Oforskat Gift n\u00e4r och var (sid 1).\nBor i Vomb (M).",
+    "notes": "Oforskat Gift när och var (sid 1).\nBor i Vomb (M).",
     "occupations": [
-      "Ingenj\u00f6r"
+      "Ingenjör"
     ],
     "references": [],
     "sex": "MAN",
@@ -63113,7 +63113,7 @@ const persons = {
       "Peter"
     ],
     "mother": 588,
-    "notes": "Oforskat Gift n\u00e4r och var (sid 1).\nBor i Abbek\u00e5s, Skivarp (M).",
+    "notes": "Oforskat Gift när och var (sid 1).\nBor i Abbekås, Skivarp (M).",
     "occupations": [
       "Idrottsledare"
     ],
@@ -63161,9 +63161,9 @@ const persons = {
     ],
     "middleNames": [],
     "mother": 588,
-    "notes": "Oforskat Gift n\u00e4r och var (sid 1).\nBor i Vomb (M).",
+    "notes": "Oforskat Gift när och var (sid 1).\nBor i Vomb (M).",
     "occupations": [
-      "Ingenj\u00f6r"
+      "Ingenjör"
     ],
     "references": [],
     "sex": "MAN",
@@ -63203,7 +63203,7 @@ const persons = {
     ],
     "middleNames": [],
     "mother": null,
-    "notes": "Oforskat Fullst\u00e4ndig uppgifter (sid 1).\nOforskat Fullst\u00e4ndiga uppgifter om f\u00f6r\u00e4ldrar (sid 4).",
+    "notes": "Oforskat Fullständig uppgifter (sid 1).\nOforskat Fullständiga uppgifter om föräldrar (sid 4).",
     "occupations": [
       "Kemist"
     ],
@@ -63237,7 +63237,7 @@ const persons = {
     "mother": 600,
     "notes": "",
     "occupations": [
-      "Oforskat fullst\u00e4ndiga uppgifter"
+      "Oforskat fullständiga uppgifter"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -63269,7 +63269,7 @@ const persons = {
     "mother": 600,
     "notes": "",
     "occupations": [
-      "Oforskat fullst\u00e4ndiga uppgifter"
+      "Oforskat fullständiga uppgifter"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -63301,7 +63301,7 @@ const persons = {
     "mother": 600,
     "notes": "",
     "occupations": [
-      "Oforskat fullst\u00e4ndiga uppgifter"
+      "Oforskat fullständiga uppgifter"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -63372,7 +63372,7 @@ const persons = {
     "mother": 1068,
     "notes": "",
     "occupations": [
-      "Oforskat fullst\u00e4ndiga uppgifter"
+      "Oforskat fullständiga uppgifter"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -63404,7 +63404,7 @@ const persons = {
     "mother": 1068,
     "notes": "",
     "occupations": [
-      "Oforskat fullst\u00e4ndiga uppgifter"
+      "Oforskat fullständiga uppgifter"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -63532,7 +63532,7 @@ const persons = {
     "mother": 520,
     "notes": "",
     "occupations": [
-      "Oforskat fullst\u00e4ndiga uppgifter"
+      "Oforskat fullständiga uppgifter"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -63625,7 +63625,7 @@ const persons = {
         "year": 1974
       },
       "location": {
-        "city": "Link\u00f6ping",
+        "city": "Linköping",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -63638,7 +63638,7 @@ const persons = {
     "father": null,
     "fileId": "0000001388",
     "firstName": "Valter",
-    "lastName": "Holmstr\u00f6m",
+    "lastName": "Holmström",
     "marriages": [
       {
         "date": {
@@ -63662,7 +63662,7 @@ const persons = {
     "mother": null,
     "notes": "",
     "occupations": [
-      "Posttj\u00e4nsteman"
+      "Posttjänsteman"
     ],
     "references": [],
     "sex": "MAN",
@@ -63679,7 +63679,7 @@ const persons = {
         "year": 1912
       },
       "location": {
-        "city": "Link\u00f6ping",
+        "city": "Linköping",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -63746,8 +63746,8 @@ const persons = {
         "year": 1981
       },
       "location": {
-        "city": "Bogot\u00e1",
-        "country": " Colombia",
+        "city": "Bogotá",
+        "country": "Colombia",
         "notes": "",
         "region": "",
         "latitude": 4.61496,
@@ -63770,7 +63770,7 @@ const persons = {
     "father": 800,
     "fileId": "0000001391",
     "firstName": "David",
-    "lastName": "Holmstr\u00f6m",
+    "lastName": "Holmström",
     "marriages": [],
     "middleNames": [],
     "mother": 798,
@@ -63793,8 +63793,8 @@ const persons = {
         "year": 1983
       },
       "location": {
-        "city": "Bogot\u00e1",
-        "country": " Colombia",
+        "city": "Bogotá",
+        "country": "Colombia",
         "notes": "",
         "region": "",
         "latitude": 4.61496,
@@ -63817,7 +63817,7 @@ const persons = {
     "father": 800,
     "fileId": "0000001392",
     "firstName": "Olivia",
-    "lastName": "Holmstr\u00f6m",
+    "lastName": "Holmström",
     "marriages": [],
     "middleNames": [],
     "mother": 798,
@@ -63924,7 +63924,7 @@ const persons = {
     "mother": null,
     "notes": "",
     "occupations": [
-      "Sjuksk\u00f6terska"
+      "Sjuksköterska"
     ],
     "references": [],
     "sex": "WOMAN",
@@ -63977,7 +63977,7 @@ const persons = {
     ],
     "middleNames": [],
     "mother": 418,
-    "notes": "Adress Skyttev\u00e4gen 56, 181 46 LIDING\u00d8.\nOforskat Utbildning; Vigseldatum.\nBor p\u00e5 Liding\u00f6 (AB).",
+    "notes": "Adress Skyttevägen 56, 181 46 LIDINGØ.\nOforskat Utbildning; Vigseldatum.\nBor på Lidingö (AB).",
     "occupations": [
       "Civilekonom"
     ],
@@ -64055,9 +64055,9 @@ const persons = {
     ],
     "middleNames": [],
     "mother": null,
-    "notes": "Oforskat Fader; F\u00f6delsedatum; Vigseldatum; Yrke; D\u00f6dsdatum?.\nOforskat Moder; F\u00f6delsedatum; Flicknamn; Yrke; D\u00f6dsdatum?.",
+    "notes": "Oforskat Fader; Födelsedatum; Vigseldatum; Yrke; Dödsdatum?.\nOforskat Moder; Födelsedatum; Flicknamn; Yrke; Dödsdatum?.",
     "occupations": [
-      "Oforskat f\u00f6delsedatum"
+      "Oforskat födelsedatum"
     ],
     "references": [],
     "sex": "WOMAN",
@@ -64096,7 +64096,7 @@ const persons = {
     "mother": 1077,
     "notes": "",
     "occupations": [
-      "Oforskat f\u00f6delsedatum"
+      "Oforskat födelsedatum"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -64135,7 +64135,7 @@ const persons = {
     "mother": 1077,
     "notes": "",
     "occupations": [
-      "Oforskat f\u00f6delsedatum"
+      "Oforskat födelsedatum"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -64183,7 +64183,7 @@ const persons = {
       "Leopold"
     ],
     "mother": 317,
-    "notes": "Adress Gr\u00f6na v\u00e4gen 42 A, 541 54 SK\u00d8VDE.\nStudentexamen vid Sundstagymnasiet 1968 i Karlstad.\nFil kand vid Uppsala universitet 1973 .\nFr o m 1977 adjunkt i SO-\u00e4mnen p\u00e5 h\u00f6gstadieskola i Sk\u00f6vde.\nBor i Sk\u00f6vde.",
+    "notes": "Adress Gröna vägen 42 A, 541 54 SKØVDE.\nStudentexamen vid Sundstagymnasiet 1968 i Karlstad.\nFil kand vid Uppsala universitet 1973 .\nFr o m 1977 adjunkt i SO-ämnen på högstadieskola i Skövde.\nBor i Skövde.",
     "occupations": [
       "Adjunkt"
     ],
@@ -64226,7 +64226,7 @@ const persons = {
     "mother": 113,
     "notes": "",
     "occupations": [
-      "Barnl\u00e4kare"
+      "Barnläkare"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -64267,7 +64267,7 @@ const persons = {
     "mother": 113,
     "notes": "",
     "occupations": [
-      "Rekvisit\u00f6r"
+      "Rekvisitör"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -64840,7 +64840,7 @@ const persons = {
     "lastName": "Lindblad",
     "marriages": [],
     "middleNames": [
-      "G\u00f6ran",
+      "Göran",
       "Lechard"
     ],
     "mother": null,
@@ -65028,7 +65028,7 @@ const persons = {
         "year": 1728
       },
       "location": {
-        "city": "H\u00e5sl\u00f6v",
+        "city": "Håslöv",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -65054,7 +65054,7 @@ const persons = {
         "year": 1732
       },
       "location": {
-        "city": "H\u00e5sl\u00f6v",
+        "city": "Håslöv",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -65130,7 +65130,7 @@ const persons = {
         "year": 1729
       },
       "location": {
-        "city": "H\u00e5sl\u00f6v",
+        "city": "Håslöv",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -65177,7 +65177,7 @@ const persons = {
         "year": 1734
       },
       "location": {
-        "city": "H\u00e5sl\u00f6v",
+        "city": "Håslöv",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -65203,7 +65203,7 @@ const persons = {
         "year": 1734
       },
       "location": {
-        "city": "H\u00e5sl\u00f6v",
+        "city": "Håslöv",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -65269,7 +65269,7 @@ const persons = {
         "year": 1653
       },
       "location": {
-        "city": "Skabersj\u00f6",
+        "city": "Skabersjö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -65321,7 +65321,7 @@ const persons = {
         "year": 1648
       },
       "location": {
-        "city": "Skabersj\u00f6",
+        "city": "Skabersjö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -65347,7 +65347,7 @@ const persons = {
         "year": 1725
       },
       "location": {
-        "city": "Malm\u00f6 Sankt Petri",
+        "city": "Malmö Sankt Petri",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -65383,7 +65383,7 @@ const persons = {
         "year": 1649
       },
       "location": {
-        "city": "Skabersj\u00f6",
+        "city": "Skabersjö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -65409,7 +65409,7 @@ const persons = {
         "year": 1653
       },
       "location": {
-        "city": "Skabersj\u00f6",
+        "city": "Skabersjö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -65443,7 +65443,7 @@ const persons = {
         "year": 1650
       },
       "location": {
-        "city": "Skabersj\u00f6",
+        "city": "Skabersjö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -65469,7 +65469,7 @@ const persons = {
         "year": 1653
       },
       "location": {
-        "city": "Skabersj\u00f6",
+        "city": "Skabersjö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -65503,7 +65503,7 @@ const persons = {
         "year": 1651
       },
       "location": {
-        "city": "Skabersj\u00f6",
+        "city": "Skabersjö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -65529,7 +65529,7 @@ const persons = {
         "year": 1653
       },
       "location": {
-        "city": "Skabersj\u00f6",
+        "city": "Skabersjö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -65563,7 +65563,7 @@ const persons = {
         "year": 1652
       },
       "location": {
-        "city": "Skabersj\u00f6",
+        "city": "Skabersjö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -65589,7 +65589,7 @@ const persons = {
         "year": 1653
       },
       "location": {
-        "city": "Skabersj\u00f6",
+        "city": "Skabersjö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -65803,7 +65803,7 @@ const persons = {
     "father": null,
     "fileId": "0000001448",
     "firstName": "Jens",
-    "lastName": "S\u00f6frensen",
+    "lastName": "Söfrensen",
     "marriages": [
       {
         "date": {
@@ -65899,7 +65899,7 @@ const persons = {
         "year": 1658
       },
       "location": {
-        "city": "Skabersj\u00f6",
+        "city": "Skabersjö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -65925,7 +65925,7 @@ const persons = {
         "year": 1738
       },
       "location": {
-        "city": "Igel\u00f6sa",
+        "city": "Igelösa",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -65950,7 +65950,7 @@ const persons = {
           "year": 1680
         },
         "location": {
-          "city": "Skabersj\u00f6",
+          "city": "Skabersjö",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -65977,7 +65977,7 @@ const persons = {
         "year": 1659
       },
       "location": {
-        "city": "Skabersj\u00f6",
+        "city": "Skabersjö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -66013,7 +66013,7 @@ const persons = {
         "year": 1725
       },
       "location": {
-        "city": "Skabersj\u00f6",
+        "city": "Skabersjö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -66038,7 +66038,7 @@ const persons = {
           "year": 1683
         },
         "location": {
-          "city": "Malm\u00f6",
+          "city": "Malmö",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -66065,7 +66065,7 @@ const persons = {
         "year": 1663
       },
       "location": {
-        "city": "Skabersj\u00f6",
+        "city": "Skabersjö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -66091,7 +66091,7 @@ const persons = {
         "year": 1730
       },
       "location": {
-        "city": "Malm\u00f6 Sankt Petri",
+        "city": "Malmö Sankt Petri",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -66131,7 +66131,7 @@ const persons = {
         "year": 1663
       },
       "location": {
-        "city": "Skabersj\u00f6",
+        "city": "Skabersjö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -66182,7 +66182,7 @@ const persons = {
           "year": 1685
         },
         "location": {
-          "city": "Skabersj\u00f6",
+          "city": "Skabersjö",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -66209,7 +66209,7 @@ const persons = {
         "year": 1667
       },
       "location": {
-        "city": "Skabersj\u00f6",
+        "city": "Skabersjö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -66245,7 +66245,7 @@ const persons = {
           "year": 1685
         },
         "location": {
-          "city": "Skabersj\u00f6",
+          "city": "Skabersjö",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -66272,7 +66272,7 @@ const persons = {
         "year": 1669
       },
       "location": {
-        "city": "Skabersj\u00f6",
+        "city": "Skabersjö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -66298,7 +66298,7 @@ const persons = {
         "year": 1714
       },
       "location": {
-        "city": "Malm\u00f6 Sankt Petri",
+        "city": "Malmö Sankt Petri",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -66335,7 +66335,7 @@ const persons = {
           "year": 1700
         },
         "location": {
-          "city": "Malm\u00f6 Sankt Petri",
+          "city": "Malmö Sankt Petri",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -66362,7 +66362,7 @@ const persons = {
         "year": 1671
       },
       "location": {
-        "city": "Skabersj\u00f6",
+        "city": "Skabersjö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -66388,7 +66388,7 @@ const persons = {
         "year": 1710
       },
       "location": {
-        "city": "Malm\u00f6 Sankt Petri",
+        "city": "Malmö Sankt Petri",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -66422,7 +66422,7 @@ const persons = {
         "year": 1672
       },
       "location": {
-        "city": "Skabersj\u00f6",
+        "city": "Skabersjö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -66635,7 +66635,7 @@ const persons = {
         "year": 1465
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -66663,7 +66663,7 @@ const persons = {
         "year": 1532
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -66710,7 +66710,7 @@ const persons = {
         "year": 1464
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -66876,7 +66876,7 @@ const persons = {
         "year": 1684
       },
       "location": {
-        "city": "Malm\u00f6 Sankt Petri",
+        "city": "Malmö Sankt Petri",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -66901,7 +66901,7 @@ const persons = {
           "year": 1680
         },
         "location": {
-          "city": "Skabersj\u00f6",
+          "city": "Skabersjö",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -66928,7 +66928,7 @@ const persons = {
         "year": 1730
       },
       "location": {
-        "city": "Skabersj\u00f6",
+        "city": "Skabersjö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -67055,7 +67055,7 @@ const persons = {
           "year": 1795
         },
         "location": {
-          "city": "V\u00e4stra Vram",
+          "city": "Västra Vram",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -67099,7 +67099,7 @@ const persons = {
         "year": 1770
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -67131,7 +67131,7 @@ const persons = {
         "year": 1805
       },
       "location": {
-        "city": "S\u00f6dervidinge",
+        "city": "Södervidinge",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -67156,7 +67156,7 @@ const persons = {
           "year": 1795
         },
         "location": {
-          "city": "V\u00e4stra Vram",
+          "city": "Västra Vram",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -67270,9 +67270,9 @@ const persons = {
       },
       "location": {
         "city": "Medellin",
-        "country": " Sydamerika",
+        "country": "Sydamerika",
         "notes": "",
-        "region": " Nord Granada",
+        "region": "Nord Granada",
         "latitude": 6.23048,
         "longitude": -75.59149,
         "fetchStatus": "FETCHED"
@@ -67705,7 +67705,7 @@ const persons = {
         "year": 1750
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -67824,7 +67824,7 @@ const persons = {
     "father": null,
     "fileId": "0000001492",
     "firstName": "Jonas",
-    "lastName": "Engestr\u00f6m",
+    "lastName": "Engeström",
     "marriages": [
       {
         "date": {
@@ -67867,7 +67867,7 @@ const persons = {
         "year": 1754
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -67906,7 +67906,7 @@ const persons = {
     "father": 1113,
     "fileId": "0000001494",
     "firstName": "Engela",
-    "lastName": "B\u00f6dker",
+    "lastName": "Bödker",
     "marriages": [
       {
         "date": {
@@ -67975,7 +67975,7 @@ const persons = {
         "year": 1773
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -67988,7 +67988,7 @@ const persons = {
     "father": null,
     "fileId": "0000001496",
     "firstName": "Nils",
-    "lastName": "B\u00f6dker",
+    "lastName": "Bödker",
     "marriages": [
       {
         "date": null,
@@ -68070,7 +68070,7 @@ const persons = {
         "year": 1684
       },
       "location": {
-        "city": "Skabersj\u00f6",
+        "city": "Skabersjö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -68115,7 +68115,7 @@ const persons = {
         "year": 1686
       },
       "location": {
-        "city": "Skabersj\u00f6",
+        "city": "Skabersjö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -68160,7 +68160,7 @@ const persons = {
         "year": 1688
       },
       "location": {
-        "city": "Skabersj\u00f6",
+        "city": "Skabersjö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -68186,7 +68186,7 @@ const persons = {
         "year": 1763
       },
       "location": {
-        "city": "H\u00e4rsl\u00f6v",
+        "city": "Härslöv",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -68220,7 +68220,7 @@ const persons = {
         "year": 1689
       },
       "location": {
-        "city": "Skabersj\u00f6",
+        "city": "Skabersjö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -68246,7 +68246,7 @@ const persons = {
         "year": 1690
       },
       "location": {
-        "city": "Skabersj\u00f6",
+        "city": "Skabersjö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -68258,7 +68258,7 @@ const persons = {
     },
     "father": 699,
     "fileId": "0000001501",
-    "firstName": "J\u00f6rgen",
+    "firstName": "Jörgen",
     "lastName": "Faxe",
     "marriages": [],
     "middleNames": [],
@@ -68280,7 +68280,7 @@ const persons = {
         "year": 1691
       },
       "location": {
-        "city": "Skabersj\u00f6",
+        "city": "Skabersjö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -68306,7 +68306,7 @@ const persons = {
         "year": 1691
       },
       "location": {
-        "city": "Skabersj\u00f6",
+        "city": "Skabersjö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -68318,7 +68318,7 @@ const persons = {
     },
     "father": 699,
     "fileId": "0000001502",
-    "firstName": "J\u00f6rgen",
+    "firstName": "Jörgen",
     "lastName": "Faxe",
     "marriages": [],
     "middleNames": [],
@@ -68340,7 +68340,7 @@ const persons = {
         "year": 1693
       },
       "location": {
-        "city": "Skabersj\u00f6",
+        "city": "Skabersjö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -68366,7 +68366,7 @@ const persons = {
         "year": 1738
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -68408,7 +68408,7 @@ const persons = {
         "year": 1694
       },
       "location": {
-        "city": "Skabersj\u00f6",
+        "city": "Skabersjö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -68434,7 +68434,7 @@ const persons = {
         "year": 1728
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -68485,7 +68485,7 @@ const persons = {
         "year": 1769
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -68497,7 +68497,7 @@ const persons = {
     },
     "father": 1117,
     "fileId": "0000001506",
-    "firstName": "G\u00f6ran",
+    "firstName": "Göran",
     "lastName": "Weijer",
     "marriages": [
       {
@@ -68538,7 +68538,7 @@ const persons = {
         "year": 1709
       },
       "location": {
-        "city": "Malm\u00f6 Sankt Petri",
+        "city": "Malmö Sankt Petri",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -68578,7 +68578,7 @@ const persons = {
         "year": 1710
       },
       "location": {
-        "city": "Malm\u00f6 Sankt Petri",
+        "city": "Malmö Sankt Petri",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -68606,7 +68606,7 @@ const persons = {
         "year": 1743
       },
       "location": {
-        "city": "Malm\u00f6 Sankt Petri",
+        "city": "Malmö Sankt Petri",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -68657,7 +68657,7 @@ const persons = {
         "year": 1749
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -68708,7 +68708,7 @@ const persons = {
         "year": 1729
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -68776,7 +68776,7 @@ const persons = {
         "year": 1675
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -68876,7 +68876,7 @@ const persons = {
         "year": 1666
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -68916,7 +68916,7 @@ const persons = {
         "year": 1656
       },
       "location": {
-        "city": "Malm\u00f6 Sankt Petri",
+        "city": "Malmö Sankt Petri",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -68967,7 +68967,7 @@ const persons = {
           "year": 1685
         },
         "location": {
-          "city": "Skabersj\u00f6",
+          "city": "Skabersjö",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -68994,7 +68994,7 @@ const persons = {
         "year": 1634
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -69022,7 +69022,7 @@ const persons = {
         "year": 1694
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -69047,7 +69047,7 @@ const persons = {
           "year": 1653
         },
         "location": {
-          "city": "Malm\u00f6",
+          "city": "Malmö",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -69074,7 +69074,7 @@ const persons = {
         "year": 1638
       },
       "location": {
-        "city": "Malm\u00f6 Sankt Petri",
+        "city": "Malmö Sankt Petri",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -69127,7 +69127,7 @@ const persons = {
           "year": 1653
         },
         "location": {
-          "city": "Malm\u00f6",
+          "city": "Malmö",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -69165,7 +69165,7 @@ const persons = {
         "year": 1696
       },
       "location": {
-        "city": "Malm\u00f6 Sankt Petri",
+        "city": "Malmö Sankt Petri",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -69190,7 +69190,7 @@ const persons = {
           "year": 1685
         },
         "location": {
-          "city": "Skabersj\u00f6",
+          "city": "Skabersjö",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -69260,7 +69260,7 @@ const persons = {
         "year": 1667
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -69286,7 +69286,7 @@ const persons = {
         "year": 1739
       },
       "location": {
-        "city": "Malm\u00f6 Sankt Petri",
+        "city": "Malmö Sankt Petri",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -69311,7 +69311,7 @@ const persons = {
           "year": 1700
         },
         "location": {
-          "city": "Malm\u00f6 Sankt Petri",
+          "city": "Malmö Sankt Petri",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -69489,7 +69489,7 @@ const persons = {
     "father": 1109,
     "fileId": "0000001533",
     "firstName": "Anna",
-    "lastName": "Engestr\u00f6m",
+    "lastName": "Engeström",
     "marriages": [
       {
         "date": {
@@ -69554,7 +69554,7 @@ const persons = {
         "year": 1725
       },
       "location": {
-        "city": "H\u00e5sl\u00f6v",
+        "city": "Håslöv",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -69601,7 +69601,7 @@ const persons = {
         "year": 1680
       },
       "location": {
-        "city": "\u00d8rebro",
+        "city": "Ørebro",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -69627,7 +69627,7 @@ const persons = {
         "year": 1738
       },
       "location": {
-        "city": "Dalk\u00f6pinge",
+        "city": "Dalköpinge",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -69640,7 +69640,7 @@ const persons = {
     "father": null,
     "fileId": "0000001538",
     "firstName": "Olof",
-    "lastName": "\u00d8rnberg",
+    "lastName": "Ørnberg",
     "marriages": [
       {
         "date": null,
@@ -69667,7 +69667,7 @@ const persons = {
         "year": 1745
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -69695,7 +69695,7 @@ const persons = {
         "year": 1796
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -69735,7 +69735,7 @@ const persons = {
         "year": 1738
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -69763,7 +69763,7 @@ const persons = {
         "year": 1819
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -69805,7 +69805,7 @@ const persons = {
         "year": 1771
       },
       "location": {
-        "city": "Str\u00f6mstad",
+        "city": "Strömstad",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -69846,7 +69846,7 @@ const persons = {
     "father": null,
     "fileId": "0000001543",
     "firstName": "Brita",
-    "lastName": "Tor\u00e9n",
+    "lastName": "Torén",
     "marriages": [
       {
         "date": null,
@@ -69941,7 +69941,7 @@ const persons = {
         "year": 1727
       },
       "location": {
-        "city": "S\u00e4by",
+        "city": "Säby",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -70181,7 +70181,7 @@ const persons = {
         "year": 1837
       },
       "location": {
-        "city": "G\u00f6teborg",
+        "city": "Göteborg",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -70261,7 +70261,7 @@ const persons = {
         "year": 1905
       },
       "location": {
-        "city": "Str\u00e4ngn\u00e4s domkyrkof\u00f6rs",
+        "city": "Strängnäs domkyrkoförs",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -70464,7 +70464,7 @@ const persons = {
         "year": 1892
       },
       "location": {
-        "city": "Str\u00e4ngn\u00e4s domkyrkof\u00f6rs",
+        "city": "Strängnäs domkyrkoförs",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -70720,7 +70720,7 @@ const persons = {
     "father": null,
     "fileId": "0000001564",
     "firstName": "Vera",
-    "lastName": "B\u00e4ckstr\u00f6m",
+    "lastName": "Bäckström",
     "marriages": [
       {
         "date": null,
@@ -70747,7 +70747,7 @@ const persons = {
         "year": 1863
       },
       "location": {
-        "city": "i J\u00e4rp\u00e5s ",
+        "city": "i Järpås",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -70890,7 +70890,7 @@ const persons = {
     "father": null,
     "fileId": "0000001570",
     "firstName": "Karl",
-    "lastName": "M\u00f6ller",
+    "lastName": "Möller",
     "marriages": [
       {
         "date": null,
@@ -70960,7 +70960,7 @@ const persons = {
     "father": null,
     "fileId": "0000001571",
     "firstName": "Elisabet",
-    "lastName": "Wallstr\u00f6m",
+    "lastName": "Wallström",
     "marriages": [
       {
         "date": null,
@@ -70987,7 +70987,7 @@ const persons = {
         "year": 1925
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -71026,7 +71026,7 @@ const persons = {
     "father": 795,
     "fileId": "0000001572",
     "firstName": "Karl",
-    "lastName": "M\u00f6ller",
+    "lastName": "Möller",
     "marriages": [],
     "middleNames": [
       "Bertil"
@@ -71147,7 +71147,7 @@ const persons = {
     "mother": 1143,
     "notes": "Inflyttad omkring 1866 till Sverige.",
     "occupations": [
-      "Skr\u00e4ddarm\u00e4stare"
+      "Skräddarmästare"
     ],
     "references": [],
     "sex": "MAN",
@@ -71190,7 +71190,7 @@ const persons = {
     "father": null,
     "fileId": "0000001578",
     "firstName": "Cecilia",
-    "lastName": "Gr\u00f6nquist",
+    "lastName": "Grönquist",
     "marriages": [
       {
         "date": {
@@ -71262,7 +71262,7 @@ const persons = {
         "year": 1789
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -71292,7 +71292,7 @@ const persons = {
         "year": 1839
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -71317,7 +71317,7 @@ const persons = {
           "year": 1820
         },
         "location": {
-          "city": "Malm\u00f6",
+          "city": "Malmö",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -71344,7 +71344,7 @@ const persons = {
         "year": 1802
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -71370,7 +71370,7 @@ const persons = {
         "year": 1849
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -71429,7 +71429,7 @@ const persons = {
           "year": 1820
         },
         "location": {
-          "city": "Malm\u00f6",
+          "city": "Malmö",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -71456,7 +71456,7 @@ const persons = {
         "year": 1820
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -71512,7 +71512,7 @@ const persons = {
           "year": 1844
         },
         "location": {
-          "city": "Harl\u00f6sa",
+          "city": "Harlösa",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -71541,7 +71541,7 @@ const persons = {
         "year": 1822
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -71592,7 +71592,7 @@ const persons = {
         "year": 1826
       },
       "location": {
-        "city": "Malm\u00f6",
+        "city": "Malmö",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -71708,7 +71708,7 @@ const persons = {
           "year": 1844
         },
         "location": {
-          "city": "Harl\u00f6sa",
+          "city": "Harlösa",
           "country": "Sverige",
           "notes": "",
           "region": ""
@@ -71942,7 +71942,7 @@ const persons = {
         "year": 1846
       },
       "location": {
-        "city": "F\u00e4rl\u00f6v",
+        "city": "Färlöv",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -71973,7 +71973,7 @@ const persons = {
         "year": 1896
       },
       "location": {
-        "city": "V\u00e4stra Sallerups kbfd",
+        "city": "Västra Sallerups kbfd",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -72022,7 +72022,7 @@ const persons = {
         "year": 1848
       },
       "location": {
-        "city": "F\u00e4rl\u00f6v",
+        "city": "Färlöv",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -72145,7 +72145,7 @@ const persons = {
         "year": 1851
       },
       "location": {
-        "city": "\u00d8stra Tommarp",
+        "city": "Østra Tommarp",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -72328,7 +72328,7 @@ const persons = {
         "year": 1878
       },
       "location": {
-        "city": "Everl\u00f6v",
+        "city": "Everlöv",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -72388,7 +72388,7 @@ const persons = {
         "year": 1879
       },
       "location": {
-        "city": "Everl\u00f6v",
+        "city": "Everlöv",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -72414,7 +72414,7 @@ const persons = {
         "year": 1959
       },
       "location": {
-        "city": "Everl\u00f6v",
+        "city": "Everlöv",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -72472,7 +72472,7 @@ const persons = {
     "father": null,
     "fileId": "00100024",
     "firstName": "Frans",
-    "lastName": "Nordstr\u00f6m",
+    "lastName": "Nordström",
     "marriages": [
       {
         "date": null,
@@ -72577,7 +72577,7 @@ const persons = {
         "year": 1745
       },
       "location": {
-        "city": "V\u00e4stra Ingelstad",
+        "city": "Västra Ingelstad",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -72647,7 +72647,7 @@ const persons = {
         "year": 1754
       },
       "location": {
-        "city": "Karlskrona Amiralitetsf\u00f6rs",
+        "city": "Karlskrona Amiralitetsförs",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -72766,7 +72766,7 @@ const persons = {
     "mother": 648,
     "notes": "",
     "occupations": [
-      "Direkt\u00f6r"
+      "Direktör"
     ],
     "references": [],
     "sex": "MAN",
@@ -72889,7 +72889,7 @@ const persons = {
     "mother": 1168,
     "notes": "",
     "occupations": [
-      "F\u00f6rvaltare"
+      "Förvaltare"
     ],
     "references": [],
     "sex": "MAN",
@@ -72999,7 +72999,7 @@ const persons = {
     "mother": 1172,
     "notes": "",
     "occupations": [
-      "Tandl\u00e4kare"
+      "Tandläkare"
     ],
     "references": [],
     "sex": "MAN",
@@ -73134,7 +73134,7 @@ const persons = {
     "mother": 1172,
     "notes": "",
     "occupations": [
-      "Sm\u00e5skoll\u00e4rare"
+      "Småskollärare"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -73205,7 +73205,7 @@ const persons = {
     },
     "father": 1150,
     "fileId": "00100043",
-    "firstName": "M\u00e4rta",
+    "firstName": "Märta",
     "lastName": "Heyden",
     "marriages": [
       {
@@ -73259,7 +73259,7 @@ const persons = {
     },
     "father": null,
     "fileId": "00100045",
-    "firstName": "G\u00f6sta",
+    "firstName": "Gösta",
     "lastName": "Wahlgren",
     "marriages": [
       {
@@ -73345,7 +73345,7 @@ const persons = {
     "mother": 592,
     "notes": "",
     "occupations": [
-      "Yrkesl\u00e4rarinna"
+      "Yrkeslärarinna"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -73445,7 +73445,7 @@ const persons = {
         "year": 1947
       },
       "location": {
-        "city": "S\u00f6dra \u00c5sum",
+        "city": "Södra Åsum",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -73479,7 +73479,7 @@ const persons = {
     "mother": null,
     "notes": "",
     "occupations": [
-      "Distriktsveterin\u00e4r"
+      "Distriktsveterinär"
     ],
     "references": [],
     "sex": "MAN",
@@ -73578,7 +73578,7 @@ const persons = {
     "death": {
       "date": null,
       "location": {
-        "city": "i Saltsj\u00f6baden",
+        "city": "i Saltsjöbaden",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -73792,7 +73792,7 @@ const persons = {
     "mother": 592,
     "notes": "",
     "occupations": [
-      "\u00d8verl\u00e4kare"
+      "Øverläkare"
     ],
     "references": [],
     "sex": "MAN",
@@ -73835,8 +73835,8 @@ const persons = {
     },
     "father": null,
     "fileId": "00100058",
-    "firstName": "M\u00e4rta",
-    "lastName": "Bj\u00f6rkman",
+    "firstName": "Märta",
+    "lastName": "Björkman",
     "marriages": [
       {
         "date": {
@@ -73914,7 +73914,7 @@ const persons = {
     "mother": 1191,
     "notes": "",
     "occupations": [
-      "Sjuksk\u00f6terska"
+      "Sjuksköterska"
     ],
     "references": [],
     "sex": "WOMAN",
@@ -74018,7 +74018,7 @@ const persons = {
     "mother": 1191,
     "notes": "",
     "occupations": [
-      "Cicilingenj\u00f6r"
+      "Cicilingenjör"
     ],
     "references": [],
     "sex": "MAN",
@@ -74075,7 +74075,7 @@ const persons = {
     "mother": null,
     "notes": "",
     "occupations": [
-      "L\u00e5gstadiel\u00e4rare"
+      "Lågstadielärare"
     ],
     "references": [],
     "sex": "WOMAN",
@@ -74116,7 +74116,7 @@ const persons = {
     "mother": 1200,
     "notes": "",
     "occupations": [
-      "Civilingenj\u00f6r"
+      "Civilingenjör"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -74157,7 +74157,7 @@ const persons = {
     "mother": 1200,
     "notes": "",
     "occupations": [
-      "Sjuksk\u00f6terska"
+      "Sjuksköterska"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -74302,7 +74302,7 @@ const persons = {
     "mother": 1145,
     "notes": "",
     "occupations": [
-      "Katolsk pr\u00e4st"
+      "Katolsk präst"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -74370,7 +74370,7 @@ const persons = {
     "mother": 1145,
     "notes": "",
     "occupations": [
-      "Skr\u00e4ddarm\u00e4stare"
+      "Skräddarmästare"
     ],
     "references": [],
     "sex": "MAN",
@@ -74402,7 +74402,7 @@ const persons = {
     "mother": 1203,
     "notes": "",
     "occupations": [
-      "Katolsk pr\u00e4st"
+      "Katolsk präst"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -74434,7 +74434,7 @@ const persons = {
     "mother": null,
     "notes": "",
     "occupations": [
-      "Sj\u00f6man"
+      "Sjöman"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -74486,7 +74486,7 @@ const persons = {
       "John"
     ],
     "mother": 1145,
-    "notes": "Utflyttad fr\u00e5n Boston.",
+    "notes": "Utflyttad från Boston.",
     "occupations": [],
     "references": [],
     "sex": "MAN",
@@ -74761,7 +74761,7 @@ const persons = {
     "father": null,
     "fileId": "00100085",
     "firstName": "Johan",
-    "lastName": "R\u00f6nnstr\u00f6m",
+    "lastName": "Rönnström",
     "marriages": [
       {
         "date": null,
@@ -74811,7 +74811,7 @@ const persons = {
     "father": 1214,
     "fileId": "00100086",
     "firstName": "Greta",
-    "lastName": "R\u00f6nnstr\u00f6m",
+    "lastName": "Rönnström",
     "marriages": [],
     "middleNames": [],
     "mother": 1124,
@@ -74855,7 +74855,7 @@ const persons = {
     "father": 1214,
     "fileId": "00100087",
     "firstName": "Ingeborg",
-    "lastName": "R\u00f6nnstr\u00f6m",
+    "lastName": "Rönnström",
     "marriages": [
       {
         "date": null,
@@ -74941,7 +74941,7 @@ const persons = {
     "father": 1214,
     "fileId": "00100090",
     "firstName": "John",
-    "lastName": "R\u00f6nnstr\u00f6m",
+    "lastName": "Rönnström",
     "marriages": [],
     "middleNames": [],
     "mother": 1124,
@@ -75343,7 +75343,7 @@ const persons = {
     "mother": 1203,
     "notes": "",
     "occupations": [
-      "Skr\u00e4ddare"
+      "Skräddare"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -75408,7 +75408,7 @@ const persons = {
     },
     "father": 1148,
     "fileId": "00100104",
-    "firstName": "M\u00e4rta",
+    "firstName": "Märta",
     "lastName": "Heyden",
     "marriages": [],
     "middleNames": [],
@@ -75650,7 +75650,7 @@ const persons = {
     },
     "father": 1180,
     "fileId": "00100113",
-    "firstName": "\u00c5ke",
+    "firstName": "Åke",
     "lastName": "Rambe",
     "marriages": [],
     "middleNames": [
@@ -75874,7 +75874,7 @@ const persons = {
     "father": null,
     "fileId": "00100120",
     "firstName": "Staffan",
-    "lastName": "K\u00e4llstr\u00f6m",
+    "lastName": "Källström",
     "marriages": [
       {
         "date": {
@@ -75923,7 +75923,7 @@ const persons = {
     },
     "father": 1222,
     "fileId": "00100121",
-    "firstName": "M\u00e4rta",
+    "firstName": "Märta",
     "lastName": "Eklund",
     "marriages": [],
     "middleNames": [
@@ -76442,7 +76442,7 @@ const persons = {
     "mother": 652,
     "notes": "",
     "occupations": [
-      "L\u00e5gstadiel\u00e4rare"
+      "Lågstadielärare"
     ],
     "references": [],
     "sex": "WOMAN",
@@ -76688,7 +76688,7 @@ const persons = {
     "father": null,
     "fileId": "00100142",
     "firstName": "Charlotte",
-    "lastName": "Bj\u00f6rkman",
+    "lastName": "Björkman",
     "marriages": [
       {
         "date": {
@@ -77034,7 +77034,7 @@ const persons = {
     "mother": 630,
     "notes": "",
     "occupations": [
-      "Sp\u00e5rvagnsf\u00f6rare"
+      "Spårvagnsförare"
     ],
     "references": [],
     "sex": "UNKNOWN",
@@ -77610,7 +77610,7 @@ const persons = {
       "Kristiansson"
     ],
     "mother": null,
-    "notes": "Hans farfar kom 1734 som baby till Link\u00f6ping fr\u00e5n Bryssel. De var tre br\u00f6der, en dog strax efter ankomsten. De gav upphov till tv\u00e5 grenar; en rik och en fattig (v\u00e5r gren).",
+    "notes": "Hans farfar kom 1734 som baby till Linköping från Bryssel. De var tre bröder, en dog strax efter ankomsten. De gav upphov till två grenar; en rik och en fattig (vår gren).",
     "occupations": [],
     "references": [],
     "sex": "MAN",
@@ -77856,7 +77856,7 @@ const persons = {
       },
       "location": {
         "city": "Hammrarna",
-        "country": " Rinkaby",
+        "country": "Rinkaby",
         "notes": "",
         "region": "",
         "latitude": 55.98465,
@@ -77883,8 +77883,8 @@ const persons = {
         "year": 1959
       },
       "location": {
-        "city": "Land\u00f6n",
-        "country": " Fj\u00e4lkinge",
+        "city": "Landön",
+        "country": "Fjälkinge",
         "notes": "",
         "region": "",
         "latitude": 55.97951,
@@ -77896,7 +77896,7 @@ const persons = {
     "father": 1260,
     "fileId": "00100173",
     "firstName": "Berndt",
-    "lastName": "Borgstr\u00f6m",
+    "lastName": "Borgström",
     "marriages": [
       {
         "date": null,
@@ -77925,8 +77925,8 @@ const persons = {
         "year": 1887
       },
       "location": {
-        "city": "\u00d8stra Ljungby",
-        "country": " Trolle",
+        "city": "Østra Ljungby",
+        "country": "Trolle",
         "notes": "",
         "region": "",
         "latitude": 56.19027,
@@ -77953,8 +77953,8 @@ const persons = {
         "year": 1978
       },
       "location": {
-        "city": "Land\u00f6n",
-        "country": " Fj\u00e4lkinge",
+        "city": "Landön",
+        "country": "Fjälkinge",
         "notes": "",
         "region": "",
         "latitude": 55.97951,
@@ -77994,7 +77994,7 @@ const persons = {
       },
       "location": {
         "city": "Hammrarna",
-        "country": " Rinkaby",
+        "country": "Rinkaby",
         "notes": "",
         "region": "",
         "latitude": 55.98465,
@@ -78021,8 +78021,8 @@ const persons = {
         "year": 1943
       },
       "location": {
-        "city": "Land\u00f6n",
-        "country": " Fj\u00e4lkinge",
+        "city": "Landön",
+        "country": "Fjälkinge",
         "notes": "",
         "region": "",
         "latitude": 55.97951,
@@ -78034,7 +78034,7 @@ const persons = {
     "father": null,
     "fileId": "00100176",
     "firstName": "Johan",
-    "lastName": "Borgstr\u00f6m",
+    "lastName": "Borgström",
     "marriages": [
       {
         "date": null,
@@ -78083,8 +78083,8 @@ const persons = {
         "year": 1929
       },
       "location": {
-        "city": "Land\u00f6n",
-        "country": " Fj\u00e4lkinge",
+        "city": "Landön",
+        "country": "Fjälkinge",
         "notes": "",
         "region": "",
         "latitude": 55.97951,
@@ -78143,8 +78143,8 @@ const persons = {
         "year": 1888
       },
       "location": {
-        "city": "\u00d8stra Ljungby",
-        "country": " Trolle",
+        "city": "Østra Ljungby",
+        "country": "Trolle",
         "notes": "",
         "region": "",
         "latitude": 56.19027,
@@ -78205,8 +78205,8 @@ const persons = {
         "year": 1888
       },
       "location": {
-        "city": "\u00d8stra Ljungby",
-        "country": " Trolle",
+        "city": "Østra Ljungby",
+        "country": "Trolle",
         "notes": "",
         "region": "",
         "latitude": 56.19027,
@@ -78496,7 +78496,7 @@ const persons = {
         "year": 1820
       },
       "location": {
-        "city": "Burl\u00f6v",
+        "city": "Burlöv",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -78536,7 +78536,7 @@ const persons = {
     "mother": null,
     "notes": "",
     "occupations": [
-      "D\u00f6pt 1820"
+      "Döpt 1820"
     ],
     "references": [],
     "sex": "MAN",
@@ -78553,7 +78553,7 @@ const persons = {
         "year": 1829
       },
       "location": {
-        "city": "Lund stadsf\u00f6rs",
+        "city": "Lund stadsförs",
         "country": "Sverige",
         "notes": "",
         "region": "",
@@ -78594,7 +78594,7 @@ const persons = {
     "father": null,
     "fileId": "00200004",
     "firstName": "Wilhelmina",
-    "lastName": "Engestr\u00f6m",
+    "lastName": "Engeström",
     "marriages": [
       {
         "date": null,
@@ -78951,5 +78951,4 @@ const persons = {
     "id": 1271
   }
 }
-
 export default persons
