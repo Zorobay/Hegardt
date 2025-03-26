@@ -9,3 +9,13 @@
    - [x] Occupations
    - [x] Notes
    - [x] References
+  - [ ] Map
+   - [ ] Show markers for Birth, Death, Burial
+   - [ ] Find person by name
+   - [ ] Filter by year (Birth, Death, Burial)
+   - [ ] Click marker to go to person page
+   - [ ] Go to map from person page by clicking on Birth-, Death- or Burial place.
+  - [ ] Family Tree
+   - [ ] Filter by name
+   - [ ] Select how many pre and post generations to show
+   - [ ] Toggle siblings
