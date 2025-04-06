@@ -13,7 +13,13 @@
             <RouterLink class="nav-link" :to="{name: 'home'}">Home</RouterLink>
           </li>
           <li class="nav-item">
-            <RouterLink class="nav-link" :to="{name: 'table'}">Person Table</RouterLink>
+            <RouterLink class="nav-link" :to="{name: 'table'}">Table</RouterLink>
+          </li>
+          <li class="nav-item">
+            <RouterLink class="nav-link" :to="{name: 'map'}">Map</RouterLink>
+          </li>
+          <li class="nav-item">
+            <RouterLink class="nav-link" :to="{name: 'tree'}">Tree</RouterLink>
           </li>
           <li class="nav-item">
             <RouterLink class="nav-link" :to="{name: 'person', params: {id: 1185}}">Person (id: 1185)</RouterLink>

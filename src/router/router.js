@@ -1,12 +1,12 @@
-import {createRouter, createWebHashHistory, createWebHistory} from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import PersonView from "@/views/PersonView.vue";
-import PersonTableView from "@/views/PersonTableView.vue";
-import NotFoundView from "@/views/NotFoundView.vue";
+import PersonView from '@/views/PersonView.vue'
+import PersonTableView from '@/views/PersonTableView.vue'
+import NotFoundView from '@/views/NotFoundView.vue'
+import PersonMapView from '@/views/PersonMapView.vue'
 
 const router = createRouter({
   history: createWebHistory(),
-  // history: createWebHashHistory(),
   routes: [
     {
       path: '/',
@@ -16,18 +16,28 @@ const router = createRouter({
     {
       path: '/person/:id',
       name: 'person',
-      component: PersonView
+      component: PersonView,
     },
     {
       path: '/table',
       name: 'table',
-      component: PersonTableView
+      component: PersonTableView,
     },
     {
       path: '/:pathMatch(.*)',
       name: '404 catch all',
-      component: NotFoundView
-    }
+      component: NotFoundView,
+    },
+    {
+      path: '/map',
+      name: 'map',
+      component: PersonMapView,
+    },
+    {
+      path: '/tree',
+      name: 'tree',
+      component: PersonTableView,
+    },
   ],
 })
 

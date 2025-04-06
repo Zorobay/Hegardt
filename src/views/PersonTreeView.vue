@@ -1,5 +1,5 @@
 <template>
-  <h1>Table</h1>
+  <h1>Tree</h1>
   <PersonTable>
 
   </PersonTable>
