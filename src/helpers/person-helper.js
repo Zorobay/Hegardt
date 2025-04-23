@@ -10,7 +10,7 @@ export function formatPersonFullName(person) {
   }
 
   const middleNamesStr = middleNames ? middleNames.join(' ') : '';
-  const nameParts = [firstName, middleNamesStr, lastName];
+  const nameParts = [firstName, middleNamesStr, lastName].filter(el => el);
   return nameParts.join(' ');
 }
 
