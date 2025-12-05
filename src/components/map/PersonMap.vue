@@ -49,6 +49,7 @@
 
 <script setup>
 import { computed, onMounted, ref, useTemplateRef } from 'vue'
+import {useRouter} from 'vue-router'
 import { formatPersonDate, formatPersonFullName } from '@/helpers/person-helper.js'
 import {fuzzyMatch} from '@/helpers/util-helper.js'
 import { Map, Overlay, View } from 'ol'
@@ -65,6 +66,8 @@ import VectorLayer from 'ol/layer/Vector.js'
 import { Icon, Style } from 'ol/style.js'
 import Accordion from '@/components/forms/Accordion.vue'
 import CheckboxAccordion from '@/components/forms/CheckboxAccordion.vue'
+
+const router = useRouter();
 
 const markerSize = ref(0.1)
 const markerSizeComp = computed(() => {
@@ -158,6 +161,7 @@ function buildMapFeatures() {
           date: date,
           eventType: eventType,
           gender: person['sex'],
+          id: person.id
         }
 
         if (eventType === 'birth') {
@@ -269,6 +273,16 @@ function onPointerMove(event) {
 
 }
 
+function onMapClick(event) {
+  const feature = map.forEachFeatureAtPixel(event.pixel, (feature) => feature)
+  if (feature) {
+    router.push({
+      name: 'person',
+      params: {id: feature.attributes.id}
+    })
+  }
+}
+
 // Immediately build map features
 buildMapFeatures()
 
@@ -283,6 +297,7 @@ onMounted(() => {
   renderMap()
   map.on('pointermove', onPointerMove)
   map.on('pointerleave', onPointerLeave)
+  map.on('click', onMapClick)
 })
 </script>
 
