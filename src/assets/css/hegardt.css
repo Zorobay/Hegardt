@@ -1,3 +1,12 @@
 .heg-rich-text {
     white-space: pre-wrap;
 }
+
+/* Global style for checkboxes */
+input[type="checkbox"] {
+    /* Bootstrap default styling */
+    width: 1rem;
+    height: 1rem;
+    cursor: pointer;
+    accent-color: #3b82f6;  /* This is the blue color that makes them stand out */
+}
