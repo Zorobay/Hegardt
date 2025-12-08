@@ -1,45 +1,45 @@
 <template>
-  <Accordion :heading="heading">
-    <Checkbox v-for="item in items" :key="item" :label="item" :checked="checkedStates[item]" @change="onCheckboxChange"/>
-  </Accordion>
+  <AccordionComponent :heading="heading">
+    <CheckboxComponent
+      v-for="item in items"
+      :key="item"
+      :label="item"
+      :checked="checkedStates[item]"
+      @change="onCheckboxChange"
+    />
+  </AccordionComponent>
 </template>
 
+<script setup lang="ts">
+import { onMounted, reactive } from 'vue';
+import AccordionComponent from '@/components/forms/AccordionComponent.vue';
+import CheckboxComponent from '@/components/forms/CheckboxComponent.vue';
 
-<script setup>
-import { onMounted, reactive} from 'vue';
-import Accordion from '@/components/forms/Accordion.vue'
-import Checkbox from '@/components/forms/Checkbox.vue'
-
-const props = defineProps(['heading', 'items']);
+const props = defineProps({
+  heading: { type: String, default: '' },
+  items: { type: Array<string>, default: [] },
+});
 const emit = defineEmits(['selection-changed']);
-const checkedStates = reactive({});
+const checkedStates = reactive<Record<string, boolean>>({});
 
-function onCheckboxChange(e) {
-  const target = e.target;
+function onCheckboxChange(e: Event) {
+  const target = e.target as HTMLInputElement;
   checkedStates[target.value] = target.checked;
   emit('selection-changed', getSelectedItems());
 }
 
 function getSelectedItems() {
   const items = props.items;
-  const out = [];
-  items.forEach(item => {
-    if (checkedStates[item]) {
-      out.push(item);
-    }
-  })
-  return out;
+  return items.filter((item) => checkedStates[item]);
 }
 
 onMounted(() => {
-  props.items.forEach(i => {
+  props.items.forEach((i) => {
     checkedStates[i] = true;
-  })
+  });
 
   emit('selection-changed', getSelectedItems());
-})
+});
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

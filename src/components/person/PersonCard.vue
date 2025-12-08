@@ -11,10 +11,10 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import SexIcon from "@/components/person/SexIcon.vue";
 
-import {formatPersonFullName, formatPersonDate} from "@/helpers/person-helper.js";
+import {formatPersonFullName, formatPersonDate} from "@/helpers/person-helper.ts";
 
 const props = defineProps(['person']);
 const id = props.person.id;

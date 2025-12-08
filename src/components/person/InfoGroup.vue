@@ -6,7 +6,7 @@
   <slot/>
 </template>
 
-<script setup>
+<script setup lang="ts">
   defineProps(['title'])
 </script>
 

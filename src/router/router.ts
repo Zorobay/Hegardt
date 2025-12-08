@@ -17,6 +17,7 @@ const router = createRouter({
       path: '/person/:id',
       name: 'person',
       component: PersonView,
+      props: true
     },
     {
       path: '/table',

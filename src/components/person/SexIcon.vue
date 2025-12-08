@@ -2,10 +2,10 @@
   <i v-if="sex" :class="iconClass"></i>
 </template>
 
-<script setup>
-import PersonSexEnum from "@/enums/PersonSexEnum.js";
-const props = defineProps(['sex']);
-function sexIconClass(sex) {
+<script setup lang="ts">
+import PersonSexEnum from "@/enums/PersonSexEnum.ts";
+const props = defineProps({sex: {type: String, required: true}});
+function sexIconClass(sex: string) {
   if (sex.toUpperCase() === PersonSexEnum.MAN) {
     return 'fa-solid fa-mars';
   } else if (sex.toUpperCase() === PersonSexEnum.WOMAN) {

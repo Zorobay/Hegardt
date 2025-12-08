@@ -4,7 +4,7 @@ import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 
 import App from './App.vue'
-import router from './router/router.js'
+import router from './router/router.ts'
 
 import "bootstrap"
 import "@fortawesome/fontawesome-free/js/fontawesome"

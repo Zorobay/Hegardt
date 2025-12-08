@@ -2,9 +2,9 @@
   <ReadonlyText :text="text" :title="props.title"/>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import ReadonlyText from "@/components/person/PersonTextProperty.vue";
-import {formatPersonDate, formatPersonLocation} from "@/helpers/person-helper.js";
+import {formatPersonDate, formatPersonLocation} from "@/helpers/person-helper.ts";
 
 const props = defineProps(['event', 'title']);
 const event = props.event;

@@ -5,7 +5,7 @@
 
 </template>
 
-<script setup>
+<script setup lang="ts">
 import PersonMap from '@/components/map/PersonMap.vue'
 </script>
 <style scoped>

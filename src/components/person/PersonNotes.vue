@@ -4,7 +4,7 @@
   </ReadonlyText>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import ReadonlyText from "@/components/person/PersonTextProperty.vue";
 
 defineProps(['notes']);

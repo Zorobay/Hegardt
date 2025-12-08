@@ -12,33 +12,33 @@
           :items="['Man', 'Woman', 'Unknown']"
           @selection-changed="onGenderSelectionChanged"
         />
-        <Accordion heading="Person Name">
+        <AccordionComponent heading="Person Name">
           <input
+            v-model="personNameFilterText"
             class="form-control"
             type="search"
-            v-model="personNameFilterText"
             placeholder="Name..."
             @keyup="onPersonNameChange"
           />
-        </Accordion>
-        <Accordion heading="Marker Size">
+        </AccordionComponent>
+        <AccordionComponent heading="Marker Size">
           <div class="d-flex gap-2 align-items-center">
             <input
+              v-model="markerSize"
               type="range"
               min="0.02"
               max="0.5"
               step="0.02"
-              v-model="markerSize"
               @change="styleMapFeatures"
             />
             <data :value="markerSizeComp">{{ markerSizeComp }}</data>
           </div>
-        </Accordion>
+        </AccordionComponent>
       </form>
     </div>
     <div class="col-9">
       <div id="map"></div>
-      <div ref="popup" class="ol-popup" v-show="showPopup">
+      <div v-show="showPopup" ref="popup" class="ol-popup">
         <div class="ol-popup-header">{{ popupHeader }}</div>
         <div class="ol-popup-event-type">{{ popupEventType }}</div>
         <div class="ol-popup-date">{{ popupDate }}</div>
@@ -47,157 +47,165 @@
   </div>
 </template>
 
-<script setup>
-import { computed, onMounted, ref, useTemplateRef } from 'vue'
-import {useRouter} from 'vue-router'
-import { formatPersonDate, formatPersonFullName } from '@/helpers/person-helper.js'
-import {fuzzyMatch} from '@/helpers/util-helper.js'
-import { Map, Overlay, View } from 'ol'
-import TileLayer from 'ol/layer/Tile'
-import { OSM } from 'ol/source'
-import { MousePosition } from 'ol/control'
-import Feature from 'ol/Feature.js'
-import { defaults as defaultControls } from 'ol/control/defaults.js'
-import { format as formatCoordinate } from 'ol/coordinate.js'
-import personService from '@/services/PersonService.js'
-import { Point } from 'ol/geom.js'
-import VectorSource from 'ol/source/Vector.js'
-import VectorLayer from 'ol/layer/Vector.js'
-import { Icon, Style } from 'ol/style.js'
-import Accordion from '@/components/forms/Accordion.vue'
-import CheckboxAccordion from '@/components/forms/CheckboxAccordion.vue'
+<script setup lang="ts">
+import { PersonFeature, Styles } from '@/types/open-layers-feature.type.ts';
+import { computed, onMounted, ref, useTemplateRef } from 'vue';
+import { useRouter } from 'vue-router';
+import { formatPersonDate, formatPersonFullName } from '@/helpers/person-helper.ts';
+import { fuzzyMatch } from '@/helpers/util-helper.ts';
+import OLMap from 'ol/Map';
+import type MapBrowserEvent from 'ol/MapBrowserEvent'; // Import as type from correct path
+import View from 'ol/View';
+import Overlay from 'ol/Overlay';
+import TileLayer from 'ol/layer/Tile';
+import { OSM } from 'ol/source';
+import { MousePosition } from 'ol/control';
+import Feature from 'ol/Feature.js';
+import { defaults as defaultControls } from 'ol/control/defaults.js';
+import { Coordinate, format as formatCoordinate } from 'ol/coordinate.js';
+import personService from '@/services/PersonService.ts';
+import { Point } from 'ol/geom.js';
+import VectorSource from 'ol/source/Vector.js';
+import VectorLayer from 'ol/layer/Vector.js';
+import { Icon, Style } from 'ol/style.js';
+import AccordionComponent from '@/components/forms/AccordionComponent.vue';
+import CheckboxAccordion from '@/components/forms/CheckboxAccordion.vue';
+import BaseEvent from 'ol/events/Event';
 
 const router = useRouter();
 
-const markerSize = ref(0.1)
+const markerSize = ref(0.1);
 const markerSizeComp = computed(() => {
-  return numberFormat.format(markerSize.value)
-})
-const showPopup = ref(false)
-const popupRef = useTemplateRef('popup')
-const popupHeader = ref('')
-const popupEventType = ref('')
-const popupDate = ref('')
-let prevHoveredFeature = null
+  return numberFormat.format(markerSize.value);
+});
+const showPopup = ref(false);
+const popupRef = useTemplateRef('popup');
+const popupHeader = ref<string | undefined>('');
+const popupEventType = ref<string | undefined>('');
+const popupDate = ref<string | undefined>('');
+let prevHoveredFeature: PersonFeature | null = null;
 
-let overlay = null
-let map = null
-let selectedEventTypes = []
-let selectedGenders = []
-const numberFormat = Intl.NumberFormat('en', { minimumFractionDigits: 2 })
-const personNameFilterText = ref('')
-const swedenCenterCoordinates = [1730386, 9000000]
-const projectionWebMercator = 'EPSG:4326' // Web Mercator
-const projectionSphericalMercator = 'EPSG:3857' // Spherical Mercator
-const birthFeatures = []
-const deathFeatures = []
-const burialFeatures = []
-let mapView = new View()
-const vectorSource = new VectorSource({ features: [] })
-const vectorLayer = new VectorLayer({ source: vectorSource })
+let overlay: Overlay | null = null;
+let map: OLMap | null = null;
+let selectedEventTypes: string[] = [];
+let selectedGenders: string[] = [];
+const numberFormat = Intl.NumberFormat('en', { minimumFractionDigits: 2 });
+const personNameFilterText = ref('');
+const swedenCenterCoordinates = [1730386, 9000000];
+const projectionWebMercator = 'EPSG:4326'; // Web Mercator
+const projectionSphericalMercator = 'EPSG:3857'; // Spherical Mercator
+const birthFeatures: PersonFeature[] = [];
+const deathFeatures: PersonFeature[] = [];
+const burialFeatures: PersonFeature[] = [];
+let mapView = new View();
+const vectorSource = new VectorSource({ features: [] as PersonFeature[] });
+const vectorLayer = new VectorLayer({ source: vectorSource });
 
-const coordinateFormatFunc = function (coordinate) {
-  return formatCoordinate(coordinate, '{y}, {x}', 4)
-}
+const coordinateFormatFunc = function (coordinate: Coordinate | undefined): string {
+  if (coordinate) {
+    return formatCoordinate(coordinate, '{y}, {x}', 4);
+  }
+  return '';
+};
 
 const mousePositionControl = new MousePosition({
   coordinateFormat: coordinateFormatFunc,
   projection: projectionWebMercator,
-})
+});
 
 function onPersonNameChange() {
-  updateMapMarkers()
+  updateMapMarkers();
 }
 
-function onEventTypeSelectionChanged(selected) {
-  selectedEventTypes = selected
-  updateMapMarkers()
+function onEventTypeSelectionChanged(selected: string[]) {
+  selectedEventTypes = selected;
+  updateMapMarkers();
 }
 
-function onGenderSelectionChanged(selected) {
-  selectedGenders = selected.map((s) => s.toUpperCase())
-  updateMapMarkers()
+function onGenderSelectionChanged(selected: string[]) {
+  selectedGenders = selected.map((s) => s.toUpperCase());
+  updateMapMarkers();
 }
 
 function updateMapMarkers() {
-  let allFeatures = []
-  vectorSource.clear()
+  let allFeatures: PersonFeature[] = [];
+  vectorSource.clear();
   for (const eventType of selectedEventTypes) {
     if (eventType.toLowerCase() === 'birth') {
-      allFeatures = allFeatures.concat(birthFeatures)
+      allFeatures = allFeatures.concat(birthFeatures);
     } else if (eventType.toLowerCase() === 'death') {
-      allFeatures = allFeatures.concat(deathFeatures)
+      allFeatures = allFeatures.concat(deathFeatures);
     } else {
-      allFeatures = allFeatures.concat(burialFeatures)
+      allFeatures = allFeatures.concat(burialFeatures);
     }
   }
-  allFeatures = allFeatures.filter((f) => {
-    return selectedGenders.some((g) => g === f.attributes.gender?.toUpperCase())
-  })
+  allFeatures = allFeatures.filter((f: PersonFeature) => {
+    return selectedGenders.some((g) => g === f.attributes?.gender?.toUpperCase());
+  });
   allFeatures = allFeatures.filter((f) =>
-    f.attributes.fullName
-      ? fuzzyMatch(f.attributes.fullName, personNameFilterText.value)
+    f.attributes?.fullName
+      ? fuzzyMatch(f.attributes?.fullName ?? '', personNameFilterText.value)
       : false,
-  )
-  vectorSource.addFeatures(allFeatures)
+  );
+  vectorSource.addFeatures(allFeatures);
 }
 
 function buildMapFeatures() {
   for (const person of personService.getAllPersonsList()) {
-    for (const eventType of ['birth', 'death', 'burial']) {
-      const location = person[eventType].location
-      const name = formatPersonFullName(person)
-      const date = formatPersonDate(person[eventType]?.date)
+    for (const eventType of ['birth', 'death', 'burial'] as const) {
+      const location = person[eventType].location;
+      const name = formatPersonFullName(person);
+      const date = formatPersonDate(person[eventType]?.date);
 
       if (location) {
-        const coordinate = [location.longitude, location.latitude]
+        const coordinate = [location.longitude ?? 0, location.latitude ?? 0];
 
-        const feature = new Feature({
+        const feature: PersonFeature = new Feature({
           geometry: new Point(coordinate),
           labelPoint: new Point(coordinate),
-        })
+        });
         feature.attributes = {
           fullName: name,
           date: date,
           eventType: eventType,
           gender: person['sex'],
-          id: person.id
-        }
+          id: person.id,
+        };
 
         if (eventType === 'birth') {
-          birthFeatures.push(feature)
+          birthFeatures.push(feature);
         } else if (eventType === 'death') {
-          deathFeatures.push(feature)
+          deathFeatures.push(feature);
         } else {
-          burialFeatures.push(feature)
+          burialFeatures.push(feature);
         }
 
-        feature.getGeometry().transform(projectionWebMercator, projectionSphericalMercator)
+        feature.getGeometry()?.transform(projectionWebMercator, projectionSphericalMercator);
       }
     }
   }
-  styleMapFeatures()
+  styleMapFeatures();
 }
 
 function styleMapFeatures() {
-  let styles = buildMarkerStyles('green')
+  let styles = buildMarkerStyles('green');
   birthFeatures.forEach((f) => {
-    f.setStyle(styles.normal)
-    f.styles = styles
-  })
-  styles = buildMarkerStyles('red')
+    f.setStyle(styles.normal);
+    f.styles = styles;
+  });
+  styles = buildMarkerStyles('red');
   deathFeatures.forEach((f) => {
-    f.setStyle(styles.normal)
-    f.styles = styles
-  })
-  styles = buildMarkerStyles('purple')
+    f.setStyle(styles.normal);
+    f.styles = styles;
+  });
+  styles = buildMarkerStyles('purple');
   burialFeatures.forEach((f) => {
-    f.setStyle(styles.normal)
-    f.styles = styles
-  })
+    f.setStyle(styles.normal);
+    f.styles = styles;
+  });
 }
 
-function buildMarkerStyles(color) {
+function buildMarkerStyles(color: string): Styles {
   return {
     normal: new Style({
       image: new Icon({
@@ -213,7 +221,7 @@ function buildMarkerStyles(color) {
         scale: markerSize.value * 1.5,
       }),
     }),
-  }
+  };
 }
 
 function renderMap() {
@@ -222,9 +230,9 @@ function renderMap() {
     zoom: 5,
     projection: projectionSphericalMercator,
     constrainResolution: true,
-  })
+  });
 
-  map = new Map({
+  map = new OLMap({
     target: 'map',
     controls: defaultControls().extend([mousePositionControl]),
     layers: [
@@ -234,71 +242,67 @@ function renderMap() {
       vectorLayer,
     ],
     view: mapView,
-    overlays: [overlay],
-  })
+    overlays: [overlay!],
+  });
 }
 
-function onPointerLeave() {
-  showPopup.value = false
-}
+function onPointerMove(evt: BaseEvent | Event): void {
+  const event = evt as MapBrowserEvent<PointerEvent>;
+  const feature = map?.forEachFeatureAtPixel(event.pixel, (feature) => feature) as PersonFeature;
 
-function onPointerMove(event) {
-  const feature = map.forEachFeatureAtPixel(event.pixel, (feature) => feature)
-
-  if (feature ) {
-    map.getTargetElement().style.cursor = 'pointer'
+  if (feature) {
+    map?.getTargetElement()?.style?.setProperty('cursor', 'pointer');
 
     if (feature !== prevHoveredFeature) {
       // Reset previous feature style
-      prevHoveredFeature?.setStyle(prevHoveredFeature?.styles?.normal)
-      prevHoveredFeature = feature
-      feature.setStyle(feature.styles.hover)
+      prevHoveredFeature?.setStyle(prevHoveredFeature?.styles?.normal);
+      prevHoveredFeature = feature;
+      feature.setStyle(feature.styles?.hover);
 
-      popupHeader.value = feature.attributes?.fullName
-      popupEventType.value = feature.attributes?.eventType
-      popupDate.value = feature.attributes?.date
+      popupHeader.value = feature.attributes?.fullName;
+      popupEventType.value = feature.attributes?.eventType;
+      popupDate.value = feature.attributes?.date;
 
-      const coordinates = feature.getGeometry().getCoordinates()
-      overlay.setPosition(coordinates)
-      showPopup.value = true
+      const coordinates = (feature.getGeometry() as Point)?.getCoordinates();
+      overlay?.setPosition(coordinates);
+      showPopup.value = true;
     }
   } else {
     // Reset previous feature style
-    prevHoveredFeature?.setStyle(prevHoveredFeature?.styles?.normal)
+    prevHoveredFeature?.setStyle(prevHoveredFeature?.styles?.normal);
 
-    map.getTargetElement().style.cursor = ''
-    prevHoveredFeature = null
-    showPopup.value = false
+    map?.getTargetElement()?.style?.setProperty('cursor', '');
+    prevHoveredFeature = null;
+    showPopup.value = false;
   }
-
 }
 
-function onMapClick(event) {
-  const feature = map.forEachFeatureAtPixel(event.pixel, (feature) => feature)
+function onMapClick(evt: BaseEvent | Event): void {
+  const event = evt as MapBrowserEvent<PointerEvent>;
+  const feature = map?.forEachFeatureAtPixel(event.pixel, (feature) => feature) as PersonFeature;
   if (feature) {
     router.push({
       name: 'person',
-      params: {id: feature.attributes.id}
-    })
+      params: { id: feature.attributes?.id },
+    });
   }
 }
 
 // Immediately build map features
-buildMapFeatures()
+buildMapFeatures();
 
 onMounted(() => {
   overlay = new Overlay({
-    element: popupRef.value,
+    element: popupRef.value ?? undefined,
     autoPan: false,
     positioning: 'bottom-center',
     stopEvent: false,
     offset: [0, -30],
-  })
-  renderMap()
-  map.on('pointermove', onPointerMove)
-  map.on('pointerleave', onPointerLeave)
-  map.on('click', onMapClick)
-})
+  });
+  renderMap();
+  map?.on('pointermove', onPointerMove);
+  map?.on('singleclick', onMapClick);
+});
 </script>
 
 <style scoped>

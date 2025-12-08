@@ -1,9 +1,8 @@
 <template>
-
   <div v-if="multiselect" class="input-group">
     <span class="input-group-text">{{ label }}</span>
 
-    <div class="multiselect" @click="onMultiselectClick" tabindex="0" @focusout="onFocusLost">
+    <div class="multiselect" tabindex="0" @click="onMultiselectClick" @focusout="onFocusLost">
       <div class="selectBox">
         <select class="form-select">
           <option>{{ placeholderTextComp }}</option>
@@ -11,31 +10,35 @@
         <div class="overSelect"></div>
       </div>
       <div id="checkboxes">
-        <label v-for="opt in options" :for="opt">
-          <input type="checkbox" :id="opt" :value="opt" :checked="selected ? selected.includes(opt) : false"
-                 @change="onCheckboxChange"/>{{ opt }}
+        <label v-for="opt in options" :key="opt" :for="opt">
+          <input
+            :id="opt"
+            type="checkbox"
+            :value="opt"
+            :checked="selected ? selected.includes(opt) : false"
+            @change="onCheckboxChange"
+          />{{ opt }}
         </label>
       </div>
     </div>
   </div>
 </template>
 
-<script setup>
-import {computed, onMounted, ref} from "vue";
+<script setup lang="ts">
+import { computed, onMounted, ref } from 'vue';
 
 const props = defineProps(['label', 'options', 'selected', 'placeholder', 'multiselect']);
-const emit = defineEmits(['selection-change'])
+const emit = defineEmits(['selection-change']);
 let checkboxesDisplayStyle = ref('none');
-let selected = ref(props.selected ?? []);
-
+let selected = ref<string[]>(props.selected ?? []);
 
 const placeholderTextComp = computed(() => {
-  console.log('recomputed')
-  if (selected) {
+  console.log('recomputed');
+  if (selected.value) {
     return selected.value.join(', ');
   }
   return props.placeholder;
-})
+});
 
 function onMultiselectClick() {
   checkboxesDisplayStyle.value = checkboxesDisplayStyle.value === 'none' ? 'block' : 'none';
@@ -45,12 +48,12 @@ function onFocusLost() {
   checkboxesDisplayStyle.value = 'none';
 }
 
-function onCheckboxChange(e) {
-  const target = e.target;
+function onCheckboxChange(e: Event) {
+  const target = e.target as HTMLInputElement;
   if (target.checked) {
     selected.value.push(target.value);
   } else {
-    selected.value = selected.value.filter(s => s !== target.value);
+    selected.value = selected.value.filter((s) => s !== target.value);
   }
 
   emit('selection-change', selected.value);
@@ -60,11 +63,10 @@ onMounted(() => {
   if (props.selected) {
     emit('selection-change', selected.value);
   }
-})
+});
 </script>
 
 <style scoped>
-
 .multiselect {
   position: relative;
   flex: 1 1 auto;
@@ -112,5 +114,4 @@ onMounted(() => {
   background-color: var(--bs-blue);
   color: white;
 }
-
 </style>

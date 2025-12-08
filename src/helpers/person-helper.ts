@@ -1,7 +1,8 @@
-import {filterNullOrUndefined} from "@/helpers/util-helper.js";
+import {filterNullOrUndefined} from "@/helpers/util-helper.ts";
 import {differenceInYears} from "date-fns";
+import type { DateInfo, Location, Person } from '@/types/person.type.ts';
 
-export function formatPersonFullName(person) {
+export function formatPersonFullName(person: Person): string {
   const firstName = person.firstName;
   const middleNames = person.middleNames;
   const lastName = person.lastName;
@@ -14,7 +15,7 @@ export function formatPersonFullName(person) {
   return nameParts.join(' ');
 }
 
-export function formatPersonDate(date) {
+export function formatPersonDate(date: DateInfo | undefined | null): string {
   if (!date) {
     return '';
   }
@@ -22,24 +23,26 @@ export function formatPersonDate(date) {
   const month = _zeroPad(date.month);
   const day = _zeroPad(date.day);
   if (year && !month && !day) {
-    return year;
+    return year?.toString();
   }
   const parts = filterNullOrUndefined([year, month, day]);
   return parts.join('-');
 }
 
-export function formatPersonAge(person) {
+export function formatPersonAge(person: Person): string {
   const birthDateObj = person.birth.date;
 
   if (birthDateObj) {
-    let fromDate = personIsDead(person) ? dateObjectToDate(person.death.date) : new Date();
+    const fromDate = personIsDead(person) ? dateObjectToDate(person.death.date) : new Date();
     const birthDate = dateObjectToDate(birthDateObj);
-    return differenceInYears(fromDate, birthDate);
+    if (fromDate  && birthDate) {
+      return differenceInYears(fromDate, birthDate)?.toString();
+    }
   }
   return '?';
 }
 
-export function formatPersonLocation(location) {
+export function formatPersonLocation(location: Location): string {
   if (!location) {
     return '';
   }
@@ -47,23 +50,26 @@ export function formatPersonLocation(location) {
   return parts.join(', ');
 }
 
-export function personBirthDate(person) {
-  return dateObjectToDate(person.birth.date);
+export function personBirthDate(person: Person): Date|undefined {
+  return dateObjectToDate(person?.birth?.date);
 }
 
-export function dateObjectToDate(dateObj) {
-  return new Date(dateObj.date.$date);
+export function dateObjectToDate(dateObj: DateInfo | undefined | null): Date|undefined {
+  if (dateObj?.date?.$date) {
+    return new Date(dateObj.date.$date);
+  }
+  return undefined;
 }
 
-export function personIsDead(person) {
+export function personIsDead(person: Person): boolean {
   const deathDate = person.death.date;
   return !!deathDate
 }
 
-function _zeroPad(data) {
+function _zeroPad(data: number | undefined | null) : string {
   const dataStr = data ? data.toString() : '';
   if (dataStr.length === 1) {
     return '0' + data;
   }
-  return data;
+  return dataStr;
 }
