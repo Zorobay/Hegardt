@@ -71,6 +71,7 @@ import { Icon, Style } from 'ol/style.js';
 import AccordionComponent from '@/components/forms/AccordionComponent.vue';
 import CheckboxAccordion from '@/components/forms/CheckboxAccordion.vue';
 import BaseEvent from 'ol/events/Event';
+import * as _ from 'lodash';
 
 const router = useRouter();
 
@@ -101,6 +102,9 @@ let mapView = new View();
 const vectorSource = new VectorSource({ features: [] as PersonFeature[] });
 const vectorLayer = new VectorLayer({ source: vectorSource });
 
+const allFeatures = function (): PersonFeature[] {
+  return [...birthFeatures, ...deathFeatures, ...burialFeatures];
+};
 const coordinateFormatFunc = function (coordinate: Coordinate | undefined): string {
   if (coordinate) {
     return formatCoordinate(coordinate, '{y}, {x}', 4);
@@ -182,6 +186,27 @@ function buildMapFeatures() {
 
         feature.getGeometry()?.transform(projectionWebMercator, projectionSphericalMercator);
       }
+    }
+  }
+  // TODO for each group of features, if group has more than 1 element (same coordinates)
+  // Distribute them in an expanding fan pattern
+  const groupedFeatures = _.groupBy(allFeatures(), (feature: PersonFeature) => {
+    return (feature.getGeometry() as Point).getCoordinates();
+  });
+  for (const groupKey in groupedFeatures) {
+    const group = groupedFeatures[groupKey];
+    let i = 0;
+
+    for (const feature of group) {
+      const coordinates = (feature.getGeometry() as Point).getCoordinates();
+      const theta = 20 * i;
+      const r = 5 * i;
+      const h = coordinates[0];
+      const k = coordinates[1];
+      const x = h + r * Math.cos(theta);
+      const y = k + r * Math.sin(theta);
+      feature.setGeometry(new Point([x, y]));
+      i += 1;
     }
   }
   styleMapFeatures();
