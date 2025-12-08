@@ -45,7 +45,7 @@ class PersonService {
       const mother = this.getPersonById(person.mother);
       const father = this.getPersonById(person.father);
 
-      const childrenIds = new Set([...mother?.children, ...father?.children]);
+      const childrenIds = new Set([...mother?.children ?? [], ...father?.children ?? []]);
       for (const childId of childrenIds) {
         out.push(this.getPersonById(childId));
       }
