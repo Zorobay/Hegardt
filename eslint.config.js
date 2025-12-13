@@ -1,9 +1,9 @@
 // eslint.config.js
-import js from '@eslint/js'
-import pluginVue from 'eslint-plugin-vue'
-import skipFormatting from '@vue/eslint-config-prettier/skip-formatting'
-import tseslint from 'typescript-eslint'
-import vueParser from 'vue-eslint-parser'
+import js from '@eslint/js';
+import pluginVue from 'eslint-plugin-vue';
+import skipFormatting from '@vue/eslint-config-prettier/skip-formatting';
+import tseslint from 'typescript-eslint';
+import vueParser from 'vue-eslint-parser';
 
 export default [
   {
@@ -48,9 +48,12 @@ export default [
     name: 'app/typescript-rules',
     files: ['**/*.{ts,mts,tsx,vue}'],
     rules: {
-      '@typescript-eslint/no-unused-vars': ['error', {
-        argsIgnorePatterns: '^_',
-      }],
+      '@typescript-eslint/no-unused-vars': [
+        'error',
+        {
+          argsIgnorePattern: '^_',
+        },
+      ],
       '@typescript-eslint/explicit-function-return-type': [
         'warn',
         {
@@ -72,4 +75,4 @@ export default [
   },
 
   skipFormatting,
-]
+];

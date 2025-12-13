@@ -14,12 +14,15 @@
 <script setup lang="ts">
 import { onMounted } from 'vue';
 
-const props = defineProps(['label', 'checked']);
+const props = defineProps({
+  label: { type: String, default: '' },
+  checked: { type: Boolean, default: false },
+});
 const emit = defineEmits(['selection-changed']);
 
 onMounted(() => {
   if (props.checked) {
-    emit('selection-changed', props.checked.value);
+    emit('selection-changed', props.checked);
   }
 });
 </script>

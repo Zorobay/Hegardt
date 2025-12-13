@@ -1,5 +1,5 @@
-import Feature from 'ol/Feature.js';
-import { Style } from 'ol/style.js';
+import type Feature from 'ol/Feature.js';
+import type { Style } from 'ol/style.js';
 
 interface PersonAttributes {
   fullName: string;

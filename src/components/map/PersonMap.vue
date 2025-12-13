@@ -1,7 +1,7 @@
 <template>
-  <div class="row" id="main-div">
-    <div class="col-auto">
-      <div class="card card-body" :class="{ minimized: isMinimized }" id="map-controls">
+  <div id="main-div" class="row">
+    <div class="col-12 col-lg-auto order-2 order-lg-1">
+      <div id="map-controls" class="card card-body" :class="{ minimized: isMinimized }">
         <form>
           <CheckboxAccordion
             heading="Event Type"
@@ -23,7 +23,7 @@
             />
           </AccordionComponent>
           <AccordionComponent heading="Marker Size">
-            <div class="d-flex gap-2 align-items-center w-100" id="marker-size-input">
+            <div id="marker-size-input" class="d-flex gap-2 align-items-center w-100">
               <input
                 v-model="markerSize"
                 type="range"
@@ -43,11 +43,14 @@
           role="button"
           @click="isMinimized = !isMinimized"
         >
-          <font-awesome-icon icon="fa-solid fa-angles-up" :rotation="isMinimized ? 90 : 270" />
+          <font-awesome-icon
+            icon="fa-solid fa-angles-up"
+            :rotation="isMinimized ? (isMobile ? 180 : 90) : isMobile ? 0 : 270"
+          />
         </button>
       </div>
     </div>
-    <div class="col">
+    <div class="col-12 col-lg order-1 order-lg-2">
       <div id="map"></div>
       <div v-show="showPopup" ref="popup" class="ol-popup">
         <div class="ol-popup-header">{{ popupHeader }}</div>
@@ -59,7 +62,7 @@
 </template>
 
 <script setup lang="ts">
-import { PersonFeature, Styles } from '@/types/open-layers-feature.type.ts';
+import type { PersonFeature, Styles } from '@/types/open-layers-feature.type.ts';
 import { computed, onMounted, ref, useTemplateRef } from 'vue';
 import { useRouter } from 'vue-router';
 import { formatPersonDate, formatPersonFullName } from '@/helpers/person-helper.ts';
@@ -73,7 +76,8 @@ import { OSM } from 'ol/source';
 import { MousePosition } from 'ol/control';
 import Feature from 'ol/Feature.js';
 import { defaults as defaultControls } from 'ol/control/defaults.js';
-import { Coordinate, format as formatCoordinate } from 'ol/coordinate.js';
+import type { Coordinate } from 'ol/coordinate.js';
+import { format as formatCoordinate } from 'ol/coordinate.js';
 import personService from '@/services/PersonService.ts';
 import { Point } from 'ol/geom.js';
 import VectorSource from 'ol/source/Vector.js';
@@ -81,11 +85,12 @@ import VectorLayer from 'ol/layer/Vector.js';
 import { Icon, Style } from 'ol/style.js';
 import AccordionComponent from '@/components/forms/AccordionComponent.vue';
 import CheckboxAccordion from '@/components/forms/CheckboxAccordion.vue';
-import BaseEvent from 'ol/events/Event';
+import type BaseEvent from 'ol/events/Event';
 import _ from 'lodash';
 
 const router = useRouter();
 
+const isMobile = ref(false);
 const isMinimized = ref(false);
 const markerSize = ref(0.4);
 const markerSizeComp = computed(() => {
@@ -325,6 +330,10 @@ function onMapClick(evt: BaseEvent | Event): void {
   }
 }
 
+function calculateIsMobile(): void {
+  isMobile.value = window.innerWidth <= 992;
+}
+
 // Immediately build map features
 buildMapFeatures();
 
@@ -339,6 +348,9 @@ onMounted(() => {
   renderMap();
   map?.on('pointermove', onPointerMove);
   map?.on('singleclick', onMapClick);
+
+  calculateIsMobile();
+  window.addEventListener('resize', calculateIsMobile);
 });
 </script>
 
@@ -367,12 +379,11 @@ onMounted(() => {
 }
 
 #map-controls.minimized {
-  width: 4rem; /* Animate to button width */
+  width: 4rem;
 }
 
 #map-controls.minimized form {
   opacity: 0;
-  /* Remove max-width animation since we're animating the parent width */
 }
 
 #collapse-button {
@@ -402,5 +413,36 @@ onMounted(() => {
 
 .ol-popup-event-type {
   text-transform: capitalize;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 991px) {
+  #map-controls {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  #map-controls.minimized {
+    width: 100%;
+    height: 4rem;
+  }
+
+  #map {
+    height: 60vh;
+    min-height: 400px;
+  }
+
+  .ol-popup {
+    width: auto;
+    min-width: 150px;
+  }
+}
+
+/* Very small screens */
+@media (max-width: 576px) {
+  #map {
+    height: 50vh;
+    min-height: 300px;
+  }
 }
 </style>

@@ -1,14 +1,11 @@
 <template>
-  <span class="heg-picture-frame">
-  </span>
+  <span class="heg-portrait"> </span>
 </template>
 
-<script setup lang="ts">
-
-</script>
+<script setup lang="ts"></script>
 
 <style scoped>
-.heg-picture-frame {
+.heg-portrait {
   height: 12em;
   width: 9em;
   background-color: #bbb;

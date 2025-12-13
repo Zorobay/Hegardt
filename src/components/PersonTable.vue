@@ -3,7 +3,7 @@ import DataTable from 'datatables.net-vue3';
 import DataTablesCore from 'datatables.net-bs5';
 import personService from '@/services/PersonService.ts';
 import { formatPersonDate } from '@/helpers/person-helper.ts';
-import { LifeEvent } from '@/types/person.type.ts';
+import type { LifeEvent } from '@/types/person.type.ts';
 
 DataTable.use(DataTablesCore);
 
@@ -42,7 +42,7 @@ const columns = [
 </script>
 
 <template>
-  <DataTable :data="data" :columns="columns" id="persons-table" class="display table table-striped">
+  <DataTable id="persons-table" :data="data" :columns="columns" class="display table table-striped">
   </DataTable>
 </template>
 

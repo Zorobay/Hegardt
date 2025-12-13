@@ -2,8 +2,8 @@
   <div class="heg-person-view">
     <div v-if="person">
       <div class="row">
-        <div class="col-2">
-          <ProfilePicture />
+        <div class="col-12 col-lg-2 mb-3 mb-lg-0 text-center text-lg-start">
+          <Portrait />
         </div>
         <div class="col-9">
           <h3 id="person-full-name">
@@ -50,7 +50,7 @@
       </div>
     </div>
     <div v-else>
-      <p>Person with id {{id}} not found!</p>
+      <p>Person with id {{ id }} not found!</p>
     </div>
   </div>
 </template>
@@ -58,7 +58,7 @@
 <script setup lang="ts">
 import personService from '@/services/PersonService.ts';
 import ReadonlyText from '@/components/person/PersonTextProperty.vue';
-import ProfilePicture from '@/components/person/ProfilePicture.vue';
+import Portrait from '@/components/person/Portrait.vue';
 import { formatPersonAge, formatPersonFullName, personBirthDate } from '@/helpers/person-helper.ts';
 import SexIcon from '@/components/person/SexIcon.vue';
 import InfoGroup from '@/components/person/InfoGroup.vue';
@@ -67,7 +67,7 @@ import PersonLifeEvent from '@/components/person/PersonLifeEvent.vue';
 import { filterNullOrUndefined } from '@/helpers/util-helper.ts';
 import PersonNotes from '@/components/person/PersonNotes.vue';
 
-const { id } = defineProps({ id: {type: String, required: true} });
+const { id } = defineProps({ id: { type: String, required: true } });
 const person = personService.getPersonById(id);
 const mother = personService.getPersonById(person?.mother);
 const father = personService.getPersonById(person?.father);
@@ -85,9 +85,19 @@ children.sort((a, b) => {
 .heg-person-view {
   margin-top: 5em;
   margin-bottom: 5em;
+  .row {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 #person-full-name {
   display: inline-block;
+}
+
+.heg-info-group {
+  .heg-person-card {
+    width: 100%;
+  }
 }
 </style>
