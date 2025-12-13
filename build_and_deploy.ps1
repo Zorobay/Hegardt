@@ -52,38 +52,52 @@ Write-Box "0/6:" "Creating Git tag..."
 # Get the latest tag matching v*.*.* pattern
 $latestTag = git describe --tags --match "v*.*.*" --abbrev=0 2>$null
 
-# Check if version was provided as argument
-$providedVersion = $args[0]
-
-if ($providedVersion) {
-    # Use provided version (strip 'v' prefix if present)
-    $newVersion = $providedVersion -replace '^v', ''
+# Calculate suggested version
+if (-not $latestTag) {
+    # No existing tags, start with v0.1.0
+    $suggestedVersion = "0.1.0"
 } else {
-    # No version provided, bump minor version
-    if (-not $latestTag) {
-        # No existing tags, start with v0.1.0
-        $newVersion = "0.1.0"
-    } else {
-        # Extract version numbers (remove 'v' prefix)
-        $version = $latestTag -replace '^v', ''
+    # Extract version numbers (remove 'v' prefix)
+    $version = $latestTag -replace '^v', ''
 
-        # Split into major.minor.patch
-        $parts = $version -split '\.'
-        $major = [int]$parts[0]
-        $minor = [int]$parts[1]
-        $patch = [int]$parts[2]
+    # Split into major.minor.patch
+    $parts = $version -split '\.'
+    $major = [int]$parts[0]
+    $minor = [int]$parts[1]
+    $patch = [int]$parts[2]
 
-        # Bump minor version, reset patch to 0
-        $minor++
-        $patch = 0
+    # Bump patch version
+    $patch++
 
-        $newVersion = "$major.$minor.$patch"
-    }
+    $suggestedVersion = "$major.$minor.$patch"
+}
+
+# Prompt for version
+Write-Host "Latest tag: " -NoNewline -ForegroundColor Yellow
+if ($latestTag) {
+    Write-Host $latestTag -ForegroundColor White
+} else {
+    Write-Host "(none)" -ForegroundColor Gray
+}
+Write-Host "Suggested version: " -NoNewline -ForegroundColor Cyan
+Write-Host "v$suggestedVersion" -ForegroundColor White
+Write-Host ""
+Write-Host "Enter version (without 'v' prefix) or press Enter to use suggested: " -NoNewline -ForegroundColor Yellow
+$userInput = Read-Host
+
+# Determine final version
+if ([string]::IsNullOrWhiteSpace($userInput)) {
+    $newVersion = $suggestedVersion
+    Write-Host "Using suggested version: v$newVersion" -ForegroundColor Cyan
+} else {
+    $newVersion = $userInput -replace '^v', ''
+    Write-Host "Using provided version: v$newVersion" -ForegroundColor Cyan
 }
 
 # Create the tag with 'v' prefix
 $tagName = "v$newVersion"
 
+Write-Host ""
 Write-Host "Creating annotated tag: $tagName" -ForegroundColor Yellow
 git tag -a $tagName -m "Release $tagName"
 
@@ -93,7 +107,6 @@ if ($LASTEXITCODE -ne 0) {
 }
 
 Write-Success "Created tag $tagName"
-Write-Host "Push tag with: git push origin $tagName" -ForegroundColor Cyan
 
 # Step 1: Install dependencies
 Write-Box "1/6:" "Installing npm dependencies..."
