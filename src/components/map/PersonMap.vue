@@ -26,9 +26,9 @@
             <input
               v-model="markerSize"
               type="range"
-              min="0.02"
-              max="0.5"
-              step="0.02"
+              min="0.1"
+              max="1"
+              step="0.05"
               @change="styleMapFeatures"
             />
             <data :value="markerSizeComp">{{ markerSizeComp }}</data>
@@ -75,7 +75,7 @@ import * as _ from 'lodash';
 
 const router = useRouter();
 
-const markerSize = ref(0.1);
+const markerSize = ref(0.4);
 const markerSizeComp = computed(() => {
   return numberFormat.format(markerSize.value);
 });
