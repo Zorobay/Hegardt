@@ -56,6 +56,7 @@
 </template>
 
 <script setup lang="ts">
+import { onMounted } from 'vue';
 import personService from '@/services/PersonService.ts';
 import ReadonlyText from '@/components/person/PersonTextProperty.vue';
 import Portrait from '@/components/person/Portrait.vue';
@@ -78,6 +79,10 @@ children.sort((a, b) => {
   return (
     (personBirthDate(a) ?? new Date()).getTime() - (personBirthDate(b) ?? new Date()).getTime()
   );
+});
+
+onMounted(() => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 </script>
 
