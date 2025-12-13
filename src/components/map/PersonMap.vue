@@ -1,42 +1,53 @@
 <template>
-  <div class="row">
-    <div class="col-3">
-      <form>
-        <CheckboxAccordion
-          heading="Event Type"
-          :items="['Birth', 'Death', 'Burial']"
-          @selection-changed="onEventTypeSelectionChanged"
-        />
-        <CheckboxAccordion
-          heading="Gender"
-          :items="['Man', 'Woman', 'Unknown']"
-          @selection-changed="onGenderSelectionChanged"
-        />
-        <AccordionComponent heading="Person Name">
-          <input
-            v-model="personNameFilterText"
-            class="form-control"
-            type="search"
-            placeholder="Name..."
-            @keyup="onPersonNameChange"
+  <div class="row" id="main-div">
+    <div class="col-auto">
+      <div class="card card-body" :class="{ minimized: isMinimized }" id="map-controls">
+        <form>
+          <CheckboxAccordion
+            heading="Event Type"
+            :items="['Birth', 'Death', 'Burial']"
+            @selection-changed="onEventTypeSelectionChanged"
           />
-        </AccordionComponent>
-        <AccordionComponent heading="Marker Size">
-          <div class="d-flex gap-2 align-items-center">
+          <CheckboxAccordion
+            heading="Gender"
+            :items="['Man', 'Woman', 'Unknown']"
+            @selection-changed="onGenderSelectionChanged"
+          />
+          <AccordionComponent heading="Person Name">
             <input
-              v-model="markerSize"
-              type="range"
-              min="0.1"
-              max="1"
-              step="0.05"
-              @change="styleMapFeatures"
+              v-model="personNameFilterText"
+              class="form-control"
+              type="search"
+              placeholder="Name..."
+              @keyup="onPersonNameChange"
             />
-            <data :value="markerSizeComp">{{ markerSizeComp }}</data>
-          </div>
-        </AccordionComponent>
-      </form>
+          </AccordionComponent>
+          <AccordionComponent heading="Marker Size">
+            <div class="d-flex gap-2 align-items-center w-100" id="marker-size-input">
+              <input
+                v-model="markerSize"
+                type="range"
+                min="0.1"
+                max="1"
+                step="0.05"
+                class="flex-grow-1"
+                @change="styleMapFeatures"
+              />
+              <data :value="markerSizeComp" class="float-end">{{ markerSizeComp }}</data>
+            </div>
+          </AccordionComponent>
+        </form>
+        <button
+          id="collapse-button"
+          class="btn btn-primary"
+          role="button"
+          @click="isMinimized = !isMinimized"
+        >
+          <font-awesome-icon icon="fa-solid fa-angles-up" :rotation="isMinimized ? 90 : 270" />
+        </button>
+      </div>
     </div>
-    <div class="col-9">
+    <div class="col">
       <div id="map"></div>
       <div v-show="showPopup" ref="popup" class="ol-popup">
         <div class="ol-popup-header">{{ popupHeader }}</div>
@@ -71,10 +82,11 @@ import { Icon, Style } from 'ol/style.js';
 import AccordionComponent from '@/components/forms/AccordionComponent.vue';
 import CheckboxAccordion from '@/components/forms/CheckboxAccordion.vue';
 import BaseEvent from 'ol/events/Event';
-import * as _ from 'lodash';
+import _ from 'lodash';
 
 const router = useRouter();
 
+const isMinimized = ref(false);
 const markerSize = ref(0.4);
 const markerSizeComp = computed(() => {
   return numberFormat.format(markerSize.value);
@@ -331,15 +343,49 @@ onMounted(() => {
 </script>
 
 <style scoped>
-#map {
-  width: 100%;
-  height: 50rem;
+#main-div > * {
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
 }
 
-form {
+#map-controls {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 20rem; /* Add fixed width */
+  transition: width 0.3s ease;
+  overflow: hidden;
+}
+
+#map-controls form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  opacity: 1;
+  transition: opacity 0.35s ease;
+  overflow: hidden;
+}
+
+#map-controls.minimized {
+  width: 4rem; /* Animate to button width */
+}
+
+#map-controls.minimized form {
+  opacity: 0;
+  /* Remove max-width animation since we're animating the parent width */
+}
+
+#collapse-button {
+  margin-top: auto;
+  padding: 0;
+  width: 100%;
+  height: 2rem;
+  flex-shrink: 0;
+}
+
+#map {
+  width: 100%;
+  height: 50rem;
 }
 
 .ol-popup {
@@ -348,13 +394,13 @@ form {
   text-align: center;
   border-radius: 0.5rem;
   width: 130%;
+}
 
-  .ol-popup-header {
-    font-weight: bold;
-  }
+.ol-popup-header {
+  font-weight: bold;
+}
 
-  .ol-popup-event-type {
-    text-transform: capitalize;
-  }
+.ol-popup-event-type {
+  text-transform: capitalize;
 }
 </style>
