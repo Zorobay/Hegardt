@@ -1,5 +1,7 @@
-import persons from "@/data/persons.ts"
-import type { Person, PersonsData } from '@/types/person.type.ts'
+import persons from '@/data/persons.ts';
+import type { Person, PersonsData } from '@/types/person.type.ts';
+import { fuzzyMatch } from '@/helpers/util-helper.ts';
+import { formatPersonFullName } from '@/helpers/person-helper.ts';
 
 class PersonService {
   private readonly _data: PersonsData;
@@ -21,6 +23,13 @@ class PersonService {
 
   getAllPersonsList(): Person[] {
     return this._dataList;
+  }
+
+  getPersonsByName(name: string): Person[] {
+    return this._dataList.filter((p) => {
+      const personFullName = formatPersonFullName(p);
+      return fuzzyMatch(personFullName, name);
+    });
   }
 
   getPersonById(id: string | number | null | undefined): Person | null {
@@ -66,4 +75,4 @@ class PersonService {
   }
 }
 
-export default new PersonService()
+export default new PersonService();

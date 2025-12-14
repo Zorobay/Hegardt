@@ -30,16 +30,7 @@
           </li>
         </ul>
 
-        <form class="d-flex" role="search">
-          <input
-            class="form-control me-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-            onchange=""
-          />
-          <button class="btn btn-primary" type="submit">Search</button>
-        </form>
+        <SearchComponent />
 
         <div class="dropdown">
           <button
@@ -61,7 +52,9 @@
   </nav>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import SearchComponent from '@/components/forms/SearchComponent.vue';
+</script>
 
 <style scoped>
 #main-nav .container-fluid {
