@@ -1,11 +1,13 @@
 <template>
-  <i v-if="sex" :class="iconClass"></i>
+  <font-awesome-icon :icon="iconClass" />
 </template>
 
 <script setup lang="ts">
-import PersonSexEnum from "@/enums/PersonSexEnum.ts";
-const props = defineProps({sex: {type: String, required: true}});
-function sexIconClass(sex: string) {
+import PersonSexEnum from '@/enums/PersonSexEnum.ts';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+
+const props = defineProps({ sex: { type: String, required: true } });
+function sexIconClass(sex: string): string {
   if (sex.toUpperCase() === PersonSexEnum.MAN) {
     return 'fa-solid fa-mars';
   } else if (sex.toUpperCase() === PersonSexEnum.WOMAN) {
@@ -16,9 +18,6 @@ function sexIconClass(sex: string) {
 }
 
 const iconClass = sexIconClass(props.sex);
-
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

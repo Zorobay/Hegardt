@@ -5,35 +5,38 @@
         <div class="col-12 col-lg-2 mb-3 mb-lg-0 text-center text-lg-start">
           <Portrait />
         </div>
+
         <div class="col-9">
-          <h3 id="person-full-name">
+          <h2 id="person-full-name">
             {{ formatPersonFullName(person) }}
             <SexIcon :sex="person.sex" />
-          </h3>
-          <div class="row">
-            <div class="col">
-              <PersonLifeEvent :event="person.birth" title="Born" />
+          </h2>
+          <InfoGroup title="Personal details">
+            <div class="row">
+              <div class="col">
+                <PersonLifeEvent :event="person.birth" title="Born" />
+              </div>
+              <div class="col">
+                <ReadonlyText :text="formatPersonAge(person)" title="Age" />
+              </div>
             </div>
-            <div class="col">
-              <ReadonlyText :text="formatPersonAge(person)" title="Age" />
-            </div>
-          </div>
-          <PersonLifeEvent :event="person.death" title="Died" />
-          <PersonLifeEvent :event="person.burial" title="Buried" />
+            <PersonLifeEvent :event="person.death" title="Died" />
+            <PersonLifeEvent :event="person.burial" title="Buried" />
 
-          <PersonNotes :notes="person.notes" />
+            <PersonNotes :notes="person.notes" />
 
-          <ReadonlyText title="Occupations">
-            <ul>
-              <li v-for="occupation in person.occupations" :key="occupation">{{ occupation }}</li>
-            </ul>
-          </ReadonlyText>
+            <ReadonlyText title="Occupations">
+              <ul>
+                <li v-for="occupation in person.occupations" :key="occupation">{{ occupation }}</li>
+              </ul>
+            </ReadonlyText>
 
-          <ReadonlyText title="References">
-            <ul>
-              <li v-for="reference in person.references" :key="reference">{{ reference }}</li>
-            </ul>
-          </ReadonlyText>
+            <ReadonlyText title="References">
+              <ul>
+                <li v-for="reference in person.references" :key="reference">{{ reference }}</li>
+              </ul>
+            </ReadonlyText>
+          </InfoGroup>
 
           <InfoGroup title="Parents">
             <PersonCard v-for="parent in parents" :key="parent.id" :person="parent" />

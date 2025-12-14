@@ -13,10 +13,10 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 
 /* import specific icons */
-import { faAnglesUp } from '@fortawesome/free-solid-svg-icons';
+import { faAnglesUp, faMars, faVenus } from '@fortawesome/free-solid-svg-icons';
 
 /* add icons to the library */
-library.add(faAnglesUp);
+library.add(faAnglesUp, faMars, faVenus);
 
 const app = createApp(App);
 

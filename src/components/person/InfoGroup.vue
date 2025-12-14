@@ -1,6 +1,6 @@
 <template>
-  <div class="heg-info-group">
-    <h5>{{ title }}</h5>
+  <div class="heg-info-group card card-body">
+    <h4 class="heg-info-group-title">{{ title }}</h4>
     <hr />
     <div class="heg-info-group-content">
       <slot />
@@ -19,5 +19,9 @@ defineProps({ title: { type: String, required: false, default: '' } });
 
 hr {
   margin-top: 0.5em;
+}
+
+.heg-info-group-title {
+  font-weight: bold;
 }
 </style>

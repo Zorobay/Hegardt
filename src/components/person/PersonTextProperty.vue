@@ -1,13 +1,13 @@
 <template>
   <div class="heg-person-text-property">
-    <h6>{{title}}</h6>
-    <p v-if="text">{{text}}</p>
+    <h5>{{ title }}</h5>
+    <p v-if="text">{{ text }}</p>
     <slot></slot>
   </div>
 </template>
 
 <script setup lang="ts">
-defineProps(['text', 'title'])
+defineProps(['text', 'title']);
 </script>
 
 <style scoped>

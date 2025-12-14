@@ -1,22 +1,28 @@
 <template>
-
   <div class="card heg-person-card">
     <div class="card-body">
-      <h5 class="card-title">{{ formatPersonFullName(person) }}
-          <SexIcon :sex="person.sex"/>
-        </h5>
-      <h6 class="card-subtitle mb-2 text-body-secondary">{{ formatPersonDate(person.birth.date) }}</h6>
-      <router-link class="stretched-link" :to="{name: 'person', params: {id: id}}"></router-link>
+      <h5 class="card-title">
+        {{ formatPersonFullName(person) }}
+        <SexIcon :sex="person.sex" />
+      </h5>
+      <h6 class="card-subtitle mb-2 text-body-secondary">
+        {{ formatPersonDate(person.birth.date) }}
+      </h6>
+      <router-link
+        class="stretched-link"
+        :to="{ name: 'person', params: { id: id } }"
+      ></router-link>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import SexIcon from "@/components/person/SexIcon.vue";
+import SexIcon from '@/components/person/SexIcon.vue';
 
-import {formatPersonFullName, formatPersonDate} from "@/helpers/person-helper.ts";
+import { formatPersonDate, formatPersonFullName } from '@/helpers/person-helper.ts';
+import type { Person } from '@/types/person.type.ts';
 
-const props = defineProps(['person']);
+const props = defineProps<{ person: Person }>();
 const id = props.person.id;
 </script>
 
@@ -27,9 +33,6 @@ const id = props.person.id;
 }
 
 .heg-person-card:hover {
-  background: linear-gradient(
-          rgba(0, 0, 0, 0.1),
-          rgba(0, 0, 0, 0.0)
-        )
+  background: rgba(0, 0, 0, 0.05);
 }
 </style>
