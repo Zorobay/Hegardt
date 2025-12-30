@@ -101,9 +101,7 @@ function updateMapMarkers() {
     return selectedGenders.some((g) => g === f.attributes?.gender?.toUpperCase());
   });
   allFeatures = allFeatures.filter((f) =>
-    f.attributes?.fullName
-      ? fuzzyMatch(f.attributes?.fullName ?? '', personNameFilterText.value)
-      : false,
+    f.attributes?.fullName ? fuzzyMatch(f.attributes?.fullName ?? '', personNameFilterText.value) : false,
   );
   vectorSource.addFeatures(allFeatures);
 }
@@ -127,7 +125,7 @@ function buildMapFeatures() {
           date: date,
           eventType: eventType,
           gender: person['sex'],
-          id: person.id,
+          personId: person.id,
         };
 
         if (eventType === 'birth') {
@@ -330,12 +328,7 @@ onMounted(() => {
             </div>
           </AccordionComponent>
         </form>
-        <button
-          id="collapse-button"
-          class="btn btn-primary"
-          role="button"
-          @click="isMinimized = !isMinimized"
-        >
+        <button id="collapse-button" class="btn btn-primary" role="button" @click="isMinimized = !isMinimized">
           <font-awesome-icon
             icon="fa-solid fa-angles-up"
             :rotation="isMinimized ? (isMobile ? 180 : 90) : isMobile ? 0 : 270"

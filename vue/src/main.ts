@@ -6,17 +6,16 @@ import { createPinia } from 'pinia';
 import App from './App.vue';
 import router from './router/router.ts';
 
-import 'bootstrap';
-
+// import 'bootstrap';
 /* import the fontawesome core */
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 
 /* import specific icons */
-import { faAnglesUp, faMars, faVenus } from '@fortawesome/free-solid-svg-icons';
+import { faAnglesUp, faArrowsToCircle, faMars, faSitemap, faUser, faVenus } from '@fortawesome/free-solid-svg-icons';
 
 /* add icons to the library */
-library.add(faAnglesUp, faMars, faVenus);
+library.add(faAnglesUp, faMars, faVenus, faArrowsToCircle, faSitemap, faUser);
 
 const app = createApp(App);
 

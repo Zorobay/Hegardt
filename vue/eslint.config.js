@@ -33,6 +33,21 @@ export default [
     },
   },
 
+  // Vue script setup order - defineProps, defineEmits
+  {
+    name: 'app/vue-define-macros-order',
+    files: ['**/*.vue'],
+    rules: {
+      'vue/define-macros-order': [
+        'error',
+        {
+          order: ['defineProps', 'defineEmits'],
+          defineExposeLast: false,
+        },
+      ],
+    },
+  },
+
   // Vue component tag order - script, template, style
   {
     name: 'app/vue-component-order',

@@ -1,16 +1,20 @@
 <script setup lang="ts">
 import personService from '@/services/PersonService.ts';
-import { ref } from 'vue';
+import { onMounted, ref } from 'vue';
 import type { Person } from '@/types/person.type.ts';
-import { formatPersonFullName } from '@/helpers/person-helper.ts';
-import { useRouter } from 'vue-router';
+import { formatPersonFullName, formatPersonLifespan } from '@/helpers/person-helper.ts';
+import PortraitComponent from '@/components/person/PortraitComponent.vue';
 
-const router = useRouter();
+const props = defineProps<{ defaultId?: number }>();
+const emit = defineEmits<{ onPersonClicked: [number] }>();
 
 const showDropdown = ref(false);
 const searchQuery = ref('');
 const matchingPersons = ref<Person[]>([]);
 
+onMounted(async () => {
+  searchQuery.value = formatPersonFullName(personService.getPersonById(props.defaultId));
+});
 function onKeyup(event: KeyboardEvent): void {
   const query = (event.target as HTMLInputElement)?.value;
   searchQuery.value = query;
@@ -38,21 +42,16 @@ function onFocus(): void {
 
 function onPersonClick(person: Person): void {
   showDropdown.value = false;
-  const id = person.id;
-  router.push({ name: 'person', params: { id: id } });
-}
-
-function formatPersonDates(person: Person): string {
-  const birthYear = person.birth?.date?.year ?? '';
-  const deathYear = person.death?.date?.year ?? '';
-  return `${birthYear}${deathYear ? ' - ' : ''}${deathYear}`;
+  searchQuery.value = formatPersonFullName(person);
+  emit('onPersonClicked', person.id);
 }
 </script>
 
 <template>
-  <form role="search">
+  <form role="search" class="heg-search-component">
     <div class="position-relative d-flex flex-row">
       <input
+        v-model="searchQuery"
         class="form-control me-2"
         type="search"
         placeholder="Search"
@@ -62,22 +61,18 @@ function formatPersonDates(person: Person): string {
         @focus="onFocus"
       />
 
-      <span
-        v-if="matchingPersons.length > 0 && showDropdown"
-        class="badge bg-primary results-badge"
-      >
+      <span v-if="matchingPersons.length > 0 && showDropdown" class="badge bg-primary results-badge">
         {{ matchingPersons.length }}
       </span>
 
       <div v-if="showDropdown" class="dropdown-menu show w-100">
-        <a
-          v-for="person in matchingPersons"
-          :key="person.id"
-          class="dropdown-item my-1"
-          @click="onPersonClick(person)"
-        >
-          <h6>{{ formatPersonFullName(person) }}</h6>
-          <p class="text-body-secondary m-0">{{ formatPersonDates(person) }}</p>
+        <a v-for="person in matchingPersons" :key="person.id" class="dropdown-item my-1" @click="onPersonClick(person)">
+          <PortraitComponent />
+
+          <div class="dropdown-person-info">
+            <h6>{{ formatPersonFullName(person) }}</h6>
+            <p class="text-body-secondary small m-0">{{ formatPersonLifespan(person) }}</p>
+          </div>
         </a>
       </div>
       <button class="btn btn-primary" type="submit">Search</button>
@@ -86,6 +81,11 @@ function formatPersonDates(person: Person): string {
 </template>
 
 <style scoped>
+.heg-portrait {
+  width: 2rem;
+  flex-shrink: 0;
+}
+
 .results-badge {
   position: absolute;
   right: 7.75rem;
@@ -103,8 +103,16 @@ function formatPersonDates(person: Person): string {
 .dropdown-item {
   cursor: pointer;
   border-bottom: 1px solid #e9ecef;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+  justify-content: flex-start;
 }
-
+.dropdown-person-info {
+  flex: 1;
+  min-width: 0;
+}
 .dropdown-item:last-child {
   border-bottom: none;
 }

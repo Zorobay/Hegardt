@@ -1,5 +1,5 @@
 import persons from '@/data/persons.ts';
-import type { Person, PersonsData } from '@/types/person.type.ts';
+import type { Person, PersonOptionalId, PersonsData } from '@/types/person.type.ts';
 import { fuzzyMatch } from '@/helpers/util-helper.ts';
 import { formatPersonFullName } from '@/helpers/person-helper.ts';
 
@@ -36,14 +36,14 @@ class PersonService {
     });
   }
 
-  getPersonById(id: string | number | null | undefined): Person | null {
+  getPersonById(id: PersonOptionalId): Person | null {
     if (!id) {
       return null;
     }
     return this._data[id];
   }
 
-  getChilrenOfPersonById(id: string | number | null | undefined): Person[] {
+  getChilrenOfPersonById(id: PersonOptionalId): Person[] {
     const person = this.getPersonById(id);
     const out: Person[] = [];
 
@@ -59,7 +59,10 @@ class PersonService {
     return out;
   }
 
-  getSiblingsOfPersonById(id: string | number | null | undefined): Person[] {
+  getSiblingsOfPersonById(id: PersonOptionalId): Person[] {
+    if (!id) {
+      return [];
+    }
     const person = this.getPersonById(id);
     const out = [];
 
@@ -68,6 +71,7 @@ class PersonService {
       const father = this.getPersonById(person.father);
 
       const childrenIds = new Set([...(mother?.children ?? []), ...(father?.children ?? [])]);
+      childrenIds.delete(id);
       for (const childId of childrenIds) {
         const child = this.getPersonById(childId);
         if (child) {

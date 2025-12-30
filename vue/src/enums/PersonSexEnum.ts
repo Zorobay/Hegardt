@@ -1,7 +1,8 @@
-const sexEnum = Object.freeze({
+const SexEnum = Object.freeze({
   MAN: 'MAN',
   WOMAN: 'WOMAN',
-  UNKNOWN: 'UNKNOWN'
-})
+  UNKNOWN: 'UNKNOWN',
+});
 
-export default sexEnum;
+export default SexEnum;
+export type Sex = (typeof SexEnum)[keyof typeof SexEnum];

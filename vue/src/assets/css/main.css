@@ -1,5 +1,4 @@
-@import "bootstrap/dist/css/bootstrap.min.css";
-@import '@/assets/css/global.css';
+@import '@/assets/css/default.css';
+@import '@/assets/css/theme.scss';
 @import '@/assets/css/hegardt.css';
 @import 'ol/ol.css';
-@import '@/assets/css/bootstrap-overrides.css';

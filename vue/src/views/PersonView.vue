@@ -2,7 +2,7 @@
 import { onMounted } from 'vue';
 import personService from '@/services/PersonService.ts';
 import ReadonlyText from '@/components/person/PersonTextProperty.vue';
-import Portrait from '@/components/person/Portrait.vue';
+import PortraitComponent from '@/components/person/PortraitComponent.vue';
 import { formatPersonAge, formatPersonFullName, personBirthDate } from '@/helpers/person-helper.ts';
 import SexIcon from '@/components/person/SexIcon.vue';
 import InfoGroup from '@/components/person/InfoGroup.vue';
@@ -10,8 +10,9 @@ import PersonCard from '@/components/person/PersonCard.vue';
 import PersonLifeEvent from '@/components/person/PersonLifeEvent.vue';
 import { filterNullOrUndefined } from '@/helpers/util-helper.ts';
 import PersonNotes from '@/components/person/PersonNotes.vue';
+import PersonIconLinks from '@/components/person/PersonCardIconLinks.vue';
 
-const { id } = defineProps({ id: { type: String, required: true } });
+const { id } = defineProps({ id: { type: Number, required: true } });
 const person = personService.getPersonById(id);
 const mother = personService.getPersonById(person?.mother);
 const father = personService.getPersonById(person?.father);
@@ -19,9 +20,7 @@ const parents = filterNullOrUndefined([mother, father]);
 const siblings = personService.getSiblingsOfPersonById(id);
 const children = personService.getChilrenOfPersonById(id);
 children.sort((a, b) => {
-  return (
-    (personBirthDate(a) ?? new Date()).getTime() - (personBirthDate(b) ?? new Date()).getTime()
-  );
+  return (personBirthDate(a) ?? new Date()).getTime() - (personBirthDate(b) ?? new Date()).getTime();
 });
 
 onMounted(() => {
@@ -34,14 +33,17 @@ onMounted(() => {
     <div v-if="person">
       <div class="row">
         <div class="col-12 col-lg-2 mb-3 mb-lg-0 text-center text-lg-start">
-          <Portrait />
+          <PortraitComponent />
         </div>
 
         <div class="col-9">
-          <h2 id="person-full-name">
-            {{ formatPersonFullName(person) }}
-            <SexIcon :sex="person.sex" />
-          </h2>
+          <div class="d-flex flex-row">
+            <h2 id="person-full-name">
+              {{ formatPersonFullName(person) }}
+              <SexIcon :sex="person.sex" />
+            </h2>
+            <PersonIconLinks :id="id" />
+          </div>
           <InfoGroup title="Personal details">
             <div class="row">
               <div class="col">
@@ -90,6 +92,10 @@ onMounted(() => {
 </template>
 
 <style scoped>
+.heg-portrait {
+  width: 100%;
+}
+
 .heg-person-view {
   margin-top: 5em;
   margin-bottom: 5em;

@@ -1,10 +1,10 @@
-import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
-import PersonView from '@/views/PersonView.vue'
-import PersonTableView from '@/views/PersonTableView.vue'
-import NotFoundView from '@/views/NotFoundView.vue'
-import PersonMapView from '@/views/PersonMapView.vue'
-import PersonTreeView from '@/views/PersonTreeView.vue';
+import { createRouter, createWebHistory } from 'vue-router';
+import HomeView from '../views/HomeView.vue';
+import PersonView from '@/views/PersonView.vue';
+import PersonTableView from '@/views/PersonTableView.vue';
+import NotFoundView from '@/views/NotFoundView.vue';
+import PersonMapView from '@/views/PersonMapView.vue';
+import FamilyTreeView from '@/views/FamilyTreeView.vue';
 
 const router = createRouter({
   history: createWebHistory(),
@@ -18,7 +18,7 @@ const router = createRouter({
       path: '/person/:id',
       name: 'person',
       component: PersonView,
-      props: true
+      props: true,
     },
     {
       path: '/table',
@@ -36,12 +36,12 @@ const router = createRouter({
       component: PersonMapView,
     },
     {
-      path: '/tree/:id?',
+      path: '/tree/:personId?',
       name: 'tree',
-      component: PersonTreeView,
-      props: true
+      component: FamilyTreeView,
+      props: true,
     },
   ],
-})
+});
 
-export default router
+export default router;

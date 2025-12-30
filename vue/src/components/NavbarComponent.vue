@@ -1,5 +1,12 @@
 <script setup lang="ts">
 import SearchComponent from '@/components/forms/SearchComponent.vue';
+import { useRouter } from 'vue-router';
+
+const router = useRouter();
+
+function onPersonClicked(personId: number): void {
+  router.push({ name: 'person', params: { id: personId } });
+}
 </script>
 
 <template>
@@ -32,18 +39,12 @@ import SearchComponent from '@/components/forms/SearchComponent.vue';
           <li class="nav-item">
             <RouterLink v-show="true" class="nav-link" :to="{ name: 'tree' }">Tree</RouterLink>
           </li>
-
         </ul>
 
-        <SearchComponent />
+        <SearchComponent @on-person-clicked="onPersonClicked" />
 
         <div class="dropdown">
-          <button
-            class="btn dropdown-toggle"
-            type="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
+          <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
             <i class="fa-solid fa-language"></i>
           </button>
           <ul class="dropdown-menu">

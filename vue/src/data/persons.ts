@@ -1,4 +1,5 @@
-import type { PersonsData } from '@/types/person.type.ts'
+import type { PersonsData } from '@/types/person.type.ts';
+import SexEnum from '@/enums/PersonSexEnum.ts';
 
 const persons: PersonsData = {
   0: {
@@ -50,7 +51,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: ['se Peters dagbok'],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 0,
   },
   1: {
@@ -102,7 +103,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1,
   },
   3: {
@@ -167,7 +168,7 @@ const persons: PersonsData = {
     notes: 'Död i mars 1639 i Amsterdam, Nederländerna. [1]',
     occupations: [],
     references: ['se Peters dagbok'],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 3,
   },
   2: {
@@ -197,7 +198,7 @@ const persons: PersonsData = {
     notes: 'Döpt 1611-11-16.',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 2,
   },
   4: {
@@ -255,7 +256,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: ['se Peters dagbok'],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 4,
   },
   5: {
@@ -285,7 +286,7 @@ const persons: PersonsData = {
     notes: 'Den tredje av de söner, som nämns i Peters dagbok.',
     occupations: [],
     references: ['se Peters dagbok'],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 5,
   },
   6: {
@@ -319,11 +320,10 @@ const persons: PersonsData = {
     marriages: [],
     middleNames: [],
     mother: 4,
-    notes:
-      'Ej namngiven i dagboken. Sannolikt namn efter farfadern? Øvriga uppgifter har ej spårats.',
+    notes: 'Ej namngiven i dagboken. Sannolikt namn efter farfadern? Øvriga uppgifter har ej spårats.',
     occupations: [],
     references: ['se Peters dagbok'],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 6,
   },
   9: {
@@ -389,7 +389,7 @@ const persons: PersonsData = {
       '(Tab 1 i GS).\nFlyttade i början av 1700-talet till Sverige och var inspektor på Svenstorp hos sin kusin Maria Gyllenkrok (tab 99).',
     occupations: [],
     references: ['se Peters dagbok'],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 9,
   },
   10: {
@@ -454,7 +454,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 10,
   },
   12: {
@@ -524,7 +524,7 @@ const persons: PersonsData = {
     notes: '(Tab 2 i GS).\nFlyttade omkring 1730 till Uddevalla från Danmark.',
     occupations: ['Handlande och från 1748 rådman där'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 12,
   },
   13: {
@@ -603,7 +603,7 @@ const persons: PersonsData = {
       'Lysning togs ut 1:a gången 1741-05-24.\nFlyttade till Sverige 1730-40.\nVar 1741 tullskrivare i Varberg. Blev sedermera tullinspektor på Marstrand.',
     occupations: ['Tullinspektor'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 13,
   },
   15: {
@@ -681,7 +681,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 15,
   },
   16: {
@@ -760,7 +760,7 @@ const persons: PersonsData = {
       '(Tab 2:3 i GS).\nMakarna instiftade genom gemensamt testamente 1772 Gustafsbergs barnhus på egendomen Baggetofta invid Uddevalla. (Ang Knape, se Biogr lex, del 6, "Några minnesanteckningar om Gustafsbergs barnhus", Udd 1906 och Grenfelt "Gustafsbergs barnhus och badort", Udd 1926.)',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 16,
   },
   28: {
@@ -823,7 +823,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 28,
   },
   27: {
@@ -901,7 +901,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Handlande och skeppsredare'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 27,
   },
   17: {
@@ -979,7 +979,7 @@ const persons: PersonsData = {
     notes: '(Tab 2:4 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 17,
   },
   18: {
@@ -1075,7 +1075,7 @@ const persons: PersonsData = {
       '(Tab 3 i GS).\n(Brodern Johannes svägerska).\nÄgde Länderiet Annegreteberg samt åtskilliga smärre tomter och jordlotter utanför staden samt efterlämnade en rätt ansenlig förmögenhet.',
     occupations: ['Handlande och skeppsredare', 'Samt från 1764 rådman i uddevalla'],
     references: ['Lysning 13/2 1765', 'dödfödd'],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 18,
   },
   19: {
@@ -1127,7 +1127,7 @@ const persons: PersonsData = {
     notes: '(Tab 2:99 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 19,
   },
   20: {
@@ -1222,7 +1222,7 @@ const persons: PersonsData = {
     notes: '(Tab 25 i GS).',
     occupations: ['Handlande och rådman i uddevalla'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 20,
   },
   21: {
@@ -1274,7 +1274,7 @@ const persons: PersonsData = {
     notes: '(2:190 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 21,
   },
   29: {
@@ -1337,7 +1337,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: ['Lysning 13/2 1765', 'dödfödd'],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 29,
   },
   30: {
@@ -1415,7 +1415,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 30,
   },
   31: {
@@ -1465,7 +1465,7 @@ const persons: PersonsData = {
     notes: '(Tab 3:6 i GS).',
     occupations: [],
     references: ['dödfödd'],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 31,
   },
   32: {
@@ -1543,7 +1543,7 @@ const persons: PersonsData = {
     notes: '(Tab 3:7 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 32,
   },
   58: {
@@ -1621,7 +1621,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 58,
   },
   33: {
@@ -1699,7 +1699,7 @@ const persons: PersonsData = {
     notes: '(Tab 3:8 i GS).',
     occupations: ['Godsägare'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 33,
   },
   59: {
@@ -1777,7 +1777,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 59,
   },
   34: {
@@ -1829,7 +1829,7 @@ const persons: PersonsData = {
     notes: '(Tab 3:9 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 34,
   },
   35: {
@@ -1907,7 +1907,7 @@ const persons: PersonsData = {
     notes: '(Tab 3:10 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 35,
   },
   60: {
@@ -1985,7 +1985,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 60,
   },
   61: {
@@ -2045,7 +2045,7 @@ const persons: PersonsData = {
     notes: 'Tab 3:11 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 61,
   },
   37: {
@@ -2124,7 +2124,7 @@ const persons: PersonsData = {
       '(Tab 4 i GS).\nStudent i Lund 1795. Juridisk examen där 1796 3/5 (examen juridicum et historicum) samt responderade för en akademisk avhandling "de infinito numine nobis incomprehensibile". Eo kanslist vid utrikes statsexpeditionen febr 1797. Studerade vid Uppsala universitet vårterminerna 1797 och 1799. Tjänstgjorde vid riksdagen i Norrköping 1800. Legationssekreterare vid beskickningen till riksförsamlingen i Regensburg 1801 4/6 - aug 1806. Protokollssekreterare vid utrikes statsexpeditionen 1807 25/5. Utnämnd till legationssekreterare i Wien sommaren 1810 (ankom dit 1811), samt chargé d\'affaires där aug 1812 - juli 1816. Kansliråd 1817 26/3. Sändes samma år i juni i särskilt uppdrag till engelska hovet och var april - aug svenskt sändebud i Köpenhamn.\nRNO 1817 7/10. Adlad (med bibehållet namn) med anledning av Carl Johans kröning 1818 11/5 (introducerad 1819 under nr 2262).\nLedamot av rikets allmänna ärenders beredning 1819. Statssekreterare för handel- och finansärenden 1820 aug - dec och därunder ledamot av generaltulldirektionen. Ledamot av finanskommitten 1822 och av konvojkommissariatet 1825. Revisor över bankodiskontverket 1826-1829 och 1832.\nBevistade riksdagarna 1823 (ledamot av expeditionsutskottet, vald till suppleant för riksgäldsfullmäktige), 1828-1830 (ledamot av sammansatta stats- och bankoutskottet, vald till suppleant för bankofullmäktige), 1834?1835 (ledamot av konstitutionsutskottet samt av nämnden för val av justitieombudsman); vald till riksgäldsfullmäktige). Bankofullmäktig 1832 1/2 - 1834 och riksgäldsfullmäktig sept 1834 till sin död. Recentior i frimurarlogen S:t Erik 1800.\nH var en synnerligen skicklig ämbetsman och en framstående diplomat. J D Valerius skrev om honom med anledning av hans frånfälle, bl a följande: "Om man vill skapa sig ett människoideal av oförenbara motsatser, huvudet klart men hetsigt, nordisk karaktär och sydländskt lynne, den förra energisk och oböjlig, det senare vekligt och ömtåligt som sensitivan, --- och om därav likväl uppkommer ett ädelt, harmoniskt helt --- så skulle bilden framstå förverkligad i Kristian Bernhard Hegardt. Rik på begrepp och kunskaper, använd i mångfaldiga allmänna värv, var han en djup tänkare, kall diplomat, mogen statsman, sansad talare.\nKärleken till rättvisa och ljus, hatet mot allt vrångt och dunkelt bragte honom dock ofta i feber, när han, ren och genomskinlig till både avsikt och system, vederlades med fraser eller av sorlet nedtystades. Men hållande måtta i saken, om ej i sättet, aldrig övergivande det enda parti han fullföljde - övertygelsens -, frisinnigt medborgerlig och lika frisinnigt konungskt, uppnådde han slutligen målet och möttes av förtroende.\nSåsom enskild man kunde han, med ett ord, nämnas efterdömlig.\nSin värld här nere fann han i den älskvärda husliga kretsen, och skattade för övrigt tämligen ringa ett liv, som plågorna långsamt förtärde. Hans högre syften och förhoppning uttrycktes ock av själva hans riddare valspråk: ovan skyn (supra nubem)." H:s rikhaltiga brevväxling (bl a med Carl XIV Johan) förvaras hos ättens huvudman.',
     occupations: ['Kansliråd'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 37,
   },
   38: {
@@ -2202,7 +2202,7 @@ const persons: PersonsData = {
     notes: '(Tab 10 i GS).\nVar från 1819 bosatt i Uddevalla.',
     occupations: ['Grosshandlare och skeppsredare i stockholm'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 38,
   },
   40: {
@@ -2280,7 +2280,7 @@ const persons: PersonsData = {
     notes: '(Tab 3:96 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 40,
   },
   78: {
@@ -2350,7 +2350,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Øverstelöjtnant vid arméns flotta'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 78,
   },
   41: {
@@ -2428,7 +2428,7 @@ const persons: PersonsData = {
     notes: '(Tab 3:97 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 41,
   },
   79: {
@@ -2506,7 +2506,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Kammarherre', 'Rno'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 79,
   },
   42: {
@@ -2566,7 +2566,7 @@ const persons: PersonsData = {
     notes: '(Tab 3:98 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 42,
   },
   62: {
@@ -2644,7 +2644,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 62,
   },
   63: {
@@ -2704,7 +2704,7 @@ const persons: PersonsData = {
     notes: '(Tab 4:13 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 63,
   },
   64: {
@@ -2782,7 +2782,7 @@ const persons: PersonsData = {
     notes: '(Tab 4:14).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 64,
   },
   82: {
@@ -2860,7 +2860,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 82,
   },
   65: {
@@ -2920,7 +2920,7 @@ const persons: PersonsData = {
     notes: '(Tab 4:15 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 65,
   },
   66: {
@@ -2995,11 +2995,10 @@ const persons: PersonsData = {
     ],
     middleNames: ['Bernhard'],
     mother: 62,
-    notes:
-      '(Tab 5 i GS).\nBlev sedermera handelsbokhållare i Göteborg. Ägdeåren1855-61 Segerfors bruk i Arvika.',
+    notes: '(Tab 5 i GS).\nBlev sedermera handelsbokhållare i Göteborg. Ägdeåren1855-61 Segerfors bruk i Arvika.',
     occupations: ['Bruksägare i värmland mm'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 66,
   },
   67: {
@@ -3059,7 +3058,7 @@ const persons: PersonsData = {
     notes: '(Tab 4:36 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 67,
   },
   68: {
@@ -3137,7 +3136,7 @@ const persons: PersonsData = {
     notes: '(Tab 4:37 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 68,
   },
   90: {
@@ -3215,7 +3214,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 90,
   },
   69: {
@@ -3275,7 +3274,7 @@ const persons: PersonsData = {
     notes: '(Tab 4:38 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 69,
   },
   83: {
@@ -3353,7 +3352,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 83,
   },
   84: {
@@ -3424,7 +3423,7 @@ const persons: PersonsData = {
       'Studentexamen i Göteborg 1874. Examen till rättegångsverken 1879. Eo Notarie i Göta hovrätt samma år. Kansliexamen 1890. V häradshövding 1882. Kammarförvant vid stadskamrerarkontoret i Göteborg 1885 - 1895. Sekreterare för styrelsen för Göteborgs hamn 1892. Sekreterare hos stadsfullmäktige i samma stad 1895 - 1926. Øverförmyndare i Göteborg. RVO 1903, RNO 1914 och KVO 1923.\nHäradshövding Hegardt fick under sitt 31-åriga sekreterarskap hos stadsfullmäktige vid olika tillfällen röna många bevis på dessas förtroende och höga uppskattning av det sätt, på vilket han förvaltade sitt ämbete. Ett ytterligare bevis härpå gavs honom vid det sista sammanträde, där han tjänstgjorde, då ordföranden framförde fullmäktiges tack "för det utomordentligt plikttroget och med utomordentligt nit uträttat arbete", framhållande bl a även "det vänliga och tillmötesgående sätt, varmed vår sekreterare behandlat de olika stadsfullmäktigegenerationerna, det alla fått känna, som vänt sig till honom. Han är och har alltid varit stadsfullmäktiges vän och han har behandlat dem alla lika.\n--- Alla kommande generationer måtte erinras om det förtjänstfulla arbete som häradshövding Hegardt nedlagt i stadens tjänst, samt för åt oss alla i minnet bevara vår nu avgående sekreterare, anhåller stadsfullmäktiges presidium motionsledes få föreslå, att stadsfullmäktige måtte låta utföra häradshövding Hegardts porträtt i olja att upphängas i stadsfullmäktiges kansli.',
     occupations: ['V häradshövding 1921'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 84,
   },
   85: {
@@ -3499,7 +3498,7 @@ const persons: PersonsData = {
     notes: '(Tab 5:31 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 85,
   },
   100: {
@@ -3577,7 +3576,7 @@ const persons: PersonsData = {
     notes: '(Tab 6 i GS).',
     occupations: ['Postmästare i herrljunga'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 100,
   },
   86: {
@@ -3652,7 +3651,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 86,
   },
   101: {
@@ -3730,7 +3729,7 @@ const persons: PersonsData = {
     notes: '(Tab 5:32 i GS).',
     occupations: ['Landsfiskal i ydre härads södra distrikt'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 101,
   },
   87: {
@@ -3790,7 +3789,7 @@ const persons: PersonsData = {
     notes: '(Tab 5:33 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 87,
   },
   88: {
@@ -3850,7 +3849,7 @@ const persons: PersonsData = {
     notes: '(Tab 5:34 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 88,
   },
   89: {
@@ -3910,7 +3909,7 @@ const persons: PersonsData = {
     notes: '(Tab 5:35 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 89,
   },
   93: {
@@ -3983,7 +3982,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 93,
   },
   94: {
@@ -4062,7 +4061,7 @@ const persons: PersonsData = {
       '(Tab 7 i GS).\nDöd 1983-03-26 på Stillingsön.\nStudentexamen i Göteborg 1911. Fil kand 1914, fil lic 1917 och fil dr 1918. Lärare vid N Kalmar läns folkhögskola 1919. Rektor vid nämnda folkhögskola och lantmannaskola i Gamleby 1923.\nHar utgivit en del vetenskapliga avhandlingar, av vilka kan nämnas "Bidrag till intuitionsbegreppet före Kant" och "Religion och själsträning. Dessutom har han medarbetat i en hel del dagliga tidningar och tidskrifter i litterära, filosofiska och pedagogiska ämnen. Han har bedrivit en omfattande föreläsningsverksamhet.\nInnehar en hel del brev och handlingar beträffande släkten ända från 1700-talet, släktsaker o d som gått i arv beträffande huvudmännen inom den adliga grenen. Ättens sköldebrev förvaras fn på Riddarhuset i Stockholm. Se i övrigt vad som står om Christian Bernhard Hegardts brevsamling.',
     occupations: ['Fil dr'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 94,
   },
   95: {
@@ -4141,7 +4140,7 @@ const persons: PersonsData = {
       '(Tab 8 i GS).\nHuvudman för adliga grenen Studentexamen i Göteborg 1912. med kand i Uppsala 1914 och med lic i Stockholm 1924. Provinsialläkarförordnanden 1920 - 1926 i Lycksele, Malå och Tärendö. Assistentläkare 1924 - 25 vid Sahlgrenska sjukhuset i Göteborg och Mölndals lasarett. Provinsialläkare i Junsele 1926 - 31, i Strömstads distrikt 1946 - 56. Efter denna tid praktiserande läkare i Strömstad. Dessutom varit järnvägs-, dispensär- och skolläkare i Strömstad. Landstingsledamot 1939 - 46. Ledamot av stadsfullmäktige i Strömstad 1936 - 56. RNO.',
     occupations: ['Leg läkare'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 95,
   },
   96: {
@@ -4220,7 +4219,7 @@ const persons: PersonsData = {
       '(Tab 9 i GS).\nStudentexamen i Göteborg 1914. Examen vid Göteborgs handelsinstitut 1915. Anställd vid Rederi AB Transatlantics kontor i Göteborg 1916. 1920 utsänd att starta och förestå bolagets kontor i Kapstaden. 1923 bolagets huvudrepresentant för hela Syd? och Ostafrika. 1932 utnämnd till svensk konsul för Kapstaden och Kapprovinsen. Grundade 1925 Svenska föreningen i Kapstaden. Hade under krigsåren hand om finska och japanska intressen. Tf svensk generalkonsul 1944. 1944 chef för Rederi AB Transatlantics kontor i Stockholm. Ledamot av Sveriges Flotta och i Utlandssvenskarna förening. RVO, RNO, Kungliga Patriotiska sällskapets stora guldmedalj.',
     occupations: ['Svensk konsul i kapstaden'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 96,
   },
   97: {
@@ -4299,7 +4298,7 @@ const persons: PersonsData = {
       '(Tab 6:28 i GS).\nRådman i Göteborg 1936-63.\nStudentexamen i Göteborg 1914. Jur kand 1919. Eo notarie i Göta hovrätt samma år. Tingstjänstgöring vid Askim m fl häraders domsaga 1920. Efter provtjänstgöring ex notarie hos magistraten och rådhusrätten i Göteborg 1921. Assessor vid rådhusrätten 1929, rådman där 1937. KNO.',
     occupations: ['Rådman'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 97,
   },
   98: {
@@ -4374,11 +4373,10 @@ const persons: PersonsData = {
     ],
     middleNames: [],
     mother: 93,
-    notes:
-      '(Tab 6:29 i GS).\nFrån hösten 1917 studerande vid Technicum i Alt Stelitz.\nIngenjörsexamen där 1919.',
+    notes: '(Tab 6:29 i GS).\nFrån hösten 1917 studerande vid Technicum i Alt Stelitz.\nIngenjörsexamen där 1919.',
     occupations: ['Ingenjör'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 98,
   },
   124: {
@@ -4448,7 +4446,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 124,
   },
   99: {
@@ -4526,7 +4524,7 @@ const persons: PersonsData = {
     notes: '(Tab 6:30).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 99,
   },
   125: {
@@ -4596,7 +4594,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 125,
   },
   104: {
@@ -4659,7 +4657,7 @@ const persons: PersonsData = {
     notes: 'Död 1974-07-16 på Stillingsön.',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 104,
   },
   105: {
@@ -4705,7 +4703,7 @@ const persons: PersonsData = {
       'Adress Erik Dahlbergsgatan 41, 115 32 STOCKHOLM.\n(Tab 7:19 i GS).\nStudentexamen 1941 i Göteborg (O).\nFil mag 1948 i Uppsala (C).\nBor i Stockholm (AB).',
     occupations: ['Museiintendent'],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 105,
   },
   106: {
@@ -4769,7 +4767,7 @@ const persons: PersonsData = {
       'Adress Hålebäcken 6166, 440 92 SVANESUND.\n(Tab 7:35 i GS).\nStudentexamen 1943 i Västervik (H).\nFolkskollärarexamen 1947 och fil mag 1959.\nBor i Svanesund (O).',
     occupations: ['Adjunkt'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 106,
   },
   129: {
@@ -4824,7 +4822,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 129,
   },
   107: {
@@ -4897,7 +4895,7 @@ const persons: PersonsData = {
     notes: '(Tab 7:21 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 107,
   },
   130: {
@@ -4947,7 +4945,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 130,
   },
   108: {
@@ -5007,7 +5005,7 @@ const persons: PersonsData = {
     notes: 'Studentexamen 1960.\nFil dr 1975 i Uppsala (C).',
     occupations: ['Docent'],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 108,
   },
   128: {
@@ -5044,7 +5042,7 @@ const persons: PersonsData = {
     notes: 'Bor i Stockholm (AB).',
     occupations: ['Adress erik dahlbergsgatan 41', '115 32  stockholm'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 128,
   },
   131: {
@@ -5108,7 +5106,7 @@ const persons: PersonsData = {
       'Adress 820 Caymus St, Napa, Californien 94559, USA.\nUtbildad pilot; flyginstruktör för Japanese Airlines.\nBor i Napa, Californien, USA.',
     occupations: ['Pilot vid japan airlines'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 131,
   },
   109: {
@@ -5186,7 +5184,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 109,
   },
   110: {
@@ -5245,7 +5243,7 @@ const persons: PersonsData = {
       'Adress 1990 Tovan, S Korsviken, 459 00 LJUNGSKILE.\n(Tab 8:23 i GS).\nGenomgått Vasa kommunala flickskola i Göteborg, Bar-Lockinstitutet i Stockholm, Gamleby folkhögskola samt Steneby slöjdskolor.\nMentalsköterskeutbildning vid Lillhagens sjukhus,Hisings-Backa 1959. Göteborgs sjuksköterskeskola 1961-63. Avdelningssköterska vid Lillhagens sjukhus 1963-67. Föreståndare vid Göteborgs socialförvaltning 1967-83. Pensionerades 1983.\nBor i Ljungskile (O).',
     occupations: ['Leg sjuksköterska'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 110,
   },
   136: {
@@ -5295,7 +5293,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 136,
   },
   111: {
@@ -5358,7 +5356,7 @@ const persons: PersonsData = {
     notes: '(Tab 8:24 i GS).\nBor i Uppsala (C).',
     occupations: ['Adress 1990 lövsångarevägen 1', '752 52  uppsala'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 111,
   },
   137: {
@@ -5413,7 +5411,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Professor'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 137,
   },
   112: {
@@ -5459,7 +5457,7 @@ const persons: PersonsData = {
       'Adress Øfre Slottsgatan 8 B, 753 10 UPPSALA.\nStudentexamen 1949, fil kand 1954 i Uppsala.\nBor i Uppsala (C).',
     occupations: ['Bibliotekarie'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 112,
   },
   113: {
@@ -5523,7 +5521,7 @@ const persons: PersonsData = {
       'Adress Ostrongatan 12, 421 79 V FRØLUNDA.\nSkild 1989.\nStudentexamen 1950, fil mag 1957.\nBor i Västra Frölunda (O).',
     occupations: ['Adjunkt'],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 113,
   },
   138: {
@@ -5586,7 +5584,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Rådman vid länsrätten i göteborg och bohuslän'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 138,
   },
   114: {
@@ -5645,7 +5643,7 @@ const persons: PersonsData = {
       'Adress Pontus Viknersgatan 1, 411 32 GØTEBORG.\nSkild 1963.\nStudentexamen 1954.\nIngenjörsexamen 1978.\nCTH (Chalmers) R.O.T. 1984.\nByggkontrollant vid Vasa SH, tekn avd.\nBor i Göteborg (O).',
     occupations: ['Byggnadsingenjör'],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 114,
   },
   115: {
@@ -5709,7 +5707,7 @@ const persons: PersonsData = {
       'Adress Drottninggatan 40 C, 702 22 ØREBRO.\nSkild 1989.\nStudentexamen 1961 i Göteborg (O).\nFil kand 1965 i Uppsala (C).\nTysk medicinsk Staatsexamen 1970 i Tyskland.\nSvensk leg läkare 1973.\nSpecialist i allmän medicin 1976.\n1977-85 distriktsöverläkare i Ørebro. Distriktsöverläkare. Vårdcentralchef vid Haga vårdcentral i Ørebro 1985-88.\n1982-87 styrelseledamot i Svensk förening för Allmänmedicin.\nArbetar sedan 1988 med personlighetsutredning och "alternativmedicin" Bor i Ørebro (T).',
     occupations: ['Leg läkare', 'Spec i allmänmedicin'],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 115,
   },
   145: {
@@ -5772,7 +5770,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Øverläkare vid regionsjukhuset i örebro'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 145,
   },
   146: {
@@ -5817,7 +5815,7 @@ const persons: PersonsData = {
     notes: 'Adress Drottninggatan 40 C, 702 22 ØREBRO.\nBor i Ørebro (T).',
     occupations: ['Studerande'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 146,
   },
   116: {
@@ -5895,7 +5893,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 116,
   },
   117: {
@@ -5972,11 +5970,10 @@ const persons: PersonsData = {
     ],
     middleNames: [],
     mother: 116,
-    notes:
-      'Adress APT 1, 9500 Sao Roque, Ponta Delgada, Azorerna.\n(Tab 9:26 i GS).\nBor i Sao Rouque, Azorerna.',
+    notes: 'Adress APT 1, 9500 Sao Roque, Ponta Delgada, Azorerna.\n(Tab 9:26 i GS).\nBor i Sao Rouque, Azorerna.',
     occupations: ['Direktör'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 117,
   },
   118: {
@@ -6039,7 +6036,7 @@ const persons: PersonsData = {
     notes: 'Adress Banérvägen 3 A, 182 62 DJURSHOLM.\n(Tab 9:27 i GS).\nBor i Djursholm (AB).',
     occupations: ['Jurist'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 118,
   },
   149: {
@@ -6094,7 +6091,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 149,
   },
   150: {
@@ -6149,7 +6146,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 150,
   },
   151: {
@@ -6209,7 +6206,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Resebyråtjänsteman'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 151,
   },
   152: {
@@ -6273,7 +6270,7 @@ const persons: PersonsData = {
       'Adress 58 Sparrow Cres, Flamingo Viei 7450, Cape Town, Sydafrika.\nProduction Management diploma vid PM Institute,Sydafrika1983.\nBA vid University of South Africa.\nBor i Kapstaden, Sydafrika.',
     occupations: ['Konstnär'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 152,
   },
   153: {
@@ -6328,7 +6325,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 153,
   },
   154: {
@@ -6392,7 +6389,7 @@ const persons: PersonsData = {
       'Adress Chemin de Hamo 20, CH1261 Chavonnes de Bogis, Schweiz.\nCivilekonom vid HEC 1978 i Lausanne, Schweiz.\nJur kand 1982 i Stockholm (AB).\nBor i Chavonnes de Bogis, Schweiz.\nArbetar som finansiell rådgivare hos JS Gadd och CiE S.A. i Genève.',
     occupations: ['Controller'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 154,
   },
   155: {
@@ -6455,7 +6452,7 @@ const persons: PersonsData = {
     notes: 'Adress Krokvägen 1, 182 74 STOCKSUND.\nBor i Stocksund (AB).',
     occupations: ['Vd'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 155,
   },
   160: {
@@ -6518,7 +6515,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Bankdirektör'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 160,
   },
   119: {
@@ -6596,7 +6593,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 119,
   },
   120: {
@@ -6659,7 +6656,7 @@ const persons: PersonsData = {
     notes: 'Adress Øverby pl 9058, Undenäs, 546 00 KARLSBORG.\nBor i Undenäs.',
     occupations: ['Förskollärare'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 120,
   },
   165: {
@@ -6737,7 +6734,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Kaptainlöjtnant'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 165,
   },
   121: {
@@ -6808,7 +6805,7 @@ const persons: PersonsData = {
       'Adress Slottsgatan 4 B, 296 31 ÅHUS.\nSkild 1959.\nSkild 1976.\nJur kand 1959 i Lund (M).\nTingsmeritering 1959-61 vid Skarabygdens domsaga i Skara.\nHedersdoktor (Lan), Californian Lutheran University imaj1989.\nArbetat med informations- och samhällskontaktfrågor, socialpolitik, utbildningspolitik mm inom SAF. Ledamot/expert iflera officiella organ och arbetsmarknadskommittéer inom nämnda områden. Ledamot/expert av statliga utredningar som Kompetenskommittén (KK), kommittén för studiestöd åt vuxna (SVUX) och kommittén för försöksverksamhet med vuxenutbildning (FØVUX). Statssekreterare i handelsdepartementet (fp) åren 1978-79 samt 1981-82. Anställd i utrikesdepartementet 1980.\nBiträdande kabinettsekreterare 1980-81. Ordförande i Tipstjänst 1980-82.\nLedamot/suppleant i bl a Svensk exportkredit, Sveriges Investeringsbank 1980-82. Deltagande i ett flertal konferenser inom ILO, OECD, Efta, Nordiska rådet m fl. Generalkonsul i Los Angeles 1982-89. Sedan 1989 ambassadör i republiken Irland.\nBor i Åhus (L).',
     occupations: ['Fd ambassadör'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 121,
   },
   122: {
@@ -6860,7 +6857,7 @@ const persons: PersonsData = {
       'Adress Stillingsön 6235, 440 92 SVANESUND.\nOforskat Gift när och var (sid 1).\nLeg läkare 1971 och allmänläkare 1976.\nBor i Svanesund (O).',
     occupations: ['Distriktsläkare'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 122,
   },
   169: {
@@ -6905,7 +6902,7 @@ const persons: PersonsData = {
     notes: 'Adress Fjeliev 11 B/3503, 227 36 LUND.\nBor i Svanesund (O).',
     occupations: ['Studerande'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 169,
   },
   123: {
@@ -6951,7 +6948,7 @@ const persons: PersonsData = {
       'Adress Bildradiogatan 12, 421 34 V FRØLUNDA.\nLeg sjuksköterska 1968 i Stockholm (AB).\nDistriktssköterskeutbildning 1984 i Göteborg (O).\nBor i Västra Frölunda (O).',
     occupations: ['Distriktssköterska'],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 123,
   },
   70: {
@@ -7029,7 +7026,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 70,
   },
   71: {
@@ -7089,7 +7086,7 @@ const persons: PersonsData = {
     notes: '(Tab 10:40 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 71,
   },
   72: {
@@ -7167,7 +7164,7 @@ const persons: PersonsData = {
     notes: '(Tab 11 i GS).',
     occupations: ['Gruvinspektor'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 72,
   },
   73: {
@@ -7227,7 +7224,7 @@ const persons: PersonsData = {
     notes: '(Tab 10:73 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 73,
   },
   74: {
@@ -7299,7 +7296,7 @@ const persons: PersonsData = {
       '(Tab 19 i GS).\nEtablerade i Uddevalla, tillsammans med Frans Quist, egen handel under firma Hegardt och Quist.',
     occupations: ['Handlande'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 74,
   },
   75: {
@@ -7377,7 +7374,7 @@ const persons: PersonsData = {
     notes: '(Tab 10:77 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 75,
   },
   182: {
@@ -7455,7 +7452,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 182,
   },
   76: {
@@ -7534,7 +7531,7 @@ const persons: PersonsData = {
       '(Tab 10:78 i GS).\nVistades 1829-36 på Gustafsbergs barnhus, för att senare ägna sig åt handel i Uddevalla. Avlade lantmätarexamen 1843, blev vice lantmätare 1848 och kommissionslantmätare 1855. Allt i Stockholms län.',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 76,
   },
   183: {
@@ -7612,7 +7609,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 183,
   },
   77: {
@@ -7673,7 +7670,7 @@ const persons: PersonsData = {
       '(Tab 10:79 i GS).\nVistades åren 1836-41 på Gustafsbergs barnhus, förattsenare ägna sig åt handel i Falköping, men återvändesnarttill Uddevalla, där han blev handelsbokhållare.',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 77,
   },
   173: {
@@ -7751,7 +7748,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 173,
   },
   174: {
@@ -7829,7 +7826,7 @@ const persons: PersonsData = {
     notes: '(Tab 12 i GS).',
     occupations: ['Snickare i sandsjön'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 174,
   },
   175: {
@@ -7899,7 +7896,7 @@ const persons: PersonsData = {
     notes: '(Tab 11:60 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 175,
   },
   201: {
@@ -7977,7 +7974,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 201,
   },
   176: {
@@ -8037,7 +8034,7 @@ const persons: PersonsData = {
     notes: '(Tab 11:61 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 176,
   },
   177: {
@@ -8082,7 +8079,7 @@ const persons: PersonsData = {
     notes: '(Tab 11:62 i GS).',
     occupations: ['Smed'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 177,
   },
   178: {
@@ -8160,7 +8157,7 @@ const persons: PersonsData = {
     notes: '(Tab 16 i GS).\nDe sista åren hade han en skomakeriverkstad.',
     occupations: ['Skomakare'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 178,
   },
   188: {
@@ -8238,7 +8235,7 @@ const persons: PersonsData = {
     notes: '(Tab.',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 188,
   },
   189: {
@@ -8316,7 +8313,7 @@ const persons: PersonsData = {
     notes: '(Tab 12:43 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 189,
   },
   212: {
@@ -8394,7 +8391,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Förman vid karlstads vattenledningsverk'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 212,
   },
   190: {
@@ -8472,7 +8469,7 @@ const persons: PersonsData = {
     notes: '(Tab 12:44 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 190,
   },
   213: {
@@ -8550,7 +8547,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 213,
   },
   191: {
@@ -8628,7 +8625,7 @@ const persons: PersonsData = {
     notes: '(Tab 12:45 i GS).',
     occupations: ['Byggnadssnickare'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 191,
   },
   214: {
@@ -8706,7 +8703,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 214,
   },
   192: {
@@ -8784,7 +8781,7 @@ const persons: PersonsData = {
     notes: '(Tab 12:46 i GS).\nInnehade syatelier och damskrädderi i Stockholm.',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 192,
   },
   217: {
@@ -8862,7 +8859,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 217,
   },
   193: {
@@ -8932,7 +8929,7 @@ const persons: PersonsData = {
     notes: '(Tab 13 i GS).',
     occupations: ['Byggnadssnickare'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 193,
   },
   194: {
@@ -9010,7 +9007,7 @@ const persons: PersonsData = {
     notes: '(Tab 12:50 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 194,
   },
   221: {
@@ -9088,7 +9085,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Metallslipare'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 221,
   },
   195: {
@@ -9183,7 +9180,7 @@ const persons: PersonsData = {
     notes: '(Tab 12:51 i GS).',
     occupations: ['Fd byggnadssnickare'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 195,
   },
   222: {
@@ -9246,7 +9243,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 222,
   },
   223: {
@@ -9324,7 +9321,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 223,
   },
   196: {
@@ -9393,7 +9390,7 @@ const persons: PersonsData = {
       '(Tab 14 i GS).\nUtflyttad till Canada 1907 från Nordmark (S).\nVid årsskiftet 1936-37 innehade han Hegardts General Store, Groceries, Hardware, Gas and Oils i Menisino, Manitoba, Canada.\n1938 bodde de i Piney, Manitoba, Canada; samma slags affär där.',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 196,
   },
   197: {
@@ -9471,7 +9468,7 @@ const persons: PersonsData = {
     notes: '(Tab 12:54 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 197,
   },
   231: {
@@ -9549,7 +9546,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Föreståndare för normarksbergs godsstation'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 231,
   },
   198: {
@@ -9627,7 +9624,7 @@ const persons: PersonsData = {
     notes: '(Tab 15 i GS).\nInnehade från 1926 Hegardts livs i Sundbyberg.',
     occupations: ['Köpman'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 198,
   },
   199: {
@@ -9705,7 +9702,7 @@ const persons: PersonsData = {
     notes: '(Tab 12:58 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 199,
   },
   235: {
@@ -9783,7 +9780,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 235,
   },
   200: {
@@ -9846,7 +9843,7 @@ const persons: PersonsData = {
     notes: '(Tab 12:59 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 200,
   },
   236: {
@@ -9909,7 +9906,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 236,
   },
   218: {
@@ -9987,7 +9984,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 218,
   },
   219: {
@@ -10047,7 +10044,7 @@ const persons: PersonsData = {
     notes: '(Tab 13:48 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 219,
   },
   220: {
@@ -10110,7 +10107,7 @@ const persons: PersonsData = {
     notes: '(Tab 13:49 i GS).\nBor i Nordmarkshyttan, Nordmark (S).',
     occupations: ['Adress box 60', '680 92  nordmarkshyttan'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 220,
   },
   239: {
@@ -10173,7 +10170,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Fd byggnadssnickare'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 239,
   },
   170: {
@@ -10218,7 +10215,7 @@ const persons: PersonsData = {
     notes: 'Adress Stillingsön 405, 440 92 SVANESUND.\nBor i Svanesund (O).',
     occupations: ['Studerande'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 170,
   },
   228: {
@@ -10288,7 +10285,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 228,
   },
   229: {
@@ -10354,7 +10351,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 229,
   },
   230: {
@@ -10432,7 +10429,7 @@ const persons: PersonsData = {
     notes: '(Tab 14:53 i GS).',
     occupations: ['Skogsavverkningsentreprenör'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 230,
   },
   242: {
@@ -10495,7 +10492,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Sjuksköterska'],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 242,
   },
   243: {
@@ -10558,7 +10555,7 @@ const persons: PersonsData = {
     notes: 'Adress RR2 S5 C6, Enderby, BC, V0E 1V0, Canada.\nBor i Enderby, BC, Canada.',
     occupations: ['Elektriker'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 243,
   },
   244: {
@@ -10621,7 +10618,7 @@ const persons: PersonsData = {
     notes: 'Adress Box 33, Grindrod, BC, V0E 1V0, Canada.\nBor i Grindrod, BC, Canada.',
     occupations: ['Sjuksköterska'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 244,
   },
   251: {
@@ -10684,7 +10681,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 251,
   },
   245: {
@@ -10747,7 +10744,7 @@ const persons: PersonsData = {
     notes: 'Adress 1330-12 Ave SE, Salmon Arm, BC, V1E 2C7, Canada.\nBor i Salmon Arm, BC, Canada.',
     occupations: ['Lärare'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 245,
   },
   246: {
@@ -10810,7 +10807,7 @@ const persons: PersonsData = {
     notes: 'Bor i Salmon Arm, BC, Canada.',
     occupations: ['Adress 1560 15th st se', 'Salmon arm', 'Bc', 'Vie 2g2', 'Canada'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 246,
   },
   247: {
@@ -10870,7 +10867,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 247,
   },
   248: {
@@ -10933,7 +10930,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Tandtekniker'],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 248,
   },
   249: {
@@ -10978,7 +10975,7 @@ const persons: PersonsData = {
     notes: '1997.',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 249,
   },
   252: {
@@ -11041,7 +11038,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 252,
   },
   254: {
@@ -11086,7 +11083,7 @@ const persons: PersonsData = {
     notes: '2002.',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 254,
   },
   232: {
@@ -11164,7 +11161,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 232,
   },
   233: {
@@ -11224,7 +11221,7 @@ const persons: PersonsData = {
     notes: '(Tab 15:56 i GS).\nGenomgått barnavårds- och hushållsskola.',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 233,
   },
   234: {
@@ -11287,7 +11284,7 @@ const persons: PersonsData = {
     notes: 'Adress Eskaderv 14, 183 54 TÄBY.\n(Tab 15:57 i GS).\nBor i Stockholm (AB).',
     occupations: ['Grafiker'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 234,
   },
   259: {
@@ -11350,7 +11347,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 259,
   },
   179: {
@@ -11421,7 +11418,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 179,
   },
   180: {
@@ -11499,7 +11496,7 @@ const persons: PersonsData = {
     notes: '(Tab 19:75 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 180,
   },
   262: {
@@ -11577,7 +11574,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 262,
   },
   181: {
@@ -11638,7 +11635,7 @@ const persons: PersonsData = {
       '(Tab 19:76 i GS).\nBlev handelsbiträde i Svanesund, sedermera handelsbokhållare i Grebbestad och Göteborg samt slutligen kontorschef hos firman Ørnberg och Andersson i sistnämnda stad.',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 181,
   },
   202: {
@@ -11716,7 +11713,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 202,
   },
   203: {
@@ -11794,7 +11791,7 @@ const persons: PersonsData = {
     notes: '(Tab 16:64 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 203,
   },
   265: {
@@ -11857,7 +11854,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Förman vid casco i nacka'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 265,
   },
   204: {
@@ -11953,7 +11950,7 @@ const persons: PersonsData = {
       '(Tab 17 i GS).\nFlyttade till Stockholm 1927.\nArbetade då som försäljare i möbel- och klädesbranschen. Fortsatte med detta till 1947. Därefter egen köpman i choklad och konfektyr.',
     occupations: ['Köpman'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 204,
   },
   205: {
@@ -12023,7 +12020,7 @@ const persons: PersonsData = {
     notes: '(Tab 18 i GS).\nTvilling med Ragnhild* Sofia Hegardt.',
     occupations: ['Reparatör'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 205,
   },
   206: {
@@ -12101,7 +12098,7 @@ const persons: PersonsData = {
     notes: '(Tab 16:69 i GS).\nTvilling med Karl Ragnar* Hegardt.',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 206,
   },
   274: {
@@ -12164,7 +12161,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Inspektör'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 274,
   },
   207: {
@@ -12224,7 +12221,7 @@ const persons: PersonsData = {
     notes: '(Tab 16:70 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 207,
   },
   208: {
@@ -12302,7 +12299,7 @@ const persons: PersonsData = {
     notes: '(Tab 16:71 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 208,
   },
   275: {
@@ -12380,7 +12377,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Avdelningschef på bpa'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 275,
   },
   209: {
@@ -12458,7 +12455,7 @@ const persons: PersonsData = {
     notes: '(Tab 16:72 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 209,
   },
   266: {
@@ -12521,7 +12518,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 266,
   },
   267: {
@@ -12599,7 +12596,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 267,
   },
   268: {
@@ -12658,7 +12655,7 @@ const persons: PersonsData = {
       'Adress Oxelvägen 21#138 00 ÄLTA###Holsgård.\n(Tab 17:66 i GS).\nStudentexamen 1952 i Stockholm (AB).\nSekreterarkurs 1954 i Stockholm (AB).\n20 poäng sociologi 1973.\nBor i Älta, Nacka (AB).',
     occupations: ['Fd chefssekreterare'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 268,
   },
   269: {
@@ -12721,7 +12718,7 @@ const persons: PersonsData = {
     notes: 'Bor i Vallentuna (AB).',
     occupations: ['Adress bergvägen 64', '186 41  vallentuna'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 269,
   },
   280: {
@@ -12769,7 +12766,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 280,
   },
   270: {
@@ -12832,7 +12829,7 @@ const persons: PersonsData = {
     notes: 'Bor i Danderyd (AB).',
     occupations: ['Adress aug wahlströms väg 1', '182 31  danderyd'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 270,
   },
   284: {
@@ -12895,7 +12892,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 284,
   },
   281: {
@@ -12940,7 +12937,7 @@ const persons: PersonsData = {
     notes: 'Bor i Vallentuna (AB).',
     occupations: ['Adress bergvägen 64', '186 41  vallentuna'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 281,
   },
   282: {
@@ -12985,7 +12982,7 @@ const persons: PersonsData = {
     notes: 'Bor i Vallentuna (AB).',
     occupations: ['Adress bergvägen 64', '186 41  vallentuna'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 282,
   },
   283: {
@@ -13030,7 +13027,7 @@ const persons: PersonsData = {
     notes: 'Adress Bergv 64, 186 41 VALLENTUNA.\n1994.\nBor i Vallentuna (AB).',
     occupations: ['Studerande'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 283,
   },
   157: {
@@ -13093,7 +13090,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Direktör'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 157,
   },
   272: {
@@ -13156,7 +13153,7 @@ const persons: PersonsData = {
     notes: '(Tab 18:68 i GS).\nBor i Danderyd (AB).',
     occupations: ['Adress kevingeringen 83', '182 33  danderyd'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 272,
   },
   273: {
@@ -13201,7 +13198,7 @@ const persons: PersonsData = {
     notes: 'Bor i Sundbyberg (AB).',
     occupations: ['Adress franstorpsvägen 27', '172 36  sundbyberg'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 273,
   },
   171: {
@@ -13246,7 +13243,7 @@ const persons: PersonsData = {
     notes: 'Adress Modulatorg 17, 421 34 V FRØLUNDA.\nBor i Västra Frölunda (O).',
     occupations: ['Studerande'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 171,
   },
   286: {
@@ -13298,7 +13295,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 286,
   },
   285: {
@@ -13353,7 +13350,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 285,
   },
   39: {
@@ -13432,7 +13429,7 @@ const persons: PersonsData = {
       '(Tab 20 i GS).\nFirman hette G H Hegardt och Co (i kompanjonskap med hustruns systerson Oskar Andrén). Illitterat rådman i Göteborg från år 1834 eller 1835.',
     occupations: ['Grosshandlare i göteborg'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 39,
   },
   294: {
@@ -13498,7 +13495,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 294,
   },
   288: {
@@ -13558,7 +13555,7 @@ const persons: PersonsData = {
     notes: '(Tab 20:81 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 288,
   },
   289: {
@@ -13636,7 +13633,7 @@ const persons: PersonsData = {
     notes: '(Tab 20:82 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 289,
   },
   296: {
@@ -13714,7 +13711,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 296,
   },
   290: {
@@ -13774,7 +13771,7 @@ const persons: PersonsData = {
     notes: '(Tab 20:83 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 290,
   },
   291: {
@@ -13834,7 +13831,7 @@ const persons: PersonsData = {
     notes: '(Tab 20:84 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 291,
   },
   292: {
@@ -13913,7 +13910,7 @@ const persons: PersonsData = {
       '(Tab 21 i GS).\nLeopold var syssling med sin hustru.\nEfter skolgång i Göteborg kom H på kontor hos sin morbror, major Koch på Vågsäter och stannade där till 1844. Fick detta år burskap som borgare och grosshandlare i Uddevalla. Ägde åren 1844-1851 Sörviks herrgård i Herrestad vid Uddevalla. Sedan dels arrenderade, dels förvaltade han efter varandra Tanums prästgård i Bohuslän, Longs kaptensboställe i Long (Skarab), Aspö herrgård nära Skövde samt Norrhorja i Värnamo. Uppsade burskapet 1854.',
     occupations: ['Grosshandlare'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 292,
   },
   293: {
@@ -13991,7 +13988,7 @@ const persons: PersonsData = {
     notes: '(Tab 20:95 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 293,
   },
   297: {
@@ -14069,7 +14066,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 297,
   },
   298: {
@@ -14148,7 +14145,7 @@ const persons: PersonsData = {
       '(Tab 22 i GS).\nGenomgick, efter skolgång i Uddevalla och Jönköping, åren 1862-63 Askenstedtska privata handelsinstitut i Uddevalla och hade, från sistnämnda år anställning som bokhållare hos firman W Thorburns söner i Uddevalla. Ledamot av styrelsen för Uddevalla museum 1869 och från 1870 tillika dess sekreterare.\n"Redbar, skicklig och mångkunnig i sitt yrke, blev han värderad av principaler och yrkesbröder samt ofta anlitad om råd och upplysningar av långt äldre personer. Redan tidigt användes han också i olika, mer eller mindre offentliga värv, såsom inom fattigvården, frivilliga brand? och skarpskyttekåren samt varjehanda föreningar. Hans livliga och vetgiriga sinne var dessutom icke allenast för alla dagens frågor, utan även för förflutna tiders minnen. I många år nitisk medlem av museistyrelsen härstädes, intresserade han sig där med förkärlek för konst? och fornsaker samt numismatik. ---" Begravdes 23/5 i närvaro av en "oräknelig människomassa". (Bohusl tidn 1875 21/5 och 23/5.)',
     occupations: ['Bokhållare'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 298,
   },
   299: {
@@ -14208,7 +14205,7 @@ const persons: PersonsData = {
     notes: '(Tab 21:93 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 299,
   },
   300: {
@@ -14286,7 +14283,7 @@ const persons: PersonsData = {
     notes: '(Tab 21:94 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 300,
   },
   308: {
@@ -14364,7 +14361,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Kommendörkapten av 1:a graden'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 308,
   },
   304: {
@@ -14442,7 +14439,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 304,
   },
   305: {
@@ -14521,7 +14518,7 @@ const persons: PersonsData = {
       '(Tab 23 i GS).\nEfter avslutade skolstudier i Vänersborg hade han plats som handelsbiträde dels i denna stad, dels i Skövde och Göteborg samt etablerade 1900 egen manufakturaffär i Vänersborg, vilken han innehade till sin död.\n"Henrik Hegardt har varit en redbar och kunnig köpman, som åtnjutit allas odelade förtroende, därtill tjänstvillig och ägnade ett gott sätt mot kunderna. Med sitt enkla gladlynta väsen förvärvade han många vänner och var en omtyckt ordensbroder. Inom såväl frimurarorden som Par Bricole intog han höga grader." (Älvsb läns annonsblad 1919 30/8.)',
     occupations: ['Köpman'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 305,
   },
   311: {
@@ -14599,7 +14596,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 311,
   },
   306: {
@@ -14678,7 +14675,7 @@ const persons: PersonsData = {
       '(Tab 24 i GS).\nEfter avslutade studier vid Vänersborgs läroverk genomgick han Göteborgs Handelsinstitut, där han gick ut 1892.\nInnehade därefter grossistfirma i kolonialvaror i Vänersborg under en följd av år. Blev därefter representant för större firmor i samma bransch.\nMedlem av Odd Fellows under sin Vänersborgstid.',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 306,
   },
   307: {
@@ -14738,7 +14735,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 307,
   },
   318: {
@@ -14816,7 +14813,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 318,
   },
   301: {
@@ -14894,7 +14891,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 301,
   },
   331: {
@@ -14972,7 +14969,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 331,
   },
   312: {
@@ -15051,7 +15048,7 @@ const persons: PersonsData = {
       '(Tab 23:88 i GS).\nMed lic 1930 i Lund (M).\nE läkare vid Lunds hospital och asyl 1930.\nAssistenläkare och underläkare vid länslasarettet i Vänersborg 1930-1932. Innehaft förordnanden som stads- och provisialläkare.\nAndre lasarettsläkare 1932 i Västervik (H).\nFörste lasarettsläkare 1933 och förste stadsläkare i Västervik från 1935 till sin död.',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 312,
   },
   332: {
@@ -15114,7 +15111,7 @@ const persons: PersonsData = {
     notes: 'Adress St Trädgårdsgatan 15 A? 543 35 VÄSTERVIK.',
     occupations: ['Fd skolkökslärarinna'],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 332,
   },
   313: {
@@ -15192,7 +15189,7 @@ const persons: PersonsData = {
     notes: '(Tab 23:89 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 313,
   },
   340: {
@@ -15255,7 +15252,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Löjtnant'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 340,
   },
   333: {
@@ -15315,7 +15312,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 333,
   },
   334: {
@@ -15375,7 +15372,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 334,
   },
   335: {
@@ -15438,7 +15435,7 @@ const persons: PersonsData = {
     notes: 'Adress Malma Ringväg 7, 752 45 UPPSALA.\nFil mag 1959.\nBor i Uppsala (C).',
     occupations: ['Adjunkt'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 335,
   },
   341: {
@@ -15501,7 +15498,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Forskningskemist'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 341,
   },
   336: {
@@ -15580,7 +15577,7 @@ const persons: PersonsData = {
       'Studentexamen 1955 i Västervik (H).\nHandelsgymnasieexamen 1958 vid Göteborgs handelsinstitut. Hochschule für Welthandel, Wien, Østerrike 1965-67.',
     occupations: ['Bankkamrer'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 336,
   },
   342: {
@@ -15643,7 +15640,7 @@ const persons: PersonsData = {
     notes: 'Adress Hornsgatan 5, 234 32 LOMMA.\nStudentexamen 1960.\nSmåskollärarexamen 1962.',
     occupations: ['Lågstadielärare'],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 342,
   },
   337: {
@@ -15689,7 +15686,7 @@ const persons: PersonsData = {
       'Adress Rådhusgatan 28, 593 33 VÄSTERVIK.\nStudentexamen 1963 i Västervik (H).\nFil mag 1967 i Uppsala (C).\nBor i Västervik (H).',
     occupations: ['Marknadsdirektör'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 337,
   },
   343: {
@@ -15734,7 +15731,7 @@ const persons: PersonsData = {
     notes: 'Adress Hornsgatan 5, 234 32 LOMMA.\nBor i Åkarp (M).',
     occupations: ['Studerande'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 343,
   },
   344: {
@@ -15779,7 +15776,7 @@ const persons: PersonsData = {
     notes: 'Adress Hornsgatan 5, 234 32 LOMMA.\n1994.\nBor i Åkarp (M).',
     occupations: ['Studerande'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 344,
   },
   316: {
@@ -15857,7 +15854,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 316,
   },
   317: {
@@ -15920,7 +15917,7 @@ const persons: PersonsData = {
     notes: 'Bor i Karlstad (S).',
     occupations: ['Adress drottninggatan 37 a', '652 25  karlstad'],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 317,
   },
   347: {
@@ -15975,7 +15972,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 347,
   },
   43: {
@@ -16053,7 +16050,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 43,
   },
   44: {
@@ -16131,7 +16128,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 44,
   },
   45: {
@@ -16209,7 +16206,7 @@ const persons: PersonsData = {
     notes: '(Tab 25:101 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 45,
   },
   351: {
@@ -16287,7 +16284,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 351,
   },
   46: {
@@ -16365,7 +16362,7 @@ const persons: PersonsData = {
     notes: '(Tab 25:103 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 46,
   },
   352: {
@@ -16435,7 +16432,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Handlande i uddevalla'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 352,
   },
   47: {
@@ -16514,7 +16511,7 @@ const persons: PersonsData = {
       '(Tab 26 i GS).\nDubbelkusin med sin hustru.\nPeter som var tidigt utvecklad och visade stor lätthet för studier, blev år 1783, redan innan han fyllt tolv år, inskriven vid Lunds universitet. Han valde emellertid inte den lärda banan, utan följde i faderns fotspår och vann 1795 burskap som handlande i Uddevalla och öppnade där, i kompanjonskap med handlanden Wallenkamp, grosshandelsrörelse.\n"Med en fullkomlig underbyggnad i det vetenskapliga av hans yrke och med en livlig själ, som aldrig fann utsikten för sin verkning hämmad, var naturligt att hans affärer skulle bli av betydenhet och drift." Lyckan var honom emellertid inte bevågen, firman måste likvideras. Han ingick därefter nytt bolag med sin broder Kristian och denna rörelse drevs med stor framgång, så att firman kunde stå emot verkningarna av såväl den brand, som 1806 ödelade Uddevalla, som även den efter fredsslutet 1814 utbrutna allmänna krisen inom handelsvärlden. Följderna av denna kris var dock inte ännu övervunna, då han endast 49-årig oförmodat gick bort.\nDen kraftfulle och verksamme mannen hade flitigt tagits i anspråk för olika värv. Efter 1806 års brand "kallade förtroendet hans verksamhet till flera kommittéer, varibland särskilt må nämnas berednings-, medlings- och föreningskommittén, vars ordförande han blev och vars föremål han bragte till slut. Något skönare förtroende kunde aldrig erhållas ---, några ädlare handlingar kunde aldrig företes, än de av Hegardt framlagda, att, efter billighetens regler och med främjande av allmänt gagn och enskild rätt, förlika medlemmars stridigheter och förekomma alltid både obehagliga och kostsamma rättegångar dem emellan, utan annan avsikt och vedergällning än den, som efter tiden skördas." Till riksdagen 1809 valdes han som representant i borgarståndet för Uddevalla m fl städer. Vidare var han en längre tid ordförande för stadens äldste och för Uddevalla handelssocietet samt chef för handelsbårlaget från början av 1811 till sin död.\n"I handelssocieteten gjorde han den 28 januari 1813 sitt inträde med ett tal om handeln, som vittnade om insikt i dess historia och om smak i stilen. Från detta sysslande tog han avsked den 28 januari 1820." Genom Peters inflytande fick Uddevalla för någon tid införselsrätt för utländskt brännvin, vilket gav staden betydande ekonomiska fördelar.\n"Men det var icke allena i sitt yrke och i sin borgarplikt, som framlidne Hegardt ägde ett avgjort företräde; han var även från de sköna konsternas värld mäktig att leda känslan och smaken. I ett musikaliskt nöje utgjorde han ofta ledstjärnan och hans talent att traktera sin flöjt, att styra harmonin, tillvann honom aktning och tillgivenhet." Ovanstående är hämtat ur en parentation över Peter Johansson Hegardt, som vid femtioårsminnet av hans födelse hölls vid "allmän sammankomst" (sannolikt i handelssocieten) och som avslutades med följande ord: "Det är ej heller andra motiv än vänskapens och övertygelsens --- som lett mitt företag i förening med den egennytta, att särdeles åt de yngre borgarna inom hans klass giva exempel och uppmuntran; att genom verksamhet och ädla gärningar, genom vårdad dygd och gudsfruktan, göra sig aktade i tiden, saknade i döden och hågkomna i graven." Peter var också rådman i Uddevalla.',
     occupations: ['Grosshandlare och rådman'],
     references: ['se tab 6'],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 47,
   },
   48: {
@@ -16574,7 +16571,7 @@ const persons: PersonsData = {
     notes: '(Tab 25:160 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 48,
   },
   49: {
@@ -16652,7 +16649,7 @@ const persons: PersonsData = {
     notes: '(Tab 25:161 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 49,
   },
   353: {
@@ -16730,7 +16727,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Handlande och åren 1804'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 353,
   },
   50: {
@@ -16809,7 +16806,7 @@ const persons: PersonsData = {
       '(Tab 38 i GS).\nGrosshandlare i Uddevalla i kompanjonskap med sin bror Peter åren 1800-1816. Sistnämnda år uppsade han burskapet som borgare.\nKöpte efter stadens brand 1806 egendomen Samneröd i Bävne sn intill Uddevalla, där han sedan var bosatt till 1855, då egendomen såldes.',
     occupations: ['Grosshandlare'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 50,
   },
   51: {
@@ -16887,7 +16884,7 @@ const persons: PersonsData = {
     notes: '(Tab 25:187 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 51,
   },
   364: {
@@ -16965,7 +16962,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Tullförvaltare i göteborg'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 364,
   },
   52: {
@@ -17025,7 +17022,7 @@ const persons: PersonsData = {
     notes: '(Tab 25:188 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 52,
   },
   53: {
@@ -17085,7 +17082,7 @@ const persons: PersonsData = {
     notes: '(Tab 25:189 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 53,
   },
   319: {
@@ -17164,7 +17161,7 @@ const persons: PersonsData = {
       '(Tab 27 i GS).\nJohannes sattes hösten 1806, efter branden i Uddevalla, tillsammans med de yngre bröderna i pension i Halland, där de undervisades av informatorer (bl a sedermera ärkebiskop Reuterdahl) och var där till 1811. Student i Lund 1815. Kameralexamen 1816. Student i Uppsala 1817. Hovrättsexamen samma år. Auskultant i Svea hovrätt samma år. Extra kanslist i bondeståndet vid urtima riksdagen 1817 ? 1818.\nEo kanslist vid justitiefördelningen av Kungl Maj:ts kansli 1818. Eo notarie i Svea hovrätt samma år. Auskultant i Göta hovrätt samma år. Hade detta år och 1819 åtskilliga domarförordnanden i Bohuslän.\nUppförd på förslag till borgmästare i Strömstad 1819 och i Uddevalla samma år. Borgmästare i Strömstad samma år (installerad 4/6 av kungl Maj:ts befallningshavandes i Göteborg ombud kanslirådet Karl Bernhard Hegardt). Riksdagsman i borgarståndet för Strömstad, Marstrand och Kungälv vid 1823 års riksdag och ledamot av ekonomiutskottet, samt för Strömstad och Østersund vid 1840?1841 års riksdag och ledamot av lagutskottet. Häradshövding i Fjäre och Viske häraders domsaga 1848 och död i tjänsten. Johannes som hade anseende som en skicklig ämbetsman, var personligen god och välvillig, musikaliskt begåvad och en ej oäven porträttecknare.\nSom porträttecknare skall Johannes ha utfört teckningarna som finns i GS : nr 12 Kristian, nr 5 Anna Elisabet Bratt, nr 104 Peter Johansson. Av Peter Johansson finns en kopia utförd 1861 av A Hallin (i S H:son Hegardts ägo). Utöver dessa finns en originalteckning av samme Peter Johansson, som också skall vara utförd av Johannes. Teckningen finns förvarad i släktarkivet.',
     occupations: ['Borgmästare och rådman'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 319,
   },
   320: {
@@ -17225,7 +17222,7 @@ const persons: PersonsData = {
       '(Tab 26:150 i GS).\nGenomgick Malmö skola 1808-1815. Student i Lund 1815 och i Uppsala 1817. Kansliexamen 1818. Eo kanslist i hovkanslerexpeditionen samma år och i kommerskollegium 1820. Kopist i förstnämnda expedition 1823 och kanslist 1826. PV i Kungl Maj:ts kansli 1837 och i hovkanslerexpeditionen 1838. Arkivarie i justitiestatsexpeditionen 1840-1845, då han erhöll avsked. Uppbördstullförvaltare i Stockholm 1847. RVO 1853.\n"Vi hava --- att omnämna bortgången ur tiden av en man, vilken oförtrutet och nitiskt tjänat staten i nära 52 år. H hade olyckan att för ett par månader sedan halka omkull på Drottninggatan, utanför det s k landshövdingeämbetets hus, varvid han erhöll en svår skada i höften, vilken väl nu påskyndat den åldrige tjänstemannens slut. Han hade i några och 20 år härstädes uppburit den betydande tulluppbörd, vilken influtit vid denna Sveriges ojämförligt största tullförvaltningsplats." (Posttidn 3/3 1870.)',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 320,
   },
   321: {
@@ -17285,7 +17282,7 @@ const persons: PersonsData = {
     notes: '(Tab 26:151 i GS).',
     occupations: ['Handelsbokhållare i alicante', 'Spanien'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 321,
   },
   322: {
@@ -17346,7 +17343,7 @@ const persons: PersonsData = {
       '(Tab 26:152 i GS).\n"Redan för många år tillbaka hade han dragit sig ifrån den egentliga affärsvärlden och levde nu som gammal ungkarl så gott som uteslutande för tvenne föremål: politiken och musiken. Få människor torde bättre än han ha följt med vad som tilldrog sig både på den stora skådebanan, där nationers öden avgöras, och på den mindre, där kommunens viktiga frågor dragas fram på scenen. Till följd därav var han en passionerad tidningsläsare och man kunde vara övertygad om att, lika säkert som solen går upp om morgonen och ner om aftonen, lika säkert framträdde H morgon och afton strax före tidningarnas ankomst på Siemens Kafés horisont, det kafé, där han sedan många år brukade intaga sina alltid enkla och måttliga morgon? och aftonmåltider. Då fanns det för honom ingenting kärare än att träffa på en person, med vilken han kunde få diskutera, och en sådan fattades vanligen icke.\nOch nu avgjordes världens öden som en dans, Napoleons och Bismarcks finaste diplomatiska finter förutsades eller kommenterades och detta vanligen med en så ytterlig häftig het, att den som icke kände till förhållandena lätteligen kunde tro, att den spenslige, ännu vid 65 år ungdomligt rörliga gubben med de livliga ögonen, det mörka håret och den något sydländska ansiktsfärgen, var på allvar uppretad. Men några minuter därefter var han åter lugn och vänlig igen.\nSak samma var det när talet föll på musik, samma häftighet, samma utmanande ord och åtbörder. Men under allt detta var H i grund och botten alltid svenskt och fosterländskt sinnad, och detta kom mången, som måhända eljest skulle ha stött sig på hans Menschen-schreckerei, att överse med ett och annat omilt uttryck, spårande under de häftiga orden den goda meningen.\nDen gamle politikern har nu gått till vila; ännu aftonen före sin död deltog han med samma värma i en politisk debatt på den vanliga arenan. Morgonen kom, posten anlände, men den som alltid så oroligt avvaktat dess ankomst kom icke, och innan aftontidningen hunnit utdelas hade den trötte anden flyktat hän till de rymder, \'där allting skall varda uppenbarat." (Göteborgsposten 22/12 1866.)',
     occupations: ['Grosshandlare'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 322,
   },
   323: {
@@ -17406,7 +17403,7 @@ const persons: PersonsData = {
     notes: '(Tab 26:153 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 323,
   },
   324: {
@@ -17467,7 +17464,7 @@ const persons: PersonsData = {
       '(Tab 26:154 i GS).\nMarianne, brodern Josias och systrarna Cecilia och Emilia bodde tillsammans i Stockholm.',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 324,
   },
   325: {
@@ -17527,7 +17524,7 @@ const persons: PersonsData = {
     notes: '(Tab 26:155 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 325,
   },
   326: {
@@ -17580,7 +17577,7 @@ const persons: PersonsData = {
     notes: '(Tab 26:156 i GS).\nDog troligen genom hunger och törst.',
     occupations: [],
     references: ['enl anm av häradshövding Hegardt'],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 326,
   },
   327: {
@@ -17640,7 +17637,7 @@ const persons: PersonsData = {
     notes: '(Tab 26:157 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 327,
   },
   328: {
@@ -17700,7 +17697,7 @@ const persons: PersonsData = {
     notes: '(Tab 26:158 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 328,
   },
   329: {
@@ -17760,7 +17757,7 @@ const persons: PersonsData = {
     notes: '(Tab 26:159 i GS).\nEfter systern Mariannes död flyttade Emilie till Göteborg.',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 329,
   },
   330: {
@@ -17820,7 +17817,7 @@ const persons: PersonsData = {
     notes: '(Tab 26:159a i i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 330,
   },
   367: {
@@ -17898,7 +17895,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 367,
   },
   368: {
@@ -17959,7 +17956,7 @@ const persons: PersonsData = {
       '(Tab 27:106 i GS).\nStudent vid Lunds universitet 1842 och avlade där juridisk preliminärexamen, men måste p g a sjukdom avbryta den akademiska banan. Studerade sedermera lantbruksskötsel i Skottland. Förvaltade en tid Gottenvik i Rönö sn (Østerg) och ägde sedan Närefors i Uvered sn (Skarab) samt arrenderade slutligen från 1876 till sin död Irvingholm i Tysslinge sn (Ørebro).\n"En av alla omtyckt, stilla och vänsäll man. --- Af de kommunala uppdrag, som H innehade, må här nämnas ordförandeskap i kommunalnämnden och brandstodsnämnden." (Ner Alleh 9/5 1892.)',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 368,
   },
   369: {
@@ -18019,7 +18016,7 @@ const persons: PersonsData = {
     notes: '(Tab 27:107 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 369,
   },
   370: {
@@ -18098,7 +18095,7 @@ const persons: PersonsData = {
       '(Tab 28 i GS).\nGenomgick Strömstads storskola och Göteborgs gymnasium samt avlade studentexamen i Uppsala 1847. Volontär vid Västgötadals regemente 1846. Furir 1847, kommenderad med regementet till Danmark 1848. Officersexamen 1849, underlöjtnant vid regementet samma år, löjtnant 1851, 2:e adjutant 1852 och 1:e adjutant 1853. 2:e kapten 1864, 1:e kapten och kompanichef 1872. Major i armén 1878 och avsked ur armén 1882. RSO 1873.\nVar överkontrollör vid brännvinstillverkningen 1876-1897 och kontrollant vid denaturering av brännvin inom Stockholms stad 1897 till sin död.\nØverbefälhavare för Norra Hallands frivilliga skytteförening 1864 och för Alingsås d:o 1864-1872. Ägde Domö i Hjärpås (Skarab) 1856-1860.',
     occupations: ['Major'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 370,
   },
   371: {
@@ -18172,7 +18169,7 @@ const persons: PersonsData = {
       '(Tab 34 i GS).\nKadett vid krigsakademin 1845 och utexaminerad 1850. Underlöjtnant vid Västgötadals regemente samma år och avancerade sedan till major 1878 vid samma regemente. Øverstelöjtnant och 1:e major vid Nerikes regemente 1882 samt avsked 1886. Genomgick GCI 1852-53. Øverbefälhavare för Vänersborgs frivilliga skarpskytteförening 1862-63. Stadsfullmäktig i Vänersborg 1867-82 och ordförande i drätselkammaren 1872-82. Ledamot av styrelsen för Vänersborgs enskilda bank 1867-82. Verkställande direktör i Uddevalla - Vänersborg - Herrljunga järnväg 1872-82. Ordförande i styrelsen för Ørebro enskilda bank 1892-1903. RSO 1874 och KVO 1899.\nÄgde Irvingsholm och Latorp bruk, båda i Tysslinge sn (Ørebro).\n"Såsom lantbrukare och ekonom har han sakkunnigt förvaltat sina stora egendomar. --- För Ørebro-Svartå järnväg hyste han livligt intresse och bidrog i sin mån att föra den förbindelsen igenom. Senaste tiden har han ock genom att låta taga elektrisk kraft till hjälp i jordbruksdriften visat, att han fortfarande förstod att följa med sin tid. I Ørebro spritförsäljningsbolag var han en av revisorerna och vid Hushållningssällskapets nyligen firade 100-årsfest hade vi tillfälle erinra om hans medverkan i dess tjänst. --- H var en reslig, mager man med skarpa drag, som lystes upp av ett par vänliga ögon." (Ner Alleh 20/2 1903.)',
     occupations: ['Godsägare', 'Øverstelöjtnant'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 371,
   },
   372: {
@@ -18232,7 +18229,7 @@ const persons: PersonsData = {
     notes: '(Tab 27:142 i GS).',
     occupations: ['Grosshandlare i göteborg'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 372,
   },
   373: {
@@ -18310,7 +18307,7 @@ const persons: PersonsData = {
     notes: '(Tab 27:143 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 373,
   },
   390: {
@@ -18388,7 +18385,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Auditör och häradshövding'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 390,
   },
   374: {
@@ -18467,7 +18464,7 @@ const persons: PersonsData = {
       '(Tab 36 i GS).\nStudentexamen i Lund 1857. Jur prel examen 1858. Examen för inträde vid rikets rättegångsverk 1861. Auskultant i hovrätten över Skåne och Blekinge samma år och i Göta hovrätt 1863. Tjänstgjorde som biträde åt lantdomare åren 1861?66 och från 1866 i Göteborgs poliskammare. Polissekreterare där 1869. Sekreterare i fattigvårdsstyrelsen samma år. Hade åren 1869?73 åtskilliga förordnanden som stadsnotarie. Blev sterbhusnotarie 1874.\nÄr liksom sin hustru gravsatt på Fristads kyrkogård i von Kochska familjegraven.',
     occupations: ['Jurist'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 374,
   },
   375: {
@@ -18528,7 +18525,7 @@ const persons: PersonsData = {
       '(Tab 27:149 i GS).\nMogenhetsexamen i Göteborg 1866. Student i Uppsala samma år. juridisk preliminärexamen 1867. Hovrättsexamen 1870. Auskultant i Göta hovrätt 1871 och eo notarie där samma år. Tf domhavande i Fjäre och Viske häraders domsaga sammanlagt 2 månader under 1872 och 1873. V häradshövding 1873. Hade åren 1876, 1878 och 1879 förordnanden som sekreterare i Göteborgs fattigvårdsstyrelse och 1881-1883 som stadsnotarie vid rådhusrätten. Kanslist hos stadsauktuarien 1879. Polisnotarie 1884. Polissekreterare samma år och stadsauktuarie 1894 till sin död (allt i Göteborg).\n"Hegardt var av ett rätt inbundet väsen. Bakom den till synes sträva ytan doldes emellertid ett utomordentligt gott hjärta och en hjälpsamhet som aldrig tvekade, då det gällde att räcka en nödställd en stödjande hand. I sitt arbete var han utpräglat punktlig och noggrann, och ett mönster av plikttrohet. (Göteb H & Sj tidn 10/7 1911.) Francis var en framstående violinist och medlem i ett enskilt kammarmusiksällskap.',
     occupations: ['Stadsauktuarie'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 375,
   },
   378: {
@@ -18606,7 +18603,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 378,
   },
   379: {
@@ -18685,7 +18682,7 @@ const persons: PersonsData = {
       '(Tab 29 i GS).\nMogenhetsexamen 1874 i Vänersborg (P).\nHandelsbokhållare i Göteborg 1874-76. Flyttade 1876 till Paris, Frankrike, där han idkade grosshandel till 1901, då han återvände till Sverige.',
     occupations: ['Grosshandlare'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 379,
   },
   380: {
@@ -18764,7 +18761,7 @@ const persons: PersonsData = {
       '(Tab 30 i GS).\nUtflyttad till Haro, Spanien 1884 från Göteborg (O).\nHandelsbokhållare i Varberg 1877 och i Göteborg 1878-1884. Flyttade 1884 till Spanien och idkade grosshandel i Huelva, Sevilla, Haro och Bilbao. 1898 flyttade han till Oslo och var grosshandlare där till 1901, då han återvände till Spanien och bosatte sig i Haro. Konverterade till katolicism 1890.',
     occupations: ['Grosshandlare'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 380,
   },
   381: {
@@ -18843,7 +18840,7 @@ const persons: PersonsData = {
       '(Tab 31 i GS).\nGenomgick Borås tekniska elementarläroverk 1874?1877. Nivellör vid byggandet av Lidköping - Håkanstorps järnväg 1877-1878 och av Borås - Herrljunga järnväg 1878-1880.\n1880 flyttade han till USA. Var åren 1881-1906 anställd som ingenjör vid Förenta staternas väg- och vattenbyggnadskår och fick i denna egenskap 1890 i uppdrag att som chefsingenjör förestå befästningsarbetena vid Colombiaflodens utlopp i Stilla havet.\nHär utfördes under hans ledning, i närheten av staden Astoria i Oregon, Fort Stevens m fl fästningsverk samt omfattande hamnförbättringar, som byggandet av vågbrytare mm, arbeten som tog 15 år och vilkas omfattning framgår av att hamndjupet ökades från 20 till 46 fot vid lågvatten.\nDärefter bosatte han sig i Portland, Oregon, som konsulterande ingenjör och direktör i The Western Oregon Trust Company.\nAnställdes 1912 som chefsingenjör vid de beslutade hamnanläggningarna i Portland och skapade där ett hamnsystem, som anses som det främsta på USA:s västkust.\nUnder 1925-1926 gjorde han tillsammans med två andra ingenjörer upp en plan för hamnanläggningarna i Oakland, Californien och utsågs till chefsingenjör för dessa anläggningar. Efter dessas fullbordande blev han hamndirektör i Oakland och avgick från denna tjänst 1931 p g a ohälsa.',
     occupations: ['Chefsingenjör'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 381,
   },
   382: {
@@ -18922,7 +18919,7 @@ const persons: PersonsData = {
       '(Tab 32 i GS).\nMogenhetsexamen i Skara 1881. Handelsbokhållare i Göteborg 1881-1896. Sistnämnda år chef för firman Ludvig Holming & Co i Malmö. Lämnade 1934 i samband med en svår sjukdom kompanjonskapet och arbetet.\nIntresserad medlem av Odd Fellows, som han tillhört sedan Göteborgstiden. Tillhörde Skaradjäknarnas förening. Livligt intresserad av såväl Malmö som Göteborgs snabba utveckling.\nGästfri och sällskaplig, sång- och musikintresserad liksom sin maka. Fördragsamhet och mjukare sätt efterträdde med åren tidigare stridbarhet och stränghet. Anspråkslös för egen del kände han givandets glädje. Väl medveten om ägandets förpliktelser gjorde han gott utan många åthävor. Humor och gladlynthet ägde han i rikt mått. Utrustad med förnöjsamhet och en mycket god hälsa fick han, till stor glädje för de sina, behålla full vigör livet ut.\nMycket släktkär levde han sina senare år nästan helt för döttrar och familjekretsen i vidare bemärkelse.',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 382,
   },
   383: {
@@ -18983,7 +18980,7 @@ const persons: PersonsData = {
       '(Tab 28:127 i GS).\nGenomgick elementarskola för flickor i Lidköping 1876-1884 och högre lärarinneseminarium i Stockholm 1884-1887. Vistades i Tyskland och Frankrike 1891-1893. Lärarinna vid Arvika flickskola 1893-1899, vid Whitlockska skolan i Stockholm 1899-1900, vid Norrtälje flickskola 1900-1903 och vid Nya Elementarskolan för flickor i Norrköping 1903-1916.\n"Alla som kände henne närmare visste vilken stark, helgjuten personlighet hon var. Intet svek bodde hos henne. Skulle en kort sammanfattning givas av hennes väsen passar bäst det ordet sanning. Hon älskade sanningen, levde i sanningen. Ren och klar var hon i ord och gärning, omutligt rättrådig. Men hon var ock barmhärtig och god mer än de flesta. --- Plikttrogen var hon till det yttersta. Och till sanning och plikttrohet ville hon fostra den ungdom hon hade hand om. Såsom lärarinna var hon i sällsynt grad framstående, såväl i kunskaper som i förmågan att undervisa ---." (Norrk Tidn 12/4 1916.)',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 383,
   },
   384: {
@@ -19062,7 +19059,7 @@ const persons: PersonsData = {
       '(Tab 33 i GS).\nFörfattare till "Gamla släktboken".\nMogenhetsexamen i Skara 1887. Volontär vid Bohusläns regemente 1887, sergeant 1888, officersexamen 1889, underlöjtnant samma år; löjtnant 1899; aspirant vid generalstaben 1899-1901. Stabsadjutant och löjtnant där 1902 och kapten 1903. Kapten i Bohusläns regemente samma år, vid Västgöta regemente 1907 och åter generalstaben 1910. Øveradjutant och major där samma år. Øverstelöjtnant i staben 1913 och. vid Hallands regemente 1914. Tf chef för detta regemente 1915. Øverste i regementet 1916 och dess chef 1917. Chef för 1:a brigaden 1920 samt generalmajor och chef för 6:e arméfördelningen 1926.\nGenomgick krigshögskolan 1896?1898. Kommenderad till Ryssland 1902. Militärattaché i Tokyo 1901-1905 och under tiden där (1904-1905) vid 1:a japanska fältarmén i Kina. Generallöjtnant i armén 1933. Avsked med skyldighet att inträda i generalitetets reserv 1933. Ur reserven 1938.\n1:e lärare i krigskonst vid krigshögskolan 1907-1909. Stabschef vid 3:e arméfördelningen 1910-1912. Chef för inf skjutskolan 1913-1915. Ledamot av styrelsen för landstormsföreningarnas centralförbund 1913?1919 och ordförande i dess verkställande utskott 1913?1915. Sakkunnig för inf skjutskolans förläggning mm 1913-1914 och 1917-1918 samt utarbetande av nytt inf exercisreglemente 1923-1924. RSO 1910, RVO 2:a kl 1919 och 1:a kl 1922, landst GM samma år, JHSO 1905, RFrHL 1906, JFM 1907 och led Kr V A 1913. Tilldelad Hallands- Nordvästra Skånes landstormsförbunds guldmedalj vid förbundets 20-årsjubileum 1928. Komm av Finlands vita Ros 1:a kl 1933. K Fr H L 1930. K msth O 1933. R C XIII O 1936.\nHar innehaft diverse kommunala och likartade uppdrag i Halmstad. Från 1936 kanslichef i Svenska Frimurarorden.',
     occupations: ['Generallöjtnant'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 384,
   },
   385: {
@@ -19123,7 +19120,7 @@ const persons: PersonsData = {
       '(Tab 28:133 i GS).\nGenomgick elementarskolan för flickor i Lidköping 1885-91 och Schwartzska skolan i Stockholm 1891-93. Anställd vid Städernas allmänna brandstodsbolag i Stockholm 1897 och huvudkassör sedan 1914. Avgick med pension 1941, men kvarstod i tjänst ytterliggare några år. Tilldelad bolagets förtjänstmedalj i guld vid dess 100-årsjubileum 1928.',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 385,
   },
   397: {
@@ -19201,7 +19198,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 397,
   },
   398: {
@@ -19262,7 +19259,7 @@ const persons: PersonsData = {
       '(Tab 29:110 i GS).\nStudentexamen 1917 vid Whitlockska skolan i Stockholm.\nSpråkstudier vid Stockholms borgarskola 1919.\nKanslibiträde vid Vattenfallsstyrelsen 1919.\nStenograf och maskinskriverska på Sv Elverksföreningenssekreteriat 1927.\nKontorist vid Älvkarleby kraftverk 1940.\nFörste kontorist vid Kungl Vattenfallsstyrelsen 1946.\nEo kansliskrivare 1948.\nKansliskrivare 1949.\nFörste kansliskrivare 1949.\nKontorsskrivare och handsekreterare åt generaldirektören 1953.\nErhöll guldmedalj 6:e storl "För nit och redlighet i rikets tjänst" 1949.',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 398,
   },
   399: {
@@ -19340,7 +19337,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 399,
   },
   400: {
@@ -19400,7 +19397,7 @@ const persons: PersonsData = {
     notes: '(Tab 30:112 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 400,
   },
   401: {
@@ -19460,7 +19457,7 @@ const persons: PersonsData = {
     notes: '(Tab 30:113 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 401,
   },
   402: {
@@ -19539,7 +19536,7 @@ const persons: PersonsData = {
       '(Tab 30:114 i GS).\nExamen från handelshögskolan i Bilbao 1916. Efter ett par kontorsanställningar fick han plats hos handelshuset Girard och Co (exportörer av conjak och eau-de-vie) i Tonnay Charente i Frankrike. Efter återkomst till Bilbao 1918 började han där samma år som banktjänsteman vid Banco de Viscaya. Flyttade 1921 till samma banks kontor i Haro, där han arbetade som kamrer.',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 402,
   },
   425: {
@@ -19602,7 +19599,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 425,
   },
   403: {
@@ -19662,7 +19659,7 @@ const persons: PersonsData = {
     notes: '(Tab 30:115 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 403,
   },
   404: {
@@ -19722,7 +19719,7 @@ const persons: PersonsData = {
     notes: '(Tab 30:115a i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 404,
   },
   405: {
@@ -19782,7 +19779,7 @@ const persons: PersonsData = {
     notes: '(Tab 30:116 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 405,
   },
   406: {
@@ -19860,7 +19857,7 @@ const persons: PersonsData = {
     notes: '(Tab 30:117 i GS).',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 406,
   },
   426: {
@@ -19923,7 +19920,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Arkitekt'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 426,
   },
   407: {
@@ -19983,7 +19980,7 @@ const persons: PersonsData = {
     notes: '(Tab 30:118 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 407,
   },
   427: {
@@ -20046,7 +20043,7 @@ const persons: PersonsData = {
     notes: 'Bor i Zaragosa, Spanien.',
     occupations: ['Adress plaza del pilar 10', '2 dcha', '50003 zaragoza', 'Spanien'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 427,
   },
   432: {
@@ -20109,7 +20106,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 432,
   },
   428: {
@@ -20173,7 +20170,7 @@ const persons: PersonsData = {
       'Adress Ave de las Torres 35 6 V, Zaragoza, Spanien.\nChef för Zaragoza brandkår.\nIntresserad av filateli, klassisk musik och skönlitteratur.\nBor i Zaragosa, Spanien.',
     occupations: ['Stadsarkitekt'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 428,
   },
   433: {
@@ -20236,7 +20233,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Lärare'],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 433,
   },
   429: {
@@ -20300,7 +20297,7 @@ const persons: PersonsData = {
       'Adress Duquesa Orleans 50-1, 08034 Barcelona, Spanien.\nFil lic i kemi 1961 i Zaragoza. Fil dr i kemi 1966. Docent i kemi vid universitetet i Zaragoza 1967. Biträdande professor i biokemi vid universitetet i Barcelona 1974 och professor 1981. Prefekt vid biokemiska instutionen vid universitetet i Barcelona 1977.\nVice dekanus vid Farmacihögskolan 1980-83. Vice ordförande i Spanska biokemiska föreningen från 1986. Har publicerat åtskilliga avhandlingar inom biokemi och har vid flera tillfällen varit engagerad som föreläsare vid olika seminarier i bl a USA.\nBor i Barcelona, Spanien.',
     occupations: ['Professor'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 429,
   },
   441: {
@@ -20363,7 +20360,7 @@ const persons: PersonsData = {
     notes: 'Utbildad pianist vid konservatoriet i Zaragoza 1963.',
     occupations: ['Pianist'],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 441,
   },
   430: {
@@ -20423,11 +20420,10 @@ const persons: PersonsData = {
     ],
     middleNames: ['Pilar', 'Garcia'],
     mother: 406,
-    notes:
-      'Adress Via Hispanidad 61, bl. 7, 4 A, 50012 Zaragoza, Spanien.\nBor i Zaragosa, Spanien.',
+    notes: 'Adress Via Hispanidad 61, bl. 7, 4 A, 50012 Zaragoza, Spanien.\nBor i Zaragosa, Spanien.',
     occupations: ['Licenciat i kemi'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 430,
   },
   445: {
@@ -20490,7 +20486,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 445,
   },
   431: {
@@ -20553,7 +20549,7 @@ const persons: PersonsData = {
     notes: 'Adress Calle del Rio 31-9 D, Miranda de Ebro, Burgos, Spanien.\nBor i Burgos, Spanien.',
     occupations: ['Licenciat i kemi'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 431,
   },
   446: {
@@ -20616,7 +20612,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 446,
   },
   434: {
@@ -20661,7 +20657,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Ekon stud'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 434,
   },
   435: {
@@ -20706,7 +20702,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Fil stud'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 435,
   },
   436: {
@@ -20766,7 +20762,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 436,
   },
   437: {
@@ -20811,7 +20807,7 @@ const persons: PersonsData = {
     notes: 'Bor i Zaragosa, Spanien.',
     occupations: ['Adress ave de las torres 35 6', 'Zaragoza', 'Spanien'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 437,
   },
   438: {
@@ -20856,7 +20852,7 @@ const persons: PersonsData = {
     notes: 'Bor i Zaragosa, Spanien.',
     occupations: ['Adress ave de las torres 35 6', 'Zaragoza', 'Spanien'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 438,
   },
   442: {
@@ -20901,7 +20897,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 442,
   },
   447: {
@@ -20943,11 +20939,10 @@ const persons: PersonsData = {
     marriages: [],
     middleNames: ['Garcia-Hegardt'],
     mother: 446,
-    notes:
-      'Adress Calle del Rio 31-9 D, Miranda de Ebro, Burgos, Spanien.\nBor i Barcelona, Spanien.',
+    notes: 'Adress Calle del Rio 31-9 D, Miranda de Ebro, Burgos, Spanien.\nBor i Barcelona, Spanien.',
     occupations: ['Studerande'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 447,
   },
   448: {
@@ -20992,7 +20987,7 @@ const persons: PersonsData = {
     notes: 'Adress Calle del Rio 31-9 D, Miranda de Ebro, Burgos, Spanien.\n1995.',
     occupations: ['Studerande'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 448,
   },
   449: {
@@ -21037,7 +21032,7 @@ const persons: PersonsData = {
     notes: '1999.',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 449,
   },
   408: {
@@ -21115,7 +21110,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 408,
   },
   409: {
@@ -21193,7 +21188,7 @@ const persons: PersonsData = {
     notes: '(Tab 31:120 i GS).\nUtexaminerad från ekonomisk högskola i Portland.',
     occupations: ['Handlande'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 409,
   },
   452: {
@@ -21271,7 +21266,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 452,
   },
   410: {
@@ -21334,7 +21329,7 @@ const persons: PersonsData = {
     notes: '(Tab 31:121 i GS).\nBor i Tigard, Oregon, USA.',
     occupations: ['Adress 13215 s w 124', 'Tigard', 'Oregon', 'Usa'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 410,
   },
   455: {
@@ -21412,7 +21407,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Fastighetsmäklare'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 455,
   },
   411: {
@@ -21472,7 +21467,7 @@ const persons: PersonsData = {
     notes: '(Tab 31:122 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 411,
   },
   412: {
@@ -21550,7 +21545,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 412,
   },
   413: {
@@ -21611,7 +21606,7 @@ const persons: PersonsData = {
       '(Tab 32:124 i GS).\nNormalskolekompetens 1909. Elev vid Malmö musikkonservatorium 1909-1911. Språkstudier i Berlin 1911 vid Böttinger Studienhaus (Deutsches Institut für Ausländer). Extraelev vid Fackskolan Brogård i lanthushåll sommaren 1912 . Utexaminerad från Fackskolans för huslig ekonomi A-kurs 1914. Deltagit i diverse föreläsnings- och fortbildningskurser anordnade i Uppsala eller på annat håll av SSLF.\nLärarinna vid Anna och Eva Bunths skola i Malmö 1915-1937. Vikarierat vid Lunds stads folkskolor 1917. Förestått sockerfabrikens i Arlöv arbetarekök 1917-1919. Tjänstgjort vid Sövestads fortsättningsskola 1921 och 1924-1925 och i Uppåkra 1922-1923. Anställd vid Fosie folkskolor och senare, efter inkorporering, inom Malmö skoldistrikt 1923-1936. Øverflyttad till Kommunala Flickskolan i Malmö 1937 och ordinarie övningslärare där 1939. Avgick med pension 1957. GMfmf.',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 413,
   },
   414: {
@@ -21672,7 +21667,7 @@ const persons: PersonsData = {
       '(Tab 32:125 i GS).\nUtexaminerad från Malmö högre elementarläroverk för flickor 1910. Studerade vid Malmö tekniska skola 1911-1912 och genomgick Tekniska skolan i Stockholm 1913-1917. Utexaminerad teckningslärare sistnämnda år. Innehade skolans stipendium 1916-1917 samt genomgick sommarkursen i träslöjd vid Nääs 1915 och 1916.\nVikarierande teckningslärare vid Uppsala enskilda läroverk och privatgymnasium 1917-1919 och undervisade under samma tid vid fackskolan för huslig ekonomi. Ordinarie teckningslärare vid Statens samskola i Haparanda 1919 samt undervisade vid Statens småskoleseminarium och Tekniska aftonskolan där. Blev teckningslärare vid Statens folkskoleseminarium i Härnösand 1925. Från 1936 teckningslärare vid Malmö realskola.',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 414,
   },
   415: {
@@ -21733,7 +21728,7 @@ const persons: PersonsData = {
       '(Tab 32:126 i GS).\nReservofficersaspirant vid Hallands regemente 1918.\nReservofficersexamen 1919, fanjunkare i regementet samma år.\nFänrik i reserven samma år och underlöjtnant 1921. Student vid Polytechnicum i Cöthen, Tyskland 1918 och 1919 vid Fresenius tekniska institut i Wiesbaden, Tyskland, där han 1923 avlade avgångsexamen.',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 415,
   },
   416: {
@@ -21811,7 +21806,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 416,
   },
   417: {
@@ -21907,7 +21902,7 @@ const persons: PersonsData = {
       '(Tab 33:129 i GS).\nStudentexamen 1926. I Spanien juni - juli 1925. Handelskurs vid Bar-Lock-institutet i Stockholm 1926-27. Antälld vid försäkrings AB Fylgia 1927-28. Sekreterare vid Østersunds länslasarett 1928-31. Sekreterare vid tidskriften Vårt Försvar i Stockholm 1931-32.\nBor i Täby (AB).',
     occupations: ['Adress eskadervägen 34', '183 54  täby'],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 417,
   },
   460: {
@@ -21985,7 +21980,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Civilekonom'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 460,
   },
   461: {
@@ -22063,7 +22058,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Civilekonom'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 461,
   },
   418: {
@@ -22127,7 +22122,7 @@ const persons: PersonsData = {
       '(Tab 33:130 i GS).\nAvgångsexamen från klass 8 i Halmstad flickskola 1926. I England till 1927 och därefter elev vid Østersunds lasarett. Från hösten samma år elev vid GCI i Stockholm. Kunde dock inte fullfölja denna utbildning p g a skada. Avgångsexamen från sällskapet Barnavård i Stockholm 1929.\nBor i Vallentuna (AB).',
     occupations: ['Adress rosengården 33', '186 33  vallentuna'],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 418,
   },
   469: {
@@ -22198,7 +22193,7 @@ const persons: PersonsData = {
       "Startade på 40-talet egen byrå i Stockholm 'John Wendlers Revisionsbyrå' och som han drev nästan till sin död 1971. Var skicklig sportfiskare.",
     occupations: ['Auktoriserad revisor med praktik i england', 'Belgien och berlin'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 469,
   },
   419: {
@@ -22277,7 +22272,7 @@ const persons: PersonsData = {
       '(Tab 33:131 i GS).\n8-årig flickskola 1927 i Østersund, hushållsskola i Norrbyvälle.\nUtbildning i maskinskrivning och stenografi i Østersund. Arbetat som au pair i London 1928 och som stenograf och maskinskriverska på svenska Livförsäkringsanstalten Trygg 1929-35.',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 419,
   },
   473: {
@@ -22348,7 +22343,7 @@ const persons: PersonsData = {
       'Student 1927 i Østersund (Z).\nEfter officersexamen var han verksam vid Göta artilleriregemente, vid Norrbottens artillerikår i Boden och från 1952 vid Wendes artilleriregemente i Kristianstad.\nEfter sin pensionering som officer var han avd chef vid Ahsell och Ågren AB i Göteborg 1964 - 1973.\nGustaf och Margareta flyttade till Lund 1979.\nUnder 30- och 40-talen var Gustaf framgångsrik tävlingsryttare.\nDärefter blev golf hans stora fritidsintresse som också delades av Margareta.',
     occupations: ['Øverstelöjtnant'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 473,
   },
   420: {
@@ -22412,7 +22407,7 @@ const persons: PersonsData = {
       'Adress Knektabacken 1 B, 372 00 RONNEBY.\n(Tab 33:132 i GS).\nStudentexamen 1932 i Østersund (Z).\nSocionomexamen 1936 i Stockholm (AB).\nHar fem barn, varav två bär namnet Hegardt (se nedan).\nBor i Ronneby (K).',
     occupations: ['Socionom'],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 420,
   },
   479: {
@@ -22490,7 +22485,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Provinsialläkare'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 479,
   },
   250: {
@@ -22535,7 +22530,7 @@ const persons: PersonsData = {
     notes: '1999.',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 250,
   },
   480: {
@@ -22611,7 +22606,7 @@ const persons: PersonsData = {
       'Adress Skepparegatan 36, 260 40 VIKEN.\nSkild 1985.\nStudentexamen 1962 i Ronneby (K).\nMed kand 1964 i Uppsala och med lic 1970 i Göteborg. Studerat vid Oxford University, Brasenose College, England 1964-65. Underläkare vid Barnsjukhuset i Göteborg 1970-72. Underläkare vid barnkliniken i Helsingborg 1972-76. Avdelningsläkare vid samma klinik 1976-83.\nFrån 1984 privatpraktiserande barnläkare i Helsingborg. Ufört visst forskningsarbete rörande enzymer i bröstmjölken (publ).\nBor i Viken (M).',
     occupations: ['Privatpraktiserande barnläkare'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 480,
   },
   253: {
@@ -22656,7 +22651,7 @@ const persons: PersonsData = {
     notes: '2000.',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 253,
   },
   255: {
@@ -22701,7 +22696,7 @@ const persons: PersonsData = {
     notes: '2004.',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 255,
   },
   481: {
@@ -22765,7 +22760,7 @@ const persons: PersonsData = {
       'Adress Skårby Junibacken, 271 91 YSTAD.\nStudentexamen 1969 i Ronneby (K).\nDiplomerad från Grafiska Institutet (DGI) 1984.\nAnställd 1978 - 1990 vid Strålfors Dataprodukter som säljare.\nSedan 1991 egen företagare, är delägare i Blankett-Gruppen.\nBor i Skårby (M).',
     occupations: ['Egen företagare'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 481,
   },
   484: {
@@ -22810,7 +22805,7 @@ const persons: PersonsData = {
     notes: 'Adress Skördevägen 121, 263 54 HØGANÄS.\nBor i Höganäs (M).',
     occupations: ['Arkitektstuderande'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 484,
   },
   485: {
@@ -22855,7 +22850,7 @@ const persons: PersonsData = {
     notes: 'Adress Skördevägen 121, 263 54 HØGANÄS.\nBor i Höganäs (M).',
     occupations: ['Studerande'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 485,
   },
   486: {
@@ -22900,7 +22895,7 @@ const persons: PersonsData = {
     notes: 'Adress Viktoriagatan 14, 3, 411 25 GØTEBORG.\nBor i Göteborg (O).',
     occupations: ['Medicine studerande'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 486,
   },
   488: {
@@ -22963,7 +22958,7 @@ const persons: PersonsData = {
     notes: 'Apoteksteknikerexamen 1978 i Malmö (M).',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 488,
   },
   172: {
@@ -23008,7 +23003,7 @@ const persons: PersonsData = {
     notes: 'Adress Modulatorg 17, 421 34 V FRØLUNDA.\nBor i Västra Frölunda (O).',
     occupations: ['Studerande'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 172,
   },
   482: {
@@ -23071,7 +23066,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 482,
   },
   489: {
@@ -23116,7 +23111,7 @@ const persons: PersonsData = {
     notes: 'Adress Mariedalsvägen 37, 217 45 MALMØ.\nBor i Malmö (M).',
     occupations: ['Studerande'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 489,
   },
   490: {
@@ -23161,7 +23156,7 @@ const persons: PersonsData = {
     notes: '1999.',
     occupations: ['Studerande'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 490,
   },
   386: {
@@ -23234,7 +23229,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 386,
   },
   387: {
@@ -23294,7 +23289,7 @@ const persons: PersonsData = {
     notes: '(Tab 34:135 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 387,
   },
   388: {
@@ -23367,7 +23362,7 @@ const persons: PersonsData = {
     notes: '(Tab 34:136 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 388,
   },
   495: {
@@ -23440,7 +23435,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Øverste'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 495,
   },
   389: {
@@ -23519,7 +23514,7 @@ const persons: PersonsData = {
       '(Tab 35 i GS).\nStudentexamen i Ørebro 1889. Volontär vid Livregementets husarkår 1889. Sergeant 1890. Officersexamen 1891. Löjtnant 1899. Avsked med tillstånd att kvarstå i reserven 1903. Ryttmästare i reserven 1909 och avsked ur reserven 1929.\nGenomgick ridskolan 1892?93 och skjutskolan 1897 samt GCI 1898?99. Ledamot av styrelsen för Ultuna lantbruksinstitut 1915. Ledamot av riksdagens 1:a kammare för Ørebro län 1918?19. RVO 1911, RNO 1925 och KrVO 1930.\nÄgde Latorps bruk och från 1919 Thorsätra gård i V Ryd (Upps).',
     occupations: ['Godsägare', 'Ryttmästare'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 389,
   },
   496: {
@@ -23597,7 +23592,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 496,
   },
   497: {
@@ -23668,7 +23663,7 @@ const persons: PersonsData = {
       '(Tab 35:138 i GS).\nGenomgick i hemmet 8 klasser och en fortsättningsklass till 1916.\nBirgittaskolans klädsömnadskurs och Åkerströms hushållsskola i Stockholm 1916-17 samt Enerots handarbetsseminarium i Stockholm 1917-18.',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 497,
   },
   503: {
@@ -23746,7 +23741,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 503,
   },
   498: {
@@ -23825,7 +23820,7 @@ const persons: PersonsData = {
       '(Tab 35:139 i GS).\nAvgångsbetyg från Lundsbergs skola 1920. Reservofficersaspirant vid Kungl Livregementets dragoner (K2) samma år; reservofficersexamen; officersaspirant; fänrik i reserven, allt 1921. Officersexamen 1923 och fänrik samma år, samt underlöjtnant 1924. Avsked 1926 med tillstånd att kvarstå i reserven. Löjtnant i Kungl Livregementets till häst (K1) reserv 1928 och ryttmästare 1937. Kapten vid Kungl Livregementets grenadjärer (I3) 1940 och major 1945. Major i arméns reservstat 1948 och major i I3:s reserv 1955.\nGenomgick ridskola 1924-25 och provtjänstgjorde 1926 vid Södra Skånska infanteriregementet (I21) i Lund för ev transport till infanteriet. Kaptenskurs vid Upplands infanteriregemente (I8) 1937. Tjänstgjorde som underrättelseofficer vid andra armékårsstaben (Boden) 1939 och 1940. Skvadronschef vid 1 kavalleribrigaden 1940-48, kompani- och bataljonschef vid I3, härunder bl a fältbataljonschef 1944 samt chef för vinterutbildningsbataljonen i fält 1946. Deltog som sambandsofficer och kontrollant vid norska polis-truppernas fälttjänstgöring i Hälsingland 1945.\nElev vid Infanteriskjutskolan 1941 och 1943 samt taktisk kurs vid infanteri-SS för regementsofficerare 1946 och 1950. Lägerchef vid utbildning av fria jägare för milo i Torsby 1944 och i Dalarna 1945. Stallofficer, chefshästdetaljen 1943 och 1946. Gymnastik? och idrottsofficer 1947. Taktisk kurs för regementsofficerare vid I12 1946. Gjorde växeltjänstgöring vid Bergslagens artilleriregemente (A9) 1948. Dagmajor mm vid I1 1948.\nHade 1943 arméchefens uppdrag att efter egna utförda praktiska försök för arméns räkning utforma instruktion för klövjning och provisorisk klövjning. 1943?48 erhållit flerfaldiga uppdrag av milobefälhavaren och sekundchefen att inom militärområdet och regementet ordna tävlingar i skytte, skidor, modern femkamp, ryttartävlingar samt fälttävlingar.\n1941?48 ordförande i I3:s idrottsförening, 1954 dess hedersledamot. 1940?43 sekreterare i Ørebro fältrittklubb och ordförande där 1943-48. Från 1950 medlem i Djursholms Ridklubbs styrelse.\nEfter jordbrukspraktik och avgång från aktiv militärtjänst 1926 genomgick S H Hammenhögs Lantmannaskola 1927. Blev 1929 inspektor på Thorsätra säteri till faderns död 1934, varefter han övertog säteriet som var känt för sin höga beteskultur och goda kreatursbesättningar. S H har i skrift, föredrag och radio framträtt i jordbruksfrågor. Gården såldes 1940 p g a kriget.\nS H hade en hel del kommunala och andra uppdrag, bl a 1931-33 som sekreterare i Uppsala läns Skogsägarförening och sedermera därvid främst till övergång från ideell till ekonomisk förening samt för sammanslutningen av landets skogsägarföreningar till Sveriges Skogsägarförbund i vars interimsstyrelse han blev medlem.\nHan var i flera omgångar ledamot i taxeringsnämnd. Mångårig ordförande i Västra Ryds bilfraktförening. Ledamot av Ryds och Näs eldistributionsförening.\nÅren 1937-39 var han anställd på deltid vid Ekonomibyggnader AB som sakkunnig i jordbruksfrågor, med tjänsteresor i hela landet. Var 1948-49 medlem av premieringsnämndens arbetsutskott.\nEfter avgång från aktiv tjänst 1948 var S H anställd 1949?52 vid AB Optimus med fastighetsförvaltningsuppdrag, 1952 vid och organisatör av Brandförsäkringsverkets nystartade reassuransavdelning och 1954 som chef för Bore? Brandförsäkringsverks gemensamma fastighetsförvaltning. (1952-60 medlem i styrelsen för dess konstförening och dess ordförande 1952-58). 1960 chef för Stockholms fastighetsförenings byrå för bytesärenden.\nSom intresserad fotograf har han sedan ungdomen själv fotograferat och dessutom samlat foton från föräldrars och farföräldrars tid och har i sin ägo en stor samling foton från fyra generationer.\nS H har utpräglat praktiska anlag, är naturälskare och även konst- musik- och sångintresserad. Han har tagit lektioner i både violinspelning och sång som tenorbaryton, men fick sluta spela p g a fingerskada. Är även intresserad tecknare. Alltsedan ungdomen är idrottsintresset framträdande och han har med icke ringa framgång deltagit i tävlingar i såväl allmän idrott som fotboll, skytte, skidor, ridning, orientering och fälttävlingar varom en stor prissamling bär vittne.\nInnehar skytte M, gevär och kpist, Fältidrottsmärke G, Riksidrotts-märke G och skidlöparmärke Elit. RSO.\nSten Hegardt tog initiativet till den 1961 den 5-6 augusti bildade Hegardtska släktföreningen och blev dess förste ordförande. Han har också varit drivkraften bakom uppdateringen av släktkalendern samt vidare forskning av släktens rötter.',
     occupations: ['Major'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 498,
   },
   499: {
@@ -23904,7 +23899,7 @@ const persons: PersonsData = {
       "(Tab 35:140 i GS).\nStudentexamen 1920 vid Lundsberg. Jägmästare 1926.\nPrivatpraktiserande verksamhet 1926-30. Anställdes 1930 vid Katrinefors AB som chefsassistent och tjänstgjorde där som skogschef från 1938.\n\"År 1964 blev han slottsfogde vid Drottningholm, Tullgarn och Rosenberg, en befattning som han innehade till 1974. Han utsågs till hovjägmästare 1966.\n1949 fungerade han som konsult i skogsfrågor i British Columbia.\nOrdförande i Lundsbergs fastighets AB och stiftelsen Lundsbergs skola 1956-64. Ledamot i kommunalfullmäktige 1943, ordförande 1949-51. Ledamot i folkskolestyrelsen 1944, ordförande 1949-51. Ledamot av Skogs- och lantbruksakademien från 1961.\nSom slottsfogde vid Drottningholms slott var Stig Hegardt speciellt intresserad av de olika renoverings- och tillbyggnadsprojekten under de gångna århundradena fram till Gustaf VI Adolfs insatser för slottets restaurering. Dessutom ägnade han stort intresse åt slottsträdgårdens skötsel.\nSina intryck och kunskaper förmedlade han i boken 'Drottningholm under 400 år' som kom ut 1974. Han har även skrivit boken 'Alkvettern. Ett gammalt gods anor', 1946, och bl a bidragit med artiklar i skogsfrågor. ---\" (Sv D 2/9 1986.)",
     occupations: ['Jägmästare', 'Skogschef'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 499,
   },
   500: {
@@ -23968,7 +23963,7 @@ const persons: PersonsData = {
       '(Tab 35:141 i GS).\nAvgångsexamne från Anna Sandströms flickskola 1920. Genomgick samma skolas fortsättningskurs 1921 samt linne- och klädsömnadskurs 1921-22. Vistades 1922-23 i pension i Schweiz.\nGenomgick 1924 Gunillaskolan i Uppsala och 1925 biblioteks-, hattsömnads- och Rödakorskurs i Stockholm. Arbetade två år som småskollärare vid Lyceumskola för flickor. Efter studier i psykologi arbetade hon två år vid familjerådgivningsbyrå.\nBor i Vallentuna (AB).',
     occupations: ['Adress rosengårdsvägen 3', '186 33  vallentuna'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 500,
   },
   512: {
@@ -24030,7 +24025,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Kapten', 'Direktör'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 512,
   },
   504: {
@@ -24092,7 +24087,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 504,
   },
   505: {
@@ -24156,7 +24151,7 @@ const persons: PersonsData = {
       'Adress Eketorpsvägen 9, 182 61 DJURSHOLM.\nStudentexamen 1951 i Djursholm. 1954-55 University of Wisconsin i Madison, Usa. Jur kand 1959. Tingsnatarie i Mora 1959-62. 1955-59 medarbetare i Sveriges radios utlandsprogram. 1962-64 sekreterare i Exportkreditnämnden. 1964-65 sekreterare vid Skogs- och lantarbetsgivareföreningen. Sedan 1966 anställd vid SIDA (styrelsen för internationell utveckling). Först som byrådirektör, därefter som biståndsattaché i Pakistan och Indien. Åren 1973-80 var han avdelningsdirektör, för att åren 1980-82 tjänstgöra som biståndschef i Bangladesh. Från 1982 avdelningsdirektör.\nBor i Djursholm (AB).',
     occupations: ['Avdelningsdirektör vid sida'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 505,
   },
   506: {
@@ -24213,11 +24208,10 @@ const persons: PersonsData = {
     marriages: [],
     middleNames: ['Hedvig', 'Catharina'],
     mother: 504,
-    notes:
-      'Studentexamen 1956 i Djursholm. Språkstudier i Cambridge, England 1957. Bar-Lock handelsinstitut 1958/59.',
+    notes: 'Studentexamen 1956 i Djursholm. Språkstudier i Cambridge, England 1957. Bar-Lock handelsinstitut 1958/59.',
     occupations: ['Chefssekreterare'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 506,
   },
   507: {
@@ -24280,7 +24274,7 @@ const persons: PersonsData = {
     notes: 'Adress Björnstorps station, 240 13 GENARP.\nBor i Björnstorp, Genarp (M).',
     occupations: ['Utbildad sekreterare och flygvärdinna'],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 507,
   },
   517: {
@@ -24343,7 +24337,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Syokonsulent'],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 517,
   },
   518: {
@@ -24406,7 +24400,7 @@ const persons: PersonsData = {
     notes: 'Adress Tre Liljor 3, 113 44 STOCKHOLM.\nBor i Stockholm (AB).',
     occupations: ['Fil kand'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 518,
   },
   519: {
@@ -24451,7 +24445,7 @@ const persons: PersonsData = {
     notes: 'Studentexamen 1980.\nJur kand 1988.\nBor i Stockholm (AB).',
     occupations: ['Adress sandhamnsgatan 19 iv', '115 40  stockholm'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 519,
   },
   520: {
@@ -24497,7 +24491,7 @@ const persons: PersonsData = {
       'Adress Magnus Ladulåsgatan 33, 118 65 STOCKHOLM.\nStudentexamen 1985.\nCivilekonom 1990.\nSedan januari 1991 på Affärsdata inom Bonnier Information Semics.\nBor i Stockholm (AB).',
     occupations: ['Civilekonom'],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 520,
   },
   521: {
@@ -24560,7 +24554,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Direktör'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 521,
   },
   522: {
@@ -24605,7 +24599,7 @@ const persons: PersonsData = {
     notes: '1997.',
     occupations: ['Studerande'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 522,
   },
   523: {
@@ -24650,7 +24644,7 @@ const persons: PersonsData = {
     notes: '1998.',
     occupations: ['Studerande'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 523,
   },
   508: {
@@ -24728,7 +24722,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 508,
   },
   509: {
@@ -24792,7 +24786,7 @@ const persons: PersonsData = {
       'Realexamen i Karlskoga. Diplom i franska vid Sorbonne, Paris 1952.\nGenomgått 1-årig hushållsskola i Uppsala 1950-51. 1-årig sekreterarkurs vid Barlockinstitutet i Stockholm 1952-53.\nBor i Tucson, Arizona, USA.',
     occupations: ['Adress 5470 n via velazquez', 'Tucson', 'Arizona 85715', 'Usa'],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 509,
   },
   531: {
@@ -24856,7 +24850,7 @@ const persons: PersonsData = {
       'Examen vid University of California, Berkely 1956.\nSorbonne 1951 - 52.\nAnställd vid Schlitz Brewing Co och senare efter dess sammanslagning med Stroh Brewery Co därstädes. Har haft sex månaders uppdrag i Spanien 1961.\nPensionerad 1989.',
     occupations: ['Vice vd vid media service', 'Stroh brewery co'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 531,
   },
   510: {
@@ -24902,7 +24896,7 @@ const persons: PersonsData = {
       'Adress Sigurdsvägen 14, 182 64 DJURSHOLM.\nStudentexamen 1955 vid Lundsberg. Diplomkaufmann vid Wirtschafthauptschule i Mannheim 1962. Ekonomiassistent vid Nohab 1962-66, vid Bofors 1967-68. Från 1968 till 1971 var han ekonomichef vid Nohab. 1971-74 Controller vid Aremo-divisionen/Swedish Match, 1975-77 operation analysis där och 1978-81 divisionschef. 1982-83 VD vid Scandiaconsult AB, samt från 1984 VvD vid AB Carl Munters.\nBor i Djursholm (AB).',
     occupations: ['Direktör'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 510,
   },
   511: {
@@ -24966,7 +24960,7 @@ const persons: PersonsData = {
       'Adress Narzissenweg 3, CH-4102 Binningen, Schweiz.\nRealexamen 1954 i Karlskoga (T).\nFörskollärarexamen 1961 i Stockholm (AB).\nFörskollärare i Stockholm från 1962. Speciallärarutbildning 1967-68 i Stockholm.\nBor i Binningen, Schweiz.',
     occupations: ['Förskollärare'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 511,
   },
   537: {
@@ -25029,7 +25023,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Verkställande direktör'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 537,
   },
   156: {
@@ -25075,7 +25069,7 @@ const persons: PersonsData = {
       'Adress Invernessvägen 9, 182 76 STOCKSUND.\nCivilekonom 1986 i Stockholm (AB).\nArbetar sedan 1978 vid ASEA i Västerås.\nBor i Stocksund (AB).',
     occupations: ['Civilekonom'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 156,
   },
   391: {
@@ -25153,7 +25147,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 391,
   },
   392: {
@@ -25232,7 +25226,7 @@ const persons: PersonsData = {
       '(Tab 37 i GS).\nStudentexamen 1892 i Stockholm. Lantbrukselev på Østerby i Råby, Rekarne sn 1892-93. Elev vid Ultuna lantbruksinstitut 1893-95. Bokhållare på Södertuna i Frustuna sn 1895-97. Inspektor på Spellinge i V Harg sn 1897-98. Bokhållare på Østerby 1898?99. Arrenderade Bemersberg i Skattunge sn 1899-1920. Var därefter bosatt på Staby i Giresta sn till 1922 från vilken tid och till 1923 han arrenderade Strömsnäs i Bred sn. Ägde och brukade sedan 1923 Vallhof.\n"Med den avlidne har en av Uppsala läns främsta jordbrukare gått av tiden. ... Han arrenderade den under Kipplingebergs fideikommiss hörande egendomen Bemersberg. Med utmärkt nit och skicklighet ägnade han sig åt gårdens förvaltning ... och innehade för någon kortare tid Strömsnäs i Bred sn. Genom sitt energiska, skickliga arbete har han bragt denna egendom i utmärkt kultur. ...\nHelt givet togs H med så framstående egenskaper inom jordbruksområdet i anspråk för det arbete till dettas bästa, som utvecklas av vårt hushållningssällskap. Under åren 1909?1912 fungerade han som ordförande i Bälinge?Norunda hushållningsgille, i vilken egenskap han hade säte och stämma i det dåvarande förvaltningsutskottet. Sedan dettas omorganisation 1925 var han ordförande inom Åkerby och Jumkils hushållningskrets. Den hädangångne har även beklätt flera kommunala uppdrag, och på den tid järnvägsfrågorna i Uppland samlade större intresse än nu var han en av de största ivrarna för Kerstinbobanan. ... Högt värderad för sitt försynta, redbara och vänsälla väsen." (Tidn Uppsala 27/5 1926.)',
     occupations: ['Godsägare'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 392,
   },
   393: {
@@ -25311,7 +25305,7 @@ const persons: PersonsData = {
       '(Tab 36:147 i GS).\nGenomgick Skövde elementarskola för flickor. En av stiftarna av och vice ordförande i damföreningen "Lifbojen" i Stockholm.',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 393,
   },
   544: {
@@ -25389,7 +25383,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Civilingenjör'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 544,
   },
   394: {
@@ -25450,7 +25444,7 @@ const persons: PersonsData = {
       '(Tab 36:148 i GS).\nGenomgick Skövde flickskola och Schwartzska skolan i Stockholm (examen där 1893) samt Tekniska skolan i Stockholm 1893-94.\nFörestod åren 1905-15 studentpensionat i Uppsala och 1915-19 broderns hushåll på Bennersberg. Ägnade sig med framgång åt akvarellmålning.',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 394,
   },
   542: {
@@ -25528,7 +25522,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 542,
   },
   543: {
@@ -25589,7 +25583,7 @@ const persons: PersonsData = {
       '(Tab 37:146 i GS).\nStudentexamen 1945 i Stockholm (AB).\nMed kand 1948 i Stockholm (AB).\nMed lic och leg läkare 1953 i Stockholm (AB).\nSpecialist i barnaålderns invärtes sjukdomar 1960 och i barn- och ungdomspsykiatri 1974. 1953-55 diverse underläkarvikariat.\n1955-58 underläkare vid Norrköpings lasaretts barnklinik.\nInfektionskliniken 1958-60 och medicinkliniken 1960-61.\n1961-75 privatpraktiserande barnläkare i Norrköping. Från 1975 och fram till sin pensionering 1990 överläkare vid barn- och ungdomspsykiatriska verksamheten i Norrköping.',
     occupations: ['Barnläkare och barnpsykiater'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 543,
   },
   354: {
@@ -25667,7 +25661,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 354,
   },
   355: {
@@ -25727,7 +25721,7 @@ const persons: PersonsData = {
     notes: '(Tab 38:163 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 355,
   },
   356: {
@@ -25806,7 +25800,7 @@ const persons: PersonsData = {
       '(Tab 39 i GS).\nStudent i Lund 1822 och i Uppsala 1827. Studerade först juridik, sedan medicin. Med kand hösten 1840. Med lic 1843 och kir magister 1846. Underläkare vid Allmänna garnisonssjukhuset i Stockholm 1834-35. Stipendiat i fältläkarkåren 1835 och pensionär 1841. Tjf bataljonsläkare vid Livregementets dragonkår 1835 och tf sådan samma år. Extra bataljonsläkare vid instruktionsbataljonen på Drottningholm 1836 och vid Upplands regementes rekrytkompani där 1845.\nSlottsläkare på Drottningholm 1843, bataljonsläkare 1847, 1:e d:o 1852 och regementsläkare 1859 allt vid dragonkåren. Död i tjänsten.\nH var liksom fadern bestämd och fordrade lydnad, men rättvis och personligen älskvärd man, mycket omtyckt av dragonerna. Hans gästfria hem, prytt av fyra behagfulla döttrar, var en uppskattad tillflykt för de dragonofficerare, som var kommenderade till Drottningholm (dit kårens exercisskadron, rekryt- och remontmöten var förlagda), och dessa visade sin tacksamhet genom att resa en minnesvård på hans grav på Lovö kyrkogård, samt genom att anslå medel till minnesvårdens framtida underhåll.',
     occupations: ['Regementsläkare'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 356,
   },
   357: {
@@ -25884,7 +25878,7 @@ const persons: PersonsData = {
     notes: '(Tab 38:169 i GS).',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 357,
   },
   554: {
@@ -25962,7 +25956,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Prost'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 554,
   },
   358: {
@@ -26022,7 +26016,7 @@ const persons: PersonsData = {
     notes: '(Tab 38:170 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 358,
   },
   359: {
@@ -26082,7 +26076,7 @@ const persons: PersonsData = {
     notes: '(Tab 38:171 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 359,
   },
   360: {
@@ -26160,7 +26154,7 @@ const persons: PersonsData = {
     notes: '(Tab 38:172 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 360,
   },
   559: {
@@ -26238,7 +26232,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Prost'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 559,
   },
   361: {
@@ -26317,7 +26311,7 @@ const persons: PersonsData = {
       "(Tab 40 i GS).\nStudent i Uppsala 1837. Teoretisk och praktisk teol examen 1841. Prästvigd 1842. Disputerade för pastoralexamen 1853 och avlade denna examen 1859.\nVar åren 1838-40 informator hos friherre N Silferschöld på Koberg. Adjunkt i Forshälla församling hos svågerns bror, kyrkoherde Karl Ullman 1842-45. Adjunkt i domkyrkoförsamlingen i Göteborg 1845. Tf vice pastor där 1847 och vice pastor 1856 samt 1862 kyrkoherde i Starrkärrs pastorat, där han sedan verkade i nära 40 år och slöt sina dagar som stiftets senior. Kontraktsprost i domprosteriets norra kontrakt 1865-91. Ledamot av Göteborgs bibelsällskap 1853 och av Älvsborgs läns hushållningssällskap 1865. LVO 1885.\nHans liv och verksamhet \"framgick i det stilla, ty H hörde aldrig till dem, som göra mycket buller av sig. För något sådant var han varken anlagd eller hågad. Tvärtom var han en fridens och därtill en kärlekens man. Utan att vara på huvudets vägnar i särskilt framstående grad utrustad saknade han därför ej gåvor. Han hade framför allt ganska goda predikogåvor, med vilka han ock med trohet ockrade; och då härtill kommer, att han även var begåvad med en god mässröst, kunde han både som homilet och liturg göra sig gällande, varför han ock var en gärna hörd församlingslärare. Lägga vi därtill, att han hade ett yttre utseende i hög grad för sig, samt att hans uppträdande präglades av värdighet och allvar, må vi väl om honom säga att han i ordets både egentliga och goda bemärkelse var 'en präst i sin prydno'.\nH hade ett varmt hjärta för människors nöd, och detta ej blott för dem, som dvaldes i hans närmaste omgivning. Han hade tvärtom för kristendomens och den kristna kärlekens universalism både en vidsträckt syn och en innerlig nitälskan. Härav var en följd, att han på en tid, då det kyrkliga missionsintresset ännu till det mesta låg nere bland vårt folk och icke minst inom vårt stift, ådagalade ett öppet sinne för hednafolkens nöd och därmed även för missionens heliga sak samt i allmänhet för kyrkans kärleksverksamhet åt olika sidor. När därför vår svenska kyrka upprättat sin egen missionsverksamhet, låg denna honom mycket om hjärtat. --- I sin umgängelse var H en behaglig och älskvärd man med ett nobelt och fint sätt. Där vilade s a s en ljuv och angenäm doft över hela hans uppträdande; ja, där var ock i vissa avseenden i hans väsende och sätt något kvinnligt vekt, på samma gång han i andra avseenden var manligt härdad mer än de flesta. I senare hänseendet tillåta vi oss erinra om, hurusom de ej var ovanligt att få se den onekligen vackre mannen ända in på ålderdomen kalla vinterdagar vandra på stiftstadens gator, klädd endast i sin prästdräkt utan några ytterplagg. Vi skola ock sent glömma den både friska och ädla patriarkaliska gestalten, sådan den tedde sig för oss, när han ännu på den sena ålderns dagar med livligt intresse deltog i våra prästsällskapssammanträden eller andra dylika möten. --- H hade utan tvivel en estetisk läggning; för skön konst var han därför ock intresserad och ville gärna njuta därav. Men framför allt var han intresserad av sin heliga kallelse som en Herrans tjänare i predikoämbetet; och han tog därför ock sin ämbetsgärning på helt allvar. Det kändes ock påkostande för honom att för ålderdomsskröplighetens skull nödgas lämna allt mer och mer av detsamma. Han hördes ofta de senare åren yttra sin undergivna förundran däröver, att Øverherden lät honom gå kvar så länge, allt mer och mer oduglig för ämbetets verk, under det att många yngre medarbetare kallades bort från ämbetsfältet. Måhända låg det sanning uti, vad vi vid ett sådant tillfälle hörde en vida yngre ämbetsbroder än den gamle yttra, nämligen att Herren låter kanske den gamle leva därför, att 'vi yngre skola ha något att se på'. Och vi tro, att han var värd att 'se på', att han i mer än ett avseende var för oss föredömlig. ---\" (Göteborgs Stift-tidning 16/7 1903. Utförlig biografi se Carl S Lindblad \"Till minnet av Lechard Josias Hegardt\", Göteborg 1910.) Under de senare åren av sitt liv var H blind. Tacksamma församlingsbor har rest en minnesvård på hans grav.",
     occupations: ['Kontraktsprost'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 361,
   },
   362: {
@@ -26395,7 +26389,7 @@ const persons: PersonsData = {
     notes: '(Tab 38:185 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 362,
   },
   568: {
@@ -26473,7 +26467,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 568,
   },
   363: {
@@ -26551,7 +26545,7 @@ const persons: PersonsData = {
     notes: '(Tab 38:186 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 363,
   },
   569: {
@@ -26629,7 +26623,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Handlande'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 569,
   },
   549: {
@@ -26707,7 +26701,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 549,
   },
   550: {
@@ -26767,7 +26761,7 @@ const persons: PersonsData = {
     notes: '(Tab 39:165 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 550,
   },
   551: {
@@ -26845,7 +26839,7 @@ const persons: PersonsData = {
     notes: '(Tab 39:166 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 551,
   },
   572: {
@@ -26923,7 +26917,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 572,
   },
   552: {
@@ -26986,7 +26980,7 @@ const persons: PersonsData = {
     notes: '(Tab 39:167 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 552,
   },
   573: {
@@ -27064,7 +27058,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Godsägare'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 573,
   },
   553: {
@@ -27142,7 +27136,7 @@ const persons: PersonsData = {
     notes: '(Tab 39:168 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 553,
   },
   574: {
@@ -27220,7 +27214,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Handlande'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 574,
   },
   560: {
@@ -27298,7 +27292,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 560,
   },
   561: {
@@ -27359,7 +27353,7 @@ const persons: PersonsData = {
       '(Tab 40:174 i GS).\nStudentexamen 1876.\nVolontär vid Bohusläns regemente 1877.\nElev vid Krigshögskolan samma år.\nOfficersexamen 1878.\nUnderlöjtnant vid nämnda regemente samma år.\nVistades 1885-86 på Madeira för att försöka bota den lungsjukdom, som han dog av 1887.',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 561,
   },
   562: {
@@ -27438,7 +27432,7 @@ const persons: PersonsData = {
       '(Tab 41 i GS).\nStudentexamen 1878 i Göteborg. Med fil kand 1884 i Uppsala och med kand 1889 i Stockholm. Med lic och leg läkare där 1894. Leg sjukgymnast 1888. Förestod sjukgymnastiken vid Ramlösa hälsobrunn 1888-92. Praktiserande läkare i Helsingborg sedan 1894. Hade under en lång följd av år från 1897 till 1915 årligen längre eller kortare tider förordnande som tf distriktsläkare i Helsingborg. Blev ordinarie sådan 1915. Besiktningsläkare för minderåriga anställda vid industrier 1901. Skolläkare 1905 och företagsläkare vid Helsingborgs Kopparverk 1906. Läkare vid stadens observationsplats för fartyg från smittad ort 1914.\nMedlem av Helsingborgs nykterhetsnämnd sedan 1916 och sedan 1919 av medicinalstyrelsen förordnad revisor i Föreningen för bistånd åt vanföra i Skåne.\n"Sin främsta läkargärning har han kanske presterat såsom skolläkare vid Helsingborgs folkskolor. På detta sitt verksamhetsområde har dr Hegardt nedlagt ett osjälviskt och högt uppskattat arbete. I samband därmed står det stora och fruktbringande intresse han visat sommarkoloniverksamheten. För ungdomens fysiska fostran har dr Hegardt varit en ivrig förkämpe och ej minst såsom mångårig ordförande i Helsingborgs simsällskap har han i detta avseende uträttat ett gott arbete." (Utdrag ur artikel i Helsingborgstidn vid H:s 70-årsdag 1927) Dr Hegardt var initiativtagare till grundandet av Föreningen Mjölkdroppen i Helsingborg, som var föregångare till nutidens barnavårdscentral. Föreningen bildades 1904.\nDr Hegardt var också, vad man nuförtiden kallar frisksportare. Om det skrev en Helsingborgstidning vid H:s 65-årsdag: " --- Dessutom är dr Hegardt nestor i den lilla heroiska trupp helsingborgare, som kallas vinterbadare och ytterrocksklädda och i all synnerhet pälsklädda herrar väcker hans medömkan.\nTrots de 65 åren har hans härdade heroism inte fått den minsta lilla knäck, medan många mycket yngre av oss andra, som i ungdomligt övermod stodo som hjältar vid kavajidealet, på grund av begynnande skröplighet krupit in i allt tjockare ytterplagg. Vi gör honnör åt 65-åringen, som i vinter såväl som sommar promenerar omkring i vår blåsiga stad i fladdrande, oknäppt kavaj! ---" En särdeles kall vinter stod det också att läsa att "Idag är det kallt, ty dr Hegardt har knäppt översta knappen i kavajen!" Vid H:s bortgång skrev en Helsingborgstidning: " --- Genom sitt sympatiska och flärdfria väsen har dr Hegardt gjort sig allmänt omtyckt och värderad. Nu vid hans bortgång skall hans minne behållas i tacksam erinran av alla, unga som gamla, vilka kommit i förbindelse med den gamle, gode doktorn."',
     occupations: ['Stadsläkare'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 562,
   },
   563: {
@@ -27516,7 +27510,7 @@ const persons: PersonsData = {
     notes: '(Tab 40:180 i GS).\nHarriet var kusin med sin man.',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 563,
   },
   555: {
@@ -27611,7 +27605,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Prost'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 555,
   },
   564: {
@@ -27668,11 +27662,10 @@ const persons: PersonsData = {
     marriages: [],
     middleNames: ['Jonatan'],
     mother: 560,
-    notes:
-      '(Tab 40:181 i GS).\nStudentexamen 1880 i Stockholm (AB).\nTeol fil examen 1884 i Lund (M).',
+    notes: '(Tab 40:181 i GS).\nStudentexamen 1880 i Stockholm (AB).\nTeol fil examen 1884 i Lund (M).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 564,
   },
   565: {
@@ -27750,7 +27743,7 @@ const persons: PersonsData = {
     notes: '(Tab 40:182 i GS).\nTeresia var kusin och svägerska med sin man.',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 565,
   },
   566: {
@@ -27810,7 +27803,7 @@ const persons: PersonsData = {
     notes: '(Tab 40:183 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 566,
   },
   567: {
@@ -27880,7 +27873,7 @@ const persons: PersonsData = {
     notes: '(Tab 40:184 i GS).',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 567,
   },
   582: {
@@ -27958,7 +27951,7 @@ const persons: PersonsData = {
     notes: 'Kapellpredikant på Käringön',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 582,
   },
   577: {
@@ -28036,7 +28029,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 577,
   },
   578: {
@@ -28096,7 +28089,7 @@ const persons: PersonsData = {
     notes: '(Tab 41:176 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 578,
   },
   579: {
@@ -28175,7 +28168,7 @@ const persons: PersonsData = {
       '(Tab 41:177 i GS).\nStudentexamen 1916 i Helsingborg. Teol fil examen 1922 och teol kand 1928 i Lund. Prakt teol prov 1929 samt prästvigd samma år. Missiv i Sturkö?Tjurkö pastorat i Blekinge 192931. Kyrkoherde i Sjörups och Katslösa pastorat i Malmöhus län vid Skånes sydkust 1931 med tillträde 1933. Avgick med pension 1961. Kontraktsprost i Ljunits och Herrestads kontrakt 1949.61. LVO.\nOrdförande i Sjörups och Katslösas barnavårdsnämnder och skolstyrelser 1932?52. Vid storkommunernas genomförande 1952 ordförande i Ljunits storkommuns skolstyrelse 1952-58. Hemvärnsman 1940?61 samt stf hemvärnsområdesbefälhavare från 1948. Hemvärnets tjänstemärken i silver, guld och guld med emalj samt tilldelad hemvärnets förtjänstmedalj i silver 1957.\n"... Under prosten Hegardts studietid var den s k liberala teologien så gott som allenarådande. Som förkunnare har prosten förstått tillgodogöra sig det bestående i denna, men kastat loss från det tidsbestämda, utan att därför försvära sig åt någon viss teologisk eller kyrklig moderiktning. Ej heller är han benägen att utan vidare införa nyheter i församlingsarbetet. Kritiskt betraktar han allt nytt efterhand som det kommer fram och avgör själv, vad han anser sig böra acceptera.\nDet går väl samman med hans frimodiga väsen som alltid gjort honom uppskattad liksom hans tjänstaktighet och oföränderligt vänliga sätt mot alla. Han har därför blivit värderad i alla kretsar och förvärvat sig tillgivna vänner inom sina församlingar och vida omkring ...." (Y A 13/4 1957 vid H:s 60?årsdag.) "... Vi, hans gamla kontraktister, glömmer aldrig hur glatt och vänligt han tog emot oss i Sjörups prästgård antingen vi kom till kvartalskonventet eller för att bara hälsa på. Som kontraktsprost var han aldrig den stränge chefen. Han föredrog att leda oss med mild hand och i synnerhet våra konvent begagnade han sig av för att i samtalets form få fason på våra gemensamma angelägenheter och företag. Det må nu ha gällt församlingslivet eller samlingen i kontraktssammanhang.\nFör min inre blick ser jag Helge Hegardt stå där mitt ibland oss och med ett gott, någon gång spjuveraktigt, leende göra sina tillägg och om så behövdes gjuta olja på de heta diskussionens heta vågor. Och när jag ser honom så,slår det mig att det ligger något symboliskt i att han fick en god bråd död. Ett långsamt avtynande hade på något sätt inte gått ihop med hans livfulla personlighet....\nUnder den tid prosten Hegardt verkade i Sjörup och Katslösa satt han intill kommunindelningsreformen som skolrådsordförande i båda församlingarna och genomförde en väsentlig förbättring av skolväsendet där. Ljunits storkommun visste också att begagna sig av den erfarne skolmannen. Prosten Hegardt var sålunda ordförande i Ljunits skolstyrelse sedan dess tillkomst.\nFöre storkommuns tid var prosten Hegardt i många år ordförande i Sjörups och Katslösa barnavårdsnämnder. Han var också kyrkostämmornas ordförande. I dessa befattningar och som ordförande i församlingarnas kyrkoråd visade han sig alltid mån om kyrkorna. Ett synligt resultat härav var bland andra den pietetsfulla restaureringen av Sjörups vackra kyrka....\nMatlagskamraterna under hans vistelse vid universitetet i Lund spådde att teologie studeranden Helge Hegardt skulle bli kontraktsprost. Också anförtrodde honom stiftets biskop den 5 oktober 1959 det vördiga prostämbetet i Ljunits och Herrestads kontrakt. För den initierade kom denna utnämning inte som en överraskning. ...." (SDS 25/8 1964)',
     occupations: ['Kontraktsprost'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 579,
   },
   580: {
@@ -28236,7 +28229,7 @@ const persons: PersonsData = {
       "(Tab 41:178 i GS).\nHandelsexamen 1916 i Helsingborg (M).\nAnställd vid AB Fallenius och Leffler i Göteborg 1916-17 och vid Brand- och livförsäkrings AB Svea där 1919 samt 1919-20 i Comptoir du Nord i Dunkerque, Frankrike. Vistades sedan först i Paris, därefter i St Dye sur Loire invid Blois till 1921 och genomgick samma år Pitman's School i London.\n1923-27 anställd vid Texas Co AB i Stodkholm och Malmö.\n1929-36 vid AB Naftasyndikatet i Helsingborg. Under åren 1937-39 drev han egen firma i Stockholm under firma Hegardt och Co. Från 1939 kamrer vid Canos i Påarp, där han arbetade till 1962, då han insjuknade i cancer och avled två år senare.\nStyrelseledamot i Helsingborgs Simsällskap och sekreterare i tävlingsutskottet 1932-36. Mycket duktig tävlingssimmare i yngre dagar. Litterärt intresserad.",
     occupations: ['Kamrer'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 580,
   },
   581: {
@@ -28296,7 +28289,7 @@ const persons: PersonsData = {
     notes: '(Tab 41:179 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 581,
   },
   586: {
@@ -28374,7 +28367,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Organist'],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 586,
   },
   587: {
@@ -28470,7 +28463,7 @@ const persons: PersonsData = {
       'Ingenjörsexamen 1953 i Malmö (M).\nAnställd 1955 vid Tetra Pak AB i Lund. Under åren 1958-64 servicechef för Tetra Pak i Toronto, Canada. Sedan 1964 tillbaka vid Tetra Pak i Lund.',
     occupations: ['Ingenjör'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 587,
   },
   588: {
@@ -28534,7 +28527,7 @@ const persons: PersonsData = {
       'Adress Nils Holgerssons väg 32, 274 56 ABBEKÅS.\nNormalskolekompetens 1951 i Lund (M).\nFörsäkringstjänsteman vid Skåne-Malmö till 1955. Från 1978 läkarsekreterare vid njurkliniken vid Lunds lasarett.\nBor i Abbekås, Skivarp (M).',
     occupations: ['Läkarsekreterare'],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 588,
   },
   599: {
@@ -28597,7 +28590,7 @@ const persons: PersonsData = {
     notes: 'Oforskat Fullständiga uppgifter om föräldrar (sid 4).',
     occupations: ['Ingenjör'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 599,
   },
   589: {
@@ -28657,11 +28650,10 @@ const persons: PersonsData = {
     ],
     middleNames: ['Lechard'],
     mother: 586,
-    notes:
-      'Adress Genvägen 5, 232 02 ÅKARP.\nSedan 1961 anställd vid AB Tetra Pak i Lund.\nBor i Åkarp (M).',
+    notes: 'Adress Genvägen 5, 232 02 ÅKARP.\nSedan 1961 anställd vid AB Tetra Pak i Lund.\nBor i Åkarp (M).',
     occupations: ['Ingenjör'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 589,
   },
   590: {
@@ -28725,7 +28717,7 @@ const persons: PersonsData = {
       'Adress Tordönsvägen 4 H, 222 27 LUND.\nNormalskolekompetens 1956 i Ystad (M).\nLeg sjuksköterska 1960 i Lund (M).\nFrån 1966 mottagningssköterska på njurkliniken vid Lunds lasarett.\nBor i Lund (M).',
     occupations: ['Leg sjuksköterska'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 590,
   },
   608: {
@@ -28788,7 +28780,7 @@ const persons: PersonsData = {
     notes: 'Driver egen firma, ARLO-pack.',
     occupations: ['Ingenjör', 'Fabrikant'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 608,
   },
   591: {
@@ -28869,7 +28861,7 @@ const persons: PersonsData = {
       'Adress Spårsnögatan 19, 226 52 LUND.\nStudentexamen 1965 i Lund (M).\nArbetade åren 1973-88 vid intagningsnämnden för gymnasieskolan i Lund, Malmö och Trelleborg. 1989-91 anställd vid länsskolnämnden i Malmöhus län, Malmö. Sedan 1992 IT-konsult vid kyrkoförvaltningen Lund. Redaktör för "nya släktkalendern".\nBor i Lund (M).',
     occupations: ['Byrådirektör'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 591,
   },
   594: {
@@ -28947,7 +28939,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Fil dr'],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 594,
   },
   596: {
@@ -29011,7 +29003,7 @@ const persons: PersonsData = {
       'Adress Kakelvägen ?, 227 34 LUND.\nCivilingenjörsexamen 1984 i Lund (M).\nSedan 1985 anställd vid Statoil Petrokemi i Stenungsund.\nArbetar sedan 1992 vid Tetra Laval AB, Lund.\nBor i Lund (M).',
     occupations: ['Civilingenjör'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 596,
   },
   597: {
@@ -29053,11 +29045,10 @@ const persons: PersonsData = {
     marriages: [],
     middleNames: ['Lechard'],
     mother: 594,
-    notes:
-      'Adress Helgeandsgatan 20 A, 223 54 LUND.\nStudentexamen 1983 i Ystad (M).\nBor i Lund (M).',
+    notes: 'Adress Helgeandsgatan 20 A, 223 54 LUND.\nStudentexamen 1983 i Ystad (M).\nBor i Lund (M).',
     occupations: ['Tekn stud'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 597,
   },
   598: {
@@ -29124,7 +29115,7 @@ const persons: PersonsData = {
     notes: 'Studentexamen 1985 i Ystad (M).',
     occupations: ['Konstnär'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.WOMAN,
     id: 598,
   },
   604: {
@@ -29187,7 +29178,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Leg sjuksköterska'],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 604,
   },
   605: {
@@ -29229,11 +29220,10 @@ const persons: PersonsData = {
     marriages: [],
     middleNames: ['Pontus', 'Lechard'],
     mother: 604,
-    notes:
-      'Adress Ø Vallgatan 33, 223 61 LUND.\nStudentexamen 1985 i Lund (M).\nReservofficer 1987.\nBor i Lund (M).',
+    notes: 'Adress Ø Vallgatan 33, 223 61 LUND.\nStudentexamen 1985 i Lund (M).\nReservofficer 1987.\nBor i Lund (M).',
     occupations: ['Studerande'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 605,
   },
   606: {
@@ -29284,7 +29274,7 @@ const persons: PersonsData = {
     notes: 'Adress Päronvägen 19, 232 02 ÅKARP.\nStudentexamen i Lund (M).\nBor i Åkarp (M).',
     occupations: ['Kantor'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 606,
   },
   607: {
@@ -29329,7 +29319,7 @@ const persons: PersonsData = {
     notes: 'Adress N Skolgatan 18, 211 52 MALMØ.\nBor i Åkarp (M).',
     occupations: ['Studerande'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 607,
   },
   609: {
@@ -29392,7 +29382,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Barnmorska'],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 609,
   },
   610: {
@@ -29456,7 +29446,7 @@ const persons: PersonsData = {
       'Genomgått 2-årig gymnasieutbildning vid Komvux, Lund 1987.\n1988-91 anställd vid Skandia försäkringsbolag i Malmö. 1991 - 2000 anställd vid AB Draco, sedermera Astra Zeneca i Lund.',
     occupations: ['Sekreterare'],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 610,
   },
   611: {
@@ -29501,7 +29491,7 @@ const persons: PersonsData = {
     notes: 'Adress Dahlströmsgatan 4 D, 414 65 GØTEBORG.\nBor i Göteborg (O).',
     occupations: ['Studerande'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 611,
   },
   612: {
@@ -29546,7 +29536,7 @@ const persons: PersonsData = {
     notes: 'Adress Folkparksvägen 5, 227 56 LUND.\nBor i Lund (M).',
     occupations: ['Studerande'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 612,
   },
   613: {
@@ -29591,7 +29581,7 @@ const persons: PersonsData = {
     notes: 'Adress Spårsnögatan 19, 226 52 LUND.\nBor.',
     occupations: ['Studerande'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 613,
   },
   614: {
@@ -29636,7 +29626,7 @@ const persons: PersonsData = {
     notes: '1997.',
     occupations: ['Studerande'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 614,
   },
   22: {
@@ -29714,7 +29704,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 22,
   },
   23: {
@@ -29781,7 +29771,7 @@ const persons: PersonsData = {
       '(Tab 42:192 i GS).\nSkrivare vid sjötullkontoret i Marstrand.\nMaterialskrivare vid 4:e fortifikationsbrigaden 1763-02-22.',
     occupations: ['Stadskassör i marstrand'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 23,
   },
   626: {
@@ -29847,7 +29837,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 626,
   },
   24: {
@@ -29907,7 +29897,7 @@ const persons: PersonsData = {
     notes: '(Tab 42:193 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 24,
   },
   25: {
@@ -29986,7 +29976,7 @@ const persons: PersonsData = {
       '(Tab 42:194 i GS).\nGenom inbördes testamente av 17/1 1802 donerade makarna en summa (som 1901 hade vuxit till 4000 kr) till sådana fattiga i Marstrand, vilka icke anlita den allmänna fattigvården. Donationen utbetalades efter Katarinas död 1816.',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 25,
   },
   627: {
@@ -30056,7 +30046,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Grosshandlare och rådman'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 627,
   },
   166: {
@@ -30099,7 +30089,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Ambassadör'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 166,
   },
   167: {
@@ -30142,7 +30132,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Länsåklagare'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 167,
   },
   279: {
@@ -30192,7 +30182,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 279,
   },
   276: {
@@ -30263,7 +30253,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 276,
   },
   256: {
@@ -30326,7 +30316,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 256,
   },
   483: {
@@ -30384,7 +30374,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Sjukgymnast'],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 483,
   },
   158: {
@@ -30447,7 +30437,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 158,
   },
   132: {
@@ -30495,7 +30485,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 132,
   },
   623: {
@@ -30531,7 +30521,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Representant'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 623,
   },
   622: {
@@ -30575,7 +30565,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 622,
   },
   625: {
@@ -30653,7 +30643,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Verkstadschef vid flyget'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 625,
   },
   624: {
@@ -30731,7 +30721,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Sömmerska'],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 624,
   },
   143: {
@@ -30783,7 +30773,7 @@ const persons: PersonsData = {
       'Adress Billdals hagenvägen 31, 427 37 BILLDAL.\nStuderat statsvetenskap och informationsteknik vid universitetet i Göteborg. Egen företagare: Extradata med utbildning inom dataområdet.\nBor i Göteborg (O).',
     occupations: ['Egen företagare'],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 143,
   },
   144: {
@@ -30834,7 +30824,7 @@ const persons: PersonsData = {
     notes: 'Adress Gamla Särövägen, Pl 6915, 430 41 KULLAVIK.\nBor i Göteborg (O).',
     occupations: ['Ekon stud och jur stud'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 144,
   },
   142: {
@@ -30892,7 +30882,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 142,
   },
   168: {
@@ -30925,11 +30915,10 @@ const persons: PersonsData = {
     ],
     middleNames: [],
     mother: null,
-    notes:
-      'Oforskat Fullständiga uppgifter (sid 1).\nOforskat Fullständiga uppgifter om föräldrar (sid 4).',
+    notes: 'Oforskat Fullständiga uppgifter (sid 1).\nOforskat Fullständiga uppgifter om föräldrar (sid 4).',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 168,
   },
   271: {
@@ -30992,7 +30981,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 271,
   },
   571: {
@@ -31028,7 +31017,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Lantbrukare'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 571,
   },
   570: {
@@ -31064,7 +31053,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 570,
   },
   576: {
@@ -31100,7 +31089,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Biskop i göteborg'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 576,
   },
   575: {
@@ -31136,7 +31125,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 575,
   },
   558: {
@@ -31207,7 +31196,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 558,
   },
   585: {
@@ -31243,7 +31232,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Handlande'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 585,
   },
   584: {
@@ -31279,7 +31268,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 584,
   },
   593: {
@@ -31344,7 +31333,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Vice häradshövding'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 593,
   },
   592: {
@@ -31417,7 +31406,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 592,
   },
   616: {
@@ -31453,7 +31442,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Folkskolinspektör'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 616,
   },
   615: {
@@ -31489,7 +31478,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 615,
   },
   620: {
@@ -31547,7 +31536,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 620,
   },
   619: {
@@ -31605,7 +31594,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 619,
   },
   26: {
@@ -31635,7 +31624,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Kyrkoherde'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 26,
   },
   55: {
@@ -31671,7 +31660,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Kyrkoherde'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 55,
   },
   54: {
@@ -31707,7 +31696,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 54,
   },
   57: {
@@ -31743,7 +31732,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Handlande och assessor'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 57,
   },
   56: {
@@ -31779,7 +31768,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 56,
   },
   81: {
@@ -31815,7 +31804,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Brukspatron'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 81,
   },
   80: {
@@ -31851,7 +31840,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 80,
   },
   92: {
@@ -31887,7 +31876,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Ekonomidirektör'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 92,
   },
   91: {
@@ -31923,7 +31912,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 91,
   },
   103: {
@@ -31959,7 +31948,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Postmästare'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 103,
   },
   102: {
@@ -31995,7 +31984,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 102,
   },
   127: {
@@ -32031,7 +32020,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Redaktör'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 127,
   },
   126: {
@@ -32067,7 +32056,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Kostnärinna'],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 126,
   },
   135: {
@@ -32103,7 +32092,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Köpman'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 135,
   },
   134: {
@@ -32139,7 +32128,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 134,
   },
   148: {
@@ -32175,7 +32164,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Sjökapten'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 148,
   },
   147: {
@@ -32211,7 +32200,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 147,
   },
   164: {
@@ -32247,7 +32236,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Ingenjör'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 164,
   },
   163: {
@@ -32283,7 +32272,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 163,
   },
   185: {
@@ -32319,7 +32308,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Lantbrukare'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 185,
   },
   184: {
@@ -32355,7 +32344,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 184,
   },
   187: {
@@ -32391,7 +32380,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Bergsbruksidkare'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 187,
   },
   186: {
@@ -32427,7 +32416,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 186,
   },
   211: {
@@ -32463,7 +32452,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Gruvarbetare'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 211,
   },
   210: {
@@ -32499,7 +32488,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 210,
   },
   216: {
@@ -32535,7 +32524,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Husägare'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 216,
   },
   215: {
@@ -32571,7 +32560,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 215,
   },
   227: {
@@ -32607,7 +32596,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Lokomotivförare'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 227,
   },
   226: {
@@ -32643,7 +32632,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 226,
   },
   225: {
@@ -32679,7 +32668,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Arbetare'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 225,
   },
   224: {
@@ -32715,7 +32704,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 224,
   },
   238: {
@@ -32751,7 +32740,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Arrendator'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 238,
   },
   237: {
@@ -32787,7 +32776,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 237,
   },
   241: {
@@ -32823,7 +32812,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 241,
   },
   240: {
@@ -32859,7 +32848,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 240,
   },
   162: {
@@ -32910,7 +32899,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Direktör'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 162,
   },
   161: {
@@ -32968,7 +32957,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 161,
   },
   258: {
@@ -33004,7 +32993,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 258,
   },
   257: {
@@ -33040,7 +33029,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 257,
   },
   264: {
@@ -33076,7 +33065,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Hyttarbetare'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 264,
   },
   263: {
@@ -33112,7 +33101,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 263,
   },
   278: {
@@ -33148,7 +33137,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Hemmansägare'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 278,
   },
   277: {
@@ -33184,7 +33173,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 277,
   },
   644: {
@@ -33220,7 +33209,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Snickare'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 644,
   },
   643: {
@@ -33256,7 +33245,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 643,
   },
   261: {
@@ -33292,7 +33281,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 261,
   },
   260: {
@@ -33328,7 +33317,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 260,
   },
   303: {
@@ -33364,7 +33353,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Grosshandlare och häradshövding'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 303,
   },
   302: {
@@ -33400,7 +33389,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 302,
   },
   310: {
@@ -33436,7 +33425,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Lantbrukare'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 310,
   },
   309: {
@@ -33472,7 +33461,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 309,
   },
   315: {
@@ -33508,7 +33497,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Skomakare'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 315,
   },
   314: {
@@ -33544,7 +33533,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 314,
   },
   339: {
@@ -33614,7 +33603,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 339,
   },
   338: {
@@ -33684,7 +33673,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 338,
   },
   346: {
@@ -33720,7 +33709,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Lantbrukare'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 346,
   },
   345: {
@@ -33756,7 +33745,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 345,
   },
   350: {
@@ -33792,7 +33781,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Kyrkoherde'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 350,
   },
   349: {
@@ -33828,7 +33817,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 349,
   },
   377: {
@@ -33864,7 +33853,7 @@ const persons: PersonsData = {
     notes: 'Adliga ätten nr 2244.',
     occupations: ['Major'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 377,
   },
   376: {
@@ -33900,7 +33889,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 376,
   },
   396: {
@@ -33936,7 +33925,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Handlande'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 396,
   },
   395: {
@@ -33972,7 +33961,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 395,
   },
   422: {
@@ -34008,7 +33997,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Kapten'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 422,
   },
   421: {
@@ -34044,7 +34033,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 421,
   },
   424: {
@@ -34080,7 +34069,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Köpman'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 424,
   },
   423: {
@@ -34116,7 +34105,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 423,
   },
   440: {
@@ -34182,7 +34171,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 440,
   },
   439: {
@@ -34233,7 +34222,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 439,
   },
   444: {
@@ -34291,7 +34280,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Grosshandlare'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 444,
   },
   443: {
@@ -34342,7 +34331,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 443,
   },
   451: {
@@ -34378,7 +34367,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 451,
   },
   450: {
@@ -34414,7 +34403,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 450,
   },
   454: {
@@ -34450,7 +34439,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Godsägare'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 454,
   },
   453: {
@@ -34486,7 +34475,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 453,
   },
   457: {
@@ -34522,7 +34511,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Ingenjör'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 457,
   },
   456: {
@@ -34558,7 +34547,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 456,
   },
   459: {
@@ -34594,7 +34583,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Domänintendent'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 459,
   },
   458: {
@@ -34630,7 +34619,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 458,
   },
   472: {
@@ -34674,7 +34663,7 @@ const persons: PersonsData = {
     notes: 'Tog namnet Wendler.\nBrukade gården Söran, sedermera affärsman i Halmstad.',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 472,
   },
   471: {
@@ -34710,7 +34699,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 471,
   },
   661: {
@@ -34740,7 +34729,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 661,
   },
   487: {
@@ -34785,7 +34774,7 @@ const persons: PersonsData = {
     notes: '2008.',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 487,
   },
   492: {
@@ -34836,7 +34825,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Inköpschef'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 492,
   },
   491: {
@@ -34887,7 +34876,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 491,
   },
   494: {
@@ -34923,7 +34912,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Godsägare'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 494,
   },
   493: {
@@ -34959,7 +34948,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 493,
   },
   502: {
@@ -34995,7 +34984,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Domprost'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 502,
   },
   501: {
@@ -35031,7 +35020,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 501,
   },
   514: {
@@ -35089,7 +35078,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 514,
   },
   513: {
@@ -35140,7 +35129,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 513,
   },
   516: {
@@ -35176,7 +35165,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 516,
   },
   515: {
@@ -35212,7 +35201,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 515,
   },
   525: {
@@ -35248,7 +35237,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 525,
   },
   524: {
@@ -35284,7 +35273,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 524,
   },
   530: {
@@ -35320,7 +35309,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 530,
   },
   529: {
@@ -35356,7 +35345,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 529,
   },
   536: {
@@ -35392,7 +35381,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 536,
   },
   535: {
@@ -35428,7 +35417,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 535,
   },
   539: {
@@ -35464,7 +35453,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 539,
   },
   538: {
@@ -35500,7 +35489,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 538,
   },
   541: {
@@ -35536,7 +35525,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Godsägare'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 541,
   },
   540: {
@@ -35572,7 +35561,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 540,
   },
   546: {
@@ -35608,7 +35597,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Godsägare'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 546,
   },
   545: {
@@ -35644,7 +35633,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 545,
   },
   548: {
@@ -35680,7 +35669,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Tullförvaltare'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 548,
   },
   547: {
@@ -35716,7 +35705,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 547,
   },
   36: {
@@ -35794,7 +35783,7 @@ const persons: PersonsData = {
     notes: '(Tab 3:11 i GS).\nDubbelkusin med sin man.',
     occupations: [],
     references: ['se tab 45'],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 36,
   },
   662: {
@@ -35854,7 +35843,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Grosshandlare och rådman'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 662,
   },
   526: {
@@ -35917,7 +35906,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Förlagsredaktör'],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 526,
   },
   664: {
@@ -35953,7 +35942,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 664,
   },
   663: {
@@ -35989,7 +35978,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 663,
   },
   133: {
@@ -36034,7 +36023,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 133,
   },
   287: {
@@ -36112,7 +36101,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 287,
   },
   295: {
@@ -36178,7 +36167,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 295,
   },
   11: {
@@ -36241,7 +36230,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 11,
   },
   665: {
@@ -36311,7 +36300,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Bagarmästare'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 665,
   },
   14: {
@@ -36369,7 +36358,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 14,
   },
   666: {
@@ -36435,7 +36424,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 666,
   },
   667: {
@@ -36480,7 +36469,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 667,
   },
   668: {
@@ -36525,7 +36514,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 668,
   },
   595: {
@@ -36589,7 +36578,7 @@ const persons: PersonsData = {
       'Adress Fredrika Wallis väg 11, 274 56 ABBEKÅS.\nOforskat Fullständiga uppgifter om föräldrar (sid 4).\nTransportekonomisk examen vid Högskolan i Växjö 1984 i Växjö (G).',
     occupations: ['Skeppningschef'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 595,
   },
   159: {
@@ -36634,7 +36623,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 159,
   },
   629: {
@@ -36670,7 +36659,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 629,
   },
   628: {
@@ -36706,7 +36695,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 628,
   },
   462: {
@@ -36750,7 +36739,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Bokhandlare i lerum'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 462,
   },
   463: {
@@ -36787,7 +36776,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Professor i uppsala'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 463,
   },
   464: {
@@ -36830,7 +36819,7 @@ const persons: PersonsData = {
     notes: 'Skild 1976.\nBor i Stockholm (AB).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 464,
   },
   669: {
@@ -36866,7 +36855,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Vd i alfa laval'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 669,
   },
   466: {
@@ -36902,7 +36891,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 466,
   },
   465: {
@@ -36938,7 +36927,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 465,
   },
   467: {
@@ -36974,7 +36963,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 467,
   },
   468: {
@@ -37010,7 +36999,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 468,
   },
   478: {
@@ -37053,7 +37042,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 478,
   },
   477: {
@@ -37096,7 +37085,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 477,
   },
   474: {
@@ -37160,7 +37149,7 @@ const persons: PersonsData = {
       'Student 1957 i Kristianstad (L).\nSekreterarutbildning i Göteborg (O).\nEtt år på Irland =195-9=-.\nArbetade därefter på universitetet i Lund fram till giftermålet.',
     occupations: ['Sekreterare'],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 474,
   },
   670: {
@@ -37220,11 +37209,10 @@ const persons: PersonsData = {
     ],
     middleNames: ['Åke'],
     mother: null,
-    notes:
-      'Student 1957 i Kristianstad (L).\nOfficersutbildning. Verksam vid pansartrupperna i Hässleholm.',
+    notes: 'Student 1957 i Kristianstad (L).\nOfficersutbildning. Verksam vid pansartrupperna i Hässleholm.',
     occupations: ['Øverste'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 670,
   },
   671: {
@@ -37261,7 +37249,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 671,
   },
   672: {
@@ -37298,7 +37286,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 672,
   },
   673: {
@@ -37335,7 +37323,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 673,
   },
   674: {
@@ -37372,7 +37360,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 674,
   },
   475: {
@@ -37436,7 +37424,7 @@ const persons: PersonsData = {
       'Skild 1985 .\nStudentexamen 1961 .\nSjuksköterskeexamen 1965 .\nVårdlärarexamen 1970 .\nFil kand 1989 .\nAnställd som högskolelärare vid vårdhögskolan i Malmö sedan =197-1=-.',
     occupations: ['Vårdhögskolelärare'],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 475,
   },
   675: {
@@ -37499,7 +37487,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Maskintekniker'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 675,
   },
   676: {
@@ -37536,7 +37524,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 676,
   },
   476: {
@@ -37595,7 +37583,7 @@ const persons: PersonsData = {
       'Studentexamen 1965 .\nUniversitetsstudier i internationell ekonomi vid London school of economics. Anställd vid institutet för ekonomi vid Stockholms universitet.\nRiksdagsledamot för Folkpartiet från 1991.\nProfessor vid centrum för Stilla havs- och Asienstudier 1992.',
     occupations: ['Professor'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 476,
   },
   677: {
@@ -37650,11 +37638,10 @@ const persons: PersonsData = {
     ],
     middleNames: ['Margareta'],
     mother: null,
-    notes:
-      'Studentexamen 1964 .\nVerksam som skolsköterska vid internationella skolan i Stockholm.',
+    notes: 'Studentexamen 1964 .\nVerksam som skolsköterska vid internationella skolan i Stockholm.',
     occupations: ['Leg sjuksköterska'],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 677,
   },
   678: {
@@ -37691,7 +37678,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 678,
   },
   679: {
@@ -37728,7 +37715,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 679,
   },
   680: {
@@ -37765,7 +37752,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 680,
   },
   617: {
@@ -37820,7 +37807,7 @@ const persons: PersonsData = {
     notes: 'Studentexamen 1986 i Simrishamn (L).\nCivilingenjörsexamen 1992 i Lund (M).',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 617,
   },
   683: {
@@ -37865,7 +37852,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 683,
   },
   684: {
@@ -37910,7 +37897,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 684,
   },
   682: {
@@ -37961,7 +37948,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 682,
   },
   681: {
@@ -38012,7 +37999,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 681,
   },
   618: {
@@ -38057,7 +38044,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 618,
   },
   532: {
@@ -38121,7 +38108,7 @@ const persons: PersonsData = {
       'Studerat vid universitet i Kansas.\nFram till 1993 anställd vid Amaco Oil, Denver. Därefter vid samma företag i Houston.',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 532,
   },
   685: {
@@ -38176,7 +38163,7 @@ const persons: PersonsData = {
     notes: 'Studerat vid Kansas state universitet.',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 685,
   },
   686: {
@@ -38213,7 +38200,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 686,
   },
   687: {
@@ -38250,7 +38237,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 687,
   },
   688: {
@@ -38287,7 +38274,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 688,
   },
   689: {
@@ -38324,7 +38311,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 689,
   },
   533: {
@@ -38383,7 +38370,7 @@ const persons: PersonsData = {
       'Kansas State University, BS: Family life and Human Development 1979.\nStockholms universitet, FK: Socialkunskap 1980.\nUtah State University, Master of Social Science: Human Resource Administration 1983.',
     occupations: ['Employee relations supervisor'],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 533,
   },
   690: {
@@ -38442,7 +38429,7 @@ const persons: PersonsData = {
       'Miami University, BS i Business 1980.\nXavier University, Master of Business: Administration 1982.\nUniversity of Denver, Master of Taxation 1986.\nHobbies: jakt, fiske och bergsvandring.',
     occupations: ['Tax consultant', 'Cpa'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 690,
   },
   691: {
@@ -38479,7 +38466,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 691,
   },
   534: {
@@ -38537,7 +38524,7 @@ const persons: PersonsData = {
     notes: 'BS i Busines/Sales - Marketing vid University of Northern Colorado 1987.',
     occupations: ['Territory manager'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 534,
   },
   692: {
@@ -38595,7 +38582,7 @@ const persons: PersonsData = {
     notes: 'BS i Communication/Business, University of Utah 1989.',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 692,
   },
   583: {
@@ -38655,7 +38642,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 583,
   },
   696: {
@@ -38685,7 +38672,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 696,
   },
   697: {
@@ -38750,7 +38737,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 697,
   },
   700: {
@@ -38810,7 +38797,7 @@ const persons: PersonsData = {
     notes: '(Tab 43:196 i GS).\nDöpt 1712-07-29 i Malmö (M).\nStudent 1728 i Lund (M).',
     occupations: ['Registrator'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 700,
   },
   701: {
@@ -38889,7 +38876,7 @@ const persons: PersonsData = {
       '(Tab 44 i GS).\nKyrkoföreståndare i Caroli församling från 1763 till 1767, då han flyttade till Stockholm. Riksdagsman i borgarståndet för Malmö 1761-62.',
     occupations: ['Handlande och fabrikör i malmö'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 701,
   },
   702: {
@@ -38985,7 +38972,7 @@ const persons: PersonsData = {
       '(Tab 58 i GS).\nStudent i Lund 1731-42 och i Uppsala 1741-44.\nMed dr 1744 i Uppsala (C).\nPraktiserande läkare först i Stockholm, sedan i Uddevalla och slutligen i Gävle från 1754 till sin död 1772.',
     occupations: ['Stadsläkare i gävle'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 702,
   },
   703: {
@@ -39045,7 +39032,7 @@ const persons: PersonsData = {
     notes: '(Tab 43:262 i GS).',
     occupations: ['Handlande'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 703,
   },
   704: {
@@ -39106,7 +39093,7 @@ const persons: PersonsData = {
       '(Tab 43:263 i GS).\nStudent i Lund 1731. Fältnotarie 1743. Advokatfiskal i kommerskollegium 1747 och assessor där 1759 (eller 1757). Kommerseråd 1767.\n"Han var en arbetsam ämbetsman; men lätt och vänlig i umgänget. Var fattig rättssökande fann i honom alltid en ömhjärtad förespråkare. En snäll arbetare var säker om hans uppmuntran. En medellös slöjd-idkare fann i honom en förläggare, som mera såg på nöjet att nära slöjden än egen vinning. Utom dess både skrev han och talte för frihet i slöjder och näringar. Till klädedräkten var han allvarsam och enkel, ehuru välmående man. Till seder ostrafflig; av medelmåttig växt och något mager. De senare åren sjuklig. Medbröder, underhavande och vänner, men isynnerhet fattige slöjdidkare, sörja och sakna honom." (Nya Alm Tidningen 11/8 1773.)',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 704,
   },
   705: {
@@ -39167,7 +39154,7 @@ const persons: PersonsData = {
       '(Tab 43:264 i GS).\nStudent i Lund 1737. Fil mag 1743 och prästvigd 1746. Bataljons-predikant vid Garnisonsregementet (Prins Gustafs) i Malmö samma år. Kommenderad med regementet till Landskrona 1746?47, på Carlstens fästning 1747?49, i Karlskrona 1750?52 och till Sveaborg 1752?54. Enl Sjöström, Skånska nationen i Lund, hade han vid sin död förslagsrum till V Sallerups pastorat och var gift ("enkan hette Helena").',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 705,
   },
   706: {
@@ -39252,7 +39239,7 @@ const persons: PersonsData = {
     notes: '(Tab 59 i GS).\nEfterlämnade en rätt ansenlig förmögenhet.',
     occupations: ['Handlande i malmö'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 706,
   },
   707: {
@@ -39330,7 +39317,7 @@ const persons: PersonsData = {
     notes: '(Tab 43:272 i GS).',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 707,
   },
   731: {
@@ -39408,7 +39395,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Pastor primarius i tyska församlingen i malmö'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 731,
   },
   708: {
@@ -39486,7 +39473,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 708,
   },
   709: {
@@ -39539,7 +39526,7 @@ const persons: PersonsData = {
     notes: '(Tab 44:198 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 709,
   },
   710: {
@@ -39614,11 +39601,10 @@ const persons: PersonsData = {
     ],
     middleNames: [],
     mother: 708,
-    notes:
-      '(Tab 45 i GS).\nStudent 1772 i Lund (M).\nRec 1784 i frimurarlogen S:t Erik. Rec 1787 i Arla Coldiuorden.',
+    notes: '(Tab 45 i GS).\nStudent 1772 i Lund (M).\nRec 1784 i frimurarlogen S:t Erik. Rec 1787 i Arla Coldiuorden.',
     occupations: ['Grosshandlare i stockholm'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 710,
   },
   711: {
@@ -39697,7 +39683,7 @@ const persons: PersonsData = {
       '(Tab 54 i GS).\nHans hustru var svägerska till hans bror.\nÄgde sockerbruket vid Wollmar Yxhullsgatan och egendomen Ørnsberg i Brännkyrka.',
     occupations: ['Grosshandlare i stockholm'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 711,
   },
   712: {
@@ -39757,7 +39743,7 @@ const persons: PersonsData = {
     notes: '(Tab 44:240 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 712,
   },
   713: {
@@ -39824,7 +39810,7 @@ const persons: PersonsData = {
       "(Tab 56 i GS).\n\"Den 23/6 1772 begav han sig ut på sin första sjöresa och under en sådan begick han den 13/6 1779 första gången H Nattvard i svensk-finska församlingen i Reval. Han emottog skepparefartyg 1784 och återvände hem först 1790, vilket år den 6/3 han blev konstituerad till fänrik vid Arméns flotta och erhöll befäl å mörsarebåten nr 4.\nUnder detta års krig bevistade han striderna vid Reval, Fredrikshamn och Björkö ävensom slaget vid Svensksund den 9/7, varefter han erhöll den mindre guldmedaljen.\nSin konfirmationsfullmakt fick han daterad den 22/7 med tur från den 6/5, men med lön på extra stat.\nSåsom chef å kanonslupen nr 47 beordrades han den 25/2 1808 till Malmö och i egenskap av chef för däckade kanonslupen nr 11 bevistade han striden vid Ratan och Piteå älv i augusti 1809. År 1812 tjänstgjorde han såsom (sekond)chef å galären 'Stockholm' och 1813-1814 å galären 'Småland' på expeditionen från Stockholm till Pommern samt vidare till Landskrona och Karlskrona. Avsked 1820 30/11.\nGiktbruten, nästan lam i båda händerna och utan pension blev han på ansökan antagen till invalid den 28 augusti 1822. --- Begraven på Solna kyrkogård.\" (Bergström, Invalidinrättningen på Ulriksdal.) H, som även i officiella handlingar nämns som 'underlöjtnant', antogs 1789 15/10 till över- och uppbördsskeppare vid arméns flotta. Vid denna tjänstgjorde han, utom ovanstående tider, även året 1792. Under åren 1793-1807 förde han handelsfartyg på Østersjöhamnar.",
     occupations: ['Sjökapten'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 713,
   },
   714: {
@@ -39877,7 +39863,7 @@ const persons: PersonsData = {
     notes: '(Tab 44:253 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 714,
   },
   715: {
@@ -39937,7 +39923,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 715,
   },
   716: {
@@ -40015,7 +40001,7 @@ const persons: PersonsData = {
     notes: '(Tab 44:255 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 716,
   },
   758: {
@@ -40093,7 +40079,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Apotekare'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 758,
   },
   735: {
@@ -40171,7 +40157,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 735,
   },
   736: {
@@ -40231,7 +40217,7 @@ const persons: PersonsData = {
     notes: '(Tab 45:200 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 736,
   },
   737: {
@@ -40309,7 +40295,7 @@ const persons: PersonsData = {
     notes: '(Tab 45:201 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 737,
   },
   761: {
@@ -40387,7 +40373,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Guldsmed i stockholm'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 761,
   },
   738: {
@@ -40466,7 +40452,7 @@ const persons: PersonsData = {
       '(Tab 46 i GS).\nRNO. "Var en av huvudstadens äldste och mest ansedde samt länge en av dess störste järnexportörer." (St D 7/4 1857). Rec 1814 i frimurarlogen S:t Erik.',
     occupations: ['Grosshandlare i stockholm under firma j f erdman o co'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 738,
   },
   739: {
@@ -40544,7 +40530,7 @@ const persons: PersonsData = {
     notes: '(Tab 45:228 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 739,
   },
   769: {
@@ -40622,7 +40608,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Stadsmäklare i stockholm'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 769,
   },
   762: {
@@ -40692,7 +40678,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 762,
   },
   764: {
@@ -40752,7 +40738,7 @@ const persons: PersonsData = {
     notes: '(Tab 46:203 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 764,
   },
   765: {
@@ -40831,7 +40817,7 @@ const persons: PersonsData = {
       '(Tab 47 i GS).\nEo tjänsteman i K Maj:ts kansli 1846. Eo notarie i kommerskollegium samma år, kanslist 1853, notarie 1856, tf sekreterare 1859 och ordinarie sekreterare 1861. Hade flera förordnanden som kommerseråd. Generalkonsul i Köpenhamn 1882. RNO. Rec 1846 i frimurarlogen S:t Erik, F A B där 1853-55 och rec 1849 i Arla Coldinuorden.\nH var "en duglig, plikttrogen och i hög grad arbetsam man, vilken därjämte ägde ett humant och älskligt väsen. H:s utnämning till den post, han vid sin död beklädde, hälsades därför på sin tid av alla med bifall. Det faller av sig självt att några mognade frukter av denna hans verksamhet i grannlandet icke kan i anseende till dess kortvarighet förväntas, men hans hjälpsamhet mot behövande landsmän skall länge leva i tacksamt minne hos mången.\nLika trogen i pliktens uppfyllande, lika vinnande var H i sitt enskilda liv; han var en fulländad gentleman, och antalet av hans vänner är mycket stort." (St D 3/12 1884.)',
     occupations: ['Generalkonsul i köpenhamn', 'Danmark'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 765,
   },
   766: {
@@ -40909,7 +40895,7 @@ const persons: PersonsData = {
     notes: '(Tab 46:212 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 766,
   },
   776: {
@@ -40987,7 +40973,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Kassadirektör i sjöförsäkrings ab ägir'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 776,
   },
   767: {
@@ -41066,7 +41052,7 @@ const persons: PersonsData = {
       '(Tab 50 i GS).\nUtflyttad till USA 1857 från Stockholm (AB).\nAmerikanskt medborgarskap i juli 1858.\nFlyttade som gammal tillbaka till Sverige och ligger begravd i Stockholm.',
     occupations: ['Köpman'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 767,
   },
   768: {
@@ -41126,7 +41112,7 @@ const persons: PersonsData = {
     notes: '(Tab 46:226 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 768,
   },
   763: {
@@ -41186,7 +41172,7 @@ const persons: PersonsData = {
     notes: '(Tab 46:227 i GS).',
     occupations: ['Kontorist i sjöförsäkrings ab ägir'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 763,
   },
   772: {
@@ -41264,7 +41250,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 772,
   },
   773: {
@@ -41343,7 +41329,7 @@ const persons: PersonsData = {
       '(Tab 48 i GS).\nEfter att ha avlagt studentexamen i Uppsala 1875 ägnade han sig åt juridiska studier och avlade hovrättsexamen 1880, varpå han samma år blev eo notarie i Svea hovrätt. Fyra år senare utnämndes H till vice häradshövding och år 1884 slog han sig ned som praktiserande advokat i Malmö. Där innehade han Hegardts advokatbyrå, som under hans skickliga ledning snart nog tillvann sig ett synnerligen gott anseende och erhöll en omfattande kundkrets.\nSedan 1887 var häradshövding Hegardt ledamot av Sveriges Advokatsamfund. H var verksam in i det sista, var en synnerligen driftig och dugande man, vilken gjorde en betydande insats i stadens näringsliv. Han var bl a juridiskt ombud för Margarinfabriken Zenith, som han även var med om att stifta.\nÄven i Malmö Kaffekompani samt i Sjöförsäkringsbolaget Øresund var han en av stiftarna samt styrelseledamot. I aktiebolaget Herman Gotthardt och Malmö Takpappsfabrik var han styrelseordförande samt stiftare. RVO 1919 och av RSt St O.',
     occupations: ['Häradshövding'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 773,
   },
   774: {
@@ -41422,7 +41408,7 @@ const persons: PersonsData = {
       '(Tab 49 i GS).\nBlev efter att ha praktiserat hos olika affärsmän, prokurist hos firman Anders Berg & Co, som han övertog 1894 och innehade till sin död. Var dessutom verkställande direktör i Kontors? och Magasins AB Mälaren, i fastighets AB Sophia och i Stockholm?Järna torv AB.\nFirman Berg & Co var en av huvudstadens största grossister i hampa och lin, och H hade anseende som en synnerligen verksam, driftig och skicklig affärsman. Han bidrog verksamt till tillkomsten av Sofi Almquists samskolas präktiga skollokaler samt lät på uppdrag av Privata lärarinneseminariet uppföra dess tidsenliga skollokaler. Vid invigningen av detta senare 1905 framfördes av styrelsens ordförande ett tack "främst till byggherren, grosshandlare Hegardt, för hans i många avseenden storartade frikostighet".',
     occupations: ['Grosshandlare'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 774,
   },
   775: {
@@ -41483,7 +41469,7 @@ const persons: PersonsData = {
       '(Tab 47:211 i GS).\nUnder senare delen av 1890-talet och till sin bror Ivars död 1905 anställd på dennes grosshandelskontor. Därefter från 1908 i Kommerskollegium till pensioneringen 1928.',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 775,
   },
   786: {
@@ -41561,7 +41547,7 @@ const persons: PersonsData = {
     notes: 'Vasamedaljen i guld av 8:e storleken 1921-06-06..',
     occupations: ['Framstående sångerska'],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 786,
   },
   787: {
@@ -41657,7 +41643,7 @@ const persons: PersonsData = {
       '(Tab 48:206 i GS).\nFlickskola i Malmö och Hindås. 1928-29 restaurangskola i Stockholm.\nExamen därifrån 1929.\n1930 hovmästarinna på Stockholmsutställningarna. 1931-33 värdinna på Siljansborgs Turisthotell i Rättvik. Sommaren 1935 hovmästarinna på Solidan, Skansen i Stockholm. 1957-59 kamrer på Falserbo golfklubb. 1960-61 i Vancouver, Canada, men återkom till golfklubben 1961-62.',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 787,
   },
   794: {
@@ -41705,7 +41691,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 794,
   },
   798: {
@@ -41769,7 +41755,7 @@ const persons: PersonsData = {
       'Lågstadielärarexamen 1971 i Malmö (M).\nTjänstgöringar i Malmö, Norrköping, Lidköping, Stockholm och Simrishamn, företrädesvis med invandrarundervisning Bor i Vallby (L).',
     occupations: ['Lärare'],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 798,
   },
   788: {
@@ -41864,7 +41850,7 @@ const persons: PersonsData = {
     notes: '(Tab 48:207 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 788,
   },
   789: {
@@ -41943,7 +41929,7 @@ const persons: PersonsData = {
       "(Tab 48:208 i GS).\nEfter avslutad skolgång i Malmö bedrev hon språkstudier i Köpenhamn vid Couvent de l'Assomption och i Paris, Frankrike.",
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 789,
   },
   805: {
@@ -42021,7 +42007,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Jurist'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 805,
   },
   790: {
@@ -42099,7 +42085,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 790,
   },
   791: {
@@ -42178,7 +42164,7 @@ const persons: PersonsData = {
       '(Tab 49:210 i GS).\nStudentexamen 1909 i Stockholm (AB).\nCivilekonomexamen 1912 i Stockholm (AB).\n(Hon var Sveriges första kvinnliga civilekonom!).\nVar före giftermålet anställd i Stockholms Enskilda Bank och Inteckningsbanken.',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 791,
   },
   809: {
@@ -42241,7 +42227,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Bankkamrer'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 809,
   },
   777: {
@@ -42319,7 +42305,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 777,
   },
   778: {
@@ -42398,7 +42384,7 @@ const persons: PersonsData = {
       '(Tab 51 i GS).\nKom vid nio års ålder med sina föräldrar till Duluth, USA, där han sedan tillbringade hela sitt liv med undantag för åren 1879-87, då familjen bodde i Calumet, Michigan.\nFöre avflyttningen dit var han anställd i Duluths gamla sparbank. Vid återkomsten till Duluth blev han bokhållare i American Exchange National Bank. I denna bank blev han till slut bankdirektör.\n1909 blev han vice ordförande i Duluth Clearing House Association och under en lång tid hade han hand om den ekonomiska förvaltningen vid Pilgrim Congregational church.\n"Under H:s långa vistelse i Duluth var hans verksamhet förbunden med en mångfald företag, som bidrog till stadens växt och dess utveckling till en av nordvästra Amerikas ledande bank- och handelscentrum." "H var ett vackert exempel på flit hederlighet, plikttrohet och ihärdighet, som med stadiga steg förde honom upp till den ledande plats, han vid sin död innehade. --- I sin affärsverksamhet gynnad av en oavbruten och markerad framgång var H personligen ädel och vänsäll samt rik på good will, som tog sig uttryck i välgörenhet av många slag. Han var en kyrklig man, vars religiösa uppfattning fick lysa över hans dagliga liv, hans yrkesutövning och hans förhållande till nästan. Hela sitt vackra och nyttiga liv understödde H livligt varje företagsamhet, som syftade till hans stads, hans fosterlands och till världens utveckling och förbättring. Ädelt tjänade han Duluth, och Duluth är full av sorg över hans bortgång." (Pressklipp ur Duluthpressen.)',
     occupations: ['Bankdirektör'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 778,
   },
   779: {
@@ -42459,7 +42445,7 @@ const persons: PersonsData = {
       '(Tab 50:217 i GS).\nUtbildade sig till lärare och undervisade i skolor i Calumet, Michigan; Seattle, Washington; Redlands och Long Beach, Californien. Efter det hon slutat undervisa ledde hon resor runt världen.',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 779,
   },
   780: {
@@ -42538,7 +42524,7 @@ const persons: PersonsData = {
       '(Tab 52 i GS).\nLäste vid University of Michigan. Anställd vid koppargruvorna i Ducktown, Tennessee, USA, där han blev överingenjör. Familjen flyttade p g a Ivars hälsa till Redlands, Californien, USA.',
     occupations: ['Øveringenjör'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 780,
   },
   781: {
@@ -42616,7 +42602,7 @@ const persons: PersonsData = {
     notes: '(Tab 50:219 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 781,
   },
   818: {
@@ -42694,7 +42680,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Revisor'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 818,
   },
   782: {
@@ -42772,7 +42758,7 @@ const persons: PersonsData = {
     notes: '(Tab 50:220 i GS).\nUndervisade i Seattle, Washington och Redlands, Californien.',
     occupations: ['Lärare'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 782,
   },
   819: {
@@ -42850,7 +42836,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Direktör'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 819,
   },
   783: {
@@ -42929,7 +42915,7 @@ const persons: PersonsData = {
       '(Tab 53 i GS).\nHan studerade redovisning på ekonomisk högskola. I början av 1900-talet flyttade han till Arizona, där han arbetade som bokhållare vid Old Dominion Mine i Globe och där han senare blev chef för gruvan.\nEfter en tid lämnade han gruvan och investerade i Globe Hardware Co. Han var också intresserad av fruktodling och köpte 1918 en apelsinodling i Downey, Californien, där han bodde i många år med sin familj på Tweedy Lane.\nSenare köpte han land i San Marcos och utvecklade en avocadoodling. Omkring 1950 köpte han en egendom i Pauma Valley och började en ny citrusfrukts- och avocadoodling där.\nNär han bodde i Downey var han förtroendevald i det lokala skoldistriktet och direktor för Arroya Ditch and Water Co.',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 783,
   },
   812: {
@@ -43007,7 +42993,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 812,
   },
   813: {
@@ -43105,7 +43091,7 @@ const persons: PersonsData = {
       '(Tab 51:215 i GS).\nExamen från Mt Vernon Seminary (som nu är ett College) 1916 i Washington DC, USA. Medlem av Optima Society.',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 813,
   },
   827: {
@@ -43153,7 +43139,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 827,
   },
   828: {
@@ -43231,7 +43217,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 828,
   },
   829: {
@@ -43294,7 +43280,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 829,
   },
   814: {
@@ -43355,7 +43341,7 @@ const persons: PersonsData = {
       '(Tab 51:216 i GS).\nExamen 1919 från Williams College. Var först Anställd i First American Bank i Duluth och blev senare vice ordförande där. Medlem i Duluth Rotary och aktiv inom kyrkan.',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 814,
   },
   815: {
@@ -43425,7 +43411,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Barnläkare'],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 815,
   },
   816: {
@@ -43486,7 +43472,7 @@ const persons: PersonsData = {
       '(Tab 52:219 i GS).\nAntogs vid krigsskolan i West Point 1919 och utexaminerades 1923.\nGick in vid amerikanska flygvapnet och omkom tragiskt när hans flygplan, under ett åskväder, flög in i ett berg.',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 816,
   },
   817: {
@@ -43547,7 +43533,7 @@ const persons: PersonsData = {
       '(Tab 52:220 i GS).\nEfter avslutad skolgång i Los Angeles, studerade hon balett i sju år och framträdde på Hollywood Bowl. Hon dansade vid Ebell teatern.\nHennes grupp, Staes-Valova, dansade vid premiären på Shrine Auditorium och Collisseum.\nI många år undervisade Marie, känd som Valova, i balett och producerade många program för opera och konserter tills hon drog sig tillbaka.',
     occupations: ['Koreograf'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 817,
   },
   820: {
@@ -43625,7 +43611,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 820,
   },
   821: {
@@ -43685,7 +43671,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 821,
   },
   822: {
@@ -43766,7 +43752,7 @@ const persons: PersonsData = {
       'Adress P.O Box 966, Pauma Valley, Californien 92061, USA.\n(Tab 53:222 i GS).\nBor i Pauma Valley, Californien, USA.',
     occupations: ['Plantageägare'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 822,
   },
   823: {
@@ -43826,7 +43812,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 823,
   },
   824: {
@@ -43890,7 +43876,7 @@ const persons: PersonsData = {
       'Adress 321 Calle Fiesta, San Clemente, Californien 92672, USA.\n(Tab 53:223 i GS).\nBA i elenergi 1932 vid California Institute of Technology (Cal Tech) i Pasadena, Californien, USA. Var i nära 40 år anställd som ingenjör vid Pasadena Telephone Co. Pensionerades 1974.\nBor i San Clemente, Californien, USA.',
     occupations: ['Ingenjör'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 824,
   },
   834: {
@@ -43968,7 +43954,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Lärare'],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 834,
   },
   835: {
@@ -44031,7 +44017,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 835,
   },
   836: {
@@ -44095,7 +44081,7 @@ const persons: PersonsData = {
       'Adress 2239 Via Oeste, Fallbrook, Californien 92028, USA.\nBA i ekonomi vid Pomona College 1960. Har arbetat som börsmäklare sedan dess och är nu anställd hos Dean Witter i Fallbrook, Californien, USA. Är sedan många år medlem i Rotary och är nu direktör där.\nBor i Fallbrook, Californien, USA.',
     occupations: ['Börsmäklare'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 836,
   },
   837: {
@@ -44159,7 +44145,7 @@ const persons: PersonsData = {
       'Adress 27932 Winding Way, Malibu, Californien 90265, USA.\nHar AB-examen och lärarlegitimation 1965 från University of California i Los Angeles, USA. Arbetar som lärare sedan 1965.\nBor i Malibu, Californien, USA.',
     occupations: ['Lärare'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 837,
   },
   850: {
@@ -44207,7 +44193,7 @@ const persons: PersonsData = {
     notes: 'Utexaminerad från Los Angeles State College.',
     occupations: ['Lärare'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 850,
   },
   845: {
@@ -44270,7 +44256,7 @@ const persons: PersonsData = {
     notes: 'Har studerat vid Immaculate Heart College.',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 845,
   },
   846: {
@@ -44316,7 +44302,7 @@ const persons: PersonsData = {
       'Adress 2239 Via Oeste, Fallbrook, Californien 92028, USA.\nBA i Science of Finance vid Santa Clara Universitet juni 1988 Juris Doktor (Law degree) vid universitetet i San Diego juni 1988 Bor i Fallbrook, Californien, USA.',
     occupations: ['Studerande'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 846,
   },
   847: {
@@ -44358,11 +44344,10 @@ const persons: PersonsData = {
     marriages: [],
     middleNames: ['David'],
     mother: 845,
-    notes:
-      'Adress 2231 Via Oeste, Fallbrook, Californien, USA.\nBor i Fallbrook, Californien, USA.',
+    notes: 'Adress 2231 Via Oeste, Fallbrook, Californien, USA.\nBor i Fallbrook, Californien, USA.',
     occupations: ['Studerande'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 847,
   },
   848: {
@@ -44408,7 +44393,7 @@ const persons: PersonsData = {
       'Adress 2239 Via Oeste, Fallbrook, Californien 92028, USA.\nBA i Commerce vid Santa Clara universitetet juni 1991 Bor i Fallbrook, Californien, USA.',
     occupations: ['Studerande'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 848,
   },
   849: {
@@ -44454,7 +44439,7 @@ const persons: PersonsData = {
       'Adress 2239 Via Oeste, Fallbrook, Californien 92028, USA.\nBA i Business Administration vid universitet i San Diego maj 1993 Bor i Fallbrook, Californien, USA.',
     occupations: ['Studerande'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 849,
   },
   838: {
@@ -44517,7 +44502,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 838,
   },
   839: {
@@ -44581,7 +44566,7 @@ const persons: PersonsData = {
       'Adress 268 St Katherines Road, Las Canada, Californien 91011, USA.\nBS i undervisning vid University of Southern California i Los Angeles.\nArbetat som lärare i Glendale Unified School District i många år.\nBor i Las Canada, Californien, USA.',
     occupations: ['Lärare'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 839,
   },
   855: {
@@ -44644,7 +44629,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 855,
   },
   840: {
@@ -44708,7 +44693,7 @@ const persons: PersonsData = {
       'Adress 3401 Coldwater Canyon Lane, Beverly Hills, Californien 90210, USA.\nSkild 1991.\nExamen i psykologi 1979 vid University of California i Los Angeles.\nMasters Degree i psykologi vid Pepperdine Universitet i Los Angeles.\nDoktorand i klinisk psykologi vid The Fielding Institute, Santa Barbara.\nBor i Beverly Hills, Californien, USA.',
     occupations: ['Familje'],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 840,
   },
   858: {
@@ -44771,7 +44756,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Animation director'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 858,
   },
   841: {
@@ -44835,7 +44820,7 @@ const persons: PersonsData = {
       'Adress 8 Celeste Place, Rolling Hills Est, Californien 90274, USA.\nUtexaminerad 1971 från University of Southern California Dental School. Har sedan dess arbetat som tandläkare i Long Beach.\nBor i Rolling Hills, Californien, USA.',
     occupations: ['Tandläkare'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 841,
   },
   842: {
@@ -44899,7 +44884,7 @@ const persons: PersonsData = {
       'Adress 1611 Sierra Alta, Santa Ana, Californien 92672, USA.\nUtexaminerades 1981 med en BS i datavetenskap från University of California i Irvine. Är nu anställd vid Genisco Computers i Costa Mesa.\nBor i Santa Ana, Californien, USA.',
     occupations: ['Programmerare'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 842,
   },
   863: {
@@ -44962,7 +44947,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 863,
   },
   864: {
@@ -45008,7 +44993,7 @@ const persons: PersonsData = {
       'Adress 8 Celeste Place, Rolling Hills Est, Californien 90274, USA.\nExamen från College i San Diego. Anställd vid American City Morgage Co, Long Beach, Californien, USA som revisor.\nBor i Rolling Hills, Californien, USA.',
     occupations: ['Revisor'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 864,
   },
   865: {
@@ -45050,11 +45035,10 @@ const persons: PersonsData = {
     marriages: [],
     middleNames: ['Lynn'],
     mother: 863,
-    notes:
-      'Adress 8 Celeste Place, Rolling Hills Est, Californien 90274, USA.\nBor i Rolling Hills, Californien, USA.',
+    notes: 'Adress 8 Celeste Place, Rolling Hills Est, Californien 90274, USA.\nBor i Rolling Hills, Californien, USA.',
     occupations: ['Studerande'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 865,
   },
   866: {
@@ -45117,7 +45101,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 866,
   },
   740: {
@@ -45195,7 +45179,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 740,
   },
   741: {
@@ -45255,7 +45239,7 @@ const persons: PersonsData = {
     notes: '(Tab 54:230 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 741,
   },
   742: {
@@ -45315,7 +45299,7 @@ const persons: PersonsData = {
     notes: '(Tab 54:231 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 742,
   },
   743: {
@@ -45375,7 +45359,7 @@ const persons: PersonsData = {
     notes: '(Tab 54:232 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 743,
   },
   744: {
@@ -45453,7 +45437,7 @@ const persons: PersonsData = {
     notes: '(Tab 54:233 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 744,
   },
   873: {
@@ -45515,7 +45499,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 873,
   },
   745: {
@@ -45575,7 +45559,7 @@ const persons: PersonsData = {
     notes: '(Tab 54:234 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 745,
   },
   746: {
@@ -45635,7 +45619,7 @@ const persons: PersonsData = {
     notes: '(Tab 54:235 i GS).',
     occupations: ['Grosshandlare och sockerbruksägare i stockholm'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 746,
   },
   747: {
@@ -45713,7 +45697,7 @@ const persons: PersonsData = {
     notes: '(Tab 55 i GS).\nBurskap som borgare 1818-06-30 i Stockholm (AB).',
     occupations: ['Grosshandlare i stockholm'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 747,
   },
   874: {
@@ -45791,7 +45775,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 874,
   },
   875: {
@@ -45851,7 +45835,7 @@ const persons: PersonsData = {
     notes: '(Tab 55:237 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 875,
   },
   876: {
@@ -45911,7 +45895,7 @@ const persons: PersonsData = {
     notes: '(Tab 55:238 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 876,
   },
   877: {
@@ -45971,7 +45955,7 @@ const persons: PersonsData = {
     notes: '(Tab 55:239 i GS).',
     occupations: ['Musik'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 877,
   },
   748: {
@@ -46029,7 +46013,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 748,
   },
   749: {
@@ -46081,7 +46065,7 @@ const persons: PersonsData = {
     notes: '(Tab 56:242 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 749,
   },
   750: {
@@ -46141,7 +46125,7 @@ const persons: PersonsData = {
     notes: '(Tab 56:243 i GS).\nDöpt 1786-10-18.',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 750,
   },
   751: {
@@ -46201,7 +46185,7 @@ const persons: PersonsData = {
     notes: '(Tab 56:244 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 751,
   },
   752: {
@@ -46246,7 +46230,7 @@ const persons: PersonsData = {
     notes: '(Tab 56:245 i GS).\nUtflyttad till Nordamerika från Stockholm (AB).',
     occupations: ['Tobaksfabrikör i stockholm'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 752,
   },
   753: {
@@ -46306,7 +46290,7 @@ const persons: PersonsData = {
     notes: '(Tab 56:246 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 753,
   },
   754: {
@@ -46366,7 +46350,7 @@ const persons: PersonsData = {
     notes: '(Tab 56:247 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 754,
   },
   755: {
@@ -46445,7 +46429,7 @@ const persons: PersonsData = {
       "(Tab 56:248 i GS).\nGick vid unga år till sjöss och förde länge fartyg ? bl a briggen 'Beate Marie' ? med spannmålslaster mellan Odessa och Marseille. Var 1740-46 bosatt på sin gård Grinda i Värmdö sn och 1746-50 på Øverby i Bettna sn, vilken han också ägde och där han särskilt ägnade sig åt sin passion, fiske, samt från sistnämnda år i Stockholm. Han skall ha ägt det vackraste 'gubbansikte' man kunde få se, inramat i silvervita lockar.",
     occupations: ['Sjökapten'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 755,
   },
   756: {
@@ -46519,7 +46503,7 @@ const persons: PersonsData = {
       "(Tab 56:251 i GS).\nMarie beskrivs som en lugn och stillsam kvinna. Hennes man, allmänt kallad 'Danvikskungen', var en barsk och respektingivande man, som - efter dåtida förhållanden - samlade en respektingivande förmögenhet.",
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 756,
   },
   883: {
@@ -46592,7 +46576,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 883,
   },
   757: {
@@ -46652,7 +46636,7 @@ const persons: PersonsData = {
     notes: '(Tab 56:252 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 757,
   },
   880: {
@@ -46722,7 +46706,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 880,
   },
   881: {
@@ -46801,7 +46785,7 @@ const persons: PersonsData = {
       '(Tab 57:249 i GS).\nFru Kjebon var en viljestark och praktisk kvinna och ställde i hemmet på gammaldags kraftigt manér. Hennes make var en god, rättfram och tillgänglig person med stort sinne för humor, mycket skicklig i sitt yrke samt i besittning av ovanliga kroppskrafter, som tillät honom att in i sena ålderdomen sköta sina förrättningar under allehanda strapatser.',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 881,
   },
   884: {
@@ -46879,7 +46863,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Kommissionslantmätare'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 884,
   },
   882: {
@@ -46957,7 +46941,7 @@ const persons: PersonsData = {
     notes: '(Tab 57:250 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 882,
   },
   885: {
@@ -47035,7 +47019,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Stadsmäklare'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 885,
   },
   717: {
@@ -47105,7 +47089,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 717,
   },
   718: {
@@ -47183,7 +47167,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 718,
   },
   719: {
@@ -47243,7 +47227,7 @@ const persons: PersonsData = {
     notes: '(Tab 58:257i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 719,
   },
   720: {
@@ -47321,7 +47305,7 @@ const persons: PersonsData = {
     notes: '(Tab 58:258 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 720,
   },
   888: {
@@ -47399,7 +47383,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Apotekare'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 888,
   },
   721: {
@@ -47459,7 +47443,7 @@ const persons: PersonsData = {
     notes: '(Tab 58:259 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 721,
   },
   722: {
@@ -47519,7 +47503,7 @@ const persons: PersonsData = {
     notes: '(Tab 58:260 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 722,
   },
   723: {
@@ -47597,7 +47581,7 @@ const persons: PersonsData = {
     notes: '(Tab 58:261 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 723,
   },
   889: {
@@ -47667,7 +47651,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Lektor'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 889,
   },
   658: {
@@ -47740,7 +47724,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 658,
   },
   724: {
@@ -47813,7 +47797,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 724,
   },
   725: {
@@ -47891,7 +47875,7 @@ const persons: PersonsData = {
     notes: '(Tab 59:266 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 725,
   },
   892: {
@@ -47961,7 +47945,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Handlande'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 892,
   },
   726: {
@@ -48039,7 +48023,7 @@ const persons: PersonsData = {
     notes: '(Tab 59:267 i GS).',
     occupations: [],
     references: ['Se tabell 98'],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 726,
   },
   727: {
@@ -48117,7 +48101,7 @@ const persons: PersonsData = {
     notes: '(Tab 59:268 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 727,
   },
   894: {
@@ -48187,7 +48171,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Kyrkoinspektör'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 894,
   },
   728: {
@@ -48266,7 +48250,7 @@ const persons: PersonsData = {
       '(Tab 59:269 i GS).\nGustafva Borg H-dt skänkte 1824 en invändigt förgylld oblatask av silver, som vägde 245 gr, till Caroli kyrka i Malmö.',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 728,
   },
   895: {
@@ -48344,7 +48328,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Tullförvaltare'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 895,
   },
   729: {
@@ -48417,7 +48401,7 @@ const persons: PersonsData = {
     notes: '(Tab 59:270 i GS).\nHon var kusin med sin make (se tabell 77).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 729,
   },
   732: {
@@ -48490,7 +48474,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Med dr och professor'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 732,
   },
   730: {
@@ -48568,7 +48552,7 @@ const persons: PersonsData = {
     notes: '(Tab 59:271 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 730,
   },
   899: {
@@ -48646,7 +48630,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Lagman'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 899,
   },
   803: {
@@ -48709,7 +48693,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Sjökapten'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 803,
   },
   804: {
@@ -48757,7 +48741,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Banktjänsteman'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 804,
   },
   867: {
@@ -48802,7 +48786,7 @@ const persons: PersonsData = {
     notes: '2005.',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 867,
   },
   900: {
@@ -48880,7 +48864,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 900,
   },
   698: {
@@ -48958,7 +48942,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 698,
   },
   910: {
@@ -48994,7 +48978,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 910,
   },
   734: {
@@ -49030,7 +49014,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 734,
   },
   733: {
@@ -49066,7 +49050,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 733,
   },
   760: {
@@ -49102,7 +49086,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Packhusstämpelmästare'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 760,
   },
   759: {
@@ -49138,7 +49122,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 759,
   },
   771: {
@@ -49174,7 +49158,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Tullförvaltare'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 771,
   },
   770: {
@@ -49210,7 +49194,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 770,
   },
   785: {
@@ -49246,7 +49230,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Bibiotikarie'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 785,
   },
   784: {
@@ -49282,7 +49266,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 784,
   },
   793: {
@@ -49318,7 +49302,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Etatsråd'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 793,
   },
   792: {
@@ -49354,7 +49338,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 792,
   },
   808: {
@@ -49390,7 +49374,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Direktör'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 808,
   },
   807: {
@@ -49426,7 +49410,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 807,
   },
   811: {
@@ -49462,7 +49446,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 811,
   },
   810: {
@@ -49498,7 +49482,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 810,
   },
   826: {
@@ -49534,7 +49518,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Läkare'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 826,
   },
   825: {
@@ -49570,7 +49554,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 825,
   },
   831: {
@@ -49606,7 +49590,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 831,
   },
   830: {
@@ -49642,7 +49626,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 830,
   },
   833: {
@@ -49678,7 +49662,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 833,
   },
   832: {
@@ -49714,7 +49698,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 832,
   },
   844: {
@@ -49750,7 +49734,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 844,
   },
   843: {
@@ -49786,7 +49770,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 843,
   },
   852: {
@@ -49822,7 +49806,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 852,
   },
   851: {
@@ -49858,7 +49842,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 851,
   },
   854: {
@@ -49894,7 +49878,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 854,
   },
   853: {
@@ -49930,7 +49914,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 853,
   },
   857: {
@@ -49966,7 +49950,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 857,
   },
   856: {
@@ -50002,7 +49986,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 856,
   },
   862: {
@@ -50038,7 +50022,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 862,
   },
   861: {
@@ -50074,7 +50058,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 861,
   },
   870: {
@@ -50110,7 +50094,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 870,
   },
   869: {
@@ -50146,7 +50130,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 869,
   },
   872: {
@@ -50182,7 +50166,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 872,
   },
   871: {
@@ -50218,7 +50202,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 871,
   },
   868: {
@@ -50263,7 +50247,7 @@ const persons: PersonsData = {
     notes: '2008.',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 868,
   },
   879: {
@@ -50299,7 +50283,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Kammarskrivare'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 879,
   },
   878: {
@@ -50335,7 +50319,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 878,
   },
   887: {
@@ -50371,7 +50355,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Apotekare'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 887,
   },
   886: {
@@ -50407,7 +50391,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 886,
   },
   891: {
@@ -50443,7 +50427,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Handlande'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 891,
   },
   890: {
@@ -50479,7 +50463,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 890,
   },
   8: {
@@ -50536,7 +50520,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: ['se Peters dagbok'],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 8,
   },
   806: {
@@ -50600,7 +50584,7 @@ const persons: PersonsData = {
       'Ingenjörsexamen vid Malmö högre tekniska läroverk 1952.\nÅlderdomshemsföreståndareutbildning vid Kommunala högskolan i Malmö 1980. Föreståndare Celciusgården, Malmö 1980-1983. Föreståndare vid Sorgenfri Servicecentrum, Malmö från 1983.',
     occupations: ['Föreståndare'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 806,
   },
   914: {
@@ -50671,7 +50655,7 @@ const persons: PersonsData = {
       'Ingenjörsexamen vid Malmö högre tekniska läroverk 1951.\nHögre företagsekonomisk examen 1967. Fil kand (sociologi, handelsrätt) vid Lunds universitet 1981.',
     occupations: ['Ingenjör', 'Företagsekonom'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 914,
   },
   859: {
@@ -50716,7 +50700,7 @@ const persons: PersonsData = {
     notes: 'BA i Matematik-Dator vetenskap vid UCLA, Los Angeles',
     occupations: ['Vice vd för after'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 859,
   },
   860: {
@@ -50761,7 +50745,7 @@ const persons: PersonsData = {
     notes: 'BA i psykologi vid UCLA, Los Angeles',
     occupations: ['Human resources representative'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 860,
   },
   800: {
@@ -50825,7 +50809,7 @@ const persons: PersonsData = {
       'Jur kand 1972 i Lund (M).\nTingstjänstgöring vid Lidköpings tingsrätt. Kronofogde i Norrköping.\nAvdelningsdir vid Riksskatteverket, Stockholm.\nKronofogde i Malmö sedan 1990.',
     occupations: ['Kronofogde'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 800,
   },
   796: {
@@ -50889,7 +50873,7 @@ const persons: PersonsData = {
       'Adress Gäddvägen 27, 582 58 LINKØPING.\nFolkskollärarexamen, fil kand.\nLärare vid Linköpings grundskolor. Lärarutbildare.\nBor i Linköping (E).',
     occupations: ['Folkskollärare', 'Författare'],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 796,
   },
   795: {
@@ -50967,7 +50951,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 795,
   },
   799: {
@@ -51030,7 +51014,7 @@ const persons: PersonsData = {
     notes: 'Oforskat Fullständiga uppgifter (sid 3).',
     occupations: ['Officer vid lv2'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 799,
   },
   919: {
@@ -51076,7 +51060,7 @@ const persons: PersonsData = {
       '1985 - 1990 Controller vid ABB. 1991 - 1994 Sakkunnig vid kommunikationsdepartementet. Från 1995 anställd vid Unisource i Amsterdam, Holland.',
     occupations: ['Civilekonom'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 919,
   },
   7: {
@@ -51172,7 +51156,7 @@ const persons: PersonsData = {
       'Författare till "Peters dagbok".\nFlyttade 1655 till Sverige och Malmö. Extra rådman 1687 och ordinarie 1692. Erbjöds 1699 ämbetet som politiborgmästare, men avböjde. Erhöll avsked från rådmanssysslan 1700.\nH var en av initiativtagarna till uppförandet av Caroli kyrka och till bildandet av tyska församlingen i Malmö (på vilket kungligt brev utfärdades 1683 19/3). Han var dessutom en av de två kyrkvärdarna och föreståndarna för kyrkbygget och kvarstod som sådan till sin död.\n"Hegardt var genom sin begåvning, sin rikedom och sina släktförbindelser en av Malmö stads främste män på sin tid. Av sin samtid var han säkerligen den, som genom enskild, storslagen offervillighet mest bidragit till Tyska kyrkans fullbordande" (Isberg, Malmö stads krönikebok, III).\nH ägde flera fastigheter i Malmö samt inköpte 1697 godset Svenstorp i Igelösa och Odarslövs socknar, som han 1707 överlät på sin svärson, Stjernblad.',
     occupations: ['Rådman'],
     references: ['se Peters dagbok', '(PD)', 'PD'],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 7,
   },
   922: {
@@ -51227,7 +51211,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: ['(PD)', 'PD'],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 922,
   },
   923: {
@@ -51297,7 +51281,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 923,
   },
   924: {
@@ -51355,7 +51339,7 @@ const persons: PersonsData = {
     notes: '(Tab 60:274 i GS).',
     occupations: [],
     references: ['(PD)', 'se Peters dagbok'],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 924,
   },
   941: {
@@ -51385,7 +51369,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 941,
   },
   925: {
@@ -51452,7 +51436,7 @@ const persons: PersonsData = {
     notes: '(Tab 60:275 i GS).',
     occupations: [],
     references: ['se Peters dagbok'],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 925,
   },
   926: {
@@ -51519,7 +51503,7 @@ const persons: PersonsData = {
     notes: '(Tab 60:276 i GS).',
     occupations: [],
     references: ['se Peters dagbok'],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 926,
   },
   927: {
@@ -51579,7 +51563,7 @@ const persons: PersonsData = {
     notes: '(Tab 60:277 i GS).',
     occupations: [],
     references: ['se Peters dagbok'],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 927,
   },
   928: {
@@ -51652,7 +51636,7 @@ const persons: PersonsData = {
     notes: '(Tab 60:278 i GS).',
     occupations: [],
     references: ['PD', 'se Peters dagbok'],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 928,
   },
   942: {
@@ -51718,7 +51702,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Handlande i landskrona'],
     references: ['PD'],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 942,
   },
   929: {
@@ -51778,7 +51762,7 @@ const persons: PersonsData = {
     notes: '(Tab 60:279 i GS).',
     occupations: [],
     references: ['se Peters dagbok'],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 929,
   },
   930: {
@@ -51845,7 +51829,7 @@ const persons: PersonsData = {
     notes: '(Tab 60:280 i GS).',
     occupations: [],
     references: ['se Peters dagbok'],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 930,
   },
   932: {
@@ -51941,7 +51925,7 @@ const persons: PersonsData = {
       "(Tab 61 i GS).\nH erhöll under tiden 1697-1705 i utlandet utbildning i handel och manufakturer. Förestod därefter faderns handel till 1710, då han erhöll burskap som egen handlare och drev bl a klädeshandel. 1714 förordnades han av magistraten - då endast 31 år - till förman för stadens äldste samt valdes 1719 till riksdagsman för Malmö och utsågs till ledamot av sekreta utskottet.\n1720 kallades han enhälligt till rådman, men undanbad sig förtroendet. Uppsattes 1721 på förslag till justitieborgmästare. Utnämndes 1726 till politiborgmästare och var åren 1715?62 kyrkvärd i Caroli församling.\n1718 erhöll han privilegium på det nedlagda manufakturiet i Malmö, men begagnade sig ej av detsamma. I stället anlade han tillsammans med sin 2:a frus styvfar, handlanden och krigskommissarien Erasmus Cleve, en ylle- och klädesfabrik, på vilken de 1726 erhöll kungligt privilegium, med rätt att bekläda bl a två infanteri- och två kavalleriregementen i Skåne samt artillerigarnisonerna i Skåne och Karlshamn. Denna fabrik, som 1733 sysselsatte 99 personer, övertog H efter Cleves död 1741 ensam och drev den med framgång till sitt frånfälle.\nH, som ibland titulerades 'överkommissarie' ägde fastigheter i Malmö och jordegendomar utanför staden samt efterlämnade stor förmögenhet. 1742 inköpte han av Cleves sterbhus Börringe kloster, som han 1745 sålde till greve Joakim Beck-Friis.\nVid hans begravning i Caroli kyrka den 28/7 utdelades ett sorgekväde, som författats av Lars Anton Berg.",
     occupations: ['Borgmästare i malmö'],
     references: ['se Peters dagbok', 'Gravsatt i Vellinge'],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 932,
   },
   931: {
@@ -52001,7 +51985,7 @@ const persons: PersonsData = {
     notes: '(Tab 60:281 i GS).\nKommissarie vid amiralitetet i Karlskrona 1716.',
     occupations: ['Handlande i karlshamn'],
     references: ['se Peters dagbok'],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 931,
   },
   933: {
@@ -52080,7 +52064,7 @@ const persons: PersonsData = {
       '(Tab 60:323 i GS).\nStudent i Lund 1702 och i Rostock 1705. Fil mag 1706 i Rostock. Studerade 1708?09 vid universitetet i Greifswald och blev där 1708 teol baccalaureus. Reste 1709 till England och var 1710?12 pastor vid den nyinrättade, ur den svenskdanska församlingen utbrutna svenska församlingen i London. Blev, efter att ha varit uppförd på förslag till eo professor i kyrkohistoria vid Lunds universitet, 1710 i maj av kungliga senaten utnämnd till befattningen.\nTeol dr i Greifswald 1714. Tillträdde detta år sin professur. Tredje teol professor i Lund samt kyrkoherde i Vallkärra och Stångby prebende?pastorat 1716. Prost i Torna kontrakt samma år. Andre teol professor samt kyrkoherde i Uppåkra och Flackarp prebende?pastorat 1718 och prost i Bara kontrakt samma år. Förste teol professor och domprost i Lund 1728. Var rektor vid universitetet 1719?27 samt presiderade vid prästmötet i Lund 1722.\nI London bodde han i tre år hos den ryktbare Edzardus, som invigde honom till prästämbetet och av vilken han vid avresan från London fick det betyg "att han genomgått alla den hebreiska grundtextens böcker med de rabbinska kommentariernas jämförande och därjämte förskaffat sig en tillräcklig kunskap i de äldre orientalska språken: kaldeiskan, arabiskan och persiskan".\n(Enl en artikel i Sv Dagbladet 31/5 1936 valde den nya svenska församlingen H till kyrkoherde den 20/3 1710, varefter han den 26/3 prästvigdes ? i strid med den svenska kyrkans ordning ? av den engelske orientalisten dr Edzardus och installerades samma dag.) På egen och församlingens önskan fick han, fast han var utnämnd till professor, kungens tillstånd att stanna i London, tills han hemkallades av konsistorium 1712. Innan han återvände hem besökte han åtskilliga främmande orter och uppehöll sig längre eller kortare tid i Oxford, Cambridge, Amsterdam, Leyden, Utrecht, Rostock och Greifswald, där han disputerade för teol doktorsgraden.\nKarl XII bodde från början av september 1716 till mitten av juli 1718 (med ett par längre avbrott för vistelse i Strömstad och de norska gränstrakterna) hos domprost H i dennes hus i Lund (huset mot St Södergatan vid Katedralskolan). Som en yttring av sin bevågenhet bar kungen H:s son Karl till dopet, upphöjde 1717 hans fru och barn i adligt stånd under namn von Hegardt (adl ätten nr 1536) samt bevistade även H:s installationsföreläsning som tredje teol professor.',
     occupations: ['Domprost'],
     references: ['se Peters dagbok'],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 933,
   },
   934: {
@@ -52188,7 +52172,7 @@ const persons: PersonsData = {
       '(Tab 60:329 i GS).\nMakarna är begravda i Igelösa kyrka, där Maria lät sätta upp ett epitafium även över sin tredje man (Gyllenkrok).\nMaria H var en högt begåvad, kraftfull och myndig dam, som väl förvaltade sina stora ägodelar, och kring vars person folkfantasin spunnit många sägner.\nI sitt första äktenskap med rådmannen Hack Persson, adlad Tholijn i Karlshamn, hade hon en son Hakvin, vilken adopterades av hennes 2:a man samt adlades och introducerades på denna ätts nummer. Till förmån för honom och hans efterkommande gjorde hon 1743 St Markie i Anderslöv till fideikommiss. Detta gods hade hon ärvt efter Josua Stjernblad. Samtidigt gjorde hon Svenstorp till fideikommiss för släkten Gyllenkrok.\nEfter sin första makes död gifte hon om sig med Karl XII:s generalkrigskommissaire Stjernblad.\nAv svärfadern Hegardt övertog Stjernblad dennes köp av Svenstorp slott och gods. År 1714 köpte han även Stora Markie.\nNär Stjernblad dog år 1717 ärvde hustrun Maria de båda godsen m.\nDen nu mycket rika Maria gifte sig år 1723 för tredje gången med Karl XII:s berömde general, Axel Gyllenkrok (friherre 1727). I äktenskapet föddes en son, Fredrik Gustaf.\nEfter makens död (1730) bosatte sig Maria, nu friherrinna, på Svenstorp. År 1743 instiftade hon för sina söner tvenne fideikommiss. Sonen Stiernblad fick Stora Markie och sonen Gyllenkrok Svenstorp. Hon förbehöll sig dock rätten att disponera över egendomarna under sin livstid. I fideikommissbreven har bestämts att de kunna givas som morgongåva.\nMaria Hegardts son med Gyllenkrok fick Svenstorps fideikommiss.\nMaria Hegardt bodde efter maken Gyllenkroks död (1730) på Svenstorp. (Utdrag ur kåseri av Eugéne Flygare)',
     occupations: [],
     references: ['se Peters dagbok'],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 934,
   },
   967: {
@@ -52258,7 +52242,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Handlande i karlshamn'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 967,
   },
   968: {
@@ -52320,7 +52304,7 @@ const persons: PersonsData = {
     notes: 'Begraven i Igelösa, där änkan lät sätta upp ett epitafium över honom.',
     occupations: ['Tullöverinspektor i skåne'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 968,
   },
   969: {
@@ -52393,7 +52377,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Friherre', 'Generallöjtnant och landshövding i göteborg och bohus län'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 969,
   },
   935: {
@@ -52453,7 +52437,7 @@ const persons: PersonsData = {
     notes: '(Tab 60:330 i GS).',
     occupations: [],
     references: ['se Peters dagbok'],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 935,
   },
   936: {
@@ -52520,7 +52504,7 @@ const persons: PersonsData = {
     notes: '(Tab 60:331 i GS).',
     occupations: [],
     references: ['se Peters dagbok'],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 936,
   },
   943: {
@@ -52590,7 +52574,7 @@ const persons: PersonsData = {
     notes: 'Döpt 1691-09-01 i Landskrona (M).',
     occupations: [],
     references: ['Gravsatt i Vellinge'],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 943,
   },
   937: {
@@ -52650,7 +52634,7 @@ const persons: PersonsData = {
     notes: '(Tab 60:332 i GS).',
     occupations: [],
     references: ['se Peters dagbok'],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 937,
   },
   945: {
@@ -52745,7 +52729,7 @@ const persons: PersonsData = {
     notes: '(Tab 61:283 i GS).',
     occupations: ['Prost'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 945,
   },
   946: {
@@ -52858,7 +52842,7 @@ const persons: PersonsData = {
       '(Tab 64 i GS).\nVar först faktor vid faderns klädesfabrik, men grundade sedan själv en dylik år 1740., vilken han drev till sin död. Idkade också handel samt ägde en gård i Malmö.',
     occupations: ['Klädesfabrikör'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 946,
   },
   947: {
@@ -52937,7 +52921,7 @@ const persons: PersonsData = {
       '(Tab 61:298 i GS).\nStudent i Lund 1727. Studerade juridik där till 1737. Stadsnotarie i Malmö 1738 och samma år auskultant vid rådstuvu och kämnärsrätten i Stockholm samt var notarie vid riksdagens protokolldeputation. Tf stadssekreterare i Malmö 1740 och eo rådman 1747. Avsked från stadsnotarietjänsten samma år. Fick burskap som handlande i Malmö 1747. Ägde gård i Malmö.',
     occupations: ['Rådman'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 947,
   },
   948: {
@@ -52997,7 +52981,7 @@ const persons: PersonsData = {
     notes: '(Tab 61:303 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 948,
   },
   949: {
@@ -53060,7 +53044,7 @@ const persons: PersonsData = {
     notes: '(Tab 61:304 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 949,
   },
   992: {
@@ -53139,7 +53123,7 @@ const persons: PersonsData = {
       'Enligt Barfod, "Märkvärdigheter etc" föll Tollsten "i mjältsjuka, för att han till husets behov nödgades röra sitt kapital samt fattade till slut det orådet att kasta sig i slottsgraven"',
     occupations: ['Rådman i malmö'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 992,
   },
   950: {
@@ -53199,7 +53183,7 @@ const persons: PersonsData = {
     notes: '(Tab 61:305 i GS).\nStudent i Lund 1738.',
     occupations: ['Handlande i malmö'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 950,
   },
   951: {
@@ -53272,7 +53256,7 @@ const persons: PersonsData = {
     notes: '(Tab 61:306 i GS).\n(Maken var hennes fasters styvson, se ovan tab 99).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 951,
   },
   993: {
@@ -53345,7 +53329,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Tullförvaltare i karlshamn'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 993,
   },
   952: {
@@ -53405,7 +53389,7 @@ const persons: PersonsData = {
     notes: '(Tab 61:307 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 952,
   },
   953: {
@@ -53483,7 +53467,7 @@ const persons: PersonsData = {
     notes: '(Tab 61:308 i GS).',
     occupations: [],
     references: ['Gravsatt i Vellinge'],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 953,
   },
   994: {
@@ -53561,7 +53545,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Kyrkoherde i vellinge'],
     references: ['Gravsatt i Vellinge'],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 994,
   },
   954: {
@@ -53621,7 +53605,7 @@ const persons: PersonsData = {
     notes: '(Tab 61:309 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 954,
   },
   955: {
@@ -53681,7 +53665,7 @@ const persons: PersonsData = {
     notes: '(Tab 61:310 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 955,
   },
   956: {
@@ -53740,7 +53724,7 @@ const persons: PersonsData = {
       '(Tab 61:311 i GS).\nH övertog efter faderns död det av denne drivna ylle? och klädnadsmanufakturiet. Rörelsen gick emellertid med stigande förlust, särskilt i samband med den stora handelskrisen 1763 och p g a att det statsunderstöd, som tidigare kommit industrin till del, drogs in sedan mösspartiet fått makten 1765. Fabriken lades ner av änkan 1767. Ägde hus i Malmö.',
     occupations: ['Klädesfabrikör'],
     references: ['före juli, då vigselboken börjar'],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 956,
   },
   957: {
@@ -53818,7 +53802,7 @@ const persons: PersonsData = {
     notes: '(Tab 67 i GS).\nStudent 1745 i Lund (M).\nFil mag 1757 och prästvigd 1759.',
     occupations: ['Vice pastor i skanör'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 957,
   },
   944: {
@@ -53896,7 +53880,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 944,
   },
   958: {
@@ -53956,7 +53940,7 @@ const persons: PersonsData = {
     notes: '(Tab 61:320 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 958,
   },
   959: {
@@ -54016,7 +54000,7 @@ const persons: PersonsData = {
     notes: '(Tab 61:321 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 959,
   },
   960: {
@@ -54094,7 +54078,7 @@ const persons: PersonsData = {
     notes: '(Tab 61:322 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 960,
   },
   1006: {
@@ -54172,7 +54156,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Hovjägmästare och krigsråd'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1006,
   },
   1005: {
@@ -54208,7 +54192,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 1005,
   },
   1004: {
@@ -54244,7 +54228,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 1004,
   },
   972: {
@@ -54319,7 +54303,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 972,
   },
   1008: {
@@ -54355,7 +54339,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Kyrkoherde'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 1008,
   },
   1007: {
@@ -54431,7 +54415,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 1007,
   },
   974: {
@@ -54483,7 +54467,7 @@ const persons: PersonsData = {
     notes: '(Tab 62:284 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 974,
   },
   975: {
@@ -54561,7 +54545,7 @@ const persons: PersonsData = {
     notes: '(Tab 62:285 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 975,
   },
   1014: {
@@ -54639,7 +54623,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Kyrkoderde och titulaturprost'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1014,
   },
   976: {
@@ -54718,7 +54702,7 @@ const persons: PersonsData = {
       '(Tab 62:286 i GS).\n(Hustrun var hans kusin, se ovan tab 99).\nStudent i Lund 1760 och studerade där teologi. Eo tullskrivare 1774 i Malmö. Tullskrivare i Lund 1784 och sedan tullförvaltare där.',
     occupations: ['Tullförvaltare i lund'],
     references: ['dödfödd'],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 976,
   },
   977: {
@@ -54778,7 +54762,7 @@ const persons: PersonsData = {
     notes: '(Tab 62:287 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 977,
   },
   978: {
@@ -54857,7 +54841,7 @@ const persons: PersonsData = {
       '(Tab 62:288 i GS).\nStudent i Lund 1725. Höll 1731 parentation på latin över en avliden student Stridsberg. Blev samma år informator hos hovmarskalken friherre A von Düben i Stockholm och 1732 huspräst hos denne. Prästvigd 1732 i Uppsala. Fil mag i Lund 1734. Föreslogs 1735 av kanslikollegium till kyrkoherde vid svenska församlingen i London och rekommenderades samma år av greve Arvid Horn till kyrkoherde i Håslöv och Boderups pastorat. Till denna tjänst utnämndes han 1736 ännu ej fyllda 25 år. Vice kontraktsprost i Skytts kontrakt 1760. Fungerade vid prästmöten som opponens, vice præses och orator. Var en ansedd och kunnig man samt god predikant.\n"Under prosten Hegardts tid år 1748 uppkom vådeld, varvid hela prästgården brann ner i grunden och varvid mycken värdefull egendom gick förlorad, däribland biblioteket. Detta gav emellertid prosten anledning att i en bok \'Haslovensia et Boderupiensia\' anteckna allt vad han ur minnet och genom forskning kunnat uppleta av historiska minnen, sägner och berättelser m. Han synes ha varit särskilt danad till fornforskare och historieskrivare och har därigenom lämnat ett kärt minne efter sig åt eftervärlden". (Malmgren)',
     occupations: ['Komminister'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 978,
   },
   973: {
@@ -54927,7 +54911,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 973,
   },
   1020: {
@@ -54963,7 +54947,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Major vid adelsfanan'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 1020,
   },
   1019: {
@@ -54999,7 +54983,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 1019,
   },
   657: {
@@ -55077,7 +55061,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 657,
   },
   1015: {
@@ -55155,7 +55139,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: ['dödfödd'],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 1015,
   },
   1022: {
@@ -55213,7 +55197,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: ['Mannen var styvson till hustruns faster, se ovan tab 99'],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 1022,
   },
   1021: {
@@ -55286,7 +55270,7 @@ const persons: PersonsData = {
     notes: '(Tab 61:306 i GS).',
     occupations: [],
     references: ['Mannen var styvson till hustruns faster, se ovan tab 99'],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 1021,
   },
   1016: {
@@ -55331,7 +55315,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: ['dödfödd'],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1016,
   },
   1017: {
@@ -55416,7 +55400,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 1017,
   },
   1024: {
@@ -55452,7 +55436,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Prost och kyrkoherde'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 1024,
   },
   1023: {
@@ -55488,7 +55472,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 1023,
   },
   893: {
@@ -55566,7 +55550,7 @@ const persons: PersonsData = {
     notes: '(Tab 64:297 i GS).\nÄgde vid sin död "Värdshus- och teaterbyggnaden" (Stadt Hamburg).',
     occupations: ['Handlande i malmö från 1779'],
     references: ['Se tabell 98'],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 893,
   },
   1018: {
@@ -55644,7 +55628,7 @@ const persons: PersonsData = {
     notes: '(tab 63:289 i GS).\n(Maken var hennes syssling, son till Anna Maria Hegardt)',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1018,
   },
   1025: {
@@ -55714,7 +55698,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Lantbrukare'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1025,
   },
   979: {
@@ -55792,7 +55776,7 @@ const persons: PersonsData = {
     notes: 'Döpt 1723-03-14 i Helsingborg (M).',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 979,
   },
   1027: {
@@ -55828,7 +55812,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Rådman'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 1027,
   },
   1026: {
@@ -55864,7 +55848,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 1026,
   },
   981: {
@@ -55940,7 +55924,7 @@ const persons: PersonsData = {
       "(Tab 64:291 i GS).\nUtflyttad till Åbo, Finland 1763-02-11 från Malmö (M).\nFlyttade till Åbo från Malmö 1763. Köpte 'linne? och cattunstryckeriet' i Åbo 1754 för 30.000 daler. Erhöll burskap som borgare i Åbo 1764.\nI slutet av 1766 måste han begära sig i konkurs och ? sannolikt ? i slutet av 1769 eller 1770 såldes fabriken till färgaren A Conradi.\nÅr 1774 uppsade han sitt burskap i Åbo och förklarade att han skulle flytta till Helsingfors. Troligen skedde flyttningen redan 1773, då han är upptagen i mantalslängden för 1774, vilken är daterade 1773.\nI Helsingfors köpte han 1773 av färgaren Friedrich Köpke dennes gård och färgeri i den s k Gammelstaden, dock utan att kunna fullgöra sina förbindelser.",
     occupations: [],
     references: ['Åbo kyrkoarkivs kommissionsbok'],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 981,
   },
   980: {
@@ -56018,7 +56002,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 980,
   },
   1029: {
@@ -56054,7 +56038,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Handlande'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 1029,
   },
   1028: {
@@ -56090,7 +56074,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 1028,
   },
   982: {
@@ -56150,7 +56134,7 @@ const persons: PersonsData = {
     notes: '(tab 64:292 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 982,
   },
   983: {
@@ -56210,7 +56194,7 @@ const persons: PersonsData = {
     notes: '(Tab 64:293 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 983,
   },
   984: {
@@ -56270,7 +56254,7 @@ const persons: PersonsData = {
     notes: '(Tab 64:294 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 984,
   },
   985: {
@@ -56345,11 +56329,10 @@ const persons: PersonsData = {
     ],
     middleNames: ['Maria'],
     mother: 980,
-    notes:
-      '(Tab 64:295 i GS).\nDeras son, lantbrukaren Per Jacobsson, var gift med Anna* Helena Hegardt.',
+    notes: '(Tab 64:295 i GS).\nDeras son, lantbrukaren Per Jacobsson, var gift med Anna* Helena Hegardt.',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 985,
   },
   1030: {
@@ -56427,7 +56410,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1030,
   },
   986: {
@@ -56487,7 +56470,7 @@ const persons: PersonsData = {
     notes: '(Tab 64:296 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 986,
   },
   987: {
@@ -56565,7 +56548,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 987,
   },
   1032: {
@@ -56601,7 +56584,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Handlande'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 1032,
   },
   1031: {
@@ -56637,7 +56620,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 1031,
   },
   988: {
@@ -56712,7 +56695,7 @@ const persons: PersonsData = {
     notes: '(Tab 65:299 i GS).\nDöpt 1749-07-17 i Malmö (M).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 988,
   },
   989: {
@@ -56772,7 +56755,7 @@ const persons: PersonsData = {
     notes: '(Tab 65:300 i GS).\nÄgde 1785 klädes- och strumpfabriken "Hoppet" i Malmö.',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 989,
   },
   990: {
@@ -56833,7 +56816,7 @@ const persons: PersonsData = {
       '(Tab 65:301 i GS).\nØvertog efter brodern Mattias klädesfabriken "Hoppet", som han drev till 1814, då fabriken lades ner. Ägde gård i Malmö.',
     occupations: ['Klädesfabrikör'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 990,
   },
   991: {
@@ -56911,7 +56894,7 @@ const persons: PersonsData = {
     notes: '(Tab 65:302 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 991,
   },
   1033: {
@@ -56981,7 +56964,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1033,
   },
   996: {
@@ -57054,7 +57037,7 @@ const persons: PersonsData = {
     notes: 'Döpt 1744-03-27 i Malmö (M).',
     occupations: [],
     references: ['före juli, då vigselboken börjar'],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 996,
   },
   1035: {
@@ -57090,7 +57073,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Rådman och lasarettssyssloman'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 1035,
   },
   1034: {
@@ -57126,7 +57109,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 1034,
   },
   911: {
@@ -57192,7 +57175,7 @@ const persons: PersonsData = {
     notes: '(Tab 66:312 i GS).',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 911,
   },
   912: {
@@ -57258,7 +57241,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Kvartersmästare'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 912,
   },
   997: {
@@ -57318,7 +57301,7 @@ const persons: PersonsData = {
     notes: '(Tab 66:313 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 997,
   },
   998: {
@@ -57396,7 +57379,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 998,
   },
   1037: {
@@ -57432,7 +57415,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Borgmästare i skanör'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 1037,
   },
   1036: {
@@ -57468,7 +57451,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 1036,
   },
   1000: {
@@ -57528,7 +57511,7 @@ const persons: PersonsData = {
     notes: '(Tab 67:315 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1000,
   },
   999: {
@@ -57594,7 +57577,7 @@ const persons: PersonsData = {
     notes: '(Tab 67:316 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 999,
   },
   1038: {
@@ -57660,7 +57643,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Komminister i alunda och morkarla församlingar'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1038,
   },
   1001: {
@@ -57731,7 +57714,7 @@ const persons: PersonsData = {
     notes: '(Tab 67:317 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1001,
   },
   1039: {
@@ -57794,7 +57777,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Hamnfogde i malmö'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1039,
   },
   1002: {
@@ -57845,7 +57828,7 @@ const persons: PersonsData = {
     notes: '(Tab 67:318 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1002,
   },
   1040: {
@@ -57896,7 +57879,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Underlöjtnant vid artilleriet'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1040,
   },
   1003: {
@@ -57941,7 +57924,7 @@ const persons: PersonsData = {
     notes: '(Tab 67:319 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1003,
   },
   961: {
@@ -58019,7 +58002,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 961,
   },
   1042: {
@@ -58055,7 +58038,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Øverdirektör vid pommerska lantkassan och borgmästare'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 1042,
   },
   1041: {
@@ -58096,7 +58079,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 1041,
   },
   1043: {
@@ -58146,7 +58129,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Professor vid greifswalds universitet'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1043,
   },
   962: {
@@ -58220,7 +58203,7 @@ const persons: PersonsData = {
       '(Tab 68:324 i GS).\nStuderade vid Lunds universitet, där han 1739 disputerade. Auskultant i Göta Hovrätt 1738. vice advokatfiskal 1739, kanslist 1740, extra notarie 1743, sekreterare 1747, eo assessor 1750 och ordinarie assessor 1752 samt revisionssekreterare 1756. Förrättade justitiekanslerämbetet 1757 samt var åren 1758 och 59 ledamot av en kunglig kommission. Stadssekreterare 1762. Ledamot i riddaresynerätt 1755 samt två gånger år 1763. Vid 1769 års riksdag uppfördes han två gånger på förslag till riksråd. År 1770 var han ledamot i pommerska kommissionen i Stralsund samt förestod, utom ovannämnda år, vid flera tillfällen justitiekanslerämbetet.\nRNO 1770. Upphöjd till friherrligt stånd 1771 (frih ätten nr 288). KNO 1772 (valspråk: post fata vivit honor). Ägde förutom egendomen Berga, som ärvdes av hans systerson Henrik af Harmens, även Åsebo i Högsby.',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 962,
   },
   1044: {
@@ -58285,7 +58268,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Friherrinna'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1044,
   },
   1046: {
@@ -58321,7 +58304,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Øverste', 'Friherre'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 1046,
   },
   1045: {
@@ -58362,7 +58345,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 1045,
   },
   1047: {
@@ -58428,7 +58411,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['President', 'Friherre'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1047,
   },
   963: {
@@ -58488,7 +58471,7 @@ const persons: PersonsData = {
     notes: '(Tab 68:325 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 963,
   },
   964: {
@@ -58567,7 +58550,7 @@ const persons: PersonsData = {
       '(Tab 68:326 i GS).\nÄgde sedan 1783 Åsebo, som hon ärvde efter sin bror. Deras son ärvde farbrodern Peter Fredriks egendom Berga.',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 964,
   },
   1048: {
@@ -58645,7 +58628,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Professor vid lunds universitet'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1048,
   },
   965: {
@@ -58705,7 +58688,7 @@ const persons: PersonsData = {
     notes: '(Tab 68:327 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 965,
   },
   966: {
@@ -58765,7 +58748,7 @@ const persons: PersonsData = {
     notes: '(Tab 68:328 i GS).',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 966,
   },
   939: {
@@ -58848,7 +58831,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Prost'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 939,
   },
   938: {
@@ -58914,7 +58897,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 938,
   },
   971: {
@@ -58950,7 +58933,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Handlande'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 971,
   },
   970: {
@@ -58986,7 +58969,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 970,
   },
   600: {
@@ -59029,7 +59012,7 @@ const persons: PersonsData = {
     notes: 'Oforskat Gift när och var (sid 1).\nBor i Södra Sandby (M).',
     occupations: ['Rektor'],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 600,
   },
   601: {
@@ -59072,7 +59055,7 @@ const persons: PersonsData = {
     notes: 'Oforskat Gift när och var (sid 1).\nBor i Vomb (M).',
     occupations: ['Ingenjör'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 601,
   },
   602: {
@@ -59115,7 +59098,7 @@ const persons: PersonsData = {
     notes: 'Oforskat Gift när och var (sid 1).\nBor i Abbekås, Skivarp (M).',
     occupations: ['Idrottsledare'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 602,
   },
   603: {
@@ -59158,7 +59141,7 @@ const persons: PersonsData = {
     notes: 'Oforskat Gift när och var (sid 1).\nBor i Vomb (M).',
     occupations: ['Ingenjör'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 603,
   },
   1064: {
@@ -59191,11 +59174,10 @@ const persons: PersonsData = {
     ],
     middleNames: [],
     mother: null,
-    notes:
-      'Oforskat Fullständig uppgifter (sid 1).\nOforskat Fullständiga uppgifter om föräldrar (sid 4).',
+    notes: 'Oforskat Fullständig uppgifter (sid 1).\nOforskat Fullständiga uppgifter om föräldrar (sid 4).',
     occupations: ['Kemist'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 1064,
   },
   1065: {
@@ -59225,7 +59207,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Oforskat fullständiga uppgifter'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1065,
   },
   1066: {
@@ -59255,7 +59237,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Oforskat fullständiga uppgifter'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1066,
   },
   1067: {
@@ -59285,7 +59267,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Oforskat fullständiga uppgifter'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1067,
   },
   1068: {
@@ -59321,7 +59303,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 1068,
   },
   1069: {
@@ -59351,7 +59333,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Oforskat fullständiga uppgifter'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1069,
   },
   1070: {
@@ -59381,7 +59363,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Oforskat fullständiga uppgifter'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1070,
   },
   1071: {
@@ -59417,7 +59399,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 1071,
   },
   1074: {
@@ -59453,7 +59435,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 1074,
   },
   528: {
@@ -59498,7 +59480,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Oforskat fullständiga uppgifter'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 528,
   },
   527: {
@@ -59543,7 +59525,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 527,
   },
   916: {
@@ -59621,7 +59603,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Posttjänsteman'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 916,
   },
   915: {
@@ -59684,7 +59666,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Hemmafru'],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 915,
   },
   801: {
@@ -59729,7 +59711,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Studerande'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 801,
   },
   802: {
@@ -59774,7 +59756,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Studerande'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 802,
   },
   921: {
@@ -59817,7 +59799,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Professor i anatomi'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 921,
   },
   920: {
@@ -59867,7 +59849,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Sjuksköterska'],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 920,
   },
   470: {
@@ -59914,11 +59896,10 @@ const persons: PersonsData = {
     ],
     middleNames: [],
     mother: 418,
-    notes:
-      'Adress Skyttevägen 56, 181 46 LIDINGØ.\nOforskat Utbildning; Vigseldatum.\nBor på Lidingö (AB).',
+    notes: 'Adress Skyttevägen 56, 181 46 LIDINGØ.\nOforskat Utbildning; Vigseldatum.\nBor på Lidingö (AB).',
     occupations: ['Civilekonom'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 470,
   },
   1080: {
@@ -59948,7 +59929,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1080,
   },
   1077: {
@@ -59992,7 +59973,7 @@ const persons: PersonsData = {
       'Oforskat Fader; Födelsedatum; Vigseldatum; Yrke; Dödsdatum?.\nOforskat Moder; Födelsedatum; Flicknamn; Yrke; Dödsdatum?.',
     occupations: ['Oforskat födelsedatum'],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 1077,
   },
   1078: {
@@ -60029,7 +60010,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Oforskat födelsedatum'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1078,
   },
   1079: {
@@ -60066,7 +60047,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Oforskat födelsedatum'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1079,
   },
   348: {
@@ -60112,7 +60093,7 @@ const persons: PersonsData = {
       'Adress Gröna vägen 42 A, 541 54 SKØVDE.\nStudentexamen vid Sundstagymnasiet 1968 i Karlstad.\nFil kand vid Uppsala universitet 1973 .\nFr o m 1977 adjunkt i SO-ämnen på högstadieskola i Skövde.\nBor i Skövde.',
     occupations: ['Adjunkt'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 348,
   },
   139: {
@@ -60149,7 +60130,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Barnläkare'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 139,
   },
   140: {
@@ -60186,7 +60167,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Rekvisitör'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 140,
   },
   141: {
@@ -60223,7 +60204,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 141,
   },
   660: {
@@ -60273,7 +60254,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Handlande'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 660,
   },
   659: {
@@ -60323,7 +60304,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 659,
   },
   635: {
@@ -60359,7 +60340,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Vd'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 635,
   },
   636: {
@@ -60396,7 +60377,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 636,
   },
   637: {
@@ -60433,7 +60414,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 637,
   },
   638: {
@@ -60470,7 +60451,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 638,
   },
   639: {
@@ -60507,7 +60488,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 639,
   },
   640: {
@@ -60543,7 +60524,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Ekonom'],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 640,
   },
   641: {
@@ -60580,7 +60561,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 641,
   },
   642: {
@@ -60617,7 +60598,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 642,
   },
   621: {
@@ -60653,7 +60634,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 621,
   },
   693: {
@@ -60690,7 +60671,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 693,
   },
   694: {
@@ -60727,7 +60708,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 694,
   },
   695: {
@@ -60764,7 +60745,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 695,
   },
   1072: {
@@ -60794,7 +60775,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1072,
   },
   1073: {
@@ -60824,7 +60805,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1073,
   },
   1075: {
@@ -60854,7 +60835,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1075,
   },
   1076: {
@@ -60891,7 +60872,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1076,
   },
   1010: {
@@ -60951,7 +60932,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1010,
   },
   1009: {
@@ -60987,7 +60968,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 1009,
   },
   1011: {
@@ -61032,7 +61013,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1011,
   },
   1012: {
@@ -61092,7 +61073,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1012,
   },
   1051: {
@@ -61170,7 +61151,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 1051,
   },
   1052: {
@@ -61230,7 +61211,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1052,
   },
   1053: {
@@ -61290,7 +61271,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1053,
   },
   1054: {
@@ -61350,7 +61331,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1054,
   },
   1055: {
@@ -61410,7 +61391,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1055,
   },
   1056: {
@@ -61470,7 +61451,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1056,
   },
   1082: {
@@ -61529,7 +61510,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 1082,
   },
   1081: {
@@ -61588,7 +61569,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 1081,
   },
   1083: {
@@ -61633,7 +61614,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1083,
   },
   1050: {
@@ -61681,7 +61662,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 1050,
   },
   1049: {
@@ -61736,7 +61717,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 1049,
   },
   1057: {
@@ -61814,7 +61795,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1057,
   },
   699: {
@@ -61892,7 +61873,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 699,
   },
   1058: {
@@ -61958,7 +61939,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1058,
   },
   1059: {
@@ -62036,7 +62017,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1059,
   },
   1060: {
@@ -62099,7 +62080,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1060,
   },
   1061: {
@@ -62189,7 +62170,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1061,
   },
   1062: {
@@ -62249,7 +62230,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1062,
   },
   1063: {
@@ -62294,7 +62275,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1063,
   },
   1085: {
@@ -62345,7 +62326,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 1085,
   },
   1084: {
@@ -62411,7 +62392,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 1084,
   },
   1091: {
@@ -62456,7 +62437,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 1091,
   },
   1094: {
@@ -62516,7 +62497,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 1094,
   },
   1095: {
@@ -62561,7 +62542,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 1095,
   },
   1093: {
@@ -62612,7 +62593,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 1093,
   },
   1092: {
@@ -62678,7 +62659,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 1092,
   },
   1086: {
@@ -62741,7 +62722,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1086,
   },
   902: {
@@ -62809,7 +62790,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 902,
   },
   1098: {
@@ -62904,7 +62885,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 1098,
   },
   1099: {
@@ -62982,7 +62963,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 1099,
   },
   1101: {
@@ -63042,7 +63023,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1101,
   },
   1102: {
@@ -63120,7 +63101,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1102,
   },
   1103: {
@@ -63198,7 +63179,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 1103,
   },
   1104: {
@@ -63258,7 +63239,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1104,
   },
   1105: {
@@ -63318,7 +63299,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1105,
   },
   1100: {
@@ -63396,7 +63377,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1100,
   },
   1096: {
@@ -63462,7 +63443,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 1096,
   },
   901: {
@@ -63540,7 +63521,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 901,
   },
   1108: {
@@ -63588,7 +63569,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Kapten'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1108,
   },
   1109: {
@@ -63636,7 +63617,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Professor'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 1109,
   },
   1097: {
@@ -63714,7 +63695,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1097,
   },
   1113: {
@@ -63780,7 +63761,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 1113,
   },
   1112: {
@@ -63831,7 +63812,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 1112,
   },
   903: {
@@ -63876,7 +63857,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 903,
   },
   904: {
@@ -63921,7 +63902,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 904,
   },
   905: {
@@ -63981,7 +63962,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 905,
   },
   906: {
@@ -64041,7 +64022,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 906,
   },
   907: {
@@ -64101,7 +64082,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 907,
   },
   908: {
@@ -64167,7 +64148,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 908,
   },
   909: {
@@ -64233,7 +64214,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 909,
   },
   1114: {
@@ -64284,7 +64265,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1114,
   },
   1117: {
@@ -64335,7 +64316,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 1117,
   },
   1116: {
@@ -64401,7 +64382,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 1116,
   },
   1115: {
@@ -64452,7 +64433,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1115,
   },
   940: {
@@ -64515,7 +64496,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: ['(PD)'],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 940,
   },
   1118: {
@@ -64560,7 +64541,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 1118,
   },
   1120: {
@@ -64611,7 +64592,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 1120,
   },
   1119: {
@@ -64662,7 +64643,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 1119,
   },
   1087: {
@@ -64740,7 +64721,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1087,
   },
   1122: {
@@ -64818,7 +64799,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 1122,
   },
   1121: {
@@ -64896,7 +64877,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 1121,
   },
   1088: {
@@ -64959,7 +64940,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1088,
   },
   1089: {
@@ -65002,7 +64983,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1089,
   },
   1090: {
@@ -65092,7 +65073,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1090,
   },
   1123: {
@@ -65135,7 +65116,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1123,
   },
   656: {
@@ -65192,7 +65173,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 656,
   },
   655: {
@@ -65249,7 +65230,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 655,
   },
   995: {
@@ -65320,7 +65301,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 995,
   },
   1013: {
@@ -65386,7 +65367,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1013,
   },
   366: {
@@ -65452,7 +65433,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 366,
   },
   365: {
@@ -65518,7 +65499,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 365,
   },
   557: {
@@ -65584,7 +65565,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 557,
   },
   646: {
@@ -65650,7 +65631,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 646,
   },
   645: {
@@ -65701,7 +65682,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 645,
   },
   647: {
@@ -65767,7 +65748,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 647,
   },
   1130: {
@@ -65818,7 +65799,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 1130,
   },
   1129: {
@@ -65884,7 +65865,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 1129,
   },
   556: {
@@ -65935,7 +65916,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 556,
   },
   1131: {
@@ -65986,7 +65967,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 1131,
   },
   1132: {
@@ -66031,7 +66012,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1132,
   },
   1133: {
@@ -66076,7 +66057,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1133,
   },
   1134: {
@@ -66121,7 +66102,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1134,
   },
   1135: {
@@ -66187,7 +66168,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1135,
   },
   1136: {
@@ -66238,7 +66219,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1136,
   },
   1137: {
@@ -66283,7 +66264,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1137,
   },
   1138: {
@@ -66328,7 +66309,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1138,
   },
   1139: {
@@ -66379,7 +66360,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1139,
   },
   1141: {
@@ -66430,7 +66411,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1141,
   },
   1140: {
@@ -66481,7 +66462,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1140,
   },
   1142: {
@@ -66532,7 +66513,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1142,
   },
   918: {
@@ -66598,7 +66579,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 918,
   },
   917: {
@@ -66664,7 +66645,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 917,
   },
   797: {
@@ -66724,7 +66705,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 797,
   },
   898: {
@@ -66762,7 +66743,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 898,
   },
   649: {
@@ -66824,7 +66805,7 @@ const persons: PersonsData = {
     notes: 'Inflyttad omkring 1866 till Sverige.',
     occupations: ['Skräddarmästare'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 649,
   },
   648: {
@@ -66881,7 +66862,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 648,
   },
   913: {
@@ -66917,7 +66898,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 913,
   },
   896: {
@@ -66995,7 +66976,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 896,
   },
   897: {
@@ -67055,7 +67036,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 897,
   },
   1151: {
@@ -67103,7 +67084,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 1151,
   },
   1152: {
@@ -67181,7 +67162,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 1152,
   },
   1153: {
@@ -67232,7 +67213,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1153,
   },
   1154: {
@@ -67292,7 +67273,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1154,
   },
   1155: {
@@ -67370,7 +67351,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 1155,
   },
   1162: {
@@ -67448,7 +67429,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 1162,
   },
   1161: {
@@ -67526,7 +67507,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 1161,
   },
   1156: {
@@ -67571,7 +67552,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1156,
   },
   1157: {
@@ -67644,7 +67625,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 1157,
   },
   1158: {
@@ -67704,7 +67685,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1158,
   },
   1159: {
@@ -67764,7 +67745,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1159,
   },
   1163: {
@@ -67822,7 +67803,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 1163,
   },
   1164: {
@@ -67882,7 +67863,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1164,
   },
   1165: {
@@ -67942,7 +67923,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1165,
   },
   1166: {
@@ -68002,7 +67983,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1166,
   },
   1167: {
@@ -68062,7 +68043,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1167,
   },
   1160: {
@@ -68113,7 +68094,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1160,
   },
   1107: {
@@ -68149,7 +68130,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 1107,
   },
   1106: {
@@ -68185,7 +68166,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 1106,
   },
   1111: {
@@ -68251,7 +68232,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Kyrkoherde'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 1111,
   },
   1110: {
@@ -68317,7 +68298,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 1110,
   },
   1150: {
@@ -68374,7 +68355,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Direktör'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 1150,
   },
   1168: {
@@ -68431,7 +68412,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 1168,
   },
   1169: {
@@ -68481,7 +68462,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Förvaltare'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 1169,
   },
   1172: {
@@ -68531,7 +68512,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 1172,
   },
   1173: {
@@ -68581,7 +68562,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Tandläkare'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 1173,
   },
   1176: {
@@ -68631,7 +68612,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 1176,
   },
   1177: {
@@ -68668,7 +68649,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1177,
   },
   1174: {
@@ -68705,7 +68686,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Småskollärare'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1174,
   },
   1175: {
@@ -68742,7 +68723,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1175,
   },
   1170: {
@@ -68792,7 +68773,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1170,
   },
   1178: {
@@ -68842,7 +68823,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Telegrafkommissarie'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1178,
   },
   650: {
@@ -68902,7 +68883,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Yrkeslärarinna'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 650,
   },
   651: {
@@ -68960,7 +68941,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 651,
   },
   1179: {
@@ -69025,7 +69006,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Distriktsveterinär'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 1179,
   },
   1180: {
@@ -69075,7 +69056,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 1180,
   },
   652: {
@@ -69141,7 +69122,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 652,
   },
   1185: {
@@ -69191,7 +69172,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Arkitekt'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 1185,
   },
   653: {
@@ -69235,7 +69216,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 653,
   },
   654: {
@@ -69298,7 +69279,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Øverläkare'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 654,
   },
   1191: {
@@ -69355,7 +69336,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 1191,
   },
   1193: {
@@ -69405,7 +69386,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Sjuksköterska'],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 1193,
   },
   1196: {
@@ -69448,7 +69429,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 1196,
   },
   1194: {
@@ -69498,7 +69479,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Cicilingenjör'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 1194,
   },
   1200: {
@@ -69548,7 +69529,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Lågstadielärare'],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 1200,
   },
   1201: {
@@ -69585,7 +69566,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Civilingenjör'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1201,
   },
   1202: {
@@ -69622,7 +69603,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Sjuksköterska'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1202,
   },
   1195: {
@@ -69666,7 +69647,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Med lic'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1195,
   },
   1145: {
@@ -69709,7 +69690,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 1145,
   },
   1146: {
@@ -69753,7 +69734,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Katolsk präst'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1146,
   },
   1148: {
@@ -69808,7 +69789,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Skräddarmästare'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 1148,
   },
   1206: {
@@ -69838,7 +69819,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Katolsk präst'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1206,
   },
   1208: {
@@ -69868,7 +69849,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Sjöman'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1208,
   },
   1149: {
@@ -69912,7 +69893,7 @@ const persons: PersonsData = {
     notes: 'Utflyttad från Boston.',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 1149,
   },
   1211: {
@@ -69942,7 +69923,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1211,
   },
   1212: {
@@ -69972,7 +69953,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1212,
   },
   1213: {
@@ -70002,7 +69983,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1213,
   },
   1144: {
@@ -70052,7 +70033,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 1144,
   },
   1143: {
@@ -70088,7 +70069,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 1143,
   },
   1124: {
@@ -70138,7 +70119,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 1124,
   },
   1214: {
@@ -70174,7 +70155,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 1214,
   },
   1215: {
@@ -70218,7 +70199,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1215,
   },
   1216: {
@@ -70268,7 +70249,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1216,
   },
   1218: {
@@ -70304,7 +70285,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1218,
   },
   1217: {
@@ -70348,7 +70329,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1217,
   },
   1125: {
@@ -70392,7 +70373,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1125,
   },
   1126: {
@@ -70436,7 +70417,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1126,
   },
   1127: {
@@ -70480,7 +70461,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1127,
   },
   1128: {
@@ -70530,7 +70511,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 1128,
   },
   1219: {
@@ -70566,7 +70547,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 1219,
   },
   1220: {
@@ -70610,7 +70591,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1220,
   },
   1171: {
@@ -70640,7 +70621,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1171,
   },
   1147: {
@@ -70670,7 +70651,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1147,
   },
   1205: {
@@ -70700,7 +70681,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1205,
   },
   1207: {
@@ -70730,7 +70711,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Skräddare'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1207,
   },
   1203: {
@@ -70766,7 +70747,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 1203,
   },
   1204: {
@@ -70796,7 +70777,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1204,
   },
   1209: {
@@ -70826,7 +70807,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1209,
   },
   1210: {
@@ -70870,7 +70851,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1210,
   },
   1221: {
@@ -70907,7 +70888,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1221,
   },
   1181: {
@@ -70957,7 +70938,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 1181,
   },
   1182: {
@@ -70994,7 +70975,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1182,
   },
   1183: {
@@ -71031,7 +71012,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1183,
   },
   1184: {
@@ -71068,7 +71049,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1184,
   },
   1186: {
@@ -71118,7 +71099,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 1186,
   },
   1222: {
@@ -71161,7 +71142,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 1222,
   },
   1223: {
@@ -71211,7 +71192,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1223,
   },
   1225: {
@@ -71254,7 +71235,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1225,
   },
   1224: {
@@ -71291,7 +71272,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1224,
   },
   1187: {
@@ -71341,7 +71322,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Arkitekt'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 1187,
   },
   1226: {
@@ -71391,7 +71372,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 1226,
   },
   1227: {
@@ -71428,7 +71409,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1227,
   },
   1228: {
@@ -71465,7 +71446,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1228,
   },
   1188: {
@@ -71515,7 +71496,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 1188,
   },
   1229: {
@@ -71565,7 +71546,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 1229,
   },
   1230: {
@@ -71602,7 +71583,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1230,
   },
   1231: {
@@ -71639,7 +71620,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1231,
   },
   1232: {
@@ -71676,7 +71657,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1232,
   },
   1233: {
@@ -71713,7 +71694,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1233,
   },
   1189: {
@@ -71763,7 +71744,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Lågstadielärare'],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 1189,
   },
   1234: {
@@ -71806,7 +71787,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 1234,
   },
   1235: {
@@ -71843,7 +71824,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1235,
   },
   1236: {
@@ -71880,7 +71861,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1236,
   },
   1237: {
@@ -71917,7 +71898,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1237,
   },
   1190: {
@@ -71967,7 +71948,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1190,
   },
   1238: {
@@ -72017,7 +71998,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1238,
   },
   1192: {
@@ -72053,7 +72034,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1192,
   },
   1197: {
@@ -72090,7 +72071,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1197,
   },
   1198: {
@@ -72127,7 +72108,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1198,
   },
   1199: {
@@ -72164,7 +72145,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1199,
   },
   631: {
@@ -72222,7 +72203,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Lantbrukare'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 631,
   },
   630: {
@@ -72280,7 +72261,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 630,
   },
   1241: {
@@ -72310,7 +72291,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Spårvagnsförare'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1241,
   },
   1242: {
@@ -72348,7 +72329,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Lantbrukare'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1242,
   },
   1243: {
@@ -72393,7 +72374,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Lantbrukare'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1243,
   },
   1244: {
@@ -72431,7 +72412,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Hemmafru'],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1244,
   },
   1245: {
@@ -72469,7 +72450,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1245,
   },
   1246: {
@@ -72507,7 +72488,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1246,
   },
   1247: {
@@ -72545,7 +72526,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1247,
   },
   1248: {
@@ -72583,7 +72564,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1248,
   },
   1249: {
@@ -72621,7 +72602,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1249,
   },
   1240: {
@@ -72679,7 +72660,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 1240,
   },
   1239: {
@@ -72737,7 +72718,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 1239,
   },
   1252: {
@@ -72767,7 +72748,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1252,
   },
   1253: {
@@ -72797,7 +72778,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1253,
   },
   1255: {
@@ -72860,7 +72841,7 @@ const persons: PersonsData = {
       'Hans farfar kom 1734 som baby till Linköping från Bryssel. De var tre bröder, en dog strax efter ankomsten. De gav upphov till två grenar; en rik och en fattig (vår gren).',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 1255,
   },
   1254: {
@@ -72930,7 +72911,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 1254,
   },
   1251: {
@@ -72980,7 +72961,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 1251,
   },
   1250: {
@@ -73030,7 +73011,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 1250,
   },
   1258: {
@@ -73074,7 +73055,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 1258,
   },
   634: {
@@ -73140,7 +73121,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Fiskare'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 634,
   },
   633: {
@@ -73206,7 +73187,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 633,
   },
   1260: {
@@ -73272,7 +73253,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Fiskare'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 1260,
   },
   1259: {
@@ -73330,7 +73311,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 1259,
   },
   1262: {
@@ -73388,7 +73369,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Lantbrukare'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 1262,
   },
   1261: {
@@ -73446,7 +73427,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 1261,
   },
   1263: {
@@ -73476,7 +73457,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 1263,
   },
   632: {
@@ -73521,7 +73502,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 632,
   },
   1256: {
@@ -73566,7 +73547,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1256,
   },
   1257: {
@@ -73611,7 +73592,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1257,
   },
   1264: {
@@ -73681,7 +73662,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 1264,
   },
   1266: {
@@ -73732,7 +73713,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: ['Döpt 1820'],
     references: [],
-    sex: 'MAN',
+    sex: SexEnum.MAN,
     id: 1266,
   },
   1265: {
@@ -73798,7 +73779,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 1265,
   },
   1267: {
@@ -73876,7 +73857,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'WOMAN',
+    sex: SexEnum.WOMAN,
     id: 1267,
   },
   1268: {
@@ -73936,7 +73917,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1268,
   },
   1269: {
@@ -73996,7 +73977,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1269,
   },
   1270: {
@@ -74062,7 +74043,7 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1270,
   },
   1271: {
@@ -74120,8 +74101,8 @@ const persons: PersonsData = {
     notes: '',
     occupations: [],
     references: [],
-    sex: 'UNKNOWN',
+    sex: SexEnum.UNKNOWN,
     id: 1271,
   },
-}
-export default persons
+};
+export default persons;

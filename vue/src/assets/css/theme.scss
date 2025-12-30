@@ -1,0 +1,57 @@
+/* Custom colors */
+$glaucous: #7785ac;
+$light-blue: #9ac6c5;
+$celadon: #a5e6ba;
+$vibrant-coral: #f9564f;
+$jet-black: #2e3138;
+$sage-green: #8fb89c;
+$mint-cream: #b8e6d5;
+$dusty-rose: #d4a5a5;
+$vibrant-pink: #ff6b9d;
+$vibrant-blue: #3261c4;
+$lavender-gray: #a8a4c7;
+
+///* Override bootstrap colors */
+//$primary: $vibrant-blue;
+//$secondary: $light-blue;
+//$success: $celadon;
+//$danger: $vibrant-coral;
+//$warning: $dusty-rose;
+//$info: $mint-cream;
+//$light: $lavender-gray;
+//$dark: $jet-black;
+
+:root {
+  --heg-male-color: var(--vibrant-blue);
+  --heg-female-color: var(--vibrant-pink);
+  --heg-unknown-color: var(--vibrant-green);
+  --vibrant-pink: #ff6b9dff;
+  --vibrant-blue: #3261c4;
+  --vibrant-green: #6be793;
+  --glaucous: #7785acff;
+  --slate-blue: #5d6d8eff;
+  --light-blue: #9ac6c5ff;
+  --celadon: #a5e6baff;
+  --vibrant-coral: #f9564fff;
+  --jet-black: #2e3138ff;
+  --sage-green: #8fb89cff;
+  --mint-cream: #b8e6d5ff;
+  --moss-green: #7a9b7eff;
+  --dusty-rose: #d4a5a5ff;
+
+  --blush-pink: #e8b4b8ff;
+  --lavender-gray: #a8a4c7ff;
+  --warm-sand: #e5d4c1ff;
+}
+
+
+@import 'bootstrap/scss/bootstrap';
+
+/*
+=============================================
+========= Bootstrap Overrides ===============
+=============================================
+*/
+:root {
+  --bs-body-font-family: "Roboto", "Inter", -apple-system, BlinkMacSystemFont, " Segoe UI ", sans-serif;
+}
