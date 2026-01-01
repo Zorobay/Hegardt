@@ -21,7 +21,7 @@ export default [
   ...pluginVue.configs['flat/recommended'],
 
   {
-    name: 'app/vue-typescript-setup',
+    name: 'app/vue-rules',
     files: ['**/*.vue'],
     languageOptions: {
       parser: vueParser,
@@ -31,13 +31,8 @@ export default [
         sourceType: 'module',
       },
     },
-  },
-
-  // Vue script setup order - defineProps, defineEmits
-  {
-    name: 'app/vue-define-macros-order',
-    files: ['**/*.vue'],
     rules: {
+      // Vue script setup order - defineProps, defineEmits
       'vue/define-macros-order': [
         'error',
         {
@@ -45,14 +40,7 @@ export default [
           defineExposeLast: false,
         },
       ],
-    },
-  },
-
-  // Vue component tag order - script, template, style
-  {
-    name: 'app/vue-component-order',
-    files: ['**/*.vue'],
-    rules: {
+      // Vue component tag order - script, template, style
       'vue/component-tags-order': [
         'error',
         {
@@ -62,21 +50,14 @@ export default [
     },
   },
 
-  // Semicolon rule - ALWAYS require them
-  {
-    name: 'app/semicolons',
-    files: ['**/*.{ts,mts,tsx,js,mjs,jsx,vue}'],
-    rules: {
-      semi: ['error', 'always'],
-      '@typescript-eslint/semi': ['error', 'always'],
-    },
-  },
-
   // TypeScript-specific rules
   {
     name: 'app/typescript-rules',
     files: ['**/*.{ts,mts,tsx,vue}'],
     rules: {
+      // Semicolon rule - ALWAYS require them
+      semi: ['error', 'always'],
+      '@typescript-eslint/semi': ['error', 'always'],
       '@typescript-eslint/no-unused-vars': [
         'error',
         {
@@ -98,6 +79,16 @@ export default [
         'error',
         {
           prefer: 'type-imports',
+        },
+      ],
+      // Space before blocks
+      'space-before-blocks': ['error', 'always'],
+
+      // Keyword spacing (space before/after keywords like if, for, etc.)
+      'keyword-spacing': [
+        'error',
+        {
+          before: true,
         },
       ],
     },
