@@ -9,7 +9,7 @@ const props = defineProps({ page: { type: Number, required: false, default: 0 } 
         label="Download 300 DPI"
         as="a"
         target="_blank"
-        href="/public/pdf/Hegardt_300dpi_sökbar_adobe_komprimerad.pdf"
+        href="/pdf/Hegardt_300dpi_sökbar_adobe_komprimerad.pdf"
       />
       <ButtonPrime
         label="Download 600 DPI"
