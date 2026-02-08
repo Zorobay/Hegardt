@@ -21,9 +21,9 @@ import VectorSource from 'ol/source/Vector.js';
 import VectorLayer from 'ol/layer/Vector.js';
 import { Icon, Style } from 'ol/style.js';
 import AccordionComponent from '@/components/forms/AccordionComponent.vue';
-import CheckboxAccordion from '@/components/forms/CheckboxAccordion.vue';
 import type BaseEvent from 'ol/events/Event';
 import _ from 'lodash';
+import CheckboxAccordion from '@/components/forms/CheckboxAccordion.vue';
 
 const router = useRouter();
 
@@ -39,7 +39,14 @@ const popupHeader = ref<string | undefined>('');
 const popupEventType = ref<string | undefined>('');
 const popupDate = ref<string | undefined>('');
 let prevHoveredFeature: PersonFeature | null = null;
+const toggleControlsButtonClass = computed(() => {
+  if (isMobile.value) {
+    return isMinimized.value ? 'pi pi-angle-double-down' : 'pi pi-angle-double-up';
+  }
+  return isMinimized.value ? 'pi pi-angle-double-right' : 'pi pi-angle-double-left';
+});
 
+// OpenLayers Map setup
 let overlay: Overlay | null = null;
 let map: OLMap | null = null;
 let selectedEventTypes: string[] = [];
@@ -54,7 +61,12 @@ const deathFeatures: PersonFeature[] = [];
 const burialFeatures: PersonFeature[] = [];
 let mapView = new View();
 const vectorSource = new VectorSource({ features: [] as PersonFeature[] });
-const vectorLayer = new VectorLayer({ source: vectorSource });
+const vectorLayer = new VectorLayer({
+  source: vectorSource,
+  renderBuffer: 100, // Renders features outside the visible viewport by N pixels
+  updateWhileAnimating: false,
+  updateWhileInteracting: false,
+});
 
 const allFeatures = function (): PersonFeature[] {
   return [...birthFeatures, ...deathFeatures, ...burialFeatures];
@@ -106,7 +118,7 @@ function updateMapMarkers() {
   vectorSource.addFeatures(allFeatures);
 }
 
-function buildMapFeatures() {
+function buildMapFeatures(): void {
   for (const person of personService.getAllPersonsList()) {
     for (const eventType of ['birth', 'death', 'burial'] as const) {
       const location = person[eventType].location;
@@ -125,7 +137,7 @@ function buildMapFeatures() {
           date: date,
           eventType: eventType,
           gender: person['sex'],
-          personId: person.id,
+          id: person.id,
         };
 
         if (eventType === 'birth') {
@@ -164,7 +176,7 @@ function buildMapFeatures() {
   styleMapFeatures();
 }
 
-function styleMapFeatures() {
+function styleMapFeatures(): void {
   let styles = buildMarkerStyles('green');
   birthFeatures.forEach((f) => {
     f.setStyle(styles.normal);
@@ -290,79 +302,103 @@ onMounted(() => {
 </script>
 
 <template>
-  <div id="main-div" class="row">
-    <div class="col-12 col-lg-auto order-2 order-lg-1">
-      <div id="map-controls" class="card card-body" :class="{ minimized: isMinimized }">
-        <form>
-          <CheckboxAccordion
-            heading="Event Type"
-            :items="['Birth', 'Death', 'Burial']"
-            @selection-changed="onEventTypeSelectionChanged"
-          />
-          <CheckboxAccordion
-            heading="Gender"
-            :items="['Man', 'Woman', 'Unknown']"
-            @selection-changed="onGenderSelectionChanged"
-          />
-          <AccordionComponent heading="Person Name">
-            <input
-              v-model="personNameFilterText"
-              class="form-control"
-              type="search"
-              placeholder="Name..."
-              @keyup="onPersonNameChange"
+  <div id="main-div">
+    <CardPrime id="map-controls" :class="{ minimized: isMinimized }">
+      <template #content>
+        <div class="accordion-div">
+          <AccordionPrime :value="['0']" multiple>
+            <CheckboxAccordion
+              value="0"
+              heading="Event Type"
+              :items="['Birth', 'Death', 'Burial']"
+              @selection-changed="onEventTypeSelectionChanged"
             />
-          </AccordionComponent>
-          <AccordionComponent heading="Marker Size">
-            <div id="marker-size-input" class="d-flex gap-2 align-items-center w-100">
+            <CheckboxAccordion
+              value="1"
+              heading="Gender"
+              :items="['Man', 'Woman', 'Unknown']"
+              @selection-changed="onGenderSelectionChanged"
+            />
+            <AccordionComponent heading="Person Name" value="2">
               <input
-                v-model="markerSize"
-                type="range"
-                min="0.1"
-                max="1"
-                step="0.05"
-                class="flex-grow-1"
-                @change="styleMapFeatures"
+                v-model="personNameFilterText"
+                class="form-control"
+                type="search"
+                placeholder="Name..."
+                @keyup="onPersonNameChange"
               />
-              <data :value="markerSizeComp" class="float-end">{{ markerSizeComp }}</data>
-            </div>
-          </AccordionComponent>
-        </form>
-        <button id="collapse-button" class="btn btn-primary" role="button" @click="isMinimized = !isMinimized">
-          <font-awesome-icon
-            icon="fa-solid fa-angles-up"
-            :rotation="isMinimized ? (isMobile ? 180 : 90) : isMobile ? 0 : 270"
-          />
-        </button>
-      </div>
-    </div>
-    <div class="col-12 col-lg order-1 order-lg-2">
-      <div id="map"></div>
-      <div v-show="showPopup" ref="popup" class="ol-popup">
-        <div class="ol-popup-header">{{ popupHeader }}</div>
-        <div class="ol-popup-event-type">{{ popupEventType }}</div>
-        <div class="ol-popup-date">{{ popupDate }}</div>
-      </div>
-    </div>
+            </AccordionComponent>
+            <AccordionComponent heading="Marker Size" value="3">
+              <div id="marker-size-input" class="d-flex gap-2 align-items-center w-100">
+                <input
+                  v-model="markerSize"
+                  type="range"
+                  min="0.1"
+                  max="1"
+                  step="0.05"
+                  class="flex-grow-1"
+                  @change="styleMapFeatures"
+                />
+                <data :value="markerSizeComp" class="float-end">{{ markerSizeComp }}</data>
+              </div>
+            </AccordionComponent>
+          </AccordionPrime>
+        </div>
+        <ButtonPrime
+          id="collapse-button"
+          :icon="toggleControlsButtonClass"
+          aria-label="Toggle Controls"
+          @click="isMinimized = !isMinimized"
+        />
+      </template>
+    </CardPrime>
+    <CardPrime id="map-card">
+      <template #content>
+        <div id="map"></div>
+        <div v-show="showPopup" ref="popup" class="ol-popup">
+          <div class="ol-popup-header">{{ popupHeader }}</div>
+          <div class="ol-popup-event-type">{{ popupEventType }}</div>
+          <div class="ol-popup-date">{{ popupDate }}</div>
+        </div>
+      </template>
+    </CardPrime>
   </div>
 </template>
 
 <style scoped>
-#main-div > * {
-  padding-right: 0.5rem;
-  padding-left: 0.5rem;
+#main-div {
+  display: flex;
+  gap: 1rem; /* Space between elements */
 }
 
 #map-controls {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  width: 20rem; /* Add fixed width */
+  flex-shrink: 0; /* Don't shrink below content width */
+  width: 20rem;
   transition: width 0.3s ease;
   overflow: hidden;
 }
 
-#map-controls form {
+#map-controls.minimized {
+  width: 4rem;
+}
+#map-card {
+  flex: 1; /* Take up remaining space */
+  overflow: hidden;
+}
+
+#map-card :deep(.p-card-body) {
+  padding: 0;
+  overflow: hidden;
+  border-radius: inherit;
+}
+
+#map {
+  width: 100%;
+  height: 50rem;
+  border-radius: inherit;
+}
+
+#map-controls .accordion-div {
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -371,11 +407,7 @@ onMounted(() => {
   overflow: hidden;
 }
 
-#map-controls.minimized {
-  width: 4rem;
-}
-
-#map-controls.minimized form {
+#map-controls.minimized .accordion-div {
   opacity: 0;
 }
 
@@ -385,11 +417,6 @@ onMounted(() => {
   width: 100%;
   height: 2rem;
   flex-shrink: 0;
-}
-
-#map {
-  width: 100%;
-  height: 50rem;
 }
 
 .ol-popup {
@@ -409,7 +436,7 @@ onMounted(() => {
 }
 
 /* Mobile-specific styles */
-@media (max-width: 991px) {
+@media (width <= 991px) {
   #map-controls {
     width: 100%;
     margin-bottom: 1rem;
@@ -432,7 +459,7 @@ onMounted(() => {
 }
 
 /* Very small screens */
-@media (max-width: 576px) {
+@media (width <= 576px) {
   #map {
     height: 50vh;
     min-height: 300px;

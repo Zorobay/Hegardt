@@ -1,4 +1,3 @@
-// eslint.config.js
 import js from '@eslint/js';
 import pluginVue from 'eslint-plugin-vue';
 import skipFormatting from '@vue/eslint-config-prettier/skip-formatting';
@@ -55,6 +54,36 @@ export default [
     name: 'app/typescript-rules',
     files: ['**/*.{ts,mts,tsx,vue}'],
     rules: {
+      // Member ordering of classes
+      '@typescript-eslint/member-ordering': [
+        'error',
+        {
+          default: [
+            // Static members
+            'public-static-field',
+            'protected-static-field',
+            'private-static-field',
+
+            // Instance fields
+            'public-instance-field',
+            'protected-instance-field',
+            'private-instance-field',
+
+            // Constructor
+            'constructor',
+
+            // Static methods
+            'public-static-method',
+            'protected-static-method',
+            'private-static-method',
+
+            // Instance methods
+            'public-instance-method',
+            'protected-instance-method',
+            'private-instance-method',
+          ],
+        },
+      ],
       // Semicolon rule - ALWAYS require them
       semi: ['error', 'always'],
       '@typescript-eslint/semi': ['error', 'always'],

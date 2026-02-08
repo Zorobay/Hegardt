@@ -34,6 +34,7 @@ export interface Marriage {
 }
 
 export interface Person {
+  pdfPage?: number;
   birth: LifeEvent;
   burial: LifeEvent;
   children: PersonId[];

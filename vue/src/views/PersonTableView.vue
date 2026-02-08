@@ -1,14 +1,9 @@
 <script setup lang="ts">
-
-import PersonTable from "@/components/PersonTable.vue";
+import PersonTable from '@/components/PersonTable.vue';
 </script>
 
 <template>
   <h1>Table</h1>
-  <PersonTable>
-
-  </PersonTable>
+  <PersonTable />
 </template>
-<style scoped>
-
-</style>
+<style scoped></style>

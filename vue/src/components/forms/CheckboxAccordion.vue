@@ -6,6 +6,7 @@ import CheckboxComponent from '@/components/forms/CheckboxComponent.vue';
 const props = defineProps({
   heading: { type: String, default: '' },
   items: { type: Array<string>, default: [] },
+  value: { type: String, required: true },
 });
 const emit = defineEmits(['selection-changed']);
 const checkedStates = reactive<Record<string, boolean>>({});
@@ -31,7 +32,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <AccordionComponent :heading="heading">
+  <AccordionComponent :heading="heading" :value="value">
     <CheckboxComponent
       v-for="item in items"
       :key="item"

@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+/* Custom colors */
+:root {
+  --heg-male-color: var(--vibrant-blue);
+  --heg-female-color: var(--vibrant-pink);
+  --heg-unknown-color: var(--vibrant-green);
+  --vibrant-pink: #ff6b9dff;
+  --vibrant-blue: #3261c4;
+  --vibrant-green: #6be793;
+  --glaucous: #7785acff;
+  --slate-blue: #5d6d8eff;
+  --light-blue: #9ac6c5ff;
+  --celadon: #a5e6baff;
+  --vibrant-coral: #f9564fff;
+  --jet-black: #2e3138ff;
+  --sage-green: #8fb89cff;
+  --mint-cream: #b8e6d5ff;
+  --moss-green: #7a9b7eff;
+  --dusty-rose: #d4a5a5ff;
+  --blush-pink: #e8b4b8ff;
+  --lavender-gray: #a8a4c7ff;
+  --warm-sand: #e5d4c1ff;
+  /* Override PrimeVue primary color */
+  --p-primary-50: #e8eef9;
+  --p-primary-100: #c2d4f0;
+  --p-primary-200: #99b8e7;
+  --p-primary-300: #709cde;
+  --p-primary-400: #5286d6;
+  --p-primary-500: #ff0000;
+  /* Your vibrant-blue */
+  --p-primary-600: #2d59b0;
+  --p-primary-700: #274f9d;
+  --p-primary-800: #214589;
+  --p-primary-900: #183366;
+  --p-primary-950: #0f2144; }
+
+:root {
+  --bs-body-font-family: "Roboto", "Inter", -apple-system, blinkmacsystemfont, " Segoe UI ", sans-serif; }
+
+/*# sourceMappingURL=theme.css.map */

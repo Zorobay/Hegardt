@@ -75,7 +75,7 @@ function onPersonClick(person: Person): void {
           </div>
         </a>
       </div>
-      <button class="btn btn-primary" type="submit">Search</button>
+      <ButtonPrime type="submit"> Search </ButtonPrime>
     </div>
   </form>
 </template>
@@ -109,10 +109,12 @@ function onPersonClick(person: Person): void {
   width: 100%;
   justify-content: flex-start;
 }
+
 .dropdown-person-info {
   flex: 1;
   min-width: 0;
 }
+
 .dropdown-item:last-child {
   border-bottom: none;
 }

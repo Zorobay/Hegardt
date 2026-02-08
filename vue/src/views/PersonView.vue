@@ -99,6 +99,7 @@ onMounted(() => {
 .heg-person-view {
   margin-top: 5em;
   margin-bottom: 5em;
+
   .row {
     display: flex;
     justify-content: center;

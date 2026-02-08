@@ -15,16 +15,24 @@ onMounted(() => {
 </script>
 
 <template>
-  <label class="d-flex gap-2 align-items-center" :for="label">
-    <input
-      :id="label"
-      type="checkbox"
-      :value="label"
-      :checked="checked"
+  <div class="checkbox-wrapper">
+    <CheckboxPrime
+      binary
+      :input-id="label"
       @change="(event) => $emit('selection-changed', (event.target as HTMLInputElement)?.checked)"
-    />
-    {{ label }}
-  </label>
+    >
+    </CheckboxPrime>
+    <label :for="label">
+      {{ label }}
+    </label>
+  </div>
+  <!--  <input :id="label" type="checkbox" :value="label" :checked="checked" />-->
 </template>
 
-<style scoped></style>
+<style scoped>
+.checkbox-wrapper {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+}
+</style>

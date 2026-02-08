@@ -3,20 +3,23 @@ defineProps({ title: { type: String, required: false, default: '' } });
 </script>
 
 <template>
-  <div class="heg-info-group card card-body">
-    <h4 class="heg-info-group-title">{{ title }}</h4>
-    <hr />
-    <div class="heg-info-group-content">
-      <slot />
-    </div>
-  </div>
+  <CardPrime class="heg-info-group">
+    <template #title>
+      {{ title }}
+      <hr />
+    </template>
+    <template #content>
+      <div class="heg-info-group-content">
+        <slot />
+      </div>
+    </template>
+  </CardPrime>
 </template>
 
 <style scoped>
 .heg-info-group {
-  margin-top: 2em;
+  margin-bottom: 1.5rem;
 }
-
 hr {
   margin-top: 0.5em;
 }

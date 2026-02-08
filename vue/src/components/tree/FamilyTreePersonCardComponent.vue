@@ -1,8 +1,8 @@
 ﻿<script setup lang="ts">
-import { FamilyTreeNode } from '@/types/family-tree.types.ts';
 import PortraitComponent from '@/components/person/PortraitComponent.vue';
 import SexEnum from '@/enums/PersonSexEnum.ts';
 import PersonCardIconLinks from '@/components/person/PersonCardIconLinks.vue';
+import { FamilyTreeNode } from '@/models/family-tree.model.ts';
 
 const props = defineProps({
   node: { type: FamilyTreeNode, required: true },
@@ -23,6 +23,9 @@ const strokeColor = colorVarMap[props.node.sex];
 </script>
 
 <template>
+  <foreignObject :x="props.node.x" :y="props.node.y - 20" width="100" height="100">
+    <p>{{ props.node.x }}, {{ props.node.y }}</p>
+  </foreignObject>
   <rect
     class="background-rect-male"
     ry="5"

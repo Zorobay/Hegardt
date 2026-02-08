@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import DataTable from 'datatables.net-vue3';
-import DataTablesCore from 'datatables.net-bs5';
+import DataTablesCore from 'datatables.net-dt';
 import personService from '@/services/PersonService.ts';
 import { formatPersonDate } from '@/helpers/person-helper.ts';
 import type { LifeEvent } from '@/types/person.type.ts';
@@ -42,8 +42,7 @@ const columns = [
 </script>
 
 <template>
-  <DataTable id="persons-table" :data="data" :columns="columns" class="display table table-striped">
-  </DataTable>
+  <DataTable id="persons-table" :data="data" :columns="columns" class="display table table-striped"> </DataTable>
 </template>
 
 <style scoped>

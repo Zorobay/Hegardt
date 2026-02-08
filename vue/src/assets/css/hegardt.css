@@ -1,4 +1,4 @@
-﻿/* Global style for checkboxes */
+/* Global style for checkboxes */
 input[type="checkbox"] {
     /* Bootstrap default styling */
     width: 1rem;
@@ -42,6 +42,7 @@ input[type="checkbox"] {
     0% {
         transform: translateX(0);
     }
+
     100% {
         transform: translateX(-50%);
     }
@@ -52,6 +53,7 @@ input[type="checkbox"] {
     100% {
         transform: scale(1);
     }
+
     50% {
         transform: scale(1.15);
     }

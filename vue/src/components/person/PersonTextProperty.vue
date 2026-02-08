@@ -14,6 +14,7 @@ defineProps(['text', 'title']);
 .heg-person-text-property {
   margin-bottom: 2em;
 }
+
 h6 {
   margin-bottom: 0.2em;
 }

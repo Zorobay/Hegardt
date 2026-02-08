@@ -33,6 +33,6 @@ const id = props.person.id;
 }
 
 .heg-person-card:hover {
-  background: rgba(0, 0, 0, 0.05);
+  background: rgb(0 0 0 / 5%);
 }
 </style>

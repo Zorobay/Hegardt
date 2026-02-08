@@ -327,6 +327,7 @@ const persons: PersonsData = {
     id: 6,
   },
   9: {
+    pdfPage: 13,
     birth: {
       date: {
         date: {
@@ -458,6 +459,7 @@ const persons: PersonsData = {
     id: 10,
   },
   12: {
+    pdfPage: 13,
     birth: {
       date: {
         date: {
@@ -528,6 +530,7 @@ const persons: PersonsData = {
     id: 12,
   },
   13: {
+    pdfPage: 13,
     birth: {
       date: {
         date: {
@@ -685,6 +688,7 @@ const persons: PersonsData = {
     id: 15,
   },
   16: {
+    pdfPage: 13,
     birth: {
       date: {
         date: {

@@ -1,66 +1,87 @@
 <script setup lang="ts">
-import SearchComponent from '@/components/forms/SearchComponent.vue';
 import { useRouter } from 'vue-router';
+import { ref } from 'vue';
+import type { MenuItem } from 'primevue/menuitem';
+import SearchComponent from '@/components/forms/SearchComponent.vue';
 
 const router = useRouter();
+const languageMenu = ref();
+
+const menuItems = ref<MenuItem[]>([
+  {
+    label: 'Home',
+    icon: 'pi pi-home',
+    command: () => router.push({ name: 'home' }),
+  },
+  {
+    label: 'Table',
+    icon: 'pi pi-table',
+    command: () => router.push({ name: 'table' }),
+  },
+  {
+    label: 'Map',
+    icon: 'pi pi-map',
+    command: () => router.push({ name: 'map' }),
+  },
+  {
+    label: 'Tree',
+    icon: 'pi pi-sitemap',
+    command: () => router.push({ name: 'tree' }),
+  },
+  {
+    label: 'Family Book',
+    icon: 'pi pi-book',
+    command: () => router.push({ name: 'family-book' }),
+  },
+]);
+
+const languageItems = ref<MenuItem[]>([
+  { label: 'English', icon: 'pi pi-globe' },
+  { label: 'Swedish', icon: 'pi pi-globe' },
+  { label: 'Spanish', icon: 'pi pi-globe' },
+]);
 
 function onPersonClicked(personId: number): void {
   router.push({ name: 'person', params: { id: personId } });
 }
+function toggleLanguageMenu(event: Event): void {
+  languageMenu.value.toggle(event);
+}
 </script>
 
 <template>
-  <nav id="main-nav" class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
+  <nav id="main-nav">
+    <MenubarPrime :model="menuItems">
+      <template #start>
+        <span class="navbar-brand">Navbar</span>
+      </template>
 
-      <div id="navbarSupportedContent" class="collapse navbar-collapse">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <RouterLink class="nav-link" :to="{ name: 'home' }">Home</RouterLink>
-          </li>
-          <li class="nav-item">
-            <RouterLink class="nav-link" :to="{ name: 'table' }">Table</RouterLink>
-          </li>
-          <li class="nav-item">
-            <RouterLink class="nav-link" :to="{ name: 'map' }">Map</RouterLink>
-          </li>
-          <li class="nav-item">
-            <RouterLink v-show="true" class="nav-link" :to="{ name: 'tree' }">Tree</RouterLink>
-          </li>
-        </ul>
+      <template #end>
+        <div class="d-flex align-items-center gap-2">
+          <SearchComponent @on-person-clicked="onPersonClicked" />
 
-        <SearchComponent @on-person-clicked="onPersonClicked" />
-
-        <div class="dropdown">
-          <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <i class="fa-solid fa-language"></i>
-          </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#"></a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
+          <ButtonPrime icon="pi pi-language" text rounded aria-label="Language" @click="toggleLanguageMenu" />
+          <MenuPrime ref="languageMenu" :model="languageItems" popup />
         </div>
-      </div>
-    </div>
+      </template>
+    </MenubarPrime>
   </nav>
 </template>
 
 <style scoped>
-#main-nav .container-fluid {
-  alignment: center;
-  max-width: 80%;
+#main-nav {
+  margin-bottom: 2rem;
+}
+
+.p-menubar {
+  width: 100%;
+  padding-right: 10rem;
+  padding-left: 10rem;
+}
+
+.navbar-brand {
+  font-size: 1.25rem;
+  font-weight: 500;
+  cursor: pointer;
 }
 </style>

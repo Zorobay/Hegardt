@@ -1,7 +1,5 @@
-<script setup lang="ts">
-</script>
+<script setup lang="ts"></script>
 
 <template>
-<p>Welcome to my website!</p>
+  <p>Welcome to my website!</p>
 </template>
-

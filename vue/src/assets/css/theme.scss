@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 /* Custom colors */
 $glaucous: #7785ac;
 $light-blue: #9ac6c5;
@@ -10,16 +13,6 @@ $dusty-rose: #d4a5a5;
 $vibrant-pink: #ff6b9d;
 $vibrant-blue: #3261c4;
 $lavender-gray: #a8a4c7;
-
-///* Override bootstrap colors */
-//$primary: $vibrant-blue;
-//$secondary: $light-blue;
-//$success: $celadon;
-//$danger: $vibrant-coral;
-//$warning: $dusty-rose;
-//$info: $mint-cream;
-//$light: $lavender-gray;
-//$dark: $jet-black;
 
 :root {
   --heg-male-color: var(--vibrant-blue);
@@ -42,16 +35,22 @@ $lavender-gray: #a8a4c7;
   --blush-pink: #e8b4b8ff;
   --lavender-gray: #a8a4c7ff;
   --warm-sand: #e5d4c1ff;
+
+  /* Override PrimeVue primary color */
+  --p-primary-50: #e8eef9;
+  --p-primary-100: #c2d4f0;
+  --p-primary-200: #99b8e7;
+  --p-primary-300: #709cde;
+  --p-primary-400: #5286d6;
+  --p-primary-500: #ff0000; /* Your vibrant-blue */
+  --p-primary-600: #2d59b0;
+  --p-primary-700: #274f9d;
+  --p-primary-800: #214589;
+  --p-primary-900: #183366;
+  --p-primary-950: #0f2144;
 }
 
-
-@import 'bootstrap/scss/bootstrap';
-
-/*
-=============================================
-========= Bootstrap Overrides ===============
-=============================================
-*/
+// Define global font
 :root {
-  --bs-body-font-family: "Roboto", "Inter", -apple-system, BlinkMacSystemFont, " Segoe UI ", sans-serif;
+  --bs-body-font-family: "Roboto", "Inter", -apple-system, blinkmacsystemfont, " Segoe UI ", sans-serif;
 }

@@ -5,6 +5,7 @@ import PersonTableView from '@/views/PersonTableView.vue';
 import NotFoundView from '@/views/NotFoundView.vue';
 import PersonMapView from '@/views/PersonMapView.vue';
 import FamilyTreeView from '@/views/FamilyTreeView.vue';
+import FamilyBookView from '@/views/FamilyBookView.vue';
 
 const router = createRouter({
   history: createWebHistory(),
@@ -40,6 +41,11 @@ const router = createRouter({
       name: 'tree',
       component: FamilyTreeView,
       props: true,
+    },
+    {
+      path: '/family-book/:page?',
+      name: 'family-book',
+      component: FamilyBookView,
     },
   ],
 });
