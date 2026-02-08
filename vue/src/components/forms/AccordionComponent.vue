@@ -1,8 +1,6 @@
 <script setup lang="ts">
-import { useId } from 'vue';
 
 const props = defineProps({ heading: { type: String, default: '' }, value: { type: String, required: true } });
-const id = useId();
 </script>
 
 <template>

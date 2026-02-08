@@ -15,7 +15,7 @@ const props = defineProps({
     <router-link class="icon-link" :to="{ name: 'person', params: { id: id } }">
       <font-awesome-icon icon="user"></font-awesome-icon>
     </router-link>
-    <router-link :to="{ name: 'book', params: { page: props.pdfPage } }">
+    <router-link class="icon-link" :to="{ name: 'family-book', params: { page: props.pdfPage } }">
       <font-awesome-icon icon="book"></font-awesome-icon>
     </router-link>
   </div>

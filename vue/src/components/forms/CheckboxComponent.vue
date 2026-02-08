@@ -19,7 +19,7 @@ onMounted(() => {
     <CheckboxPrime
       binary
       :input-id="label"
-      @change="(event) => $emit('selection-changed', (event.target as HTMLInputElement)?.checked)"
+      @change="(event: Event) => $emit('selection-changed', (event.target as HTMLInputElement)?.checked)"
     >
     </CheckboxPrime>
     <label :for="label">

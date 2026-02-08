@@ -79,7 +79,7 @@ function zoom(event: WheelEvent): void {
 
   // Calculate new viewBox dimensions
   const newViewBoxWidth = viewBoxWidth / newZoom;
-  const newViewBoxHeight = viewBoxHeight / newZoom;
+  //const newViewBoxHeight = viewBoxHeight / newZoom;
 
   // Adjust viewBox position to zoom towards mouse cursor
   const scaleChange = newViewBoxWidth / (viewBoxWidth / zoomLevel.value);
@@ -122,7 +122,7 @@ function pan(event: MouseEvent): void {
   panStartPoint = new Coordinates(event.clientX, event.clientY);
 }
 
-function endPanning(event: MouseEvent): void {
+function endPanning(): void {
   isPanning.value = false;
 }
 </script>
