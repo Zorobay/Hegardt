@@ -33,24 +33,27 @@ export interface Marriage {
   personId: PersonId;
 }
 
-export interface Person {
+export interface Person extends PersonSummary {
   pdfPage?: number;
-  birth: LifeEvent;
-  burial: LifeEvent;
   children: PersonId[];
-  death: LifeEvent;
   father: PersonOptionalId;
   fileId: string;
-  firstName: string;
-  lastName: string;
   marriages: Marriage[];
-  middleNames: string[];
   mother: PersonOptionalId;
   notes: string;
   occupations: string[];
   references: string[];
-  sex: Sex;
+}
+
+export interface PersonSummary {
   id: PersonId;
+  firstName: string;
+  lastName: string;
+  middleNames: string;
+  sex: Sex;
+  birth: LifeEvent;
+  death: LifeEvent;
+  burial: LifeEvent;
 }
 
 export interface PersonsData {

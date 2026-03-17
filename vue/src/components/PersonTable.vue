@@ -1,13 +1,25 @@
 <script setup lang="ts">
 import DataTable from 'datatables.net-vue3';
 import DataTablesCore from 'datatables.net-dt';
-import personService from '@/services/PersonService.ts';
 import { formatPersonDate } from '@/helpers/person-helper.ts';
-import type { LifeEvent } from '@/types/person.type.ts';
+import type { LifeEvent, PersonSummary } from '@/types/person.type.ts';
+import { personsService } from '@/api/personService';
+import { onMounted, ref } from 'vue';
+
+const data = ref<PersonSummary[]>([]);
+const loading = ref(true);
 
 DataTable.use(DataTablesCore);
 
-const data = personService.getAllPersonsList();
+onMounted(async () => {
+  try {
+    const res = await personsService.getAll();
+    data.value = res.data ?? [];
+  } finally {
+    loading.value = false;
+  }
+});
+
 const columns = [
   {
     data: 'firstName',
@@ -16,8 +28,8 @@ const columns = [
   {
     data: 'middleNames',
     title: 'Middle Names',
-    render: function (data: string[], _type: string, _row: unknown, _meta: object) {
-      return data ? data.join(' ') : '';
+    render: function (data: string) {
+      return data ?? '';
     },
   },
   {
@@ -28,6 +40,7 @@ const columns = [
     data: 'birth',
     title: 'Birth date',
     render: function (data: LifeEvent, _type: string, _row: unknown, _meta: object) {
+      if (!data) return '';
       return formatPersonDate(data.date);
     },
   },
@@ -42,7 +55,13 @@ const columns = [
 </script>
 
 <template>
-  <DataTable id="persons-table" :data="data" :columns="columns" class="display table table-striped"> </DataTable>
+  <div v-if="loading" class="d-flex justify-content-center align-items-center" style="min-height: 200px">
+    <div class="spinner-border text-primary" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+
+  <DataTable v-else id="persons-table" :data="data" :columns="columns" class="display table table-striped" />
 </template>
 
 <style scoped>

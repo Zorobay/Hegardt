@@ -1,0 +1,51 @@
+micronaut:
+  application:
+    name: hegardt
+  eager-initialization: true
+  serde:
+    serialization:
+      inclusion: ALWAYS
+  server:
+    cors:
+      enabled: true
+      configurations:
+        web:
+          allowed-origins:
+            - http://localhost:5173
+          allowed-methods:
+            - GET
+            - POST
+            - PUT
+            - DELETE
+            - OPTIONS
+          allowed-headers:
+            - "*"
+
+datasources:
+  default:
+    url: ${JDBC_URL:`jdbc:postgresql://localhost:5432/hegardt`}
+    username: ${DB_USER:hegardt}
+    password: ${DB_PASSWORD:secret}
+    driver-class-name: org.postgresql.Driver
+
+jpa:
+  default:
+    entity-scan:
+      packages: "se.hegardt.domain"
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: validate # hibernate validates against schema, doesn't touch it
+        show_sql: false
+        id:
+          db_structure_naming_strategy: legacy
+
+flyway:
+  datasources:
+    default:
+      enabled: true
+      baseline-on-migrate: false  # false since flyway owns schema from the start
+
+logger:
+  levels:
+    org.hibernate: INFO

@@ -3,7 +3,7 @@ import type { Person, PersonOptionalId, PersonsData } from '@/types/person.type.
 import { fuzzyMatch } from '@/helpers/util-helper.ts';
 import { formatPersonFullName } from '@/helpers/person-helper.ts';
 
-class PersonService {
+class PersonNonApiService {
   private readonly _data: PersonsData;
   private readonly _dataList: Person[] = [];
 
@@ -83,4 +83,4 @@ class PersonService {
   }
 }
 
-export default new PersonService();
+export default new PersonNonApiService();

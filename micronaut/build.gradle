@@ -1,0 +1,99 @@
+plugins {
+    id("groovy")
+    id("io.micronaut.application") version "4.6.2"
+    id("com.gradleup.shadow") version "8.3.9"
+    id("io.micronaut.aot") version "4.6.2"
+    id("codenarc")
+}
+
+version = "0.1"
+group = "se.hegardt"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation("io.micronaut.groovy:micronaut-runtime-groovy")
+    implementation("io.micronaut.serde:micronaut-serde-jackson")
+    compileOnly("io.micronaut:micronaut-http-client")
+    compileOnly("io.micronaut:micronaut-http-validation")
+    compileOnly("io.micronaut.serde:micronaut-serde-processor")
+    runtimeOnly("ch.qos.logback:logback-classic")
+    runtimeOnly("org.yaml:snakeyaml")
+
+    // Database
+    runtimeOnly("org.postgresql:postgresql")
+    implementation("io.micronaut.sql:micronaut-jdbc-hikari")
+    implementation("io.micronaut.data:micronaut-data-hibernate-jpa")
+    implementation("io.micronaut.flyway:micronaut-flyway")
+    implementation("org.flywaydb:flyway-database-postgresql:12.1.0")
+
+    // Micronaut annotations
+    annotationProcessor("io.micronaut.data:micronaut-data-processor")
+
+    // Test dependencies
+    testImplementation("io.micronaut:micronaut-http-client")
+}
+
+application {
+    mainClass = "se.hegardt.Application"
+}
+java {
+    sourceCompatibility = JavaVersion.toVersion("21")
+    targetCompatibility = JavaVersion.toVersion("21")
+}
+
+graalvmNative.toolchainDetection = false
+
+micronaut {
+    runtime("netty")
+    testRuntime("spock2")
+    processing {
+        incremental(true)
+        annotations("se.hegardt.*")
+    }
+    aot {
+        // Please review carefully the optimizations enabled below
+        // Check https://micronaut-projects.github.io/micronaut-aot/latest/guide/ for more details
+        optimizeServiceLoading = true
+        convertYamlToJava = true
+        precomputeOperations = true
+        cacheEnvironment = true
+        optimizeClassLoading = true
+        deduceEnvironment = true
+        optimizeNetty = true
+        replaceLogbackXml = true
+    }
+}
+
+codenarc {
+    toolVersion = "3.7.0"
+}
+
+codenarcMain {
+    configFile = file("config/codenarc/codenarc.groovy")
+    reports {
+        html.required = true
+        xml.required = false
+    }
+}
+
+codenarcTest {
+    configFile = file("config/codenarc/codenarcTest.groovy")
+    reports {
+        html.required = true
+        xml.required = false
+    }
+}
+
+tasks.named("dockerfileNative") {
+    jdkVersion = "21"
+}
+
+tasks.register('generateSeed', JavaExec) {
+    group = 'seeding'
+    description = 'Generate Flyway seed SQL from persons.json'
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = 'scripts.seeding.generatePersonsSeed'
+}
