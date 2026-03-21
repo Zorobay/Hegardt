@@ -7,4 +7,5 @@
     developing for my family. The research is mostly based on the work conducted by
     <router-link :to="{ name: 'person', params: { id: 591 } }">Peter Hegardt</router-link>.
   </p>
+  <p>😎</p>
 </template>
