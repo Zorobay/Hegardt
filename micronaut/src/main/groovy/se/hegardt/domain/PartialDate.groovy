@@ -2,6 +2,7 @@ package se.hegardt.domain
 
 import groovy.transform.CompileStatic
 import jakarta.annotation.Nullable
+import jakarta.persistence.Column
 import jakarta.persistence.Embeddable
 import jakarta.persistence.PrePersist
 import jakarta.persistence.PreUpdate
@@ -12,17 +13,21 @@ import java.time.LocalDate
 @CompileStatic
 class PartialDate {
 
+    @Column(name = "partial_day")
     @Nullable
-    LocalDate date
+    Integer day
 
-    @Nullable
-    Integer year
-
+    @Column(name = "partial_month")
     @Nullable
     Integer month
 
+    @Column(name = "partial_year")
     @Nullable
-    Integer day
+    Integer year
+
+    @Column(name = "partial_date")
+    @Nullable
+    LocalDate date
 
     @PrePersist
     @PreUpdate

@@ -13,7 +13,7 @@ class PartialDateDto {
     LocalDate date
 
     static PartialDateDto from(PartialDate date) {
-        if (!date) return null
+        if (!date) return new PartialDateDto()
         new PartialDateDto(
             day: date.day,
             month: date.month,

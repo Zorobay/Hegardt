@@ -1,13 +1,16 @@
 package se.hegardt.domain
 
 import groovy.transform.CompileStatic
+import groovy.transform.EqualsAndHashCode
 import io.micronaut.core.annotation.Nullable
 import jakarta.persistence.*
 import se.hegardt.domain.abstr.BaseEntity
+import se.hegardt.helper.StringHelper
 import se.hegardt.model.Sex
 
 @Entity
 @CompileStatic
+@EqualsAndHashCode(includes = ['id'])
 class Person extends BaseEntity {
 
     @Id
@@ -18,6 +21,7 @@ class Person extends BaseEntity {
     String firstName
     String lastName
     String middleNames
+    String normalizedName
 
     String notes
 
@@ -27,11 +31,11 @@ class Person extends BaseEntity {
     @Nullable
     Integer pdfPage
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @Nullable
     Person father
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @Nullable
     Person mother
 
@@ -54,4 +58,14 @@ class Person extends BaseEntity {
         inverseJoinColumns = @JoinColumn(name = "occupation_id")
     )
     List<Occupation> occupations = []
+
+    @PrePersist
+    @PreUpdate
+    void computeNormalizedName() {
+        normalizedName = StringHelper.normalize(fullName())
+    }
+
+    String fullName() {
+        return [firstName, middleNames, lastName].grep().join(' ')
+    }
 }

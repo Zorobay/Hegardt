@@ -11,7 +11,7 @@ class LifeEventDto {
     LocationDto location
 
     static LifeEventDto from(LifeEvent event) {
-        if (!event) return null
+        if (!event) return new LifeEventDto()
         new LifeEventDto(
             id: event.id,
             notes: event.notes,

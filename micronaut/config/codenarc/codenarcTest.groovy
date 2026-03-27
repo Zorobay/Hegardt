@@ -13,7 +13,6 @@ ruleset {
     // Naming conventions
     ruleset('rulesets/naming.xml') {
         exclude 'MethodName'
-        MethodName { regex = /[a-z][a-zA-Z0-9_]*/ }
         ClassName { regex = /[A-Z][a-zA-Z0-9]*/ }
         FieldName { regex = /[a-z][a-zA-Z0-9_]*/ }
     }

@@ -1,11 +1,12 @@
 ﻿<script setup lang="ts">
-import personService from '@/services/PersonService.ts';
 import type { VNodeRef } from 'vue';
-import { computed, reactive, ref, watch } from 'vue';
+import { computed, onMounted, reactive, ref, watch } from 'vue';
 import FamilyTreePersonCardComponent from '@/components/tree/FamilyTreePersonCardComponent.vue';
 import ParentChildConnectionSvgComponent from '@/components/tree/ParentChildConnectionSvgComponent.vue';
 import { Coordinates } from '@/models/coordinates.model.ts';
 import { FamilyTree } from '@/models/family-tree.model.ts';
+import { personsApiService } from '@/api/personsApiService.ts';
+import type { PersonsMap } from '@/types/person.type.ts';
 
 const props = defineProps({
   personId: { type: Number, required: false, default: null },
@@ -34,13 +35,18 @@ const zoomSpeed = 0.001;
 const familyTree = reactive(new FamilyTree());
 const svgRef = ref<VNodeRef | null>(null);
 
-const rawPersonsData = personService.getAllPersons();
+const rawPersonsData = ref<PersonsMap>({});
+
+onMounted(async () => {
+  const res = await personsApiService.getAllMap();
+  rawPersonsData.value = res.data;
+});
 
 watch(
   () => props.personId,
   (newValue) => {
     if (newValue) {
-      familyTree.rebuild(props.personId, rawPersonsData);
+      familyTree.rebuild(props.personId, rawPersonsData.value);
       center();
     }
   },

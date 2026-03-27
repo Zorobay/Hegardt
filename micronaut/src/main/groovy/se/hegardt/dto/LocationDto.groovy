@@ -14,7 +14,7 @@ class LocationDto {
     Double longitude
 
     static LocationDto from(Location location) {
-        if (!location) return null
+        if (!location) return new LocationDto()
         new LocationDto(
             id: location.id,
             city: location.city,

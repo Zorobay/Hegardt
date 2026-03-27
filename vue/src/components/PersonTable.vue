@@ -2,18 +2,19 @@
 import DataTable from 'datatables.net-vue3';
 import DataTablesCore from 'datatables.net-dt';
 import { formatPersonDate } from '@/helpers/person-helper.ts';
-import type { LifeEvent, PersonSummary } from '@/types/person.type.ts';
-import { personsService } from '@/api/personService';
+import type { LifeEvent, Person } from '@/types/person.type.ts';
+import { personsApiService } from '@/api/personsApiService.ts';
 import { onMounted, ref } from 'vue';
+import LoadingContainer from '@/components/async/LoadingContainer.vue';
 
-const data = ref<PersonSummary[]>([]);
+const data = ref<Person[]>([]);
 const loading = ref(true);
 
 DataTable.use(DataTablesCore);
 
 onMounted(async () => {
   try {
-    const res = await personsService.getAll();
+    const res = await personsApiService.getAll();
     data.value = res.data ?? [];
   } finally {
     loading.value = false;
@@ -55,13 +56,9 @@ const columns = [
 </script>
 
 <template>
-  <div v-if="loading" class="d-flex justify-content-center align-items-center" style="min-height: 200px">
-    <div class="spinner-border text-primary" role="status">
-      <span class="visually-hidden">Loading...</span>
-    </div>
-  </div>
-
-  <DataTable v-else id="persons-table" :data="data" :columns="columns" class="display table table-striped" />
+  <LoadingContainer :is-loading="loading" message="Fetching...">
+    <DataTable id="persons-table" :data="data" :columns="columns" class="display table table-striped" />
+  </LoadingContainer>
 </template>
 
 <style scoped>

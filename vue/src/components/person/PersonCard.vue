@@ -2,9 +2,9 @@
 import SexIcon from '@/components/person/SexIcon.vue';
 
 import { formatPersonDate, formatPersonFullName } from '@/helpers/person-helper.ts';
-import type { Person } from '@/types/person.type.ts';
+import type { Person, PersonSummary } from '@/types/person.type.ts';
 
-const props = defineProps<{ person: Person }>();
+const props = defineProps<{ person: Person | PersonSummary }>();
 const id = props.person.id;
 </script>
 
@@ -18,10 +18,7 @@ const id = props.person.id;
       <h6 class="card-subtitle mb-2 text-body-secondary">
         {{ formatPersonDate(person.birth.date) }}
       </h6>
-      <router-link
-        class="stretched-link"
-        :to="{ name: 'person', params: { id: id } }"
-      ></router-link>
+      <router-link class="stretched-link" :to="{ name: 'person', params: { id: id } }"></router-link>
     </div>
   </div>
 </template>

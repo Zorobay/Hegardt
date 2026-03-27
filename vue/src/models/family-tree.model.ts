@@ -1,7 +1,7 @@
 ﻿import { Coordinates } from '@/models/coordinates.model.ts';
 import { v4 as uuidv4 } from 'uuid';
 import type { Sex } from '@/enums/PersonSexEnum.ts';
-import type { Person, PersonsData } from '@/types/person.type.ts';
+import type { Person, PersonsMap } from '@/types/person.type.ts';
 import { formatPersonFullName, formatPersonLifespan } from '@/helpers/person-helper.ts';
 
 export class Connection {
@@ -108,7 +108,7 @@ export class FamilyTree {
     return allNodes;
   }
 
-  rebuild(rootPersonId: number, rawPersonsData: PersonsData): void {
+  rebuild(rootPersonId: number, rawPersonsData: PersonsMap): void {
     this.rootNode = this.buildNode(rootPersonId, rawPersonsData, 0);
     this.calculateCoordinates();
     this.buildConnections();
@@ -207,7 +207,7 @@ export class FamilyTree {
     }
   }
 
-  private buildNode(personId: number, rawPersonsData: PersonsData, depth: number): FamilyTreeNode {
+  private buildNode(personId: number, rawPersonsData: PersonsMap, depth: number): FamilyTreeNode {
     this.treeDepth = Math.max(this.treeDepth, depth);
     const person = rawPersonsData[personId];
     const node = new FamilyTreeNode(person, this.config.personCardWidth, this.config.personCardHeight);
@@ -215,8 +215,8 @@ export class FamilyTree {
       return node;
     }
 
-    node.father = person.father ? this.buildNode(person.father, rawPersonsData, depth + 1) : undefined;
-    node.mother = person.mother ? this.buildNode(person.mother, rawPersonsData, depth + 1) : undefined;
+    node.father = person.fatherId ? this.buildNode(person.fatherId, rawPersonsData, depth + 1) : undefined;
+    node.mother = person.motherId ? this.buildNode(person.motherId, rawPersonsData, depth + 1) : undefined;
     return node;
   }
 

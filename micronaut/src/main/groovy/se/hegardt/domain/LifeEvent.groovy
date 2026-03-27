@@ -1,6 +1,7 @@
 package se.hegardt.domain
 
 import groovy.transform.CompileStatic
+import groovy.transform.EqualsAndHashCode
 import jakarta.annotation.Nullable
 import jakarta.persistence.CascadeType
 import jakarta.persistence.Embedded
@@ -16,6 +17,7 @@ import se.hegardt.domain.abstr.BaseEntity
 
 @Entity()
 @CompileStatic
+@EqualsAndHashCode(includes = ['id'])
 class LifeEvent extends BaseEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "life_event_seq")

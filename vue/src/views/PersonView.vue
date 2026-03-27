@@ -1,9 +1,8 @@
 <script setup lang="ts">
-import { onMounted } from 'vue';
-import personService from '@/services/PersonService.ts';
+import { onMounted, ref } from 'vue';
 import ReadonlyText from '@/components/person/PersonTextProperty.vue';
 import PortraitComponent from '@/components/person/PortraitComponent.vue';
-import { formatPersonAge, formatPersonFullName, personBirthDate } from '@/helpers/person-helper.ts';
+import { formatPersonAge, formatPersonFullName } from '@/helpers/person-helper.ts';
 import SexIcon from '@/components/person/SexIcon.vue';
 import InfoGroup from '@/components/person/InfoGroup.vue';
 import PersonCard from '@/components/person/PersonCard.vue';
@@ -11,16 +10,20 @@ import PersonLifeEvent from '@/components/person/PersonLifeEvent.vue';
 import { filterNullOrUndefined } from '@/helpers/util-helper.ts';
 import PersonNotes from '@/components/person/PersonNotes.vue';
 import PersonIconLinks from '@/components/person/PersonCardIconLinks.vue';
+import { personsApiService } from '@/api/personsApiService.ts';
+import type { Person, PersonSummary } from '@/types/person.type.ts';
 
 const { id } = defineProps({ id: { type: Number, required: true } });
-const person = personService.getPersonById(id);
-const mother = personService.getPersonById(person?.mother);
-const father = personService.getPersonById(person?.father);
-const parents = filterNullOrUndefined([mother, father]);
-const siblings = personService.getSiblingsOfPersonById(id);
-const children = personService.getChilrenOfPersonById(id);
-children.sort((a, b) => {
-  return (personBirthDate(a) ?? new Date()).getTime() - (personBirthDate(b) ?? new Date()).getTime();
+const person = ref<Person | null>(null);
+const parents = ref<PersonSummary[]>([]);
+const siblings = ref<PersonSummary[]>([]);
+const children = ref<PersonSummary[]>([]);
+
+onMounted(async () => {
+  personsApiService.getCompleteById(id).then((res) => {
+    person.value = res.data;
+    parents.value = filterNullOrUndefined([person.value.father, person.value.mother]);
+  });
 });
 
 onMounted(() => {
@@ -60,15 +63,15 @@ onMounted(() => {
 
             <ReadonlyText title="Occupations">
               <ul>
-                <li v-for="occupation in person.occupations" :key="occupation">{{ occupation }}</li>
+                <li v-for="occupation in person.occupations" :key="occupation.id">{{ occupation }}</li>
               </ul>
             </ReadonlyText>
 
-            <ReadonlyText title="References">
-              <ul>
-                <li v-for="reference in person.references" :key="reference">{{ reference }}</li>
-              </ul>
-            </ReadonlyText>
+            <!--            <ReadonlyText title="References">-->
+            <!--              <ul>-->
+            <!--                <li v-for="reference in person.references" :key="reference">{{ reference }}</li>-->
+            <!--              </ul>-->
+            <!--            </ReadonlyText>-->
           </InfoGroup>
 
           <InfoGroup title="Parents">
@@ -76,11 +79,11 @@ onMounted(() => {
           </InfoGroup>
 
           <InfoGroup title="Siblings">
-            <PersonCard v-for="sibling in siblings" :key="sibling.id" :person="sibling" />
+            <PersonCard v-for="sibling in person.siblings" :key="sibling.id" :person="sibling" />
           </InfoGroup>
 
           <InfoGroup title="Children">
-            <PersonCard v-for="child in children" :key="child.id" :person="child" />
+            <PersonCard v-for="child in person.children" :key="child.id" :person="child" />
           </InfoGroup>
         </div>
       </div>

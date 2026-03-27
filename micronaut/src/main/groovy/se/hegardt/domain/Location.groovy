@@ -1,6 +1,7 @@
 package se.hegardt.domain
 
 import groovy.transform.CompileStatic
+import groovy.transform.EqualsAndHashCode
 import jakarta.annotation.Nullable
 import jakarta.persistence.Entity
 import jakarta.persistence.EnumType
@@ -14,6 +15,7 @@ import se.hegardt.model.LocationFetchStatus
 
 @Entity
 @CompileStatic
+@EqualsAndHashCode(includes = ['id'])
 class Location extends BaseEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "location_seq")

@@ -14,7 +14,11 @@ class PersonSummaryDto {
     LifeEventDto death
     LifeEventDto burial
 
+    String notes
+    Integer pdfPage
+
     static PersonSummaryDto from(Person person) {
+        if (!person) return null
         new PersonSummaryDto(
             id: person.id,
             firstName: person.firstName,
@@ -23,7 +27,9 @@ class PersonSummaryDto {
             sex: person.sex?.name(),
             birth: LifeEventDto.from(person.birth),
             death: LifeEventDto.from(person.death),
-            burial: LifeEventDto.from(person.burial)
+            burial: LifeEventDto.from(person.burial),
+            notes: person.notes,
+            pdfPage: person.pdfPage
         )
     }
 }

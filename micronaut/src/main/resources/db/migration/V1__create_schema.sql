@@ -6,8 +6,8 @@ CREATE SEQUENCE occupation_seq START WITH 1 INCREMENT BY 1;
 
 CREATE TABLE location
 (
-    id           BIGINT PRIMARY KEY DEFAULT nextval('location_seq'),
-    version      BIGINT NOT NULL    DEFAULT 0,
+    id           BIGINT PRIMARY KEY       DEFAULT nextval('location_seq'),
+    version      BIGINT NOT NULL          DEFAULT 0,
     city         VARCHAR(255),
     country      VARCHAR(255),
     region       VARCHAR(255),
@@ -21,49 +21,53 @@ CREATE TABLE location
 
 CREATE TABLE life_event
 (
-    id          BIGINT PRIMARY KEY                DEFAULT nextval('life_event_seq'),
-    version     BIGINT                   NOT NULL DEFAULT 0,
-    notes       VARCHAR(5000),
-    day         INTEGER,
-    month       INTEGER,
-    year        INTEGER,
-    date        DATE,
-    location_id BIGINT REFERENCES location (id),
-    created_at  TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT NOW(),
-    updated_at  TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT NOW()
+    id            BIGINT PRIMARY KEY                DEFAULT nextval('life_event_seq'),
+    version       BIGINT                   NOT NULL DEFAULT 0,
+    notes         VARCHAR(5000),
+    partial_day   INTEGER,
+    partial_month INTEGER,
+    partial_year  INTEGER,
+    partial_date  DATE,
+    location_id   BIGINT REFERENCES location (id),
+    created_at    TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT NOW(),
+    updated_at    TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT NOW()
 );
 
 CREATE TABLE person
 (
-    id           BIGINT PRIMARY KEY                DEFAULT nextval('person_seq'),
-    version      BIGINT                   NOT NULL DEFAULT 0,
-    first_name   VARCHAR(255),
-    last_name    VARCHAR(255),
-    middle_names VARCHAR(255),
-    notes        VARCHAR(20000),
-    sex          VARCHAR(7)                 NOT NULL CHECK (sex IN ('MAN', 'WOMAN', 'UNKNOWN')),
-    pdf_page     INTEGER,
-    father_id    BIGINT REFERENCES person (id),
-    mother_id    BIGINT REFERENCES person (id),
-    birth_id     BIGINT UNIQUE REFERENCES life_event (id),
-    death_id     BIGINT UNIQUE REFERENCES life_event (id),
-    burial_id    BIGINT UNIQUE REFERENCES life_event (id),
-    created_at   TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT NOW(),
-    updated_at   TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT NOW()
+    id              BIGINT PRIMARY KEY                DEFAULT nextval('person_seq'),
+    version         BIGINT                   NOT NULL DEFAULT 0,
+    first_name      VARCHAR(255),
+    last_name       VARCHAR(255),
+    middle_names    VARCHAR(255),
+    normalized_name VARCHAR(1024),
+    notes           VARCHAR(20000),
+    sex             VARCHAR(7)               NOT NULL CHECK (sex IN ('MAN', 'WOMAN', 'UNKNOWN')),
+    pdf_page        INTEGER,
+    father_id       BIGINT REFERENCES person (id),
+    mother_id       BIGINT REFERENCES person (id),
+    birth_id        BIGINT UNIQUE REFERENCES life_event (id),
+    death_id        BIGINT UNIQUE REFERENCES life_event (id),
+    burial_id       BIGINT UNIQUE REFERENCES life_event (id),
+    created_at      TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT NOW(),
+    updated_at      TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT NOW()
 );
+
+CREATE INDEX idx_person_normalized_name ON person (normalized_name);
+
 
 CREATE TABLE marriage
 (
     id          BIGINT PRIMARY KEY                DEFAULT nextval('marriage_seq'),
     version     BIGINT                   NOT NULL DEFAULT 0,
     notes       VARCHAR(5000),
-    spouse_1_id BIGINT NOT NULL REFERENCES person (id),
-    spouse_2_id BIGINT NOT NULL REFERENCES person (id),
+    spouse_1_id BIGINT                   NOT NULL REFERENCES person (id),
+    spouse_2_id BIGINT                   NOT NULL REFERENCES person (id),
     location_id BIGINT REFERENCES location (id),
-    day         INTEGER,
-    month       INTEGER,
-    year        INTEGER,
-    date        DATE,
+    partial_day         INTEGER,
+    partial_month       INTEGER,
+    partial_year        INTEGER,
+    partial_date        DATE,
     created_at  TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT NOW(),
     updated_at  TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT NOW()
 );
@@ -74,10 +78,10 @@ CREATE TABLE occupation
     version     BIGINT                   NOT NULL DEFAULT 0,
     notes       VARCHAR(5000),
     location_id BIGINT REFERENCES location (id),
-    day         INTEGER,
-    month       INTEGER,
-    year        INTEGER,
-    date        DATE,
+    partial_day         INTEGER,
+    partial_month       INTEGER,
+    partial_year        INTEGER,
+    partial_date        DATE,
     created_at  TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT NOW(),
     updated_at  TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT NOW()
 );

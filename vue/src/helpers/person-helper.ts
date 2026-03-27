@@ -1,8 +1,8 @@
 import { filterNullOrUndefined } from '@/helpers/util-helper.ts';
 import { differenceInYears } from 'date-fns';
-import type { DateInfo, Location, Person } from '@/types/person.type.ts';
+import type { Location, PartialDate, Person, PersonSummary } from '@/types/person.type.ts';
 
-export function formatPersonFullName(person: Person | undefined | null): string {
+export function formatPersonFullName(person: Person | PersonSummary | undefined | null): string {
   if (!person) {
     return '';
   }
@@ -13,12 +13,11 @@ export function formatPersonFullName(person: Person | undefined | null): string 
     return '?';
   }
 
-  const middleNamesStr = middleNames ? middleNames.join(' ') : '';
-  const nameParts = [firstName, middleNamesStr, lastName].filter((el) => el);
+  const nameParts = [firstName, middleNames, lastName].filter((el) => el);
   return nameParts.join(' ');
 }
 
-export function formatPersonDate(date: DateInfo | undefined | null): string {
+export function formatPersonDate(date: PartialDate | undefined | null): string {
   if (!date) {
     return '';
   }
@@ -57,7 +56,7 @@ export function personBirthDate(person: Person): Date | undefined {
   return dateObjectToDate(person?.birth?.date);
 }
 
-export function dateObjectToDate(dateObj: DateInfo | undefined | null): Date | undefined {
+export function dateObjectToDate(dateObj: PartialDate | undefined | null): Date | undefined {
   if (dateObj?.date?.$date) {
     return new Date(dateObj.date.$date);
   }
@@ -69,7 +68,7 @@ export function personIsDead(person: Person): boolean {
   return !!deathDate;
 }
 
-export function formatPersonLifespan(person: Person): string {
+export function formatPersonLifespan(person: Person | Person): string {
   const birthYear = person.birth?.date?.year ?? '';
   const deathYear = person.death?.date?.year ?? '';
   return `${birthYear}${deathYear ? ' - ' : ''}${deathYear}`;

@@ -1,8 +1,8 @@
 import type { Sex } from '@/enums/PersonSexEnum.ts';
 
-export type PersonId = number;
-export type PersonOptionalId = PersonId | null | undefined;
-export interface DateInfo {
+export type EntityId = number;
+
+export interface PartialDate {
   date: {
     $date: number;
   };
@@ -22,31 +22,36 @@ export interface Location {
 }
 
 export interface LifeEvent {
-  date: DateInfo | null;
+  date: PartialDate | null;
   location: Location | null;
   notes: string;
 }
 
 export interface Marriage {
-  date?: DateInfo | null;
+  date?: PartialDate | null;
   location?: Location | null;
-  personId: PersonId;
+  spouse1: PersonSummary;
+  spouse2: PersonSummary;
+}
+
+export interface Occupation {
+  id: EntityId;
+  notes: string;
+  location: Location;
+  date: PartialDate;
 }
 
 export interface Person extends PersonSummary {
-  pdfPage?: number;
-  children: PersonId[];
-  father: PersonOptionalId;
-  fileId: string;
+  occupations: Occupation[];
+  father?: PersonSummary;
+  mother?: PersonSummary;
+  children: Person[];
+  siblings: Person[];
   marriages: Marriage[];
-  mother: PersonOptionalId;
-  notes: string;
-  occupations: string[];
-  references: string[];
 }
 
 export interface PersonSummary {
-  id: PersonId;
+  id: EntityId;
   firstName: string;
   lastName: string;
   middleNames: string;
@@ -54,8 +59,10 @@ export interface PersonSummary {
   birth: LifeEvent;
   death: LifeEvent;
   burial: LifeEvent;
+  notes: string;
+  pdfPage: number;
 }
 
-export interface PersonsData {
-  [key: PersonId]: Person;
+export interface PersonsMap {
+  [key: EntityId]: Person;
 }

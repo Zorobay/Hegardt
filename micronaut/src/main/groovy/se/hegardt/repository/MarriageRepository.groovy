@@ -8,6 +8,11 @@ import se.hegardt.domain.Marriage
 @Repository
 interface MarriageRepository extends JpaRepository<Marriage, Long> {
 
-    @Query("SELECT m FROM Marriage m WHERE m.spouse1.id = :personId OR m.spouse2.id = :personId")
+    @Query("""
+    SELECT DISTINCT m FROM Marriage m
+    LEFT JOIN FETCH m.spouse1
+    LEFT JOIN FETCH m.spouse2
+    WHERE m.spouse1.id = :personId OR m.spouse2.id = :personId
+""")
     List<Marriage> findAllByPersonId(Long personId)
 }

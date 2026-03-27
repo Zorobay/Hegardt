@@ -1,12 +1,14 @@
 package se.hegardt.domain
 
 import groovy.transform.CompileStatic
+import groovy.transform.EqualsAndHashCode
 import jakarta.annotation.Nullable
 import jakarta.persistence.*
 import se.hegardt.domain.abstr.BaseEntity
 
 @Entity
 @CompileStatic
+@EqualsAndHashCode(includes = ['id'])
 class Marriage extends BaseEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "marriage_seq")

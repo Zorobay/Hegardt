@@ -1,7 +1,7 @@
-import type { PersonsData } from '@/types/person.type.ts';
+import type { PersonsMap } from '@/types/person.type.ts';
 import SexEnum from '@/enums/PersonSexEnum.ts';
 
-const persons: PersonsData = {
+const persons: PersonsMap = {
   0: {
     birth: {
       date: {

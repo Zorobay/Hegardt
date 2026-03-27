@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import personService from '@/services/PersonService.ts';
 import { onMounted, ref } from 'vue';
 import type { Person } from '@/types/person.type.ts';
 import { formatPersonFullName, formatPersonLifespan } from '@/helpers/person-helper.ts';
 import PortraitComponent from '@/components/person/PortraitComponent.vue';
+import { personsApiService } from '@/api/personsApiService.ts';
 
 const props = defineProps<{ defaultId?: number }>();
 const emit = defineEmits<{ onPersonClicked: [number] }>();
@@ -13,13 +13,17 @@ const searchQuery = ref('');
 const matchingPersons = ref<Person[]>([]);
 
 onMounted(async () => {
-  searchQuery.value = formatPersonFullName(personService.getPersonById(props.defaultId));
+  if (props.defaultId) {
+    const res = await personsApiService.getById(props.defaultId);
+    searchQuery.value = formatPersonFullName(res.data);
+  }
 });
-function onKeyup(event: KeyboardEvent): void {
+async function onKeyup(event: KeyboardEvent): Promise<void> {
   const query = (event.target as HTMLInputElement)?.value;
   searchQuery.value = query;
   if (query) {
-    matchingPersons.value = personService.getPersonsByName(query);
+    const res = await personsApiService.findByName(query);
+    matchingPersons.value = res.data;
     if (matchingPersons.value.length > 0) {
       showDropdown.value = true;
     }
@@ -40,7 +44,7 @@ function onFocus(): void {
   }
 }
 
-function onPersonClick(person: Person): void {
+function onPersonClick(person: Person | Person): void {
   showDropdown.value = false;
   searchQuery.value = formatPersonFullName(person);
   emit('onPersonClicked', person.id);

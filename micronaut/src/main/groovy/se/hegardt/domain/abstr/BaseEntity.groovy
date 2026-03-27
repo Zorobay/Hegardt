@@ -1,6 +1,8 @@
 package se.hegardt.domain.abstr
 
+import groovy.transform.EqualsAndHashCode
 import jakarta.persistence.Column
+import jakarta.persistence.Id
 import jakarta.persistence.MappedSuperclass
 import jakarta.persistence.PrePersist
 import jakarta.persistence.PreUpdate
@@ -9,7 +11,11 @@ import jakarta.persistence.Version
 import java.time.Instant
 
 @MappedSuperclass
+@EqualsAndHashCode(includes = ['id'])
 abstract class BaseEntity {
+
+    @Id
+    Long id
 
     @Version
     Long version = 0L

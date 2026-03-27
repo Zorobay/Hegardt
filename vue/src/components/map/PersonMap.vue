@@ -15,7 +15,6 @@ import Feature from 'ol/Feature.js';
 import { defaults as defaultControls } from 'ol/control/defaults.js';
 import type { Coordinate } from 'ol/coordinate.js';
 import { format as formatCoordinate } from 'ol/coordinate.js';
-import personService from '@/services/PersonService.ts';
 import { Point } from 'ol/geom.js';
 import VectorSource from 'ol/source/Vector.js';
 import VectorLayer from 'ol/layer/Vector.js';
@@ -24,7 +23,10 @@ import AccordionComponent from '@/components/forms/AccordionComponent.vue';
 import type BaseEvent from 'ol/events/Event';
 import _ from 'lodash';
 import CheckboxAccordion from '@/components/forms/CheckboxAccordion.vue';
+import type { Person } from '@/types/person.type.ts';
+import { personsApiService } from '@/api/personsApiService.ts';
 
+const allPersonsList = ref<Person[]>([]);
 const router = useRouter();
 
 const isMobile = ref(false);
@@ -68,6 +70,24 @@ const vectorLayer = new VectorLayer({
   updateWhileInteracting: false,
 });
 
+onMounted(async () => {
+  const res = await personsApiService.getAll();
+  allPersonsList.value = res.data;
+  overlay = new Overlay({
+    element: popupRef.value ?? undefined,
+    autoPan: false,
+    positioning: 'bottom-center',
+    stopEvent: false,
+    offset: [0, -30],
+  });
+  renderMap();
+  map?.on('pointermove', onPointerMove);
+  map?.on('singleclick', onMapClick);
+
+  calculateIsMobile();
+  window.addEventListener('resize', calculateIsMobile);
+});
+
 const allFeatures = function (): PersonFeature[] {
   return [...birthFeatures, ...deathFeatures, ...burialFeatures];
 };
@@ -83,21 +103,21 @@ const mousePositionControl = new MousePosition({
   projection: projectionWebMercator,
 });
 
-function onPersonNameChange() {
+function onPersonNameChange(): void {
   updateMapMarkers();
 }
 
-function onEventTypeSelectionChanged(selected: string[]) {
+function onEventTypeSelectionChanged(selected: string[]): void {
   selectedEventTypes = selected;
   updateMapMarkers();
 }
 
-function onGenderSelectionChanged(selected: string[]) {
+function onGenderSelectionChanged(selected: string[]): void {
   selectedGenders = selected.map((s) => s.toUpperCase());
   updateMapMarkers();
 }
 
-function updateMapMarkers() {
+function updateMapMarkers(): void {
   let allFeatures: PersonFeature[] = [];
   vectorSource.clear();
   for (const eventType of selectedEventTypes) {
@@ -119,7 +139,7 @@ function updateMapMarkers() {
 }
 
 function buildMapFeatures(): void {
-  for (const person of personService.getAllPersonsList()) {
+  for (const person of allPersonsList.value) {
     for (const eventType of ['birth', 'death', 'burial'] as const) {
       const location = person[eventType].location;
       const name = formatPersonFullName(person);
@@ -213,7 +233,7 @@ function buildMarkerStyles(color: string): Styles {
   };
 }
 
-function renderMap() {
+function renderMap(): void {
   mapView = new View({
     center: swedenCenterCoordinates,
     zoom: 5,
@@ -283,22 +303,6 @@ function calculateIsMobile(): void {
 
 // Immediately build map features
 buildMapFeatures();
-
-onMounted(() => {
-  overlay = new Overlay({
-    element: popupRef.value ?? undefined,
-    autoPan: false,
-    positioning: 'bottom-center',
-    stopEvent: false,
-    offset: [0, -30],
-  });
-  renderMap();
-  map?.on('pointermove', onPointerMove);
-  map?.on('singleclick', onMapClick);
-
-  calculateIsMobile();
-  window.addEventListener('resize', calculateIsMobile);
-});
 </script>
 
 <template>
