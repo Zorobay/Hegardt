@@ -16,8 +16,6 @@ import type { Person, PersonSummary } from '@/types/person.type.ts';
 const { id } = defineProps({ id: { type: Number, required: true } });
 const person = ref<Person | null>(null);
 const parents = ref<PersonSummary[]>([]);
-const siblings = ref<PersonSummary[]>([]);
-const children = ref<PersonSummary[]>([]);
 
 onMounted(async () => {
   personsApiService.getCompleteById(id).then((res) => {

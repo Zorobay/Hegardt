@@ -23,10 +23,10 @@ import AccordionComponent from '@/components/forms/AccordionComponent.vue';
 import type BaseEvent from 'ol/events/Event';
 import _ from 'lodash';
 import CheckboxAccordion from '@/components/forms/CheckboxAccordion.vue';
-import type { Person } from '@/types/person.type.ts';
+import type { PersonSummary } from '@/types/person.type.ts';
 import { personsApiService } from '@/api/personsApiService.ts';
 
-const allPersonsList = ref<Person[]>([]);
+const allPersonsList = ref<PersonSummary[]>([]);
 const router = useRouter();
 
 const isMobile = ref(false);

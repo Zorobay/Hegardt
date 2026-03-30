@@ -41,7 +41,13 @@ function Write-Box
 }
 # Get the latest tag matching v*.*.* pattern
 git fetch --tags
-$latestTag = git tag | Where-Object { $_ -match 'v\d\.\d\.\d' } | Select-Object -Last 1
+$latestTag = git tag |
+    Where-Object { $_ -match '^v(\d+)\.(\d+)\.(\d+)$' } |
+    Sort-Object {
+        $parts = ($_ -replace '^v', '') -split '\.'
+        [int]$parts[0] * 1000000 + [int]$parts[1] * 1000 + [int]$parts[2]
+    } |
+    Select-Object -Last 1
 
 # Calculate suggested version
 if (-not $latestTag)

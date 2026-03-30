@@ -215,8 +215,8 @@ export class FamilyTree {
       return node;
     }
 
-    node.father = person.fatherId ? this.buildNode(person.fatherId, rawPersonsData, depth + 1) : undefined;
-    node.mother = person.motherId ? this.buildNode(person.motherId, rawPersonsData, depth + 1) : undefined;
+    node.father = person.father?.id ? this.buildNode(person.father.id, rawPersonsData, depth + 1) : undefined;
+    node.mother = person.mother?.id ? this.buildNode(person.mother.id, rawPersonsData, depth + 1) : undefined;
     return node;
   }
 

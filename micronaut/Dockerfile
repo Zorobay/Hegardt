@@ -6,7 +6,7 @@ COPY gradlew .
 COPY gradle/ gradle/
 COPY build.gradle .
 COPY settings.gradle .
-COPY micronaut-cli.yml* ./
+COPY gradle.properties .
 
 # Download dependencies (cached unless build files change)
 RUN chmod +x gradlew && ./gradlew dependencies --no-daemon -q || true

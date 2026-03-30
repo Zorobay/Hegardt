@@ -2,12 +2,12 @@
 import DataTable from 'datatables.net-vue3';
 import DataTablesCore from 'datatables.net-dt';
 import { formatPersonDate } from '@/helpers/person-helper.ts';
-import type { LifeEvent, Person } from '@/types/person.type.ts';
+import type { LifeEvent, PersonSummary } from '@/types/person.type.ts';
 import { personsApiService } from '@/api/personsApiService.ts';
 import { onMounted, ref } from 'vue';
 import LoadingContainer from '@/components/async/LoadingContainer.vue';
 
-const data = ref<Person[]>([]);
+const data = ref<PersonSummary[]>([]);
 const loading = ref(true);
 
 DataTable.use(DataTablesCore);
