@@ -1,7 +1,15 @@
 <script setup lang="ts">
 import { computed, onMounted, ref } from 'vue';
 
-const props = defineProps(['label', 'options', 'selected', 'placeholder', 'multiselect']);
+interface Props {
+  label: string;
+  options: string[];
+  selected?: string[];
+  placeholder?: string;
+  multiselect?: boolean;
+}
+
+const props = defineProps<Props>();
 const emit = defineEmits(['selection-change']);
 let checkboxesDisplayStyle = ref('none');
 let selected = ref<string[]>(props.selected ?? []);
@@ -14,15 +22,15 @@ const placeholderTextComp = computed(() => {
   return props.placeholder;
 });
 
-function onMultiselectClick() {
+function onMultiselectClick(): void {
   checkboxesDisplayStyle.value = checkboxesDisplayStyle.value === 'none' ? 'block' : 'none';
 }
 
-function onFocusLost() {
+function onFocusLost(): void {
   checkboxesDisplayStyle.value = 'none';
 }
 
-function onCheckboxChange(e: Event) {
+function onCheckboxChange(e: Event): void {
   const target = e.target as HTMLInputElement;
   if (target.checked) {
     selected.value.push(target.value);
@@ -45,11 +53,11 @@ onMounted(() => {
     <span class="input-group-text">{{ label }}</span>
 
     <div class="multiselect" tabindex="0" @click="onMultiselectClick" @focusout="onFocusLost">
-      <div class="selectBox">
+      <div class="select-box">
         <select class="form-select">
           <option>{{ placeholderTextComp }}</option>
         </select>
-        <div class="overSelect"></div>
+        <div class="over-select"></div>
       </div>
       <div id="checkboxes">
         <label v-for="opt in options" :key="opt" :for="opt">
@@ -75,15 +83,15 @@ onMounted(() => {
   overflow: visible;
 }
 
-.selectBox {
+.select-box {
   position: relative;
 }
 
-.selectBox select {
+.select-box select {
   width: 100%;
 }
 
-.overSelect {
+.over-select {
   position: absolute;
   inset: 0;
 }

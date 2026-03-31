@@ -87,10 +87,12 @@ export default [
       // Semicolon rule - ALWAYS require them
       semi: ['error', 'always'],
       '@typescript-eslint/semi': ['error', 'always'],
+      // Override complaining about 'props' and '_' in .vue components
       '@typescript-eslint/no-unused-vars': [
         'error',
         {
           argsIgnorePattern: '^_',
+          varsIgnorePattern: '^props$',
         },
       ],
       '@typescript-eslint/explicit-function-return-type': [

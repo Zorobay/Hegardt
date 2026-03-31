@@ -43,7 +43,7 @@ class PersonsService {
 
             personDto.siblings = findSiblings(personDto)
             personDto.marriages = marriageRepository.findAllByPersonId(id)
-                .collect { Marriage marriage -> MarriageDto.from(marriage)}
+                .collect { Marriage marriage -> MarriageDto.from(marriage) }
                 .toSet()
 
             return Optional.of(personDto)
@@ -54,7 +54,10 @@ class PersonsService {
     Collection<Person> findByName(String name) {
         if (!name?.trim()) return []
 
-        List<String> tokens = name.trim().split(/\s+/).collect { StringHelper.normalize(it) } as List<String>
+        List<String> tokens = name
+            .trim()
+            .split(/\s+/)
+            .collect { String str -> StringHelper.normalize(str) } as List<String>
         return repository.findByNameTokens(tokens).toSet()
     }
 

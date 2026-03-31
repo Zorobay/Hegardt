@@ -42,6 +42,10 @@ jobs:
  
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v4
+
+      - name: Make gradlew executable
+        working-directory: micronaut
+        run: chmod +x gradlew
  
       - name: Run CodeNarc
         working-directory: micronaut
@@ -116,6 +120,7 @@ jobs:
           ssh-keyscan -H ${{ secrets.SERVER_IP }} >> ~/.ssh/known_hosts
  
       - name: Copy docker-compose.yml to server
+        working-directory: micronaut
         run: |
           scp -i ~/.ssh/deploy_key docker-compose.yml root@${{ secrets.SERVER_IP }}:/root/Hegardt/docker-compose.yml
  

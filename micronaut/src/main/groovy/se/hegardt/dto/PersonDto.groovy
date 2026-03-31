@@ -1,10 +1,12 @@
 package se.hegardt.dto
 
+import groovy.transform.CompileStatic
 import io.micronaut.serde.annotation.Serdeable
 import se.hegardt.domain.Occupation
 import se.hegardt.domain.Person
 
 @Serdeable
+@CompileStatic
 class PersonDto {
     Long id
     String firstName
@@ -26,7 +28,7 @@ class PersonDto {
     PersonSummaryDto mother
 
     static PersonDto from(Person person) {
-        new PersonDto(
+        return new PersonDto(
             id: person.id,
             firstName: person.firstName,
             lastName: person.lastName,

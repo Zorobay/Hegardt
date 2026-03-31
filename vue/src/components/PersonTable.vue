@@ -62,5 +62,5 @@ const columns = [
 </template>
 
 <style scoped>
-@import 'datatables.net-dt';
+@import url('datatables.net-dt');
 </style>

@@ -1,5 +1,6 @@
 package se.hegardt.domain.abstr
 
+import groovy.transform.CompileStatic
 import groovy.transform.EqualsAndHashCode
 import jakarta.persistence.Column
 import jakarta.persistence.Id
@@ -12,6 +13,8 @@ import java.time.Instant
 
 @MappedSuperclass
 @EqualsAndHashCode(includes = ['id'])
+@CompileStatic
+@SuppressWarnings(['AbstractClassWithoutAbstractMethod'])
 abstract class BaseEntity {
 
     @Id

@@ -6,7 +6,7 @@ import spock.lang.Unroll
 class StringHelperSpec extends Specification {
 
     @Unroll
-    def "normalize(#input) returns '#expected'"() {
+    def 'normalize(#input) returns "#expected"'() {
         expect:
         StringHelper.normalize(input) == expected
 

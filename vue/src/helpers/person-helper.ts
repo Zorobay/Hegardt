@@ -44,7 +44,7 @@ export function formatPersonAge(person: Person): string {
   return '?';
 }
 
-export function formatPersonLocation(location: Location): string {
+export function formatPersonLocation(location: Location | null): string {
   if (!location) {
     return '';
   }

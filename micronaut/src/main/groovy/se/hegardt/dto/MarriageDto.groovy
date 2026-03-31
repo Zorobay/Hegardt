@@ -1,9 +1,11 @@
 package se.hegardt.dto
 
+import groovy.transform.CompileStatic
 import io.micronaut.serde.annotation.Serdeable
 import se.hegardt.domain.Marriage
 
 @Serdeable
+@CompileStatic
 class MarriageDto {
 
     Long id

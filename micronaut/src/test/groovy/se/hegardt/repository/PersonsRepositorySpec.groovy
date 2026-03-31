@@ -16,27 +16,27 @@ class PersonsRepositorySpec extends Specification {
         personsRepository.save(new Person(id: 3, firstName: 'Sebastian', lastName: 'Svensson'))
         personsRepository.save(new Person(id: 4, firstName: 'Anna', lastName: 'Hegardt'))
         personsRepository.save(new Person(id: 5, firstName: 'Erik', lastName: 'Svensson'))
-        personsRepository.save(new Person(id: 6, firstName: "Ásh'Niûpurh", lastName: 'Żółćiński-Håvårdsvær'))
+        personsRepository.save(new Person(id: 6, firstName: "Ásh' Niûpurh ", lastName: ' Żółćiński -Håvårdsvær '))
     }
 
     void cleanup() {
         personsRepository.deleteAll()
     }
 
-    def "findByNameTokens"() {
+    def 'findByNameTokens'() {
         when:
-            List<Person> res = personsRepository.findByNameTokens(tokens)
+        List<Person> res = personsRepository.findByNameTokens(tokens)
         then:
-            res.collect { it.id }.toSet() == (expectedIds.toSet() as Set<Long>)
+        res*.id.toSet() == (expectedIds.toSet() as Set<Long>)
         where:
-            tokens                   | expectedIds
-            ['sebastian']            | [2, 3]
-            ['sebastian', 'hegardt'] | [2]
-            ['hegardt']              | [1, 2, 4]
-            ['t', 'a', 'n']          | [1, 2, 3, 4]
-            ['k', 'v', 'p']          | [6]
-            ['seb', 'ö']             | []
-            ['a']                    | [1, 2, 3, 4, 6]
+        tokens                   | expectedIds
+        ['sebastian']            | [2, 3]
+        ['sebastian', 'hegardt'] | [2]
+        ['hegardt']              | [1, 2, 4]
+        ['t', 'a', 'n']          | [1, 2, 3, 4]
+        ['k', 'v', 'p']          | [6]
+        ['seb', 'ö']             | []
+        ['a']                    | [1, 2, 3, 4, 6]
     }
 
 }

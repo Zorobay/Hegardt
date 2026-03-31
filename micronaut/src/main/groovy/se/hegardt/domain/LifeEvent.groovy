@@ -20,8 +20,8 @@ import se.hegardt.domain.abstr.BaseEntity
 @EqualsAndHashCode(includes = ['id'])
 class LifeEvent extends BaseEntity {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "life_event_seq")
-    @SequenceGenerator(name = "life_event_seq", sequenceName = "life_event_seq", allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = 'life_event_seq')
+    @SequenceGenerator(name = 'life_event_seq', sequenceName = 'life_event_seq', allocationSize = 1)
     Long id
 
     String notes

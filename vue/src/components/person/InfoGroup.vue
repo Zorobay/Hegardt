@@ -20,6 +20,7 @@ defineProps({ title: { type: String, required: false, default: '' } });
 .heg-info-group {
   margin-bottom: 1.5rem;
 }
+
 hr {
   margin-top: 0.5em;
 }

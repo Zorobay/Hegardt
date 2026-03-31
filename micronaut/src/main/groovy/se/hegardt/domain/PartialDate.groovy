@@ -13,19 +13,19 @@ import java.time.LocalDate
 @CompileStatic
 class PartialDate {
 
-    @Column(name = "partial_day")
+    @Column(name = 'partial_day')
     @Nullable
     Integer day
 
-    @Column(name = "partial_month")
+    @Column(name = 'partial_month')
     @Nullable
     Integer month
 
-    @Column(name = "partial_year")
+    @Column(name = 'partial_year')
     @Nullable
     Integer year
 
-    @Column(name = "partial_date")
+    @Column(name = 'partial_date')
     @Nullable
     LocalDate date
 

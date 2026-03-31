@@ -1,7 +1,9 @@
 <script setup lang="ts">
 import ReadonlyText from '@/components/person/PersonTextProperty.vue';
 
-defineProps({ notes: { type: String, default: '' } });
+const { notes = '' } = defineProps<{
+  notes: string;
+}>();
 </script>
 
 <template>

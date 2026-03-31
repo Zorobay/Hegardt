@@ -18,8 +18,8 @@ import se.hegardt.model.LocationFetchStatus
 @EqualsAndHashCode(includes = ['id'])
 class Location extends BaseEntity {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "location_seq")
-    @SequenceGenerator(name = "location_seq", sequenceName = "location_seq", allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = 'location_seq')
+    @SequenceGenerator(name = 'location_seq', sequenceName = 'location_seq', allocationSize = 1)
     Long id
 
     String city = ''

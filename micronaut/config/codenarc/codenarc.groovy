@@ -28,10 +28,16 @@ ruleset {
         exclude 'ClassEndsWithBlankLine'
         exclude 'Indentation'            // let EditorConfig handle this
         LineLength { length = 120 }
+        SpaceAroundMapEntryColon {
+            characterAfterColonRegex = /\s/
+        }
     }
 
     // Groovy-specific
-    ruleset('rulesets/groovyism.xml')
+    ruleset('rulesets/groovyism.xml') {
+        exclude 'ExplicitCallToAndMethod'
+    }
+
     ruleset('rulesets/unnecessary.xml') {
         exclude 'UnnecessaryReturnKeyword' // matter of preference
     }
@@ -39,5 +45,11 @@ ruleset {
     // Design
     ruleset('rulesets/design.xml') {
         exclude 'BuilderMethodWithSideEffects'
+        AbstractClassWithoutAbstractMethod {
+            doNotApplyToFilesMatching = '.*Repository\\.groovy'
+        }
+        AbstractClassWithPublicConstructor {
+            doNotApplyToFilesMatching = '.*Repository\\.groovy'
+        }
     }
 }

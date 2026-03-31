@@ -1,7 +1,10 @@
 package se.hegardt.helper
 
+import groovy.transform.CompileStatic
+
 import java.text.Normalizer
 
+@CompileStatic
 class StringHelper {
 
     static String normalize(String input) {
@@ -16,7 +19,7 @@ class StringHelper {
     static boolean fuzzyMatch(String fullName, String search) {
         if (!search?.trim()) return true
         String fuzzedName = normalize(fullName)
-        List<String> searchTokens = search.trim().split(/\s+/).collect { normalize(it) }
+        List<String> searchTokens = search.trim().split(/\s+/).collect { String str -> normalize(str) }
         return searchTokens.every { token -> fuzzedName.contains(token) }
     }
 

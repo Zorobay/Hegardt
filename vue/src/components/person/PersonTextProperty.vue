@@ -1,5 +1,8 @@
 <script setup lang="ts">
-defineProps(['text', 'title']);
+const { text, title } = defineProps<{
+  text?: string;
+  title: string;
+}>();
 </script>
 
 <template>

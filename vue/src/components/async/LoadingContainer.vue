@@ -33,6 +33,6 @@ const props = defineProps({ isLoading: { type: Boolean, default: false }, messag
 }
 
 .loading-slot {
-  opacity: 20%;
+  opacity: 0.2;
 }
 </style>

@@ -3,7 +3,22 @@ package se.hegardt.domain
 import groovy.transform.CompileStatic
 import groovy.transform.EqualsAndHashCode
 import io.micronaut.core.annotation.Nullable
-import jakarta.persistence.*
+import jakarta.persistence.CascadeType
+import jakarta.persistence.Entity
+import jakarta.persistence.EnumType
+import jakarta.persistence.Enumerated
+import jakarta.persistence.FetchType
+import jakarta.persistence.GeneratedValue
+import jakarta.persistence.GenerationType
+import jakarta.persistence.Id
+import jakarta.persistence.JoinColumn
+import jakarta.persistence.JoinTable
+import jakarta.persistence.ManyToOne
+import jakarta.persistence.OneToMany
+import jakarta.persistence.OneToOne
+import jakarta.persistence.PrePersist
+import jakarta.persistence.PreUpdate
+import jakarta.persistence.SequenceGenerator
 import se.hegardt.domain.abstr.BaseEntity
 import se.hegardt.helper.StringHelper
 import se.hegardt.model.Sex
@@ -14,8 +29,8 @@ import se.hegardt.model.Sex
 class Person extends BaseEntity {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "person_seq")
-    @SequenceGenerator(name = "person_seq", sequenceName = "person_seq", allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = 'person_seq')
+    @SequenceGenerator(name = 'person_seq', sequenceName = 'person_seq', allocationSize = 1)
     Long id
 
     String firstName
@@ -53,9 +68,9 @@ class Person extends BaseEntity {
 
     @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
     @JoinTable(
-        name = "person_occupations",
-        joinColumns = @JoinColumn(name = "person_id"),
-        inverseJoinColumns = @JoinColumn(name = "occupation_id")
+        name = 'person_occupations',
+        joinColumns = @JoinColumn(name = 'person_id'),
+        inverseJoinColumns = @JoinColumn(name = 'occupation_id')
     )
     List<Occupation> occupations = []
 

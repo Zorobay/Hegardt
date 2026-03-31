@@ -21,6 +21,9 @@ ruleset {
     ruleset('rulesets/convention.xml') {
         exclude 'NoDef'                  // too strict for Groovy
         exclude 'NoDouble'
+        exclude 'CompileStatic'
+        exclude 'ImplicitClosureParameter'
+        exclude 'MethodReturnTypeRequired'
     }
 
     ruleset('rulesets/formatting.xml') {
@@ -28,12 +31,16 @@ ruleset {
         exclude 'ClassEndsWithBlankLine'
         exclude 'Indentation'            // let EditorConfig handle this
         LineLength { length = 120 }
+        SpaceAroundMapEntryColon {
+            characterAfterColonRegex = /\s/
+        }
     }
 
     // Groovy-specific
     ruleset('rulesets/groovyism.xml')
     ruleset('rulesets/unnecessary.xml') {
         exclude 'UnnecessaryReturnKeyword' // matter of preference
+        exclude 'UnnecessaryObjectReferences'
     }
 
     // Design

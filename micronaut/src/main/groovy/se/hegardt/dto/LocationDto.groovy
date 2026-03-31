@@ -1,9 +1,11 @@
 package se.hegardt.dto
 
+import groovy.transform.CompileStatic
 import io.micronaut.serde.annotation.Serdeable
 import se.hegardt.domain.Location
 
 @Serdeable
+@CompileStatic
 class LocationDto {
     Long id
     String city
@@ -15,7 +17,7 @@ class LocationDto {
 
     static LocationDto from(Location location) {
         if (!location) return new LocationDto()
-        new LocationDto(
+        return new LocationDto(
             id: location.id,
             city: location.city,
             country: location.country,

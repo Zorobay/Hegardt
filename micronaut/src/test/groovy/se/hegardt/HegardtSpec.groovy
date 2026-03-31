@@ -1,6 +1,5 @@
 package se.hegardt
 
-import groovy.transform.CompileStatic
 import io.micronaut.runtime.EmbeddedApplication
 import io.micronaut.test.extensions.spock.annotation.MicronautTest
 import jakarta.inject.Inject

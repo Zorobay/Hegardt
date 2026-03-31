@@ -11,13 +11,13 @@ const props = defineProps({
 const emit = defineEmits(['selection-changed']);
 const checkedStates = reactive<Record<string, boolean>>({});
 
-function onCheckboxChange(e: Event) {
+function onCheckboxChange(e: Event): void {
   const target = e.target as HTMLInputElement;
   checkedStates[target.value] = target.checked;
   emit('selection-changed', getSelectedItems());
 }
 
-function getSelectedItems() {
+function getSelectedItems(): string[] {
   const items = props.items;
   return items.filter((item) => checkedStates[item]);
 }

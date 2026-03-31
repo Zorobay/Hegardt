@@ -1,6 +1,7 @@
 //file:noinspection ChangeToOperator
 package se.hegardt.repository
 
+import groovy.transform.CompileStatic
 import io.micronaut.data.annotation.Query
 import io.micronaut.data.annotation.Repository
 import io.micronaut.data.jpa.repository.JpaRepository
@@ -13,6 +14,7 @@ import jakarta.persistence.criteria.Root
 import se.hegardt.domain.Person
 
 @Repository
+@CompileStatic
 abstract class PersonsRepository implements JpaRepository<Person, Long> {
 
     private final EntityManager entityManager
@@ -21,7 +23,7 @@ abstract class PersonsRepository implements JpaRepository<Person, Long> {
         this.entityManager = entityManager
     }
 
-    @Query("SELECT p FROM Person p WHERE p.father.id = :personId OR p.mother.id = :personId")
+    @Query('SELECT p FROM Person p WHERE p.father.id = :personId OR p.mother.id = :personId')
     abstract List<Person> findChildren(Long personId)
 
     @Transactional

@@ -1,11 +1,13 @@
 package se.hegardt.dto
 
+import groovy.transform.CompileStatic
 import io.micronaut.serde.annotation.Serdeable
 import se.hegardt.domain.PartialDate
 
 import java.time.LocalDate
 
 @Serdeable
+@CompileStatic
 class PartialDateDto {
     Integer day
     Integer month
@@ -14,7 +16,7 @@ class PartialDateDto {
 
     static PartialDateDto from(PartialDate date) {
         if (!date) return new PartialDateDto()
-        new PartialDateDto(
+        return new PartialDateDto(
             day: date.day,
             month: date.month,
             year: date.year,

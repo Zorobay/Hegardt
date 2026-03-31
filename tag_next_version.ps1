@@ -103,6 +103,33 @@ else
 # Create the tag with 'v' prefix
 $tagName = "v$newVersion"
 
+# Check if tag already exists
+$existingTag = git tag | Where-Object { $_ -eq $tagName }
+if ($existingTag)
+{
+    Write-Host ""
+    Write-Host "⚠️  Tag $tagName already exists." -ForegroundColor Yellow
+    Write-Host "Move it to the current commit? (y/N): " -NoNewline -ForegroundColor Yellow
+    $confirm = Read-Host
+
+    if ($confirm -ne 'y' -and $confirm -ne 'Y')
+    {
+        Write-Error "Aborted."
+        exit 1
+    }
+
+    Write-Host "Moving tag $tagName to current commit..." -ForegroundColor Yellow
+    git tag -d $tagName
+    if ($LASTEXITCODE -ne 0)
+    {
+        Write-Error "Failed to delete local tag!"
+        exit 1
+    }
+
+    # Delete from remote too, otherwise the push at the end will be rejected
+    git push origin ":refs/tags/$tagName" 2>$null
+}
+
 Write-Host ""
 Write-Host "Creating annotated tag: $tagName" -ForegroundColor Yellow
 git tag -a $tagName -m "Release $tagName"

@@ -6,7 +6,6 @@ import io.micronaut.http.annotation.Controller
 import io.micronaut.http.annotation.Get
 import se.hegardt.domain.Person
 import se.hegardt.dto.PersonDto
-import se.hegardt.dto.PersonDto
 import se.hegardt.dto.PersonSummaryDto
 import se.hegardt.service.PersonsService
 

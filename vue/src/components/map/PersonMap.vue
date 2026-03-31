@@ -385,6 +385,7 @@ buildMapFeatures();
 #map-controls.minimized {
   width: 4rem;
 }
+
 #map-card {
   flex: 1; /* Take up remaining space */
   overflow: hidden;

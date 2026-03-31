@@ -64,12 +64,6 @@ onMounted(() => {
                 <li v-for="occupation in person.occupations" :key="occupation.id">{{ occupation }}</li>
               </ul>
             </ReadonlyText>
-
-            <!--            <ReadonlyText title="References">-->
-            <!--              <ul>-->
-            <!--                <li v-for="reference in person.references" :key="reference">{{ reference }}</li>-->
-            <!--              </ul>-->
-            <!--            </ReadonlyText>-->
           </InfoGroup>
 
           <InfoGroup title="Parents">
