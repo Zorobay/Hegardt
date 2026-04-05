@@ -8,13 +8,14 @@ import se.hegardt.domain.Person
 import se.hegardt.dto.MarriageDto
 import se.hegardt.dto.PersonDto
 import se.hegardt.dto.PersonSummaryDto
+import se.hegardt.dto.tree.PersonTreeRootDto
 import se.hegardt.helper.StringHelper
 import se.hegardt.repository.MarriageRepository
 import se.hegardt.repository.PersonsRepository
 
 @Singleton
 @CompileStatic
-class PersonsService {
+class PersonsService implements IPersonsService {
     private final PersonsRepository repository
     private final MarriageRepository marriageRepository
 
@@ -51,6 +52,18 @@ class PersonsService {
         return Optional.empty()
     }
 
+    @Transactional(readOnly = true)
+    Optional<PersonTreeRootDto> getTreeRootById(Long id) {
+        Optional<Person> optional = repository.findById(id)
+        if (optional.present) {
+            Person person = optional.get()
+            List<Person> children = repository.findChildren(person.id)
+            PersonTreeRootDto treeRootDto = PersonTreeRootDto.from(person, children)
+            return Optional.of(treeRootDto)
+        }
+        return Optional.empty()
+    }
+
     Collection<Person> findByName(String name) {
         if (!name?.trim()) return []
 
@@ -61,20 +74,8 @@ class PersonsService {
         return repository.findByNameTokens(tokens).toSet()
     }
 
-    Person save(Person person) {
-        return repository.save(person)
-    }
-
-    Person merge(Person person) {
-        return repository.merge(person)
-    }
-
     Person update(Person person) {
         return repository.update(person)
-    }
-
-    void delete(Long id) {
-        repository.deleteById(id)
     }
 
     private Set<PersonSummaryDto> findSiblings(PersonDto person) {

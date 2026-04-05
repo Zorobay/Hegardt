@@ -1,7 +1,15 @@
 ﻿<script setup lang="ts">
 import LoadingSpinner from '@/components/async/LoadingSpinner.vue';
 
-const props = defineProps({ isLoading: { type: Boolean, default: false }, message: { type: String, default: '' } });
+const {
+  isLoading = false,
+  message = '',
+  overlay = true,
+} = defineProps<{
+  isLoading: boolean;
+  message?: string;
+  overlay?: boolean;
+}>();
 </script>
 
 <template>
@@ -10,7 +18,7 @@ const props = defineProps({ isLoading: { type: Boolean, default: false }, messag
       <LoadingSpinner :size="'5rem'" />
       <p>{{ message }}</p>
     </div>
-    <div :class="{ 'loading-slot': isLoading }">
+    <div v-if="overlay" :class="{ 'loading-slot': isLoading }">
       <slot></slot>
     </div>
   </div>

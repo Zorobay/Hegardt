@@ -1,11 +1,11 @@
 <script setup lang="ts">
 import type { PersonFeature, Styles } from '@/types/open-layers-feature.type.ts';
-import { computed, onMounted, ref, useTemplateRef } from 'vue';
+import { computed, onMounted, ref, shallowRef, useTemplateRef } from 'vue';
 import { useRouter } from 'vue-router';
 import { formatPersonDate, formatPersonFullName } from '@/helpers/person-helper.ts';
 import { fuzzyMatch } from '@/helpers/util-helper.ts';
 import OLMap from 'ol/Map';
-import type MapBrowserEvent from 'ol/MapBrowserEvent'; // Import as type from correct path
+import type MapBrowserEvent from 'ol/MapBrowserEvent';
 import View from 'ol/View';
 import Overlay from 'ol/Overlay';
 import TileLayer from 'ol/layer/Tile';
@@ -58,9 +58,9 @@ const personNameFilterText = ref('');
 const swedenCenterCoordinates = [1730386, 9000000];
 const projectionWebMercator = 'EPSG:4326'; // Web Mercator
 const projectionSphericalMercator = 'EPSG:3857'; // Spherical Mercator
-const birthFeatures: PersonFeature[] = [];
-const deathFeatures: PersonFeature[] = [];
-const burialFeatures: PersonFeature[] = [];
+const birthFeatures = shallowRef<PersonFeature[]>([]);
+const deathFeatures = shallowRef<PersonFeature[]>([]);
+const burialFeatures = shallowRef<PersonFeature[]>([]);
 let mapView = new View();
 const vectorSource = new VectorSource({ features: [] as PersonFeature[] });
 const vectorLayer = new VectorLayer({
@@ -71,8 +71,14 @@ const vectorLayer = new VectorLayer({
 });
 
 onMounted(async () => {
-  const res = await personsApiService.getAll();
-  allPersonsList.value = res.data;
+  try {
+    const res = await personsApiService.getAll();
+    allPersonsList.value = res.data;
+    buildMapFeatures();
+    updateMapMarkers();
+  } catch (error) {
+    console.error(error);
+  }
   overlay = new Overlay({
     element: popupRef.value ?? undefined,
     autoPan: false,
@@ -88,9 +94,10 @@ onMounted(async () => {
   window.addEventListener('resize', calculateIsMobile);
 });
 
-const allFeatures = function (): PersonFeature[] {
-  return [...birthFeatures, ...deathFeatures, ...burialFeatures];
-};
+function getAllFeatures(): PersonFeature[] {
+  return [...birthFeatures.value, ...deathFeatures.value, ...burialFeatures.value] as PersonFeature[];
+}
+
 const coordinateFormatFunc = function (coordinate: Coordinate | undefined): string {
   if (coordinate) {
     return formatCoordinate(coordinate, '{y}, {x}', 4);
@@ -118,24 +125,24 @@ function onGenderSelectionChanged(selected: string[]): void {
 }
 
 function updateMapMarkers(): void {
-  let allFeatures: PersonFeature[] = [];
+  let features: PersonFeature[] = [];
   vectorSource.clear();
   for (const eventType of selectedEventTypes) {
     if (eventType.toLowerCase() === 'birth') {
-      allFeatures = allFeatures.concat(birthFeatures);
+      features = features.concat(birthFeatures.value);
     } else if (eventType.toLowerCase() === 'death') {
-      allFeatures = allFeatures.concat(deathFeatures);
+      features = features.concat(deathFeatures.value);
     } else {
-      allFeatures = allFeatures.concat(burialFeatures);
+      features = features.concat(burialFeatures.value);
     }
   }
-  allFeatures = allFeatures.filter((f: PersonFeature) => {
+  features = features.filter((f: PersonFeature) => {
     return selectedGenders.some((g) => g === f.attributes?.gender?.toUpperCase());
   });
-  allFeatures = allFeatures.filter((f) =>
-    f.attributes?.fullName ? fuzzyMatch(f.attributes?.fullName ?? '', personNameFilterText.value) : false,
+  features = features.filter((f) =>
+    f.attributes?.fullName ? fuzzyMatch(f.attributes.fullName, personNameFilterText.value) : false,
   );
-  vectorSource.addFeatures(allFeatures);
+  vectorSource.addFeatures(features);
 }
 
 function buildMapFeatures(): void {
@@ -161,11 +168,11 @@ function buildMapFeatures(): void {
         };
 
         if (eventType === 'birth') {
-          birthFeatures.push(feature);
+          birthFeatures.value.push(feature);
         } else if (eventType === 'death') {
-          deathFeatures.push(feature);
+          deathFeatures.value.push(feature);
         } else {
-          burialFeatures.push(feature);
+          burialFeatures.value.push(feature);
         }
 
         feature.getGeometry()?.transform(projectionWebMercator, projectionSphericalMercator);
@@ -174,8 +181,8 @@ function buildMapFeatures(): void {
   }
   // TODO for each group of features, if group has more than 1 element (same coordinates)
   // Distribute them in an expanding fan pattern
-  const groupedFeatures = _.groupBy(allFeatures(), (feature: PersonFeature) => {
-    return (feature.getGeometry() as Point).getCoordinates();
+  const groupedFeatures = _.groupBy(getAllFeatures(), (feature: PersonFeature) => {
+    return (feature.getGeometry() as Point).getCoordinates().join(','); // also fix this — see note below
   });
   for (const groupKey in groupedFeatures) {
     const group = groupedFeatures[groupKey];
@@ -198,17 +205,17 @@ function buildMapFeatures(): void {
 
 function styleMapFeatures(): void {
   let styles = buildMarkerStyles('green');
-  birthFeatures.forEach((f) => {
+  birthFeatures.value.forEach((f) => {
     f.setStyle(styles.normal);
     f.styles = styles;
   });
   styles = buildMarkerStyles('red');
-  deathFeatures.forEach((f) => {
+  deathFeatures.value.forEach((f) => {
     f.setStyle(styles.normal);
     f.styles = styles;
   });
   styles = buildMarkerStyles('purple');
-  burialFeatures.forEach((f) => {
+  burialFeatures.value.forEach((f) => {
     f.setStyle(styles.normal);
     f.styles = styles;
   });
@@ -300,9 +307,6 @@ function onMapClick(evt: BaseEvent | Event): void {
 function calculateIsMobile(): void {
   isMobile.value = window.innerWidth <= 992;
 }
-
-// Immediately build map features
-buildMapFeatures();
 </script>
 
 <template>
@@ -425,7 +429,7 @@ buildMapFeatures();
 }
 
 .ol-popup {
-  background-color: var(--color-info-background);
+  background-color: var(--jet-black);
   color: white;
   text-align: center;
   border-radius: 0.5rem;

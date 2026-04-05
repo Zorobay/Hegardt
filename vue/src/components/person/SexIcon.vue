@@ -17,7 +17,7 @@ const iconClass = sexIconClass(props.sex);
 </script>
 
 <template>
-  <font-awesome-icon :icon="iconClass" />
+  <font-awesome-icon v-if="iconClass" :icon="iconClass" />
 </template>
 
 <style scoped></style>

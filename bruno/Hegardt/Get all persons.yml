@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: http://localhost:8080/persons/getAll
+  url: "{{BASE_URL}}/persons/getAll"
   auth: inherit
 
 settings:

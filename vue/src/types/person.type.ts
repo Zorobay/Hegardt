@@ -41,6 +41,17 @@ export interface Occupation {
   date: PartialDate;
 }
 
+export interface PersonTreeNode extends PersonBasic {
+  father: PersonTreeNode;
+  mother: PersonTreeNode;
+}
+
+export interface PersonTreeRoot extends PersonBasic {
+  children: Set<PersonSummary>;
+  father: PersonTreeNode;
+  mother: PersonTreeNode;
+}
+
 export interface Person extends PersonSummary {
   occupations: Occupation[];
   father?: PersonSummary;
@@ -50,7 +61,12 @@ export interface Person extends PersonSummary {
   marriages: Marriage[];
 }
 
-export interface PersonSummary {
+export interface PersonSummary extends PersonBasic {
+  notes: string;
+  pdfPage: number;
+}
+
+export interface PersonBasic {
   id: EntityId;
   firstName: string;
   lastName: string;
@@ -59,8 +75,6 @@ export interface PersonSummary {
   birth: LifeEvent;
   death: LifeEvent;
   burial: LifeEvent;
-  notes: string;
-  pdfPage: number;
 }
 
 export interface PersonsMap {

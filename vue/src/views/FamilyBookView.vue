@@ -21,10 +21,10 @@ const props = defineProps({ page: { type: Number, required: false, default: 0 } 
 
     <iframe
       id="family-book-pdf-viewer"
-      src="/pdf/hegardt_300dpi_searchable_compressed.pdf"
-      width="100%"
+      src="/pdf/hegardt_300dpi_searchable_compressed.pdf#zoom=page-width&view=FitH"
+      style="border: none; display: block; width: 100%"
       type="application/pdf"
-    ></iframe>
+    />
   </div>
 </template>
 
@@ -42,6 +42,6 @@ const props = defineProps({ page: { type: Number, required: false, default: 0 } 
 }
 
 #family-book-pdf-viewer {
-  height: 100vh;
+  height: 88vh;
 }
 </style>

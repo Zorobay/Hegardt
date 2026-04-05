@@ -4,7 +4,7 @@ import SearchComponent from '@/components/forms/SearchComponent.vue';
 import { useRouter } from 'vue-router';
 import { ref } from 'vue';
 
-const props = defineProps({ personId: { type: String, required: true } });
+const { personId } = defineProps<{ personId: string }>();
 const familyTreeRef = ref();
 const familyTreeDepth = ref(3);
 

@@ -63,9 +63,9 @@ jobs:
           mkdir -p ~/.ssh
           echo "${{ secrets.SERVER_SSH_KEY }}" > ~/.ssh/deploy_key
           chmod 600 ~/.ssh/deploy_key
-          ssh-keyscan -H ${{ secrets.SERVER_IP }} >> ~/.ssh/known_hosts
- 
+          ssh-keyscan -p 2223 -H ${{ secrets.SERVER_IP }} >> ~/.ssh/known_hosts
+
       - name: Copy dist to server
         run: |
-          scp -i ~/.ssh/deploy_key -r vue/dist/. root@${{ secrets.SERVER_IP }}:/root/Hegardt/vue/dist/
+          scp -i ~/.ssh/deploy_key -P 2223 -r vue/dist/. root@${{ secrets.SERVER_IP }}:/root/Hegardt/vue/dist/
  

@@ -1,0 +1,4 @@
+name: PROD
+variables:
+  - name: BASE_URL
+    value: https://hegardt.se/api

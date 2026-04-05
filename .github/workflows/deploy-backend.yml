@@ -103,6 +103,25 @@ jobs:
           cache-from: type=gha
           cache-to: type=gha,mode=max
  
+  assets:
+    name: Copy image assets
+    runs-on: ubuntu-latest
+    needs: build
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SERVER_SSH_KEY }}" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          ssh-keyscan -p 2223 -H ${{ secrets.SERVER_IP }} >> ~/.ssh/known_hosts
+
+      - name: Sync portraits
+        run: rsync -avz -e "ssh -p 2223 -i ~/.ssh/deploy_key" --ignore-existing portraits/ root@${{ secrets.SERVER_IP }}:/root/Hegardt/portraits/
+
   deploy:
     name: Deploy backend
     runs-on: ubuntu-latest
@@ -117,16 +136,16 @@ jobs:
           mkdir -p ~/.ssh
           echo "${{ secrets.SERVER_SSH_KEY }}" > ~/.ssh/deploy_key
           chmod 600 ~/.ssh/deploy_key
-          ssh-keyscan -H ${{ secrets.SERVER_IP }} >> ~/.ssh/known_hosts
+          ssh-keyscan -p 2223 -H ${{ secrets.SERVER_IP }} >> ~/.ssh/known_hosts
  
       - name: Copy docker-compose.yml to server
         working-directory: micronaut
         run: |
-          scp -i ~/.ssh/deploy_key docker-compose.yml root@${{ secrets.SERVER_IP }}:/root/Hegardt/docker-compose.yml
+          scp -P 2223 -i ~/.ssh/deploy_key docker-compose.yml root@${{ secrets.SERVER_IP }}:/root/Hegardt/docker-compose.yml
  
       - name: Pull image & restart containers
         run: |
-          ssh -i ~/.ssh/deploy_key root@${{ secrets.SERVER_IP }} bash << 'ENDSSH'
+          ssh -p 2223 -i ~/.ssh/deploy_key root@${{ secrets.SERVER_IP }} bash << 'ENDSSH'
             set -e
             cd /root/Hegardt
             sed -i "s/^IMAGE_TAG=.*/IMAGE_TAG=${{ needs.build.outputs.image_tag }}/" .env

@@ -1,7 +1,7 @@
 ﻿import { Coordinates } from '@/models/coordinates.model.ts';
 import { v4 as uuidv4 } from 'uuid';
 import type { Sex } from '@/enums/PersonSexEnum.ts';
-import type { Person, PersonsMap } from '@/types/person.type.ts';
+import type { EntityId, PersonBasic, PersonTreeNode, PersonTreeRoot } from '@/types/person.type.ts';
 import { formatPersonFullName, formatPersonLifespan } from '@/helpers/person-helper.ts';
 
 export class Connection {
@@ -24,7 +24,7 @@ export class Connection {
 export class FamilyTreeNode {
   x: number = 0;
   y: number = 0;
-  id: number;
+  id: EntityId;
   fullName: string;
   sex: Sex;
   lifespan: string;
@@ -34,7 +34,7 @@ export class FamilyTreeNode {
   cardWidth: number = 0;
   cardHeight: number = 0;
 
-  constructor(person: Person, cardWidth: number, cardHeight: number) {
+  constructor(person: PersonBasic, cardWidth: number, cardHeight: number) {
     this.fullName = formatPersonFullName(person);
     this.id = person.id;
     this.sex = person.sex;
@@ -108,8 +108,8 @@ export class FamilyTree {
     return allNodes;
   }
 
-  rebuild(rootPersonId: number, rawPersonsData: PersonsMap): void {
-    this.rootNode = this.buildNode(rootPersonId, rawPersonsData, 0);
+  rebuild(root: PersonTreeRoot): void {
+    this.rootNode = this.buildNode(root, 0);
     this.calculateCoordinates();
     this.buildConnections();
   }
@@ -206,19 +206,30 @@ export class FamilyTree {
       this.selectNodesToRender(node.mother, selectedNodes, depth + 1);
     }
   }
-
-  private buildNode(personId: number, rawPersonsData: PersonsMap, depth: number): FamilyTreeNode {
+  private buildNode(root: PersonTreeRoot | PersonTreeNode, depth: number): FamilyTreeNode {
     this.treeDepth = Math.max(this.treeDepth, depth);
-    const person = rawPersonsData[personId];
-    const node = new FamilyTreeNode(person, this.config.personCardWidth, this.config.personCardHeight);
+    const node = new FamilyTreeNode(root, this.config.personCardWidth, this.config.personCardHeight);
     if (depth > this.maxTreeBuildDepth) {
       return node;
     }
 
-    node.father = person.father?.id ? this.buildNode(person.father.id, rawPersonsData, depth + 1) : undefined;
-    node.mother = person.mother?.id ? this.buildNode(person.mother.id, rawPersonsData, depth + 1) : undefined;
+    node.father = root.father?.id ? this.buildNode(root.father, depth + 1) : undefined;
+    node.mother = root.mother?.id ? this.buildNode(root.mother, depth + 1) : undefined;
     return node;
   }
+
+  // private buildNode(personId: number, rawPersonsData: PersonsMap, depth: number): FamilyTreeNode {
+  //   this.treeDepth = Math.max(this.treeDepth, depth);
+  //   const person = rawPersonsData[personId];
+  //   const node = new FamilyTreeNode(person, this.config.personCardWidth, this.config.personCardHeight);
+  //   if (depth > this.maxTreeBuildDepth) {
+  //     return node;
+  //   }
+  //
+  //   node.father = person.father?.id ? this.buildNode(person.father.id, rawPersonsData, depth + 1) : undefined;
+  //   node.mother = person.mother?.id ? this.buildNode(person.mother.id, rawPersonsData, depth + 1) : undefined;
+  //   return node;
+  // }
 
   private buildPatriarchalConnections(node: FamilyTreeNode, depth: number): void {
     if (depth >= this.maxRenderDepth) {

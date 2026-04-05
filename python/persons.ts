@@ -1,5 +1,5 @@
-import type { PersonsData } from '@/types/person.type.ts';
-import SexEnum from '@/enums/PersonSexEnum.ts';
+// import type { PersonsData } from '@/types/person.type.ts';
+// import SexEnum from '@/enums/PersonSexEnum.ts';
 
 const persons: PersonsData = {
   0: {

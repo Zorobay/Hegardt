@@ -14,7 +14,7 @@ const matchingPersons = ref<Person[]>([]);
 
 onMounted(async () => {
   if (props.defaultId) {
-    const res = await personsApiService.getById(props.defaultId);
+    const res = await personsApiService.getSummaryById(props.defaultId);
     searchQuery.value = formatPersonFullName(res.data);
   }
 });
@@ -71,7 +71,7 @@ function onPersonClick(person: Person | Person): void {
 
       <div v-if="showDropdown" class="dropdown-menu show w-100">
         <a v-for="person in matchingPersons" :key="person.id" class="dropdown-item my-1" @click="onPersonClick(person)">
-          <PortraitComponent />
+          <PortraitComponent :id="person.id" />
 
           <div class="dropdown-person-info">
             <h6>{{ formatPersonFullName(person) }}</h6>

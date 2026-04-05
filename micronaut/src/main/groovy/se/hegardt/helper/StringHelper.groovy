@@ -16,11 +16,4 @@ class StringHelper {
             .toLowerCase()
     }
 
-    static boolean fuzzyMatch(String fullName, String search) {
-        if (!search?.trim()) return true
-        String fuzzedName = normalize(fullName)
-        List<String> searchTokens = search.trim().split(/\s+/).collect { String str -> normalize(str) }
-        return searchTokens.every { token -> fuzzedName.contains(token) }
-    }
-
 }

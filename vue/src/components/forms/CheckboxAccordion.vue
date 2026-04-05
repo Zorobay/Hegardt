@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { onMounted, reactive } from 'vue';
+import { onMounted, ref } from 'vue';
 import AccordionComponent from '@/components/forms/AccordionComponent.vue';
 import CheckboxComponent from '@/components/forms/CheckboxComponent.vue';
 
@@ -9,24 +9,19 @@ const props = defineProps({
   value: { type: String, required: true },
 });
 const emit = defineEmits(['selection-changed']);
-const checkedStates = reactive<Record<string, boolean>>({});
+const checkedStates = ref<Record<string, boolean>>(Object.fromEntries(props.items.map((item) => [item, true])));
 
-function onCheckboxChange(e: Event): void {
-  const target = e.target as HTMLInputElement;
-  checkedStates[target.value] = target.checked;
+function onCheckboxChange(label: string, checked: boolean): void {
+  checkedStates.value[label] = checked;
   emit('selection-changed', getSelectedItems());
 }
 
 function getSelectedItems(): string[] {
   const items = props.items;
-  return items.filter((item) => checkedStates[item]);
+  return items.filter((item) => checkedStates.value[item]);
 }
 
 onMounted(() => {
-  props.items.forEach((i) => {
-    checkedStates[i] = true;
-  });
-
   emit('selection-changed', getSelectedItems());
 });
 </script>
@@ -38,7 +33,11 @@ onMounted(() => {
       :key="item"
       :label="item"
       :checked="checkedStates[item]"
-      @change="onCheckboxChange"
+      @selection-changed="
+        (checked) => {
+          onCheckboxChange(item, checked);
+        }
+      "
     />
   </AccordionComponent>
 </template>

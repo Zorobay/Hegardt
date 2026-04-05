@@ -6,12 +6,9 @@ import ParentChildConnectionSvgComponent from '@/components/tree/ParentChildConn
 import { Coordinates } from '@/models/coordinates.model.ts';
 import { FamilyTree } from '@/models/family-tree.model.ts';
 import { personsApiService } from '@/api/personsApiService.ts';
-import type { PersonsMap } from '@/types/person.type.ts';
+import type { EntityId, PersonsMap } from '@/types/person.type.ts';
 
-const props = defineProps({
-  personId: { type: Number, required: false, default: null },
-  maxDepth: { type: Number, required: false, default: 3 },
-});
+const { personId = null, maxDepth = 3 } = defineProps<{ personId: EntityId; maxDepth: number }>();
 defineExpose({ center });
 
 // ========== View constants ==========
@@ -43,18 +40,23 @@ onMounted(async () => {
 });
 
 watch(
-  () => props.personId,
-  (newValue) => {
+  () => personId,
+  async (newValue) => {
     if (newValue) {
-      familyTree.rebuild(props.personId, rawPersonsData.value);
-      center();
+      try {
+        const res = await personsApiService.getTreeRootById(newValue);
+        familyTree.rebuild(res.data);
+        center();
+      } catch (error) {
+        console.log(error);
+      }
     }
   },
   { immediate: true },
 );
 
 watch(
-  () => props.maxDepth,
+  () => maxDepth,
   (newValue) => {
     if (newValue != null) {
       familyTree.setMaxRenderDepth(newValue);

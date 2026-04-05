@@ -1,8 +1,8 @@
 import { filterNullOrUndefined } from '@/helpers/util-helper.ts';
 import { differenceInYears } from 'date-fns';
-import type { Location, PartialDate, Person, PersonSummary } from '@/types/person.type.ts';
+import type { Location, PartialDate, Person, PersonBasic } from '@/types/person.type.ts';
 
-export function formatPersonFullName(person: Person | PersonSummary | undefined | null): string {
+export function formatPersonFullName(person: PersonBasic | undefined | null): string {
   if (!person) {
     return '';
   }
@@ -68,7 +68,7 @@ export function personIsDead(person: Person): boolean {
   return !!deathDate;
 }
 
-export function formatPersonLifespan(person: Person | Person): string {
+export function formatPersonLifespan(person: PersonBasic): string {
   const birthYear = person.birth?.date?.year ?? '';
   const deathYear = person.death?.date?.year ?? '';
   return `${birthYear}${deathYear ? ' - ' : ''}${deathYear}`;
