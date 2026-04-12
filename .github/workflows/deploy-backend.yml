@@ -103,8 +103,8 @@ jobs:
           cache-from: type=gha
           cache-to: type=gha,mode=max
  
-  assets:
-    name: Copy image assets
+  static_media:
+    name: Copy image static_media
     runs-on: ubuntu-latest
     needs: build
 
@@ -119,8 +119,8 @@ jobs:
           chmod 600 ~/.ssh/deploy_key
           ssh-keyscan -p 2223 -H ${{ secrets.SERVER_IP }} >> ~/.ssh/known_hosts
 
-      - name: Sync assets
-        run: rsync -avz -e "ssh -p 2223 -i ~/.ssh/deploy_key" --ignore-existing assets/ root@${{ secrets.SERVER_IP }}:/root/Hegardt/assets/
+      - name: Sync static_media
+        run: rsync -avz -e "ssh -p 2223 -i ~/.ssh/deploy_key" --ignore-existing static_media/ root@${{ secrets.SERVER_IP }}:/root/Hegardt/static_media/
 
   deploy:
     name: Deploy backend

@@ -13,7 +13,7 @@ def person_identifier_str(person: dict, year: str, pid: str):
 
 if __name__ == '__main__':
     PORTRAITS_DIR = Path('contour_portraits')
-    FINISHED_PORTRAITS_DIR = Path('../portraits')
+    FINISHED_PORTRAITS_DIR = Path('../static_media/portraits')
     with open('persons.json', 'r', encoding='utf-8') as f:
         data = json.load(f)
         

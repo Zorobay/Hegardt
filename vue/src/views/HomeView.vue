@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const shieldUrl = '/assets/images/shield_high_res_cleaned.png';
+const shieldUrl = '/static_media/images/shield_high_res_cleaned.png';
 </script>
 
 <template>

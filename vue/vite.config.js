@@ -20,9 +20,9 @@ export default defineConfig({
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, ''),
       },
-      '/assets': {
+      '/static_media': {
         target: 'http://localhost:9000',
-        rewrite: (path) => path.replace(/\/assets/, ''),
+        rewrite: (path) => path.replace(/\/static_media/, ''),
       },
     },
   },
