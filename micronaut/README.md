@@ -11,14 +11,21 @@
 ## Administrate Postgres Database
 First, install _Docker Desktop_.
 
+Create .env file in the root with:
+
+```dotenv
+DB_USER=hegardt
+DB_PASSWORD=hegardt
+```
+
 Then, from root, run:
 ```powershell
-docker compose up -d
+docker compose up postgres -d
 ```
 
 We can wipe the volume and all data with 
 ```powershell
-docker compose down -v
+docker compose down postgres -v
 ```
 
 ## Micronaut 4.10.9 Documentation

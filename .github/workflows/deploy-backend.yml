@@ -119,8 +119,8 @@ jobs:
           chmod 600 ~/.ssh/deploy_key
           ssh-keyscan -p 2223 -H ${{ secrets.SERVER_IP }} >> ~/.ssh/known_hosts
 
-      - name: Sync portraits
-        run: rsync -avz -e "ssh -p 2223 -i ~/.ssh/deploy_key" --ignore-existing portraits/ root@${{ secrets.SERVER_IP }}:/root/Hegardt/portraits/
+      - name: Sync assets
+        run: rsync -avz -e "ssh -p 2223 -i ~/.ssh/deploy_key" --ignore-existing assets/ root@${{ secrets.SERVER_IP }}:/root/Hegardt/assets/
 
   deploy:
     name: Deploy backend

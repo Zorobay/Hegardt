@@ -4,7 +4,7 @@ import type { EntityId } from '@/types/person.type.ts';
 
 const { id } = defineProps<{ id: EntityId }>();
 
-const portraitUrl = `/images/id${id}.png`;
+const portraitUrl = `/assets/portraits/id${id}.png`;
 const hasPortrait = ref(false);
 </script>
 

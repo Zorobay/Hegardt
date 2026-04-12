@@ -25,7 +25,7 @@ datasources:
   default:
     url: ${JDBC_URL:`jdbc:postgresql://localhost:5432/hegardt`}
     username: ${DB_USER:hegardt}
-    password: ${DB_PASSWORD:secret}
+    password: ${DB_PASSWORD:hegardt}
     driver-class-name: org.postgresql.Driver
 
 jpa:
