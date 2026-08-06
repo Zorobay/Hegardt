@@ -6,7 +6,7 @@ import DataTable from 'primevue/datatable';
 import Column from 'primevue/column';
 import { ref } from 'vue';
 
-const props = defineProps({ data: { type: Array<GpxRoute>, default: [] } });
+const props = withDefaults(defineProps<{ data: GpxRoute[] }>(), { data: () => [] });
 const emit = defineEmits<{
   'selection-changed': [{ route: GpxRoute; show: boolean }];
 }>();

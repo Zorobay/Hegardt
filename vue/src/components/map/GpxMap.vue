@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { onMounted, ref } from 'vue';
+import { onMounted, ref, shallowRef } from 'vue';
 import OLMap from 'ol/Map';
 import View from 'ol/View';
 import TileLayer from 'ol/layer/Tile';
@@ -30,7 +30,7 @@ let map: OLMap | null = null;
 let mapView = new View();
 
 // GPX Related stuff
-const gpxRoutes = ref<GpxRoute[]>([]);
+const gpxRoutes = shallowRef<GpxRoute[]>([]);
 const GPX_ROUTES: GpxRouteConfig[] = [
   { id: 1, name: 'Amager 14.1km', path: '/gpx/onthegomap-14.1-km-route.gpx' },
   { id: 2, name: 'Amager Fælled 10.5km - The Classic', path: '/gpx/Amager Fælled 10.5km - The Classic.gpx' },
