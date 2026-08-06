@@ -1,24 +1,32 @@
+# Hegardt Frontend
+
+## Setup
+
+1. Run `npm install`
+2. To run the vue frontend, run `npm run dev`
+3. To serve static media, like images, run `npm run static_media` in a separate terminal
+
 ## TODO
 
- - [ ] Language selector
- - [ ] Search
- - PersonView
-   - [x] Locations
-   - [x] Parents
-   - [x] Siblings
-   - [x] Occupations
-   - [x] Notes
-   - [x] References
-  - [ ] Map
-   - [ ] Show markers for Birth, Death, Burial
-   - [ ] Find person by name
-   - [ ] Filter by year (Birth, Death, Burial)
-   - [ ] Click marker to go to person page
-   - [ ] Go to map from person page by clicking on Birth-, Death- or Burial place.
-  - [ ] Family Tree
-   - [ ] Filter by name
-   - [ ] Select how many pre and post generations to show
-   - [ ] Toggle siblings
+- [ ] Language selector
+- [ ] Search
+- PersonView
+    - [x] Locations
+    - [x] Parents
+    - [x] Siblings
+    - [x] Occupations
+    - [x] Notes
+    - [x] References
+- [ ] Map
+- [ ] Show markers for Birth, Death, Burial
+- [ ] Find person by name
+- [ ] Filter by year (Birth, Death, Burial)
+- [ ] Click marker to go to person page
+- [ ] Go to map from person page by clicking on Birth-, Death- or Burial place.
+- [ ] Family Tree
+- [ ] Filter by name
+- [ ] Select how many pre and post generations to show
+- [ ] Toggle siblings
 
 ## Debuggery
 
@@ -29,6 +37,7 @@
 Clicking a `<router-link>` changes the url but does not render the new content. Example:
 
 ```html
+
 <router-link class="stretched-link" :to="{name: 'person', params: {id: id}}">Link</router-link>
 ```
 
@@ -36,9 +45,9 @@ Clicking a `<router-link>` changes the url but does not render the new content. 
 
 https://stackoverflow.com/questions/59088216/vue-router-link-changes-url-but-does-not-change-router-view-component
 
- > Just write key attribute in router-view:
- > `<router-view :key="$route.path"></router-view>`
- > 
+> Just write key attribute in router-view:
+> `<router-view :key="$route.path"></router-view>`
+>
 
 ### History is not working, gets 404
 
@@ -54,7 +63,8 @@ From the `Hegardt/dist` directory, serve the website locally with command `http-
 
 ### DNS
 
-For some reason, DNS did not work through HostUp, but worked immediately through Digital Ocean. So, the DNS A-record is setup through: https://cloud.digitalocean.com/networking/domains
+For some reason, DNS did not work through HostUp, but worked immediately through Digital Ocean. So, the DNS A-record is
+setup through: https://cloud.digitalocean.com/networking/domains
 
 ### Web server on NAS
 
@@ -70,11 +80,12 @@ Setup on the NAS from Control Panel > Security > Certificate
 
 Add new certificate with "Add" button and fill out info.
 
-After the certificate is created, click "Settings" and make sure that the correct certificate is chosen for the web service.
+After the certificate is created, click "Settings" and make sure that the correct certificate is chosen for the web
+service.
 
 ## Nginx
 
-Directory: `/usr/local/etc/nginx/` 
+Directory: `/usr/local/etc/nginx/`
 
 Check config: `sudo nginx -t`
 
@@ -84,6 +95,7 @@ Restart: `sudo systemctl restart nginx`
 
 SSH: `ssh root@134.209.240.67`
 
-1. Install NodeJS via NVM: https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-22-04#option-3-installing-node-using-the-node-version-manager
+1. Install NodeJS via
+   NVM: https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-22-04#option-3-installing-node-using-the-node-version-manager
 2. Install Nginx: https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-22-04
 3. 

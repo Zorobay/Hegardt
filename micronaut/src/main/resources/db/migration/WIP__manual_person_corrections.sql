@@ -13,3 +13,7 @@ SET partial_month = 1,
 FROM person p
 WHERE p.birth_id = le.id
   AND p.id = 619;
+
+/* TODO !! Fixa Klara Adela (Adèle) mellannamn (smeknamn)?*/
+
+/* TODO Fix id 105 nickname (Hanna) */

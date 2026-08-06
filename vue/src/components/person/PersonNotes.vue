@@ -7,7 +7,7 @@ const { notes = '' } = defineProps<{
 </script>
 
 <template>
-  <ReadonlyText title="Notes">
+  <ReadonlyText title="Notes" :empty-check="notes">
     <p class="heg-rich-text">{{ notes }}</p>
   </ReadonlyText>
 </template>

@@ -3,9 +3,7 @@ import type { Sex } from '@/enums/PersonSexEnum.ts';
 export type EntityId = number;
 
 export interface PartialDate {
-  date: {
-    $date: number;
-  };
+  date: string | null;
   day: number | null;
   month: number | null;
   year: number | null;

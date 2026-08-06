@@ -11,11 +11,17 @@ const props = defineProps<Props>();
 const event = props.event;
 const date = formatPersonDate(event.date);
 const location = formatPersonLocation(event.location);
-const text = `${date}${location ? ` in ${location}` : ''}`;
+const text = getText(date, location);
+function getText(date: string, location: string): string {
+  if (date) {
+    return `${date}${location ? ` in ${location}` : ''}`;
+  }
+  return '';
+}
 </script>
 
 <template>
-  <ReadonlyText :text="text" :title="props.title" />
+  <ReadonlyText :text="text" :title="props.title" :empty-check="text" />
 </template>
 
 <style scoped></style>

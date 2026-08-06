@@ -18,7 +18,7 @@ export function formatPersonFullName(person: PersonBasic | undefined | null): st
 }
 
 export function formatPersonDate(date: PartialDate | undefined | null): string {
-  if (!date) {
+  if (!date?.date) {
     return '';
   }
   const year = date.year;
@@ -35,17 +35,17 @@ export function formatPersonAge(person: Person): string {
   const birthDateObj = person.birth.date;
 
   if (birthDateObj) {
-    const fromDate = personIsDead(person) ? dateObjectToDate(person.death.date) : new Date();
+    const toDate = personIsDead(person) ? dateObjectToDate(person.death.date) : new Date();
     const birthDate = dateObjectToDate(birthDateObj);
-    if (fromDate && birthDate) {
-      return differenceInYears(fromDate, birthDate)?.toString();
+    if (toDate && birthDate) {
+      return differenceInYears(toDate, birthDate)?.toString();
     }
   }
   return '?';
 }
 
 export function formatPersonLocation(location: Location | null): string {
-  if (!location) {
+  if (!location?.city || !location?.country) {
     return '';
   }
   const parts = [location.city, location.country];
@@ -57,14 +57,14 @@ export function personBirthDate(person: Person): Date | undefined {
 }
 
 export function dateObjectToDate(dateObj: PartialDate | undefined | null): Date | undefined {
-  if (dateObj?.date?.$date) {
-    return new Date(dateObj.date.$date);
+  if (dateObj?.date) {
+    return new Date(dateObj.date);
   }
   return undefined;
 }
 
 export function personIsDead(person: Person): boolean {
-  const deathDate = person.death.date;
+  const deathDate = person.death.date?.date;
   return !!deathDate;
 }
 
