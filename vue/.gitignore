@@ -28,3 +28,12 @@ coverage
 *.sw?
 
 *.tsbuildinfo
+
+# static media (keep folders)
+static_media/images/*
+static_media/portraits/*
+static_media/pdfs/*
+
+!static_media/images/.gitkeep
+!static_media/portraits/.gitkeep
+!static_media/pdfs/.gitkeep
