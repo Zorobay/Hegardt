@@ -1,23 +1,22 @@
 ﻿import re
 
 
-
-
-
 class PeopleSection:
     REG_FULL = re.compile(r'^(\d+)\.(?:\s\d+\.)?\s(.+),(?=\sf\.)(?:(?!f\.).)+f\.\D+(\d+)')
     REG_NUMBER = re.compile(r'^(\d+)\..*')
     REG_BIRTH_YEAR = re.compile(r'f\.\s(?:[a-zA-Z\s]+\s)?(\d+)')
     REG_FULL_NAMES = re.compile(r'^\d+\.(?:\s\d+\.)?\s([\w\(\)\s]+),')
     REG_NAMES = re.compile(r'(\w+)\s*(\w*)')
+    REG_FIRST_COMMA = re.compile(r',')
 
     def __init__(self, section: str, book_page: int = -1):
         self.full_section = section.replace('\n', '')
+        self.search_match_section = ''
         self.book_page = book_page
         self.full_description = ''
         self.number = None
         self.first_name = ''
-        self.last_name = ''
+        self.middle_name = ''
         self.birth_year = None
         self.could_be_parsed = False
         self._parse()
@@ -25,11 +24,13 @@ class PeopleSection:
     @classmethod
     def csv_headers(cls) -> str:
         return ';'.join(['Page', 'Number', 'FirstName', 'LastName', 'BirthYear'])
+
     def csv_data(self) -> str:
-        return ';'.join(str(d) for d in [self.book_page, self.number, self.first_name, self.last_name, self.birth_year])
+        return ';'.join(
+            str(d) for d in [self.book_page, self.number, self.first_name, self.middle_name, self.birth_year])
 
     def __str__(self):
-        return f'{self.number}. {self.first_name} {self.last_name} f. {self.birth_year}'
+        return f'{self.number}. {self.first_name} {self.middle_name} f. {self.birth_year}'
 
     def _parse(self):
         if match := self.REG_NUMBER.match(self.full_section):
@@ -45,12 +46,17 @@ class PeopleSection:
         if self.first_name and self.birth_year and self.number:
             self.could_be_parsed = True
 
+        match = re.search(rf'{self.birth_year}',self.full_section) if self.birth_year else self.REG_FIRST_COMMA.search(self.full_section)
+        if match:
+            match_end = match.end() if  self.birth_year else match.start() 
+            self.search_match_section = self.full_section[:match_end]
+
     def _parse_name(self):
         if match := self.REG_FULL_NAMES.match(self.full_section):
             full_name = match.group(1)
             open_index = full_name.find('(')
             if open_index > 0:
-                close_index = full_name.find(')', open_index)+1
+                close_index = full_name.find(')', open_index) + 1
                 if close_index > 0:
                     # Remove nickname
                     full_name = full_name[:open_index] + full_name[close_index:]
@@ -60,4 +66,4 @@ class PeopleSection:
 
             if match := self.REG_NAMES.match(full_name.strip()):
                 self.first_name = match.group(1)
-                self.last_name = match.group(2) or ''
+                self.middle_name = match.group(2) or ''

@@ -8,21 +8,13 @@ from pymupdf import Page
 from pypdf import PdfReader, PageObject
 
 from src.PeopleSection import PeopleSection
+from src.constants import PDF_FILENAME_300DPI, REG_PEOPLE_SECTION, REG_NUMBER, SKIPPABLE_PAGES, START_PAGE, END_PAGE
 
-PERSONS_JSON_FILENAME = "persons.json"
 OUTPUT_PERSON_DATA_FILENAME = 'person_data.csv'
-PDF_FILENAME_300DPI = "hegardt_300dpi_searchable.pdf"
 PDF_FILENAME_600DPI = "hegardt_600dpi_searchable.pdf"
 OUTPUT_PDF_FILENAME = "Hegardt_300dpi_sökbar_adobe_komprimerad_HYPERLINKS.pdf"
 OUTPUT_PORTRAIT_PATH = Path('extracted_portraits')
-SKIPPABLE_PAGES = [90]
-START_PAGE = 9
-END_PAGE = 102
 PDF_PAGE_KEY = 'pdfPage'
-
-REG_PEOPLE_SECTION = re.compile(r'(?=\n\d+\.)\s')
-REG_NUMBER = re.compile(r'\n\d+\.\s?')
-REG_NAME_BIRTH_YEAR = re.compile(r'^([\w\s]+)\(?.*\)?, f. \D*(\d+).*')
 
 
 def get_book_page(page: PageObject | Page) -> int:
@@ -44,8 +36,10 @@ def extract_people_sections(page_text: str, book_page: int) -> list[PeopleSectio
     return [PeopleSection(s, book_page) for s in splits]
 
 
+
+            
 def extract_text():
-    reader = PdfReader(PDF_FILENAME_600DPI)
+    reader = PdfReader(PDF_FILENAME_300DPI)
     out: list[PeopleSection] = []
     for page in reader.pages:
         book_page = get_book_page(page)

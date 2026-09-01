@@ -18,6 +18,7 @@ class PersonModel:
         self.normalized_name = normalize_name(' '.join([n for n in [self.first_name, ''.join(json_data.get('middleNames') or []), self.last_name] if n]))
         self.notes = json_data.get('notes', '')
         self.sex = json_data.get('sex', '').upper()
+        self.pdf_page = json_data.get('')
         self.father_id = to_id(json_data['father']) if json_data.get('father') else None
         self.mother_id = to_id(json_data['mother']) if json_data.get('mother') else None
         self.children_ids = [to_id(i) for i in json_data.get('children', [])]

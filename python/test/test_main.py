@@ -3,7 +3,8 @@
 from pypdf import PdfReader, PageObject
 
 from src.PeopleSection import PeopleSection
-from parse_pdf import PDF_FILENAME_300DPI, extract_people_sections
+from parse_pdf import extract_people_sections
+from src.constants import PDF_FILENAME_300DPI
 
 
 def _read_pages() -> list[PageObject]:
@@ -15,7 +16,7 @@ def parseable(number: int, birth_year: int, first_name: str, last_name: str = ''
     person.number = number
     person.birth_year = birth_year
     person.first_name = first_name
-    person.last_name = last_name
+    person.middle_name = last_name
     person.could_be_parsed = True
     return person
 
@@ -87,7 +88,7 @@ class MainTest(unittest.TestCase):
 
             if exp_person.could_be_parsed:
                 self.assertEqual(exp_person.first_name.lower(), res_person.first_name.lower(), msg=f'Wrong first_name! Expected: {exp_person}')
-                self.assertEqual(exp_person.last_name.lower(), res_person.last_name.lower(), msg=f'Wrong last_name! Expected: {exp_person}')
+                self.assertEqual(exp_person.middle_name.lower(), res_person.middle_name.lower(), msg=f'Wrong last_name! Expected: {exp_person}')
                 self.assertEqual(exp_person.birth_year, res_person.birth_year, msg=f'Wrong birth_year! Expected: {exp_person}')
 
     def _get_people_sections(self, book_page: int):
