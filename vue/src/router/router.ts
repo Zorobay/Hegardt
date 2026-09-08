@@ -47,6 +47,7 @@ const router = createRouter({
       path: '/family-book/:page?',
       name: 'family-book',
       component: FamilyBookView,
+      props: true,
     },
     {
       path: '/running-maps',

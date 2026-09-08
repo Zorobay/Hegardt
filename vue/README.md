@@ -6,27 +6,41 @@
 2. To run the vue frontend, run `npm run dev`
 3. To serve static media, like images, run `npm run static_media` in a separate terminal
 
+## Static Media
+
+Static media (like portraits and other images) are served from the `static_media` folder.
+
+The portraits are elliptic with an aspect ratio of about 3:4 or about 33% taller than wide.
+
 ## TODO
 
+- [ ] Custom PDF Viewer
+    - [ ] display pages like a book (two page view)
+        - [ ] page flip animation
+    - [ ] display a row of small page previews at the bottom
+    - [ ] Change page with left and right keys
+    - [ ] Zoom in on a page
+    - [ ] Most importantly, reference pages from a personal page. Clicking that link will open the specific page, and in
+      my dreams, highlight the name on the pdf page.
 - [ ] Language selector
-- [ ] Search
-- PersonView
+- [x] Search
+- [ ] PersonView
     - [x] Locations
     - [x] Parents
     - [x] Siblings
     - [x] Occupations
     - [x] Notes
     - [x] References
-- [ ] Map
-- [ ] Show markers for Birth, Death, Burial
-- [ ] Find person by name
-- [ ] Filter by year (Birth, Death, Burial)
-- [ ] Click marker to go to person page
-- [ ] Go to map from person page by clicking on Birth-, Death- or Burial place.
-- [ ] Family Tree
-- [ ] Filter by name
-- [ ] Select how many pre and post generations to show
-- [ ] Toggle siblings
+    - [ ] Marriages
+- [x] Map
+    - [x] Show markers for Birth, Death, Burial
+    - [x] Find person by name
+    - [ ] Filter by year (Birth, Death, Burial)
+    - [x] Click marker to go to person page
+    - [x] Go to map from person page by clicking on Birth-, Death- or Burial place.
+- [x] Family Tree
+    - [x] Select how many pre and post generations to show
+    - [ ] Toggle siblings
 
 ## Debuggery
 

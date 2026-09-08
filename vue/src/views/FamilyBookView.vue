@@ -1,5 +1,7 @@
 <script setup lang="ts">
-const props = defineProps({ page: { type: Number, required: false, default: 0 } });
+import PdfViewer from '@/components/pdf/PdfViewer.vue';
+
+const props = defineProps({ page: { type: Number, required: false, default: 1 } });
 </script>
 
 <template>
@@ -9,22 +11,12 @@ const props = defineProps({ page: { type: Number, required: false, default: 0 } 
         label="Download 300 DPI"
         as="a"
         target="_blank"
-        href="/pdf/hegardt_300dpi_searchable_compressed.pdf"
+        href="/static_media/pdfs/hegardt_300dpi_compressed.pdf"
       />
-      <ButtonPrime
-        label="Download 600 DPI"
-        as="a"
-        target="_blank"
-        href="https://battis.quickconnect.to/d/s/16jIW6md5JyDxVAulzEizBjz2UjHND5X/o5smoSSzhjElVUywo61WgOCoar4kP-Rs-frvAF7ng6Qw"
-      />
+      <ButtonPrime label="Download 600 DPI" as="a" target="_blank" href="/static_media/pdfs/Hegardt_600dpi.pdf" />
     </div>
 
-    <iframe
-      id="family-book-pdf-viewer"
-      src="/pdf/hegardt_300dpi_searchable_compressed.pdf#zoom=page-width&view=FitH"
-      style="border: none; display: block; width: 100%"
-      type="application/pdf"
-    />
+    <PdfViewer src="/static_media/pdfs/hegardt_300dpi_compressed.pdf" :initial-page="props.page" />
   </div>
 </template>
 

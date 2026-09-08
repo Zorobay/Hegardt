@@ -25,7 +25,11 @@ function onCenterButtonClicked(): void {
 <template>
   <h1>Tree</h1>
   <div class="tree-controls">
-    <SearchComponent :default-id="Number.parseInt(personId)" @on-person-clicked="onSearchedPersonClicked" />
+    <SearchComponent
+      :default-id="Number.parseInt(personId)"
+      placeholder-text="Start here"
+      @on-person-clicked="onSearchedPersonClicked"
+    />
     <ButtonPrime @click="onCenterButtonClicked">
       <font-awesome-icon icon="fa-solid fa-arrows-to-circle" />
       Center

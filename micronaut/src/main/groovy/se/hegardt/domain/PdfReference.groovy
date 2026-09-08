@@ -36,9 +36,9 @@ class PdfReference {
     Double y0
 
     @Column(nullable = false)
-    Double x1
+    Double width
 
     @Column(nullable = false)
-    Double y1
+    Double height
 
 }

@@ -11,8 +11,6 @@ class PdfReferenceDto {
     Integer pdfPage
     Double x0
     Double y0
-    Double x1
-    Double y1
     Double width
     Double height
 
@@ -22,10 +20,8 @@ class PdfReferenceDto {
             pdfPage: pdfReference.pdfPage,
             x0: pdfReference.x0,
             y0: pdfReference.y0,
-            x1: pdfReference.x1,
-            y1: pdfReference.y1,
-            width: pdfReference.x0 - pdfReference.x1,
-            height: pdfReference.y1 - pdfReference.y0
+            width: pdfReference.width,
+            height: pdfReference.height
         )
     }
 }

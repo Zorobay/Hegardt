@@ -106,6 +106,6 @@ CREATE TABLE pdf_reference
     pdf_page    INTEGER NOT NULL,
     x0          FLOAT NOT NULL,
     y0          FLOAT NOT NULL,
-    x1          FLOAT NOT NULL,
-    y1          FLOAT NOT NULL
+    width       FLOAT NOT NULL,
+    height      FLOAT NOT NULL
 );

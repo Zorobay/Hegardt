@@ -7,8 +7,8 @@ const { notes = '' } = defineProps<{
 </script>
 
 <template>
-  <ReadonlyText title="Notes" :empty-check="notes">
-    <p class="heg-rich-text">{{ notes }}</p>
+  <ReadonlyText title="Notes">
+    <p v-if="notes" class="heg-rich-text">{{ notes }}</p>
   </ReadonlyText>
 </template>
 

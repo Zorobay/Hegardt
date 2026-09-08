@@ -66,7 +66,7 @@ onMounted(async () => {
               <PersonNotes :notes="person.notes" />
 
               <ReadonlyText title="Occupations">
-                <ul>
+                <ul v-if="person.occupations?.length > 0">
                   <li v-for="occupation in person.occupations" :key="occupation.id">{{ occupation }}</li>
                 </ul>
               </ReadonlyText>

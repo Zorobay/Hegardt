@@ -1,17 +1,25 @@
 <script setup lang="ts">
+import { useHasSlotContent } from '@/composables/useHasSlotContent.ts';
+
 const { text, title } = defineProps<{
   text?: string;
   title: string;
-  emptyCheck?: string;
 }>();
+
+function isEmpty(): boolean {
+  const hasSlotContent = useHasSlotContent();
+  return !!text || !hasSlotContent.value;
+}
 </script>
 
 <template>
   <div class="heg-person-text-property">
     <h5>{{ title }}</h5>
-    <p v-if="text">{{ text }}</p>
-    <span v-else-if="!emptyCheck" id="empty-text-emdash">—</span>
-    <slot></slot>
+    <div id="text-div">
+      <p v-if="text">{{ text }}</p>
+      <span v-else-if="isEmpty()" id="empty-text-emdash">—</span>
+      <slot></slot>
+    </div>
   </div>
 </template>
 
@@ -23,6 +31,17 @@ const { text, title } = defineProps<{
 #empty-text-emdash {
   opacity: 0.4;
   font-weight: bold;
+}
+
+#text-div {
+  border: var(--glaucous) solid 0.15rem;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  box-shadow: inset var(--lavender-gray) 0.15rem 0.15rem;
+
+  p {
+    margin-bottom: 0 !important;
+  }
 }
 
 h6 {

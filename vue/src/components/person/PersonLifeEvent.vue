@@ -21,7 +21,7 @@ function getText(date: string, location: string): string {
 </script>
 
 <template>
-  <ReadonlyText :text="text" :title="props.title" :empty-check="text" />
+  <ReadonlyText :text="text" :title="props.title" />
 </template>
 
 <style scoped></style>

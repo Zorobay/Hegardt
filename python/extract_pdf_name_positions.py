@@ -15,7 +15,7 @@ class PdfUpdateData:
         self.text_line = text_line
 
     def __eq__(self, other: 'PdfUpdateData') -> bool:
-        return other.page == self.page and self.text_line.coords_as_string() == other.text_line.coords_as_string()
+        return other.page == self.page and self.text_line.coords_and_dimensions_as_string() == other.text_line.coords_and_dimensions_as_string()
 
 
 class TextLine(dict):
@@ -33,8 +33,8 @@ class TextLine(dict):
         self.x1 = text_line['x1']
         self.bottom = text_line['bottom']
 
-    def coords_as_string(self) -> str:
-        return f'{round(self.x0, 2)}, {round(self.top, 2)}, {round(self.x1, 2)}, {round(self.bottom, 2)}'
+    def coords_and_dimensions_as_string(self) -> str:
+        return f'{round(self.x0, 2)}, {round(self.top, 2)}, {round(self.width(), 2)}, {round(self.height(), 2)}'
 
     def height(self) -> float:
         return self.bottom - self.top
@@ -54,8 +54,8 @@ def get_pdf_update_sql(all_data: dict[int, list[PdfUpdateData]]) -> list[str]:
             if data not in checked:
                 text_line = data.text_line
                 sql += f'''
-INSERT INTO pdf_reference (id, version, person_id, pdf_page, x0, y0, x1, y1) 
-VALUES ({pdf_id}, 1, {person_id}, {data.page}, {text_line.coords_as_string()});
+INSERT INTO pdf_reference (id, version, person_id, pdf_page, x0, y0, width, height) 
+VALUES ({pdf_id}, 1, {person_id}, {data.page}, {text_line.coords_and_dimensions_as_string()});
     '''
                 checked.append(data)
                 pdf_id += 1

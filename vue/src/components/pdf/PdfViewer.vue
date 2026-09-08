@@ -1,85 +1,146 @@
 ﻿<script setup lang="ts">
-import { onMounted, ref, watch } from 'vue';
-import type { PDFDocumentProxy, PDFPageProxy, RenderTask } from 'pdfjs-dist';
+import { onMounted, onUnmounted, ref, shallowRef, watch } from 'vue';
+import type { PDFDocumentProxy } from 'pdfjs-dist';
 import * as pdfjsLib from 'pdfjs-dist';
+import LoadingSpinner from '@/components/async/LoadingSpinner.vue';
+import type { PdfReference } from '@/types/pdf-references.type.ts';
+import { pdfReferencesApiService } from '@/api/pdfReferencesApiService.ts';
 
-const { src } = defineProps<{ src: string }>();
+pdfjsLib.GlobalWorkerOptions.workerSrc = '/pdfjs/pdf.worker.min.mjs';
 
-pdfjsLib.GlobalWorkerOptions.workerSrc = new URL('pdfjs-dist/build/pdf.worker.min.mjs', import.meta.url).toString();
+// eslint-disable-next-line vue/define-macros-order
+const props = withDefaults(defineProps<{ src: string; initialPage?: number; scale: number }>(), {
+  initialPage: 1,
+  scale: 1.5,
+});
+const pdfDoc = shallowRef<PDFDocumentProxy | null>(null);
+const numPages = ref<number>(0);
+const leftPage = ref<number>(getIntialPage());
+const isLoading = ref<boolean>(true);
 
-const canvasRefs = ref<HTMLCanvasElement[]>([]);
-const containerRef = ref<HTMLDivElement | null>(null);
-const scale = ref(0.75);
-const totalPages = ref(0);
-let pdfDoc: PDFDocumentProxy | null = null;
-const renderTasks: RenderTask[] = [];
+const leftCanvas = ref<HTMLCanvasElement | null>(null);
+const rightCanvas = ref<HTMLCanvasElement | null>(null);
 
-const renderPage = async (pageNum: number): Promise<void> => {
-  const canvas = canvasRefs.value[pageNum - 1];
-  if (!canvas) return; // guard against missing ref
+const references = ref<Map<number, PdfReference[]>>(new Map<number, PdfReference[]>());
 
-  const page: PDFPageProxy = await pdfDoc!.getPage(pageNum);
-  const dpr = window.devicePixelRatio || 1;
-  const containerWidth = containerRef.value?.clientWidth ?? 800;
-  const unscaledViewport = page.getViewport({ scale: 1 });
-  const fitScale = (containerWidth / unscaledViewport.width) * scale.value;
-  const viewport = page.getViewport({ scale: fitScale * dpr });
+function getIntialPage(): number {
+  const initPage = Number(props.initialPage);
+  if (!initPage || initPage <= 0) {
+    return 1;
+  }
+  if (initPage % 2 === 0) {
+    return initPage - 1;
+  }
+  return initPage;
+}
 
-  const ctx = canvas.getContext('2d')!;
+function toScreenBox(reference: PdfReference): { left: string; top: string; width: string; height: string } {
+  const res = {
+    left: `${reference.x0 * props.scale}px`,
+    top: `${reference.y0 * props.scale}px`,
+    width: `${reference.width * props.scale}px`,
+    height: `${reference.height * props.scale}px`,
+  };
+  return res;
+}
+
+async function loadDocument(): Promise<void> {
+  pdfDoc.value = await pdfjsLib.getDocument({
+    url: props.src,
+    wasmUrl: 'pdfjs/wasm/',
+  }).promise;
+  numPages.value = pdfDoc.value.numPages;
+  await renderSpread();
+  isLoading.value = false;
+}
+
+async function renderSpread(): Promise<void> {
+  await renderPageToCanvas(leftPage.value, leftCanvas.value);
+  await renderPageToCanvas(leftPage.value + 1, rightCanvas.value);
+}
+
+async function renderPageToCanvas(pageNum: number, canvas: HTMLCanvasElement | null): Promise<void> {
+  if (!canvas || !pdfDoc.value) return;
+  console.log('Rendering page ' + pageNum);
+
+  const page = await pdfDoc.value.getPage(pageNum);
+  const viewport = page.getViewport({ scale: props.scale });
   canvas.width = viewport.width;
   canvas.height = viewport.height;
-  canvas.style.width = `${viewport.width / dpr}px`;
-  canvas.style.height = `${viewport.height / dpr}px`;
 
-  const task = page.render({ canvasContext: ctx, viewport, canvas });
-  renderTasks[pageNum - 1] = task;
-
-  try {
-    await task.promise;
-  } catch (e) {
-    if (e instanceof Error && e.name === 'RenderingCancelledException') return;
-    throw e; // re-throw anything unexpected
+  const context = canvas.getContext('2d');
+  if (context) {
+    await page.render({ canvas, viewport, canvasContext: context }).promise;
   }
-};
+}
 
-const cancelAll = async (): Promise<void> => {
-  const tasks = [...renderTasks];
-  renderTasks.length = 0;
-  await Promise.allSettled(
-    tasks.map((task) => {
-      task?.cancel();
-      return task?.promise; // wait for the promise to actually finish
-    }),
-  );
-};
-
-const renderAll = async (): Promise<void> => {
-  await cancelAll();
-  for (let i = 1; i <= totalPages.value; i++) {
-    await renderPage(i);
+function unrenderCanvas(canvas: HTMLCanvasElement | null): void {
+  if (canvas) {
+    canvas.width = 0;
   }
-};
+}
+
+function showNextPage(): void {
+  if (leftPage.value + 2 <= numPages.value) {
+    leftPage.value += 2;
+  }
+}
+function showPreviousPage(): void {
+  if (leftPage.value - 2 >= 1) {
+    leftPage.value -= 2;
+  }
+}
+
+function onKeyDown(e: KeyboardEvent): void {
+  if (e.key === 'ArrowLeft') {
+    showPreviousPage();
+  }
+  if (e.key === 'ArrowRight') {
+    showNextPage();
+  }
+}
 
 onMounted(async () => {
-  pdfDoc = await pdfjsLib.getDocument(src).promise;
-  totalPages.value = pdfDoc.numPages;
-  await renderAll();
+  try {
+    references.value = await pdfReferencesApiService.getAllReferences();
+  } catch (error) {
+    console.error(error);
+  }
+  await loadDocument();
+  window.addEventListener('keydown', onKeyDown);
 });
 
-watch(scale, renderAll);
+onUnmounted(() => window.removeEventListener('keydown', onKeyDown));
+
+watch(leftPage, renderSpread);
 </script>
 
 <template>
   <div class="pdf-viewer">
-    <div class="controls">
-      <button :disabled="scale <= 0.5" @click="scale -= 0.25">−</button>
-      <span>{{ Math.round(scale * 100) }}%</span>
-      <button :disabled="scale >= 3" @click="scale += 0.25">+</button>
+    <div v-if="isLoading">
+      <loading-spinner />
     </div>
-    <div ref="containerRef" class="pages">
-      <div v-for="n in totalPages" :key="n" class="page-wrapper">
-        <canvas :ref="(el) => (canvasRefs[n - 1] = el as HTMLCanvasElement)" />
+
+    <div class="pdf-spread">
+      <div class="pdf-page">
+        <canvas ref="leftCanvas" class="pdf-page"></canvas>
+        <div
+          v-for="reference in references.get(leftPage) ?? []"
+          :key="reference.id"
+          :style="toScreenBox(reference)"
+          class="pdf-reference-box"
+        ></div>
       </div>
+
+      <div class="pdf-page">
+        <canvas ref="rightCanvas" class="pdf-page"></canvas>
+      </div>
+    </div>
+
+    <div class="pdf-controls">
+      <button class="btn btn-primary" :disabled="leftPage <= 1" @click="showPreviousPage">&lt; Prev</button>
+      <span>Pages {{ leftPage }} and {{ leftPage + 1 }} of {{ numPages }}</span>
+      <button class="btn btn-primary" :disabled="leftPage + 1 >= numPages" @click="showNextPage">Next &gt;</button>
     </div>
   </div>
 </template>
@@ -88,33 +149,31 @@ watch(scale, renderAll);
 .pdf-viewer {
   display: flex;
   flex-direction: column;
-  height: 100%;
-}
-
-.controls {
-  display: flex;
-  gap: 0.5rem;
   align-items: center;
-  padding: 0.5rem;
-  flex-shrink: 0;
+  gap: 0.5rem;
 }
 
-.pages {
-  overflow: auto;
-  flex: 1;
-  padding: 1rem;
+.pdf-spread {
   display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.page-wrapper {
-  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
   justify-content: center;
 }
 
-canvas {
-  box-shadow: 0 2px 8px rgb(0 0 0 / 20%);
-  max-width: none;
+.pdf-page {
+  position: relative;
+}
+
+.pdf-controls {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.pdf-reference-box {
+  position: absolute;
+  outline: 2px solid red;
+  box-sizing: content-box;
 }
 </style>

@@ -5,7 +5,10 @@ import { formatPersonFullName, formatPersonLifespan } from '@/helpers/person-hel
 import PortraitComponent from '@/components/person/PortraitComponent.vue';
 import { personsApiService } from '@/api/personsApiService.ts';
 
-const props = defineProps<{ defaultId?: number }>();
+const props = withDefaults(defineProps<{ defaultId?: number; placeholderText?: string }>(), {
+  defaultId: 0,
+  placeholderText: () => 'Search',
+});
 const emit = defineEmits<{ onPersonClicked: [number] }>();
 
 const showDropdown = ref(false);
@@ -58,7 +61,7 @@ function onPersonClick(person: Person | Person): void {
         v-model="searchQuery"
         class="form-control me-2"
         type="search"
-        placeholder="Search"
+        :placeholder="placeholderText"
         aria-label="Search"
         @keyup="onKeyup"
         @blur="onBlur"
