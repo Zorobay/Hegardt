@@ -43,9 +43,6 @@ class Person extends BaseEntity {
     @Enumerated(EnumType.STRING)
     Sex sex
 
-    @Nullable
-    Integer pdfPage
-
     @ManyToOne(fetch = FetchType.LAZY)
     @Nullable
     Person father
@@ -73,6 +70,9 @@ class Person extends BaseEntity {
         inverseJoinColumns = @JoinColumn(name = 'occupation_id')
     )
     List<Occupation> occupations = []
+
+    @OneToMany(mappedBy = 'person', cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
+    List<PdfReference> pdfReferences = []
 
     @PrePersist
     @PreUpdate

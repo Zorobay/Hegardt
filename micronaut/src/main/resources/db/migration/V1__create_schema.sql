@@ -3,6 +3,7 @@ CREATE SEQUENCE life_event_seq START WITH 1 INCREMENT BY 1;
 CREATE SEQUENCE location_seq START WITH 1 INCREMENT BY 1;
 CREATE SEQUENCE marriage_seq START WITH 1 INCREMENT BY 1;
 CREATE SEQUENCE occupation_seq START WITH 1 INCREMENT BY 1;
+CREATE SEQUENCE pdf_reference_seq START WITH 1 INCREMENT BY 1;
 
 CREATE TABLE location
 (
@@ -43,7 +44,6 @@ CREATE TABLE person
     normalized_name VARCHAR(1024),
     notes           VARCHAR(20000),
     sex             VARCHAR(7)               NOT NULL CHECK (sex IN ('MAN', 'WOMAN', 'UNKNOWN')),
-    pdf_page        INTEGER,
     father_id       BIGINT REFERENCES person (id),
     mother_id       BIGINT REFERENCES person (id),
     birth_id        BIGINT UNIQUE REFERENCES life_event (id),
@@ -96,4 +96,16 @@ CREATE TABLE person_occupations
 (
     person_id     BIGINT NOT NULL REFERENCES person (id),
     occupation_id BIGINT NOT NULL UNIQUE REFERENCES occupation (id)
+);
+
+CREATE TABLE pdf_reference
+(
+    id          BIGINT PRIMARY KEY                DEFAULT nextval('pdf_reference_seq'),
+    version     BIGINT NOT NULL DEFAULT 0,
+    person_id   BIGINT NOT NULL REFERENCES person (id) ON DELETE CASCADE,
+    pdf_page    INTEGER NOT NULL,
+    x0          FLOAT NOT NULL,
+    y0          FLOAT NOT NULL,
+    x1          FLOAT NOT NULL,
+    y1          FLOAT NOT NULL
 );

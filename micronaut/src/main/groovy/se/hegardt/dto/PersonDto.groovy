@@ -18,7 +18,6 @@ class PersonDto {
     LifeEventDto burial
 
     String notes
-    Integer pdfPage
 
     Set<Occupation> occupations = []
     Set<MarriageDto> marriages = []
@@ -38,7 +37,6 @@ class PersonDto {
             death: LifeEventDto.from(person.death),
             burial: LifeEventDto.from(person.burial),
             notes: person.notes,
-            pdfPage: person.pdfPage,
             father: PersonSummaryDto.from(person.father),
             mother: PersonSummaryDto.from(person.mother)
         )

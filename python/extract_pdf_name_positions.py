@@ -1,4 +1,5 @@
 ﻿import json
+import sys
 from typing import Any
 
 import pdfplumber
@@ -111,12 +112,16 @@ def save_page_to_image(page, rects):
 
 
 def extract_name_coordinates():
+    path = sys.argv[1]
     with open(PERSONS_JSON_FILENAME, 'r') as f:
+        print(f'Reading PDF at {path}')
         persons_data = json.load(f)
 
     out = {}
-    with pdfplumber.open(PDF_FILENAME_300DPI) as pdf:
+    missing_people: dict[int, list[PeopleSection]] = dict()
+    with pdfplumber.open(path) as pdf:
         for page in pdf.pages:
+            missing_people[page.page_number] = []
             book_page = page.page_number - 4
 
             if book_page < START_PAGE or book_page > 102:
@@ -136,6 +141,7 @@ def extract_name_coordinates():
 
                 if not person_id:
                     print(f'WARNING: Could not find id for person:\n\t{person}')
+                    missing_people[page.page_number].append(person)
                     continue
 
                 if matching_lines:
@@ -152,6 +158,13 @@ def extract_name_coordinates():
     with open(sql_output_filename, 'w', encoding='utf-8') as f:
         f.writelines(sql_data_lines)
         print(f'Written SQL data to {sql_output_filename}')
+        
+    print('------------------- Missing People! -----------------------')
+    for page, people in missing_people.items():
+        if people:
+            print(f'\n==== Page {page} ====')
+            for person in people:
+                print(f'\t{person}')
 
 
 if __name__ == '__main__':

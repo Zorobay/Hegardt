@@ -17,7 +17,6 @@ class PersonSummaryDto {
     LifeEventDto burial
 
     String notes
-    Integer pdfPage
 
     static PersonSummaryDto from(Person person) {
         if (!person) return null
@@ -31,7 +30,6 @@ class PersonSummaryDto {
             death: LifeEventDto.from(person.death),
             burial: LifeEventDto.from(person.burial),
             notes: person.notes,
-            pdfPage: person.pdfPage
         )
     }
 }
