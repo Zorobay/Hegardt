@@ -5,18 +5,28 @@ import * as pdfjsLib from 'pdfjs-dist';
 import LoadingSpinner from '@/components/async/LoadingSpinner.vue';
 import type { PdfReference } from '@/types/pdf-references.type.ts';
 import { pdfReferencesApiService } from '@/api/pdfReferencesApiService.ts';
+import { useRouter } from 'vue-router';
+import type { EntityId } from '@/types/person.type.ts';
 
 pdfjsLib.GlobalWorkerOptions.workerSrc = '/pdfjs/pdf.worker.min.mjs';
 
+const router = useRouter();
+
 // eslint-disable-next-line vue/define-macros-order
-const props = withDefaults(defineProps<{ src: string; initialPage?: number; scale: number }>(), {
-  initialPage: 1,
-  scale: 1.5,
-});
+const props = withDefaults(
+  defineProps<{ src: string; initialPage?: number; scale?: number; personId?: EntityId | null }>(),
+  {
+    initialPage: 1,
+    scale: 1.5,
+    personId: null,
+  },
+);
 const pdfDoc = shallowRef<PDFDocumentProxy | null>(null);
 const numPages = ref<number>(0);
 const leftPage = ref<number>(getIntialPage());
 const isLoading = ref<boolean>(true);
+const leftPageRendered = ref(false);
+const rightPageRendered = ref(false);
 
 const leftCanvas = ref<HTMLCanvasElement | null>(null);
 const rightCanvas = ref<HTMLCanvasElement | null>(null);
@@ -35,19 +45,22 @@ function getIntialPage(): number {
 }
 
 function toScreenBox(reference: PdfReference): { left: string; top: string; width: string; height: string } {
-  const res = {
+  return {
     left: `${reference.x0 * props.scale}px`,
     top: `${reference.y0 * props.scale}px`,
     width: `${reference.width * props.scale}px`,
     height: `${reference.height * props.scale}px`,
   };
-  return res;
+}
+
+function goToPerson(id: EntityId): void {
+  router.push(`/person/${id}`);
 }
 
 async function loadDocument(): Promise<void> {
   pdfDoc.value = await pdfjsLib.getDocument({
     url: props.src,
-    wasmUrl: 'pdfjs/wasm/',
+    wasmUrl: '/pdfjs/wasm/',
   }).promise;
   numPages.value = pdfDoc.value.numPages;
   await renderSpread();
@@ -55,8 +68,14 @@ async function loadDocument(): Promise<void> {
 }
 
 async function renderSpread(): Promise<void> {
+  leftPageRendered.value = false;
+  rightPageRendered.value = false;
+
   await renderPageToCanvas(leftPage.value, leftCanvas.value);
+  leftPageRendered.value = true;
+
   await renderPageToCanvas(leftPage.value + 1, rightCanvas.value);
+  rightPageRendered.value = true;
 }
 
 async function renderPageToCanvas(pageNum: number, canvas: HTMLCanvasElement | null): Promise<void> {
@@ -112,7 +131,10 @@ onMounted(async () => {
 
 onUnmounted(() => window.removeEventListener('keydown', onKeyDown));
 
-watch(leftPage, renderSpread);
+watch(leftPage, (newPage: number) => {
+  renderSpread();
+  router.replace({ name: 'family-book', params: { page: newPage } });
+});
 </script>
 
 <template>
@@ -124,16 +146,30 @@ watch(leftPage, renderSpread);
     <div class="pdf-spread">
       <div class="pdf-page">
         <canvas ref="leftCanvas" class="pdf-page"></canvas>
-        <div
-          v-for="reference in references.get(leftPage) ?? []"
-          :key="reference.id"
-          :style="toScreenBox(reference)"
-          class="pdf-reference-box"
-        ></div>
+        <template v-if="leftPageRendered">
+          <div
+            v-for="reference in references.get(leftPage) ?? []"
+            :key="reference.personId"
+            :style="toScreenBox(reference)"
+            class="pdf-reference-box"
+            :class="{ highlighted: reference.personId === personId }"
+            @click="goToPerson(reference.personId)"
+          ></div>
+        </template>
       </div>
 
       <div class="pdf-page">
         <canvas ref="rightCanvas" class="pdf-page"></canvas>
+        <template v-if="rightPageRendered">
+          <div
+            v-for="reference in references.get(leftPage + 1) ?? []"
+            :key="reference.personId"
+            :style="toScreenBox(reference)"
+            class="pdf-reference-box"
+            :class="{ highlighted: reference.personId === personId }"
+            @click="goToPerson(reference.personId)"
+          ></div>
+        </template>
       </div>
     </div>
 
@@ -173,7 +209,16 @@ watch(leftPage, renderSpread);
 
 .pdf-reference-box {
   position: absolute;
-  outline: 2px solid red;
+  outline: 2px solid var(--vibrant-blue);
   box-sizing: content-box;
+  cursor: pointer;
+}
+
+.pdf-reference-box:hover {
+  outline: 2px solid var(--lavender-gray);
+}
+
+.highlighted {
+  outline: 2px solid var(--vibrant-coral);
 }
 </style>

@@ -40,5 +40,4 @@ class PdfReference {
 
     @Column(nullable = false)
     Double height
-
 }

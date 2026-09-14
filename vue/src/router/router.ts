@@ -44,9 +44,12 @@ const router = createRouter({
       props: true,
     },
     {
-      path: '/family-book/:page?',
+      path: '/family-book/:page?/:personId?',
       name: 'family-book',
       component: FamilyBookView,
+      meta: {
+        noRemount: true,
+      },
       props: true,
     },
     {

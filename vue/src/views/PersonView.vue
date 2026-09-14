@@ -49,7 +49,7 @@ onMounted(async () => {
                 {{ formatPersonFullName(person) }}
                 <SexIcon :sex="person.sex" />
               </h2>
-              <PersonIconLinks :id="id" />
+              <PersonIconLinks :id="id" :pdf-page="person.pdfReference?.pdfPage" />
             </div>
             <InfoGroup title="Personal details">
               <div class="row">

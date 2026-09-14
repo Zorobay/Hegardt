@@ -1,22 +1,25 @@
 <script setup lang="ts">
-import PdfViewer from '@/components/pdf/PdfViewer.vue';
+import HegardtPdfViewer from '@/components/pdf/HegardtPdfViewer.vue';
+import type { EntityId } from '@/types/person.type.ts';
 
-const props = defineProps({ page: { type: Number, required: false, default: 1 } });
+const props = withDefaults(defineProps<{ page?: number; personId?: EntityId }>(), {
+  page: 1,
+  personId: null,
+});
 </script>
 
 <template>
   <div id="family-book-container">
     <div id="family-book-buttons-container">
-      <ButtonPrime
-        label="Download 300 DPI"
-        as="a"
-        target="_blank"
-        href="/static_media/pdfs/hegardt_300dpi_compressed.pdf"
-      />
-      <ButtonPrime label="Download 600 DPI" as="a" target="_blank" href="/static_media/pdfs/Hegardt_600dpi.pdf" />
+      <ButtonPrime label="Download 300 DPI" as="a" target="_blank" href="/static_media/pdfs/hegardt_300dpi.pdf" />
+      <ButtonPrime label="Download 600 DPI" as="a" target="_blank" href="/static_media/pdfs/hegardt_600dpi.pdf" />
     </div>
 
-    <PdfViewer src="/static_media/pdfs/hegardt_300dpi_compressed.pdf" :initial-page="props.page" />
+    <HegardtPdfViewer
+      src="/static_media/pdfs/hegardt_300dpi.pdf"
+      :initial-page="Number(props.page)"
+      :person-id="Number(props.personId)"
+    />
   </div>
 </template>
 

@@ -1,5 +1,5 @@
 ﻿export interface PdfReference {
-  id: number;
+  personId: number;
   pdfPage: number;
   x0: number;
   y0: number;

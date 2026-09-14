@@ -25,7 +25,7 @@ function onChange(): void {
 <template>
   <div class="checkbox-wrapper">
     <CheckboxPrime v-model="isChecked" binary :input-id="label" :value="label" @change="onChange"> </CheckboxPrime>
-    <label :for="label"> {{ label }} - {{ isChecked }} </label>
+    <label :for="label"> {{ label }}</label>
   </div>
 </template>
 

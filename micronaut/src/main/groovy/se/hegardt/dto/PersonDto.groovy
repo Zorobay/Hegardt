@@ -26,6 +26,8 @@ class PersonDto {
     PersonSummaryDto father
     PersonSummaryDto mother
 
+    PdfReferenceDto pdfReference
+
     static PersonDto from(Person person) {
         return new PersonDto(
             id: person.id,

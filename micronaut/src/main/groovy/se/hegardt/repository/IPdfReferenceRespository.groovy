@@ -5,8 +5,8 @@ import io.micronaut.data.annotation.Repository
 import io.micronaut.data.jpa.repository.JpaRepository
 import se.hegardt.domain.PdfReference
 
-@Repository
 @CompileStatic
-abstract class PdfReferenceRespository implements IPdfReferenceRespository {
+interface IPdfReferenceRespository extends JpaRepository<PdfReference, Long> {
 
+    Optional<PdfReference> findByPersonId(Long personId)
 }

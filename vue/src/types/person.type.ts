@@ -1,4 +1,5 @@
 import type { Sex } from '@/enums/PersonSexEnum.ts';
+import type { PdfReference } from '@/types/pdf-references.type.ts';
 
 export type EntityId = number;
 
@@ -57,6 +58,7 @@ export interface Person extends PersonSummary {
   children: Person[];
   siblings: Person[];
   marriages: Marriage[];
+  pdfReference?: PdfReference;
 }
 
 export interface PersonSummary extends PersonBasic {

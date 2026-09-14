@@ -7,7 +7,7 @@ import se.hegardt.domain.PdfReference
 @Serdeable
 @CompileStatic
 class PdfReferenceDto {
-    Long id
+    Long personId
     Integer pdfPage
     Double x0
     Double y0
@@ -16,7 +16,7 @@ class PdfReferenceDto {
 
     static PdfReferenceDto from(PdfReference pdfReference) {
         return new PdfReferenceDto(
-            id: pdfReference.id,
+            personId: pdfReference.person.id,
             pdfPage: pdfReference.pdfPage,
             x0: pdfReference.x0,
             y0: pdfReference.y0,

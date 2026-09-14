@@ -1,42 +1,10 @@
 # Hegardt
 
-www.hegardt.se
+My Genealogy project for my family **Hegardt**.
 
-## Project Setup
+Visit at [hegardt.se](www.hegardt.se).
 
-```sh
-npm install
-```
+## Resources
 
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
-
-## Personal docs
-
-UX inspo: https://media.cdn.gladly.com/orgs/ZkpQ7SY1QbeWMlNKwKiNtw/assets/TB9BKKIARCiHvMqPoDVivQ/d0213bd5-a2e6-448e-ba78-ce96f3999707.png
-
-## Server setup
-
-Create a .env in the root /Hegardt with the following values:
-
-```env
-GITHUB_REPOSITORY=zorobay/hegardt
-IMAGE_TAG=latest
-DB_USER=hegardt
-DB_PASSWORD=<anypassword>
-```
+1. [Genealogy abbreviation database](https://www.genline.se/forkortningar/)
+2. [Riksarkivets förklaringar till mest använda förkortningarna över familjeställning i Folkräkningen](https://riksarkivet.se/Media/pdf-filer/NAD/forkortningar_familjestallning_folkrakningar.pdf)
