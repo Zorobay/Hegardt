@@ -23,7 +23,9 @@ class PersonsService implements IPersonsService {
     private final PdfReferenceRespository pdfReferenceRespo
     private final MarriageRepository marriageRepo
 
-    PersonsService(PersonsRepository personsRepository, PdfReferenceRespository pdfReferenceRespository, MarriageRepository marriageRepository) {
+    PersonsService(PersonsRepository personsRepository,
+                   PdfReferenceRespository pdfReferenceRespository,
+                   MarriageRepository marriageRepository) {
         this.personRepo = personsRepository
         this.pdfReferenceRespo = pdfReferenceRespository
         this.marriageRepo = marriageRepository
@@ -52,7 +54,7 @@ class PersonsService implements IPersonsService {
                 .collect { Marriage marriage -> MarriageDto.from(marriage) }
                 .toSet()
             personDto.pdfReference = pdfReferenceRespo.findByPersonId(id)
-                .map { PdfReference ref -> PdfReferenceDto.from(ref)}
+                .map { PdfReference ref -> PdfReferenceDto.from(ref) }
                 .orElse(null)
 
             return Optional.of(personDto)

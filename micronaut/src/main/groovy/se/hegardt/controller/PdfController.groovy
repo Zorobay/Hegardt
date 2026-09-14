@@ -18,10 +18,12 @@ class PdfController {
         this.pdfService = pdfReferenceService
     }
 
-    @Get("/getAllReferences")
+    @Get('/getAllReferences')
     HttpResponse<Map<Integer, List<PdfReferenceDto>>> getAllReferences() {
         return HttpResponse.ok(pdfService.findAll()
             .groupBy { PdfReference ref -> ref.pdfPage }
-            .collectEntries { Integer page, List<PdfReference> refs -> [page, refs.collect { PdfReferenceDto.from(it) }] })
+            .collectEntries { Integer page, List<PdfReference> refs ->
+                [page, refs.collect { PdfReference ref -> PdfReferenceDto.from(ref) }]
+            })
     }
 }
