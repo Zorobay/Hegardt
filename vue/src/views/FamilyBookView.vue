@@ -4,7 +4,7 @@ import type { EntityId } from '@/types/person.type.ts';
 
 const props = withDefaults(defineProps<{ page?: number; personId?: EntityId }>(), {
   page: 1,
-  personId: null,
+  personId: undefined,
 });
 </script>
 

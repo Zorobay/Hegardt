@@ -10,11 +10,11 @@ import se.hegardt.repository.PdfReferenceRespository
 class PdfService implements IPdfService {
     private final PdfReferenceRespository repository
 
-    PdfService(PdfReferenceRespository respository) {
-        this.repository = respository
+    PdfService(PdfReferenceRespository repository) {
+        this.repository = repository
     }
 
     List<PdfReference> findAll() {
-        repository.findAll()
+        return repository.findAll()
     }
 }

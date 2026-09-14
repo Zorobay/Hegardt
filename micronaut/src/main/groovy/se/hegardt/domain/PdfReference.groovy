@@ -23,10 +23,10 @@ class PdfReference {
     Long id
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "person_id", nullable = false)
+    @JoinColumn(name = 'person_id', nullable = false)
     Person person
 
-    @Column(name = "pdf_page", nullable = false)
+    @Column(name = 'pdf_page', nullable = false)
     Integer pdfPage
 
     @Column(nullable = false)

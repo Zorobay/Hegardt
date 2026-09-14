@@ -93,12 +93,6 @@ async function renderPageToCanvas(pageNum: number, canvas: HTMLCanvasElement | n
   }
 }
 
-function unrenderCanvas(canvas: HTMLCanvasElement | null): void {
-  if (canvas) {
-    canvas.width = 0;
-  }
-}
-
 function showNextPage(): void {
   if (leftPage.value + 2 <= numPages.value) {
     leftPage.value += 2;
