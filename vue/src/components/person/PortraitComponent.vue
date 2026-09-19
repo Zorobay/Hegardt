@@ -22,12 +22,19 @@ const hasPortrait = ref(false);
 </template>
 
 <style scoped>
-img {
-  width: 100%;
+.heg-portrait {
+  aspect-ratio: 0.75 / 1;
+  flex-shrink: 0;
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
 }
 
-.placeholder {
+.heg-portrait .placeholder {
   width: 100%;
+  height: 100%;
   aspect-ratio: 0.75/1;
   border-radius: 50%;
   border: medium solid var(--jet-black);

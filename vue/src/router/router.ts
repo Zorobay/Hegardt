@@ -50,7 +50,9 @@ const router = createRouter({
       meta: {
         noRemount: true,
       },
-      props: true,
+      props: (route) => {
+        return { page: Number(route.params.page) };
+      },
     },
     {
       path: '/running-maps',

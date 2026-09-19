@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import { onMounted, ref } from 'vue';
 import type { Person } from '@/types/person.type.ts';
-import { formatPersonFullName, formatPersonLifespan } from '@/helpers/person-helper.ts';
-import PortraitComponent from '@/components/person/PortraitComponent.vue';
+import { formatPersonFullName } from '@/helpers/person-helper.ts';
 import { personsApiService } from '@/api/personsApiService.ts';
+import PersonCard from '@/components/person/PersonCard.vue';
 
 const props = withDefaults(defineProps<{ defaultId?: number; placeholderText?: string }>(), {
   defaultId: 0,
@@ -72,15 +72,8 @@ function onPersonClick(person: Person | Person): void {
         {{ matchingPersons.length }}
       </span>
 
-      <div v-if="showDropdown" class="dropdown-menu show w-100">
-        <a v-for="person in matchingPersons" :key="person.id" class="dropdown-item my-1" @click="onPersonClick(person)">
-          <PortraitComponent :id="person.id" />
-
-          <div class="dropdown-person-info">
-            <h6>{{ formatPersonFullName(person) }}</h6>
-            <p class="text-body-secondary small m-0">{{ formatPersonLifespan(person) }}</p>
-          </div>
-        </a>
+      <div class="dropdown-menu show w-100">
+        <person-card v-for="person in matchingPersons" :key="person.id" compact :person="person" class="person-card" />
       </div>
       <ButtonPrime type="submit"> Search </ButtonPrime>
     </div>
@@ -88,11 +81,6 @@ function onPersonClick(person: Person | Person): void {
 </template>
 
 <style scoped>
-.heg-portrait {
-  width: 2rem;
-  flex-shrink: 0;
-}
-
 .results-badge {
   position: absolute;
   right: 7.75rem;
@@ -103,26 +91,13 @@ function onPersonClick(person: Person | Person): void {
 
 .dropdown-menu {
   top: 100%;
-  max-height: 12rem;
+  max-height: 20rem;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
-.dropdown-item {
-  cursor: pointer;
-  border-bottom: 1px solid #e9ecef;
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  width: 100%;
-  justify-content: flex-start;
-}
-
-.dropdown-person-info {
-  flex: 1;
-  min-width: 0;
-}
-
-.dropdown-item:last-child {
-  border-bottom: none;
+.person-card {
+  height: 4rem;
+  width: 98%;
 }
 </style>

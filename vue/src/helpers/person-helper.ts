@@ -14,7 +14,7 @@ export function formatPersonFullName(person: PersonBasic | undefined | null): st
   }
 
   const nameParts = [firstName, middleNames, lastName].filter((el) => el);
-  return nameParts.join(' ');
+  return nameParts.join(' ').trim();
 }
 
 export function formatPersonDate(date: PartialDate | undefined | null): string {

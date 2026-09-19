@@ -21,6 +21,7 @@ import {
   faUser,
   faVenus,
 } from '@fortawesome/free-solid-svg-icons';
+import '@fortawesome/fontawesome-svg-core/styles.css';
 
 // Import PrimeVue
 import 'primeicons/primeicons.css';

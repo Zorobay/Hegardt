@@ -73,15 +73,15 @@ onMounted(async () => {
             </InfoGroup>
 
             <InfoGroup title="Parents">
-              <PersonCard v-for="parent in parents" :key="parent.id" :person="parent" />
+              <PersonCard v-for="parent in parents" :key="parent.id" :person="parent" class="person-card" />
             </InfoGroup>
 
             <InfoGroup title="Siblings">
-              <PersonCard v-for="sibling in person.siblings" :key="sibling.id" :person="sibling" />
+              <PersonCard v-for="sibling in person.siblings" :key="sibling.id" :person="sibling" class="person-card" />
             </InfoGroup>
 
             <InfoGroup title="Children">
-              <PersonCard v-for="child in person.children" :key="child.id" :person="child" />
+              <PersonCard v-for="child in person.children" :key="child.id" :person="child" class="person-card" />
             </InfoGroup>
           </div>
         </div>
@@ -91,10 +91,6 @@ onMounted(async () => {
 </template>
 
 <style scoped>
-.heg-portrait {
-  width: 100%;
-}
-
 .heg-person-view {
   margin-top: 5em;
   margin-bottom: 5em;
@@ -103,6 +99,10 @@ onMounted(async () => {
     display: flex;
     justify-content: center;
   }
+}
+
+.person-card {
+  height: 6rem;
 }
 
 #person-full-name {

@@ -58,7 +58,7 @@ function toggleLanguageMenu(event: Event): void {
 
       <template #end>
         <div class="d-flex align-items-center gap-2">
-          <SearchComponent @on-person-clicked="onPersonClicked" />
+          <SearchComponent class="search-component" @on-person-clicked="onPersonClicked" />
 
           <ButtonPrime icon="pi pi-language" text rounded aria-label="Language" @click="toggleLanguageMenu" />
           <MenuPrime ref="languageMenu" :model="languageItems" popup />
@@ -73,10 +73,8 @@ function toggleLanguageMenu(event: Event): void {
   margin-bottom: 2rem;
 }
 
-.p-menubar {
-  width: 100%;
-  padding-right: 10rem;
-  padding-left: 10rem;
+.search-component {
+  width: 20rem;
 }
 
 .navbar-brand {

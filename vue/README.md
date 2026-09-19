@@ -15,34 +15,42 @@ The portraits are elliptic with an aspect ratio of about 3:4 or about 33% taller
 
 ## TODO
 
+- [ ] Fix searching with "," for example: "Anna Wilhelmina, Christina, Elisabeth Palm "
+- [ ] Replace favicon
+- [ ] Add some fun facts about the collection on the first page like
+    - Number of people (of which with the last name Hegardt)
+    - Date of last update to the database
+    - Average age at death
+    - Share between the sexes
 - [ ] Custom PDF Viewer
-  - [X] display pages like a book (two page view)
-  - [ ] page flip animation
-  - [ ] display a row of small page previews at the bottom
-  - [X] Change page with left and right keys
-  - [ ] Zoom in on a page
-  - [X] Most importantly, reference pages from a personal page. Clicking that link will open the specific page, and in
-      my dreams, highlight the name on the pdf page.
+    - [X] display pages like a book (two page view)
+    - [ ] Highlight difficult words. Mousing over them opens a small box giving a short description of the meaning.
+    - [ ] display a row of small page previews at the bottom
+    - [X] Change page with left and right keys
+    - [ ] Zoom in on a page
+    - [X] Most importantly, reference pages from a personal page. Clicking that link will open the specific page and
+      highlight the name on the pdf page.
 - [ ] Language selector
 - [x] Search
 - [ ] PersonView
-  - [x] Locations
-  - [x] Parents
-  - [x] Siblings
-  - [x] Occupations
-  - [x] Notes
-  - [x] References
-  - [ ] Marriages
-    - Just divide up children per partner and in the header display the marriage status + data
+    - [x] Locations
+    - [x] Parents
+    - [x] Siblings
+    - [x] Occupations
+    - [x] Notes
+    - [x] References
+    - [x] Show portraits under Parents, Siblings, Children etc.
+    - [ ] Marriages
+        - Just divide up children per partner and in the header display the marriage status + data
 - [x] Map
-  - [x] Show markers for Birth, Death, Burial
-  - [x] Find person by name
-  - [ ] Filter by year (Birth, Death, Burial)
-  - [x] Click marker to go to person page
-  - [x] Go to map from person page by clicking on Birth-, Death- or Burial place.
+    - [x] Show markers for Birth, Death, Burial
+    - [x] Find person by name
+    - [ ] Filter by year (Birth, Death, Burial)
+    - [x] Click marker to go to person page
+    - [x] Go to map from person page by clicking on Birth-, Death- or Burial place.
 - [x] Family Tree
-  - [x] Select how many pre and post generations to show
-  - [ ] Toggle siblings
+    - [x] Select how many pre and post generations to show
+    - [ ] Toggle siblings
 
 ## Debuggery
 

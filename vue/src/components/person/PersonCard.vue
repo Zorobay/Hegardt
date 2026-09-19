@@ -3,15 +3,17 @@ import SexIcon from '@/components/person/SexIcon.vue';
 
 import { formatPersonDate, formatPersonFullName } from '@/helpers/person-helper.ts';
 import type { Person, PersonSummary } from '@/types/person.type.ts';
+import PortraitComponent from '@/components/person/PortraitComponent.vue';
 
-const props = defineProps<{ person: Person | PersonSummary }>();
+const props = withDefaults(defineProps<{ person: Person | PersonSummary; compact?: boolean }>(), { compact: false });
 const id = props.person.id;
 </script>
 
 <template>
   <div class="card heg-person-card">
-    <div class="card-body">
-      <h5 class="card-title">
+    <PortraitComponent :id="id" />
+    <div class="heg-info">
+      <h5 :class="{ 'compact-title': compact }">
         {{ formatPersonFullName(person) }}
         <SexIcon :sex="person.sex" />
       </h5>
@@ -25,11 +27,34 @@ const id = props.person.id;
 
 <style scoped>
 .heg-person-card {
-  display: inline-block;
-  margin: 0.2em;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  gap: 0.5rem;
+  margin: 0.2rem;
+  padding: 0.2rem;
+}
+
+.heg-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1 1 auto;
+  min-width: 0;
 }
 
 .heg-person-card:hover {
+  background-color: var(--warm-sand);
+}
+
+.heg-person-card .heg-person-card:hover {
   background: rgb(0 0 0 / 5%);
+}
+
+.compact-title {
+  font-size: 1rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 </style>
