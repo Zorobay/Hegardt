@@ -8,13 +8,9 @@
    1. `GROOVY_HOME = C:\Program Files\groovy-5.0.0`
    2. Add `%GROOVY_HOME%\bin` to your `PATH`
 
-## Administrate Postgres Database
+### Administrate Postgres database with Docker
 
 First, install _Docker Desktop_.
-
-Create .env file in the root with:
-
-## Server setup
 
 Create a .env in the root /Hegardt with the following values:
 
@@ -35,6 +31,20 @@ We can wipe the volume and all data with
 ```powershell
 docker compose down postgres -v
 ```
+
+### Reset PROD database if seed files are updated
+
+1. SSH into the server
+2. `cd /root/Hegardt`
+3. Check running volumes with `docker volume ls`
+4. Take a backup of the database with `docker compose exec postgres pg_dump -U <db_user> <db_name> > ~/hegardt_backup_$(date +%Y%m%d).sql`
+5. Stop everything and remove the volume:
+   ```shell
+    docker compose down
+    docker volume rm <the_postgres_volume_name>
+   ```
+6. Run everything again with `docker compose up -d --remove-orphans`. The flyway migrations should be automatically applied.
+7. Check logs with `docker logs --tail=200 hegardt-backend`
 
 ## Micronaut 4.10.9 Documentation
 

@@ -128,8 +128,35 @@ WHERE id = 823;
 UPDATE person
 SET first_name  = 'Lovisa',
     middle_names= 'Sofia, Charlotta',
-    last_name   = NOW()
+    updated_at  = NOW()
 WHERE id = 961;
+
+/* Correct first name of Oscar Bernhard Hegardt */
+UPDATE person
+SET first_name='Oscar',
+    updated_at=NOW()
+WHERE id = 175;
+
+/* Correct first and last name of Oskar Alexius Hegardt */
+UPDATE person
+SET first_name='Oskar',
+    last_name='Hegardt',
+    updated_at=NOW()
+WHERE id = 197;
+
+/* Correct first name of Hilda Alfrida Larsdotter */
+UPDATE person
+SET first_name='Hilda',
+    updated_at=NOW()
+WHERE id = 219;
+
+/* Correct first name of Karl Gustaf Hegardt */
+UPDATE person
+SET first_name='Karl',
+    updated_at=NOW()
+WHERE id = 179;
+
+/* Merge 3 duplicates of Peter Johansson Hegardt with id 48, 332 and 663 */
 
 /* TODO !! Fixa Klara Adela (Adèle) mellannamn (smeknamn)?*/
 
