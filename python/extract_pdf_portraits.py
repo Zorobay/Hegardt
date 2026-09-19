@@ -5,12 +5,11 @@ import cv2
 import fitz
 import numpy as np
 from pymupdf import Page
-from pypdf import PdfReader, PageObject
+from pypdf import PageObject
 
 from src.PeopleSection import PeopleSection
-from src.constants import PDF_FILENAME_300DPI, REG_PEOPLE_SECTION, REG_NUMBER, SKIPPABLE_PAGES, START_PAGE, END_PAGE
+from src.constants import REG_PEOPLE_SECTION, REG_NUMBER, START_PAGE, END_PAGE
 
-OUTPUT_PERSON_DATA_FILENAME = 'person_data.csv'
 PDF_FILENAME_600DPI = "hegardt_600dpi_searchable.pdf"
 OUTPUT_PDF_FILENAME = "Hegardt_300dpi_sökbar_adobe_komprimerad_HYPERLINKS.pdf"
 OUTPUT_PORTRAIT_PATH = Path('extracted_portraits')
@@ -34,34 +33,6 @@ def extract_people_sections(page_text: str, book_page: int) -> list[PeopleSectio
 
     splits = REG_PEOPLE_SECTION.split(page_text[start_index:])
     return [PeopleSection(s, book_page) for s in splits]
-
-
-
-            
-def extract_text():
-    reader = PdfReader(PDF_FILENAME_300DPI)
-    out: list[PeopleSection] = []
-    for page in reader.pages:
-        book_page = get_book_page(page)
-
-        if book_page < START_PAGE or book_page > END_PAGE:
-            continue
-
-        text = page.extract_text()
-        print(f'\n==== Processing page {book_page} ====')
-        if book_page not in SKIPPABLE_PAGES:
-            people_sections = extract_people_sections(text, book_page)
-            for person in people_sections:
-                print(f'\t* {person}')
-            out.extend(people_sections)
-
-    with open(OUTPUT_PERSON_DATA_FILENAME, 'w', encoding='utf-8') as f:
-        f.write(PeopleSection.csv_headers())
-        f.write('\n')
-        for person in out:
-            f.write(person.csv_data())
-            f.write('\n')
-        print(f"Wrote data to {OUTPUT_PERSON_DATA_FILENAME}")
 
 
 def extract_pages_as_images():

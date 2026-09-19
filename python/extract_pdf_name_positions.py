@@ -2,10 +2,12 @@
 import sys
 from typing import Any
 
-import pdfplumber
+import pymupdf
 
 from src.PeopleSection import PeopleSection
-from src.constants import REG_NUMBER, START_PAGE, REG_PEOPLE_SECTION, PDF_FILENAME_300DPI, PERSONS_JSON_FILENAME
+from src.constants import START_PAGE, PERSONS_JSON_FILENAME, END_PAGE, EXCLUDE_IMAGES_FROM_TEXT_EXTRACTION_FLAGS
+from src.pdf_helper import get_person_pages, get_book_page
+from src.person_helper import find_person_id, extract_people_sections
 
 
 class PdfUpdateData:
@@ -21,17 +23,19 @@ class PdfUpdateData:
 class TextLine(dict):
 
     def __init__(self, text_line: dict[str, Any]):
-        super().__init__(
-            x0=text_line["x0"],
-            top=text_line["top"],
-            x1=text_line["x1"],
-            bottom=text_line["bottom"]
-        )
-        self.text = text_line['text']
-        self.x0 = text_line['x0']
-        self.top = text_line['top']
-        self.x1 = text_line['x1']
-        self.bottom = text_line['bottom']
+        super().__init__()
+        self._bbox = text_line.get('bbox')
+        self.text = ''.join([span.get('text', '') for span in text_line.get('spans', [])])
+        self.x0 = self._bbox[0]
+        self.top = self._bbox[1]
+        self.x1 = self._bbox[2]
+        self.bottom = self._bbox[3]
+
+    def __str__(self) -> str:
+        return f'{self.text} - {self.coords_and_dimensions_as_string()}'
+    
+    def __repr__(self) -> str:
+        return self.__str__()
 
     def coords_and_dimensions_as_string(self) -> str:
         return f'{round(self.x0, 2)}, {round(self.top, 2)}, {round(self.width(), 2)}, {round(self.height(), 2)}'
@@ -64,37 +68,6 @@ VALUES ({pdf_id}, 1, {person_id}, {data.page}, {text_line.coords_and_dimensions_
     return out
 
 
-def extract_people_sections(page_text: str, book_page: int) -> list[PeopleSection]:
-    start_index = 0
-    missing_header = book_page == START_PAGE
-
-    # Cut characters until first '1., 2. etc.'
-    if not missing_header:
-        if match := REG_NUMBER.search(page_text):
-            start_index = match.start() + 1
-
-    splits = REG_PEOPLE_SECTION.split(page_text[start_index:])
-    return [PeopleSection(s, book_page) for s in splits]
-
-
-def find_id(persons_data: dict, person: PeopleSection) -> int | None:
-    for key, item in persons_data.items():
-        first_name = item['firstName']
-        middle_names = [mn.lower() for mn in item['middleNames']]
-        birth_date = item['birth']['date']
-        if birth_date:
-            birth_year = birth_date['year']
-
-            if first_name.lower() == person.first_name.lower() and birth_year == person.birth_year:
-                if person.middle_name:
-                    if person.middle_name.lower() in middle_names:
-                        return int(key) + 1  # The JSON Ids are 0 based, but the database starts from 1
-                else:
-                    return int(key) + 1  # The JSON Ids are 0 based, but the database starts from 1
-
-    return None
-
-
 def find_text_lines(search_string: str, text_lines: list[TextLine]) -> list[TextLine]:
     out = []
     for line in text_lines:
@@ -103,15 +76,16 @@ def find_text_lines(search_string: str, text_lines: list[TextLine]) -> list[Text
     return out
 
 
-def save_page_to_image(page, rects):
-    image = page.to_image(resolution=150)
-    image.draw_rects(rects)
-    debug_img_name = f"debug_page_{page.page_number}.png"
-    image.save(f"debug_page_{page.page_number}.png")
-    print(f'Saved debug image {debug_img_name}')
+def get_text_lines(page: pymupdf.Page):
+    all_lines = []
+    blocks = page.get_text('dict', sort=True, flags=EXCLUDE_IMAGES_FROM_TEXT_EXTRACTION_FLAGS).get('blocks', [])
+    for block in blocks:
+        lines = block.get('lines', [])
+        all_lines.extend(lines)
+    return [TextLine(l) for l in all_lines]
 
 
-def extract_name_coordinates():
+def extract_pdf_name_positions():
     path = sys.argv[1]
     with open(PERSONS_JSON_FILENAME, 'r') as f:
         print(f'Reading PDF at {path}')
@@ -119,29 +93,29 @@ def extract_name_coordinates():
 
     out = {}
     missing_people: dict[int, list[PeopleSection]] = dict()
-    with pdfplumber.open(path) as pdf:
-        for page in pdf.pages:
-            missing_people[page.page_number] = []
-            book_page = page.page_number - 4
+    # with pdfplumber.open(path) as pdf:
+    with pymupdf.open(path) as pdf:
+        for page in get_person_pages(pdf):
+            page_number = page.number + 1  # convert to 1 based indexing
+            missing_people[page_number] = []
+            book_page = get_book_page(page)
 
-            if book_page < START_PAGE or book_page > 102:
-                continue
-
-            text = page.extract_text()
-            text_lines = [TextLine(tl) for tl in page.extract_text_lines()]
+            text = page.get_text()
+            text_lines = get_text_lines(page)
             people_sections = extract_people_sections(text, book_page)
             page_matches = []
 
-            print(f'\n>>>> Found {len(people_sections)} on page {page.page_number}')
+            print(f'\n>>>> Found {len(people_sections)} on page {page_number}')
 
             for person in people_sections:
                 search_string = person.full_section[:8]
                 matching_lines = find_text_lines(search_string, text_lines)
-                person_id = find_id(persons_data, person)
+                person_id = find_person_id(persons_data, person)
 
                 if not person_id:
                     print(f'WARNING: Could not find id for person:\n\t{person}')
-                    missing_people[page.page_number].append(person)
+                    if person.first_name or person.birth_year:
+                        missing_people[page_number].append(person)
                     continue
 
                 if matching_lines:
@@ -150,15 +124,15 @@ def extract_name_coordinates():
                         if person_id not in out:
                             out[person_id] = []
 
-                        out[person_id].append(PdfUpdateData(page.page_number, line))
+                        out[person_id].append(PdfUpdateData(page_number, line))
                     print(f'Found {len(matching_lines)} for {person}')
 
-    sql_output_filename = 'V3__seed_pdf_data.sql'
+    sql_output_filename = 'V3__seed_pdf_reference_data.sql'
     sql_data_lines = get_pdf_update_sql(out)
     with open(sql_output_filename, 'w', encoding='utf-8') as f:
         f.writelines(sql_data_lines)
         print(f'Written SQL data to {sql_output_filename}')
-        
+
     print('------------------- Missing People! -----------------------')
     for page, people in missing_people.items():
         if people:
@@ -168,4 +142,4 @@ def extract_name_coordinates():
 
 
 if __name__ == '__main__':
-    extract_name_coordinates()
+    extract_pdf_name_positions()

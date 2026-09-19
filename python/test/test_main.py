@@ -2,14 +2,16 @@
 
 from pypdf import PdfReader, PageObject
 
+from extract_pdf_portraits import extract_people_sections, get_book_page
 from src.PeopleSection import PeopleSection
-from parse_pdf import extract_people_sections
-from src.constants import PDF_FILENAME_300DPI
+from src.constants import PDF_FILENAME_300DPI, START_PAGE, END_PAGE, SKIPPABLE_PAGES
 
+OUTPUT_PERSON_DATA_FILENAME = 'person_data.csv'
 
 def _read_pages() -> list[PageObject]:
     reader = PdfReader(PDF_FILENAME_300DPI)
     return reader.pages
+
 
 def parseable(number: int, birth_year: int, first_name: str, last_name: str = '') -> PeopleSection:
     person = PeopleSection('')
@@ -20,11 +22,13 @@ def parseable(number: int, birth_year: int, first_name: str, last_name: str = ''
     person.could_be_parsed = True
     return person
 
+
 def unparseable(number: int) -> PeopleSection:
     person = PeopleSection('')
     person.number = number
     person.could_be_parsed = False
     return person
+
 
 class MainTest(unittest.TestCase):
 
@@ -66,6 +70,7 @@ class MainTest(unittest.TestCase):
             parseable(132, 1913, 'Klara', 'Elisabet'),
             parseable(134, 1831, 'Henrik', 'Bernhard')
         ])
+
     #
     # def test_page_39(self):
     #     self._test_page(11, [
@@ -83,17 +88,47 @@ class MainTest(unittest.TestCase):
             res_person = people[i]
 
             self.assertEqual(exp_person.number, res_person.number, msg=f'Wrong number! Expected: {exp_person}')
-            self.assertEqual(exp_person.could_be_parsed, res_person.could_be_parsed, msg=f'Wrong could_be_parsed! Expected: {exp_person}')
+            self.assertEqual(exp_person.could_be_parsed, res_person.could_be_parsed,
+                             msg=f'Wrong could_be_parsed! Expected: {exp_person}')
             self.assertEqual(res_person.book_page, page, msg=f'Wrong book_page! Expected: {exp_person}')
 
             if exp_person.could_be_parsed:
-                self.assertEqual(exp_person.first_name.lower(), res_person.first_name.lower(), msg=f'Wrong first_name! Expected: {exp_person}')
-                self.assertEqual(exp_person.middle_name.lower(), res_person.middle_name.lower(), msg=f'Wrong last_name! Expected: {exp_person}')
-                self.assertEqual(exp_person.birth_year, res_person.birth_year, msg=f'Wrong birth_year! Expected: {exp_person}')
+                self.assertEqual(exp_person.first_name.lower(), res_person.first_name.lower(),
+                                 msg=f'Wrong first_name! Expected: {exp_person}')
+                self.assertEqual(exp_person.middle_name.lower(), res_person.middle_name.lower(),
+                                 msg=f'Wrong last_name! Expected: {exp_person}')
+                self.assertEqual(exp_person.birth_year, res_person.birth_year,
+                                 msg=f'Wrong birth_year! Expected: {exp_person}')
 
     def _get_people_sections(self, book_page: int):
-        page_index = book_page+3
+        page_index = book_page + 3
         page = self.pages[page_index]
-        return extract_people_sections(page.extract_text(), book_page)
+        return extract_people_sections(extract_text(), book_page)
+
+
+def extract_text():
+    reader = PdfReader(PDF_FILENAME_300DPI)
+    out: list[PeopleSection] = []
+    for page in reader.pages:
+        book_page = get_book_page(page)
+
+        if book_page < START_PAGE or book_page > END_PAGE:
+            continue
+
+        text = page.extract_text()
+        print(f'\n==== Processing page {book_page} ====')
+        if book_page not in SKIPPABLE_PAGES:
+            people_sections = extract_people_sections(text, book_page)
+            for person in people_sections:
+                print(f'\t* {person}')
+            out.extend(people_sections)
+
+    with open(OUTPUT_PERSON_DATA_FILENAME, 'w', encoding='utf-8') as f:
+        f.write(PeopleSection.csv_headers())
+        f.write('\n')
+        for person in out:
+            f.write(person.csv_data())
+            f.write('\n')
+        print(f"Wrote data to {OUTPUT_PERSON_DATA_FILENAME}")
 
 

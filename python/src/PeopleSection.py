@@ -1,16 +1,22 @@
 ﻿import re
 
+from src.str_helper import take_until
+
 
 class PeopleSection:
     REG_FULL = re.compile(r'^(\d+)\.(?:\s\d+\.)?\s(.+),(?=\sf\.)(?:(?!f\.).)+f\.\D+(\d+)')
-    REG_NUMBER = re.compile(r'^(\d+)\..*')
-    REG_BIRTH_YEAR = re.compile(r'f\.\s(?:[a-zA-Z\s]+\s)?(\d+)')
-    REG_FULL_NAMES = re.compile(r'^\d+\.(?:\s\d+\.)?\s([\w\(\)\s]+),')
+    REG_NUMBER = re.compile(r'^(\d+)(?:\s\w\))?\..*')
+    REG_BIRTH_YEAR = re.compile(r'f\.\s(?:tv\.\s)?(?:[a-zA-Z\s]+\s)?(\d+)')
+    REG_FULL_NAMES = re.compile(r'^\d+(?:\s\w\))?\.(?:\s\d+\.)?\s([\w\-\(\)\s]+),')
     REG_NAMES = re.compile(r'(\w+)\s*(\w*)')
     REG_FIRST_COMMA = re.compile(r',')
 
     def __init__(self, section: str, book_page: int = -1):
-        self.full_section = section.replace('\n', '')
+        self.full_section = (section
+                             .replace('-\n', '')
+                             .replace('- \n', '')
+                             .replace('\u00AD\n', '')
+                             .replace('\n', ' '))
         self.search_match_section = ''
         self.book_page = book_page
         self.full_description = ''
@@ -18,6 +24,7 @@ class PeopleSection:
         self.first_name = ''
         self.middle_name = ''
         self.birth_year = None
+        self.notes = ''
         self.could_be_parsed = False
         self._parse()
 
@@ -46,10 +53,18 @@ class PeopleSection:
         if self.first_name and self.birth_year and self.number:
             self.could_be_parsed = True
 
-        match = re.search(rf'{self.birth_year}',self.full_section) if self.birth_year else self.REG_FIRST_COMMA.search(self.full_section)
+        match = re.search(rf'{self.birth_year}', self.full_section) if self.birth_year else self.REG_FIRST_COMMA.search(
+            self.full_section)
         if match:
-            match_end = match.end() if  self.birth_year else match.start() 
+            match_end = match.end() if self.birth_year else match.start()
             self.search_match_section = self.full_section[:match_end]
+
+        first_f_index = self.full_section.find('f.')
+        if first_f_index > 0:
+            self.notes = self.full_section[first_f_index:]
+
+        self.notes = take_until(self.notes, 'Barn.', ignore_case=False)
+        self.notes = take_until(self.notes, 'TAB.', ignore_case=False)
 
     def _parse_name(self):
         if match := self.REG_FULL_NAMES.match(self.full_section):
