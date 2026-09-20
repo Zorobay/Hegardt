@@ -28,11 +28,11 @@ class Marriage extends BaseEntity {
     String notes
 
     @ManyToOne
-    @JoinColumn(name = 'spouse_1_id')
+    @JoinColumn(name = 'spouse_1_id', nullable = false)
     Person spouse1
 
     @ManyToOne
-    @JoinColumn(name = 'spouse_2_id')
+    @JoinColumn(name = 'spouse_2_id', nullable = false)
     Person spouse2
 
     @Embedded

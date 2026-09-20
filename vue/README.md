@@ -40,8 +40,8 @@ The portraits are elliptic with an aspect ratio of about 3:4 or about 33% taller
     - [x] Notes
     - [x] References
     - [x] Show portraits under Parents, Siblings, Children etc.
-    - [ ] Marriages
-        - Just divide up children per partner and in the header display the marriage status + data
+    - [x] Marriages
+    - [ ] Group children by partner
 - [x] Map
     - [x] Show markers for Birth, Death, Burial
     - [x] Find person by name

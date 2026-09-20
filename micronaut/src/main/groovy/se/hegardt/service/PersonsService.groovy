@@ -4,10 +4,8 @@ import groovy.transform.CompileStatic
 import io.micronaut.transaction.annotation.Transactional
 import jakarta.inject.Singleton
 import se.hegardt.domain.Marriage
-import se.hegardt.domain.PdfReference
 import se.hegardt.domain.Person
 import se.hegardt.dto.MarriageDto
-import se.hegardt.dto.PdfReferenceDto
 import se.hegardt.dto.PersonDto
 import se.hegardt.dto.PersonSummaryDto
 import se.hegardt.dto.tree.PersonTreeRootDto
@@ -44,7 +42,6 @@ class PersonsService implements IPersonsService {
         Optional<Person> person = personRepo.findById(id)
         if (person.present) {
             PersonDto personDto = PersonDto.from(person.get())
-            // TODO get occupations
             personDto.children = personRepo.findChildren(personDto.id)
                 .collect { Person child -> PersonSummaryDto.from(child) }
                 .toSet()
@@ -53,9 +50,6 @@ class PersonsService implements IPersonsService {
             personDto.marriages = marriageRepo.findAllByPersonId(id)
                 .collect { Marriage marriage -> MarriageDto.from(marriage) }
                 .toSet()
-            personDto.pdfReference = pdfReferenceRespo.findByPersonId(id)
-                .map { PdfReference ref -> PdfReferenceDto.from(ref) }
-                .orElse(null)
 
             return Optional.of(personDto)
         }

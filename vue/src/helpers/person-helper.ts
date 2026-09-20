@@ -17,7 +17,7 @@ export function formatPersonFullName(person: PersonBasic | undefined | null): st
   return nameParts.join(' ').trim();
 }
 
-export function formatPersonDate(date: PartialDate | undefined | null): string {
+export function formatPartialDate(date: PartialDate | undefined | null): string {
   if (!date?.date) {
     return '';
   }
@@ -44,7 +44,7 @@ export function formatPersonAge(person: Person): string {
   return '?';
 }
 
-export function formatPersonLocation(location: Location | null): string {
+export function formatLocation(location: Location | null | undefined): string {
   if (!location?.city || !location?.country) {
     return '';
   }

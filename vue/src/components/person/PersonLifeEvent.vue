@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import ReadonlyText from '@/components/person/PersonTextProperty.vue';
-import { formatPersonDate, formatPersonLocation } from '@/helpers/person-helper.ts';
+import { formatLocation, formatPartialDate } from '@/helpers/person-helper.ts';
 import type { LifeEvent } from '@/types/person.type.ts';
 
 interface Props {
@@ -9,8 +9,8 @@ interface Props {
 }
 const props = defineProps<Props>();
 const event = props.event;
-const date = formatPersonDate(event.date);
-const location = formatPersonLocation(event.location);
+const date = formatPartialDate(event.date);
+const location = formatLocation(event.location);
 const text = getText(date, location);
 function getText(date: string, location: string): string {
   if (date) {

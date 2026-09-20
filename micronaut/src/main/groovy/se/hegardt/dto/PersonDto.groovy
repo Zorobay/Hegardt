@@ -19,14 +19,16 @@ class PersonDto {
 
     String notes
 
-    Set<Occupation> occupations = []
-    Set<MarriageDto> marriages = []
-    Set<PersonSummaryDto> children = []
-    Set<PersonSummaryDto> siblings = []
     PersonSummaryDto father
     PersonSummaryDto mother
 
-    PdfReferenceDto pdfReference
+    // Fetched by PersonsService
+    Set<MarriageDto> marriages = []
+    Set<PersonSummaryDto> children = []
+    Set<PersonSummaryDto> siblings = []
+
+    Set<OccupationDto> occupations = []
+    Set<PdfReferenceDto> pdfReferences = []
 
     static PersonDto from(Person person) {
         return new PersonDto(
@@ -40,7 +42,9 @@ class PersonDto {
             burial: LifeEventDto.from(person.burial),
             notes: person.notes,
             father: PersonSummaryDto.from(person.father),
-            mother: PersonSummaryDto.from(person.mother)
+            mother: PersonSummaryDto.from(person.mother),
+            occupations: person.occupations.collect(OccupationDto.&from).toSet(),
+            pdfReferences: person.pdfReferences.collect(PdfReferenceDto.&from).toSet()
         )
     }
 }

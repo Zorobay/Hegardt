@@ -1,12 +1,26 @@
 <script setup lang="ts">
 import SexIcon from '@/components/person/SexIcon.vue';
 
-import { formatPersonDate, formatPersonFullName } from '@/helpers/person-helper.ts';
+import { formatPartialDate, formatPersonFullName } from '@/helpers/person-helper.ts';
 import type { Person, PersonSummary } from '@/types/person.type.ts';
 import PortraitComponent from '@/components/person/PortraitComponent.vue';
 
-const props = withDefaults(defineProps<{ person: Person | PersonSummary; compact?: boolean }>(), { compact: false });
+const props = withDefaults(
+  defineProps<{ person: Person | PersonSummary; compact?: boolean; customNavigation?: boolean }>(),
+  {
+    compact: false,
+    customNavigation: false,
+  },
+);
+const emit = defineEmits<{ onCardClicked: [person: Person | PersonSummary] }>();
 const id = props.person.id;
+
+function onLinkClick(event: MouseEvent): void {
+  if (props.customNavigation) {
+    event.preventDefault();
+    emit('onCardClicked', props.person);
+  }
+}
 </script>
 
 <template>
@@ -18,9 +32,11 @@ const id = props.person.id;
         <SexIcon :sex="person.sex" />
       </h5>
       <h6 class="card-subtitle mb-2 text-body-secondary">
-        {{ formatPersonDate(person.birth.date) }}
+        {{ formatPartialDate(person.birth.date) }}
       </h6>
-      <router-link class="stretched-link" :to="{ name: 'person', params: { id: id } }"></router-link>
+      <router-link v-slot="{ href }" custom :to="{ name: 'person', params: { id: id } }">
+        <a :href="href" class="stretched-link" @click="onLinkClick"></a>
+      </router-link>
     </div>
   </div>
 </template>

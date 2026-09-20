@@ -28,6 +28,7 @@ function onCenterButtonClicked(): void {
     <SearchComponent
       :default-id="Number.parseInt(personId)"
       placeholder-text="Start here"
+      custom-navigation
       @on-person-clicked="onSearchedPersonClicked"
     />
     <ButtonPrime @click="onCenterButtonClicked">

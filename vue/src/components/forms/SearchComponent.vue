@@ -1,14 +1,18 @@
 <script setup lang="ts">
 import { onMounted, ref } from 'vue';
-import type { Person } from '@/types/person.type.ts';
+import type { Person, PersonSummary } from '@/types/person.type.ts';
 import { formatPersonFullName } from '@/helpers/person-helper.ts';
 import { personsApiService } from '@/api/personsApiService.ts';
 import PersonCard from '@/components/person/PersonCard.vue';
 
-const props = withDefaults(defineProps<{ defaultId?: number; placeholderText?: string }>(), {
-  defaultId: 0,
-  placeholderText: () => 'Search',
-});
+const props = withDefaults(
+  defineProps<{ defaultId?: number; placeholderText?: string; customNavigation?: boolean }>(),
+  {
+    defaultId: 0,
+    placeholderText: 'Search',
+    customNavigation: false,
+  },
+);
 const emit = defineEmits<{ onPersonClicked: [number] }>();
 
 const showDropdown = ref(false);
@@ -47,10 +51,12 @@ function onFocus(): void {
   }
 }
 
-function onPersonClick(person: Person | Person): void {
+function onPersonClick(person: Person | PersonSummary): void {
   showDropdown.value = false;
   searchQuery.value = formatPersonFullName(person);
-  emit('onPersonClicked', person.id);
+  if (props.customNavigation) {
+    emit('onPersonClicked', person.id);
+  }
 }
 </script>
 
@@ -72,8 +78,17 @@ function onPersonClick(person: Person | Person): void {
         {{ matchingPersons.length }}
       </span>
 
-      <div class="dropdown-menu show w-100">
-        <person-card v-for="person in matchingPersons" :key="person.id" compact :person="person" class="person-card" />
+      <div v-if="showDropdown" class="dropdown-menu show w-100">
+        <person-card
+          v-for="person in matchingPersons"
+          :key="person.id"
+          :custom-navigation="customNavigation"
+          compact
+          :person="person"
+          :navigate="false"
+          class="person-card"
+          @on-card-clicked="onPersonClick"
+        />
       </div>
       <ButtonPrime type="submit"> Search </ButtonPrime>
     </div>
@@ -92,8 +107,7 @@ function onPersonClick(person: Person | Person): void {
 .dropdown-menu {
   top: 100%;
   max-height: 20rem;
-  overflow-y: auto;
-  overflow-x: hidden;
+  overflow: hidden auto;
 }
 
 .person-card {

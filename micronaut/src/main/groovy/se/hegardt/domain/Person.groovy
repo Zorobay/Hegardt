@@ -11,8 +11,6 @@ import jakarta.persistence.FetchType
 import jakarta.persistence.GeneratedValue
 import jakarta.persistence.GenerationType
 import jakarta.persistence.Id
-import jakarta.persistence.JoinColumn
-import jakarta.persistence.JoinTable
 import jakarta.persistence.ManyToOne
 import jakarta.persistence.OneToMany
 import jakarta.persistence.OneToOne
@@ -63,12 +61,7 @@ class Person extends BaseEntity {
     @Nullable
     LifeEvent burial
 
-    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
-    @JoinTable(
-        name = 'person_occupations',
-        joinColumns = @JoinColumn(name = 'person_id'),
-        inverseJoinColumns = @JoinColumn(name = 'occupation_id')
-    )
+    @OneToMany(mappedBy = 'person', cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
     List<Occupation> occupations = []
 
     @OneToMany(mappedBy = 'person', cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)

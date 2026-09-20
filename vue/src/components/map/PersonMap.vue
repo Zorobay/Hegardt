@@ -2,7 +2,7 @@
 import type { PersonFeature, Styles } from '@/types/open-layers-feature.type.ts';
 import { computed, onMounted, ref, shallowRef, useTemplateRef } from 'vue';
 import { useRouter } from 'vue-router';
-import { formatPersonDate, formatPersonFullName } from '@/helpers/person-helper.ts';
+import { formatPartialDate, formatPersonFullName } from '@/helpers/person-helper.ts';
 import { fuzzyMatch } from '@/helpers/util-helper.ts';
 import OLMap from 'ol/Map';
 import type MapBrowserEvent from 'ol/MapBrowserEvent';
@@ -150,7 +150,7 @@ function buildMapFeatures(): void {
     for (const eventType of ['birth', 'death', 'burial'] as const) {
       const location = person[eventType].location;
       const name = formatPersonFullName(person);
-      const date = formatPersonDate(person[eventType]?.date);
+      const date = formatPartialDate(person[eventType]?.date);
 
       if (location) {
         const coordinate = [location.longitude ?? 0, location.latitude ?? 0];

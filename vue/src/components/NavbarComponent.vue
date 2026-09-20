@@ -41,9 +41,6 @@ const languageItems = ref<MenuItem[]>([
   { label: 'Spanish', icon: 'pi pi-globe' },
 ]);
 
-function onPersonClicked(personId: number): void {
-  router.push({ name: 'person', params: { id: personId } });
-}
 function toggleLanguageMenu(event: Event): void {
   languageMenu.value.toggle(event);
 }
@@ -51,14 +48,14 @@ function toggleLanguageMenu(event: Event): void {
 
 <template>
   <nav id="main-nav">
-    <MenubarPrime :model="menuItems">
+    <MenubarPrime :model="menuItems" class="navbar-content">
       <template #start>
         <span class="navbar-brand">Navbar</span>
       </template>
 
       <template #end>
         <div class="d-flex align-items-center gap-2">
-          <SearchComponent class="search-component" @on-person-clicked="onPersonClicked" />
+          <SearchComponent class="search-component" />
 
           <ButtonPrime icon="pi pi-language" text rounded aria-label="Language" @click="toggleLanguageMenu" />
           <MenuPrime ref="languageMenu" :model="languageItems" popup />
@@ -71,6 +68,11 @@ function toggleLanguageMenu(event: Event): void {
 <style scoped>
 #main-nav {
   margin-bottom: 2rem;
+}
+
+.navbar-content {
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .search-component {

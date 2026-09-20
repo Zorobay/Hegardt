@@ -13,6 +13,7 @@ import PersonIconLinks from '@/components/person/PersonCardIconLinks.vue';
 import { personsApiService } from '@/api/personsApiService.ts';
 import type { EntityId, Person, PersonSummary } from '@/types/person.type.ts';
 import LoadingContainer from '@/components/async/LoadingContainer.vue';
+import PersonMarriages from '@/components/person/PersonMarriages.vue';
 
 const { id } = defineProps<{ id: EntityId }>();
 const loading = ref(true);
@@ -67,9 +68,11 @@ onMounted(async () => {
 
               <ReadonlyText title="Occupations">
                 <ul v-if="person.occupations?.length > 0">
-                  <li v-for="occupation in person.occupations" :key="occupation.id">{{ occupation }}</li>
+                  <li v-for="occupation in person.occupations" :key="occupation.id">{{ occupation.notes }}</li>
                 </ul>
               </ReadonlyText>
+
+              <PersonMarriages :person-id="person.id" :marriages="person.marriages" />
             </InfoGroup>
 
             <InfoGroup title="Parents">

@@ -58,54 +58,43 @@ CREATE INDEX idx_person_normalized_name ON person (normalized_name);
 
 CREATE TABLE marriage
 (
-    id          BIGINT PRIMARY KEY                DEFAULT nextval('marriage_seq'),
-    version     BIGINT                   NOT NULL DEFAULT 0,
-    notes       VARCHAR(5000),
-    spouse_1_id BIGINT                   NOT NULL REFERENCES person (id),
-    spouse_2_id BIGINT                   NOT NULL REFERENCES person (id),
-    location_id BIGINT REFERENCES location (id),
-    partial_day         INTEGER,
-    partial_month       INTEGER,
-    partial_year        INTEGER,
-    partial_date        DATE,
-    created_at  TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT NOW(),
-    updated_at  TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT NOW()
+    id            BIGINT PRIMARY KEY                DEFAULT nextval('marriage_seq'),
+    version       BIGINT                   NOT NULL DEFAULT 0,
+    spouse_1_id   BIGINT                   NOT NULL REFERENCES person (id),
+    spouse_2_id   BIGINT                   NOT NULL REFERENCES person (id),
+    notes         VARCHAR(5000),
+    location_id   BIGINT REFERENCES location (id),
+    partial_day   INTEGER,
+    partial_month INTEGER,
+    partial_year  INTEGER,
+    partial_date  DATE,
+    created_at    TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT NOW(),
+    updated_at    TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT NOW()
 );
 
 CREATE TABLE occupation
 (
-    id          BIGINT PRIMARY KEY                DEFAULT nextval('occupation_seq'),
-    version     BIGINT                   NOT NULL DEFAULT 0,
-    notes       VARCHAR(5000),
-    location_id BIGINT REFERENCES location (id),
-    partial_day         INTEGER,
-    partial_month       INTEGER,
-    partial_year        INTEGER,
-    partial_date        DATE,
-    created_at  TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT NOW(),
-    updated_at  TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT NOW()
-);
-
-CREATE TABLE person_marriages
-(
-    person_id   BIGINT NOT NULL REFERENCES person (id),
-    marriage_id BIGINT NOT NULL UNIQUE REFERENCES marriage (id)
-);
-
-CREATE TABLE person_occupations
-(
-    person_id     BIGINT NOT NULL REFERENCES person (id),
-    occupation_id BIGINT NOT NULL UNIQUE REFERENCES occupation (id)
+    id            BIGINT PRIMARY KEY                DEFAULT nextval('occupation_seq'),
+    version       BIGINT                   NOT NULL DEFAULT 0,
+    person_id     BIGINT                   NOT NULL REFERENCES person (id) ON DELETE CASCADE,
+    notes         VARCHAR(5000),
+    location_id   BIGINT REFERENCES location (id),
+    partial_day   INTEGER,
+    partial_month INTEGER,
+    partial_year  INTEGER,
+    partial_date  DATE,
+    created_at    TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT NOW(),
+    updated_at    TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT NOW()
 );
 
 CREATE TABLE pdf_reference
 (
-    id          BIGINT PRIMARY KEY                DEFAULT nextval('pdf_reference_seq'),
-    version     BIGINT NOT NULL DEFAULT 0,
-    person_id   BIGINT NOT NULL REFERENCES person (id) ON DELETE CASCADE,
-    pdf_page    INTEGER NOT NULL,
-    x0          FLOAT NOT NULL,
-    y0          FLOAT NOT NULL,
-    width       FLOAT NOT NULL,
-    height      FLOAT NOT NULL
+    id        BIGINT PRIMARY KEY DEFAULT nextval('pdf_reference_seq'),
+    version   BIGINT  NOT NULL   DEFAULT 0,
+    person_id BIGINT  NOT NULL REFERENCES person (id) ON DELETE CASCADE,
+    pdf_page  INTEGER NOT NULL,
+    x0        FLOAT   NOT NULL,
+    y0        FLOAT   NOT NULL,
+    width     FLOAT   NOT NULL,
+    height    FLOAT   NOT NULL
 );

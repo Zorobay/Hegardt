@@ -25,6 +25,7 @@ const hasPortrait = ref(false);
 .heg-portrait {
   aspect-ratio: 0.75 / 1;
   flex-shrink: 0;
+
   img {
     display: block;
     width: 100%;

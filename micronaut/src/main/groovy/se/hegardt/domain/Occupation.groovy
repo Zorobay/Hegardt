@@ -6,9 +6,11 @@ import jakarta.annotation.Nullable
 import jakarta.persistence.CascadeType
 import jakarta.persistence.Embedded
 import jakarta.persistence.Entity
+import jakarta.persistence.FetchType
 import jakarta.persistence.GeneratedValue
 import jakarta.persistence.GenerationType
 import jakarta.persistence.Id
+import jakarta.persistence.JoinColumn
 import jakarta.persistence.ManyToOne
 import jakarta.persistence.PrePersist
 import jakarta.persistence.PreUpdate
@@ -24,6 +26,10 @@ class Occupation extends BaseEntity {
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = 'occupation_seq')
     @SequenceGenerator(name = 'occupation_seq', sequenceName = 'occupation_seq', allocationSize = 1)
     Long id
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = 'person_id', nullable = false)
+    Person person
 
     String notes
 

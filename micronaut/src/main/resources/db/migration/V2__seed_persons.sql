@@ -1,10 +1,11 @@
---============ Auto-generated seed file (2026-03-22 19:27:24.983793) ================
+--============ Auto-generated seed file (2026-09-20 18:37:05.578611) ================
 
 --========== Disable triggers ==========
 ALTER TABLE person DISABLE TRIGGER ALL;
 ALTER TABLE life_event DISABLE TRIGGER ALL;
 ALTER TABLE location DISABLE TRIGGER ALL;
 ALTER TABLE occupation DISABLE TRIGGER ALL;
+ALTER TABLE marriage DISABLE TRIGGER ALL;
 
 
 --======= Insert Person id: 1 =======
@@ -59,7 +60,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (6, 'Malmö', 'Sverige', '', '', 55.59669, 13.0011, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (23, 5, 8, 1711, '1711-08-05', '', 6);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (24, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (1, 'Rådman', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (1, 8, 'Rådman', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (8, 'Peter', 'Hegardt', '', 'peterhegardt', 'Författare till "Peters dagbok".
 Flyttade 1655 till Sverige och Malmö. Extra rådman 1687 och ordinarie 1692. Erbjöds 1699 ämbetet som politiborgmästare, men avböjde. Erhöll avsked från rådmanssysslan 1700.
 H var en av initiativtagarna till uppförandet av Caroli kyrka och till bildandet av tyska församlingen i Malmö (på vilket kungligt brev utfärdades 1683 19/3). Han var dessutom en av de två kyrkvärdarna och föreståndarna för kyrkbygget och kvarstod som sådan till sin död.
@@ -99,7 +100,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (10, 'Uddevalla', 'Sverige', '', '', 58.35096, 11.93264, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (38, 18, 2, 1786, '1786-02-18', '', 10);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (39, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (2, 'Handlande och från 1748 rådman där', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (2, 13, 'Handlande och från 1748 rådman där', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (13, 'Peter', 'Hegardt', 'Josias', 'peterjosiashegardt', '(Tab 2 i GS).
 Flyttade omkring 1730 till Uddevalla från Danmark.', 'MAN', 37, 38, 39, null, null);
 
@@ -109,7 +110,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (12, 'Marstrand', 'Sverige', '', '', 57.88669, 11.58953, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (41, 15, 5, 1776, '1776-05-15', '', 12);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (42, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (3, 'Tullinspektor', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (3, 14, 'Tullinspektor', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (14, 'Anders', 'Hegardt', '', 'andershegardt', 'Lysning togs ut 1:a gången 1741-05-24.
 Flyttade till Sverige 1730-40.
 Var 1741 tullskrivare i Varberg. Blev sedermera tullinspektor på Marstrand.', 'MAN', 40, 41, 42, null, null);
@@ -152,8 +153,8 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (21, 'Uddevalla', 'Sverige', '', '', 58.35096, 11.93264, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (56, 6, 7, 1806, '1806-07-06', '', 21);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (57, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (4, 'Handlande och skeppsredare', null, null, null, null, null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (5, 'Samt från 1764 rådman i uddevalla', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (4, 19, 'Handlande och skeppsredare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (5, 19, 'Samt från 1764 rådman i uddevalla', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (19, 'Josias', 'Hegardt', '', 'josiashegardt', '(Tab 3 i GS).
 (Brodern Johannes svägerska).
 Ägde Länderiet Annegreteberg samt åtskilliga smärre tomter och jordlotter utanför staden samt efterlämnade en rätt ansenlig förmögenhet.', 'MAN', 55, 56, 57, null, null);
@@ -171,7 +172,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (24, 'Uddevalla', 'Sverige', '', '', 58.35096, 11.93264, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (62, 4, 9, 1786, '1786-09-04', '', 24);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (63, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (6, 'Handlande och rådman i uddevalla', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (6, 21, 'Handlande och rådman i uddevalla', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (21, 'Johannes', 'Hegardt', 'Pettersson', 'johannespetterssonhegardt', '(Tab 25 i GS).', 'MAN', 61, 62, 63, null, null);
 
 --======= Insert Person id: 22 =======
@@ -195,7 +196,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (29, 'Marstrand', 'Sverige', '', '', 57.88669, 11.58953, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (71, 11, 6, 1776, '1776-06-11', '', 29);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (72, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (7, 'Stadskassör i marstrand', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (7, 24, 'Stadskassör i marstrand', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (24, 'Hans', 'Hegardt', '', 'hanshegardt', '(Tab 42:192 i GS).
 Skrivare vid sjötullkontoret i Marstrand.
 Materialskrivare vid 4:e fortifikationsbrigaden 1763-02-22.', 'UNKNOWN', 70, 71, 72, null, null);
@@ -221,7 +222,7 @@ Genom inbördes testamente av 17/1 1802 donerade makarna en summa (som 1901 hade
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (79, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (80, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (81, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (8, 'Kyrkoherde', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (8, 27, 'Kyrkoherde', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (27, 'Jean', 'Brun', '', 'jeanbrun', '', 'MAN', 79, 80, 81, null, null);
 
 --======= Insert Person id: 28 =======
@@ -230,7 +231,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (35, 'Uddevalla', 'Sverige', '', '', 58.35096, 11.93264, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (83, 26, 10, 1786, '1786-10-26', '', 35);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (84, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (9, 'Handlande och skeppsredare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (9, 28, 'Handlande och skeppsredare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (28, 'Anders', 'Knape', 'Hansson', 'andershanssonknape', '', 'UNKNOWN', 82, 83, 84, null, null);
 
 --======= Insert Person id: 29 =======
@@ -277,7 +278,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (45, 'Uddevalla', 'Sverige', '', '', 58.35096, 11.93264, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (101, 26, 8, 1834, '1834-08-26', '', 45);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (102, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (10, 'Godsägare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (10, 34, 'Godsägare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (34, 'Peter', 'Hegardt', '', 'peterhegardt', '(Tab 3:8 i GS).', 'UNKNOWN', 100, 101, 102, null, null);
 
 --======= Insert Person id: 35 =======
@@ -310,7 +311,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (52, 'Stockholm', 'Sverige', '', '', 59.33257, 18.06683, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (113, 8, 3, 1837, '1837-03-08', '', 52);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (114, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (11, 'Kansliråd', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (11, 38, 'Kansliråd', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (38, 'Kristian', 'Hegardt', 'Bernhard', 'kristianbernhardhegardt', '(Tab 4 i GS).
 Student i Lund 1795. Juridisk examen där 1796 3/5 (examen juridicum et historicum) samt responderade för en akademisk avhandling "de infinito numine nobis incomprehensibile". Eo kanslist vid utrikes statsexpeditionen febr 1797. Studerade vid Uppsala universitet vårterminerna 1797 och 1799. Tjänstgjorde vid riksdagen i Norrköping 1800. Legationssekreterare vid beskickningen till riksförsamlingen i Regensburg 1801 4/6 - aug 1806. Protokollssekreterare vid utrikes statsexpeditionen 1807 25/5. Utnämnd till legationssekreterare i Wien sommaren 1810 (ankom dit 1811), samt chargé d''affaires där aug 1812 - juli 1816. Kansliråd 1817 26/3. Sändes samma år i juni i särskilt uppdrag till engelska hovet och var april - aug svenskt sändebud i Köpenhamn.
 RNO 1817 7/10. Adlad (med bibehållet namn) med anledning av Carl Johans kröning 1818 11/5 (introducerad 1819 under nr 2262).
@@ -327,7 +328,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (54, 'Uddevalla', 'Sverige', '', '', 58.35096, 11.93264, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (116, 18, 8, 1834, '1834-08-18', '', 54);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (117, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (12, 'Grosshandlare och skeppsredare i stockholm', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (12, 39, 'Grosshandlare och skeppsredare i stockholm', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (39, 'Johannes', 'Hegardt', '', 'johanneshegardt', '(Tab 10 i GS).
 Var från 1819 bosatt i Uddevalla.', 'MAN', 115, 116, 117, null, null);
 
@@ -337,7 +338,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (56, 'Göteborg', 'Sverige', '', '', 57.70067, 11.96822, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (119, 31, 12, 1846, '1846-12-31', '', 56);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (120, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (13, 'Grosshandlare i göteborg', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (13, 40, 'Grosshandlare i göteborg', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (40, 'Gustaf', 'Hegardt', 'Henrik', 'gustafhenrikhegardt', '(Tab 20 i GS).
 Firman hette G H Hegardt och Co (i kompanjonskap med hustruns systerson Oskar Andrén). Illitterat rådman i Göteborg från år 1834 eller 1835.', 'MAN', 118, 119, 120, null, null);
 
@@ -403,7 +404,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (72, 'Uddevalla', 'Sverige', '', '', 58.35096, 11.93264, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (143, 5, 5, 1821, '1821-05-05', '', 72);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (144, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (14, 'Grosshandlare och rådman', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (14, 48, 'Grosshandlare och rådman', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (48, 'Peter', 'Hegardt', 'Johansson', 'peterjohanssonhegardt', '(Tab 26 i GS).
 Dubbelkusin med sin hustru.
 Peter som var tidigt utvecklad och visade stor lätthet för studier, blev år 1783, redan innan han fyllt tolv år, inskriven vid Lunds universitet. Han valde emellertid inte den lärda banan, utan följde i faderns fotspår och vann 1795 burskap som handlande i Uddevalla och öppnade där, i kompanjonskap med handlanden Wallenkamp, grosshandelsrörelse.
@@ -434,7 +435,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (78, 'Uddevalla', 'Sverige', '', '', 58.35096, 11.93264, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (152, 27, 3, 1863, '1863-03-27', '', 78);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (153, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (15, 'Grosshandlare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (15, 51, 'Grosshandlare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (51, 'Kristian', 'Hegardt', '', 'kristianhegardt', '(Tab 38 i GS).
 Grosshandlare i Uddevalla i kompanjonskap med sin bror Peter åren 1800-1816. Sistnämnda år uppsade han burskapet som borgare.
 Köpte efter stadens brand 1806 egendomen Samneröd i Bävne sn intill Uddevalla, där han sedan var bosatt till 1855, då egendomen såldes.', 'MAN', 151, 152, 153, null, null);
@@ -473,7 +474,7 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (166, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (167, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (168, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (16, 'Kyrkoherde', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (16, 56, 'Kyrkoherde', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (56, 'Cornelius', 'Faxe', '', 'corneliusfaxe', '', 'MAN', 166, 167, 168, null, null);
 
 --======= Insert Person id: 57 =======
@@ -486,7 +487,7 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (172, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (173, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (174, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (17, 'Handlande och assessor', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (17, 58, 'Handlande och assessor', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (58, 'Kristian', 'Bratt', 'Henriksson', 'kristianhenrikssonbratt', '', 'MAN', 172, 173, 174, null, null);
 
 --======= Insert Person id: 59 =======
@@ -559,7 +560,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (102, 'Göteborg', 'Sverige', '', '', 57.70067, 11.96822, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (200, 29, 11, 1877, '1877-11-29', '', 102);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (201, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (18, 'Bruksägare i värmland mm', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (18, 67, 'Bruksägare i värmland mm', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (67, 'Carl', 'Hegardt', 'Bernhard', 'carlbernhardhegardt', '(Tab 5 i GS).
 Blev sedermera handelsbokhållare i Göteborg. Ägdeåren1855-61 Segerfors bruk i Arvika.', 'MAN', 199, 200, 201, null, null);
 
@@ -609,7 +610,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (114, 'Nordmark', 'Sverige', '', '', 59.83199, 14.10074, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (218, 5, 4, 1890, '1890-04-05', '', 114);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (219, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (19, 'Gruvinspektor', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (19, 73, 'Gruvinspektor', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (73, 'Josias', 'Hegardt', 'Vilhelm', 'josiasvilhelmhegardt', '(Tab 11 i GS).', 'MAN', 217, 218, 219, null, null);
 
 --======= Insert Person id: 74 =======
@@ -626,7 +627,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (118, 'Uddevalla', 'Sverige', '', '', 58.35096, 11.93264, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (224, 29, 5, 1891, '1891-05-29', '', 118);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (225, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (20, 'Handlande', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (20, 75, 'Handlande', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (75, 'Johannes', 'Hegardt', '', 'johanneshegardt', '(Tab 19 i GS).
 Etablerade i Uddevalla, tillsammans med Frans Quist, egen handel under firma Hegardt och Quist.', 'MAN', 223, 224, 225, null, null);
 
@@ -661,7 +662,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (125, 'på Björkbäck i Uddevalla', 'Sverige', '', '', 58.34947, 11.99044, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (236, 12, 3, 1823, '1823-03-12', '', 125);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (237, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (21, 'Øverstelöjtnant vid arméns flotta', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (21, 79, 'Øverstelöjtnant vid arméns flotta', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (79, 'Karl', 'Hauswolff', 'Fredrik, von', 'karlfredrikvonhauswolff', '', 'UNKNOWN', 235, 236, 237, null, null);
 
 --======= Insert Person id: 80 =======
@@ -670,8 +671,8 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (127, 'Uddevalla', 'Sverige', '', '', 58.35096, 11.93264, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (239, 31, 1, 1862, '1862-01-31', '', 127);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (240, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (22, 'Kammarherre', null, null, null, null, null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (23, 'Rno', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (22, 80, 'Kammarherre', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (23, 80, 'Rno', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (80, 'Mikael', 'af Christiernin', '', 'mikaelafchristiernin', '', 'UNKNOWN', 238, 239, 240, null, null);
 
 --======= Insert Person id: 81 =======
@@ -684,7 +685,7 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (244, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (245, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (246, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (24, 'Brukspatron', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (24, 82, 'Brukspatron', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (82, 'Erik', 'Koch', 'Mikaelsson', 'erikmikaelssonkoch', '', 'MAN', 244, 245, 246, null, null);
 
 --======= Insert Person id: 83 =======
@@ -709,7 +710,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (133, 'Göteborg', 'Sverige', '', '', 57.70067, 11.96822, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (254, 11, 6, 1928, '1928-06-11', '', 133);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (255, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (25, 'V häradshövding 1921', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (25, 85, 'V häradshövding 1921', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (85, 'Fredrik', 'Hegardt', 'Bernhard', 'fredrikbernhardhegardt', 'Studentexamen i Göteborg 1874. Examen till rättegångsverken 1879. Eo Notarie i Göta hovrätt samma år. Kansliexamen 1890. V häradshövding 1882. Kammarförvant vid stadskamrerarkontoret i Göteborg 1885 - 1895. Sekreterare för styrelsen för Göteborgs hamn 1892. Sekreterare hos stadsfullmäktige i samma stad 1895 - 1926. Øverförmyndare i Göteborg. RVO 1903, RNO 1914 och KVO 1923.
 Häradshövding Hegardt fick under sitt 31-åriga sekreterarskap hos stadsfullmäktige vid olika tillfällen röna många bevis på dessas förtroende och höga uppskattning av det sätt, på vilket han förvaltade sitt ämbete. Ett ytterligare bevis härpå gavs honom vid det sista sammanträde, där han tjänstgjorde, då ordföranden framförde fullmäktiges tack "för det utomordentligt plikttroget och med utomordentligt nit uträttat arbete", framhållande bl a även "det vänliga och tillmötesgående sätt, varmed vår sekreterare behandlat de olika stadsfullmäktigegenerationerna, det alla fått känna, som vänt sig till honom. Han är och har alltid varit stadsfullmäktiges vän och han har behandlat dem alla lika.
 --- Alla kommande generationer måtte erinras om det förtjänstfulla arbete som häradshövding Hegardt nedlagt i stadens tjänst, samt för åt oss alla i minnet bevara vår nu avgående sekreterare, anhåller stadsfullmäktiges presidium motionsledes få föreslå, att stadsfullmäktige måtte låta utföra häradshövding Hegardts porträtt i olja att upphängas i stadsfullmäktiges kansli.', 'MAN', 253, 254, 255, null, null);
@@ -772,7 +773,7 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (277, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (278, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (279, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (26, 'Ekonomidirektör', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (26, 93, 'Ekonomidirektör', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (93, 'Sven', 'Kihlén', '', 'svenkihlen', '', 'MAN', 277, 278, 279, null, null);
 
 --======= Insert Person id: 94 =======
@@ -789,7 +790,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (149, 'Stillingsön', 'Sverige', '', '', 58.19224, 11.82824, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (284, 26, 3, 1983, '1983-03-26', '', 149);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (285, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (27, 'Fil dr', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (27, 95, 'Fil dr', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (95, 'Bernhard', 'Hegardt', '', 'bernhardhegardt', '(Tab 7 i GS).
 Död 1983-03-26 på Stillingsön.
 Studentexamen i Göteborg 1911. Fil kand 1914, fil lic 1917 och fil dr 1918. Lärare vid N Kalmar läns folkhögskola 1919. Rektor vid nämnda folkhögskola och lantmannaskola i Gamleby 1923.
@@ -802,7 +803,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (151, 'Strömstad', 'Sverige', '', '', 58.9387, 11.17124, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (287, 13, 10, 1988, '1988-10-13', '', 151);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (288, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (28, 'Leg läkare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (28, 96, 'Leg läkare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (96, 'Gunnar', 'Hegardt', '', 'gunnarhegardt', '(Tab 8 i GS).
 Huvudman för adliga grenen Studentexamen i Göteborg 1912. med kand i Uppsala 1914 och med lic i Stockholm 1924. Provinsialläkarförordnanden 1920 - 1926 i Lycksele, Malå och Tärendö. Assistentläkare 1924 - 25 vid Sahlgrenska sjukhuset i Göteborg och Mölndals lasarett. Provinsialläkare i Junsele 1926 - 31, i Strömstads distrikt 1946 - 56. Efter denna tid praktiserande läkare i Strömstad. Dessutom varit järnvägs-, dispensär- och skolläkare i Strömstad. Landstingsledamot 1939 - 46. Ledamot av stadsfullmäktige i Strömstad 1936 - 56. RNO.', 'MAN', 286, 287, 288, null, null);
 
@@ -812,7 +813,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (153, 'Mariefred', 'Sverige', '', '', 59.25965, 17.22312, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (290, 14, 10, 1982, '1982-10-14', '', 153);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (291, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (29, 'Svensk konsul i kapstaden', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (29, 97, 'Svensk konsul i kapstaden', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (97, 'Nils', 'Hegardt', '', 'nilshegardt', '(Tab 9 i GS).
 Studentexamen i Göteborg 1914. Examen vid Göteborgs handelsinstitut 1915. Anställd vid Rederi AB Transatlantics kontor i Göteborg 1916. 1920 utsänd att starta och förestå bolagets kontor i Kapstaden. 1923 bolagets huvudrepresentant för hela Syd? och Ostafrika. 1932 utnämnd till svensk konsul för Kapstaden och Kapprovinsen. Grundade 1925 Svenska föreningen i Kapstaden. Hade under krigsåren hand om finska och japanska intressen. Tf svensk generalkonsul 1944. 1944 chef för Rederi AB Transatlantics kontor i Stockholm. Ledamot av Sveriges Flotta och i Utlandssvenskarna förening. RVO, RNO, Kungliga Patriotiska sällskapets stora guldmedalj.', 'MAN', 289, 290, 291, null, null);
 
@@ -822,7 +823,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (155, 'Göteborg', 'Sverige', '', '', 57.70067, 11.96822, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (293, 17, 1, 1969, '1969-01-17', '', 155);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (294, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (30, 'Rådman', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (30, 98, 'Rådman', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (98, 'Carl', 'Hegardt', '', 'carlhegardt', '(Tab 6:28 i GS).
 Rådman i Göteborg 1936-63.
 Studentexamen i Göteborg 1914. Jur kand 1919. Eo notarie i Göta hovrätt samma år. Tingstjänstgöring vid Askim m fl häraders domsaga 1920. Efter provtjänstgöring ex notarie hos magistraten och rådhusrätten i Göteborg 1921. Assessor vid rådhusrätten 1929, rådman där 1937. KNO.', 'MAN', 292, 293, 294, null, null);
@@ -833,7 +834,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (157, 'Göteborg', 'Sverige', '', '', 57.70067, 11.96822, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (296, 2, 5, 1939, '1939-05-02', '', 157);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (297, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (31, 'Ingenjör', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (31, 99, 'Ingenjör', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (99, 'Fritz', 'Hegardt', '', 'fritzhegardt', '(Tab 6:29 i GS).
 Från hösten 1917 studerande vid Technicum i Alt Stelitz.
 Ingenjörsexamen där 1919.', 'UNKNOWN', 295, 296, 297, null, null);
@@ -852,7 +853,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (161, 'på Altorp i Herrljunga', 'Sverige', '', '', 58.07953, 12.96975, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (302, 21, 6, 1894, '1894-06-21', '', 161);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (303, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (32, 'Postmästare i herrljunga', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (32, 101, 'Postmästare i herrljunga', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (101, 'Daniel', 'Brisman', '', 'danielbrisman', '(Tab 6 i GS).', 'UNKNOWN', 301, 302, 303, null, null);
 
 --======= Insert Person id: 102 =======
@@ -861,7 +862,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (163, 'Västra Ryd', 'Sverige', '', '', 58.17307, 13.22429, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (305, 16, 2, 1918, '1918-02-16', '', 163);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (306, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (33, 'Landsfiskal i ydre härads södra distrikt', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (33, 102, 'Landsfiskal i ydre härads södra distrikt', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (102, 'Johan', 'Johansson', 'Oskar', 'johanoskarjohansson', '(Tab 5:32 i GS).', 'UNKNOWN', 304, 305, 306, null, null);
 
 --======= Insert Person id: 103 =======
@@ -874,7 +875,7 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (310, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (311, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (312, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (34, 'Postmästare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (34, 104, 'Postmästare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (104, 'Sven', 'Brisman', '', 'svenbrisman', '', 'MAN', 310, 311, 312, null, null);
 
 --======= Insert Person id: 105 =======
@@ -889,7 +890,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (316, 9, 9, 1922, '1922-09-09', '', 165);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (317, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (318, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (35, 'Museiintendent', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (35, 106, 'Museiintendent', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (106, 'Gudrun', 'Hegardt', '', 'gudrunhegardt', 'Adress Erik Dahlbergsgatan 41, 115 32 STOCKHOLM.
 (Tab 7:19 i GS).
 Studentexamen 1941 i Göteborg (O).
@@ -901,7 +902,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (319, 11, 9, 1924, '1924-09-11', '', 166);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (320, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (321, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (36, 'Adjunkt', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (36, 107, 'Adjunkt', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (107, 'Nina', 'Hegardt', '', 'ninahegardt', 'Adress Hålebäcken 6166, 440 92 SVANESUND.
 (Tab 7:35 i GS).
 Studentexamen 1943 i Västervik (H).
@@ -922,7 +923,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (170, 'Uppsala', 'Sverige', '', '', 59.85862, 17.64373, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (326, 18, 2, 1983, '1983-02-18', '', 170);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (327, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (37, 'Docent', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (37, 109, 'Docent', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (109, 'Astrid', 'Hegardt', '', 'astridhegardt', 'Studentexamen 1960.
 Fil dr 1975 i Uppsala (C).', 'WOMAN', 325, 326, 327, null, null);
 
@@ -939,7 +940,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (331, 10, 9, 1922, '1922-09-10', '', 173);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (332, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (333, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (38, 'Leg sjuksköterska', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (38, 111, 'Leg sjuksköterska', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (111, 'Inger', 'Hegardt', '', 'ingerhegardt', 'Adress 1990 Tovan, S Korsviken, 459 00 LJUNGSKILE.
 (Tab 8:23 i GS).
 Genomgått Vasa kommunala flickskola i Göteborg, Bar-Lockinstitutet i Stockholm, Gamleby folkhögskola samt Steneby slöjdskolor.
@@ -951,8 +952,8 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (334, 25, 4, 1926, '1926-04-25', '', 174);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (335, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (336, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (39, 'Adress 1990 lövsångarevägen 1', null, null, null, null, null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (40, '752 52  uppsala', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (39, 112, 'Adress 1990 lövsångarevägen 1', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (40, 112, '752 52  uppsala', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (112, 'Hillevi', 'Hegardt', 'Vivi', 'hillevivivihegardt', '(Tab 8:24 i GS).
 Bor i Uppsala (C).', 'UNKNOWN', 334, 335, 336, null, null);
 
@@ -961,7 +962,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (337, 18, 4, 1928, '1928-04-18', '', 175);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (338, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (339, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (41, 'Bibliotekarie', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (41, 113, 'Bibliotekarie', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (113, 'Birgit', 'Hegardt', '', 'birgithegardt', 'Adress Øfre Slottsgatan 8 B, 753 10 UPPSALA.
 Studentexamen 1949, fil kand 1954 i Uppsala.
 Bor i Uppsala (C).', 'UNKNOWN', 337, 338, 339, null, null);
@@ -971,7 +972,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (340, 27, 11, 1930, '1930-11-27', '', 176);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (341, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (342, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (42, 'Adjunkt', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (42, 114, 'Adjunkt', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (114, 'Julia', 'Hegardt', 'Marianne', 'juliamariannehegardt', 'Adress Ostrongatan 12, 421 79 V FRØLUNDA.
 Skild 1989.
 Studentexamen 1950, fil mag 1957.
@@ -982,7 +983,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (343, 1, 10, 1935, '1935-10-01', '', 177);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (344, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (345, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (43, 'Byggnadsingenjör', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (43, 115, 'Byggnadsingenjör', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (115, 'Torborg', 'Hegardt', 'Agneta', 'torborgagnetahegardt', 'Adress Pontus Viknersgatan 1, 411 32 GØTEBORG.
 Skild 1963.
 Studentexamen 1954.
@@ -996,8 +997,8 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (346, 20, 9, 1942, '1942-09-20', '', 178);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (347, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (348, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (44, 'Leg läkare', null, null, null, null, null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (45, 'Spec i allmänmedicin', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (44, 116, 'Leg läkare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (45, 116, 'Spec i allmänmedicin', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (116, 'Gunilla', 'Hegardt', 'Christina', 'gunillachristinahegardt', 'Adress Drottninggatan 40 C, 702 22 ØREBRO.
 Skild 1989.
 Studentexamen 1961 i Göteborg (O).
@@ -1022,7 +1023,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (352, 22, 12, 1923, '1923-12-22', '', 181);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (353, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (354, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (46, 'Direktör', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (46, 118, 'Direktör', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (118, 'Carl-Fredrik', 'Hegardt', '', 'carl-fredrikhegardt', 'Adress APT 1, 9500 Sao Roque, Ponta Delgada, Azorerna.
 (Tab 9:26 i GS).
 Bor i Sao Rouque, Azorerna.', 'MAN', 352, 353, 354, null, null);
@@ -1032,7 +1033,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (355, 12, 5, 1925, '1925-05-12', '', 182);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (356, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (357, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (47, 'Jurist', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (47, 119, 'Jurist', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (119, 'Nils-Arne', 'Hegardt', '', 'nils-arnehegardt', 'Adress Banérvägen 3 A, 182 62 DJURSHOLM.
 (Tab 9:27 i GS).
 Bor i Djursholm (AB).', 'MAN', 355, 356, 357, null, null);
@@ -1050,7 +1051,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (361, 8, 8, 1928, '1928-08-08', '', 185);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (362, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (363, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (48, 'Förskollärare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (48, 121, 'Förskollärare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (121, 'Ingrid', 'Hegardt', 'Maria', 'ingridmariahegardt', 'Adress Øverby pl 9058, Undenäs, 546 00 KARLSBORG.
 Bor i Undenäs.', 'UNKNOWN', 361, 362, 363, null, null);
 
@@ -1059,7 +1060,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (364, 13, 1, 1932, '1932-01-13', '', 186);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (365, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (366, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (49, 'Fd ambassadör', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (49, 122, 'Fd ambassadör', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (122, 'Blenda', 'Hegardt', 'Margareta', 'blendamargaretahegardt', 'Adress Slottsgatan 4 B, 296 31 ÅHUS.
 Skild 1959.
 Skild 1976.
@@ -1076,7 +1077,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (367, 16, 2, 1939, '1939-02-16', '', 187);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (368, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (369, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (50, 'Distriktsläkare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (50, 123, 'Distriktsläkare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (123, 'Sven', 'Hegardt', 'Carl, Christian', 'svencarlchristianhegardt', 'Adress Stillingsön 6235, 440 92 SVANESUND.
 Oforskat Gift när och var (sid 1).
 Leg läkare 1971 och allmänläkare 1976.
@@ -1087,7 +1088,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (370, 14, 3, 1942, '1942-03-14', '', 188);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (371, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (372, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (51, 'Distriktssköterska', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (51, 124, 'Distriktssköterska', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (124, 'Kerstin', 'Hegardt', 'Birgitta', 'kerstinbirgittahegardt', 'Adress Bildradiogatan 12, 421 34 V FRØLUNDA.
 Leg sjuksköterska 1968 i Stockholm (AB).
 Distriktssköterskeutbildning 1984 i Göteborg (O).
@@ -1111,22 +1112,22 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (379, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (380, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (381, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (52, 'Kostnärinna', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (52, 127, 'Kostnärinna', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (127, 'Ingeborg', 'Westfelt', 'Aurora', 'ingeborgaurorawestfelt', '', 'WOMAN', 379, 380, 381, null, null);
 
 --======= Insert Person id: 128 =======
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (382, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (383, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (384, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (53, 'Redaktör', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (53, 128, 'Redaktör', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (128, 'August', 'Eggertz', 'Emil', 'augustemileggertz', '', 'MAN', 382, 383, 384, null, null);
 
 --======= Insert Person id: 129 =======
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (385, null, null, 1958, '1958-01-01', '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (386, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (387, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (54, 'Adress erik dahlbergsgatan 41', null, null, null, null, null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (55, '115 32  stockholm', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (54, 129, 'Adress erik dahlbergsgatan 41', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (55, 129, '115 32  stockholm', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (129, 'Karl-Arthur', 'Hegardt', '', 'karl-arthurhegardt', 'Bor i Stockholm (AB).', 'UNKNOWN', 385, 386, 387, null, null);
 
 --======= Insert Person id: 130 =======
@@ -1146,7 +1147,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (394, 27, 1, 1964, '1964-01-27', '', 191);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (395, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (396, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (56, 'Pilot vid japan airlines', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (56, 132, 'Pilot vid japan airlines', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (132, 'Pär', 'Hegardt', '', 'parhegardt', 'Adress 820 Caymus St, Napa, Californien 94559, USA.
 Utbildad pilot; flyginstruktör för Japanese Airlines.
 Bor i Napa, Californien, USA.', 'MAN', 394, 395, 396, null, null);
@@ -1174,7 +1175,7 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (406, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (407, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (408, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (57, 'Köpman', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (57, 136, 'Köpman', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (136, 'Victor', 'Sjöqvist', '', 'victorsjoqvist', '', 'MAN', 406, 407, 408, null, null);
 
 --======= Insert Person id: 137 =======
@@ -1187,7 +1188,7 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (412, 17, 1, 1921, '1921-01-17', '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (413, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (414, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (58, 'Professor', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (58, 138, 'Professor', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (138, 'Bengt', 'Westerlund', 'Elis', 'bengteliswesterlund', '', 'UNKNOWN', 412, 413, 414, null, null);
 
 --======= Insert Person id: 139 =======
@@ -1195,21 +1196,21 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (415, 23, 2, 1930, '1930-02-23', '', 193);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (416, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (417, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (59, 'Rådman vid länsrätten i göteborg och bohuslän', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (59, 139, 'Rådman vid länsrätten i göteborg och bohuslän', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (139, 'Jan', 'af Hagelsrum', 'Erik, Gustaf, Alfred, Drake', 'janerikgustafalfreddrakeafhagelsrum', '', 'MAN', 415, 416, 417, null, null);
 
 --======= Insert Person id: 140 =======
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (418, null, null, 1956, '1956-01-01', '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (419, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (420, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (60, 'Barnläkare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (60, 140, 'Barnläkare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (140, 'Gunilla', 'af Hagelsrum', 'Drake', 'gunilladrakeafhagelsrum', '', 'UNKNOWN', 418, 419, 420, null, null);
 
 --======= Insert Person id: 141 =======
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (421, null, null, 1966, '1966-01-01', '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (422, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (423, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (61, 'Rekvisitör', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (61, 141, 'Rekvisitör', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (141, 'Louise', 'af Hagelsrum', 'Drake', 'louisedrakeafhagelsrum', '', 'UNKNOWN', 421, 422, 423, null, null);
 
 --======= Insert Person id: 142 =======
@@ -1230,7 +1231,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (430, 24, 4, 1960, '1960-04-24', '', 195);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (431, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (432, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (62, 'Egen företagare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (62, 144, 'Egen företagare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (144, 'Annika', 'Hegardt', 'Henrietta, Maria', 'annikahenriettamariahegardt', 'Adress Billdals hagenvägen 31, 427 37 BILLDAL.
 Studerat statsvetenskap och informationsteknik vid universitetet i Göteborg. Egen företagare: Extradata med utbildning inom dataområdet.
 Bor i Göteborg (O).', 'WOMAN', 430, 431, 432, null, null);
@@ -1240,7 +1241,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (433, 8, 7, 1962, '1962-07-08', '', 196);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (434, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (435, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (63, 'Ekon stud och jur stud', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (63, 145, 'Ekon stud och jur stud', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (145, 'Joel', 'Hegardt', 'Richard', 'joelrichardhegardt', 'Adress Gamla Särövägen, Pl 6915, 430 41 KULLAVIK.
 Bor i Göteborg (O).', 'MAN', 433, 434, 435, null, null);
 
@@ -1249,7 +1250,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (436, 29, 5, 1942, '1942-05-29', '', 197);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (437, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (438, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (64, 'Øverläkare vid regionsjukhuset i örebro', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (64, 146, 'Øverläkare vid regionsjukhuset i örebro', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (146, 'Harald', 'Moi', '', 'haraldmoi', '', 'MAN', 436, 437, 438, null, null);
 
 --======= Insert Person id: 147 =======
@@ -1257,7 +1258,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (439, 13, 3, 1974, '1974-03-13', '', 198);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (440, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (441, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (65, 'Studerande', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (65, 147, 'Studerande', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (147, 'Björn', 'Hegardt', '', 'bjornhegardt', 'Adress Drottninggatan 40 C, 702 22 ØREBRO.
 Bor i Ørebro (T).', 'UNKNOWN', 439, 440, 441, null, null);
 
@@ -1271,7 +1272,7 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (445, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (446, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (447, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (66, 'Sjökapten', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (66, 149, 'Sjökapten', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (149, 'Carl', 'Andersson', '', 'carlandersson', '', 'MAN', 445, 446, 447, null, null);
 
 --======= Insert Person id: 150 =======
@@ -1292,7 +1293,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (200, 'Johannesburg', 'Sydafrika', '', '', -26.20495, 28.03995, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (455, 5, 8, 1987, '1987-08-05', '', 200);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (456, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (67, 'Resebyråtjänsteman', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (67, 152, 'Resebyråtjänsteman', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (152, 'Anne', 'Hegardt', 'Louise', 'annelouisehegardt', '', 'UNKNOWN', 454, 455, 456, null, null);
 
 --======= Insert Person id: 153 =======
@@ -1300,7 +1301,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (457, 7, 2, 1958, '1958-02-07', '', 201);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (458, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (459, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (68, 'Konstnär', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (68, 153, 'Konstnär', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (153, 'Caroline', 'Hegardt', 'Louise', 'carolinelouisehegardt', 'Adress 58 Sparrow Cres, Flamingo Viei 7450, Cape Town, Sydafrika.
 Production Management diploma vid PM Institute,Sydafrika1983.
 BA vid University of South Africa.
@@ -1317,7 +1318,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (463, 8, 5, 1953, '1953-05-08', '', 202);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (464, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (465, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (69, 'Controller', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (69, 155, 'Controller', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (155, 'Christer', 'Hegardt', 'Nils, Peder', 'christernilspederhegardt', 'Adress Chemin de Hamo 20, CH1261 Chavonnes de Bogis, Schweiz.
 Civilekonom vid HEC 1978 i Lausanne, Schweiz.
 Jur kand 1982 i Stockholm (AB).
@@ -1329,7 +1330,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (466, 12, 1, 1956, '1956-01-12', '', 203);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (467, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (468, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (70, 'Vd', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (70, 156, 'Vd', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (156, 'Katharina', 'Hegardt', 'Elisabeth', 'katharinaelisabethhegardt', 'Adress Krokvägen 1, 182 74 STOCKSUND.
 Bor i Stocksund (AB).', 'UNKNOWN', 466, 467, 468, null, null);
 
@@ -1338,7 +1339,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (469, 14, 10, 1961, '1961-10-14', '', 204);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (470, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (471, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (71, 'Civilekonom', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (71, 157, 'Civilekonom', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (157, 'Claes', 'Hegardt', 'Fredrik, Bernhard', 'claesfredrikbernhardhegardt', 'Adress Invernessvägen 9, 182 76 STOCKSUND.
 Civilekonom 1986 i Stockholm (AB).
 Arbetar sedan 1978 vid ASEA i Västerås.
@@ -1349,7 +1350,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (472, 24, 1, 1945, '1945-01-24', '', 205);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (473, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (474, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (72, 'Direktör', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (72, 158, 'Direktör', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (158, 'Bernhard', 'Meyr', 'John', 'bernhardjohnmeyr', '', 'UNKNOWN', 472, 473, 474, null, null);
 
 --======= Insert Person id: 159 =======
@@ -1371,7 +1372,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (481, 24, 12, 1949, '1949-12-24', '', 208);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (482, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (483, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (73, 'Bankdirektör', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (73, 161, 'Bankdirektör', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (161, 'Hans-Peter', 'Ekeroth', 'Pedro', 'hans-peterpedroekeroth', '', 'UNKNOWN', 481, 482, 483, null, null);
 
 --======= Insert Person id: 162 =======
@@ -1386,7 +1387,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (487, 18, 8, 1917, '1917-08-18', '', 210);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (488, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (489, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (74, 'Direktör', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (74, 163, 'Direktör', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (163, 'Carl', 'Ekeroth', 'Gustaf, Philip', 'carlgustafphilipekeroth', '', 'MAN', 487, 488, 489, null, null);
 
 --======= Insert Person id: 164 =======
@@ -1399,7 +1400,7 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (493, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (494, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (495, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (75, 'Ingenjör', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (75, 165, 'Ingenjör', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (165, 'Sven', 'Koch', 'Viktor', 'svenviktorkoch', '', 'MAN', 493, 494, 495, null, null);
 
 --======= Insert Person id: 166 =======
@@ -1408,21 +1409,21 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (212, 'Karlsborg', 'Sverige', '', '', 58.53267, 14.50806, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (497, 25, 1, 1991, '1991-01-25', '', 212);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (498, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (76, 'Kaptainlöjtnant', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (76, 166, 'Kaptainlöjtnant', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (166, 'Poul', 'Lütken', 'Erik', 'pouleriklutken', '', 'UNKNOWN', 496, 497, 498, null, null);
 
 --======= Insert Person id: 167 =======
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (499, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (500, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (501, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (77, 'Ambassadör', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (77, 167, 'Ambassadör', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (167, 'Karl', 'Wollter', 'Anders', 'karlanderswollter', '', 'UNKNOWN', 499, 500, 501, null, null);
 
 --======= Insert Person id: 168 =======
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (502, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (503, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (504, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (78, 'Länsåklagare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (78, 168, 'Länsåklagare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (168, 'Lars', 'Dahlgren', '', 'larsdahlgren', '', 'UNKNOWN', 502, 503, 504, null, null);
 
 --======= Insert Person id: 169 =======
@@ -1437,7 +1438,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (508, 13, 6, 1968, '1968-06-13', '', 213);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (509, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (510, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (79, 'Studerande', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (79, 170, 'Studerande', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (170, 'Carl', 'Hegardt', 'Mikael', 'carlmikaelhegardt', 'Adress Fjeliev 11 B/3503, 227 36 LUND.
 Bor i Svanesund (O).', 'UNKNOWN', 508, 509, 510, null, null);
 
@@ -1446,7 +1447,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (511, 18, 2, 1971, '1971-02-18', '', 214);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (512, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (513, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (80, 'Studerande', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (80, 171, 'Studerande', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (171, 'Åsa', 'Hegardt', 'Christina', 'asachristinahegardt', 'Adress Stillingsön 405, 440 92 SVANESUND.
 Bor i Svanesund (O).', 'UNKNOWN', 511, 512, 513, null, null);
 
@@ -1455,7 +1456,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (514, 7, 2, 1973, '1973-02-07', '', 215);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (515, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (516, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (81, 'Studerande', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (81, 172, 'Studerande', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (172, 'David', 'Hegardt', 'Austin', 'davidaustinhegardt', 'Adress Modulatorg 17, 421 34 V FRØLUNDA.
 Bor i Västra Frölunda (O).', 'UNKNOWN', 514, 515, 516, null, null);
 
@@ -1464,7 +1465,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (517, 26, 5, 1974, '1974-05-26', '', 216);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (518, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (519, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (82, 'Studerande', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (82, 173, 'Studerande', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (173, 'Eric', 'Hegardt', 'Austin', 'ericaustinhegardt', 'Adress Modulatorg 17, 421 34 V FRØLUNDA.
 Bor i Västra Frölunda (O).', 'UNKNOWN', 517, 518, 519, null, null);
 
@@ -1482,7 +1483,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (220, 'Nordmark', 'Sverige', '', '', 59.83199, 14.10074, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (524, 28, 11, 1927, '1927-11-28', '', 220);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (525, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (83, 'Snickare i sandsjön', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (83, 175, 'Snickare i sandsjön', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (175, 'Oskar', 'Hegardt', 'Bernhard', 'oskarbernhardhegardt', '(Tab 12 i GS).', 'MAN', 523, 524, 525, null, null);
 
 --======= Insert Person id: 176 =======
@@ -1505,7 +1506,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (532, 17, 6, 1856, '1856-06-17', '', 224);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (533, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (534, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (84, 'Smed', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (84, 178, 'Smed', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (178, 'Johan', 'Hegardt', 'Vilhelm', 'johanvilhelmhegardt', '(Tab 11:62 i GS).', 'UNKNOWN', 532, 533, 534, null, null);
 
 --======= Insert Person id: 179 =======
@@ -1514,7 +1515,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (226, 'Stockholm', 'Sverige', '', '', 59.33257, 18.06683, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (536, 7, 9, 1941, '1941-09-07', '', 226);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (537, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (85, 'Skomakare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (85, 179, 'Skomakare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (179, 'Carl', 'Hegardt', 'Gustaf', 'carlgustafhegardt', '(Tab 16 i GS).
 De sista åren hade han en skomakeriverkstad.', 'MAN', 535, 536, 537, null, null);
 
@@ -1569,7 +1570,7 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (556, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (557, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (558, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (86, 'Lantbrukare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (86, 186, 'Lantbrukare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (186, 'Anders', 'Andersson', '', 'andersandersson', '', 'MAN', 556, 557, 558, null, null);
 
 --======= Insert Person id: 187 =======
@@ -1582,7 +1583,7 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (562, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (563, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (564, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (87, 'Bergsbruksidkare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (87, 188, 'Bergsbruksidkare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (188, 'Jöns', 'Berggren', '', 'jonsberggren', '', 'MAN', 562, 563, 564, null, null);
 
 --======= Insert Person id: 189 =======
@@ -1615,7 +1616,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (244, 'Stockholm', 'Sverige', '', '', 59.33257, 18.06683, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (575, 15, 3, 1927, '1927-03-15', '', 244);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (576, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (88, 'Byggnadssnickare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (88, 192, 'Byggnadssnickare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (192, 'Johan', 'Hegardt', 'Vilhelm', 'johanvilhelmhegardt', '(Tab 12:45 i GS).', 'UNKNOWN', 574, 575, 576, null, null);
 
 --======= Insert Person id: 193 =======
@@ -1632,7 +1633,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (580, 22, 3, 1882, '1882-03-22', '', 247);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (581, 23, 12, 1965, '1965-12-23', '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (582, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (89, 'Byggnadssnickare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (89, 194, 'Byggnadssnickare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (194, 'Gustaf', 'Hegardt', 'Robert', 'gustafroberthegardt', '(Tab 13 i GS).', 'MAN', 580, 581, 582, null, null);
 
 --======= Insert Person id: 195 =======
@@ -1649,7 +1650,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (251, 'Sollentuna', 'Sverige', '', '', 59.42921, 17.95181, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (587, 7, 12, 1948, '1948-12-07', '', 251);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (588, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (90, 'Fd byggnadssnickare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (90, 196, 'Fd byggnadssnickare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (196, 'Karl', 'Hegardt', 'Verner', 'karlvernerhegardt', '(Tab 12:51 i GS).', 'UNKNOWN', 586, 587, 588, null, null);
 
 --======= Insert Person id: 197 =======
@@ -1676,7 +1677,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (256, 'Stockholm', 'Sverige', '', '', 59.33257, 18.06683, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (596, 10, 2, 1951, '1951-02-10', '', 256);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (597, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (91, 'Köpman', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (91, 199, 'Köpman', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (199, 'Axel', 'Hegardt', 'Hilmer', 'axelhilmerhegardt', '(Tab 15 i GS).
 Innehade från 1926 Hegardts livs i Sundbyberg.', 'MAN', 595, 596, 597, null, null);
 
@@ -1725,7 +1726,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (267, 'Danderyd', 'Sverige', '', '', 59.39892, 18.03677, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (614, 28, 10, 1985, '1985-10-28', '', 267);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (615, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (92, 'Köpman', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (92, 205, 'Köpman', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (205, 'Johan', 'Hegardt', 'Valfrid', 'johanvalfridhegardt', '(Tab 17 i GS).
 Flyttade till Stockholm 1927.
 Arbetade då som försäljare i möbel- och klädesbranschen. Fortsatte med detta till 1947. Därefter egen köpman i choklad och konfektyr.', 'MAN', 613, 614, 615, null, null);
@@ -1735,7 +1736,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (616, 21, 3, 1901, '1901-03-21', '', 268);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (617, 22, 6, 1983, '1983-06-22', '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (618, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (93, 'Reparatör', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (93, 206, 'Reparatör', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (206, 'Karl', 'Hegardt', 'Ragnar', 'karlragnarhegardt', '(Tab 18 i GS).
 Tvilling med Ragnhild* Sofia Hegardt.', 'MAN', 616, 617, 618, null, null);
 
@@ -1782,7 +1783,7 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (634, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (635, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (636, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (94, 'Gruvarbetare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (94, 212, 'Gruvarbetare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (212, 'Olof', 'Olsson', '', 'olofolsson', '', 'MAN', 634, 635, 636, null, null);
 
 --======= Insert Person id: 213 =======
@@ -1791,7 +1792,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (278, 'Karlstad', 'Sverige', '', '', 59.3805, 13.49937, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (638, 28, 10, 1944, '1944-10-28', '', 278);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (639, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (95, 'Förman vid karlstads vattenledningsverk', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (95, 213, 'Förman vid karlstads vattenledningsverk', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (213, 'Axel', 'Gustafsson', 'Vilhelm', 'axelvilhelmgustafsson', '', 'UNKNOWN', 637, 638, 639, null, null);
 
 --======= Insert Person id: 214 =======
@@ -1820,7 +1821,7 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (649, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (650, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (651, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (96, 'Husägare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (96, 217, 'Husägare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (217, 'Erik', 'Andersson', '', 'erikandersson', '', 'MAN', 649, 650, 651, null, null);
 
 --======= Insert Person id: 218 =======
@@ -1852,8 +1853,8 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (661, 21, 2, 1922, '1922-02-21', '', 289);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (662, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (663, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (97, 'Adress box 60', null, null, null, null, null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (98, '680 92  nordmarkshyttan', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (97, 221, 'Adress box 60', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (98, 221, '680 92  nordmarkshyttan', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (221, 'Gerd', 'Hegardt', 'Aina, Maj-Britt', 'gerdainamaj-britthegardt', '(Tab 13:49 i GS).
 Bor i Nordmarkshyttan, Nordmark (S).', 'UNKNOWN', 661, 662, 663, null, null);
 
@@ -1863,7 +1864,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (291, 'Segeltorp', 'Sverige', '', '', 59.2794, 17.94289, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (665, 6, 12, 1973, '1973-12-06', '', 291);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (666, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (99, 'Metallslipare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (99, 222, 'Metallslipare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (222, 'Johan', 'Karlsson', 'Arvid', 'johanarvidkarlsson', '', 'UNKNOWN', 664, 665, 666, null, null);
 
 --======= Insert Person id: 223 =======
@@ -1891,7 +1892,7 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (676, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (677, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (678, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (100, 'Arbetare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (100, 226, 'Arbetare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (226, 'Sven', 'Lutman', 'Johan', 'svenjohanlutman', '', 'MAN', 676, 677, 678, null, null);
 
 --======= Insert Person id: 227 =======
@@ -1904,7 +1905,7 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (682, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (683, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (684, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (101, 'Lokomotivförare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (101, 228, 'Lokomotivförare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (228, 'Olof', 'Landin', 'Alfred', 'olofalfredlandin', '', 'MAN', 682, 683, 684, null, null);
 
 --======= Insert Person id: 229 =======
@@ -1928,7 +1929,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (299, 'Enderby', 'Canada', 'BC', '', 50.5509, -119.14016, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (692, 31, 1, 1996, '1996-01-31', '', 299);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (693, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (102, 'Skogsavverkningsentreprenör', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (102, 231, 'Skogsavverkningsentreprenör', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (231, 'George', 'Hagardt', 'Bernhard', 'georgebernhardhagardt', '(Tab 14:53 i GS).', 'MAN', 691, 692, 693, null, null);
 
 --======= Insert Person id: 232 =======
@@ -1937,7 +1938,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (301, 'Molkom', 'Karlstad', '', '', 59.60141, 13.72085, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (695, 27, 8, 1974, '1974-08-27', '', 301);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (696, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (103, 'Föreståndare för normarksbergs godsstation', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (103, 232, 'Föreståndare för normarksbergs godsstation', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (232, 'Karl', 'Persson', 'Alfred', 'karlalfredpersson', '', 'UNKNOWN', 694, 695, 696, null, null);
 
 --======= Insert Person id: 233 =======
@@ -1962,7 +1963,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (703, 21, 3, 1922, '1922-03-21', '', 306);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (704, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (705, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (104, 'Grafiker', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (104, 235, 'Grafiker', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (235, 'Rune', 'Hegardt', 'Axel, Gunnar', 'runeaxelgunnarhegardt', 'Adress Eskaderv 14, 183 54 TÄBY.
 (Tab 15:57 i GS).
 Bor i Stockholm (AB).', 'UNKNOWN', 703, 704, 705, null, null);
@@ -1992,7 +1993,7 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (715, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (716, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (717, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (105, 'Arrendator', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (105, 239, 'Arrendator', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (239, 'Lars', 'Jansson', 'Alfred', 'larsalfredjansson', '', 'MAN', 715, 716, 717, null, null);
 
 --======= Insert Person id: 240 =======
@@ -2000,7 +2001,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (718, 23, 8, 1914, '1914-08-23', '', 310);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (719, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (720, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (106, 'Fd byggnadssnickare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (106, 240, 'Fd byggnadssnickare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (240, 'Hilmer', 'Lindman', 'Fredrik', 'hilmerfredriklindman', '', 'UNKNOWN', 718, 719, 720, null, null);
 
 --======= Insert Person id: 241 =======
@@ -2020,7 +2021,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (727, 4, 9, 1931, '1931-09-04', '', 311);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (728, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (729, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (107, 'Sjuksköterska', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (107, 243, 'Sjuksköterska', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (243, 'Elinor', 'Faulkner', 'Anne', 'elinorannefaulkner', '', 'WOMAN', 727, 728, 729, null, null);
 
 --======= Insert Person id: 244 =======
@@ -2028,7 +2029,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (730, 9, 3, 1953, '1953-03-09', '', 312);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (731, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (732, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (108, 'Elektriker', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (108, 244, 'Elektriker', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (244, 'Ronald', 'Hagardt', 'George', 'ronaldgeorgehagardt', 'Adress RR2 S5 C6, Enderby, BC, V0E 1V0, Canada.
 Bor i Enderby, BC, Canada.', 'MAN', 730, 731, 732, null, null);
 
@@ -2037,7 +2038,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (733, 29, 6, 1954, '1954-06-29', '', 313);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (734, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (735, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (109, 'Sjuksköterska', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (109, 245, 'Sjuksköterska', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (245, 'Rosalie', 'Hagardt', 'Dawn', 'rosaliedawnhagardt', 'Adress Box 33, Grindrod, BC, V0E 1V0, Canada.
 Bor i Grindrod, BC, Canada.', 'UNKNOWN', 733, 734, 735, null, null);
 
@@ -2046,7 +2047,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (736, 18, 1, 1956, '1956-01-18', '', 314);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (737, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (738, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (110, 'Lärare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (110, 246, 'Lärare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (246, 'William', 'Hagardt', 'Bruce', 'williambrucehagardt', 'Adress 1330-12 Ave SE, Salmon Arm, BC, V1E 2C7, Canada.
 Bor i Salmon Arm, BC, Canada.', 'MAN', 736, 737, 738, null, null);
 
@@ -2055,11 +2056,11 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (739, 23, 1, 1958, '1958-01-23', '', 315);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (740, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (741, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (111, 'Adress 1560 15th st se', null, null, null, null, null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (112, 'Salmon arm', null, null, null, null, null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (113, 'Bc', null, null, null, null, null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (114, 'Vie 2g2', null, null, null, null, null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (115, 'Canada', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (111, 247, 'Adress 1560 15th st se', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (112, 247, 'Salmon arm', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (113, 247, 'Bc', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (114, 247, 'Vie 2g2', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (115, 247, 'Canada', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (247, 'Catherine', 'Hagardt', 'Anne', 'catherineannehagardt', 'Bor i Salmon Arm, BC, Canada.', 'UNKNOWN', 739, 740, 741, null, null);
 
 --======= Insert Person id: 248 =======
@@ -2075,7 +2076,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (745, 11, 6, 1953, '1953-06-11', '', 318);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (746, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (747, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (116, 'Tandtekniker', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (116, 249, 'Tandtekniker', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (249, 'Margret', 'Duxbury', 'Jean', 'margretjeanduxbury', '', 'WOMAN', 745, 746, 747, null, null);
 
 --======= Insert Person id: 250 =======
@@ -2183,7 +2184,7 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (793, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (794, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (795, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (117, 'Hyttarbetare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (117, 265, 'Hyttarbetare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (265, 'Olof', 'Henriksson', '', 'olofhenriksson', '', 'MAN', 793, 794, 795, null, null);
 
 --======= Insert Person id: 266 =======
@@ -2191,7 +2192,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (796, 24, 10, 1894, '1894-10-24', '', 330);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (797, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (798, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (118, 'Förman vid casco i nacka', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (118, 266, 'Förman vid casco i nacka', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (266, 'John', 'Svahn', 'Fritiof, Ragnar', 'johnfritiofragnarsvahn', '', 'UNKNOWN', 796, 797, 798, null, null);
 
 --======= Insert Person id: 267 =======
@@ -2214,7 +2215,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (805, 6, 10, 1922, '1922-10-06', '', 334);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (806, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (807, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (119, 'Fd chefssekreterare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (119, 269, 'Fd chefssekreterare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (269, 'Ingrid', 'Hegardt', 'Elisabet, Ingalill', 'ingridelisabetingalillhegardt', 'Adress Oxelvägen 21#138 00 ÄLTA###Holsgård.
 (Tab 17:66 i GS).
 Studentexamen 1952 i Stockholm (AB).
@@ -2227,8 +2228,8 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (808, 19, 6, 1945, '1945-06-19', '', 335);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (809, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (810, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (120, 'Adress bergvägen 64', null, null, null, null, null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (121, '186 41  vallentuna', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (120, 270, 'Adress bergvägen 64', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (121, 270, '186 41  vallentuna', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (270, 'Johan', 'Hegardt', 'Henrik, Christer', 'johanhenrikchristerhegardt', 'Bor i Vallentuna (AB).', 'MAN', 808, 809, 810, null, null);
 
 --======= Insert Person id: 271 =======
@@ -2236,8 +2237,8 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (811, 5, 11, 1948, '1948-11-05', '', 336);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (812, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (813, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (122, 'Adress aug wahlströms väg 1', null, null, null, null, null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (123, '182 31  danderyd', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (122, 271, 'Adress aug wahlströms väg 1', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (123, 271, '182 31  danderyd', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (271, 'Astrid', 'Hegardt', 'Christina', 'astridchristinahegardt', 'Bor i Danderyd (AB).', 'UNKNOWN', 811, 812, 813, null, null);
 
 --======= Insert Person id: 272 =======
@@ -2252,8 +2253,8 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (817, 2, 11, 1924, '1924-11-02', '', 338);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (818, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (819, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (124, 'Adress kevingeringen 83', null, null, null, null, null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (125, '182 33  danderyd', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (124, 273, 'Adress kevingeringen 83', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (125, 273, '182 33  danderyd', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (273, 'Gun', 'Hegardt', 'Hildegard', 'gunhildegardhegardt', '(Tab 18:68 i GS).
 Bor i Danderyd (AB).', 'UNKNOWN', 817, 818, 819, null, null);
 
@@ -2262,8 +2263,8 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (820, 19, 2, 1934, '1934-02-19', '', 339);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (821, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (822, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (126, 'Adress franstorpsvägen 27', null, null, null, null, null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (127, '172 36  sundbyberg', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (126, 274, 'Adress franstorpsvägen 27', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (127, 274, '172 36  sundbyberg', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (274, 'Karl', 'Hegardt', 'Gunnar', 'karlgunnarhegardt', 'Bor i Sundbyberg (AB).', 'MAN', 820, 821, 822, null, null);
 
 --======= Insert Person id: 275 =======
@@ -2271,7 +2272,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (823, 10, 8, 1899, '1899-08-10', '', 340);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (824, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (825, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (128, 'Inspektör', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (128, 275, 'Inspektör', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (275, 'John', 'Zetterstad', 'Hernfrid, Karlsson', 'johnhernfridkarlssonzetterstad', '', 'UNKNOWN', 823, 824, 825, null, null);
 
 --======= Insert Person id: 276 =======
@@ -2280,7 +2281,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (342, 'Solna', 'Sverige', '', '', 59.35869, 18.00296, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (827, 5, 3, 1989, '1989-03-05', '', 342);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (828, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (129, 'Avdelningschef på bpa', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (129, 276, 'Avdelningschef på bpa', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (276, 'Evert', 'Gustafsson', 'Axel', 'evertaxelgustafsson', '', 'UNKNOWN', 826, 827, 828, null, null);
 
 --======= Insert Person id: 277 =======
@@ -2301,7 +2302,7 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (835, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (836, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (837, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (130, 'Hemmansägare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (130, 279, 'Hemmansägare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (279, 'Karl', 'Andersson', 'Adam', 'karladamandersson', '', 'MAN', 835, 836, 837, null, null);
 
 --======= Insert Person id: 280 =======
@@ -2321,8 +2322,8 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (844, 1, 7, 1968, '1968-07-01', '', 345);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (845, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (846, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (131, 'Adress bergvägen 64', null, null, null, null, null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (132, '186 41  vallentuna', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (131, 282, 'Adress bergvägen 64', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (132, 282, '186 41  vallentuna', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (282, 'Peter', 'Hegardt', '', 'peterhegardt', 'Bor i Vallentuna (AB).', 'UNKNOWN', 844, 845, 846, null, null);
 
 --======= Insert Person id: 283 =======
@@ -2330,8 +2331,8 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (847, 6, 5, 1971, '1971-05-06', '', 346);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (848, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (849, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (133, 'Adress bergvägen 64', null, null, null, null, null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (134, '186 41  vallentuna', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (133, 283, 'Adress bergvägen 64', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (134, 283, '186 41  vallentuna', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (283, 'Anders', 'Hegardt', '', 'andershegardt', 'Bor i Vallentuna (AB).', 'UNKNOWN', 847, 848, 849, null, null);
 
 --======= Insert Person id: 284 =======
@@ -2339,7 +2340,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (850, 27, 3, 1976, '1976-03-27', '', 347);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (851, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (852, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (135, 'Studerande', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (135, 284, 'Studerande', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (284, 'Anne-Marie', 'Hegardt', '', 'anne-mariehegardt', 'Adress Bergv 64, 186 41 VALLENTUNA.
 1994.
 Bor i Vallentuna (AB).', 'UNKNOWN', 850, 851, 852, null, null);
@@ -2410,7 +2411,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (361, 'Sontorp', 'Värnamo', '', '', 57.18641, 14.04242, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (878, 21, 3, 1869, '1869-03-21', '', 361);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (879, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (136, 'Grosshandlare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (136, 293, 'Grosshandlare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (293, 'Gustaf', 'Hegardt', 'Leopold', 'gustafleopoldhegardt', '(Tab 21 i GS).
 Leopold var syssling med sin hustru.
 Efter skolgång i Göteborg kom H på kontor hos sin morbror, major Koch på Vågsäter och stannade där till 1844. Fick detta år burskap som borgare och grosshandlare i Uddevalla. Ägde åren 1844-1851 Sörviks herrgård i Herrestad vid Uddevalla. Sedan dels arrenderade, dels förvaltade han efter varandra Tanums prästgård i Bohuslän, Longs kaptensboställe i Long (Skarab), Aspö herrgård nära Skövde samt Norrhorja i Värnamo. Uppsade burskapet 1854.', 'MAN', 877, 878, 879, null, null);
@@ -2461,7 +2462,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (373, 'Uddevalla', 'Sverige', '', '', 58.35096, 11.93264, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (896, 18, 5, 1875, '1875-05-18', '', 373);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (897, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (137, 'Bokhållare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (137, 299, 'Bokhållare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (299, 'Gustaf', 'Hegardt', 'Mikaël', 'gustafmikaelhegardt', '(Tab 22 i GS).
 Genomgick, efter skolgång i Uddevalla och Jönköping, åren 1862-63 Askenstedtska privata handelsinstitut i Uddevalla och hade, från sistnämnda år anställning som bokhållare hos firman W Thorburns söner i Uddevalla. Ledamot av styrelsen för Uddevalla museum 1869 och från 1870 tillika dess sekreterare.
 "Redbar, skicklig och mångkunnig i sitt yrke, blev han värderad av principaler och yrkesbröder samt ofta anlitad om råd och upplysningar av långt äldre personer. Redan tidigt användes han också i olika, mer eller mindre offentliga värv, såsom inom fattigvården, frivilliga brand? och skarpskyttekåren samt varjehanda föreningar. Hans livliga och vetgiriga sinne var dessutom icke allenast för alla dagens frågor, utan även för förflutna tiders minnen. I många år nitisk medlem av museistyrelsen härstädes, intresserade han sig där med förkärlek för konst? och fornsaker samt numismatik. ---" Begravdes 23/5 i närvaro av en "oräknelig människomassa". (Bohusl tidn 1875 21/5 och 23/5.)', 'MAN', 895, 896, 897, null, null);
@@ -2500,7 +2501,7 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (910, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (911, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (912, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (138, 'Grosshandlare och häradshövding', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (138, 304, 'Grosshandlare och häradshövding', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (304, 'Martin', 'Bagge', '', 'martinbagge', '', 'MAN', 910, 911, 912, null, null);
 
 --======= Insert Person id: 305 =======
@@ -2517,7 +2518,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (383, 'Vänersborg', 'Sverige', '', '', 58.38189, 12.3243, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (917, 22, 8, 1919, '1919-08-22', '', 383);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (918, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (139, 'Köpman', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (139, 306, 'Köpman', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (306, 'Gustaf', 'Hegardt', 'Martin, Henrik', 'gustafmartinhenrikhegardt', '(Tab 23 i GS).
 Efter avslutade skolstudier i Vänersborg hade han plats som handelsbiträde dels i denna stad, dels i Skövde och Göteborg samt etablerade 1900 egen manufakturaffär i Vänersborg, vilken han innehade till sin död.
 "Henrik Hegardt har varit en redbar och kunnig köpman, som åtnjutit allas odelade förtroende, därtill tjänstvillig och ägnade ett gott sätt mot kunderna. Med sitt enkla gladlynta väsen förvärvade han många vänner och var en omtyckt ordensbroder. Inom såväl frimurarorden som Par Bricole intog han höga grader." (Älvsb läns annonsblad 1919 30/8.)', 'MAN', 916, 917, 918, null, null);
@@ -2547,7 +2548,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (389, 'Stockholm', 'Sverige', '', '', 59.33257, 18.06683, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (926, 21, 3, 1891, '1891-03-21', '', 389);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (927, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (140, 'Kommendörkapten av 1:a graden', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (140, 309, 'Kommendörkapten av 1:a graden', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (309, 'Yngve', 'Christierson', 'Niord', 'yngveniordchristierson', '', 'UNKNOWN', 925, 926, 927, null, null);
 
 --======= Insert Person id: 310 =======
@@ -2560,7 +2561,7 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (931, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (932, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (933, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (141, 'Lantbrukare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (141, 311, 'Lantbrukare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (311, 'Johan', 'Carlström', 'Henrik', 'johanhenrikcarlstrom', '', 'MAN', 931, 932, 933, null, null);
 
 --======= Insert Person id: 312 =======
@@ -2602,7 +2603,7 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (946, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (947, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (948, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (142, 'Skomakare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (142, 316, 'Skomakare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (316, 'Olof', 'Andersson', 'Gustaf', 'olofgustafandersson', '', 'MAN', 946, 947, 948, null, null);
 
 --======= Insert Person id: 317 =======
@@ -2618,8 +2619,8 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (952, 31, 10, 1914, '1914-10-31', '', 398);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (953, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (954, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (143, 'Adress drottninggatan 37 a', null, null, null, null, null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (144, '652 25  karlstad', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (143, 318, 'Adress drottninggatan 37 a', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (144, 318, '652 25  karlstad', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (318, 'Rosa', 'Hegardt', 'Karin, Sofia', 'rosakarinsofiahegardt', 'Bor i Karlstad (S).', 'WOMAN', 952, 953, 954, null, null);
 
 --======= Insert Person id: 319 =======
@@ -2636,7 +2637,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (402, 'på tingsstället Skansen i Kungsbacka', 'Sverige', '', '', 57.48494, 12.06832, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (959, 5, 10, 1868, '1868-10-05', '', 402);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (960, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (145, 'Borgmästare och rådman', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (145, 320, 'Borgmästare och rådman', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (320, 'Johannes', 'Hegardt', '', 'johanneshegardt', '(Tab 27 i GS).
 Johannes sattes hösten 1806, efter branden i Uddevalla, tillsammans med de yngre bröderna i pension i Halland, där de undervisades av informatorer (bl a sedermera ärkebiskop Reuterdahl) och var där till 1811. Student i Lund 1815. Kameralexamen 1816. Student i Uppsala 1817. Hovrättsexamen samma år. Auskultant i Svea hovrätt samma år. Extra kanslist i bondeståndet vid urtima riksdagen 1817 ? 1818.
 Eo kanslist vid justitiefördelningen av Kungl Maj:ts kansli 1818. Eo notarie i Svea hovrätt samma år. Auskultant i Göta hovrätt samma år. Hade detta år och 1819 åtskilliga domarförordnanden i Bohuslän.
@@ -2659,8 +2660,8 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (406, 'Marseille', 'Frankrike', '', '', 43.29337, 5.37133, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (965, null, null, 1846, '1846-01-01', '', 406);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (966, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (146, 'Handelsbokhållare i alicante', null, null, null, null, null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (147, 'Spanien', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (146, 322, 'Handelsbokhållare i alicante', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (147, 322, 'Spanien', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (322, 'Karl', 'Hegardt', 'Emil, Charlemil', 'karlemilcharlemilhegardt', '(Tab 26:151 i GS).', 'UNKNOWN', 964, 965, 966, null, null);
 
 --======= Insert Person id: 323 =======
@@ -2669,7 +2670,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (408, 'Göteborg', 'Sverige', '', '', 57.70067, 11.96822, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (968, 17, 12, 1866, '1866-12-17', '', 408);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (969, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (148, 'Grosshandlare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (148, 323, 'Grosshandlare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (323, 'Vilhelm', 'Hegardt', '', 'vilhelmhegardt', '(Tab 26:152 i GS).
 "Redan för många år tillbaka hade han dragit sig ifrån den egentliga affärsvärlden och levde nu som gammal ungkarl så gott som uteslutande för tvenne föremål: politiken och musiken. Få människor torde bättre än han ha följt med vad som tilldrog sig både på den stora skådebanan, där nationers öden avgöras, och på den mindre, där kommunens viktiga frågor dragas fram på scenen. Till följd därav var han en passionerad tidningsläsare och man kunde vara övertygad om att, lika säkert som solen går upp om morgonen och ner om aftonen, lika säkert framträdde H morgon och afton strax före tidningarnas ankomst på Siemens Kafés horisont, det kafé, där han sedan många år brukade intaga sina alltid enkla och måttliga morgon? och aftonmåltider. Då fanns det för honom ingenting kärare än att träffa på en person, med vilken han kunde få diskutera, och en sådan fattades vanligen icke.
 Och nu avgjordes världens öden som en dans, Napoleons och Bismarcks finaste diplomatiska finter förutsades eller kommenterades och detta vanligen med en så ytterlig häftig het, att den som icke kände till förhållandena lätteligen kunde tro, att den spenslige, ännu vid 65 år ungdomligt rörliga gubben med de livliga ögonen, det mörka håret och den något sydländska ansiktsfärgen, var på allvar uppretad. Men några minuter därefter var han åter lugn och vänlig igen.
@@ -2756,7 +2757,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (997, 3, 2, 1905, '1905-02-03', '', 427);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (998, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (999, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (149, 'Fd skolkökslärarinna', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (149, 333, 'Fd skolkökslärarinna', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (333, 'Alma', 'Thulin', 'Ingeborg', 'almaingeborgthulin', 'Adress St Trädgårdsgatan 15 A? 543 35 VÄSTERVIK.', 'WOMAN', 997, 998, 999, null, null);
 
 --======= Insert Person id: 334 =======
@@ -2780,7 +2781,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1006, 16, 11, 1933, '1933-11-16', '', 432);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1007, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1008, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (150, 'Adjunkt', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (150, 336, 'Adjunkt', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (336, 'Alma', 'Hegardt', 'Birgitta', 'almabirgittahegardt', 'Adress Malma Ringväg 7, 752 45 UPPSALA.
 Fil mag 1959.
 Bor i Uppsala (C).', 'UNKNOWN', 1006, 1007, 1008, null, null);
@@ -2791,7 +2792,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (434, 'Åkarp', 'Sverige', '', '', 55.6495, 13.1105, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1010, 11, 2, 1998, '1998-02-11', '', 434);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1011, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (151, 'Bankkamrer', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (151, 337, 'Bankkamrer', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (337, 'Gustaf', 'Hegardt', 'Peter', 'gustafpeterhegardt', 'Studentexamen 1955 i Västervik (H).
 Handelsgymnasieexamen 1958 vid Göteborgs handelsinstitut. Hochschule für Welthandel, Wien, Østerrike 1965-67.', 'MAN', 1009, 1010, 1011, null, null);
 
@@ -2800,7 +2801,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1012, 16, 5, 1943, '1943-05-16', '', 435);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1013, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1014, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (152, 'Marknadsdirektör', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (152, 338, 'Marknadsdirektör', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (338, 'Gustaf', 'Hegardt', 'Magnus', 'gustafmagnushegardt', 'Adress Rådhusgatan 28, 593 33 VÄSTERVIK.
 Studentexamen 1963 i Västervik (H).
 Fil mag 1967 i Uppsala (C).
@@ -2825,7 +2826,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1021, 18, 5, 1900, '1900-05-18', '', 438);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1022, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1023, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (153, 'Löjtnant', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (153, 341, 'Löjtnant', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (341, 'Carl', 'Lindberg', 'Paul', 'carlpaullindberg', '', 'UNKNOWN', 1021, 1022, 1023, null, null);
 
 --======= Insert Person id: 342 =======
@@ -2833,7 +2834,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1024, 29, 10, 1932, '1932-10-29', '', 439);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1025, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1026, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (154, 'Forskningskemist', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (154, 342, 'Forskningskemist', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (342, 'Marius', 'Joustra', '', 'mariusjoustra', '', 'UNKNOWN', 1024, 1025, 1026, null, null);
 
 --======= Insert Person id: 343 =======
@@ -2841,7 +2842,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1027, 29, 7, 1939, '1939-07-29', '', 440);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1028, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1029, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (155, 'Lågstadielärare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (155, 343, 'Lågstadielärare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (343, 'Monica', 'Helmers', '', 'monicahelmers', 'Adress Hornsgatan 5, 234 32 LOMMA.
 Studentexamen 1960.
 Småskollärarexamen 1962.', 'WOMAN', 1027, 1028, 1029, null, null);
@@ -2851,7 +2852,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1030, 22, 7, 1974, '1974-07-22', '', 441);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1031, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1032, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (156, 'Studerande', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (156, 344, 'Studerande', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (344, 'Thomas', 'Hegardt', 'Peter', 'thomaspeterhegardt', 'Adress Hornsgatan 5, 234 32 LOMMA.
 Bor i Åkarp (M).', 'UNKNOWN', 1030, 1031, 1032, null, null);
 
@@ -2860,7 +2861,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1033, 21, 1, 1976, '1976-01-21', '', 442);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1034, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1035, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (157, 'Studerande', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (157, 345, 'Studerande', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (345, 'Anna', 'Hegardt', 'Monica', 'annamonicahegardt', 'Adress Hornsgatan 5, 234 32 LOMMA.
 1994.
 Bor i Åkarp (M).', 'UNKNOWN', 1033, 1034, 1035, null, null);
@@ -2875,7 +2876,7 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1039, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1040, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1041, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (158, 'Lantbrukare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (158, 347, 'Lantbrukare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (347, 'Anders', 'Ahlgren', 'Magnus', 'andersmagnusahlgren', '', 'MAN', 1039, 1040, 1041, null, null);
 
 --======= Insert Person id: 348 =======
@@ -2889,7 +2890,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1045, 11, 5, 1948, '1948-05-11', '', 443);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1046, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1047, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (159, 'Adjunkt', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (159, 349, 'Adjunkt', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (349, 'Thomas', 'Jonsson', 'Gunnar, Leopold', 'thomasgunnarleopoldjonsson', 'Adress Gröna vägen 42 A, 541 54 SKØVDE.
 Studentexamen vid Sundstagymnasiet 1968 i Karlstad.
 Fil kand vid Uppsala universitet 1973 .
@@ -2906,7 +2907,7 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1051, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1052, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1053, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (160, 'Kyrkoherde', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (160, 351, 'Kyrkoherde', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (351, 'Hans', 'Gjædda', '', 'hansgjædda', '', 'MAN', 1051, 1052, 1053, null, null);
 
 --======= Insert Person id: 352 =======
@@ -2922,7 +2923,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (446, 'Uddevalla', 'Sverige', '', '', 58.35096, 11.93264, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1058, 22, 7, 1802, '1802-07-22', '', 446);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1059, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (161, 'Handlande i uddevalla', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (161, 353, 'Handlande i uddevalla', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (353, 'Kristian', 'Hammar', 'Rutger', 'kristianrutgerhammar', '', 'UNKNOWN', 1057, 1058, 1059, null, null);
 
 --======= Insert Person id: 354 =======
@@ -2931,7 +2932,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (448, 'Varberg', 'Sverige', '', '', 57.10789, 12.24901, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1061, 13, 3, 1852, '1852-03-13', '', 448);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1062, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (162, 'Handlande och åren 1804', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (162, 354, 'Handlande och åren 1804', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (354, 'Karl', 'Bagge', 'Kristian', 'karlkristianbagge', '', 'UNKNOWN', 1060, 1061, 1062, null, null);
 
 --======= Insert Person id: 355 =======
@@ -2956,7 +2957,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (454, 'på Drottningholm i Lovö', 'Sverige', '', '', 59.31025, 17.8608, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1070, 26, 2, 1871, '1871-02-26', '', 454);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1071, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (163, 'Regementsläkare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (163, 357, 'Regementsläkare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (357, 'Johan', 'Hegardt', 'Lechard', 'johanlechardhegardt', '(Tab 39 i GS).
 Student i Lund 1822 och i Uppsala 1827. Studerade först juridik, sedan medicin. Med kand hösten 1840. Med lic 1843 och kir magister 1846. Underläkare vid Allmänna garnisonssjukhuset i Stockholm 1834-35. Stipendiat i fältläkarkåren 1835 och pensionär 1841. Tjf bataljonsläkare vid Livregementets dragonkår 1835 och tf sådan samma år. Extra bataljonsläkare vid instruktionsbataljonen på Drottningholm 1836 och vid Upplands regementes rekrytkompani där 1845.
 Slottsläkare på Drottningholm 1843, bataljonsläkare 1847, 1:e d:o 1852 och regementsläkare 1859 allt vid dragonkåren. Död i tjänsten.
@@ -3000,7 +3001,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (464, 'Starrkärr', 'Sverige', '', '', 58.11331, 11.84697, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1085, 27, 6, 1903, '1903-06-27', '', 464);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1086, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (164, 'Kontraktsprost', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (164, 362, 'Kontraktsprost', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (362, 'Lechard', 'Hegardt', 'Josias', 'lechardjosiashegardt', '(Tab 40 i GS).
 Student i Uppsala 1837. Teoretisk och praktisk teol examen 1841. Prästvigd 1842. Disputerade för pastoralexamen 1853 och avlade denna examen 1859.
 Var åren 1838-40 informator hos friherre N Silferschöld på Koberg. Adjunkt i Forshälla församling hos svågerns bror, kyrkoherde Karl Ullman 1842-45. Adjunkt i domkyrkoförsamlingen i Göteborg 1845. Tf vice pastor där 1847 och vice pastor 1856 samt 1862 kyrkoherde i Starrkärrs pastorat, där han sedan verkade i nära 40 år och slöt sina dagar som stiftets senior. Kontraktsprost i domprosteriets norra kontrakt 1865-91. Ledamot av Göteborgs bibelsällskap 1853 och av Älvsborgs läns hushållningssällskap 1865. LVO 1885.
@@ -3029,7 +3030,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (470, 'Göteborg', 'Sverige', '', '', 57.70067, 11.96822, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1094, 17, 6, 1819, '1819-06-17', '', 470);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1095, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (165, 'Tullförvaltare i göteborg', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (165, 365, 'Tullförvaltare i göteborg', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (365, 'Karl', 'Lamberg', 'August', 'karlaugustlamberg', '', 'UNKNOWN', 1093, 1094, 1095, null, null);
 
 --======= Insert Person id: 366 =======
@@ -3080,7 +3081,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (482, 'Stockholm', 'Sverige', '', '', 59.33257, 18.06683, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1112, 14, 12, 1898, '1898-12-14', '', 482);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1113, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (166, 'Major', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (166, 371, 'Major', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (371, 'Nils', 'Hegardt', 'Josias', 'nilsjosiashegardt', '(Tab 28 i GS).
 Genomgick Strömstads storskola och Göteborgs gymnasium samt avlade studentexamen i Uppsala 1847. Volontär vid Västgötadals regemente 1846. Furir 1847, kommenderad med regementet till Danmark 1848. Officersexamen 1849, underlöjtnant vid regementet samma år, löjtnant 1851, 2:e adjutant 1852 och 1:e adjutant 1853. 2:e kapten 1864, 1:e kapten och kompanichef 1872. Major i armén 1878 och avsked ur armén 1882. RSO 1873.
 Var överkontrollör vid brännvinstillverkningen 1876-1897 och kontrollant vid denaturering av brännvin inom Stockholms stad 1897 till sin död.
@@ -3092,8 +3093,8 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (484, 'Ørebro', 'Sverige', '', '', 59.27084, 15.21759, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1115, 19, 2, 1903, '1903-02-19', '', 484);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1116, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (167, 'Godsägare', null, null, null, null, null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (168, 'Øverstelöjtnant', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (167, 372, 'Godsägare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (168, 372, 'Øverstelöjtnant', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (372, 'Henrik', 'Hegardt', 'Bernhard', 'henrikbernhardhegardt', '(Tab 34 i GS).
 Kadett vid krigsakademin 1845 och utexaminerad 1850. Underlöjtnant vid Västgötadals regemente samma år och avancerade sedan till major 1878 vid samma regemente. Øverstelöjtnant och 1:e major vid Nerikes regemente 1882 samt avsked 1886. Genomgick GCI 1852-53. Øverbefälhavare för Vänersborgs frivilliga skarpskytteförening 1862-63. Stadsfullmäktig i Vänersborg 1867-82 och ordförande i drätselkammaren 1872-82. Ledamot av styrelsen för Vänersborgs enskilda bank 1867-82. Verkställande direktör i Uddevalla - Vänersborg - Herrljunga järnväg 1872-82. Ordförande i styrelsen för Ørebro enskilda bank 1892-1903. RSO 1874 och KVO 1899.
 Ägde Irvingsholm och Latorp bruk, båda i Tysslinge sn (Ørebro).
@@ -3105,7 +3106,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (486, 'Göteborg', 'Sverige', '', '', 57.70067, 11.96822, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1118, 13, 8, 1898, '1898-08-13', '', 486);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1119, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (169, 'Grosshandlare i göteborg', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (169, 373, 'Grosshandlare i göteborg', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (373, 'John', 'Hegardt', '', 'johnhegardt', '(Tab 27:142 i GS).', 'UNKNOWN', 1117, 1118, 1119, null, null);
 
 --======= Insert Person id: 374 =======
@@ -3122,7 +3123,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (490, 'på Björkedalen i Göteborg', 'Sverige', '', '', 57.78497, 12.10035, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1124, 8, 8, 1879, '1879-08-08', '', 490);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1125, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (170, 'Jurist', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (170, 375, 'Jurist', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (375, 'Axel', 'Hegardt', 'Kristian', 'axelkristianhegardt', '(Tab 36 i GS).
 Studentexamen i Lund 1857. Jur prel examen 1858. Examen för inträde vid rikets rättegångsverk 1861. Auskultant i hovrätten över Skåne och Blekinge samma år och i Göta hovrätt 1863. Tjänstgjorde som biträde åt lantdomare åren 1861?66 och från 1866 i Göteborgs poliskammare. Polissekreterare där 1869. Sekreterare i fattigvårdsstyrelsen samma år. Hade åren 1869?73 åtskilliga förordnanden som stadsnotarie. Blev sterbhusnotarie 1874.
 Är liksom sin hustru gravsatt på Fristads kyrkogård i von Kochska familjegraven.', 'MAN', 1123, 1124, 1125, null, null);
@@ -3133,7 +3134,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (492, 'Göteborg', 'Sverige', '', '', 57.70067, 11.96822, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1127, 10, 7, 1911, '1911-07-10', '', 492);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1128, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (171, 'Stadsauktuarie', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (171, 376, 'Stadsauktuarie', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (376, 'Karl', 'Hegardt', 'Francis, Vilhelm', 'karlfrancisvilhelmhegardt', '(Tab 27:149 i GS).
 Mogenhetsexamen i Göteborg 1866. Student i Uppsala samma år. juridisk preliminärexamen 1867. Hovrättsexamen 1870. Auskultant i Göta hovrätt 1871 och eo notarie där samma år. Tf domhavande i Fjäre och Viske häraders domsaga sammanlagt 2 månader under 1872 och 1873. V häradshövding 1873. Hade åren 1876, 1878 och 1879 förordnanden som sekreterare i Göteborgs fattigvårdsstyrelse och 1881-1883 som stadsnotarie vid rådhusrätten. Kanslist hos stadsauktuarien 1879. Polisnotarie 1884. Polissekreterare samma år och stadsauktuarie 1894 till sin död (allt i Göteborg).
 "Hegardt var av ett rätt inbundet väsen. Bakom den till synes sträva ytan doldes emellertid ett utomordentligt gott hjärta och en hjälpsamhet som aldrig tvekade, då det gällde att räcka en nödställd en stödjande hand. I sitt arbete var han utpräglat punktlig och noggrann, och ett mönster av plikttrohet. (Göteb H & Sj tidn 10/7 1911.) Francis var en framstående violinist och medlem i ett enskilt kammarmusiksällskap.', 'UNKNOWN', 1126, 1127, 1128, null, null);
@@ -3148,7 +3149,7 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1132, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1133, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1134, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (172, 'Major', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (172, 378, 'Major', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (378, 'Nils', 'Koch', 'von', 'nilsvonkoch', 'Adliga ätten nr 2244.', 'MAN', 1132, 1133, 1134, null, null);
 
 --======= Insert Person id: 379 =======
@@ -3165,7 +3166,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (496, 'Stockholm', 'Sverige', '', '', 59.33257, 18.06683, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1139, 31, 10, 1905, '1905-10-31', '', 496);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1140, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (173, 'Grosshandlare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (173, 380, 'Grosshandlare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (380, 'Nils', 'Hegardt', 'Johannes', 'nilsjohanneshegardt', '(Tab 29 i GS).
 Mogenhetsexamen 1874 i Vänersborg (P).
 Handelsbokhållare i Göteborg 1874-76. Flyttade 1876 till Paris, Frankrike, där han idkade grosshandel till 1901, då han återvände till Sverige.', 'MAN', 1138, 1139, 1140, null, null);
@@ -3176,7 +3177,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (498, 'Haro', 'Spanien', '', '', 42.57778, -2.84976, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1142, 20, 2, 1928, '1928-02-20', '', 498);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1143, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (174, 'Grosshandlare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (174, 381, 'Grosshandlare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (381, 'Karl', 'Hegardt', 'Vilhelm', 'karlvilhelmhegardt', '(Tab 30 i GS).
 Utflyttad till Haro, Spanien 1884 från Göteborg (O).
 Handelsbokhållare i Varberg 1877 och i Göteborg 1878-1884. Flyttade 1884 till Spanien och idkade grosshandel i Huelva, Sevilla, Haro och Bilbao. 1898 flyttade han till Oslo och var grosshandlare där till 1901, då han återvände till Spanien och bosatte sig i Haro. Konverterade till katolicism 1890.', 'MAN', 1141, 1142, 1143, null, null);
@@ -3187,7 +3188,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (500, 'Oakland', 'USA', 'Californien', '', 37.80508, -122.27307, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1145, 1, 9, 1942, '1942-09-01', '', 500);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1146, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (175, 'Chefsingenjör', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (175, 382, 'Chefsingenjör', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (382, 'Gustaf', 'Hegardt', 'Bernhard', 'gustafbernhardhegardt', '(Tab 31 i GS).
 Genomgick Borås tekniska elementarläroverk 1874?1877. Nivellör vid byggandet av Lidköping - Håkanstorps järnväg 1877-1878 och av Borås - Herrljunga järnväg 1878-1880.
 1880 flyttade han till USA. Var åren 1881-1906 anställd som ingenjör vid Förenta staternas väg- och vattenbyggnadskår och fick i denna egenskap 1890 i uppdrag att som chefsingenjör förestå befästningsarbetena vid Colombiaflodens utlopp i Stilla havet.
@@ -3224,7 +3225,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (506, 'Stockholm', 'Sverige', '', '', 59.33257, 18.06683, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1154, 15, 6, 1945, '1945-06-15', '', 506);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1155, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (176, 'Generallöjtnant', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (176, 385, 'Generallöjtnant', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (385, 'Peter', 'Hegardt', 'Josias', 'peterjosiashegardt', '(Tab 33 i GS).
 Författare till "Gamla släktboken".
 Mogenhetsexamen i Skara 1887. Volontär vid Bohusläns regemente 1887, sergeant 1888, officersexamen 1889, underlöjtnant samma år; löjtnant 1899; aspirant vid generalstaben 1899-1901. Stabsadjutant och löjtnant där 1902 och kapten 1903. Kapten i Bohusläns regemente samma år, vid Västgöta regemente 1907 och åter generalstaben 1910. Øveradjutant och major där samma år. Øverstelöjtnant i staben 1913 och. vid Hallands regemente 1914. Tf chef för detta regemente 1915. Øverste i regementet 1916 och dess chef 1917. Chef för 1:a brigaden 1920 samt generalmajor och chef för 6:e arméfördelningen 1926.
@@ -3271,8 +3272,8 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (516, 'Stockholm', 'Sverige', '', '', 59.33257, 18.06683, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1169, 18, 2, 1934, '1934-02-18', '', 516);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1170, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (177, 'Godsägare', null, null, null, null, null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (178, 'Ryttmästare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (177, 390, 'Godsägare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (178, 390, 'Ryttmästare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (390, 'Johan', 'Hegardt', 'Henrik, Bernhard', 'johanhenrikbernhardhegardt', '(Tab 35 i GS).
 Studentexamen i Ørebro 1889. Volontär vid Livregementets husarkår 1889. Sergeant 1890. Officersexamen 1891. Löjtnant 1899. Avsked med tillstånd att kvarstå i reserven 1903. Ryttmästare i reserven 1909 och avsked ur reserven 1929.
 Genomgick ridskolan 1892?93 och skjutskolan 1897 samt GCI 1898?99. Ledamot av styrelsen för Ultuna lantbruksinstitut 1915. Ledamot av riksdagens 1:a kammare för Ørebro län 1918?19. RVO 1911, RNO 1925 och KrVO 1930.
@@ -3284,7 +3285,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (518, 'Göteborg', 'Sverige', '', '', 57.70067, 11.96822, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1172, 31, 1, 1896, '1896-01-31', '', 518);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1173, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (179, 'Auditör och häradshövding', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (179, 391, 'Auditör och häradshövding', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (391, 'Johan', 'Lindberg', 'Samuel, Svante, Mauritz', 'johansamuelsvantemauritzlindberg', '', 'UNKNOWN', 1171, 1172, 1173, null, null);
 
 --======= Insert Person id: 392 =======
@@ -3301,7 +3302,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (522, 'på Vallhof i Jumkil', 'Sverige', '', '', 59.94254, 17.42379, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1178, 25, 5, 1926, '1926-05-25', '', 522);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1179, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (180, 'Godsägare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (180, 393, 'Godsägare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (393, 'Rudolf', 'Hegardt', '', 'rudolfhegardt', '(Tab 37 i GS).
 Studentexamen 1892 i Stockholm. Lantbrukselev på Østerby i Råby, Rekarne sn 1892-93. Elev vid Ultuna lantbruksinstitut 1893-95. Bokhållare på Södertuna i Frustuna sn 1895-97. Inspektor på Spellinge i V Harg sn 1897-98. Bokhållare på Østerby 1898?99. Arrenderade Bemersberg i Skattunge sn 1899-1920. Var därefter bosatt på Staby i Giresta sn till 1922 från vilken tid och till 1923 han arrenderade Strömsnäs i Bred sn. Ägde och brukade sedan 1923 Vallhof.
 "Med den avlidne har en av Uppsala läns främsta jordbrukare gått av tiden. ... Han arrenderade den under Kipplingebergs fideikommiss hörande egendomen Bemersberg. Med utmärkt nit och skicklighet ägnade han sig åt gårdens förvaltning ... och innehade för någon kortare tid Strömsnäs i Bred sn. Genom sitt energiska, skickliga arbete har han bragt denna egendom i utmärkt kultur. ...
@@ -3336,7 +3337,7 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1189, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1190, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1191, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (181, 'Handlande', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (181, 397, 'Handlande', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (397, 'Jöns', 'Jeanson', '', 'jonsjeanson', '', 'MAN', 1189, 1190, 1191, null, null);
 
 --======= Insert Person id: 398 =======
@@ -3453,7 +3454,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (552, 'Portland', 'USA', 'Oregon', '', 45.51179, -122.67563, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1229, 24, 3, 1954, '1954-03-24', '', 552);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1230, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (182, 'Handlande', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (182, 410, 'Handlande', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (410, 'James', 'Hegardt', 'Norbury', 'jamesnorburyhegardt', '(Tab 31:120 i GS).
 Utexaminerad från ekonomisk högskola i Portland.', 'UNKNOWN', 1228, 1229, 1230, null, null);
 
@@ -3462,10 +3463,10 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1231, 31, 1, 1897, '1897-01-31', '', 553);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1232, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1233, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (183, 'Adress 13215 s w 124', null, null, null, null, null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (184, 'Tigard', null, null, null, null, null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (185, 'Oregon', null, null, null, null, null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (186, 'Usa', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (183, 411, 'Adress 13215 s w 124', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (184, 411, 'Tigard', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (185, 411, 'Oregon', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (186, 411, 'Usa', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (411, 'Mary', 'Hegardt', 'Elizabeth', 'maryelizabethhegardt', '(Tab 31:121 i GS).
 Bor i Tigard, Oregon, USA.', 'UNKNOWN', 1231, 1232, 1233, null, null);
 
@@ -3530,8 +3531,8 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (567, 'Stockholm', 'Sverige', '', '', 59.33257, 18.06683, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1253, 19, 9, 2000, '2000-09-19', '', 567);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1254, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (187, 'Adress eskadervägen 34', null, null, null, null, null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (188, '183 54  täby', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (187, 418, 'Adress eskadervägen 34', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (188, 418, '183 54  täby', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (418, 'Anna', 'Hegardt', 'Elisabet', 'annaelisabethegardt', '(Tab 33:129 i GS).
 Studentexamen 1926. I Spanien juni - juli 1925. Handelskurs vid Bar-Lock-institutet i Stockholm 1926-27. Antälld vid försäkrings AB Fylgia 1927-28. Sekreterare vid Østersunds länslasarett 1928-31. Sekreterare vid tidskriften Vårt Försvar i Stockholm 1931-32.
 Bor i Täby (AB).', 'WOMAN', 1252, 1253, 1254, null, null);
@@ -3541,8 +3542,8 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1255, 5, 2, 1908, '1908-02-05', '', 568);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1256, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1257, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (189, 'Adress rosengården 33', null, null, null, null, null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (190, '186 33  vallentuna', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (189, 419, 'Adress rosengården 33', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (190, 419, '186 33  vallentuna', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (419, 'Ingeborg', 'Hegardt', 'Inga, Maria', 'ingeborgingamariahegardt', '(Tab 33:130 i GS).
 Avgångsexamen från klass 8 i Halmstad flickskola 1926. I England till 1927 och därefter elev vid Østersunds lasarett. Från hösten samma år elev vid GCI i Stockholm. Kunde dock inte fullfölja denna utbildning p g a skada. Avgångsexamen från sällskapet Barnavård i Stockholm 1929.
 Bor i Vallentuna (AB).', 'WOMAN', 1255, 1256, 1257, null, null);
@@ -3562,7 +3563,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1261, 12, 8, 1913, '1913-08-12', '', 571);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1262, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1263, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (191, 'Socionom', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (191, 421, 'Socionom', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (421, 'Clara', 'Hegardt', 'Elisabet', 'claraelisabethegardt', 'Adress Knektabacken 1 B, 372 00 RONNEBY.
 (Tab 33:132 i GS).
 Studentexamen 1932 i Østersund (Z).
@@ -3580,7 +3581,7 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1267, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1268, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1269, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (192, 'Kapten', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (192, 423, 'Kapten', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (423, 'Albert', 'Lönnroth', 'Leopold', 'albertleopoldlonnroth', '', 'MAN', 1267, 1268, 1269, null, null);
 
 --======= Insert Person id: 424 =======
@@ -3593,7 +3594,7 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1273, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1274, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1275, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (193, 'Köpman', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (193, 425, 'Köpman', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (425, 'Luis', 'Puejo', 'Mozos, y', 'luismozosypuejo', '', 'MAN', 1273, 1274, 1275, null, null);
 
 --======= Insert Person id: 426 =======
@@ -3608,7 +3609,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1279, 11, 4, 1904, '1904-04-11', '', 573);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1280, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1281, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (194, 'Arkitekt', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (194, 427, 'Arkitekt', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (427, 'Fausto', 'Marco', 'Garcia', 'faustogarciamarco', '', 'MAN', 1279, 1280, 1281, null, null);
 
 --======= Insert Person id: 428 =======
@@ -3616,10 +3617,10 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1282, 23, 3, 1935, '1935-03-23', '', 574);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1283, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1284, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (195, 'Adress plaza del pilar 10', null, null, null, null, null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (196, '2 dcha', null, null, null, null, null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (197, '50003 zaragoza', null, null, null, null, null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (198, 'Spanien', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (195, 428, 'Adress plaza del pilar 10', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (196, 428, '2 dcha', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (197, 428, '50003 zaragoza', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (198, 428, 'Spanien', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (428, 'Blanca', 'Hegardt', 'Garcia', 'blancagarciahegardt', 'Bor i Zaragosa, Spanien.', 'UNKNOWN', 1282, 1283, 1284, null, null);
 
 --======= Insert Person id: 429 =======
@@ -3627,7 +3628,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1285, 11, 9, 1936, '1936-09-11', '', 575);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1286, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1287, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (199, 'Stadsarkitekt', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (199, 429, 'Stadsarkitekt', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (429, 'Augusto', 'Hegardt', 'Carlos, Garcia', 'augustocarlosgarciahegardt', 'Adress Ave de las Torres 35 6 V, Zaragoza, Spanien.
 Chef för Zaragoza brandkår.
 Intresserad av filateli, klassisk musik och skönlitteratur.
@@ -3638,7 +3639,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1288, 2, 12, 1939, '1939-12-02', '', 576);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1289, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1290, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (200, 'Professor', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (200, 430, 'Professor', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (430, 'Fausto', 'Hegardt', 'Garcia', 'faustogarciahegardt', 'Adress Duquesa Orleans 50-1, 08034 Barcelona, Spanien.
 Fil lic i kemi 1961 i Zaragoza. Fil dr i kemi 1966. Docent i kemi vid universitetet i Zaragoza 1967. Biträdande professor i biokemi vid universitetet i Barcelona 1974 och professor 1981. Prefekt vid biokemiska instutionen vid universitetet i Barcelona 1977.
 Vice dekanus vid Farmacihögskolan 1980-83. Vice ordförande i Spanska biokemiska föreningen från 1986. Har publicerat åtskilliga avhandlingar inom biokemi och har vid flera tillfällen varit engagerad som föreläsare vid olika seminarier i bl a USA.
@@ -3649,7 +3650,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1291, 12, 10, 1941, '1941-10-12', '', 577);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1292, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1293, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (201, 'Licenciat i kemi', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (201, 431, 'Licenciat i kemi', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (431, 'Maria', 'Hegardt', 'Pilar, Garcia', 'mariapilargarciahegardt', 'Adress Via Hispanidad 61, bl. 7, 4 A, 50012 Zaragoza, Spanien.
 Bor i Zaragosa, Spanien.', 'UNKNOWN', 1291, 1292, 1293, null, null);
 
@@ -3658,7 +3659,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1294, 30, 7, 1946, '1946-07-30', '', 578);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1295, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1296, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (202, 'Licenciat i kemi', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (202, 432, 'Licenciat i kemi', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (432, 'Carlos', 'Garcia-Hegardt', 'Alfonso, José', 'carlosalfonsojosegarcia-hegardt', 'Adress Calle del Rio 31-9 D, Miranda de Ebro, Burgos, Spanien.
 Bor i Burgos, Spanien.', 'MAN', 1294, 1295, 1296, null, null);
 
@@ -3674,7 +3675,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1300, 24, 5, 1942, '1942-05-24', '', 580);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1301, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1302, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (203, 'Lärare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (203, 434, 'Lärare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (434, 'Begona', 'Echevarria', 'Fernandez', 'begonafernandezechevarria', '', 'WOMAN', 1300, 1301, 1302, null, null);
 
 --======= Insert Person id: 435 =======
@@ -3682,7 +3683,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1303, 2, 4, 1966, '1966-04-02', '', 581);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1304, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1305, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (204, 'Ekon stud', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (204, 435, 'Ekon stud', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (435, 'Begona', 'Fernandez', 'Garcia', 'begonagarciafernandez', '', 'UNKNOWN', 1303, 1304, 1305, null, null);
 
 --======= Insert Person id: 436 =======
@@ -3690,7 +3691,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1306, 12, 9, 1967, '1967-09-12', '', 582);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1307, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1308, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (205, 'Fil stud', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (205, 436, 'Fil stud', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (436, 'Inmaculada', 'Fernandez', 'Garcia', 'inmaculadagarciafernandez', '', 'UNKNOWN', 1306, 1307, 1308, null, null);
 
 --======= Insert Person id: 437 =======
@@ -3706,9 +3707,9 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1312, 15, 10, 1972, '1972-10-15', '', 585);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1313, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1314, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (206, 'Adress ave de las torres 35 6', null, null, null, null, null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (207, 'Zaragoza', null, null, null, null, null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (208, 'Spanien', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (206, 438, 'Adress ave de las torres 35 6', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (207, 438, 'Zaragoza', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (208, 438, 'Spanien', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (438, 'Teresa', 'Fernandez', 'Garcia', 'teresagarciafernandez', 'Bor i Zaragosa, Spanien.', 'UNKNOWN', 1312, 1313, 1314, null, null);
 
 --======= Insert Person id: 439 =======
@@ -3716,9 +3717,9 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1315, 17, 12, 1976, '1976-12-17', '', 586);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1316, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1317, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (209, 'Adress ave de las torres 35 6', null, null, null, null, null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (210, 'Zaragoza', null, null, null, null, null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (211, 'Spanien', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (209, 439, 'Adress ave de las torres 35 6', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (210, 439, 'Zaragoza', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (211, 439, 'Spanien', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (439, 'Augusto', 'Fernandez', 'Garcia', 'augustogarciafernandez', 'Bor i Zaragosa, Spanien.', 'UNKNOWN', 1315, 1316, 1317, null, null);
 
 --======= Insert Person id: 440 =======
@@ -3741,7 +3742,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1324, 29, 8, 1940, '1940-08-29', '', 590);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1325, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1326, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (212, 'Pianist', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (212, 442, 'Pianist', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (442, 'Maria', 'Fernandez', 'Teresa, Sanchez', 'mariateresasanchezfernandez', 'Utbildad pianist vid konservatoriet i Zaragoza 1963.', 'WOMAN', 1324, 1325, 1326, null, null);
 
 --======= Insert Person id: 443 =======
@@ -3763,7 +3764,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1333, null, null, 1915, '1915-01-01', '', 593);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1334, 15, 2, 1945, '1945-02-15', '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1335, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (213, 'Grosshandlare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (213, 445, 'Grosshandlare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (445, 'Ramon', 'Falces', 'Sanches', 'ramonsanchesfalces', '', 'MAN', 1333, 1334, 1335, null, null);
 
 --======= Insert Person id: 446 =======
@@ -3785,7 +3786,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1342, 12, 9, 1974, '1974-09-12', '', 596);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1343, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1344, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (214, 'Studerande', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (214, 448, 'Studerande', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (448, 'Patricia', 'Anguera', 'Garcia-Hegardt', 'patriciagarcia-hegardtanguera', 'Adress Calle del Rio 31-9 D, Miranda de Ebro, Burgos, Spanien.
 Bor i Barcelona, Spanien.', 'UNKNOWN', 1342, 1343, 1344, null, null);
 
@@ -3794,7 +3795,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1345, 29, 3, 1977, '1977-03-29', '', 597);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1346, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1347, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (215, 'Studerande', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (215, 449, 'Studerande', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (449, 'Carlos', 'Anguera', 'Garcia-Hegardt', 'carlosgarcia-hegardtanguera', 'Adress Calle del Rio 31-9 D, Miranda de Ebro, Burgos, Spanien.
 1995.', 'UNKNOWN', 1345, 1346, 1347, null, null);
 
@@ -3835,7 +3836,7 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1363, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1364, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1365, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (216, 'Godsägare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (216, 455, 'Godsägare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (455, 'Peter', 'Trachsel', '', 'petertrachsel', '', 'MAN', 1363, 1364, 1365, null, null);
 
 --======= Insert Person id: 456 =======
@@ -3844,7 +3845,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (602, 'Tigard', 'USA', 'Oregon', '', 45.4254, -122.76575, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1367, 22, 4, 1987, '1987-04-22', '', 602);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1368, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (217, 'Fastighetsmäklare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (217, 456, 'Fastighetsmäklare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (456, 'John', 'Paterson', '', 'johnpaterson', '', 'UNKNOWN', 1366, 1367, 1368, null, null);
 
 --======= Insert Person id: 457 =======
@@ -3857,7 +3858,7 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1372, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1373, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1374, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (218, 'Ingenjör', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (218, 458, 'Ingenjör', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (458, 'August', 'Blücher', '', 'augustblucher', '', 'MAN', 1372, 1373, 1374, null, null);
 
 --======= Insert Person id: 459 =======
@@ -3870,7 +3871,7 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1378, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1379, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1380, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (219, 'Domänintendent', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (219, 460, 'Domänintendent', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (460, 'Claes', 'Tamm', 'Oskar, Sebastian', 'claesoskarsebastiantamm', '', 'MAN', 1378, 1379, 1380, null, null);
 
 --======= Insert Person id: 461 =======
@@ -3879,7 +3880,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (604, 'Stockholm', 'Sverige', '', '', 59.33257, 18.06683, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1382, 13, 10, 1940, '1940-10-13', '', 604);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1383, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (220, 'Civilekonom', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (220, 461, 'Civilekonom', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (461, 'Tore', 'Gräslund', 'Albert', 'torealbertgraslund', '', 'UNKNOWN', 1381, 1382, 1383, null, null);
 
 --======= Insert Person id: 462 =======
@@ -3888,21 +3889,21 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (606, 'Hölö', 'Sverige', '', '', 59.02483, 17.53527, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1385, 15, 4, 1972, '1972-04-15', '', 606);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1386, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (221, 'Civilekonom', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (221, 462, 'Civilekonom', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (462, 'Nils', 'Holmer', 'Johan', 'nilsjohanholmer', '', 'MAN', 1384, 1385, 1386, null, null);
 
 --======= Insert Person id: 463 =======
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1387, 28, 6, 1933, '1933-06-28', '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1388, 7, 3, 1991, '1991-03-07', '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1389, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (222, 'Bokhandlare i lerum', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (222, 463, 'Bokhandlare i lerum', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (463, 'Mats', 'Gräslund', 'Peter', 'matspetergraslund', '', 'UNKNOWN', 1387, 1388, 1389, null, null);
 
 --======= Insert Person id: 464 =======
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1390, 13, 12, 1934, '1934-12-13', '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1391, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1392, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (223, 'Professor i uppsala', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (223, 464, 'Professor i uppsala', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (464, 'Bo', 'Gräslund', 'Albert', 'boalbertgraslund', '', 'UNKNOWN', 1390, 1391, 1392, null, null);
 
 --======= Insert Person id: 465 =======
@@ -3941,15 +3942,15 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1408, 17, 9, 1897, '1897-09-17', '', 607);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1409, 29, 1, 1971, '1971-01-29', '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1410, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (224, 'Auktoriserad revisor med praktik i england', null, null, null, null, null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (225, 'Belgien och berlin', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (224, 470, 'Auktoriserad revisor med praktik i england', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (225, 470, 'Belgien och berlin', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (470, 'John', 'Wendler', 'Allan', 'johnallanwendler', 'Startade på 40-talet egen byrå i Stockholm ''John Wendlers Revisionsbyrå'' och som han drev nästan till sin död 1971. Var skicklig sportfiskare.', 'MAN', 1408, 1409, 1410, null, null);
 
 --======= Insert Person id: 471 =======
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1411, 5, 12, 1934, '1934-12-05', '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1412, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1413, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (226, 'Civilekonom', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (226, 471, 'Civilekonom', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (471, 'Peter', 'Wendler', '', 'peterwendler', 'Adress Skyttevägen 56, 181 46 LIDINGØ.
 Oforskat Utbildning; Vigseldatum.
 Bor på Lidingö (AB).', 'MAN', 1411, 1412, 1413, null, null);
@@ -3973,7 +3974,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1420, 21, 3, 1908, '1908-03-21', '', 609);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1421, 7, 11, 1983, '1983-11-07', '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1422, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (227, 'Øverstelöjtnant', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (227, 474, 'Øverstelöjtnant', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (474, 'Gustaf', 'Hamilton', 'Hugo, Bastiat', 'gustafhugobastiathamilton', 'Student 1927 i Østersund (Z).
 Efter officersexamen var han verksam vid Göta artilleriregemente, vid Norrbottens artillerikår i Boden och från 1952 vid Wendes artilleriregemente i Kristianstad.
 Efter sin pensionering som officer var han avd chef vid Ahsell och Ågren AB i Göteborg 1964 - 1973.
@@ -3986,7 +3987,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1423, 26, 2, 1938, '1938-02-26', '', 610);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1424, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1425, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (228, 'Sekreterare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (228, 475, 'Sekreterare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (475, 'Blanche', 'Hamilton', 'Margareta', 'blanchemargaretahamilton', 'Student 1957 i Kristianstad (L).
 Sekreterarutbildning i Göteborg (O).
 Ett år på Irland =195-9=-.
@@ -3997,7 +3998,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1426, 14, 1, 1942, '1942-01-14', '', 611);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1427, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1428, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (229, 'Vårdhögskolelärare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (229, 476, 'Vårdhögskolelärare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (476, 'Ingela', 'Hamilton', 'Ulrika', 'ingelaulrikahamilton', 'Skild 1985 .
 Studentexamen 1961 .
 Sjuksköterskeexamen 1965 .
@@ -4010,7 +4011,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1429, 11, 1, 1946, '1946-01-11', '', 612);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1430, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1431, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (230, 'Professor', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (230, 477, 'Professor', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (477, 'Carl', 'Hamilton', 'Peter, Bastiat', 'carlpeterbastiathamilton', 'Studentexamen 1965 .
 Universitetsstudier i internationell ekonomi vid London school of economics. Anställd vid institutet för ekonomi vid Stockholms universitet.
 Riksdagsledamot för Folkpartiet från 1991.
@@ -4034,7 +4035,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (614, 'Ronneby', 'Sverige', '', '', 56.2105, 15.28026, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1439, 20, 3, 1970, '1970-03-20', '', 614);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1440, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (231, 'Provinsialläkare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (231, 480, 'Provinsialläkare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (480, 'Nils', 'Holmberg', 'Gösta', 'nilsgostaholmberg', '', 'MAN', 1438, 1439, 1440, null, null);
 
 --======= Insert Person id: 481 =======
@@ -4042,7 +4043,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1441, 14, 4, 1942, '1942-04-14', '', 615);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1442, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1443, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (232, 'Privatpraktiserande barnläkare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (232, 481, 'Privatpraktiserande barnläkare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (481, 'Nils', 'Hegardt', 'Peter', 'nilspeterhegardt', 'Adress Skepparegatan 36, 260 40 VIKEN.
 Skild 1985.
 Studentexamen 1962 i Ronneby (K).
@@ -4055,7 +4056,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1444, 10, 2, 1949, '1949-02-10', '', 616);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1445, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1446, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (233, 'Egen företagare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (233, 482, 'Egen företagare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (482, 'Bo', 'Hegardt', '', 'bohegardt', 'Adress Skårby Junibacken, 271 91 YSTAD.
 Studentexamen 1969 i Ronneby (K).
 Diplomerad från Grafiska Institutet (DGI) 1984.
@@ -4075,7 +4076,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1450, 9, 5, 1949, '1949-05-09', '', 618);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1451, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1452, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (234, 'Sjukgymnast', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (234, 484, 'Sjukgymnast', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (484, 'Liselotte', 'Witt', '', 'liselottewitt', '', 'WOMAN', 1450, 1451, 1452, null, null);
 
 --======= Insert Person id: 485 =======
@@ -4083,7 +4084,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1453, 12, 8, 1971, '1971-08-12', '', 619);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1454, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1455, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (235, 'Arkitektstuderande', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (235, 485, 'Arkitektstuderande', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (485, 'Christian', 'Hegardt', 'Peter', 'christianpeterhegardt', 'Adress Skördevägen 121, 263 54 HØGANÄS.
 Bor i Höganäs (M).', 'UNKNOWN', 1453, 1454, 1455, null, null);
 
@@ -4092,7 +4093,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1456, 9, 6, 1973, '1973-06-09', '', 620);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1457, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1458, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (236, 'Studerande', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (236, 486, 'Studerande', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (486, 'Anna', 'Hegardt', 'Elisabeth', 'annaelisabethhegardt', 'Adress Skördevägen 121, 263 54 HØGANÄS.
 Bor i Höganäs (M).', 'UNKNOWN', 1456, 1457, 1458, null, null);
 
@@ -4101,7 +4102,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1459, 1, 11, 1975, '1975-11-01', '', 621);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1460, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1461, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (237, 'Medicine studerande', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (237, 487, 'Medicine studerande', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (487, 'Fredrik', 'Hegardt', 'Peter', 'fredrikpeterhegardt', 'Adress Viktoriagatan 14, 3, 411 25 GØTEBORG.
 Bor i Göteborg (O).', 'UNKNOWN', 1459, 1460, 1461, null, null);
 
@@ -4124,7 +4125,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1468, 4, 12, 1974, '1974-12-04', '', 624);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1469, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1470, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (238, 'Studerande', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (238, 490, 'Studerande', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (490, 'Carin', 'Hegardt', 'Jessica', 'carinjessicahegardt', 'Adress Mariedalsvägen 37, 217 45 MALMØ.
 Bor i Malmö (M).', 'UNKNOWN', 1468, 1469, 1470, null, null);
 
@@ -4133,7 +4134,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1471, 12, 7, 1981, '1981-07-12', '', 625);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1472, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1473, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (239, 'Studerande', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (239, 491, 'Studerande', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (491, 'Nina', 'Hegardt', 'Josefine', 'ninajosefinehegardt', '1999.', 'UNKNOWN', 1471, 1472, 1473, null, null);
 
 --======= Insert Person id: 492 =======
@@ -4148,7 +4149,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1477, 17, 5, 1909, '1909-05-17', '', 627);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1478, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1479, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (240, 'Inköpschef', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (240, 493, 'Inköpschef', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (493, 'Torsten', 'Sternhagen', 'Gustaf', 'torstengustafsternhagen', '', 'MAN', 1477, 1478, 1479, null, null);
 
 --======= Insert Person id: 494 =======
@@ -4161,7 +4162,7 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1483, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1484, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1485, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (241, 'Godsägare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (241, 495, 'Godsägare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (495, 'Ernst', 'Dugge', 'Henrik, Fredrik', 'ernsthenrikfredrikdugge', '', 'MAN', 1483, 1484, 1485, null, null);
 
 --======= Insert Person id: 496 =======
@@ -4170,7 +4171,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (629, 'på Ekebyholm i Rimbo', 'Sverige', '', '', 59.7678, 18.35572, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1487, 1, 10, 1896, '1896-10-01', '', 629);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1488, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (242, 'Øverste', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (242, 496, 'Øverste', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (496, 'Hugo', 'Hamilton', 'Jakob', 'hugojakobhamilton', '', 'UNKNOWN', 1486, 1487, 1488, null, null);
 
 --======= Insert Person id: 497 =======
@@ -4196,7 +4197,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (634, 'Djursholm', 'Sverige', '', '', 59.39819, 18.08621, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1496, 5, 2, 1989, '1989-02-05', '', 634);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1497, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (243, 'Major', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (243, 499, 'Major', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (499, 'Sten', 'Hegardt', 'Henriksson', 'stenhenrikssonhegardt', '(Tab 35:139 i GS).
 Avgångsbetyg från Lundsbergs skola 1920. Reservofficersaspirant vid Kungl Livregementets dragoner (K2) samma år; reservofficersexamen; officersaspirant; fänrik i reserven, allt 1921. Officersexamen 1923 och fänrik samma år, samt underlöjtnant 1924. Avsked 1926 med tillstånd att kvarstå i reserven. Löjtnant i Kungl Livregementets till häst (K1) reserv 1928 och ryttmästare 1937. Kapten vid Kungl Livregementets grenadjärer (I3) 1940 och major 1945. Major i arméns reservstat 1948 och major i I3:s reserv 1955.
 Genomgick ridskola 1924-25 och provtjänstgjorde 1926 vid Södra Skånska infanteriregementet (I21) i Lund för ev transport till infanteriet. Kaptenskurs vid Upplands infanteriregemente (I8) 1937. Tjänstgjorde som underrättelseofficer vid andra armékårsstaben (Boden) 1939 och 1940. Skvadronschef vid 1 kavalleribrigaden 1940-48, kompani- och bataljonschef vid I3, härunder bl a fältbataljonschef 1944 samt chef för vinterutbildningsbataljonen i fält 1946. Deltog som sambandsofficer och kontrollant vid norska polis-truppernas fälttjänstgöring i Hälsingland 1945.
@@ -4219,8 +4220,8 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (636, 'Stockholm', 'Sverige', '', '', 59.33257, 18.06683, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1499, 26, 8, 1986, '1986-08-26', '', 636);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1500, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (244, 'Jägmästare', null, null, null, null, null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (245, 'Skogschef', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (244, 500, 'Jägmästare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (245, 500, 'Skogschef', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (500, 'Stig', 'Hegardt', 'Bernhard, Henriksson', 'stigbernhardhenrikssonhegardt', '(Tab 35:140 i GS).
 Studentexamen 1920 vid Lundsberg. Jägmästare 1926.
 Privatpraktiserande verksamhet 1926-30. Anställdes 1930 vid Katrinefors AB som chefsassistent och tjänstgjorde där som skogschef från 1938.
@@ -4235,8 +4236,8 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1501, 19, 11, 1904, '1904-11-19', '', 637);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1502, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1503, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (246, 'Adress rosengårdsvägen 3', null, null, null, null, null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (247, '186 33  vallentuna', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (246, 501, 'Adress rosengårdsvägen 3', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (247, 501, '186 33  vallentuna', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (501, 'Karin', 'Hegardt', 'Anna, Hedvig', 'karinannahedvighegardt', '(Tab 35:141 i GS).
 Avgångsexamne från Anna Sandströms flickskola 1920. Genomgick samma skolas fortsättningskurs 1921 samt linne- och klädsömnadskurs 1921-22. Vistades 1922-23 i pension i Schweiz.
 Genomgick 1924 Gunillaskolan i Uppsala och 1925 biblioteks-, hattsömnads- och Rödakorskurs i Stockholm. Arbetade två år som småskollärare vid Lyceumskola för flickor. Efter studier i psykologi arbetade hon två år vid familjerådgivningsbyrå.
@@ -4252,7 +4253,7 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1507, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1508, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1509, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (248, 'Domprost', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (248, 503, 'Domprost', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (503, 'Johan', 'Björnström', 'Herman', 'johanhermanbjornstrom', '', 'MAN', 1507, 1508, 1509, null, null);
 
 --======= Insert Person id: 504 =======
@@ -4274,7 +4275,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1516, 2, 9, 1932, '1932-09-02', '', 640);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1517, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1518, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (249, 'Avdelningsdirektör vid sida', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (249, 506, 'Avdelningsdirektör vid sida', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (506, 'Henrik', 'Hegardt', 'Hakon, Peter, Josias', 'henrikhakonpeterjosiashegardt', 'Adress Eketorpsvägen 9, 182 61 DJURSHOLM.
 Studentexamen 1951 i Djursholm. 1954-55 University of Wisconsin i Madison, Usa. Jur kand 1959. Tingsnatarie i Mora 1959-62. 1955-59 medarbetare i Sveriges radios utlandsprogram. 1962-64 sekreterare i Exportkreditnämnden. 1964-65 sekreterare vid Skogs- och lantarbetsgivareföreningen. Sedan 1966 anställd vid SIDA (styrelsen för internationell utveckling). Först som byrådirektör, därefter som biståndsattaché i Pakistan och Indien. Åren 1973-80 var han avdelningsdirektör, för att åren 1980-82 tjänstgöra som biståndschef i Bangladesh. Från 1982 avdelningsdirektör.
 Bor i Djursholm (AB).', 'MAN', 1516, 1517, 1518, null, null);
@@ -4285,7 +4286,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (642, 'Stockholm', 'Sverige', '', '', 59.33257, 18.06683, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1520, 19, 3, 1970, '1970-03-19', '', 642);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1521, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (250, 'Chefssekreterare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (250, 507, 'Chefssekreterare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (507, 'Ingrid', 'Hegardt', 'Hedvig, Catharina', 'ingridhedvigcatharinahegardt', 'Studentexamen 1956 i Djursholm. Språkstudier i Cambridge, England 1957. Bar-Lock handelsinstitut 1958/59.', 'UNKNOWN', 1519, 1520, 1521, null, null);
 
 --======= Insert Person id: 508 =======
@@ -4293,7 +4294,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1522, 10, 3, 1946, '1946-03-10', '', 643);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1523, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1524, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (251, 'Utbildad sekreterare och flygvärdinna', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (251, 508, 'Utbildad sekreterare och flygvärdinna', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (508, 'Anne', 'Hegardt', 'Charlotte, Margareta', 'annecharlottemargaretahegardt', 'Adress Björnstorps station, 240 13 GENARP.
 Bor i Björnstorp, Genarp (M).', 'WOMAN', 1522, 1523, 1524, null, null);
 
@@ -4310,10 +4311,10 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1528, 3, 5, 1932, '1932-05-03', '', 646);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1529, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1530, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (252, 'Adress 5470 n via velazquez', null, null, null, null, null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (253, 'Tucson', null, null, null, null, null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (254, 'Arizona 85715', null, null, null, null, null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (255, 'Usa', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (252, 510, 'Adress 5470 n via velazquez', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (253, 510, 'Tucson', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (254, 510, 'Arizona 85715', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (255, 510, 'Usa', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (510, 'Barbro', 'Hegardt', 'Stigsdotter', 'barbrostigsdotterhegardt', 'Realexamen i Karlskoga. Diplom i franska vid Sorbonne, Paris 1952.
 Genomgått 1-årig hushållsskola i Uppsala 1950-51. 1-årig sekreterarkurs vid Barlockinstitutet i Stockholm 1952-53.
 Bor i Tucson, Arizona, USA.', 'WOMAN', 1528, 1529, 1530, null, null);
@@ -4323,7 +4324,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1531, 13, 4, 1934, '1934-04-13', '', 647);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1532, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1533, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (256, 'Direktör', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (256, 511, 'Direktör', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (511, 'Henrik', 'Hegardt', '', 'henrikhegardt', 'Adress Sigurdsvägen 14, 182 64 DJURSHOLM.
 Studentexamen 1955 vid Lundsberg. Diplomkaufmann vid Wirtschafthauptschule i Mannheim 1962. Ekonomiassistent vid Nohab 1962-66, vid Bofors 1967-68. Från 1968 till 1971 var han ekonomichef vid Nohab. 1971-74 Controller vid Aremo-divisionen/Swedish Match, 1975-77 operation analysis där och 1978-81 divisionschef. 1982-83 VD vid Scandiaconsult AB, samt från 1984 VvD vid AB Carl Munters.
 Bor i Djursholm (AB).', 'UNKNOWN', 1531, 1532, 1533, null, null);
@@ -4333,7 +4334,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1534, 9, 2, 1938, '1938-02-09', '', 648);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1535, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1536, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (257, 'Förskollärare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (257, 512, 'Förskollärare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (512, 'Gunilla', 'Hegardt', 'Stigsdotter', 'gunillastigsdotterhegardt', 'Adress Narzissenweg 3, CH-4102 Binningen, Schweiz.
 Realexamen 1954 i Karlskoga (T).
 Förskollärarexamen 1961 i Stockholm (AB).
@@ -4344,8 +4345,8 @@ Bor i Binningen, Schweiz.', 'UNKNOWN', 1534, 1535, 1536, null, null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1537, 8, 12, 1903, '1903-12-08', '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1538, 8, 5, 1974, '1974-05-08', '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1539, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (258, 'Kapten', null, null, null, null, null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (259, 'Direktör', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (258, 513, 'Kapten', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (259, 513, 'Direktör', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (513, 'Bror', 'Amneus', 'Johan, Erik', 'brorjohanerikamneus', '', 'UNKNOWN', 1537, 1538, 1539, null, null);
 
 --======= Insert Person id: 514 =======
@@ -4379,7 +4380,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1552, 5, 10, 1936, '1936-10-05', '', 651);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1553, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1554, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (260, 'Syokonsulent', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (260, 518, 'Syokonsulent', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (518, 'Torun', 'Moberg', 'Eileen, Maria', 'toruneileenmariamoberg', '', 'WOMAN', 1552, 1553, 1554, null, null);
 
 --======= Insert Person id: 519 =======
@@ -4387,7 +4388,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1555, 29, 7, 1960, '1960-07-29', '', 652);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1556, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1557, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (261, 'Fil kand', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (261, 519, 'Fil kand', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (519, 'Johan', 'Hegardt', 'Henrik', 'johanhenrikhegardt', 'Adress Tre Liljor 3, 113 44 STOCKHOLM.
 Bor i Stockholm (AB).', 'MAN', 1555, 1556, 1557, null, null);
 
@@ -4396,8 +4397,8 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1558, 5, 10, 1961, '1961-10-05', '', 653);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1559, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1560, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (262, 'Adress sandhamnsgatan 19 iv', null, null, null, null, null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (263, '115 40  stockholm', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (262, 520, 'Adress sandhamnsgatan 19 iv', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (263, 520, '115 40  stockholm', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (520, 'Eileen', 'Hegardt', 'Louisa', 'eileenlouisahegardt', 'Studentexamen 1980.
 Jur kand 1988.
 Bor i Stockholm (AB).', 'UNKNOWN', 1558, 1559, 1560, null, null);
@@ -4407,7 +4408,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1561, 2, 12, 1966, '1966-12-02', '', 654);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1562, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1563, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (264, 'Civilekonom', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (264, 521, 'Civilekonom', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (521, 'Sarah', 'Hegardt', 'Marianne', 'sarahmariannehegardt', 'Adress Magnus Ladulåsgatan 33, 118 65 STOCKHOLM.
 Studentexamen 1985.
 Civilekonom 1990.
@@ -4419,7 +4420,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1564, 16, 3, 1944, '1944-03-16', '', 655);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1565, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1566, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (265, 'Direktör', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (265, 522, 'Direktör', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (522, 'Jan', 'Eriksson', 'Erik', 'janerikeriksson', '', 'MAN', 1564, 1565, 1566, null, null);
 
 --======= Insert Person id: 523 =======
@@ -4427,7 +4428,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1567, 30, 3, 1979, '1979-03-30', '', 656);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1568, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1569, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (266, 'Studerande', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (266, 523, 'Studerande', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (523, 'Henrik', 'Hegardt', 'Jan, Eriksson', 'henrikjanerikssonhegardt', '1997.', 'UNKNOWN', 1567, 1568, 1569, null, null);
 
 --======= Insert Person id: 524 =======
@@ -4435,7 +4436,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1570, 19, 8, 1980, '1980-08-19', '', 657);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1571, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1572, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (267, 'Studerande', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (267, 524, 'Studerande', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (524, 'Amelie', 'Hegardt', 'Elizabeth, Marianne, Eriksson', 'amelieelizabethmarianneerikssonhegardt', '1998.', 'UNKNOWN', 1570, 1571, 1572, null, null);
 
 --======= Insert Person id: 525 =======
@@ -4455,7 +4456,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1579, 11, 6, 1964, '1964-06-11', '', 658);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1580, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1581, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (268, 'Förlagsredaktör', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (268, 527, 'Förlagsredaktör', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (527, 'Karin', 'Björkman', 'Helena', 'karinhelenabjorkman', '', 'WOMAN', 1579, 1580, 1581, null, null);
 
 --======= Insert Person id: 528 =======
@@ -4470,7 +4471,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1585, 6, 11, 1993, '1993-11-06', '', 660);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1586, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1587, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (269, 'Oforskat fullständiga uppgifter', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (269, 529, 'Oforskat fullständiga uppgifter', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (529, 'Saskia', 'Grant', 'Ingvor, Marianne', 'saskiaingvormariannegrant', '', 'UNKNOWN', 1585, 1586, 1587, null, null);
 
 --======= Insert Person id: 530 =======
@@ -4490,8 +4491,8 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1594, 13, 8, 1931, '1931-08-13', '', 661);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1595, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1596, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (270, 'Vice vd vid media service', null, null, null, null, null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (271, 'Stroh brewery co', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (270, 532, 'Vice vd vid media service', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (271, 532, 'Stroh brewery co', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (532, 'Dennis', 'Lynton', 'D', 'dennisdlynton', 'Examen vid University of California, Berkely 1956.
 Sorbonne 1951 - 52.
 Anställd vid Schlitz Brewing Co och senare efter dess sammanslagning med Stroh Brewery Co därstädes. Har haft sex månaders uppdrag i Spanien 1961.
@@ -4510,7 +4511,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1600, 18, 5, 1957, '1957-05-18', '', 663);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1601, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1602, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (272, 'Employee relations supervisor', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (272, 534, 'Employee relations supervisor', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (534, 'Suzanne', 'Lynton', 'Louise', 'suzannelouiselynton', 'Kansas State University, BS: Family life and Human Development 1979.
 Stockholms universitet, FK: Socialkunskap 1980.
 Utah State University, Master of Social Science: Human Resource Administration 1983.', 'WOMAN', 1600, 1601, 1602, null, null);
@@ -4520,7 +4521,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1603, 21, 1, 1964, '1964-01-21', '', 664);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1604, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1605, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (273, 'Territory manager', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (273, 535, 'Territory manager', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (535, 'Mark', 'Lynton', 'Thomas', 'markthomaslynton', 'BS i Busines/Sales - Marketing vid University of Northern Colorado 1987.', 'UNKNOWN', 1603, 1604, 1605, null, null);
 
 --======= Insert Person id: 536 =======
@@ -4540,7 +4541,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1612, 27, 9, 1937, '1937-09-27', '', 665);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1613, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1614, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (274, 'Verkställande direktör', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (274, 538, 'Verkställande direktör', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (538, 'Carl-Fredrik', 'Löbbeke', 'Ferdinand, Ernst, Eskil, Peter, von', 'carl-fredrikferdinandernsteskilpetervonlobbeke', '', 'UNKNOWN', 1612, 1613, 1614, null, null);
 
 --======= Insert Person id: 539 =======
@@ -4565,7 +4566,7 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1624, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1625, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1626, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (275, 'Godsägare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (275, 542, 'Godsägare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (542, 'Jean', 'Koch', 'von', 'jeanvonkoch', '', 'MAN', 1624, 1625, 1626, null, null);
 
 --======= Insert Person id: 543 =======
@@ -4582,7 +4583,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (669, 'Norrköping', 'Sverige', '', '', 58.58462, 16.19376, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1631, 19, 7, 2000, '2000-07-19', '', 669);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1632, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (276, 'Barnläkare och barnpsykiater', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (276, 544, 'Barnläkare och barnpsykiater', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (544, 'Ebba', 'Hegardt', 'Kristina', 'ebbakristinahegardt', '(Tab 37:146 i GS).
 Studentexamen 1945 i Stockholm (AB).
 Med kand 1948 i Stockholm (AB).
@@ -4598,7 +4599,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (671, 'Stockholm', 'Sverige', '', '', 59.33257, 18.06683, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1634, 21, 7, 1930, '1930-07-21', '', 671);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1635, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (277, 'Civilingenjör', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (277, 545, 'Civilingenjör', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (545, 'Carl', 'Isakson', 'Johan, Albert', 'carljohanalbertisakson', '', 'UNKNOWN', 1633, 1634, 1635, null, null);
 
 --======= Insert Person id: 546 =======
@@ -4611,7 +4612,7 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1639, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1640, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1641, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (278, 'Godsägare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (278, 547, 'Godsägare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (547, 'Olof', 'Berg', 'Alfred', 'olofalfredberg', '', 'MAN', 1639, 1640, 1641, null, null);
 
 --======= Insert Person id: 548 =======
@@ -4624,7 +4625,7 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1645, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1646, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1647, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (279, 'Tullförvaltare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (279, 549, 'Tullförvaltare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (549, 'Lechard', 'Bodell', '', 'lechardbodell', '', 'MAN', 1645, 1646, 1647, null, null);
 
 --======= Insert Person id: 550 =======
@@ -4672,7 +4673,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (682, 'Uddevalla', 'Sverige', '', '', 58.35096, 11.93264, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1664, 21, 3, 1842, '1842-03-21', '', 682);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1665, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (280, 'Prost', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (280, 555, 'Prost', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (555, 'Magnus', 'Ullman', '', 'magnusullman', '', 'MAN', 1663, 1664, 1665, null, null);
 
 --======= Insert Person id: 556 =======
@@ -4681,7 +4682,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (684, 'Varberg', 'Sverige', '', '', 57.10789, 12.24901, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1667, 20, 9, 1919, '1919-09-20', '', 684);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1668, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (281, 'Prost', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (281, 556, 'Prost', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (556, 'Magnus', 'Ullman', '', 'magnusullman', '', 'UNKNOWN', 1666, 1667, 1668, null, null);
 
 --======= Insert Person id: 557 =======
@@ -4713,7 +4714,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (691, 'Skinnskatteberg', 'Sverige', '', '', 59.83216, 15.69284, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1679, 18, 4, 1890, '1890-04-18', '', 691);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1680, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (282, 'Prost', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (282, 560, 'Prost', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (560, 'Johan', 'Wulff', 'Karl', 'johankarlwulff', '', 'UNKNOWN', 1678, 1679, 1680, null, null);
 
 --======= Insert Person id: 561 =======
@@ -4744,7 +4745,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (697, 'Helsingborg', 'Sverige', '', '', 56.04399, 12.69611, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1688, 21, 7, 1928, '1928-07-21', '', 697);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1689, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (283, 'Stadsläkare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (283, 563, 'Stadsläkare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (563, 'Johan', 'Hegardt', 'Theodor, Lechard', 'johantheodorlechardhegardt', '(Tab 41 i GS).
 Studentexamen 1878 i Göteborg. Med fil kand 1884 i Uppsala och med kand 1889 i Stockholm. Med lic och leg läkare där 1894. Leg sjukgymnast 1888. Förestod sjukgymnastiken vid Ramlösa hälsobrunn 1888-92. Praktiserande läkare i Helsingborg sedan 1894. Hade under en lång följd av år från 1897 till 1915 årligen längre eller kortare tider förordnande som tf distriktsläkare i Helsingborg. Blev ordinarie sådan 1915. Besiktningsläkare för minderåriga anställda vid industrier 1901. Skolläkare 1905 och företagsläkare vid Helsingborgs Kopparverk 1906. Läkare vid stadens observationsplats för fartyg från smittad ort 1914.
 Medlem av Helsingborgs nykterhetsnämnd sedan 1916 och sedan 1919 av medicinalstyrelsen förordnad revisor i Föreningen för bistånd åt vanföra i Skåne.
@@ -4809,7 +4810,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (710, 'Lysekil', 'Sverige', '', '', 58.27417, 11.43157, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1709, 4, 6, 1880, '1880-06-04', '', 710);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1710, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (284, 'Handlande', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (284, 570, 'Handlande', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (570, 'Hans', 'Pettersson', '', 'hanspettersson', '', 'UNKNOWN', 1708, 1709, 1710, null, null);
 
 --======= Insert Person id: 571 =======
@@ -4822,7 +4823,7 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1714, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1715, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1716, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (285, 'Lantbrukare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (285, 572, 'Lantbrukare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (572, 'Paul', 'Wahllöf', 'Gustaf', 'paulgustafwahllof', '', 'MAN', 1714, 1715, 1716, null, null);
 
 --======= Insert Person id: 573 =======
@@ -4839,7 +4840,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (714, 'Göteborg', 'Sverige', '', '', 57.70067, 11.96822, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1721, 2, 2, 1894, '1894-02-02', '', 714);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1722, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (286, 'Godsägare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (286, 574, 'Godsägare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (574, 'Ernst', 'Lindman', 'Kasper', 'ernstkasperlindman', '', 'UNKNOWN', 1720, 1721, 1722, null, null);
 
 --======= Insert Person id: 575 =======
@@ -4848,7 +4849,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (716, 'Göteborg', 'Sverige', '', '', 57.70067, 11.96822, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1724, 6, 12, 1911, '1911-12-06', '', 716);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1725, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (287, 'Handlande', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (287, 575, 'Handlande', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (575, 'Per', 'Wåhlstedt', '', 'perwahlstedt', '', 'UNKNOWN', 1723, 1724, 1725, null, null);
 
 --======= Insert Person id: 576 =======
@@ -4861,7 +4862,7 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1729, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1730, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1731, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (288, 'Biskop i göteborg', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (288, 577, 'Biskop i göteborg', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (577, 'Anders', 'Bruhn', '', 'andersbruhn', '', 'MAN', 1729, 1730, 1731, null, null);
 
 --======= Insert Person id: 578 =======
@@ -4886,7 +4887,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (722, 'Lund', 'Sverige', '', '', 55.70664, 13.18759, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1739, 22, 8, 1964, '1964-08-22', '', 722);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1740, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (289, 'Kontraktsprost', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (289, 580, 'Kontraktsprost', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (580, 'Helge', 'Hegardt', 'Lechard', 'helgelechardhegardt', '(Tab 41:177 i GS).
 Studentexamen 1916 i Helsingborg. Teol fil examen 1922 och teol kand 1928 i Lund. Prakt teol prov 1929 samt prästvigd samma år. Missiv i Sturkö?Tjurkö pastorat i Blekinge 192931. Kyrkoherde i Sjörups och Katslösa pastorat i Malmöhus län vid Skånes sydkust 1931 med tillträde 1933. Avgick med pension 1961. Kontraktsprost i Ljunits och Herrestads kontrakt 1949.61. LVO.
 Ordförande i Sjörups och Katslösas barnavårdsnämnder och skolstyrelser 1932?52. Vid storkommunernas genomförande 1952 ordförande i Ljunits storkommuns skolstyrelse 1952-58. Hemvärnsman 1940?61 samt stf hemvärnsområdesbefälhavare från 1948. Hemvärnets tjänstemärken i silver, guld och guld med emalj samt tilldelad hemvärnets förtjänstmedalj i silver 1957.
@@ -4903,7 +4904,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (724, 'Helsingborg', 'Sverige', '', '', 56.04399, 12.69611, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1742, 10, 11, 1964, '1964-11-10', '', 724);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1743, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (290, 'Kamrer', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (290, 581, 'Kamrer', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (581, 'Bo', 'Hegardt', 'Lechard', 'bolechardhegardt', '(Tab 41:178 i GS).
 Handelsexamen 1916 i Helsingborg (M).
 Anställd vid AB Fallenius och Leffler i Göteborg 1916-17 och vid Brand- och livförsäkrings AB Svea där 1919 samt 1919-20 i Comptoir du Nord i Dunkerque, Frankrike. Vistades sedan först i Paris, därefter i St Dye sur Loire invid Blois till 1921 och genomgick samma år Pitman''s School i London.
@@ -4945,7 +4946,7 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1756, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1757, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1758, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (291, 'Handlande', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (291, 586, 'Handlande', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (586, 'Otto', 'Malmstein', '', 'ottomalmstein', '', 'MAN', 1756, 1757, 1758, null, null);
 
 --======= Insert Person id: 587 =======
@@ -4954,7 +4955,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (732, 'Lund', 'Sverige', '', '', 55.70664, 13.18759, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1760, 11, 11, 1972, '1972-11-11', '', 732);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1761, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (292, 'Organist', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (292, 587, 'Organist', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (587, 'Märta', 'Heyden', 'Louise', 'martalouiseheyden', '', 'WOMAN', 1759, 1760, 1761, null, null);
 
 --======= Insert Person id: 588 =======
@@ -4963,7 +4964,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (734, 'Abbekås', 'Skivarp', '', '', 55.38608, 13.55147, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1763, 13, 7, 1996, '1996-07-13', '', 734);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1764, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (293, 'Ingenjör', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (293, 588, 'Ingenjör', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (588, 'Christian', 'Hegardt', 'Lechard', 'christianlechardhegardt', 'Ingenjörsexamen 1953 i Malmö (M).
 Anställd 1955 vid Tetra Pak AB i Lund. Under åren 1958-64 servicechef för Tetra Pak i Toronto, Canada. Sedan 1964 tillbaka vid Tetra Pak i Lund.', 'MAN', 1762, 1763, 1764, null, null);
 
@@ -4972,7 +4973,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1765, 21, 11, 1932, '1932-11-21', '', 735);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1766, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1767, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (294, 'Läkarsekreterare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (294, 589, 'Läkarsekreterare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (589, 'Margaret-Louise', 'Hegardt', '', 'margaret-louisehegardt', 'Adress Nils Holgerssons väg 32, 274 56 ABBEKÅS.
 Normalskolekompetens 1951 i Lund (M).
 Försäkringstjänsteman vid Skåne-Malmö till 1955. Från 1978 läkarsekreterare vid njurkliniken vid Lunds lasarett.
@@ -4983,7 +4984,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1768, 16, 4, 1934, '1934-04-16', '', 736);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1769, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1770, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (295, 'Ingenjör', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (295, 590, 'Ingenjör', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (590, 'Ulf', 'Hegardt', 'Lechard', 'ulflechardhegardt', 'Adress Genvägen 5, 232 02 ÅKARP.
 Sedan 1961 anställd vid AB Tetra Pak i Lund.
 Bor i Åkarp (M).', 'MAN', 1768, 1769, 1770, null, null);
@@ -4993,7 +4994,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1771, 4, 5, 1937, '1937-05-04', '', 737);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1772, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1773, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (296, 'Leg sjuksköterska', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (296, 591, 'Leg sjuksköterska', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (591, 'Anne-Marie', 'Hegardt', '', 'anne-mariehegardt', 'Adress Tordönsvägen 4 H, 222 27 LUND.
 Normalskolekompetens 1956 i Ystad (M).
 Leg sjuksköterska 1960 i Lund (M).
@@ -5005,7 +5006,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1774, 30, 9, 1941, '1941-09-30', '', 738);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1775, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1776, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (297, 'Byrådirektör', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (297, 592, 'Byrådirektör', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (592, 'Nils', 'Hegardt', 'Peter, Lechard', 'nilspeterlechardhegardt', 'Adress Spårsnögatan 19, 226 52 LUND.
 Studentexamen 1965 i Lund (M).
 Arbetade åren 1973-88 vid intagningsnämnden för gymnasieskolan i Lund, Malmö och Trelleborg. 1989-91 anställd vid länsskolnämnden i Malmöhus län, Malmö. Sedan 1992 IT-konsult vid kyrkoförvaltningen Lund. Redaktör för "nya släktkalendern".
@@ -5024,7 +5025,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (741, 'Lund', 'Sverige', '', '', 55.70664, 13.18759, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1781, 1, 12, 1936, '1936-12-01', '', 741);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1782, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (298, 'Vice häradshövding', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (298, 594, 'Vice häradshövding', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (594, 'Oscar', 'Heyden', 'Peter, Rudolf', 'oscarpeterrudolfheyden', '', 'MAN', 1780, 1781, 1782, null, null);
 
 --======= Insert Person id: 595 =======
@@ -5033,7 +5034,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (743, 'Lund', 'Sverige', '', '', 55.70664, 13.18759, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1784, 14, 6, 1988, '1988-06-14', '', 743);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1785, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (299, 'Fil dr', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (299, 595, 'Fil dr', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (595, 'Elna', 'Waara-Grape', 'Birgitta', 'elnabirgittawaara-grape', '', 'WOMAN', 1783, 1784, 1785, null, null);
 
 --======= Insert Person id: 596 =======
@@ -5041,7 +5042,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1786, 13, 9, 1942, '1942-09-13', '', 744);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1787, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1788, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (300, 'Skeppningschef', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (300, 596, 'Skeppningschef', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (596, 'Solveig', 'Wiktorsson', 'Vivianne', 'solveigviviannewiktorsson', 'Adress Fredrika Wallis väg 11, 274 56 ABBEKÅS.
 Oforskat Fullständiga uppgifter om föräldrar (sid 4).
 Transportekonomisk examen vid Högskolan i Växjö 1984 i Växjö (G).', 'UNKNOWN', 1786, 1787, 1788, null, null);
@@ -5051,7 +5052,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1789, 27, 7, 1959, '1959-07-27', '', 745);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1790, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1791, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (301, 'Civilingenjör', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (301, 597, 'Civilingenjör', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (597, 'Johan', 'Hegardt', 'Lechard', 'johanlechardhegardt', 'Adress Kakelvägen ?, 227 34 LUND.
 Civilingenjörsexamen 1984 i Lund (M).
 Sedan 1985 anställd vid Statoil Petrokemi i Stenungsund.
@@ -5063,7 +5064,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1792, 7, 5, 1964, '1964-05-07', '', 746);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1793, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1794, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (302, 'Tekn stud', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (302, 598, 'Tekn stud', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (598, 'Anders', 'Hegardt', 'Lechard', 'anderslechardhegardt', 'Adress Helgeandsgatan 20 A, 223 54 LUND.
 Studentexamen 1983 i Ystad (M).
 Bor i Lund (M).', 'MAN', 1792, 1793, 1794, null, null);
@@ -5074,7 +5075,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1796, 5, 6, 2004, '2004-06-05', '', null);
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (748, 'Sjörup', 'Sverige', '', '', 55.44066, 13.63965, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1797, 20, 6, 2004, '2004-06-20', '', 748);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (303, 'Konstnär', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (303, 599, 'Konstnär', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (599, 'Anna', 'Hegardt', 'Christina', 'annachristinahegardt', 'Studentexamen 1985 i Ystad (M).', 'UNKNOWN', 1795, 1796, 1797, null, null);
 
 --======= Insert Person id: 600 =======
@@ -5082,14 +5083,14 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1798, 16, 10, 1928, '1928-10-16', '', 749);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1799, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1800, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (304, 'Ingenjör', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (304, 600, 'Ingenjör', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (600, 'Sven', 'Stark', 'Olof', 'svenolofstark', 'Oforskat Fullständiga uppgifter om föräldrar (sid 4).', 'MAN', 1798, 1799, 1800, null, null);
 
 --======= Insert Person id: 601 =======
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1801, null, null, 1954, '1954-01-01', '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1802, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1803, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (305, 'Rektor', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (305, 601, 'Rektor', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (601, 'Marie', 'Stark', 'Louise', 'marielouisestark', 'Oforskat Gift när och var (sid 1).
 Bor i Södra Sandby (M).', 'WOMAN', 1801, 1802, 1803, null, null);
 
@@ -5097,7 +5098,7 @@ Bor i Södra Sandby (M).', 'WOMAN', 1801, 1802, 1803, null, null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1804, null, null, 1958, '1958-01-01', '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1805, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1806, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (306, 'Ingenjör', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (306, 602, 'Ingenjör', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (602, 'Joakim', 'Stark', '', 'joakimstark', 'Oforskat Gift när och var (sid 1).
 Bor i Vomb (M).', 'MAN', 1804, 1805, 1806, null, null);
 
@@ -5105,7 +5106,7 @@ Bor i Vomb (M).', 'MAN', 1804, 1805, 1806, null, null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1807, null, null, 1961, '1961-01-01', '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1808, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1809, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (307, 'Idrottsledare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (307, 603, 'Idrottsledare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (603, 'Lars', 'Stark', 'Peter', 'larspeterstark', 'Oforskat Gift när och var (sid 1).
 Bor i Abbekås, Skivarp (M).', 'MAN', 1807, 1808, 1809, null, null);
 
@@ -5113,7 +5114,7 @@ Bor i Abbekås, Skivarp (M).', 'MAN', 1807, 1808, 1809, null, null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1810, null, null, 1964, '1964-01-01', '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1811, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1812, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (308, 'Ingenjör', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (308, 604, 'Ingenjör', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (604, 'Martin', 'Stark', '', 'martinstark', 'Oforskat Gift när och var (sid 1).
 Bor i Vomb (M).', 'MAN', 1810, 1811, 1812, null, null);
 
@@ -5122,7 +5123,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1813, 11, 4, 1937, '1937-04-11', '', 750);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1814, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1815, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (309, 'Leg sjuksköterska', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (309, 605, 'Leg sjuksköterska', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (605, 'Gunvor', 'Nilsson', 'Elsa, Emilia', 'gunvorelsaemilianilsson', '', 'WOMAN', 1813, 1814, 1815, null, null);
 
 --======= Insert Person id: 606 =======
@@ -5130,7 +5131,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1816, 16, 6, 1966, '1966-06-16', '', 751);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1817, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1818, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (310, 'Studerande', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (310, 606, 'Studerande', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (606, 'Ulf', 'Hegardt', 'Pontus, Lechard', 'ulfpontuslechardhegardt', 'Adress Ø Vallgatan 33, 223 61 LUND.
 Studentexamen 1985 i Lund (M).
 Reservofficer 1987.
@@ -5141,7 +5142,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1819, 23, 10, 1969, '1969-10-23', '', 752);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1820, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1821, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (311, 'Kantor', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (311, 607, 'Kantor', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (607, 'Ylva', 'Hegardt', 'Sofia', 'ylvasofiahegardt', 'Adress Päronvägen 19, 232 02 ÅKARP.
 Studentexamen i Lund (M).
 Bor i Åkarp (M).', 'UNKNOWN', 1819, 1820, 1821, null, null);
@@ -5151,7 +5152,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1822, 13, 6, 1972, '1972-06-13', '', 753);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1823, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1824, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (312, 'Studerande', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (312, 608, 'Studerande', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (608, 'Charlotta', 'Hegardt', 'Sara, Emilia', 'charlottasaraemiliahegardt', 'Adress N Skolgatan 18, 211 52 MALMØ.
 Bor i Åkarp (M).', 'UNKNOWN', 1822, 1823, 1824, null, null);
 
@@ -5160,8 +5161,8 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1825, 4, 2, 1932, '1932-02-04', '', 754);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1826, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1827, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (313, 'Ingenjör', null, null, null, null, null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (314, 'Fabrikant', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (313, 609, 'Ingenjör', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (314, 609, 'Fabrikant', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (609, 'Stig', 'Lorentzon', 'Arne', 'stigarnelorentzon', 'Driver egen firma, ARLO-pack.', 'UNKNOWN', 1825, 1826, 1827, null, null);
 
 --======= Insert Person id: 610 =======
@@ -5169,7 +5170,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1828, 5, 1, 1945, '1945-01-05', '', 755);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1829, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1830, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (315, 'Barnmorska', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (315, 610, 'Barnmorska', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (610, 'Karin', 'Borglin', '', 'karinborglin', '', 'WOMAN', 1828, 1829, 1830, null, null);
 
 --======= Insert Person id: 611 =======
@@ -5177,7 +5178,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1831, 14, 8, 1941, '1941-08-14', '', 756);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1832, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1833, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (316, 'Sekreterare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (316, 611, 'Sekreterare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (611, 'Kerstin', 'Fredriksson', 'Anita, Viktoria', 'kerstinanitaviktoriafredriksson', 'Genomgått 2-årig gymnasieutbildning vid Komvux, Lund 1987.
 1988-91 anställd vid Skandia försäkringsbolag i Malmö. 1991 - 2000 anställd vid AB Draco, sedermera Astra Zeneca i Lund.', 'WOMAN', 1831, 1832, 1833, null, null);
 
@@ -5186,7 +5187,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1834, 16, 2, 1966, '1966-02-16', '', 757);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1835, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1836, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (317, 'Studerande', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (317, 612, 'Studerande', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (612, 'Patrik', 'Hegardt', 'Lechard', 'patriklechardhegardt', 'Adress Dahlströmsgatan 4 D, 414 65 GØTEBORG.
 Bor i Göteborg (O).', 'UNKNOWN', 1834, 1835, 1836, null, null);
 
@@ -5195,7 +5196,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1837, 1, 9, 1973, '1973-09-01', '', 758);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1838, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1839, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (318, 'Studerande', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (318, 613, 'Studerande', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (613, 'David', 'Hegardt', 'Olof, Lechard', 'davidoloflechardhegardt', 'Adress Folkparksvägen 5, 227 56 LUND.
 Bor i Lund (M).', 'UNKNOWN', 1837, 1838, 1839, null, null);
 
@@ -5204,7 +5205,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1840, 8, 8, 1976, '1976-08-08', '', 759);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1841, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1842, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (319, 'Studerande', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (319, 614, 'Studerande', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (614, 'Adam', 'Hegardt', 'Peter, Lechard', 'adampeterlechardhegardt', 'Adress Spårsnögatan 19, 226 52 LUND.
 Bor.', 'UNKNOWN', 1840, 1841, 1842, null, null);
 
@@ -5213,7 +5214,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1843, 5, 10, 1979, '1979-10-05', '', 760);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1844, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1845, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (320, 'Studerande', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (320, 615, 'Studerande', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (615, 'Johan', 'Hegardt', 'Simon, Lechard', 'johansimonlechardhegardt', '1997.', 'UNKNOWN', 1843, 1844, 1845, null, null);
 
 --======= Insert Person id: 616 =======
@@ -5226,7 +5227,7 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1849, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1850, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1851, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (321, 'Folkskolinspektör', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (321, 617, 'Folkskolinspektör', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (617, 'Gustaf', 'Waara-Grape', '', 'gustafwaara-grape', '', 'MAN', 1849, 1850, 1851, null, null);
 
 --======= Insert Person id: 618 =======
@@ -5274,7 +5275,7 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1870, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1871, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1872, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (322, 'Representant', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (322, 624, 'Representant', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (624, 'Ragnar', 'Borglin', '', 'ragnarborglin', '', 'MAN', 1870, 1871, 1872, null, null);
 
 --======= Insert Person id: 625 =======
@@ -5283,7 +5284,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (766, 'Åhus', 'Sverige', '', '', 55.92649, 14.30188, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1874, 14, 4, 2004, '2004-04-14', '', 766);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1875, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (323, 'Sömmerska', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (323, 625, 'Sömmerska', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (625, 'Signe', 'Borgström', '', 'signeborgstrom', '', 'WOMAN', 1873, 1874, 1875, null, null);
 
 --======= Insert Person id: 626 =======
@@ -5292,7 +5293,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (768, 'Kristianstads Heliga Trefaldighet', 'Sverige', '', '', 56.03244, 14.15274, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1877, 5, 4, 2002, '2002-04-05', '', 768);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1878, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (324, 'Verkstadschef vid flyget', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (324, 626, 'Verkstadschef vid flyget', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (626, 'Olof', 'Fredriksson', '', 'oloffredriksson', '', 'MAN', 1876, 1877, 1878, null, null);
 
 --======= Insert Person id: 627 =======
@@ -5308,7 +5309,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (771, 'Helsingborg', 'Sverige', '', '', 56.04399, 12.69611, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1883, 8, 6, 1806, '1806-06-08', '', 771);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1884, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (325, 'Grosshandlare och rådman', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (325, 628, 'Grosshandlare och rådman', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (628, 'Johan', 'Sahlback', 'Fredrik', 'johanfredriksahlback', '', 'UNKNOWN', 1882, 1883, 1884, null, null);
 
 --======= Insert Person id: 629 =======
@@ -5335,7 +5336,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (773, 'Bettna', 'Sverige', '', '', 58.90337, 16.64313, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1895, 17, 6, 1951, '1951-06-17', '', 773);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1896, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (326, 'Lantbrukare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (326, 632, 'Lantbrukare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (632, 'Johan', 'Fredriksson', 'David', 'johandavidfredriksson', '', 'MAN', 1894, 1895, 1896, null, null);
 
 --======= Insert Person id: 633 =======
@@ -5359,14 +5360,14 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (778, 'Landön', 'Fjälkinge', '', '', 55.97951, 14.38762, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1904, 22, 3, 1959, '1959-03-22', '', 778);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1905, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (327, 'Fiskare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (327, 635, 'Fiskare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (635, 'Berndt', 'Borgström', '', 'berndtborgstrom', '', 'MAN', 1903, 1904, 1905, null, null);
 
 --======= Insert Person id: 636 =======
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1906, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1907, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1908, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (328, 'Vd', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (328, 636, 'Vd', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (636, 'Urban', 'Ullberg', '', 'urbanullberg', '', 'MAN', 1906, 1907, 1908, null, null);
 
 --======= Insert Person id: 637 =======
@@ -5397,7 +5398,7 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1921, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1922, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1923, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (329, 'Ekonom', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (329, 641, 'Ekonom', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (641, 'Katarina', 'Nordberg', '', 'katarinanordberg', '', 'WOMAN', 1921, 1922, 1923, null, null);
 
 --======= Insert Person id: 642 =======
@@ -5422,7 +5423,7 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1933, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1934, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1935, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (330, 'Snickare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (330, 645, 'Snickare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (645, 'Emil', 'Grönlund', 'Gottfrid', 'emilgottfridgronlund', '', 'MAN', 1933, 1934, 1935, null, null);
 
 --======= Insert Person id: 646 =======
@@ -5458,7 +5459,7 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1948, 19, 5, 1826, '1826-05-19', '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1949, 23, 4, 1912, '1912-04-23', '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1950, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (331, 'Skräddarmästare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (331, 650, 'Skräddarmästare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (650, 'Christian', 'Heiden', 'Ludwig, Friedrich, Christoph', 'christianludwigfriedrichchristophheiden', 'Inflyttad omkring 1866 till Sverige.', 'MAN', 1948, 1949, 1950, null, null);
 
 --======= Insert Person id: 651 =======
@@ -5467,7 +5468,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (785, 'Lund', 'Sverige', '', '', 55.70664, 13.18759, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1952, 4, 7, 2002, '2002-07-04', '', 785);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1953, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (332, 'Yrkeslärarinna', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (332, 651, 'Yrkeslärarinna', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (651, 'Viveka', 'Heyden', 'Margareta', 'vivekamargaretaheyden', '', 'UNKNOWN', 1951, 1952, 1953, null, null);
 
 --======= Insert Person id: 652 =======
@@ -5496,7 +5497,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1963, 7, 4, 1912, '1912-04-07', '', 789);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1964, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1965, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (333, 'Øverläkare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (333, 655, 'Øverläkare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (655, 'Rutger', 'Heyden', 'John, Ludwig, Oscar', 'rutgerjohnludwigoscarheyden', '', 'MAN', 1963, 1964, 1965, null, null);
 
 --======= Insert Person id: 656 =======
@@ -5537,7 +5538,7 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1981, 14, 4, 1832, '1832-04-14', '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1982, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1983, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (334, 'Handlande', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (334, 661, 'Handlande', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (661, 'Adolf', 'Thulin', 'Johan', 'adolfjohanthulin', '', 'MAN', 1981, 1982, 1983, null, null);
 
 --======= Insert Person id: 662 =======
@@ -5552,7 +5553,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (795, 'Uddevalla', 'Sverige', '', '', 58.35096, 11.93264, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1988, 5, 5, 1821, '1821-05-05', '', 795);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1989, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (335, 'Grosshandlare och rådman', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (335, 663, 'Grosshandlare och rådman', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (663, 'Peter', 'Hegardt', 'Johansson', 'peterjohanssonhegardt', '', 'UNKNOWN', 1987, 1988, 1989, null, null);
 
 --======= Insert Person id: 664 =======
@@ -5572,7 +5573,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (796, 'Landskrona', 'Sverige', '', '', 55.87204, 12.83009, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1997, 26, 10, 1759, '1759-10-26', '', 796);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (1998, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (336, 'Bagarmästare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (336, 666, 'Bagarmästare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (666, 'Friedrich', 'Jask', '', 'friedrichjask', '', 'UNKNOWN', 1996, 1997, 1998, null, null);
 
 --======= Insert Person id: 667 =======
@@ -5601,7 +5602,7 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2008, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2009, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2010, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (337, 'Vd i alfa laval', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (337, 670, 'Vd i alfa laval', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (670, 'Lars', 'Halldén', '', 'larshallden', '', 'UNKNOWN', 2008, 2009, 2010, null, null);
 
 --======= Insert Person id: 671 =======
@@ -5609,7 +5610,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2011, 25, 3, 1936, '1936-03-25', '', 801);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2012, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2013, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (338, 'Øverste', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (338, 671, 'Øverste', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (671, 'Bengt', 'Thörn', 'Åke', 'bengtakethorn', 'Student 1957 i Kristianstad (L).
 Officersutbildning. Verksam vid pansartrupperna i Hässleholm.', 'MAN', 2011, 2012, 2013, null, null);
 
@@ -5642,7 +5643,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2026, 3, 5, 1942, '1942-05-03', '', 802);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2027, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2028, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (339, 'Maskintekniker', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (339, 676, 'Maskintekniker', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (676, 'Sven', 'Malmros', 'Uno', 'svenunomalmros', '', 'MAN', 2026, 2027, 2028, null, null);
 
 --======= Insert Person id: 677 =======
@@ -5656,7 +5657,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2032, 5, 2, 1945, '1945-02-05', '', 803);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2033, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2034, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (340, 'Leg sjuksköterska', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (340, 678, 'Leg sjuksköterska', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (678, 'Lena', 'Sjöström', 'Margareta', 'lenamargaretasjostrom', 'Studentexamen 1964 .
 Verksam som skolsköterska vid internationella skolan i Stockholm.', 'WOMAN', 2032, 2033, 2034, null, null);
 
@@ -5741,8 +5742,8 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2071, 18, 4, 1958, '1958-04-18', '', 808);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2072, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2073, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (341, 'Tax consultant', null, null, null, null, null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (342, 'Cpa', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (341, 691, 'Tax consultant', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (342, 691, 'Cpa', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (691, 'Matthew', 'Dumford', '', 'matthewdumford', 'Miami University, BS i Business 1980.
 Xavier University, Master of Business: Administration 1982.
 University of Denver, Master of Taxation 1986.
@@ -5814,7 +5815,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (816, 'Stockholm', 'Sverige', '', '', 59.33257, 18.06683, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2102, 16, 12, 1747, '1747-12-16', '', 816);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2103, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (343, 'Registrator', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (343, 701, 'Registrator', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (701, 'Peter', 'Hegardt', '', 'peterhegardt', '(Tab 43:196 i GS).
 Döpt 1712-07-29 i Malmö (M).
 Student 1728 i Lund (M).', 'UNKNOWN', 2101, 2102, 2103, null, null);
@@ -5825,7 +5826,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (818, 'Stockholm', 'Sverige', '', '', 59.33257, 18.06683, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2105, 13, 9, 1775, '1775-09-13', '', 818);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2106, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (344, 'Handlande och fabrikör i malmö', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (344, 702, 'Handlande och fabrikör i malmö', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (702, 'Jakob', 'Hegardt', '', 'jakobhegardt', '(Tab 44 i GS).
 Kyrkoföreståndare i Caroli församling från 1763 till 1767, då han flyttade till Stockholm. Riksdagsman i borgarståndet för Malmö 1761-62.', 'MAN', 2104, 2105, 2106, null, null);
 
@@ -5835,7 +5836,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (820, 'Gävle', 'Sverige', '', '', 60.67366, 17.14557, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2108, 22, 6, 1772, '1772-06-22', '', 820);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2109, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (345, 'Stadsläkare i gävle', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (345, 703, 'Stadsläkare i gävle', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (703, 'Cornelius', 'Hegardt', '', 'corneliushegardt', '(Tab 58 i GS).
 Student i Lund 1731-42 och i Uppsala 1741-44.
 Med dr 1744 i Uppsala (C).
@@ -5847,7 +5848,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (822, 'Stockholm', 'Sverige', '', '', 59.33257, 18.06683, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2111, 14, 10, 1749, '1749-10-14', '', 822);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2112, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (346, 'Handlande', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (346, 704, 'Handlande', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (704, 'Lorenz', 'Hegardt', '', 'lorenzhegardt', '(Tab 43:262 i GS).', 'UNKNOWN', 2110, 2111, 2112, null, null);
 
 --======= Insert Person id: 705 =======
@@ -5875,7 +5876,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (828, 'Malmö', 'Sverige', '', '', 55.59669, 13.0011, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2120, 16, 4, 1783, '1783-04-16', '', 828);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2121, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (347, 'Handlande i malmö', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (347, 707, 'Handlande i malmö', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (707, 'Gustaf', 'Hegardt', '', 'gustafhegardt', '(Tab 59 i GS).
 Efterlämnade en rätt ansenlig förmögenhet.', 'MAN', 2119, 2120, 2121, null, null);
 
@@ -5909,7 +5910,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (836, 'Stockholm', 'Sverige', '', '', 59.33257, 18.06683, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2132, 6, 7, 1788, '1788-07-06', '', 836);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2133, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (348, 'Grosshandlare i stockholm', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (348, 711, 'Grosshandlare i stockholm', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (711, 'Lars', 'Hegardt', '', 'larshegardt', '(Tab 45 i GS).
 Student 1772 i Lund (M).
 Rec 1784 i frimurarlogen S:t Erik. Rec 1787 i Arla Coldiuorden.', 'MAN', 2131, 2132, 2133, null, null);
@@ -5920,7 +5921,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (838, 'Stockholm', 'Sverige', '', '', 59.33257, 18.06683, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2135, 10, 1, 1818, '1818-01-10', '', 838);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2136, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (349, 'Grosshandlare i stockholm', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (349, 712, 'Grosshandlare i stockholm', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (712, 'Peter', 'Hegardt', '', 'peterhegardt', '(Tab 54 i GS).
 Hans hustru var svägerska till hans bror.
 Ägde sockerbruket vid Wollmar Yxhullsgatan och egendomen Ørnsberg i Brännkyrka.', 'MAN', 2134, 2135, 2136, null, null);
@@ -5939,7 +5940,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (842, 'på Ulriksdal', 'Solna', '', '', 59.38725, 18.01739, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2141, 1, 8, 1823, '1823-08-01', '', 842);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2142, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (350, 'Sjökapten', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (350, 714, 'Sjökapten', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (714, 'Georg', 'Hegardt', '', 'georghegardt', '(Tab 56 i GS).
 "Den 23/6 1772 begav han sig ut på sin första sjöresa och under en sådan begick han den 13/6 1779 första gången H Nattvard i svensk-finska församlingen i Reval. Han emottog skepparefartyg 1784 och återvände hem först 1790, vilket år den 6/3 han blev konstituerad till fänrik vid Arméns flotta och erhöll befäl å mörsarebåten nr 4.
 Under detta års krig bevistade han striderna vid Reval, Fredrikshamn och Björkö ävensom slaget vid Svensksund den 9/7, varefter han erhöll den mindre guldmedaljen.
@@ -6090,7 +6091,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (877, 'Malmö', 'Sverige', '', '', 55.59669, 13.0011, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2195, 22, 4, 1776, '1776-04-22', '', 877);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2196, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (351, 'Pastor primarius i tyska församlingen i malmö', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (351, 732, 'Pastor primarius i tyska församlingen i malmö', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (732, 'Anders', 'Trendelenburg', 'Filip', 'andersfiliptrendelenburg', '', 'MAN', 2194, 2195, 2196, null, null);
 
 --======= Insert Person id: 733 =======
@@ -6099,7 +6100,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (879, 'Malmö', 'Sverige', '', '', 55.59669, 13.0011, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2198, 1, 9, 1820, '1820-09-01', '', 879);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2199, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (352, 'Med dr och professor', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (352, 733, 'Med dr och professor', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (733, 'Caspar', 'Trendelenburg', '', 'caspartrendelenburg', '', 'UNKNOWN', 2197, 2198, 2199, null, null);
 
 --======= Insert Person id: 734 =======
@@ -6144,7 +6145,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (887, 'Stockholm', 'Sverige', '', '', 59.33257, 18.06683, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2216, 4, 4, 1857, '1857-04-04', '', 887);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2217, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (353, 'Grosshandlare i stockholm under firma j f erdman o co', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (353, 739, 'Grosshandlare i stockholm under firma j f erdman o co', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (739, 'Gustaf', 'Hegardt', '', 'gustafhegardt', '(Tab 46 i GS).
 RNO. "Var en av huvudstadens äldste och mest ansedde samt länge en av dess störste järnexportörer." (St D 7/4 1857). Rec 1814 i frimurarlogen S:t Erik.', 'MAN', 2215, 2216, 2217, null, null);
 
@@ -6210,7 +6211,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (903, 'Stockholm', 'Sverige', '', '', 59.33257, 18.06683, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2240, 18, 2, 1819, '1819-02-18', '', 903);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2241, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (354, 'Grosshandlare och sockerbruksägare i stockholm', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (354, 747, 'Grosshandlare och sockerbruksägare i stockholm', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (747, 'Johan', 'Hegardt', 'Jakob', 'johanjakobhegardt', '(Tab 54:235 i GS).', 'UNKNOWN', 2239, 2240, 2241, null, null);
 
 --======= Insert Person id: 748 =======
@@ -6219,7 +6220,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (905, 'Piteå', 'Sverige', '', '', 65.3201, 21.47392, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2243, 15, 4, 1829, '1829-04-15', '', 905);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2244, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (355, 'Grosshandlare i stockholm', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (355, 748, 'Grosshandlare i stockholm', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (748, 'Karl', 'Hegardt', 'Axel', 'karlaxelhegardt', '(Tab 55 i GS).
 Burskap som borgare 1818-06-30 i Stockholm (AB).', 'MAN', 2242, 2243, 2244, null, null);
 
@@ -6259,7 +6260,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2257, 23, 12, 1792, '1792-12-23', '', 912);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2258, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2259, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (356, 'Tobaksfabrikör i stockholm', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (356, 753, 'Tobaksfabrikör i stockholm', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (753, 'Peter', 'Hegardt', 'Vilhelm', 'petervilhelmhegardt', '(Tab 56:245 i GS).
 Utflyttad till Nordamerika från Stockholm (AB).', 'UNKNOWN', 2257, 2258, 2259, null, null);
 
@@ -6285,7 +6286,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (918, 'Stockholm', 'Sverige', '', '', 59.33257, 18.06683, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2267, 15, 7, 1872, '1872-07-15', '', 918);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2268, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (357, 'Sjökapten', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (357, 756, 'Sjökapten', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (756, 'Fredrik', 'Hegardt', 'Lorenz', 'fredriklorenzhegardt', '(Tab 56:248 i GS).
 Gick vid unga år till sjöss och förde länge fartyg ? bl a briggen ''Beate Marie'' ? med spannmålslaster mellan Odessa och Marseille. Var 1740-46 bosatt på sin gård Grinda i Värmdö sn och 1746-50 på Øverby i Bettna sn, vilken han också ägde och där han särskilt ägnade sig åt sin passion, fiske, samt från sistnämnda år i Stockholm. Han skall ha ägt det vackraste ''gubbansikte'' man kunde få se, inramat i silvervita lockar.', 'MAN', 2266, 2267, 2268, null, null);
 
@@ -6312,7 +6313,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (924, 'Stockholm', 'Sverige', '', '', 59.33257, 18.06683, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2276, 4, 2, 1818, '1818-02-04', '', 924);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2277, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (358, 'Apotekare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (358, 759, 'Apotekare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (759, 'Fredrik', 'Görges', 'David', 'fredrikdavidgorges', '', 'UNKNOWN', 2275, 2276, 2277, null, null);
 
 --======= Insert Person id: 760 =======
@@ -6325,7 +6326,7 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2281, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2282, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2283, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (359, 'Packhusstämpelmästare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (359, 761, 'Packhusstämpelmästare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (761, 'Johan', 'Ailly', 'Jakob, d', 'johanjakobdailly', '', 'MAN', 2281, 2282, 2283, null, null);
 
 --======= Insert Person id: 762 =======
@@ -6334,7 +6335,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (926, 'Stockholm', 'Sverige', '', '', 59.33257, 18.06683, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2285, 28, 12, 1854, '1854-12-28', '', 926);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2286, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (360, 'Guldsmed i stockholm', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (360, 762, 'Guldsmed i stockholm', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (762, 'Kasper', 'Sturm', 'Ludvig, David', 'kasperludvigdavidsturm', '', 'UNKNOWN', 2284, 2285, 2286, null, null);
 
 --======= Insert Person id: 763 =======
@@ -6350,7 +6351,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (929, 'Stockholm', 'Sverige', '', '', 59.33257, 18.06683, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2291, 13, 3, 1885, '1885-03-13', '', 929);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2292, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (361, 'Kontorist i sjöförsäkrings ab ägir', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (361, 764, 'Kontorist i sjöförsäkrings ab ägir', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (764, 'Bernhard', 'Hegardt', '', 'bernhardhegardt', '(Tab 46:227 i GS).', 'UNKNOWN', 2290, 2291, 2292, null, null);
 
 --======= Insert Person id: 765 =======
@@ -6367,8 +6368,8 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (933, 'Stockholm', 'Sverige', '', '', 59.33257, 18.06683, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2297, 1, 12, 1884, '1884-12-01', '', 933);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2298, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (362, 'Generalkonsul i köpenhamn', null, null, null, null, null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (363, 'Danmark', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (362, 766, 'Generalkonsul i köpenhamn', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (363, 766, 'Danmark', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (766, 'Gustaf', 'Hegardt', '', 'gustafhegardt', '(Tab 47 i GS).
 Eo tjänsteman i K Maj:ts kansli 1846. Eo notarie i kommerskollegium samma år, kanslist 1853, notarie 1856, tf sekreterare 1859 och ordinarie sekreterare 1861. Hade flera förordnanden som kommerseråd. Generalkonsul i Köpenhamn 1882. RNO. Rec 1846 i frimurarlogen S:t Erik, F A B där 1853-55 och rec 1849 i Arla Coldinuorden.
 H var "en duglig, plikttrogen och i hög grad arbetsam man, vilken därjämte ägde ett humant och älskligt väsen. H:s utnämning till den post, han vid sin död beklädde, hälsades därför på sin tid av alla med bifall. Det faller av sig självt att några mognade frukter av denna hans verksamhet i grannlandet icke kan i anseende till dess kortvarighet förväntas, men hans hjälpsamhet mot behövande landsmän skall länge leva i tacksamt minne hos mången.
@@ -6388,7 +6389,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (937, 'Stockholm', 'Sverige', '', '', 59.33257, 18.06683, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2303, null, null, 1897, '1897-01-01', '', 937);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2304, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (364, 'Köpman', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (364, 768, 'Köpman', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (768, 'Ludvig', 'Hegardt', '', 'ludvighegardt', '(Tab 50 i GS).
 Utflyttad till USA 1857 från Stockholm (AB).
 Amerikanskt medborgarskap i juli 1858.
@@ -6408,7 +6409,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (941, 'Stockholm', 'Sverige', '', '', 59.33257, 18.06683, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2309, 30, 6, 1822, '1822-06-30', '', 941);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2310, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (365, 'Stadsmäklare i stockholm', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (365, 770, 'Stadsmäklare i stockholm', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (770, 'Jakob', 'Patersen', 'Georg', 'jakobgeorgpatersen', '', 'UNKNOWN', 2308, 2309, 2310, null, null);
 
 --======= Insert Person id: 771 =======
@@ -6421,7 +6422,7 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2314, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2315, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2316, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (366, 'Tullförvaltare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (366, 772, 'Tullförvaltare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (772, 'Herman', 'Schlytern', '', 'hermanschlytern', '', 'MAN', 2314, 2315, 2316, null, null);
 
 --======= Insert Person id: 773 =======
@@ -6438,7 +6439,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (945, 'Malmö', 'Sverige', '', '', 55.59669, 13.0011, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2321, 14, 1, 1932, '1932-01-14', '', 945);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2322, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (367, 'Häradshövding', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (367, 774, 'Häradshövding', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (774, 'Gustaf', 'Hegardt', '', 'gustafhegardt', '(Tab 48 i GS).
 Efter att ha avlagt studentexamen i Uppsala 1875 ägnade han sig åt juridiska studier och avlade hovrättsexamen 1880, varpå han samma år blev eo notarie i Svea hovrätt. Fyra år senare utnämndes H till vice häradshövding och år 1884 slog han sig ned som praktiserande advokat i Malmö. Där innehade han Hegardts advokatbyrå, som under hans skickliga ledning snart nog tillvann sig ett synnerligen gott anseende och erhöll en omfattande kundkrets.
 Sedan 1887 var häradshövding Hegardt ledamot av Sveriges Advokatsamfund. H var verksam in i det sista, var en synnerligen driftig och dugande man, vilken gjorde en betydande insats i stadens näringsliv. Han var bl a juridiskt ombud för Margarinfabriken Zenith, som han även var med om att stifta.
@@ -6450,7 +6451,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (947, 'Stockholm', 'Sverige', '', '', 59.33257, 18.06683, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2324, 6, 5, 1908, '1908-05-06', '', 947);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2325, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (368, 'Grosshandlare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (368, 775, 'Grosshandlare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (775, 'Ivar', 'Hegardt', '', 'ivarhegardt', '(Tab 49 i GS).
 Blev efter att ha praktiserat hos olika affärsmän, prokurist hos firman Anders Berg & Co, som han övertog 1894 och innehade till sin död. Var dessutom verkställande direktör i Kontors? och Magasins AB Mälaren, i fastighets AB Sophia och i Stockholm?Järna torv AB.
 Firman Berg & Co var en av huvudstadens största grossister i hampa och lin, och H hade anseende som en synnerligen verksam, driftig och skicklig affärsman. Han bidrog verksamt till tillkomsten av Sofi Almquists samskolas präktiga skollokaler samt lät på uppdrag av Privata lärarinneseminariet uppföra dess tidsenliga skollokaler. Vid invigningen av detta senare 1905 framfördes av styrelsens ordförande ett tack "främst till byggherren, grosshandlare Hegardt, för hans i många avseenden storartade frikostighet".', 'MAN', 2323, 2324, 2325, null, null);
@@ -6470,7 +6471,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (951, 'Stockholm', 'Sverige', '', '', 59.33257, 18.06683, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2330, 13, 5, 1881, '1881-05-13', '', 951);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2331, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (369, 'Kassadirektör i sjöförsäkrings ab ägir', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (369, 777, 'Kassadirektör i sjöförsäkrings ab ägir', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (777, 'Karl', 'Cramér', 'Fredrik', 'karlfredrikcramer', '', 'UNKNOWN', 2329, 2330, 2331, null, null);
 
 --======= Insert Person id: 778 =======
@@ -6487,7 +6488,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (955, 'Duluth', 'USA', 'Minnesota', '', 46.78796, -92.09985, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2336, 22, 9, 1926, '1926-09-22', '', 955);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2337, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (370, 'Bankdirektör', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (370, 779, 'Bankdirektör', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (779, 'William', 'Hegardt', '', 'williamhegardt', '(Tab 51 i GS).
 Kom vid nio års ålder med sina föräldrar till Duluth, USA, där han sedan tillbringade hela sitt liv med undantag för åren 1879-87, då familjen bodde i Calumet, Michigan.
 Före avflyttningen dit var han anställd i Duluths gamla sparbank. Vid återkomsten till Duluth blev han bokhållare i American Exchange National Bank. I denna bank blev han till slut bankdirektör.
@@ -6509,7 +6510,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (959, 'Los Angeles', 'USA', 'Californien', '', 34.05357, -118.24545, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2342, 12, 12, 1904, '1904-12-12', '', 959);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2343, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (371, 'Øveringenjör', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (371, 781, 'Øveringenjör', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (781, 'Ivar', 'Hegardt', '', 'ivarhegardt', '(Tab 52 i GS).
 Läste vid University of Michigan. Anställd vid koppargruvorna i Ducktown, Tennessee, USA, där han blev överingenjör. Familjen flyttade p g a Ivars hälsa till Redlands, Californien, USA.', 'MAN', 2341, 2342, 2343, null, null);
 
@@ -6527,7 +6528,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (963, 'USA', 'Sverige', '', '', 59.33257, 18.06682, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2348, 28, 12, 1960, '1960-12-28', '', 963);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2349, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (372, 'Lärare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (372, 783, 'Lärare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (783, 'Rose', 'Hegardt', '', 'rosehegardt', '(Tab 50:220 i GS).
 Undervisade i Seattle, Washington och Redlands, Californien.', 'UNKNOWN', 2347, 2348, 2349, null, null);
 
@@ -6553,7 +6554,7 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2356, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2357, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2358, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (373, 'Bibiotikarie', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (373, 786, 'Bibiotikarie', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (786, 'Adolf', 'Arwidsson', 'Ivar', 'adolfivararwidsson', '', 'MAN', 2356, 2357, 2358, null, null);
 
 --======= Insert Person id: 787 =======
@@ -6562,7 +6563,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (967, 'Malmö', 'Sverige', '', '', 55.59669, 13.0011, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2360, 8, 6, 1958, '1958-06-08', '', 967);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2361, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (374, 'Framstående sångerska', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (374, 787, 'Framstående sångerska', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (787, 'Anna', 'Rahllf', 'Nikoline, Camilla', 'annanikolinecamillarahllf', 'Vasamedaljen i guld av 8:e storleken 1921-06-06..', 'WOMAN', 2359, 2360, 2361, null, null);
 
 --======= Insert Person id: 788 =======
@@ -6623,7 +6624,7 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2380, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2381, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2382, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (375, 'Etatsråd', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (375, 794, 'Etatsråd', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (794, 'Frederik', 'Rahllf', 'Jörgen', 'frederikjorgenrahllf', '', 'MAN', 2380, 2381, 2382, null, null);
 
 --======= Insert Person id: 795 =======
@@ -6645,8 +6646,8 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2389, 28, 1, 1923, '1923-01-28', '', 980);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2390, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2391, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (376, 'Folkskollärare', null, null, null, null, null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (377, 'Författare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (376, 797, 'Folkskollärare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (377, 797, 'Författare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (797, 'Sonja', 'Glimstedt', 'Carola', 'sonjacarolaglimstedt', 'Adress Gäddvägen 27, 582 58 LINKØPING.
 Folkskollärarexamen, fil kand.
 Lärare vid Linköpings grundskolor. Lärarutbildare.
@@ -6665,7 +6666,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2395, 26, 8, 1948, '1948-08-26', '', 983);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2396, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2397, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (378, 'Lärare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (378, 799, 'Lärare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (799, 'Viveca', 'Glimstedt', '', 'vivecaglimstedt', 'Lågstadielärarexamen 1971 i Malmö (M).
 Tjänstgöringar i Malmö, Norrköping, Lidköping, Stockholm och Simrishamn, företrädesvis med invandrarundervisning Bor i Vallby (L).', 'WOMAN', 2395, 2396, 2397, null, null);
 
@@ -6674,7 +6675,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2398, 23, 3, 1923, '1923-03-23', '', 984);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2399, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2400, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (379, 'Officer vid lv2', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (379, 800, 'Officer vid lv2', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (800, 'Rudolf', 'Hall', 'Lennart', 'rudolflennarthall', 'Oforskat Fullständiga uppgifter (sid 3).', 'MAN', 2398, 2399, 2400, null, null);
 
 --======= Insert Person id: 801 =======
@@ -6682,7 +6683,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2401, 21, 3, 1947, '1947-03-21', '', 985);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2402, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2403, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (380, 'Kronofogde', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (380, 801, 'Kronofogde', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (801, 'Bengt', 'Holmström', '', 'bengtholmstrom', 'Jur kand 1972 i Lund (M).
 Tingstjänstgöring vid Lidköpings tingsrätt. Kronofogde i Norrköping.
 Avdelningsdir vid Riksskatteverket, Stockholm.
@@ -6693,7 +6694,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2404, 11, 3, 1981, '1981-03-11', '', 986);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2405, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2406, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (381, 'Studerande', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (381, 802, 'Studerande', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (802, 'David', 'Holmström', '', 'davidholmstrom', '', 'UNKNOWN', 2404, 2405, 2406, null, null);
 
 --======= Insert Person id: 803 =======
@@ -6701,7 +6702,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2407, 20, 4, 1983, '1983-04-20', '', 987);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2408, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2409, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (382, 'Studerande', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (382, 803, 'Studerande', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (803, 'Olivia', 'Holmström', '', 'oliviaholmstrom', '', 'UNKNOWN', 2407, 2408, 2409, null, null);
 
 --======= Insert Person id: 804 =======
@@ -6709,14 +6710,14 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2410, 25, 11, 1889, '1889-11-25', '', 988);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2411, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2412, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (383, 'Sjökapten', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (383, 804, 'Sjökapten', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (804, 'Agne', 'Fris', '', 'agnefris', '', 'UNKNOWN', 2410, 2411, 2412, null, null);
 
 --======= Insert Person id: 805 =======
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2413, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2414, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2415, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (384, 'Banktjänsteman', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (384, 805, 'Banktjänsteman', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (805, 'Filip', 'Ljung', '', 'filipljung', '', 'UNKNOWN', 2413, 2414, 2415, null, null);
 
 --======= Insert Person id: 806 =======
@@ -6725,7 +6726,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (990, 'Malmö', 'Sverige', '', '', 55.59669, 13.0011, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2417, 13, 2, 1949, '1949-02-13', '', 990);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2418, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (385, 'Jurist', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (385, 806, 'Jurist', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (806, 'Malte', 'Stevelius', 'Rutger, Frans, Ax, son', 'malterutgerfransaxsonstevelius', '', 'MAN', 2416, 2417, 2418, null, null);
 
 --======= Insert Person id: 807 =======
@@ -6733,7 +6734,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2419, 10, 4, 1930, '1930-04-10', '', 991);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2420, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2421, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (386, 'Föreståndare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (386, 807, 'Föreståndare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (807, 'Marguerite', 'Stevelius', 'Irène, Karin, Doris, Veronica', 'margueriteirenekarindorisveronicastevelius', 'Ingenjörsexamen vid Malmö högre tekniska läroverk 1952.
 Ålderdomshemsföreståndareutbildning vid Kommunala högskolan i Malmö 1980. Föreståndare Celciusgården, Malmö 1980-1983. Föreståndare vid Sorgenfri Servicecentrum, Malmö från 1983.', 'UNKNOWN', 2419, 2420, 2421, null, null);
 
@@ -6747,7 +6748,7 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2425, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2426, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2427, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (387, 'Direktör', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (387, 809, 'Direktör', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (809, 'Teodor', 'Ekroth', '', 'teodorekroth', '', 'MAN', 2425, 2426, 2427, null, null);
 
 --======= Insert Person id: 810 =======
@@ -6755,7 +6756,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2428, 5, 6, 1888, '1888-06-05', '', 992);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2429, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2430, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (388, 'Bankkamrer', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (388, 810, 'Bankkamrer', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (810, 'Sven', 'Löfdahl', 'Johan', 'svenjohanlofdahl', '', 'UNKNOWN', 2428, 2429, 2430, null, null);
 
 --======= Insert Person id: 811 =======
@@ -6800,7 +6801,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2446, 21, 8, 1869, '1869-08-21', '', 998);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2447, null, null, 1933, '1933-01-01', '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2448, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (389, 'Barnläkare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (389, 816, 'Barnläkare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (816, 'Nellie', 'Moore', 'Florence', 'nellieflorencemoore', '', 'WOMAN', 2446, 2447, 2448, null, null);
 
 --======= Insert Person id: 817 =======
@@ -6819,7 +6820,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1002, 'Los Angeles', 'USA', 'Californien', '', 34.05357, -118.24545, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2453, 27, 6, 1990, '1990-06-27', '', 1002);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2454, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (390, 'Koreograf', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (390, 818, 'Koreograf', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (818, 'Marie', 'Hegardt', 'Louise', 'marielouisehegardt', '(Tab 52:220 i GS).
 Efter avslutad skolgång i Los Angeles, studerade hon balett i sju år och framträdde på Hollywood Bowl. Hon dansade vid Ebell teatern.
 Hennes grupp, Staes-Valova, dansade vid premiären på Shrine Auditorium och Collisseum.
@@ -6831,7 +6832,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1004, 'San Marino', 'USA', 'Californien', '', 34.12215, -118.10501, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2456, 26, 7, 1936, '1936-07-26', '', 1004);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2457, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (391, 'Revisor', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (391, 819, 'Revisor', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (819, 'Henry', 'Paull', 'B', 'henrybpaull', '', 'UNKNOWN', 2455, 2456, 2457, null, null);
 
 --======= Insert Person id: 820 =======
@@ -6840,7 +6841,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1006, 'USA', 'Sverige', '', '', 59.33257, 18.06682, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2459, 28, 3, 1935, '1935-03-28', '', 1006);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2460, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (392, 'Direktör', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (392, 820, 'Direktör', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (820, 'Gilbert', 'Gaylord', 'Hawkins', 'gilberthawkinsgaylord', '', 'UNKNOWN', 2458, 2459, 2460, null, null);
 
 --======= Insert Person id: 821 =======
@@ -6864,7 +6865,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2467, 11, 12, 1905, '1905-12-11', '', 1011);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2468, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2469, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (393, 'Plantageägare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (393, 823, 'Plantageägare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (823, 'Robert', 'Hegardt', 'Raviller', 'robertravillerhegardt', 'Adress P.O Box 966, Pauma Valley, Californien 92061, USA.
 (Tab 53:222 i GS).
 Bor i Pauma Valley, Californien, USA.', 'MAN', 2467, 2468, 2469, null, null);
@@ -6882,7 +6883,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2473, 8, 4, 1910, '1910-04-08', '', 1014);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2474, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2475, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (394, 'Ingenjör', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (394, 825, 'Ingenjör', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (825, 'Karl', 'Hegardt', 'Edward', 'karledwardhegardt', 'Adress 321 Calle Fiesta, San Clemente, Californien 92672, USA.
 (Tab 53:223 i GS).
 BA i elenergi 1932 vid California Institute of Technology (Cal Tech) i Pasadena, Californien, USA. Var i nära 40 år anställd som ingenjör vid Pasadena Telephone Co. Pensionerades 1974.
@@ -6898,7 +6899,7 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2479, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2480, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2481, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (395, 'Läkare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (395, 827, 'Läkare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (827, 'J', 'Everhard', 'J', 'jjeverhard', '', 'MAN', 2479, 2480, 2481, null, null);
 
 --======= Insert Person id: 828 =======
@@ -6952,7 +6953,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1019, 'Los Angeles', 'USA', 'Californien', '', 34.05357, -118.24545, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2504, 21, 10, 1957, '1957-10-21', '', 1019);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2505, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (396, 'Lärare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (396, 835, 'Lärare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (835, 'Faye', 'Crawford', '', 'fayecrawford', '', 'WOMAN', 2503, 2504, 2505, null, null);
 
 --======= Insert Person id: 836 =======
@@ -6967,7 +6968,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2509, 30, 9, 1938, '1938-09-30', '', 1021);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2510, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2511, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (397, 'Börsmäklare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (397, 837, 'Börsmäklare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (837, 'Robert', 'Hegardt', 'Crawford', 'robertcrawfordhegardt', 'Adress 2239 Via Oeste, Fallbrook, Californien 92028, USA.
 BA i ekonomi vid Pomona College 1960. Har arbetat som börsmäklare sedan dess och är nu anställd hos Dean Witter i Fallbrook, Californien, USA. Är sedan många år medlem i Rotary och är nu direktör där.
 Bor i Fallbrook, Californien, USA.', 'MAN', 2509, 2510, 2511, null, null);
@@ -6977,7 +6978,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2512, 8, 12, 1943, '1943-12-08', '', 1022);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2513, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2514, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (398, 'Lärare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (398, 838, 'Lärare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (838, 'Anne', 'Hegardt', 'Marie', 'annemariehegardt', 'Adress 27932 Winding Way, Malibu, Californien 90265, USA.
 Har AB-examen och lärarlegitimation 1965 från University of California i Los Angeles, USA. Arbetar som lärare sedan 1965.
 Bor i Malibu, Californien, USA.', 'UNKNOWN', 2512, 2513, 2514, null, null);
@@ -6994,7 +6995,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2518, 27, 10, 1938, '1938-10-27', '', 1024);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2519, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2520, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (399, 'Lärare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (399, 840, 'Lärare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (840, 'Joan', 'Hegardt', 'Carol', 'joancarolhegardt', 'Adress 268 St Katherines Road, Las Canada, Californien 91011, USA.
 BS i undervisning vid University of Southern California i Los Angeles.
 Arbetat som lärare i Glendale Unified School District i många år.
@@ -7005,7 +7006,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2521, 13, 5, 1941, '1941-05-13', '', 1025);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2522, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2523, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (400, 'Familje', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (400, 841, 'Familje', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (841, 'Barbara', 'Hegardt', 'Ann', 'barbaraannhegardt', 'Adress 3401 Coldwater Canyon Lane, Beverly Hills, Californien 90210, USA.
 Skild 1991.
 Examen i psykologi 1979 vid University of California i Los Angeles.
@@ -7018,7 +7019,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2524, 16, 6, 1945, '1945-06-16', '', 1026);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2525, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2526, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (401, 'Tandläkare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (401, 842, 'Tandläkare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (842, 'John', 'Hegardt', 'Lawrence', 'johnlawrencehegardt', 'Adress 8 Celeste Place, Rolling Hills Est, Californien 90274, USA.
 Utexaminerad 1971 från University of Southern California Dental School. Har sedan dess arbetat som tandläkare i Long Beach.
 Bor i Rolling Hills, Californien, USA.', 'MAN', 2524, 2525, 2526, null, null);
@@ -7028,7 +7029,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2527, 17, 10, 1958, '1958-10-17', '', 1027);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2528, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2529, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (402, 'Programmerare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (402, 843, 'Programmerare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (843, 'William', 'Hegardt', 'Karl', 'williamkarlhegardt', 'Adress 1611 Sierra Alta, Santa Ana, Californien 92672, USA.
 Utexaminerades 1981 med en BS i datavetenskap från University of California i Irvine. Är nu anställd vid Genisco Computers i Costa Mesa.
 Bor i Santa Ana, Californien, USA.', 'MAN', 2527, 2528, 2529, null, null);
@@ -7057,7 +7058,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2539, 21, 4, 1966, '1966-04-21', '', 1029);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2540, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2541, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (403, 'Studerande', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (403, 847, 'Studerande', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (847, 'Brian', 'Hegardt', 'Douglas', 'briandouglashegardt', 'Adress 2239 Via Oeste, Fallbrook, Californien 92028, USA.
 BA i Science of Finance vid Santa Clara Universitet juni 1988 Juris Doktor (Law degree) vid universitetet i San Diego juni 1988 Bor i Fallbrook, Californien, USA.', 'UNKNOWN', 2539, 2540, 2541, null, null);
 
@@ -7066,7 +7067,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2542, 9, 8, 1967, '1967-08-09', '', 1030);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2543, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2544, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (404, 'Studerande', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (404, 848, 'Studerande', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (848, 'Ronald', 'Hegardt', 'David', 'ronalddavidhegardt', 'Adress 2231 Via Oeste, Fallbrook, Californien, USA.
 Bor i Fallbrook, Californien, USA.', 'UNKNOWN', 2542, 2543, 2544, null, null);
 
@@ -7075,7 +7076,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2545, 27, 8, 1969, '1969-08-27', '', 1031);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2546, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2547, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (405, 'Studerande', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (405, 849, 'Studerande', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (849, 'Kathleen', 'Hegardt', 'Joan', 'kathleenjoanhegardt', 'Adress 2239 Via Oeste, Fallbrook, Californien 92028, USA.
 BA i Commerce vid Santa Clara universitetet juni 1991 Bor i Fallbrook, Californien, USA.', 'UNKNOWN', 2545, 2546, 2547, null, null);
 
@@ -7084,7 +7085,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2548, 28, 4, 1971, '1971-04-28', '', 1032);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2549, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2550, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (406, 'Studerande', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (406, 850, 'Studerande', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (850, 'Christine', 'Hegardt', 'Marion', 'christinemarionhegardt', 'Adress 2239 Via Oeste, Fallbrook, Californien 92028, USA.
 BA i Business Administration vid universitet i San Diego maj 1993 Bor i Fallbrook, Californien, USA.', 'UNKNOWN', 2548, 2549, 2550, null, null);
 
@@ -7092,7 +7093,7 @@ BA i Business Administration vid universitet i San Diego maj 1993 Bor i Fallbroo
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2551, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2552, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2553, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (407, 'Lärare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (407, 851, 'Lärare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (851, 'Richard', 'North', 'Wayne', 'richardwaynenorth', 'Utexaminerad från Los Angeles State College.', 'UNKNOWN', 2551, 2552, 2553, null, null);
 
 --======= Insert Person id: 852 =======
@@ -7143,7 +7144,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2575, 28, 3, 1941, '1941-03-28', '', 1034);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2576, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2577, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (408, 'Animation director', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (408, 859, 'Animation director', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (859, 'Charles', 'Swenson', 'Gregory', 'charlesgregoryswenson', '', 'MAN', 2575, 2576, 2577, null, null);
 
 --======= Insert Person id: 860 =======
@@ -7151,7 +7152,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2578, 6, 9, 1964, '1964-09-06', '', 1035);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2579, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2580, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (409, 'Vice vd för after', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (409, 860, 'Vice vd för after', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (860, 'Marcy', 'Swenson', 'Cristine', 'marcycristineswenson', 'BA i Matematik-Dator vetenskap vid UCLA, Los Angeles', 'UNKNOWN', 2578, 2579, 2580, null, null);
 
 --======= Insert Person id: 861 =======
@@ -7159,7 +7160,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2581, 2, 5, 1967, '1967-05-02', '', 1036);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2582, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2583, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (410, 'Human resources representative', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (410, 861, 'Human resources representative', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (861, 'Carrie', 'Swenson', 'Elisabeth', 'carrieelisabethswenson', 'BA i psykologi vid UCLA, Los Angeles', 'UNKNOWN', 2581, 2582, 2583, null, null);
 
 --======= Insert Person id: 862 =======
@@ -7186,7 +7187,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2593, 22, 10, 1969, '1969-10-22', '', 1038);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2594, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2595, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (411, 'Revisor', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (411, 865, 'Revisor', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (865, 'John', 'Hegardt', 'Richard', 'johnrichardhegardt', 'Adress 8 Celeste Place, Rolling Hills Est, Californien 90274, USA.
 Examen från College i San Diego. Anställd vid American City Morgage Co, Long Beach, Californien, USA som revisor.
 Bor i Rolling Hills, Californien, USA.', 'UNKNOWN', 2593, 2594, 2595, null, null);
@@ -7196,7 +7197,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2596, 24, 7, 1972, '1972-07-24', '', 1039);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2597, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2598, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (412, 'Studerande', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (412, 866, 'Studerande', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (866, 'Cheri', 'Hegardt', 'Lynn', 'cherilynnhegardt', 'Adress 8 Celeste Place, Rolling Hills Est, Californien 90274, USA.
 Bor i Rolling Hills, Californien, USA.', 'UNKNOWN', 2596, 2597, 2598, null, null);
 
@@ -7281,7 +7282,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1050, 'Stockholm', 'Sverige', '', '', 59.33257, 18.06683, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2633, 14, 5, 1915, '1915-05-14', '', 1050);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2634, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (413, 'Musik', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (413, 878, 'Musik', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (878, 'Matilda', 'Hegardt', 'Teresia, Bernhardina', 'matildateresiabernhardinahegardt', '(Tab 55:239 i GS).', 'UNKNOWN', 2632, 2633, 2634, null, null);
 
 --======= Insert Person id: 879 =======
@@ -7294,7 +7295,7 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2638, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2639, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2640, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (414, 'Kammarskrivare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (414, 880, 'Kammarskrivare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (880, 'Per', 'Cronland', 'Gustaf', 'pergustafcronland', '', 'MAN', 2638, 2639, 2640, null, null);
 
 --======= Insert Person id: 881 =======
@@ -7335,7 +7336,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1059, 'Stockholm', 'Sverige', '', '', 59.33257, 18.06683, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2654, 6, 3, 1897, '1897-03-06', '', 1059);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2655, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (415, 'Kommissionslantmätare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (415, 885, 'Kommissionslantmätare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (885, 'Alfons', 'Kjebon', '', 'alfonskjebon', '', 'UNKNOWN', 2653, 2654, 2655, null, null);
 
 --======= Insert Person id: 886 =======
@@ -7344,7 +7345,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1061, 'Stockholm', 'Sverige', '', '', 59.33257, 18.06683, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2657, 31, 8, 1907, '1907-08-31', '', 1061);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2658, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (416, 'Stadsmäklare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (416, 886, 'Stadsmäklare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (886, 'Lorenz', 'Segerström', 'Adolf', 'lorenzadolfsegerstrom', '', 'UNKNOWN', 2656, 2657, 2658, null, null);
 
 --======= Insert Person id: 887 =======
@@ -7357,7 +7358,7 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2662, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2663, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2664, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (417, 'Apotekare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (417, 888, 'Apotekare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (888, 'Thyge', 'Hassenbalck', 'Jakob', 'thygejakobhassenbalck', '', 'MAN', 2662, 2663, 2664, null, null);
 
 --======= Insert Person id: 889 =======
@@ -7366,7 +7367,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1063, 'Gävle', 'Sverige', '', '', 60.67366, 17.14557, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2666, 2, 9, 1803, '1803-09-02', '', 1063);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2667, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (418, 'Apotekare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (418, 889, 'Apotekare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (889, 'Lars', 'Luuth', '', 'larsluuth', '', 'UNKNOWN', 2665, 2666, 2667, null, null);
 
 --======= Insert Person id: 890 =======
@@ -7374,7 +7375,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1064, 'Gävle', 'Sverige', '', '', 60.67366, 17.14557, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2669, 6, 3, 1808, '1808-03-06', '', 1064);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2670, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (419, 'Lektor', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (419, 890, 'Lektor', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (890, 'Johan', 'Wikström', '', 'johanwikstrom', '', 'UNKNOWN', 2668, 2669, 2670, null, null);
 
 --======= Insert Person id: 891 =======
@@ -7387,7 +7388,7 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2674, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2675, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2676, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (420, 'Handlande', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (420, 892, 'Handlande', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (892, 'Mattias', 'Morsing', '', 'mattiasmorsing', '', 'MAN', 2674, 2675, 2676, null, null);
 
 --======= Insert Person id: 893 =======
@@ -7395,7 +7396,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1065, 'Malmö', 'Sverige', '', '', 55.59669, 13.0011, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2678, 14, 6, 1793, '1793-06-14', '', 1065);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2679, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (421, 'Handlande', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (421, 893, 'Handlande', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (893, 'Hans', 'Schiuberg', 'Peter', 'hanspeterschiuberg', '', 'UNKNOWN', 2677, 2678, 2679, null, null);
 
 --======= Insert Person id: 894 =======
@@ -7404,7 +7405,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1067, 'Malmö', 'Sverige', '', '', 55.59669, 13.0011, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2681, 13, 3, 1834, '1834-03-13', '', 1067);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2682, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (422, 'Handlande i malmö från 1779', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (422, 894, 'Handlande i malmö från 1779', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (894, 'Kornelius', 'Hegardt', '', 'korneliushegardt', '(Tab 64:297 i GS).
 Ägde vid sin död "Värdshus- och teaterbyggnaden" (Stadt Hamburg).', 'UNKNOWN', 2680, 2681, 2682, null, null);
 
@@ -7413,7 +7414,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1068, 'på sin gård Håkanstorp', 'Sverige', '', '', 57.87174, 15.98453, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2684, 1, 3, 1802, '1802-03-01', '', 1068);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2685, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (423, 'Kyrkoinspektör', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (423, 895, 'Kyrkoinspektör', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (895, 'Arvid', 'Ausell', '', 'arvidausell', '', 'UNKNOWN', 2683, 2684, 2685, null, null);
 
 --======= Insert Person id: 896 =======
@@ -7422,7 +7423,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1070, 'Malmö', 'Sverige', '', '', 55.59669, 13.0011, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2687, 4, 6, 1817, '1817-06-04', '', 1070);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2688, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (424, 'Tullförvaltare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (424, 896, 'Tullförvaltare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (896, 'Weddig', 'Borg', '', 'weddigborg', '', 'MAN', 2686, 2687, 2688, null, null);
 
 --======= Insert Person id: 897 =======
@@ -7454,7 +7455,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1077, 'på Vegeholm i Strövelstorp', 'Sverige', '', '', 56.16555, 12.83571, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2699, null, null, 1814, '1814-01-01', '', 1077);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2700, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (425, 'Lagman', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (425, 900, 'Lagman', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (900, 'Magnus', 'Flinck', '', 'magnusflinck', '', 'UNKNOWN', 2698, 2699, 2700, null, null);
 
 --======= Insert Person id: 901 =======
@@ -7554,7 +7555,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1098, 'Lund', 'Sverige', '', '', 55.70664, 13.18759, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2738, 28, 3, 1838, '1838-03-28', '', 1098);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2739, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (426, 'Kvartersmästare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (426, 913, 'Kvartersmästare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (913, 'Mattias', 'Kloow', '', 'mattiaskloow', '', 'MAN', 2737, 2738, 2739, null, null);
 
 --======= Insert Person id: 914 =======
@@ -7568,8 +7569,8 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2743, 10, 11, 1925, '1925-11-10', '', 1099);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2744, 30, 3, 1992, '1992-03-30', '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2745, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (427, 'Ingenjör', null, null, null, null, null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (428, 'Företagsekonom', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (427, 915, 'Ingenjör', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (428, 915, 'Företagsekonom', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (915, 'Karl', 'Grimsberg', 'Börje', 'karlborjegrimsberg', 'Ingenjörsexamen vid Malmö högre tekniska läroverk 1951.
 Högre företagsekonomisk examen 1967. Fil kand (sociologi, handelsrätt) vid Lunds universitet 1981.', 'UNKNOWN', 2743, 2744, 2745, null, null);
 
@@ -7578,7 +7579,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2746, 21, 9, 1912, '1912-09-21', '', 1100);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2747, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2748, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (429, 'Hemmafru', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (429, 916, 'Hemmafru', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (916, 'Karin', 'Moberg', '', 'karinmoberg', '', 'WOMAN', 2746, 2747, 2748, null, null);
 
 --======= Insert Person id: 917 =======
@@ -7587,7 +7588,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1102, 'Linköping', 'Sverige', '', '', 58.41109, 15.62565, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2750, 8, 2, 1974, '1974-02-08', '', 1102);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2751, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (430, 'Posttjänsteman', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (430, 917, 'Posttjänsteman', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (917, 'Valter', 'Holmström', '', 'valterholmstrom', '', 'MAN', 2749, 2750, 2751, null, null);
 
 --======= Insert Person id: 918 =======
@@ -7611,21 +7612,21 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2758, 22, 4, 1960, '1960-04-22', '', 1107);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2759, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2760, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (431, 'Civilekonom', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (431, 920, 'Civilekonom', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (920, 'Michael', 'Grant', '', 'michaelgrant', '1985 - 1990 Controller vid ABB. 1991 - 1994 Sakkunnig vid kommunikationsdepartementet. Från 1995 anställd vid Unisource i Amsterdam, Holland.', 'MAN', 2758, 2759, 2760, null, null);
 
 --======= Insert Person id: 921 =======
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2761, null, null, 1930, '1930-01-01', '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2762, null, null, 1980, '1980-01-01', '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2763, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (432, 'Sjuksköterska', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (432, 921, 'Sjuksköterska', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (921, 'Ingvor', 'Ral', '', 'ingvorral', '', 'WOMAN', 2761, 2762, 2763, null, null);
 
 --======= Insert Person id: 922 =======
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2764, 6, 1, 1932, '1932-01-06', '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2765, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2766, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (433, 'Professor i anatomi', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (433, 922, 'Professor i anatomi', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (922, 'Gunnar', 'Grant', '', 'gunnargrant', '', 'MAN', 2764, 2765, 2766, null, null);
 
 --======= Insert Person id: 923 =======
@@ -7702,7 +7703,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1123, 'Karlshamn', 'Sverige', '', '', 56.16972, 14.86057, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2795, null, null, 1718, '1718-01-01', '', 1123);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2796, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (434, 'Handlande i karlshamn', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (434, 932, 'Handlande i karlshamn', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (932, 'Jöran', 'Hegardt', '', 'joranhegardt', '(Tab 60:281 i GS).
 Kommissarie vid amiralitetet i Karlskrona 1716.', 'UNKNOWN', 2794, 2795, 2796, null, null);
 
@@ -7712,7 +7713,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1125, 'Malmö', 'Sverige', '', '', 55.59669, 13.0011, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2798, 18, 7, 1762, '1762-07-18', '', 1125);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2799, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (435, 'Borgmästare i malmö', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (435, 933, 'Borgmästare i malmö', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (933, 'Josias', 'Hegardt', '', 'josiashegardt', '(Tab 61 i GS).
 H erhöll under tiden 1697-1705 i utlandet utbildning i handel och manufakturer. Förestod därefter faderns handel till 1710, då han erhöll burskap som egen handlare och drev bl a klädeshandel. 1714 förordnades han av magistraten - då endast 31 år - till förman för stadens äldste samt valdes 1719 till riksdagsman för Malmö och utsågs till ledamot av sekreta utskottet.
 1720 kallades han enhälligt till rådman, men undanbad sig förtroendet. Uppsattes 1721 på förslag till justitieborgmästare. Utnämndes 1726 till politiborgmästare och var åren 1715?62 kyrkvärd i Caroli församling.
@@ -7726,7 +7727,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1127, 'Lund', 'Sverige', '', '', 55.70664, 13.18759, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2801, 4, 4, 1732, '1732-04-04', '', 1127);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2802, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (436, 'Domprost', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (436, 934, 'Domprost', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (934, 'Martin', 'Hegardt', '', 'martinhegardt', '(Tab 60:323 i GS).
 Student i Lund 1702 och i Rostock 1705. Fil mag 1706 i Rostock. Studerade 1708?09 vid universitetet i Greifswald och blev där 1708 teol baccalaureus. Reste 1709 till England och var 1710?12 pastor vid den nyinrättade, ur den svenskdanska församlingen utbrutna svenska församlingen i London. Blev, efter att ha varit uppförd på förslag till eo professor i kyrkohistoria vid Lunds universitet, 1710 i maj av kungliga senaten utnämnd till befattningen.
 Teol dr i Greifswald 1714. Tillträdde detta år sin professur. Tredje teol professor i Lund samt kyrkoherde i Vallkärra och Stångby prebende?pastorat 1716. Prost i Torna kontrakt samma år. Andre teol professor samt kyrkoherde i Uppåkra och Flackarp prebende?pastorat 1718 och prost i Bara kontrakt samma år. Förste teol professor och domprost i Lund 1728. Var rektor vid universitetet 1719?27 samt presiderade vid prästmötet i Lund 1722.
@@ -7790,7 +7791,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1139, 'Skabersjö', 'Sverige', '', '', 55.54358, 13.16413, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2819, null, null, 1681, '1681-01-01', '', 1139);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2820, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (437, 'Prost', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (437, 940, 'Prost', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (940, 'Jörgen', 'Faxe', 'Göran', 'jorgengoranfaxe', '', 'MAN', 2818, 2819, 2820, null, null);
 
 --======= Insert Person id: 941 =======
@@ -7812,7 +7813,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1142, 'Landskrona', 'Sverige', '', '', 55.87204, 12.83009, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2828, 5, 6, 1720, '1720-06-05', '', 1142);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2829, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (438, 'Handlande i landskrona', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (438, 943, 'Handlande i landskrona', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (943, 'Johan', 'Lange', '', 'johanlange', '', 'UNKNOWN', 2827, 2828, 2829, null, null);
 
 --======= Insert Person id: 944 =======
@@ -7836,7 +7837,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1147, 'Håstad', 'Sverige', '', '', 55.77439, 13.23094, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2837, 5, 10, 1769, '1769-10-05', '', 1147);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2838, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (439, 'Prost', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (439, 946, 'Prost', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (946, 'Peter', 'Hegardt', '', 'peterhegardt', '(Tab 61:283 i GS).', 'MAN', 2836, 2837, 2838, null, null);
 
 --======= Insert Person id: 947 =======
@@ -7845,7 +7846,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1149, 'Malmö', 'Sverige', '', '', 55.59669, 13.0011, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2840, 29, 6, 1753, '1753-06-29', '', 1149);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2841, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (440, 'Klädesfabrikör', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (440, 947, 'Klädesfabrikör', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (947, 'Johan', 'Hegardt', '', 'johanhegardt', '(Tab 64 i GS).
 Var först faktor vid faderns klädesfabrik, men grundade sedan själv en dylik år 1740., vilken han drev till sin död. Idkade också handel samt ägde en gård i Malmö.', 'MAN', 2839, 2840, 2841, null, null);
 
@@ -7855,7 +7856,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1151, 'Malmö', 'Sverige', '', '', 55.59669, 13.0011, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2843, 14, 9, 1757, '1757-09-14', '', 1151);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2844, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (441, 'Rådman', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (441, 948, 'Rådman', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (948, 'Jöran', 'Hegardt', '', 'joranhegardt', '(Tab 61:298 i GS).
 Student i Lund 1727. Studerade juridik där till 1737. Stadsnotarie i Malmö 1738 och samma år auskultant vid rådstuvu och kämnärsrätten i Stockholm samt var notarie vid riksdagens protokolldeputation. Tf stadssekreterare i Malmö 1740 och eo rådman 1747. Avsked från stadsnotarietjänsten samma år. Fick burskap som handlande i Malmö 1747. Ägde gård i Malmö.', 'MAN', 2842, 2843, 2844, null, null);
 
@@ -7880,7 +7881,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1156, 'Malmö', 'Sverige', '', '', 55.59669, 13.0011, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2852, 26, 2, 1760, '1760-02-26', '', 1156);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2853, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (442, 'Handlande i malmö', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (442, 951, 'Handlande i malmö', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (951, 'Josias', 'Hegardt', '', 'josiashegardt', '(Tab 61:305 i GS).
 Student i Lund 1738.', 'UNKNOWN', 2851, 2852, 2853, null, null);
 
@@ -7930,7 +7931,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2869, 14, 10, 1727, '1727-10-14', '', 1167);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2870, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2871, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (443, 'Klädesfabrikör', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (443, 957, 'Klädesfabrikör', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (957, 'Karl', 'Hegardt', 'Ludvig', 'karlludvighegardt', '(Tab 61:311 i GS).
 H övertog efter faderns död det av denne drivna ylle? och klädnadsmanufakturiet. Rörelsen gick emellertid med stigande förlust, särskilt i samband med den stora handelskrisen 1763 och p g a att det statsunderstöd, som tidigare kommit industrin till del, drogs in sedan mösspartiet fått makten 1765. Fabriken lades ner av änkan 1767. Ägde hus i Malmö.', 'MAN', 2869, 2870, 2871, null, null);
 
@@ -7940,7 +7941,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1169, 'Håslöv', 'Sverige', '', '', 56.41401, 13.00579, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2873, 9, 12, 1771, '1771-12-09', '', 1169);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2874, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (444, 'Vice pastor i skanör', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (444, 958, 'Vice pastor i skanör', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (958, 'Siegbrand', 'Hegardt', 'Herman', 'siegbrandhermanhegardt', '(Tab 67 i GS).
 Student 1745 i Lund (M).
 Fil mag 1757 och prästvigd 1759.', 'MAN', 2872, 2873, 2874, null, null);
@@ -8025,14 +8026,14 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1188, 'Karlshamn', 'Sverige', '', '', 56.16972, 14.86057, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2903, 22, 3, 1704, '1704-03-22', '', 1188);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2904, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (445, 'Handlande i karlshamn', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (445, 968, 'Handlande i karlshamn', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (968, 'Hack', 'Tholijn', 'Persson', 'hackperssontholijn', '', 'UNKNOWN', 2902, 2903, 2904, null, null);
 
 --======= Insert Person id: 969 =======
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2905, 16, 1, 1658, '1658-01-16', '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2906, 15, 11, 1718, '1718-11-15', '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2907, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (446, 'Tullöverinspektor i skåne', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (446, 969, 'Tullöverinspektor i skåne', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (969, 'Josua', 'Stjernblad', '', 'josuastjernblad', 'Begraven i Igelösa, där änkan lät sätta upp ett epitafium över honom.', 'UNKNOWN', 2905, 2906, 2907, null, null);
 
 --======= Insert Person id: 970 =======
@@ -8041,8 +8042,8 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1190, 'på Svenstorp i Igelösa', 'Sverige', '', '', 55.48153, 13.94684, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2909, 17, 7, 1730, '1730-07-17', '', 1190);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2910, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (447, 'Friherre', null, null, null, null, null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (448, 'Generallöjtnant och landshövding i göteborg och bohus län', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (447, 970, 'Friherre', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (448, 970, 'Generallöjtnant och landshövding i göteborg och bohus län', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (970, 'Axel', 'Gyllenkrok', '', 'axelgyllenkrok', '', 'UNKNOWN', 2908, 2909, 2910, null, null);
 
 --======= Insert Person id: 971 =======
@@ -8055,7 +8056,7 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2914, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2915, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2916, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (449, 'Handlande', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (449, 972, 'Handlande', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (972, 'Johan', 'Lange', '', 'johanlange', '', 'MAN', 2914, 2915, 2916, null, null);
 
 --======= Insert Person id: 973 =======
@@ -8093,7 +8094,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1197, 'Lund', 'Sverige', '', '', 55.70664, 13.18759, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2930, 22, 6, 1807, '1807-06-22', '', 1197);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2931, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (450, 'Tullförvaltare i lund', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (450, 977, 'Tullförvaltare i lund', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (977, 'Lars', 'Hegardt', '', 'larshegardt', '(Tab 62:286 i GS).
 (Hustrun var hans kusin, se ovan tab 99).
 Student i Lund 1760 och studerade där teologi. Eo tullskrivare 1774 i Malmö. Tullskrivare i Lund 1784 och sedan tullförvaltare där.', 'MAN', 2929, 2930, 2931, null, null);
@@ -8112,7 +8113,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1201, 'Gessie', 'Sverige', '', '', 55.50232, 12.995, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2936, 11, 8, 1789, '1789-08-11', '', 1201);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2937, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (451, 'Komminister', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (451, 979, 'Komminister', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (979, 'Peter', 'Hegardt', '', 'peterhegardt', '(Tab 62:288 i GS).
 Student i Lund 1725. Höll 1731 parentation på latin över en avliden student Stridsberg. Blev samma år informator hos hovmarskalken friherre A von Düben i Stockholm och 1732 huspräst hos denne. Prästvigd 1732 i Uppsala. Fil mag i Lund 1734. Föreslogs 1735 av kanslikollegium till kyrkoherde vid svenska församlingen i London och rekommenderades samma år av greve Arvid Horn till kyrkoherde i Håslöv och Boderups pastorat. Till denna tjänst utnämndes han 1736 ännu ej fyllda 25 år. Vice kontraktsprost i Skytts kontrakt 1760. Fungerade vid prästmöten som opponens, vice præses och orator. Var en ansedd och kunnig man samt god predikant.
 "Under prosten Hegardts tid år 1748 uppkom vådeld, varvid hela prästgården brann ner i grunden och varvid mycken värdefull egendom gick förlorad, däribland biblioteket. Detta gav emellertid prosten anledning att i en bok ''Haslovensia et Boderupiensia'' anteckna allt vad han ur minnet och genom forskning kunnat uppleta av historiska minnen, sägner och berättelser m. Han synes ha varit särskilt danad till fornforskare och historieskrivare och har därigenom lämnat ett kärt minne efter sig åt eftervärlden". (Malmgren)', 'MAN', 2935, 2936, 2937, null, null);
@@ -8221,7 +8222,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1227, 'Malmö', 'Sverige', '', '', 55.59669, 13.0011, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2972, 16, 7, 1837, '1837-07-16', '', 1227);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2973, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (452, 'Klädesfabrikör', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (452, 991, 'Klädesfabrikör', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (991, 'Josias', 'Hegardt', '', 'josiashegardt', '(Tab 65:301 i GS).
 Øvertog efter brodern Mattias klädesfabriken "Hoppet", som han drev till 1814, då fabriken lades ner. Ägde gård i Malmö.', 'UNKNOWN', 2971, 2972, 2973, null, null);
 
@@ -8239,7 +8240,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1231, 'Malmö', 'Sverige', '', '', 55.59669, 13.0011, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2978, 11, 10, 1761, '1761-10-11', '', 1231);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2979, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (453, 'Rådman i malmö', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (453, 993, 'Rådman i malmö', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (993, 'Karl', 'Tollsten', 'Fredrik', 'karlfredriktollsten', 'Enligt Barfod, "Märkvärdigheter etc" föll Tollsten "i mjältsjuka, för att han till husets behov nödgades röra sitt kapital samt fattade till slut det orådet att kasta sig i slottsgraven"', 'UNKNOWN', 2977, 2978, 2979, null, null);
 
 --======= Insert Person id: 994 =======
@@ -8248,7 +8249,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1233, 'Karlshamn', 'Sverige', '', '', 56.16972, 14.86057, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2981, 2, 7, 1760, '1760-07-02', '', 1233);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2982, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (454, 'Tullförvaltare i karlshamn', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (454, 994, 'Tullförvaltare i karlshamn', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (994, 'Peter', 'Tholijn', 'Jakob', 'peterjakobtholijn', '', 'UNKNOWN', 2980, 2981, 2982, null, null);
 
 --======= Insert Person id: 995 =======
@@ -8257,7 +8258,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1235, 'Vellinge', 'Sverige', '', '', 55.46962, 13.02193, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2984, 14, 12, 1761, '1761-12-14', '', 1235);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (2985, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (455, 'Kyrkoherde i vellinge', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (455, 995, 'Kyrkoherde i vellinge', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (995, 'Kristian', 'Sylvan', '', 'kristiansylvan', '', 'UNKNOWN', 2983, 2984, 2985, null, null);
 
 --======= Insert Person id: 996 =======
@@ -8348,7 +8349,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1253, 'på St Bjellerup i Bjällerup', 'Sverige', '', '', 59.47959, 13.30488, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3020, 21, 4, 1813, '1813-04-21', '', 1253);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3021, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (456, 'Hovjägmästare och krigsråd', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (456, 1007, 'Hovjägmästare och krigsråd', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (1007, 'Johan', 'Gröningen', 'Leonard, von', 'johanleonardvongroningen', '', 'UNKNOWN', 3019, 3020, 3021, null, null);
 
 --======= Insert Person id: 1008 =======
@@ -8363,7 +8364,7 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3025, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3026, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3027, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (457, 'Kyrkoherde', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (457, 1009, 'Kyrkoherde', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (1009, 'Simon', 'Aquilonius', '', 'simonaquilonius', '', 'MAN', 3025, 3026, 3027, null, null);
 
 --======= Insert Person id: 1010 =======
@@ -8409,7 +8410,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1264, 'Håslöv', 'Sverige', '', '', 56.41401, 13.00579, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3044, 25, 3, 1808, '1808-03-25', '', 1264);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3045, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (458, 'Kyrkoderde och titulaturprost', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (458, 1015, 'Kyrkoderde och titulaturprost', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (1015, 'Lars', 'Laurén', '', 'larslauren', '', 'UNKNOWN', 3043, 3044, 3045, null, null);
 
 --======= Insert Person id: 1016 =======
@@ -8454,7 +8455,7 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3061, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3062, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3063, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (459, 'Major vid adelsfanan', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (459, 1021, 'Major vid adelsfanan', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (1021, 'Anders', 'Gripenschütz', '', 'andersgripenschutz', '', 'MAN', 3061, 3062, 3063, null, null);
 
 --======= Insert Person id: 1022 =======
@@ -8482,7 +8483,7 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3073, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3074, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3075, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (460, 'Prost och kyrkoherde', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (460, 1025, 'Prost och kyrkoherde', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (1025, 'Karl', 'Kröger', '', 'karlkroger', '', 'MAN', 3073, 3074, 3075, null, null);
 
 --======= Insert Person id: 1026 =======
@@ -8490,7 +8491,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3076, 28, 8, 1782, '1782-08-28', '', 1275);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3077, 4, 9, 1857, '1857-09-04', '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3078, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (461, 'Lantbrukare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (461, 1026, 'Lantbrukare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (1026, 'Per', 'Jacobsson', '', 'perjacobsson', '', 'UNKNOWN', 3076, 3077, 3078, null, null);
 
 --======= Insert Person id: 1027 =======
@@ -8503,7 +8504,7 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3082, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3083, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3084, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (462, 'Rådman', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (462, 1028, 'Rådman', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (1028, 'Lucas', 'Lohman', '', 'lucaslohman', '', 'MAN', 3082, 3083, 3084, null, null);
 
 --======= Insert Person id: 1029 =======
@@ -8516,7 +8517,7 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3088, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3089, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3090, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (463, 'Handlande', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (463, 1030, 'Handlande', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (1030, 'Jöran', 'Weijer', '', 'joranweijer', '', 'MAN', 3088, 3089, 3090, null, null);
 
 --======= Insert Person id: 1031 =======
@@ -8537,7 +8538,7 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3097, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3098, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3099, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (464, 'Handlande', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (464, 1033, 'Handlande', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (1033, 'Gerhard', 'Haak', '', 'gerhardhaak', '', 'MAN', 3097, 3098, 3099, null, null);
 
 --======= Insert Person id: 1034 =======
@@ -8557,7 +8558,7 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3106, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3107, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3108, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (465, 'Rådman och lasarettssyssloman', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (465, 1036, 'Rådman och lasarettssyssloman', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (1036, 'Jöns', 'Rosenlund', '', 'jonsrosenlund', '', 'MAN', 3106, 3107, 3108, null, null);
 
 --======= Insert Person id: 1037 =======
@@ -8570,7 +8571,7 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3112, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3113, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3114, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (466, 'Borgmästare i skanör', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (466, 1038, 'Borgmästare i skanör', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (1038, 'Magnus', 'Griis', '', 'magnusgriis', '', 'MAN', 3112, 3113, 3114, null, null);
 
 --======= Insert Person id: 1039 =======
@@ -8579,7 +8580,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1280, 'Morkarla', 'Sverige', '', '', 60.14029, 17.96148, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3116, 29, 11, 1808, '1808-11-29', '', 1280);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3117, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (467, 'Komminister i alunda och morkarla församlingar', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (467, 1039, 'Komminister i alunda och morkarla församlingar', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (1039, 'Gustaf', 'Isopædius', '', 'gustafisopædius', '', 'UNKNOWN', 3115, 3116, 3117, null, null);
 
 --======= Insert Person id: 1040 =======
@@ -8587,7 +8588,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1281, 'Malmö', 'Sverige', '', '', 55.59669, 13.0011, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3119, 10, 12, 1813, '1813-12-10', '', 1281);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3120, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (468, 'Hamnfogde i malmö', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (468, 1040, 'Hamnfogde i malmö', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (1040, 'Olof', 'Ahlström', '', 'olofahlstrom', '', 'UNKNOWN', 3118, 3119, 3120, null, null);
 
 --======= Insert Person id: 1041 =======
@@ -8595,7 +8596,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3121, 9, 3, 1751, '1751-03-09', '', 1282);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3122, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3123, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (469, 'Underlöjtnant vid artilleriet', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (469, 1041, 'Underlöjtnant vid artilleriet', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (1041, 'Per', 'Sahlman', '', 'persahlman', '', 'UNKNOWN', 3121, 3122, 3123, null, null);
 
 --======= Insert Person id: 1042 =======
@@ -8608,14 +8609,14 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3127, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3128, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3129, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (470, 'Øverdirektör vid pommerska lantkassan och borgmästare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (470, 1043, 'Øverdirektör vid pommerska lantkassan och borgmästare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (1043, 'Christoffer', 'Corswanten', 'von', 'christoffervoncorswanten', '', 'MAN', 3127, 3128, 3129, null, null);
 
 --======= Insert Person id: 1044 =======
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3130, 26, 6, 1672, '1672-06-26', '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3131, 26, 5, 1710, '1710-05-26', '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3132, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (471, 'Professor vid greifswalds universitet', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (471, 1044, 'Professor vid greifswalds universitet', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (1044, 'Johan', 'Palthenius', 'Philip', 'johanphilippalthenius', '', 'UNKNOWN', 3130, 3131, 3132, null, null);
 
 --======= Insert Person id: 1045 =======
@@ -8623,7 +8624,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1283, 'på Berga i Högsby', 'Sverige', '', '', 57.2226, 16.02422, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3134, 21, 11, 1796, '1796-11-21', '', 1283);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3135, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (472, 'Friherrinna', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (472, 1045, 'Friherrinna', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (1045, 'Anna', 'af Åminne', 'Regina, Horn', 'annareginahornafaminne', '', 'UNKNOWN', 3133, 3134, 3135, null, null);
 
 --======= Insert Person id: 1046 =======
@@ -8636,8 +8637,8 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3139, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3140, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3141, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (473, 'Øverste', null, null, null, null, null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (474, 'Friherre', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (473, 1047, 'Øverste', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (474, 1047, 'Friherre', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (1047, 'Christer', 'Horn', '', 'christerhorn', '', 'MAN', 3139, 3140, 3141, null, null);
 
 --======= Insert Person id: 1048 =======
@@ -8646,8 +8647,8 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1285, 'Stockholm', 'Sverige', '', '', 59.33257, 18.06683, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3143, 18, 10, 1755, '1755-10-18', '', 1285);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3144, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (475, 'President', null, null, null, null, null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (476, 'Friherre', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (475, 1048, 'President', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (476, 1048, 'Friherre', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (1048, 'ERik', 'Nolcken', 'Mattias, von', 'erikmattiasvonnolcken', '', 'UNKNOWN', 3142, 3143, 3144, null, null);
 
 --======= Insert Person id: 1049 =======
@@ -8656,7 +8657,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1287, 'Lund', 'Sverige', '', '', 55.70664, 13.18759, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3146, 28, 11, 1774, '1774-11-28', '', 1287);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3147, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (477, 'Professor vid lunds universitet', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (477, 1049, 'Professor vid lunds universitet', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (1049, 'Gustaf', 'Harmens', '', 'gustafharmens', '', 'UNKNOWN', 3145, 3146, 3147, null, null);
 
 --======= Insert Person id: 1050 =======
@@ -8777,7 +8778,7 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3193, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3194, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3195, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (478, 'Kemist', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (478, 1065, 'Kemist', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (1065, 'Bengt', 'Eklund', '', 'bengteklund', 'Oforskat Fullständig uppgifter (sid 1).
 Oforskat Fullständiga uppgifter om föräldrar (sid 4).', 'MAN', 3193, 3194, 3195, null, null);
 
@@ -8785,21 +8786,21 @@ Oforskat Fullständiga uppgifter om föräldrar (sid 4).', 'MAN', 3193, 3194, 31
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3196, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3197, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3198, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (479, 'Oforskat fullständiga uppgifter', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (479, 1066, 'Oforskat fullständiga uppgifter', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (1066, 'Anna', 'Eklund', '', 'annaeklund', '', 'UNKNOWN', 3196, 3197, 3198, null, null);
 
 --======= Insert Person id: 1067 =======
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3199, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3200, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3201, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (480, 'Oforskat fullständiga uppgifter', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (480, 1067, 'Oforskat fullständiga uppgifter', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (1067, 'Lina', 'Eklund', '', 'linaeklund', '', 'UNKNOWN', 3199, 3200, 3201, null, null);
 
 --======= Insert Person id: 1068 =======
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3202, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3203, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3204, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (481, 'Oforskat fullständiga uppgifter', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (481, 1068, 'Oforskat fullständiga uppgifter', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (1068, 'Emma', 'Eklund', '', 'emmaeklund', '', 'UNKNOWN', 3202, 3203, 3204, null, null);
 
 --======= Insert Person id: 1069 =======
@@ -8812,14 +8813,14 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3208, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3209, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3210, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (482, 'Oforskat fullständiga uppgifter', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (482, 1070, 'Oforskat fullständiga uppgifter', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (1070, 'Karl', 'Stark', '', 'karlstark', '', 'UNKNOWN', 3208, 3209, 3210, null, null);
 
 --======= Insert Person id: 1071 =======
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3211, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3212, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3213, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (483, 'Oforskat fullständiga uppgifter', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (483, 1071, 'Oforskat fullständiga uppgifter', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (1071, 'Johanna', 'Stark', '', 'johannastark', '', 'UNKNOWN', 3211, 3212, 3213, null, null);
 
 --======= Insert Person id: 1072 =======
@@ -8862,7 +8863,7 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3232, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3233, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3234, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (484, 'Oforskat födelsedatum', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (484, 1078, 'Oforskat födelsedatum', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (1078, 'Birgit', 'Gulliksson', '', 'birgitgulliksson', 'Oforskat Fader; Födelsedatum; Vigseldatum; Yrke; Dödsdatum?.
 Oforskat Moder; Födelsedatum; Flicknamn; Yrke; Dödsdatum?.', 'WOMAN', 3232, 3233, 3234, null, null);
 
@@ -8870,14 +8871,14 @@ Oforskat Moder; Födelsedatum; Flicknamn; Yrke; Dödsdatum?.', 'WOMAN', 3232, 32
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3235, null, null, 1967, '1967-01-01', '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3236, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3237, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (485, 'Oforskat födelsedatum', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (485, 1079, 'Oforskat födelsedatum', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (1079, 'Veronica', 'Wendler', '', 'veronicawendler', '', 'UNKNOWN', 3235, 3236, 3237, null, null);
 
 --======= Insert Person id: 1080 =======
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3238, null, null, 1972, '1972-01-01', '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3239, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3240, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (486, 'Oforskat födelsedatum', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (486, 1080, 'Oforskat födelsedatum', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (1080, 'Marie-Louise', 'Wendler', '', 'marie-louisewendler', '', 'UNKNOWN', 3238, 3239, 3240, null, null);
 
 --======= Insert Person id: 1081 =======
@@ -9093,14 +9094,14 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3325, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3326, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3327, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (487, 'Kapten', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (487, 1109, 'Kapten', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (1109, 'Karl', 'Greiff', 'Sigismund, Fromhold, von', 'karlsigismundfromholdvongreiff', '', 'UNKNOWN', 3325, 3326, 3327, null, null);
 
 --======= Insert Person id: 1110 =======
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3328, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3329, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3330, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (488, 'Professor', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (488, 1110, 'Professor', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (1110, 'Jonas', 'Engeström', 'Albin', 'jonasalbinengestrom', '', 'MAN', 3328, 3329, 3330, null, null);
 
 --======= Insert Person id: 1111 =======
@@ -9117,7 +9118,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1356, 'Bunkeflo', 'Sverige', '', '', 55.55988, 12.92384, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3335, 19, 7, 1785, '1785-07-19', '', 1356);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3336, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (489, 'Kyrkoherde', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (489, 1112, 'Kyrkoherde', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (1112, 'Elias', 'Billberg', '', 'eliasbillberg', '', 'MAN', 3334, 3335, 3336, null, null);
 
 --======= Insert Person id: 1113 =======
@@ -9359,7 +9360,7 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3439, 17, 11, 1851, '1851-11-17', '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3440, 19, 5, 1906, '1906-05-19', '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3441, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (490, 'Katolsk präst', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (490, 1147, 'Katolsk präst', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (1147, 'Ferdinand', 'Heyden', 'Ludwig, Teodor', 'ferdinandludwigteodorheyden', '', 'UNKNOWN', 3439, 3440, 3441, null, null);
 
 --======= Insert Person id: 1148 =======
@@ -9372,7 +9373,7 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3445, null, null, 1853, '1853-01-01', '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3446, null, null, 1933, '1933-01-01', '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3447, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (491, 'Skräddarmästare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (491, 1149, 'Skräddarmästare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (1149, 'Wilhelm', 'Heyden', 'Friedrich, Ludwig', 'wilhelmfriedrichludwigheyden', '', 'MAN', 3445, 3446, 3447, null, null);
 
 --======= Insert Person id: 1150 =======
@@ -9385,7 +9386,7 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3451, 26, 9, 1863, '1863-09-26', '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3452, 1, 12, 1925, '1925-12-01', '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3453, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (492, 'Direktör', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (492, 1151, 'Direktör', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (1151, 'Georg', 'Heyden', 'Ludwig, Cornelius', 'georgludwigcorneliusheyden', '', 'MAN', 3451, 3452, 3453, null, null);
 
 --======= Insert Person id: 1152 =======
@@ -9528,7 +9529,7 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3508, 29, 6, 1901, '1901-06-29', '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3509, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3510, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (493, 'Förvaltare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (493, 1170, 'Förvaltare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (1170, 'Georg', 'Heyden', 'Kristian, Teodor, Gugge', 'georgkristianteodorguggeheyden', '', 'MAN', 3508, 3509, 3510, null, null);
 
 --======= Insert Person id: 1171 =======
@@ -9553,14 +9554,14 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3520, 4, 9, 1934, '1934-09-04', '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3521, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3522, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (494, 'Tandläkare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (494, 1174, 'Tandläkare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (1174, 'Guy', 'Heyden', 'Anders', 'guyandersheyden', '', 'MAN', 3520, 3521, 3522, null, null);
 
 --======= Insert Person id: 1175 =======
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3523, 7, 12, 1937, '1937-12-07', '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3524, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3525, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (495, 'Småskollärare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (495, 1175, 'Småskollärare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (1175, 'Lillemor', 'Heyden', 'Ebba, Helene', 'lillemorebbaheleneheyden', '', 'UNKNOWN', 3523, 3524, 3525, null, null);
 
 --======= Insert Person id: 1176 =======
@@ -9585,7 +9586,7 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3535, 15, 7, 1900, '1900-07-15', '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3536, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3537, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (496, 'Telegrafkommissarie', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (496, 1179, 'Telegrafkommissarie', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (1179, 'Gösta', 'Wahlgren', 'Herbert', 'gostaherbertwahlgren', '', 'UNKNOWN', 3535, 3536, 3537, null, null);
 
 --======= Insert Person id: 1180 =======
@@ -9593,7 +9594,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1416, 'Södra Åsum', 'Sverige', '', '', 55.65252, 13.70227, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3539, 24, 3, 1947, '1947-03-24', '', 1416);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3540, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (497, 'Distriktsveterinär', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (497, 1180, 'Distriktsveterinär', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (1180, 'Lars', 'Rambe', 'Emil', 'larsemilrambe', '', 'MAN', 3538, 3539, 3540, null, null);
 
 --======= Insert Person id: 1181 =======
@@ -9630,7 +9631,7 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3556, 29, 8, 1905, '1905-08-29', '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3557, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3558, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (498, 'Arkitekt', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (498, 1186, 'Arkitekt', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (1186, 'Alf', 'Gavel', 'Richard', 'alfrichardgavel', '', 'MAN', 3556, 3557, 3558, null, null);
 
 --======= Insert Person id: 1187 =======
@@ -9643,7 +9644,7 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3562, 13, 6, 1933, '1933-06-13', '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3563, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3564, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (499, 'Arkitekt', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (499, 1188, 'Arkitekt', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (1188, 'Claes', 'Gavel', 'Peter', 'claespetergavel', '', 'MAN', 3562, 3563, 3564, null, null);
 
 --======= Insert Person id: 1189 =======
@@ -9656,7 +9657,7 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3568, 8, 4, 1941, '1941-04-08', '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3569, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3570, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (500, 'Lågstadielärare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (500, 1190, 'Lågstadielärare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (1190, 'Pia', 'Gavel', 'Louise', 'pialouisegavel', '', 'WOMAN', 3568, 3569, 3570, null, null);
 
 --======= Insert Person id: 1191 =======
@@ -9681,21 +9682,21 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3580, 17, 10, 1939, '1939-10-17', '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3581, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3582, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (501, 'Sjuksköterska', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (501, 1194, 'Sjuksköterska', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (1194, 'Thyra', 'Heyden', 'Charlotta, Helene', 'thyracharlottaheleneheyden', '', 'WOMAN', 3580, 3581, 3582, null, null);
 
 --======= Insert Person id: 1195 =======
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3583, 5, 12, 1941, '1941-12-05', '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3584, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3585, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (502, 'Cicilingenjör', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (502, 1195, 'Cicilingenjör', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (1195, 'Jacob', 'Heyden', 'Rutgerson', 'jacobrutgersonheyden', '', 'MAN', 3583, 3584, 3585, null, null);
 
 --======= Insert Person id: 1196 =======
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3586, 2, 5, 1947, '1947-05-02', '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3587, null, null, 1984, '1984-01-01', '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3588, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (503, 'Med lic', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (503, 1196, 'Med lic', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (1196, 'Thomas', 'Heyden', 'Rutgerson', 'thomasrutgersonheyden', '', 'UNKNOWN', 3586, 3587, 3588, null, null);
 
 --======= Insert Person id: 1197 =======
@@ -9726,21 +9727,21 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3601, 15, 8, 1943, '1943-08-15', '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3602, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3603, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (504, 'Lågstadielärare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (504, 1201, 'Lågstadielärare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (1201, 'Eva', 'Hansson', 'Birgitta', 'evabirgittahansson', '', 'WOMAN', 3601, 3602, 3603, null, null);
 
 --======= Insert Person id: 1202 =======
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3604, 23, 11, 1966, '1966-11-23', '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3605, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3606, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (505, 'Civilingenjör', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (505, 1202, 'Civilingenjör', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (1202, 'Eva', 'Heyden', 'Susanne', 'evasusanneheyden', '', 'UNKNOWN', 3604, 3605, 3606, null, null);
 
 --======= Insert Person id: 1203 =======
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3607, 10, 8, 1969, '1969-08-10', '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3608, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3609, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (506, 'Sjuksköterska', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (506, 1203, 'Sjuksköterska', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (1203, 'Birgitta', 'Heyden', 'Charlotte', 'birgittacharlotteheyden', '', 'UNKNOWN', 3607, 3608, 3609, null, null);
 
 --======= Insert Person id: 1204 =======
@@ -9765,21 +9766,21 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3619, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3620, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3621, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (507, 'Katolsk präst', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (507, 1207, 'Katolsk präst', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (1207, 'Fedor', 'Heyden', '', 'fedorheyden', '', 'UNKNOWN', 3619, 3620, 3621, null, null);
 
 --======= Insert Person id: 1208 =======
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3622, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3623, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3624, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (508, 'Skräddare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (508, 1208, 'Skräddare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (1208, 'Alma', 'Heyden', '', 'almaheyden', '', 'UNKNOWN', 3622, 3623, 3624, null, null);
 
 --======= Insert Person id: 1209 =======
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3625, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3626, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3627, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (509, 'Sjöman', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (509, 1209, 'Sjöman', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (1209, 'Knut', 'Heyden', '', 'knutheyden', '', 'UNKNOWN', 3625, 3626, 3627, null, null);
 
 --======= Insert Person id: 1210 =======
@@ -9980,7 +9981,7 @@ INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, no
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3724, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3725, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3726, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (510, 'Spårvagnsförare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (510, 1242, 'Spårvagnsförare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (1242, 'Carl', 'Fredriksson', 'Viktor', 'carlviktorfredriksson', '', 'UNKNOWN', 3724, 3725, 3726, null, null);
 
 --======= Insert Person id: 1243 =======
@@ -9988,7 +9989,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3727, null, null, null, null, '', 1419);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3728, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3729, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (511, 'Lantbrukare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (511, 1243, 'Lantbrukare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (1243, 'Erik', 'Fredriksson', 'Harald', 'erikharaldfredriksson', '', 'UNKNOWN', 3727, 3728, 3729, null, null);
 
 --======= Insert Person id: 1244 =======
@@ -9996,7 +9997,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3730, 17, 10, 1910, '1910-10-17', '', 1420);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3731, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3732, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (512, 'Lantbrukare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (512, 1244, 'Lantbrukare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (1244, 'Evert', 'Fredriksson', '', 'evertfredriksson', '', 'UNKNOWN', 3730, 3731, 3732, null, null);
 
 --======= Insert Person id: 1245 =======
@@ -10004,7 +10005,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3733, null, null, null, null, '', 1421);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3734, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3735, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (513, 'Hemmafru', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (513, 1245, 'Hemmafru', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (1245, 'Anna-Greta', 'Fredriksson', '', 'anna-gretafredriksson', '', 'UNKNOWN', 3733, 3734, 3735, null, null);
 
 --======= Insert Person id: 1246 =======
@@ -10112,7 +10113,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1432, 'Landön', 'Fjälkinge', '', '', 55.97951, 14.38762, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3782, 8, 11, 1943, '1943-11-08', '', 1432);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3783, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (514, 'Fiskare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (514, 1261, 'Fiskare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (1261, 'Johan', 'Borgström', '', 'johanborgstrom', '', 'MAN', 3781, 3782, 3783, null, null);
 
 --======= Insert Person id: 1262 =======
@@ -10127,7 +10128,7 @@ INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_da
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1434, 'Østra Ljungby', 'Trolle', '', '', 56.19027, 13.06465, 'FETCHED_WITH_SUCCESS');
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3788, 29, 2, 1888, '1888-02-29', '', 1434);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3789, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (515, 'Lantbrukare', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (515, 1263, 'Lantbrukare', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (1263, 'Sven', 'Simonsson', '', 'svensimonsson', '', 'MAN', 3787, 3788, 3789, null, null);
 
 --======= Insert Person id: 1264 =======
@@ -10156,7 +10157,7 @@ INSERT INTO location (id, city, country, region, notes, latitude, longitude, fet
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3799, 7, 1, 1820, '1820-01-07', '', 1438);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3800, null, null, null, null, '', null);
 INSERT INTO life_event (id, partial_day, partial_month, partial_year, partial_date, notes, location_id) VALUES (3801, null, null, null, null, '', null);
-INSERT INTO occupation (id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (516, 'Döpt 1820', null, null, null, null, null);
+INSERT INTO occupation (id, person_id, notes, partial_day, partial_month, partial_year, partial_date, location_id) VALUES (516, 1267, 'Döpt 1820', null, null, null, null, null);
 INSERT INTO person (id, first_name, last_name, middle_names, normalized_name, notes, sex, birth_id, death_id, burial_id, father_id, mother_id) VALUES (1267, 'Esaias', 'Palm', 'Laurent', 'esaiaslaurentpalm', '', 'MAN', 3799, 3800, 3801, null, null);
 
 --======= Insert Person id: 1268 =======
@@ -13375,1686 +13376,1688 @@ UPDATE person SET father_id = 1265 WHERE id = 1271;
 UPDATE person SET mother_id = 1268 WHERE id = 1271;
 
 --======= Insert Marriage between id: 4 and id: 5 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (4, 5, null, null, null, 1634, '1634-01-01');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (1, 4, 5, null, null, null, 1634, '1634-01-01');
 
 --======= Insert Marriage between id: 8 and id: 923 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1448, 'Malmö', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (8, 923, 1448, 31, 10, 1671, '1671-10-31');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (2, 8, 923, 1448, 31, 10, 1671, '1671-10-31');
 
 --======= Insert Marriage between id: 8 and id: 924 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1449, 'Malmö', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (8, 924, 1449, 17, 8, 1681, '1681-08-17');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (3, 8, 924, 1449, 17, 8, 1681, '1681-08-17');
 
 --======= Insert Marriage between id: 9 and id: 698 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (9, 698, null, null, null, 1711, '1711-01-01');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (4, 9, 698, null, null, null, 1711, '1711-01-01');
 
 --======= Insert Marriage between id: 10 and id: 11 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (10, 11, null, null, null, 1703, '1703-01-01');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (5, 10, 11, null, null, null, 1703, '1703-01-01');
 
 --======= Insert Marriage between id: 12 and id: 666 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1450, 'Landskrona', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (12, 666, 1450, 29, 4, 1729, '1729-04-29');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (6, 12, 666, 1450, 29, 4, 1729, '1729-04-29');
 
 --======= Insert Marriage between id: 13 and id: 16 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1451, 'Uddevalla', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (13, 16, 1451, 5, 11, 1734, '1734-11-05');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (7, 13, 16, 1451, 5, 11, 1734, '1734-11-05');
 
 --======= Insert Marriage between id: 14 and id: 23 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1452, 'Landskrona', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (14, 23, 1452, null, null, 1741, '1741-01-01');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (8, 14, 23, 1452, null, null, 1741, '1741-01-01');
 
 --======= Insert Marriage between id: 15 and id: 667 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (15, 667, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (9, 15, 667, null, null, null, null, null);
 
 --======= Insert Marriage between id: 17 and id: 28 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1453, 'Uddevalla', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (17, 28, 1453, 3, 11, 1758, '1758-11-03');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (10, 17, 28, 1453, 3, 11, 1758, '1758-11-03');
 
 --======= Insert Marriage between id: 18 and id: 29 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1454, 'Uddevalla', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (18, 29, 1454, 3, 4, 1770, '1770-04-03');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (11, 18, 29, 1454, 3, 4, 1770, '1770-04-03');
 
 --======= Insert Marriage between id: 19 and id: 30 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1455, 'Malmö', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (19, 30, 1455, null, null, 1765, '1765-01-01');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (12, 19, 30, 1455, null, null, 1765, '1765-01-01');
 
 --======= Insert Marriage between id: 19 and id: 31 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1456, 'Uddevalla', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (19, 31, 1456, 13, 9, 1774, '1774-09-13');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (13, 19, 31, 1456, 13, 9, 1774, '1774-09-13');
 
 --======= Insert Marriage between id: 21 and id: 44 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1457, 'Uddevalla', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (21, 44, 1457, 14, 8, 1768, '1768-08-14');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (14, 21, 44, 1457, 14, 8, 1768, '1768-08-14');
 
 --======= Insert Marriage between id: 21 and id: 45 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1458, 'Fors', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (21, 45, 1458, 5, 11, 1780, '1780-11-05');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (15, 21, 45, 1458, 5, 11, 1780, '1780-11-05');
 
 --======= Insert Marriage between id: 24 and id: 627 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (24, 627, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (16, 24, 627, null, null, null, null, null);
 
 --======= Insert Marriage between id: 26 and id: 628 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1459, 'Marstrand', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (26, 628, 1459, 25, 10, 1769, '1769-10-25');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (17, 26, 628, 1459, 25, 10, 1769, '1769-10-25');
 
 --======= Insert Marriage between id: 33 and id: 59 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1460, 'Uddevalla', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (33, 59, 1460, 14, 3, 1790, '1790-03-14');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (18, 33, 59, 1460, 14, 3, 1790, '1790-03-14');
 
 --======= Insert Marriage between id: 34 and id: 60 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1461, 'Visnum prästgård', 'Visnum', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (34, 60, 1461, 24, 4, 1808, '1808-04-24');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (19, 34, 60, 1461, 24, 4, 1808, '1808-04-24');
 
 --======= Insert Marriage between id: 36 and id: 61 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1462, 'Uddevalla', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (36, 61, 1462, 4, 10, 1801, '1801-10-04');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (20, 36, 61, 1462, 4, 10, 1801, '1801-10-04');
 
 --======= Insert Marriage between id: 37 and id: 332 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1463, 'Uddevalla', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (37, 332, 1463, 26, 12, 1796, '1796-12-26');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (21, 37, 332, 1463, 26, 12, 1796, '1796-12-26');
 
 --======= Insert Marriage between id: 38 and id: 63 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1464, 'Uddevalla', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (38, 63, 1464, 2, 6, 1820, '1820-06-02');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (22, 38, 63, 1464, 2, 6, 1820, '1820-06-02');
 
 --======= Insert Marriage between id: 39 and id: 71 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1465, 'Stockholm', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (39, 71, 1465, 28, 8, 1810, '1810-08-28');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (23, 39, 71, 1465, 28, 8, 1810, '1810-08-28');
 
 --======= Insert Marriage between id: 40 and id: 288 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1466, 'Uddevalla', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (40, 288, 1466, 10, 4, 1808, '1808-04-10');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (24, 40, 288, 1466, 10, 4, 1808, '1808-04-10');
 
 --======= Insert Marriage between id: 41 and id: 79 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1467, 'Uddevalla', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (41, 79, 1467, 18, 11, 1810, '1810-11-18');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (25, 41, 79, 1467, 18, 11, 1810, '1810-11-18');
 
 --======= Insert Marriage between id: 42 and id: 80 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1468, 'Uddevalla', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (42, 80, 1468, 22, 4, 1812, '1812-04-22');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (26, 42, 80, 1468, 22, 4, 1812, '1812-04-22');
 
 --======= Insert Marriage between id: 46 and id: 352 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1469, 'Uddevalla', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (46, 352, 1469, 16, 2, 1791, '1791-02-16');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (27, 46, 352, 1469, 16, 2, 1791, '1791-02-16');
 
 --======= Insert Marriage between id: 47 and id: 353 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1470, 'Uddevalla', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (47, 353, 1470, 2, 11, 1787, '1787-11-02');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (28, 47, 353, 1470, 2, 11, 1787, '1787-11-02');
 
 --======= Insert Marriage between id: 48 and id: 319 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1471, 'Uddevalla', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (48, 319, 1471, 26, 12, 1796, '1796-12-26');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (29, 48, 319, 1471, 26, 12, 1796, '1796-12-26');
 
 --======= Insert Marriage between id: 50 and id: 354 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1472, 'Uddevalla', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (50, 354, 1472, 6, 2, 1791, '1791-02-06');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (30, 50, 354, 1472, 6, 2, 1791, '1791-02-06');
 
 --======= Insert Marriage between id: 51 and id: 355 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1473, 'Uddevalla', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (51, 355, 1473, 9, 6, 1804, '1804-06-09');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (31, 51, 355, 1473, 9, 6, 1804, '1804-06-09');
 
 --======= Insert Marriage between id: 52 and id: 365 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1474, 'Uddevalla', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (52, 365, 1474, 8, 7, 1802, '1802-07-08');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (32, 52, 365, 1474, 8, 7, 1802, '1802-07-08');
 
 --======= Insert Marriage between id: 55 and id: 56 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (55, 56, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (33, 55, 56, null, null, null, null, null);
 
 --======= Insert Marriage between id: 57 and id: 58 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (57, 58, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (34, 57, 58, null, null, null, null, null);
 
 --======= Insert Marriage between id: 65 and id: 83 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1475, 'Uddevalla', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (65, 83, 1475, 24, 8, 1849, '1849-08-24');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (35, 65, 83, 1475, 24, 8, 1849, '1849-08-24');
 
 --======= Insert Marriage between id: 67 and id: 84 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1476, 'Frykerud', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (67, 84, 1476, 6, 9, 1855, '1855-09-06');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (36, 67, 84, 1476, 6, 9, 1855, '1855-09-06');
 
 --======= Insert Marriage between id: 69 and id: 91 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1477, 'Uddevalla', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (69, 91, 1477, 7, 11, 1867, '1867-11-07');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (37, 69, 91, 1477, 7, 11, 1867, '1867-11-07');
 
 --======= Insert Marriage between id: 73 and id: 174 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1478, 'Nordmark', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (73, 174, 1478, 20, 8, 1849, '1849-08-20');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (38, 73, 174, 1478, 20, 8, 1849, '1849-08-20');
 
 --======= Insert Marriage between id: 75 and id: 180 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1479, '(O)', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (75, 180, 1479, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (39, 75, 180, 1479, null, null, null, null);
 
 --======= Insert Marriage between id: 76 and id: 183 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1480, 'Uddevalla', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (76, 183, 1480, 17, 8, 1848, '1848-08-17');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (40, 76, 183, 1480, 17, 8, 1848, '1848-08-17');
 
 --======= Insert Marriage between id: 77 and id: 184 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1481, 'Stockholm', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (77, 184, 1481, 20, 9, 1851, '1851-09-20');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (41, 77, 184, 1481, 20, 9, 1851, '1851-09-20');
 
 --======= Insert Marriage between id: 81 and id: 82 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (81, 82, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (42, 81, 82, null, null, null, null, null);
 
 --======= Insert Marriage between id: 85 and id: 94 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (85, 94, null, 19, 10, 1890, '1890-10-19');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (43, 85, 94, null, 19, 10, 1890, '1890-10-19');
 
 --======= Insert Marriage between id: 86 and id: 101 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1482, 'Frykerud', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (86, 101, 1482, 29, 8, 1880, '1880-08-29');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (44, 86, 101, 1482, 29, 8, 1880, '1880-08-29');
 
 --======= Insert Marriage between id: 87 and id: 102 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1483, 'Göteborg', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (87, 102, 1483, 27, 10, 1892, '1892-10-27');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (45, 87, 102, 1483, 27, 10, 1892, '1892-10-27');
 
 --======= Insert Marriage between id: 92 and id: 93 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (92, 93, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (46, 92, 93, null, null, null, null, null);
 
 --======= Insert Marriage between id: 95 and id: 105 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1484, 'Göteborg', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (95, 105, 1484, 3, 1, 1921, '1921-01-03');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (47, 95, 105, 1484, 3, 1, 1921, '1921-01-03');
 
 --======= Insert Marriage between id: 96 and id: 110 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1485, 'Stockholm', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (96, 110, 1485, 29, 10, 1921, '1921-10-29');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (48, 96, 110, 1485, 29, 10, 1921, '1921-10-29');
 
 --======= Insert Marriage between id: 97 and id: 117 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1486, 'Kapstaden', 'Sydafrika', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (97, 117, 1486, 27, 7, 1921, '1921-07-27');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (49, 97, 117, 1486, 27, 7, 1921, '1921-07-27');
 
 --======= Insert Marriage between id: 98 and id: 120 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1487, 'Linköping', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (98, 120, 1487, 21, 5, 1927, '1927-05-21');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (50, 98, 120, 1487, 21, 5, 1927, '1927-05-21');
 
 --======= Insert Marriage between id: 99 and id: 125 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1488, 'Göteborg', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (99, 125, 1488, 30, 6, 1936, '1936-06-30');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (51, 99, 125, 1488, 30, 6, 1936, '1936-06-30');
 
 --======= Insert Marriage between id: 100 and id: 126 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1489, 'Göteborg', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (100, 126, 1489, 15, 10, 1921, '1921-10-15');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (52, 100, 126, 1489, 15, 10, 1921, '1921-10-15');
 
 --======= Insert Marriage between id: 103 and id: 104 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (103, 104, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (53, 103, 104, null, null, null, null, null);
 
 --======= Insert Marriage between id: 107 and id: 130 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1490, 'Västrum', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (107, 130, 1490, 25, 3, 1948, '1948-03-25');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (54, 107, 130, 1490, 25, 3, 1948, '1948-03-25');
 
 --======= Insert Marriage between id: 108 and id: 131 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (108, 131, null, 15, 11, 1947, '1947-11-15');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (55, 108, 131, null, 15, 11, 1947, '1947-11-15');
 
 --======= Insert Marriage between id: 111 and id: 137 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (111, 137, null, 23, 6, 1955, '1955-06-23');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (56, 111, 137, null, 23, 6, 1955, '1955-06-23');
 
 --======= Insert Marriage between id: 112 and id: 138 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1491, 'Strömstad', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (112, 138, 1491, 4, 1, 1947, '1947-01-04');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (57, 112, 138, 1491, 4, 1, 1947, '1947-01-04');
 
 --======= Insert Marriage between id: 114 and id: 139 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1492, 'Strömstad', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (114, 139, 1492, 8, 1, 1956, '1956-01-08');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (58, 114, 139, 1492, 8, 1, 1956, '1956-01-08');
 
 --======= Insert Marriage between id: 115 and id: 143 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (115, 143, null, 15, 11, 1959, '1959-11-15');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (59, 115, 143, null, 15, 11, 1959, '1959-11-15');
 
 --======= Insert Marriage between id: 116 and id: 146 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1493, 'Göteborg', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (116, 146, 1493, 30, 12, 1967, '1967-12-30');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (60, 116, 146, 1493, 30, 12, 1967, '1967-12-30');
 
 --======= Insert Marriage between id: 118 and id: 150 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1494, 'Kapstaden', 'Sydafrika', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (118, 150, 1494, 18, 4, 1953, '1953-04-18');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (61, 118, 150, 1494, 18, 4, 1953, '1953-04-18');
 
 --======= Insert Marriage between id: 118 and id: 151 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1495, 'Kapstaden', 'Sydafrika', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (118, 151, 1495, 8, 12, 1977, '1977-12-08');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (62, 118, 151, 1495, 8, 12, 1977, '1977-12-08');
 
 --======= Insert Marriage between id: 119 and id: 154 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1496, 'Danderyd', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (119, 154, 1496, 10, 4, 1952, '1952-04-10');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (63, 119, 154, 1496, 10, 4, 1952, '1952-04-10');
 
 --======= Insert Marriage between id: 121 and id: 166 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1497, 'Lund', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (121, 166, 1497, 30, 4, 1955, '1955-04-30');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (64, 121, 166, 1497, 30, 4, 1955, '1955-04-30');
 
 --======= Insert Marriage between id: 122 and id: 167 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (122, 167, null, null, null, 1954, '1954-01-01');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (65, 122, 167, null, null, null, 1954, '1954-01-01');
 
 --======= Insert Marriage between id: 122 and id: 168 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (122, 168, null, null, null, 1962, '1962-01-01');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (66, 122, 168, null, null, null, 1962, '1962-01-01');
 
 --======= Insert Marriage between id: 123 and id: 169 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (123, 169, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (67, 123, 169, null, null, null, null, null);
 
 --======= Insert Marriage between id: 127 and id: 128 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (127, 128, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (68, 127, 128, null, null, null, null, null);
 
 --======= Insert Marriage between id: 132 and id: 133 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1498, 'på Moffett Naval Airstation', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (132, 133, 1498, 30, 7, 1988, '1988-07-30');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (69, 132, 133, 1498, 30, 7, 1988, '1988-07-30');
 
 --======= Insert Marriage between id: 135 and id: 136 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (135, 136, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (70, 135, 136, null, null, null, null, null);
 
 --======= Insert Marriage between id: 144 and id: 636 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (144, 636, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (71, 144, 636, null, null, null, null, null);
 
 --======= Insert Marriage between id: 145 and id: 641 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (145, 641, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (72, 145, 641, null, null, null, null, null);
 
 --======= Insert Marriage between id: 148 and id: 149 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (148, 149, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (73, 148, 149, null, null, null, null, null);
 
 --======= Insert Marriage between id: 153 and id: 158 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1499, 'Kapstaden', 'Sydafrika', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (153, 158, 1499, 30, 10, 1983, '1983-10-30');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (74, 153, 158, 1499, 30, 10, 1983, '1983-10-30');
 
 --======= Insert Marriage between id: 155 and id: 159 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1500, 'Vadstena', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (155, 159, 1500, 9, 7, 1989, '1989-07-09');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (75, 155, 159, 1500, 9, 7, 1989, '1989-07-09');
 
 --======= Insert Marriage between id: 156 and id: 161 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1501, 'Mariefred', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (156, 161, 1501, 15, 6, 1985, '1985-06-15');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (76, 156, 161, 1501, 15, 6, 1985, '1985-06-15');
 
 --======= Insert Marriage between id: 162 and id: 163 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (162, 163, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (77, 162, 163, null, null, null, null, null);
 
 --======= Insert Marriage between id: 164 and id: 165 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (164, 165, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (78, 164, 165, null, null, null, null, null);
 
 --======= Insert Marriage between id: 175 and id: 189 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1502, 'Nordmark', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (175, 189, 1502, 10, 11, 1873, '1873-11-10');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (79, 175, 189, 1502, 10, 11, 1873, '1873-11-10');
 
 --======= Insert Marriage between id: 176 and id: 202 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1503, 'Rämmen', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (176, 202, 1503, 26, 12, 1873, '1873-12-26');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (80, 176, 202, 1503, 26, 12, 1873, '1873-12-26');
 
 --======= Insert Marriage between id: 179 and id: 203 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1504, 'Nordmark', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (179, 203, 1504, 8, 9, 1893, '1893-09-08');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (81, 179, 203, 1504, 8, 9, 1893, '1893-09-08');
 
 --======= Insert Marriage between id: 181 and id: 263 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1505, 'Tranås', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (181, 263, 1505, 21, 11, 1885, '1885-11-21');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (82, 181, 263, 1505, 21, 11, 1885, '1885-11-21');
 
 --======= Insert Marriage between id: 185 and id: 186 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (185, 186, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (83, 185, 186, null, null, null, null, null);
 
 --======= Insert Marriage between id: 187 and id: 188 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (187, 188, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (84, 187, 188, null, null, null, null, null);
 
 --======= Insert Marriage between id: 190 and id: 213 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1506, 'Karlstad', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (190, 213, 1506, 26, 5, 1894, '1894-05-26');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (85, 190, 213, 1506, 26, 5, 1894, '1894-05-26');
 
 --======= Insert Marriage between id: 191 and id: 214 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1507, 'Stockholm', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (191, 214, 1507, 19, 4, 1903, '1903-04-19');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (86, 191, 214, 1507, 19, 4, 1903, '1903-04-19');
 
 --======= Insert Marriage between id: 192 and id: 215 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1508, 'Stockholm', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (192, 215, 1508, 13, 5, 1911, '1911-05-13');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (87, 192, 215, 1508, 13, 5, 1911, '1911-05-13');
 
 --======= Insert Marriage between id: 193 and id: 218 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1509, 'Stockholm', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (193, 218, 1509, 24, 11, 1901, '1901-11-24');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (88, 193, 218, 1509, 24, 11, 1901, '1901-11-24');
 
 --======= Insert Marriage between id: 194 and id: 219 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1510, 'Nordmark', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (194, 219, 1510, 29, 9, 1917, '1917-09-29');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (89, 194, 219, 1510, 29, 9, 1917, '1917-09-29');
 
 --======= Insert Marriage between id: 195 and id: 222 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1511, 'Stockholm', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (195, 222, 1511, 3, 12, 1927, '1927-12-03');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (90, 195, 222, 1511, 3, 12, 1927, '1927-12-03');
 
 --======= Insert Marriage between id: 196 and id: 223 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1512, 'Stockholm', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (196, 223, 1512, 18, 12, 1915, '1915-12-18');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (91, 196, 223, 1512, 18, 12, 1915, '1915-12-18');
 
 --======= Insert Marriage between id: 196 and id: 224 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1513, 'Stockholm', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (196, 224, 1513, 27, 12, 1925, '1925-12-27');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (92, 196, 224, 1513, 27, 12, 1925, '1925-12-27');
 
 --======= Insert Marriage between id: 197 and id: 229 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1514, 'Winnipeg', 'Canada', 'Manitoba', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (197, 229, 1514, 1, 4, 1921, '1921-04-01');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (93, 197, 229, 1514, 1, 4, 1921, '1921-04-01');
 
 --======= Insert Marriage between id: 197 and id: 230 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (197, 230, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (94, 197, 230, null, null, null, null, null);
 
 --======= Insert Marriage between id: 198 and id: 232 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1515, 'Nordmark', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (198, 232, 1515, 24, 8, 1918, '1918-08-24');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (95, 198, 232, 1515, 24, 8, 1918, '1918-08-24');
 
 --======= Insert Marriage between id: 199 and id: 233 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1516, 'Stockholm', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (199, 233, 1516, 21, 11, 1919, '1919-11-21');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (96, 199, 233, 1516, 21, 11, 1919, '1919-11-21');
 
 --======= Insert Marriage between id: 200 and id: 236 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1517, 'Rämmen', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (200, 236, 1517, 1, 12, 1917, '1917-12-01');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (97, 200, 236, 1517, 1, 12, 1917, '1917-12-01');
 
 --======= Insert Marriage between id: 201 and id: 237 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1518, 'Nordmark', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (201, 237, 1518, 13, 4, 1922, '1922-04-13');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (98, 201, 237, 1518, 13, 4, 1922, '1922-04-13');
 
 --======= Insert Marriage between id: 204 and id: 266 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1519, 'Stockholm', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (204, 266, 1519, 3, 10, 1921, '1921-10-03');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (99, 204, 266, 1519, 3, 10, 1921, '1921-10-03');
 
 --======= Insert Marriage between id: 205 and id: 267 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1520, 'Stockholm', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (205, 267, 1520, 3, 6, 1922, '1922-06-03');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (100, 205, 267, 1520, 3, 6, 1922, '1922-06-03');
 
 --======= Insert Marriage between id: 205 and id: 268 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1521, 'Danderyd', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (205, 268, 1521, 3, 2, 1945, '1945-02-03');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (101, 205, 268, 1521, 3, 2, 1945, '1945-02-03');
 
 --======= Insert Marriage between id: 206 and id: 272 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1522, 'Stockholm', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (206, 272, 1522, 20, 12, 1924, '1924-12-20');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (102, 206, 272, 1522, 20, 12, 1924, '1924-12-20');
 
 --======= Insert Marriage between id: 207 and id: 275 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1523, 'Valtorp', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (207, 275, 1523, 19, 11, 1924, '1924-11-19');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (103, 207, 275, 1523, 19, 11, 1924, '1924-11-19');
 
 --======= Insert Marriage between id: 209 and id: 276 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1524, 'Stockholm', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (209, 276, 1524, 21, 3, 1934, '1934-03-21');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (104, 209, 276, 1524, 21, 3, 1934, '1934-03-21');
 
 --======= Insert Marriage between id: 210 and id: 277 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1525, 'Vansbro', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (210, 277, 1525, null, null, 1930, '1930-01-01');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (105, 210, 277, 1525, null, null, 1930, '1930-01-01');
 
 --======= Insert Marriage between id: 211 and id: 212 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (211, 212, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (106, 211, 212, null, null, null, null, null);
 
 --======= Insert Marriage between id: 216 and id: 217 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (216, 217, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (107, 216, 217, null, null, null, null, null);
 
 --======= Insert Marriage between id: 221 and id: 240 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1526, 'Nordmark', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (221, 240, 1526, 23, 10, 1943, '1943-10-23');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (108, 221, 240, 1526, 23, 10, 1943, '1943-10-23');
 
 --======= Insert Marriage between id: 225 and id: 226 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (225, 226, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (109, 225, 226, null, null, null, null, null);
 
 --======= Insert Marriage between id: 227 and id: 228 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (227, 228, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (110, 227, 228, null, null, null, null, null);
 
 --======= Insert Marriage between id: 231 and id: 243 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1527, 'Vernon', 'Canada', 'BC', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (231, 243, 1527, 23, 8, 1952, '1952-08-23');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (111, 231, 243, 1527, 23, 8, 1952, '1952-08-23');
 
 --======= Insert Marriage between id: 235 and id: 260 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1528, 'Stockholm', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (235, 260, 1528, 10, 11, 1956, '1956-11-10');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (112, 235, 260, 1528, 10, 11, 1956, '1956-11-10');
 
 --======= Insert Marriage between id: 238 and id: 239 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (238, 239, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (113, 238, 239, null, null, null, null, null);
 
 --======= Insert Marriage between id: 241 and id: 242 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (241, 242, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (114, 241, 242, null, null, null, null, null);
 
 --======= Insert Marriage between id: 244 and id: 249 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1529, 'Salmon Arm', 'Canada', 'BC', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (244, 249, 1529, 31, 8, 1974, '1974-08-31');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (115, 244, 249, 1529, 31, 8, 1974, '1974-08-31');
 
 --======= Insert Marriage between id: 245 and id: 252 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1530, 'Enderby', 'Canada', 'BC', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (245, 252, 1530, 15, 5, 1976, '1976-05-15');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (116, 245, 252, 1530, 15, 5, 1976, '1976-05-15');
 
 --======= Insert Marriage between id: 246 and id: 253 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1531, 'Salmon Arm', 'Canada', 'BC', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (246, 253, 1531, 30, 6, 1979, '1979-06-30');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (117, 246, 253, 1531, 30, 6, 1979, '1979-06-30');
 
 --======= Insert Marriage between id: 247 and id: 257 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1532, 'Enderby', 'Canada', 'BC', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (247, 257, 1532, 9, 8, 1986, '1986-08-09');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (118, 247, 257, 1532, 9, 8, 1986, '1986-08-09');
 
 --======= Insert Marriage between id: 258 and id: 259 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (258, 259, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (119, 258, 259, null, null, null, null, null);
 
 --======= Insert Marriage between id: 261 and id: 262 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (261, 262, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (120, 261, 262, null, null, null, null, null);
 
 --======= Insert Marriage between id: 264 and id: 265 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (264, 265, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (121, 264, 265, null, null, null, null, null);
 
 --======= Insert Marriage between id: 269 and id: 280 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (269, 280, null, 22, 12, 1963, '1963-12-22');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (122, 269, 280, null, 22, 12, 1963, '1963-12-22');
 
 --======= Insert Marriage between id: 270 and id: 281 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1533, 'Danderyd', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (270, 281, 1533, 3, 2, 1968, '1968-02-03');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (123, 270, 281, 1533, 3, 2, 1968, '1968-02-03');
 
 --======= Insert Marriage between id: 271 and id: 285 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1534, 'Danderyd', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (271, 285, 1534, 25, 6, 1971, '1971-06-25');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (124, 271, 285, 1534, 25, 6, 1971, '1971-06-25');
 
 --======= Insert Marriage between id: 273 and id: 286 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1535, 'Stockholm', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (273, 286, 1535, 10, 7, 1947, '1947-07-10');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (125, 273, 286, 1535, 10, 7, 1947, '1947-07-10');
 
 --======= Insert Marriage between id: 278 and id: 279 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (278, 279, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (126, 278, 279, null, null, null, null, null);
 
 --======= Insert Marriage between id: 290 and id: 297 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1536, 'Göteborg', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (290, 297, 1536, 21, 2, 1840, '1840-02-21');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (127, 290, 297, 1536, 21, 2, 1840, '1840-02-21');
 
 --======= Insert Marriage between id: 293 and id: 298 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1537, 'Uddevalla', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (293, 298, 1537, 23, 6, 1845, '1845-06-23');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (128, 293, 298, 1537, 23, 6, 1845, '1845-06-23');
 
 --======= Insert Marriage between id: 294 and id: 302 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1538, 'Göteborg', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (294, 302, 1538, 25, 2, 1845, '1845-02-25');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (129, 294, 302, 1538, 25, 2, 1845, '1845-02-25');
 
 --======= Insert Marriage between id: 295 and id: 296 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (295, 296, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (130, 295, 296, null, null, null, null, null);
 
 --======= Insert Marriage between id: 299 and id: 305 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1539, 'Vassända', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (299, 305, 1539, 22, 10, 1870, '1870-10-22');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (131, 299, 305, 1539, 22, 10, 1870, '1870-10-22');
 
 --======= Insert Marriage between id: 301 and id: 309 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1540, 'Uddevalla', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (301, 309, 1540, 1, 8, 1871, '1871-08-01');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (132, 301, 309, 1540, 1, 8, 1871, '1871-08-01');
 
 --======= Insert Marriage between id: 303 and id: 304 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (303, 304, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (133, 303, 304, null, null, null, null, null);
 
 --======= Insert Marriage between id: 306 and id: 312 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1541, 'Stockholm', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (306, 312, 1541, 29, 6, 1902, '1902-06-29');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (134, 306, 312, 1541, 29, 6, 1902, '1902-06-29');
 
 --======= Insert Marriage between id: 307 and id: 317 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1542, 'Säffle', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (307, 317, 1542, 20, 12, 1908, '1908-12-20');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (135, 307, 317, 1542, 20, 12, 1908, '1908-12-20');
 
 --======= Insert Marriage between id: 310 and id: 311 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (310, 311, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (136, 310, 311, null, null, null, null, null);
 
 --======= Insert Marriage between id: 313 and id: 333 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1543, 'Simrishamn', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (313, 333, 1543, 22, 11, 1930, '1930-11-22');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (137, 313, 333, 1543, 22, 11, 1930, '1930-11-22');
 
 --======= Insert Marriage between id: 314 and id: 341 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1544, 'Vänersborg', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (314, 341, 1544, 18, 6, 1928, '1928-06-18');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (138, 314, 341, 1544, 18, 6, 1928, '1928-06-18');
 
 --======= Insert Marriage between id: 315 and id: 316 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (315, 316, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (139, 315, 316, null, null, null, null, null);
 
 --======= Insert Marriage between id: 318 and id: 348 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1545, 'Uddevalla', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (318, 348, 1545, 23, 7, 1945, '1945-07-23');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (140, 318, 348, 1545, 23, 7, 1945, '1945-07-23');
 
 --======= Insert Marriage between id: 320 and id: 368 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1546, 'Skee', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (320, 368, 1546, 26, 9, 1824, '1824-09-26');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (141, 320, 368, 1546, 26, 9, 1824, '1824-09-26');
 
 --======= Insert Marriage between id: 336 and id: 342 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1547, 'Västervik', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (336, 342, 1547, 10, 6, 1961, '1961-06-10');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (142, 336, 342, 1547, 10, 6, 1961, '1961-06-10');
 
 --======= Insert Marriage between id: 337 and id: 343 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1548, 'Hosjö', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (337, 343, 1548, 3, 7, 1971, '1971-07-03');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (143, 337, 343, 1548, 3, 7, 1971, '1971-07-03');
 
 --======= Insert Marriage between id: 339 and id: 340 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1549, 'Simrishamn', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (339, 340, 1549, 16, 12, 1899, '1899-12-16');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (144, 339, 340, 1549, 16, 12, 1899, '1899-12-16');
 
 --======= Insert Marriage between id: 346 and id: 347 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (346, 347, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (145, 346, 347, null, null, null, null, null);
 
 --======= Insert Marriage between id: 350 and id: 351 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (350, 351, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (146, 350, 351, null, null, null, null, null);
 
 --======= Insert Marriage between id: 357 and id: 550 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1550, 'Stockholm', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (357, 550, 1550, 6, 3, 1844, '1844-03-06');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (147, 357, 550, 1550, 6, 3, 1844, '1844-03-06');
 
 --======= Insert Marriage between id: 358 and id: 555 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1551, 'Samneröd', 'Bäve', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (358, 555, 1551, 18, 10, 1829, '1829-10-18');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (148, 358, 555, 1551, 18, 10, 1829, '1829-10-18');
 
 --======= Insert Marriage between id: 361 and id: 560 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1552, 'Samneröd', 'Bäve', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (361, 560, 1552, 18, 9, 1842, '1842-09-18');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (149, 361, 560, 1552, 18, 9, 1842, '1842-09-18');
 
 --======= Insert Marriage between id: 362 and id: 561 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1553, 'Göteborg', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (362, 561, 1553, 6, 7, 1852, '1852-07-06');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (150, 362, 561, 1553, 6, 7, 1852, '1852-07-06');
 
 --======= Insert Marriage between id: 363 and id: 569 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1554, 'Samneröd', 'Bäve', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (363, 569, 1554, 16, 10, 1840, '1840-10-16');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (151, 363, 569, 1554, 16, 10, 1840, '1840-10-16');
 
 --======= Insert Marriage between id: 364 and id: 570 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1555, 'Samneröd', 'Bäve', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (364, 570, 1555, 13, 11, 1841, '1841-11-13');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (152, 364, 570, 1555, 13, 11, 1841, '1841-11-13');
 
 --======= Insert Marriage between id: 366 and id: 367 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (366, 367, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (153, 366, 367, null, null, null, null, null);
 
 --======= Insert Marriage between id: 371 and id: 379 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1556, 'Kungsbacka', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (371, 379, 1556, 1, 2, 1854, '1854-02-01');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (154, 371, 379, 1556, 1, 2, 1854, '1854-02-01');
 
 --======= Insert Marriage between id: 372 and id: 387 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (372, 387, null, 15, 8, 1861, '1861-08-15');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (155, 372, 387, null, 15, 8, 1861, '1861-08-15');
 
 --======= Insert Marriage between id: 374 and id: 391 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1557, 'Kungsbacka', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (374, 391, 1557, 19, 12, 1861, '1861-12-19');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (156, 374, 391, 1557, 19, 12, 1861, '1861-12-19');
 
 --======= Insert Marriage between id: 375 and id: 392 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1558, 'Fristad', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (375, 392, 1558, 11, 9, 1872, '1872-09-11');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (157, 375, 392, 1558, 11, 9, 1872, '1872-09-11');
 
 --======= Insert Marriage between id: 377 and id: 378 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (377, 378, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (158, 377, 378, null, null, null, null, null);
 
 --======= Insert Marriage between id: 380 and id: 398 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1559, 'Paris', 'Frankrike', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (380, 398, 1559, 3, 11, 1892, '1892-11-03');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (159, 380, 398, 1559, 3, 11, 1892, '1892-11-03');
 
 --======= Insert Marriage between id: 381 and id: 400 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1560, 'Haro', 'Spanien', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (381, 400, 1560, 27, 7, 1893, '1893-07-27');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (160, 381, 400, 1560, 27, 7, 1893, '1893-07-27');
 
 --======= Insert Marriage between id: 382 and id: 409 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1561, 'Beardstown', 'USA', 'Illinois', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (382, 409, 1561, 24, 11, 1887, '1887-11-24');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (161, 382, 409, 1561, 24, 11, 1887, '1887-11-24');
 
 --======= Insert Marriage between id: 383 and id: 413 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1562, 'Strömstad', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (383, 413, 1562, 11, 7, 1891, '1891-07-11');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (162, 383, 413, 1562, 11, 7, 1891, '1891-07-11');
 
 --======= Insert Marriage between id: 385 and id: 417 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1563, 'Stockholm', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (385, 417, 1563, 7, 4, 1906, '1906-04-07');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (163, 385, 417, 1563, 7, 4, 1906, '1906-04-07');
 
 --======= Insert Marriage between id: 389 and id: 496 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (389, 496, null, 5, 4, 1888, '1888-04-05');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (164, 389, 496, null, 5, 4, 1888, '1888-04-05');
 
 --======= Insert Marriage between id: 390 and id: 497 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1564, 'Västerås', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (390, 497, 1564, 30, 3, 1897, '1897-03-30');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (165, 390, 497, 1564, 30, 3, 1897, '1897-03-30');
 
 --======= Insert Marriage between id: 393 and id: 543 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1565, 'Giresta', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (393, 543, 1565, 23, 6, 1919, '1919-06-23');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (166, 393, 543, 1565, 23, 6, 1919, '1919-06-23');
 
 --======= Insert Marriage between id: 394 and id: 545 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1566, 'Skövde', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (394, 545, 1566, 5, 7, 1902, '1902-07-05');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (167, 394, 545, 1566, 5, 7, 1902, '1902-07-05');
 
 --======= Insert Marriage between id: 396 and id: 397 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (396, 397, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (168, 396, 397, null, null, null, null, null);
 
 --======= Insert Marriage between id: 403 and id: 426 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1567, 'Haro', 'Spanien', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (403, 426, 1567, 14, 9, 1955, '1955-09-14');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (169, 403, 426, 1567, 14, 9, 1955, '1955-09-14');
 
 --======= Insert Marriage between id: 407 and id: 427 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1568, 'Zaragosa', 'Spanien', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (407, 427, 1568, 11, 4, 1934, '1934-04-11');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (170, 407, 427, 1568, 11, 4, 1934, '1934-04-11');
 
 --======= Insert Marriage between id: 410 and id: 453 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1569, 'Portland', 'USA', 'Oregon', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (410, 453, 1569, 14, 2, 1925, '1925-02-14');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (171, 410, 453, 1569, 14, 2, 1925, '1925-02-14');
 
 --======= Insert Marriage between id: 411 and id: 456 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1570, 'Oakland', 'USA', 'Californien', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (411, 456, 1570, 9, 4, 1947, '1947-04-09');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (172, 411, 456, 1570, 9, 4, 1947, '1947-04-09');
 
 --======= Insert Marriage between id: 418 and id: 461 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1571, 'Åre', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (418, 461, 1571, 31, 8, 1932, '1932-08-31');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (173, 418, 461, 1571, 31, 8, 1932, '1932-08-31');
 
 --======= Insert Marriage between id: 418 and id: 462 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1572, 'Stockholm', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (418, 462, 1572, 3, 8, 1943, '1943-08-03');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (174, 418, 462, 1572, 3, 8, 1943, '1943-08-03');
 
 --======= Insert Marriage between id: 419 and id: 470 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1573, 'Østersund', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (419, 470, 1573, 14, 9, 1929, '1929-09-14');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (175, 419, 470, 1573, 14, 9, 1929, '1929-09-14');
 
 --======= Insert Marriage between id: 420 and id: 474 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1574, 'Stockholm', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (420, 474, 1574, 15, 10, 1935, '1935-10-15');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (176, 420, 474, 1574, 15, 10, 1935, '1935-10-15');
 
 --======= Insert Marriage between id: 421 and id: 480 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1575, 'Stockholm', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (421, 480, 1575, 14, 4, 1938, '1938-04-14');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (177, 421, 480, 1575, 14, 4, 1938, '1938-04-14');
 
 --======= Insert Marriage between id: 422 and id: 423 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (422, 423, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (178, 422, 423, null, null, null, null, null);
 
 --======= Insert Marriage between id: 424 and id: 425 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (424, 425, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (179, 424, 425, null, null, null, null, null);
 
 --======= Insert Marriage between id: 428 and id: 433 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1576, 'Zaragosa', 'Spanien', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (428, 433, 1576, 25, 5, 1961, '1961-05-25');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (180, 428, 433, 1576, 25, 5, 1961, '1961-05-25');
 
 --======= Insert Marriage between id: 429 and id: 434 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1577, 'Bilbao', 'Spanien', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (429, 434, 1577, 24, 5, 1965, '1965-05-24');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (181, 429, 434, 1577, 24, 5, 1965, '1965-05-24');
 
 --======= Insert Marriage between id: 430 and id: 442 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1578, 'Zaragosa', 'Spanien', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (430, 442, 1578, 3, 7, 1965, '1965-07-03');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (182, 430, 442, 1578, 3, 7, 1965, '1965-07-03');
 
 --======= Insert Marriage between id: 431 and id: 446 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1579, 'Zaragosa', 'Spanien', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (431, 446, 1579, 27, 12, 1965, '1965-12-27');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (183, 431, 446, 1579, 27, 12, 1965, '1965-12-27');
 
 --======= Insert Marriage between id: 432 and id: 447 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1580, 'Barbastro', 'Spanien', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (432, 447, 1580, 2, 7, 1973, '1973-07-02');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (184, 432, 447, 1580, 2, 7, 1973, '1973-07-02');
 
 --======= Insert Marriage between id: 440 and id: 441 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (440, 441, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (185, 440, 441, null, null, null, null, null);
 
 --======= Insert Marriage between id: 444 and id: 445 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (444, 445, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (186, 444, 445, null, null, null, null, null);
 
 --======= Insert Marriage between id: 451 and id: 452 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (451, 452, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (187, 451, 452, null, null, null, null, null);
 
 --======= Insert Marriage between id: 454 and id: 455 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (454, 455, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (188, 454, 455, null, null, null, null, null);
 
 --======= Insert Marriage between id: 457 and id: 458 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (457, 458, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (189, 457, 458, null, null, null, null, null);
 
 --======= Insert Marriage between id: 459 and id: 460 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (459, 460, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (190, 459, 460, null, null, null, null, null);
 
 --======= Insert Marriage between id: 465 and id: 670 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (465, 670, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (191, 465, 670, null, null, null, null, null);
 
 --======= Insert Marriage between id: 466 and id: 467 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (466, 467, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (192, 466, 467, null, null, null, null, null);
 
 --======= Insert Marriage between id: 468 and id: 469 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (468, 469, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (193, 468, 469, null, null, null, null, null);
 
 --======= Insert Marriage between id: 471 and id: 1078 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (471, 1078, null, null, null, 1964, '1964-01-01');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (194, 471, 1078, null, null, null, 1964, '1964-01-01');
 
 --======= Insert Marriage between id: 472 and id: 473 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (472, 473, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (195, 472, 473, null, null, null, null, null);
 
 --======= Insert Marriage between id: 475 and id: 671 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1581, 'Köpenhamn', 'Danmark', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (475, 671, 1581, 17, 7, 1962, '1962-07-17');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (196, 475, 671, 1581, 17, 7, 1962, '1962-07-17');
 
 --======= Insert Marriage between id: 476 and id: 676 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1582, 'Bäckaskog', 'Bäckaskog', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (476, 676, 1582, 25, 7, 1971, '1971-07-25');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (197, 476, 676, 1582, 25, 7, 1971, '1971-07-25');
 
 --======= Insert Marriage between id: 477 and id: 678 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (477, 678, null, 14, 6, 1969, '1969-06-14');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (198, 477, 678, null, 14, 6, 1969, '1969-06-14');
 
 --======= Insert Marriage between id: 478 and id: 479 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (478, 479, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (199, 478, 479, null, null, null, null, null);
 
 --======= Insert Marriage between id: 481 and id: 483 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1583, 'Ronneby', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (481, 483, 1583, 8, 8, 1970, '1970-08-08');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (200, 481, 483, 1583, 8, 8, 1970, '1970-08-08');
 
 --======= Insert Marriage between id: 481 and id: 484 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (481, 484, null, 18, 10, 1989, '1989-10-18');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (201, 481, 484, null, 18, 10, 1989, '1989-10-18');
 
 --======= Insert Marriage between id: 482 and id: 489 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1584, 'Västra Ingelstad', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (482, 489, 1584, 30, 8, 1975, '1975-08-30');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (202, 482, 489, 1584, 30, 8, 1975, '1975-08-30');
 
 --======= Insert Marriage between id: 492 and id: 493 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (492, 493, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (203, 492, 493, null, null, null, null, null);
 
 --======= Insert Marriage between id: 494 and id: 495 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (494, 495, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (204, 494, 495, null, null, null, null, null);
 
 --======= Insert Marriage between id: 498 and id: 504 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1585, 'Stockholm', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (498, 504, 1585, 17, 11, 1920, '1920-11-17');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (205, 498, 504, 1585, 17, 11, 1920, '1920-11-17');
 
 --======= Insert Marriage between id: 499 and id: 505 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1586, 'Bro', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (499, 505, 1586, 18, 2, 1931, '1931-02-18');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (206, 499, 505, 1586, 18, 2, 1931, '1931-02-18');
 
 --======= Insert Marriage between id: 500 and id: 509 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1587, 'Sundsvall', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (500, 509, 1587, 14, 9, 1930, '1930-09-14');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (207, 500, 509, 1587, 14, 9, 1930, '1930-09-14');
 
 --======= Insert Marriage between id: 501 and id: 513 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1588, 'Stockholm', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (501, 513, 1588, 13, 6, 1931, '1931-06-13');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (208, 501, 513, 1588, 13, 6, 1931, '1931-06-13');
 
 --======= Insert Marriage between id: 502 and id: 503 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (502, 503, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (209, 502, 503, null, null, null, null, null);
 
 --======= Insert Marriage between id: 506 and id: 518 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1589, 'Danderyd', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (506, 518, 1589, 27, 8, 1959, '1959-08-27');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (210, 506, 518, 1589, 27, 8, 1959, '1959-08-27');
 
 --======= Insert Marriage between id: 508 and id: 522 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1590, 'Danderyd', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (508, 522, 1590, 2, 9, 1972, '1972-09-02');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (211, 508, 522, 1590, 2, 9, 1972, '1972-09-02');
 
 --======= Insert Marriage between id: 510 and id: 532 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1591, 'Bjurtjärn', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (510, 532, 1591, 29, 12, 1953, '1953-12-29');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (212, 510, 532, 1591, 29, 12, 1953, '1953-12-29');
 
 --======= Insert Marriage between id: 512 and id: 538 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1592, 'Stockholm', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (512, 538, 1592, 23, 11, 1968, '1968-11-23');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (213, 512, 538, 1592, 23, 11, 1968, '1968-11-23');
 
 --======= Insert Marriage between id: 514 and id: 515 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (514, 515, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (214, 514, 515, null, null, null, null, null);
 
 --======= Insert Marriage between id: 516 and id: 517 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (516, 517, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (215, 516, 517, null, null, null, null, null);
 
 --======= Insert Marriage between id: 519 and id: 527 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1593, 'Vitaby', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (519, 527, 1593, 12, 5, 1990, '1990-05-12');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (216, 519, 527, 1593, 12, 5, 1990, '1990-05-12');
 
 --======= Insert Marriage between id: 525 and id: 526 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (525, 526, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (217, 525, 526, null, null, null, null, null);
 
 --======= Insert Marriage between id: 530 and id: 531 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (530, 531, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (218, 530, 531, null, null, null, null, null);
 
 --======= Insert Marriage between id: 533 and id: 686 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1594, 'Kansas City', 'USA', 'Kansas', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (533, 686, 1594, 20, 7, 1979, '1979-07-20');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (219, 533, 686, 1594, 20, 7, 1979, '1979-07-20');
 
 --======= Insert Marriage between id: 534 and id: 691 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (534, 691, null, 20, 8, 1988, '1988-08-20');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (220, 534, 691, null, 20, 8, 1988, '1988-08-20');
 
 --======= Insert Marriage between id: 535 and id: 693 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (535, 693, null, 7, 9, 1991, '1991-09-07');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (221, 535, 693, null, 7, 9, 1991, '1991-09-07');
 
 --======= Insert Marriage between id: 536 and id: 537 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (536, 537, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (222, 536, 537, null, null, null, null, null);
 
 --======= Insert Marriage between id: 539 and id: 540 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (539, 540, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (223, 539, 540, null, null, null, null, null);
 
 --======= Insert Marriage between id: 541 and id: 542 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (541, 542, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (224, 541, 542, null, null, null, null, null);
 
 --======= Insert Marriage between id: 546 and id: 547 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (546, 547, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (225, 546, 547, null, null, null, null, null);
 
 --======= Insert Marriage between id: 548 and id: 549 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (548, 549, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (226, 548, 549, null, null, null, null, null);
 
 --======= Insert Marriage between id: 552 and id: 573 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1595, 'Stockholm', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (552, 573, 1595, 18, 11, 1868, '1868-11-18');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (227, 552, 573, 1595, 18, 11, 1868, '1868-11-18');
 
 --======= Insert Marriage between id: 553 and id: 574 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1596, 'Foss', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (553, 574, 1596, 11, 10, 1876, '1876-10-11');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (228, 553, 574, 1596, 11, 10, 1876, '1876-10-11');
 
 --======= Insert Marriage between id: 554 and id: 575 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1597, 'Stockholm', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (554, 575, 1597, 26, 5, 1875, '1875-05-26');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (229, 554, 575, 1597, 26, 5, 1875, '1875-05-26');
 
 --======= Insert Marriage between id: 556 and id: 564 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1598, 'Göteborg', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (556, 564, 1598, 26, 12, 1886, '1886-12-26');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (230, 556, 564, 1598, 26, 12, 1886, '1886-12-26');
 
 --======= Insert Marriage between id: 556 and id: 566 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1599, 'Starrkärr', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (556, 566, 1599, 10, 10, 1894, '1894-10-10');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (231, 556, 566, 1599, 10, 10, 1894, '1894-10-10');
 
 --======= Insert Marriage between id: 557 and id: 1132 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (557, 1132, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (232, 557, 1132, null, null, null, null, null);
 
 --======= Insert Marriage between id: 558 and id: 559 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (558, 559, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (233, 558, 559, null, null, null, null, null);
 
 --======= Insert Marriage between id: 559 and id: 648 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (559, 648, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (234, 559, 648, null, null, null, null, null);
 
 --======= Insert Marriage between id: 563 and id: 578 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1600, 'Helsingborg', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (563, 578, 1600, 29, 11, 1894, '1894-11-29');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (235, 563, 578, 1600, 29, 11, 1894, '1894-11-29');
 
 --======= Insert Marriage between id: 568 and id: 583 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1601, 'Starrkärr', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (568, 583, 1601, 20, 6, 1901, '1901-06-20');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (236, 568, 583, 1601, 20, 6, 1901, '1901-06-20');
 
 --======= Insert Marriage between id: 571 and id: 572 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (571, 572, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (237, 571, 572, null, null, null, null, null);
 
 --======= Insert Marriage between id: 576 and id: 577 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (576, 577, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (238, 576, 577, null, null, null, null, null);
 
 --======= Insert Marriage between id: 580 and id: 587 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1602, 'Lund', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (580, 587, 1602, 5, 6, 1929, '1929-06-05');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (239, 580, 587, 1602, 5, 6, 1929, '1929-06-05');
 
 --======= Insert Marriage between id: 585 and id: 586 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (585, 586, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (240, 585, 586, null, null, null, null, null);
 
 --======= Insert Marriage between id: 588 and id: 595 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1603, 'Skellefteå', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (588, 595, 1603, 20, 6, 1958, '1958-06-20');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (241, 588, 595, 1603, 20, 6, 1958, '1958-06-20');
 
 --======= Insert Marriage between id: 588 and id: 596 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1604, 'ombord på S/Y Gita II', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (588, 596, 1604, 4, 7, 1992, '1992-07-04');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (242, 588, 596, 1604, 4, 7, 1992, '1992-07-04');
 
 --======= Insert Marriage between id: 589 and id: 600 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1605, 'Sjörup', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (589, 600, 1605, 5, 6, 1954, '1954-06-05');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (243, 589, 600, 1605, 5, 6, 1954, '1954-06-05');
 
 --======= Insert Marriage between id: 590 and id: 605 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1606, 'Malmö', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (590, 605, 1606, 20, 6, 1965, '1965-06-20');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (244, 590, 605, 1606, 20, 6, 1965, '1965-06-20');
 
 --======= Insert Marriage between id: 591 and id: 609 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1607, 'Sjörup', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (591, 609, 1607, 6, 10, 1973, '1973-10-06');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (245, 591, 609, 1607, 6, 10, 1973, '1973-10-06');
 
 --======= Insert Marriage between id: 592 and id: 610 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1608, 'Lund', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (592, 610, 1608, 11, 9, 1965, '1965-09-11');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (246, 592, 610, 1608, 11, 9, 1965, '1965-09-11');
 
 --======= Insert Marriage between id: 592 and id: 611 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1609, 'Lund', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (592, 611, 1609, 20, 4, 1970, '1970-04-20');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (247, 592, 611, 1609, 20, 4, 1970, '1970-04-20');
 
 --======= Insert Marriage between id: 593 and id: 594 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (593, 594, null, 26, 8, 1896, '1896-08-26');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (248, 593, 594, null, 26, 8, 1896, '1896-08-26');
 
 --======= Insert Marriage between id: 597 and id: 618 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1610, 'Lund', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (597, 618, 1610, 15, 5, 1993, '1993-05-15');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (249, 597, 618, 1610, 15, 5, 1993, '1993-05-15');
 
 --======= Insert Marriage between id: 601 and id: 1065 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (601, 1065, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (250, 601, 1065, null, null, null, null, null);
 
 --======= Insert Marriage between id: 602 and id: 1069 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (602, 1069, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (251, 602, 1069, null, null, null, null, null);
 
 --======= Insert Marriage between id: 603 and id: 1072 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (603, 1072, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (252, 603, 1072, null, null, null, null, null);
 
 --======= Insert Marriage between id: 604 and id: 1075 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (604, 1075, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (253, 604, 1075, null, null, null, null, null);
 
 --======= Insert Marriage between id: 607 and id: 622 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (607, 622, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (254, 607, 622, null, null, null, null, null);
 
 --======= Insert Marriage between id: 616 and id: 617 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (616, 617, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (255, 616, 617, null, null, null, null, null);
 
 --======= Insert Marriage between id: 620 and id: 621 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (620, 621, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (256, 620, 621, null, null, null, null, null);
 
 --======= Insert Marriage between id: 623 and id: 624 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (623, 624, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (257, 623, 624, null, null, null, null, null);
 
 --======= Insert Marriage between id: 625 and id: 626 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1611, 'Solna', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (625, 626, 1611, 9, 6, 1939, '1939-06-09');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (258, 625, 626, 1611, 9, 6, 1939, '1939-06-09');
 
 --======= Insert Marriage between id: 629 and id: 630 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (629, 630, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (259, 629, 630, null, null, null, null, null);
 
 --======= Insert Marriage between id: 631 and id: 632 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (631, 632, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (260, 631, 632, null, null, null, null, null);
 
 --======= Insert Marriage between id: 634 and id: 635 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (634, 635, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (261, 634, 635, null, null, null, null, null);
 
 --======= Insert Marriage between id: 644 and id: 645 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (644, 645, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (262, 644, 645, null, null, null, null, null);
 
 --======= Insert Marriage between id: 646 and id: 647 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (646, 647, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (263, 646, 647, null, null, null, null, null);
 
 --======= Insert Marriage between id: 649 and id: 650 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (649, 650, null, 20, 3, 1863, '1863-03-20');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (264, 649, 650, null, 20, 3, 1863, '1863-03-20');
 
 --======= Insert Marriage between id: 650 and id: 1146 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (650, 1146, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (265, 650, 1146, null, null, null, null, null);
 
 --======= Insert Marriage between id: 652 and id: 1180 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (652, 1180, null, 18, 2, 1936, '1936-02-18');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (266, 652, 1180, null, 18, 2, 1936, '1936-02-18');
 
 --======= Insert Marriage between id: 653 and id: 1186 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (653, 1186, null, 24, 7, 1929, '1929-07-24');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (267, 653, 1186, null, 24, 7, 1929, '1929-07-24');
 
 --======= Insert Marriage between id: 655 and id: 1192 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (655, 1192, null, 8, 10, 1937, '1937-10-08');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (268, 655, 1192, null, 8, 10, 1937, '1937-10-08');
 
 --======= Insert Marriage between id: 655 and id: 1193 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (655, 1193, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (269, 655, 1193, null, null, null, null, null);
 
 --======= Insert Marriage between id: 656 and id: 657 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (656, 657, null, 3, 2, 1858, '1858-02-03');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (270, 656, 657, null, 3, 2, 1858, '1858-02-03');
 
 --======= Insert Marriage between id: 658 and id: 947 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1612, 'Kristianstad', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (658, 947, 1612, 25, 5, 1752, '1752-05-25');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (271, 658, 947, 1612, 25, 5, 1752, '1752-05-25');
 
 --======= Insert Marriage between id: 659 and id: 707 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (659, 707, null, null, null, 1755, '1755-01-01');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (272, 659, 707, null, null, null, 1755, '1755-01-01');
 
 --======= Insert Marriage between id: 660 and id: 661 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (660, 661, null, 16, 12, 1866, '1866-12-16');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (273, 660, 661, null, 16, 12, 1866, '1866-12-16');
 
 --======= Insert Marriage between id: 664 and id: 665 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (664, 665, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (274, 664, 665, null, null, null, null, null);
 
 --======= Insert Marriage between id: 682 and id: 683 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (682, 683, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (275, 682, 683, null, null, null, null, null);
 
 --======= Insert Marriage between id: 699 and id: 700 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1613, 'Malmö', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (699, 700, 1613, null, null, 1683, '1683-01-01');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (276, 699, 700, 1613, null, null, 1683, '1683-01-01');
 
 --======= Insert Marriage between id: 702 and id: 709 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1614, 'Gävle', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (702, 709, 1614, 30, 12, 1750, '1750-12-30');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (277, 702, 709, 1614, 30, 12, 1750, '1750-12-30');
 
 --======= Insert Marriage between id: 703 and id: 718 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1615, 'Gävle', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (703, 718, 1615, null, null, 1747, '1747-01-01');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (278, 703, 718, 1615, null, null, 1747, '1747-01-01');
 
 --======= Insert Marriage between id: 703 and id: 719 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1616, 'Gävle', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (703, 719, 1616, 11, 9, 1760, '1760-09-11');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (279, 703, 719, 1616, 11, 9, 1760, '1760-09-11');
 
 --======= Insert Marriage between id: 707 and id: 725 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (707, 725, null, null, null, 1761, '1761-01-01');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (280, 707, 725, null, null, null, 1761, '1761-01-01');
 
 --======= Insert Marriage between id: 708 and id: 732 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1617, 'Malmö', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (708, 732, 1617, 14, 10, 1750, '1750-10-14');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (281, 708, 732, 1617, 14, 10, 1750, '1750-10-14');
 
 --======= Insert Marriage between id: 711 and id: 736 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1618, 'Stockholm', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (711, 736, 1618, 4, 3, 1779, '1779-03-04');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (282, 711, 736, 1618, 4, 3, 1779, '1779-03-04');
 
 --======= Insert Marriage between id: 712 and id: 741 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1619, 'Stockholm', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (712, 741, 1619, 8, 10, 1780, '1780-10-08');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (283, 712, 741, 1619, 8, 10, 1780, '1780-10-08');
 
 --======= Insert Marriage between id: 714 and id: 749 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (714, 749, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (284, 714, 749, null, null, null, null, null);
 
 --======= Insert Marriage between id: 717 and id: 759 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1620, 'Stockholm', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (717, 759, 1620, 28, 3, 1796, '1796-03-28');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (285, 717, 759, 1620, 28, 3, 1796, '1796-03-28');
 
 --======= Insert Marriage between id: 721 and id: 889 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1621, 'Gävle', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (721, 889, 1621, 16, 5, 1773, '1773-05-16');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (286, 721, 889, 1621, 16, 5, 1773, '1773-05-16');
 
 --======= Insert Marriage between id: 724 and id: 890 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1622, 'Gävle', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (724, 890, 1622, 6, 12, 1782, '1782-12-06');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (287, 724, 890, 1622, 6, 12, 1782, '1782-12-06');
 
 --======= Insert Marriage between id: 726 and id: 893 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1623, 'Malmö', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (726, 893, 1623, 26, 5, 1775, '1775-05-26');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (288, 726, 893, 1623, 26, 5, 1775, '1775-05-26');
 
 --======= Insert Marriage between id: 727 and id: 894 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1624, 'Malmö', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (727, 894, 1624, 6, 1, 1781, '1781-01-06');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (289, 727, 894, 1624, 6, 1, 1781, '1781-01-06');
 
 --======= Insert Marriage between id: 728 and id: 895 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1625, 'Malmö', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (728, 895, 1625, 5, 10, 1783, '1783-10-05');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (290, 728, 895, 1625, 5, 10, 1783, '1783-10-05');
 
 --======= Insert Marriage between id: 729 and id: 896 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1626, 'Malmö', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (729, 896, 1626, 25, 11, 1787, '1787-11-25');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (291, 729, 896, 1626, 25, 11, 1787, '1787-11-25');
 
 --======= Insert Marriage between id: 730 and id: 733 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (730, 733, null, 6, 4, 1788, '1788-04-06');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (292, 730, 733, null, 6, 4, 1788, '1788-04-06');
 
 --======= Insert Marriage between id: 731 and id: 900 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1627, 'Malmö', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (731, 900, 1627, 21, 10, 1787, '1787-10-21');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (293, 731, 900, 1627, 21, 10, 1787, '1787-10-21');
 
 --======= Insert Marriage between id: 734 and id: 735 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (734, 735, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (294, 734, 735, null, null, null, null, null);
 
 --======= Insert Marriage between id: 738 and id: 762 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1628, 'Stockholm', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (738, 762, 1628, 13, 4, 1812, '1812-04-13');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (295, 738, 762, 1628, 13, 4, 1812, '1812-04-13');
 
 --======= Insert Marriage between id: 739 and id: 763 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1629, 'Stockholm', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (739, 763, 1629, 20, 3, 1823, '1823-03-20');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (296, 739, 763, 1629, 20, 3, 1823, '1823-03-20');
 
 --======= Insert Marriage between id: 740 and id: 770 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1630, 'Stockholm', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (740, 770, 1630, 19, 4, 1806, '1806-04-19');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (297, 740, 770, 1630, 19, 4, 1806, '1806-04-19');
 
 --======= Insert Marriage between id: 745 and id: 874 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1631, 'Stockholm', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (745, 874, 1631, 29, 5, 1819, '1819-05-29');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (298, 745, 874, 1631, 29, 5, 1819, '1819-05-29');
 
 --======= Insert Marriage between id: 748 and id: 875 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1632, 'Stockholm', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (748, 875, 1632, 26, 12, 1818, '1818-12-26');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (299, 748, 875, 1632, 26, 12, 1818, '1818-12-26');
 
 --======= Insert Marriage between id: 756 and id: 881 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1633, 'Stockholm', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (756, 881, 1633, null, null, 1832, '1832-01-01');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (300, 756, 881, 1633, null, null, 1832, '1832-01-01');
 
 --======= Insert Marriage between id: 757 and id: 884 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (757, 884, null, null, null, 1824, '1824-01-01');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (301, 757, 884, null, null, null, 1824, '1824-01-01');
 
 --======= Insert Marriage between id: 760 and id: 761 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (760, 761, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (302, 760, 761, null, null, null, null, null);
 
 --======= Insert Marriage between id: 766 and id: 773 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1634, 'Stockholm', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (766, 773, 1634, 19, 11, 1855, '1855-11-19');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (303, 766, 773, 1634, 19, 11, 1855, '1855-11-19');
 
 --======= Insert Marriage between id: 767 and id: 777 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1635, 'Stockholm', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (767, 777, 1635, 25, 8, 1851, '1851-08-25');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (304, 767, 777, 1635, 25, 8, 1851, '1851-08-25');
 
 --======= Insert Marriage between id: 768 and id: 778 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1636, 'Ontonogan', 'USA', 'Michigan', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (768, 778, 1636, 26, 5, 1859, '1859-05-26');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (305, 768, 778, 1636, 26, 5, 1859, '1859-05-26');
 
 --======= Insert Marriage between id: 771 and id: 772 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (771, 772, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (306, 771, 772, null, null, null, null, null);
 
 --======= Insert Marriage between id: 774 and id: 787 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1637, 'Köpenhamn', 'Danmark', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (774, 787, 1637, 30, 9, 1899, '1899-09-30');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (307, 774, 787, 1637, 30, 9, 1899, '1899-09-30');
 
 --======= Insert Marriage between id: 775 and id: 791 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1638, 'Stockholm', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (775, 791, 1638, 14, 4, 1888, '1888-04-14');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (308, 775, 791, 1638, 14, 4, 1888, '1888-04-14');
 
 --======= Insert Marriage between id: 779 and id: 813 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1639, 'Seneca', 'USA', 'Kansas', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (779, 813, 1639, null, null, 1893, '1893-01-01');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (309, 779, 813, 1639, null, null, 1893, '1893-01-01');
 
 --======= Insert Marriage between id: 781 and id: 816 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1640, 'Homcock', 'USA', 'Michigan', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (781, 816, 1640, 29, 6, 1893, '1893-06-29');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (310, 781, 816, 1640, 29, 6, 1893, '1893-06-29');
 
 --======= Insert Marriage between id: 782 and id: 819 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1641, 'Seattle', 'USA', 'Washington', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (782, 819, 1641, 27, 6, 1892, '1892-06-27');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (311, 782, 819, 1641, 27, 6, 1892, '1892-06-27');
 
 --======= Insert Marriage between id: 783 and id: 820 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1642, 'Redlands', 'USA', 'Californien', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (783, 820, 1642, 6, 10, 1904, '1904-10-06');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (312, 783, 820, 1642, 6, 10, 1904, '1904-10-06');
 
 --======= Insert Marriage between id: 784 and id: 821 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1643, 'Colorado', 'USA', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (784, 821, 1643, 27, 11, 1902, '1902-11-27');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (313, 784, 821, 1643, 27, 11, 1902, '1902-11-27');
 
 --======= Insert Marriage between id: 785 and id: 786 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (785, 786, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (314, 785, 786, null, null, null, null, null);
 
 --======= Insert Marriage between id: 788 and id: 795 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1644, 'Malmö', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (788, 795, 1644, 30, 3, 1921, '1921-03-30');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (315, 788, 795, 1644, 30, 3, 1921, '1921-03-30');
 
 --======= Insert Marriage between id: 788 and id: 796 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1645, 'Stenbrohult', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (788, 796, 1645, 15, 12, 1935, '1935-12-15');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (316, 788, 796, 1645, 15, 12, 1935, '1935-12-15');
 
 --======= Insert Marriage between id: 789 and id: 804 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1646, 'Malmö', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (789, 804, 1646, 22, 5, 1924, '1924-05-22');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (317, 789, 804, 1646, 22, 5, 1924, '1924-05-22');
 
 --======= Insert Marriage between id: 789 and id: 805 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1647, 'Malmö', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (789, 805, 1647, 20, 12, 1935, '1935-12-20');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (318, 789, 805, 1647, 20, 12, 1935, '1935-12-20');
 
 --======= Insert Marriage between id: 790 and id: 806 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1648, 'Malmö', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (790, 806, 1648, 30, 9, 1926, '1926-09-30');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (319, 790, 806, 1648, 30, 9, 1926, '1926-09-30');
 
 --======= Insert Marriage between id: 792 and id: 810 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1649, 'Saltsjöbaden', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (792, 810, 1649, 29, 7, 1917, '1917-07-29');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (320, 792, 810, 1649, 29, 7, 1917, '1917-07-29');
 
 --======= Insert Marriage between id: 793 and id: 794 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (793, 794, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (321, 793, 794, null, null, null, null, null);
 
 --======= Insert Marriage between id: 797 and id: 800 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1650, 'Malmö', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (797, 800, 1650, 29, 10, 1944, '1944-10-29');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (322, 797, 800, 1650, 29, 10, 1944, '1944-10-29');
 
 --======= Insert Marriage between id: 799 and id: 801 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1651, 'Vreta kloster', 'Linköping', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (799, 801, 1651, 29, 7, 1972, '1972-07-29');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (323, 799, 801, 1651, 29, 7, 1972, '1972-07-29');
 
 --======= Insert Marriage between id: 807 and id: 915 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1652, 'Malmö', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (807, 915, 1652, 13, 9, 1952, '1952-09-13');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (324, 807, 915, 1652, 13, 9, 1952, '1952-09-13');
 
 --======= Insert Marriage between id: 808 and id: 809 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (808, 809, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (325, 808, 809, null, null, null, null, null);
 
 --======= Insert Marriage between id: 811 and id: 812 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (811, 812, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (326, 811, 812, null, null, null, null, null);
 
 --======= Insert Marriage between id: 814 and id: 828 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1653, 'Duluth', 'USA', 'Minnesota', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (814, 828, 1653, 20, 12, 1921, '1921-12-20');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (327, 814, 828, 1653, 20, 12, 1921, '1921-12-20');
 
 --======= Insert Marriage between id: 814 and id: 829 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1654, 'Duluth', 'USA', 'Minnesota', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (814, 829, 1654, 1, 9, 1931, '1931-09-01');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (328, 814, 829, 1654, 1, 9, 1931, '1931-09-01');
 
 --======= Insert Marriage between id: 814 and id: 830 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1655, 'Duluth', 'USA', 'Minnesota', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (814, 830, 1655, 23, 8, 1975, '1975-08-23');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (329, 814, 830, 1655, 23, 8, 1975, '1975-08-23');
 
 --======= Insert Marriage between id: 823 and id: 835 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1656, 'Los Angeles', 'USA', 'Californien', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (823, 835, 1656, 14, 8, 1935, '1935-08-14');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (330, 823, 835, 1656, 14, 8, 1935, '1935-08-14');
 
 --======= Insert Marriage between id: 823 and id: 836 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1657, 'Riverside', 'USA', 'Californien', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (823, 836, 1657, 17, 3, 1958, '1958-03-17');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (331, 823, 836, 1657, 17, 3, 1958, '1958-03-17');
 
 --======= Insert Marriage between id: 825 and id: 839 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1658, 'Los Angeles', 'USA', 'Californien', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (825, 839, 1658, 21, 2, 1936, '1936-02-21');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (332, 825, 839, 1658, 21, 2, 1936, '1936-02-21');
 
 --======= Insert Marriage between id: 826 and id: 827 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (826, 827, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (333, 826, 827, null, null, null, null, null);
 
 --======= Insert Marriage between id: 831 and id: 832 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (831, 832, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (334, 831, 832, null, null, null, null, null);
 
 --======= Insert Marriage between id: 833 and id: 834 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (833, 834, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (335, 833, 834, null, null, null, null, null);
 
 --======= Insert Marriage between id: 837 and id: 846 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1659, 'Studic City', 'USA', 'Californien', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (837, 846, 1659, 30, 1, 1965, '1965-01-30');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (336, 837, 846, 1659, 30, 1, 1965, '1965-01-30');
 
 --======= Insert Marriage between id: 838 and id: 851 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1660, 'Downey', 'USA', 'Californien', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (838, 851, 1660, null, null, 1969, '1969-01-01');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (337, 838, 851, 1660, null, null, 1969, '1969-01-01');
 
 --======= Insert Marriage between id: 840 and id: 856 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1661, 'Palos Verdes', 'USA', 'Californien', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (840, 856, 1661, 24, 11, 1960, '1960-11-24');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (338, 840, 856, 1661, 24, 11, 1960, '1960-11-24');
 
 --======= Insert Marriage between id: 841 and id: 859 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1662, 'Palos Verdes', 'USA', 'Californien', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (841, 859, 1662, 2, 7, 1961, '1961-07-02');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (339, 841, 859, 1662, 2, 7, 1961, '1961-07-02');
 
 --======= Insert Marriage between id: 842 and id: 864 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1663, 'Los Angeles', 'USA', 'Californien', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (842, 864, 1663, 15, 6, 1968, '1968-06-15');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (340, 842, 864, 1663, 15, 6, 1968, '1968-06-15');
 
 --======= Insert Marriage between id: 843 and id: 867 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1664, 'Laguna Beach', 'USA', 'Californien', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (843, 867, 1664, 21, 3, 1981, '1981-03-21');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (341, 843, 867, 1664, 21, 3, 1981, '1981-03-21');
 
 --======= Insert Marriage between id: 844 and id: 845 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (844, 845, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (342, 844, 845, null, null, null, null, null);
 
 --======= Insert Marriage between id: 852 and id: 853 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (852, 853, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (343, 852, 853, null, null, null, null, null);
 
 --======= Insert Marriage between id: 854 and id: 855 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (854, 855, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (344, 854, 855, null, null, null, null, null);
 
 --======= Insert Marriage between id: 857 and id: 858 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (857, 858, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (345, 857, 858, null, null, null, null, null);
 
 --======= Insert Marriage between id: 862 and id: 863 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (862, 863, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (346, 862, 863, null, null, null, null, null);
 
 --======= Insert Marriage between id: 870 and id: 871 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (870, 871, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (347, 870, 871, null, null, null, null, null);
 
 --======= Insert Marriage between id: 872 and id: 873 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (872, 873, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (348, 872, 873, null, null, null, null, null);
 
 --======= Insert Marriage between id: 879 and id: 880 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (879, 880, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (349, 879, 880, null, null, null, null, null);
 
 --======= Insert Marriage between id: 882 and id: 885 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1665, 'Stockholm', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (882, 885, 1665, 5, 6, 1858, '1858-06-05');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (350, 882, 885, 1665, 5, 6, 1858, '1858-06-05');
 
 --======= Insert Marriage between id: 883 and id: 886 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1666, 'Stockholm', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (883, 886, 1666, 22, 10, 1864, '1864-10-22');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (351, 883, 886, 1666, 22, 10, 1864, '1864-10-22');
 
 --======= Insert Marriage between id: 887 and id: 888 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (887, 888, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (352, 887, 888, null, null, null, null, null);
 
 --======= Insert Marriage between id: 891 and id: 892 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (891, 892, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (353, 891, 892, null, null, null, null, null);
 
 --======= Insert Marriage between id: 897 and id: 1152 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1667, 'Malmö', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (897, 1152, 1667, null, null, 1820, '1820-01-01');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (354, 897, 1152, 1667, null, null, 1820, '1820-01-01');
 
 --======= Insert Marriage between id: 901 and id: 902 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1668, 'Lund', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (901, 902, 1668, null, null, 1729, '1729-01-01');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (355, 901, 902, 1668, null, null, 1729, '1729-01-01');
 
 --======= Insert Marriage between id: 903 and id: 1097 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (903, 1097, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (356, 903, 1097, null, null, null, null, null);
 
 --======= Insert Marriage between id: 903 and id: 1098 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1669, 'Kvistofta', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (903, 1098, 1669, null, null, 1785, '1785-01-01');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (357, 903, 1098, 1669, null, null, 1785, '1785-01-01');
 
 --======= Insert Marriage between id: 909 and id: 1115 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (909, 1115, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (358, 909, 1115, null, null, null, null, null);
 
 --======= Insert Marriage between id: 910 and id: 1116 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (910, 1116, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (359, 910, 1116, null, null, null, null, null);
 
 --======= Insert Marriage between id: 911 and id: 914 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (911, 914, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (360, 911, 914, null, null, null, null, null);
 
 --======= Insert Marriage between id: 912 and id: 913 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (912, 913, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (361, 912, 913, null, null, null, null, null);
 
 --======= Insert Marriage between id: 916 and id: 917 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1670, 'Horn', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (916, 917, 1670, null, null, 1938, '1938-01-01');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (362, 916, 917, 1670, null, null, 1938, '1938-01-01');
 
 --======= Insert Marriage between id: 918 and id: 919 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (918, 919, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (363, 918, 919, null, null, null, null, null);
 
 --======= Insert Marriage between id: 921 and id: 922 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (921, 922, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (364, 921, 922, null, null, null, null, null);
 
 --======= Insert Marriage between id: 925 and id: 941 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (925, 941, null, null, null, 1691, '1691-01-01');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (365, 925, 941, null, null, null, 1691, '1691-01-01');
 
 --======= Insert Marriage between id: 929 and id: 943 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (929, 943, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (366, 929, 943, null, null, null, null, null);
 
 --======= Insert Marriage between id: 933 and id: 944 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1671, 'Malmö', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (933, 944, 1671, null, null, 1710, '1710-01-01');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (367, 933, 944, 1671, null, null, 1710, '1710-01-01');
 
 --======= Insert Marriage between id: 933 and id: 945 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1672, 'Malmö', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (933, 945, 1672, null, null, 1732, '1732-01-01');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (368, 933, 945, 1672, null, null, 1732, '1732-01-01');
 
 --======= Insert Marriage between id: 934 and id: 962 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1673, 'Greifswald', 'Tyskland', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (934, 962, 1673, 11, 10, 1714, '1714-10-11');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (369, 934, 962, 1673, 11, 10, 1714, '1714-10-11');
 
 --======= Insert Marriage between id: 935 and id: 968 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1674, 'Malmö', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (935, 968, 1674, 3, 1, 1702, '1702-01-03');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (370, 935, 968, 1674, 3, 1, 1702, '1702-01-03');
 
 --======= Insert Marriage between id: 935 and id: 969 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1675, 'Malmö', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (935, 969, 1675, 15, 4, 1706, '1706-04-15');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (371, 935, 969, 1675, 15, 4, 1706, '1706-04-15');
 
 --======= Insert Marriage between id: 935 and id: 970 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (935, 970, null, 1, 9, 1723, '1723-09-01');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (372, 935, 970, null, 1, 9, 1723, '1723-09-01');
 
 --======= Insert Marriage between id: 939 and id: 940 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (939, 940, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (373, 939, 940, null, null, null, null, null);
 
 --======= Insert Marriage between id: 940 and id: 1052 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1676, 'Danmark', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (940, 1052, 1676, null, null, 1646, '1646-01-01');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (374, 940, 1052, 1676, null, null, 1646, '1646-01-01');
 
 --======= Insert Marriage between id: 941 and id: 1059 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (941, 1059, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (375, 941, 1059, null, null, null, null, null);
 
 --======= Insert Marriage between id: 946 and id: 973 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1677, 'Håslöv', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (946, 973, 1677, 15, 2, 1737, '1737-02-15');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (376, 946, 973, 1677, 15, 2, 1737, '1737-02-15');
 
 --======= Insert Marriage between id: 946 and id: 974 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1678, 'Fränninge', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (946, 974, 1678, 29, 4, 1757, '1757-04-29');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (377, 946, 974, 1678, 29, 4, 1757, '1757-04-29');
 
 --======= Insert Marriage between id: 947 and id: 980 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1679, 'Malmö', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (947, 980, 1679, 9, 10, 1739, '1739-10-09');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (378, 947, 980, 1679, 9, 10, 1739, '1739-10-09');
 
 --======= Insert Marriage between id: 947 and id: 981 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1680, 'Malmö', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (947, 981, 1680, 18, 5, 1741, '1741-05-18');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (379, 947, 981, 1680, 18, 5, 1741, '1741-05-18');
 
 --======= Insert Marriage between id: 948 and id: 988 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1681, 'Malmö', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (948, 988, 1681, null, null, 1748, '1748-01-01');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (380, 948, 988, 1681, null, null, 1748, '1748-01-01');
 
 --======= Insert Marriage between id: 950 and id: 993 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1682, 'Malmö', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (950, 993, 1682, null, null, 1747, '1747-01-01');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (381, 950, 993, 1682, null, null, 1747, '1747-01-01');
 
 --======= Insert Marriage between id: 952 and id: 994 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (952, 994, null, null, null, 1739, '1739-01-01');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (382, 952, 994, null, null, null, 1739, '1739-01-01');
 
 --======= Insert Marriage between id: 954 and id: 995 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1683, 'Malmö', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (954, 995, 1683, 15, 5, 1751, '1751-05-15');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (383, 954, 995, 1683, 15, 5, 1751, '1751-05-15');
 
 --======= Insert Marriage between id: 957 and id: 997 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (957, 997, null, null, null, 1763, '1763-01-01');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (384, 957, 997, null, null, null, 1763, '1763-01-01');
 
 --======= Insert Marriage between id: 958 and id: 999 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1684, 'Skanör', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (958, 999, 1684, null, null, 1761, '1761-01-01');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (385, 958, 999, 1684, null, null, 1761, '1761-01-01');
 
 --======= Insert Marriage between id: 961 and id: 1007 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1685, 'Malmö', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (961, 1007, 1685, null, null, 1759, '1759-01-01');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (386, 961, 1007, 1685, null, null, 1759, '1759-01-01');
 
 --======= Insert Marriage between id: 963 and id: 1045 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (963, 1045, null, null, null, 1762, '1762-01-01');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (387, 963, 1045, null, null, null, 1762, '1762-01-01');
 
 --======= Insert Marriage between id: 965 and id: 1049 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1686, 'Lund', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (965, 1049, 1686, 4, 1, 1737, '1737-01-04');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (388, 965, 1049, 1686, 4, 1, 1737, '1737-01-04');
 
 --======= Insert Marriage between id: 971 and id: 972 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (971, 972, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (389, 971, 972, null, null, null, null, null);
 
 --======= Insert Marriage between id: 973 and id: 1010 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (973, 1010, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (390, 973, 1010, null, null, null, null, null);
 
 --======= Insert Marriage between id: 976 and id: 1015 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1687, 'Håslöv', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (976, 1015, 1687, 26, 2, 1772, '1772-02-26');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (391, 976, 1015, 1687, 26, 2, 1772, '1772-02-26');
 
 --======= Insert Marriage between id: 977 and id: 1016 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1688, 'Räng', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (977, 1016, 1688, 9, 4, 1775, '1775-04-09');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (392, 977, 1016, 1688, 9, 4, 1775, '1775-04-09');
 
 --======= Insert Marriage between id: 979 and id: 1018 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1689, 'Oxie', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (979, 1018, 1689, 28, 11, 1781, '1781-11-28');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (393, 979, 1018, 1689, 28, 11, 1781, '1781-11-28');
 
 --======= Insert Marriage between id: 986 and id: 1031 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1690, 'Malmö', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (986, 1031, 1690, 18, 6, 1765, '1765-06-18');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (394, 986, 1031, 1690, 18, 6, 1765, '1765-06-18');
 
 --======= Insert Marriage between id: 992 and id: 1034 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1691, 'Malmö', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (992, 1034, 1691, 1, 11, 1789, '1789-11-01');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (395, 992, 1034, 1691, 1, 11, 1789, '1789-11-01');
 
 --======= Insert Marriage between id: 996 and id: 1008 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (996, 1008, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (396, 996, 1008, null, null, null, null, null);
 
 --======= Insert Marriage between id: 995 and id: 996 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (995, 996, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (397, 995, 996, null, null, null, null, null);
 
 --======= Insert Marriage between id: 1000 and id: 1039 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (1000, 1039, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (398, 1000, 1039, null, null, null, null, null);
 
 --======= Insert Marriage between id: 1002 and id: 1040 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1692, '(före) 1797', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (1002, 1040, 1692, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (399, 1002, 1040, 1692, null, null, null, null);
 
 --======= Insert Marriage between id: 1003 and id: 1041 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (1003, 1041, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (400, 1003, 1041, null, null, null, null, null);
 
 --======= Insert Marriage between id: 1005 and id: 1006 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (1005, 1006, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (401, 1005, 1006, null, null, null, null, null);
 
 --======= Insert Marriage between id: 1008 and id: 1009 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (1008, 1009, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (402, 1008, 1009, null, null, null, null, null);
 
 --======= Insert Marriage between id: 1008 and id: 1014 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (1008, 1014, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (403, 1008, 1014, null, null, null, null, null);
 
 --======= Insert Marriage between id: 1019 and id: 1026 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1693, 'Malmö', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (1019, 1026, 1693, 26, 9, 1806, '1806-09-26');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (404, 1019, 1026, 1693, 26, 9, 1806, '1806-09-26');
 
 --======= Insert Marriage between id: 1020 and id: 1021 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (1020, 1021, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (405, 1020, 1021, null, null, null, null, null);
 
 --======= Insert Marriage between id: 1022 and id: 1023 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (1022, 1023, null, null, null, 1739, '1739-01-01');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (406, 1022, 1023, null, null, null, 1739, '1739-01-01');
 
 --======= Insert Marriage between id: 1024 and id: 1025 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (1024, 1025, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (407, 1024, 1025, null, null, null, null, null);
 
 --======= Insert Marriage between id: 1027 and id: 1028 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (1027, 1028, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (408, 1027, 1028, null, null, null, null, null);
 
 --======= Insert Marriage between id: 1029 and id: 1030 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (1029, 1030, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (409, 1029, 1030, null, null, null, null, null);
 
 --======= Insert Marriage between id: 1032 and id: 1033 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (1032, 1033, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (410, 1032, 1033, null, null, null, null, null);
 
 --======= Insert Marriage between id: 1035 and id: 1036 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (1035, 1036, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (411, 1035, 1036, null, null, null, null, null);
 
 --======= Insert Marriage between id: 1037 and id: 1038 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (1037, 1038, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (412, 1037, 1038, null, null, null, null, null);
 
 --======= Insert Marriage between id: 1042 and id: 1044 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (1042, 1044, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (413, 1042, 1044, null, null, null, null, null);
 
 --======= Insert Marriage between id: 1042 and id: 1043 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (1042, 1043, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (414, 1042, 1043, null, null, null, null, null);
 
 --======= Insert Marriage between id: 1046 and id: 1048 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (1046, 1048, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (415, 1046, 1048, null, null, null, null, null);
 
 --======= Insert Marriage between id: 1046 and id: 1047 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (1046, 1047, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (416, 1046, 1047, null, null, null, null, null);
 
 --======= Insert Marriage between id: 1050 and id: 1051 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1694, 'Ystad', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (1050, 1051, 1694, null, null, 1613, '1613-01-01');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (417, 1050, 1051, 1694, null, null, 1613, '1613-01-01');
 
 --======= Insert Marriage between id: 1058 and id: 1087 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1695, 'Skabersjö', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (1058, 1087, 1695, null, null, 1680, '1680-01-01');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (418, 1058, 1087, 1695, null, null, 1680, '1680-01-01');
 
 --======= Insert Marriage between id: 1060 and id: 1088 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1696, 'Skabersjö', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (1060, 1088, 1696, null, null, 1685, '1685-01-01');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (419, 1060, 1088, 1696, null, null, 1685, '1685-01-01');
 
 --======= Insert Marriage between id: 1061 and id: 1089 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1697, 'Skabersjö', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (1061, 1089, 1697, null, null, 1685, '1685-01-01');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (420, 1061, 1089, 1697, null, null, 1685, '1685-01-01');
 
 --======= Insert Marriage between id: 1062 and id: 1090 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (1062, 1090, null, null, null, 1693, '1693-01-01');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (421, 1062, 1090, null, null, null, 1693, '1693-01-01');
 
 --======= Insert Marriage between id: 1062 and id: 1091 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1698, 'Malmö Sankt Petri', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (1062, 1091, 1698, null, null, 1700, '1700-01-01');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (422, 1062, 1091, 1698, null, null, 1700, '1700-01-01');
 
 --======= Insert Marriage between id: 1082 and id: 1083 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (1082, 1083, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (423, 1082, 1083, null, null, null, null, null);
 
 --======= Insert Marriage between id: 1085 and id: 1086 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (1085, 1086, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (424, 1085, 1086, null, null, null, null, null);
 
 --======= Insert Marriage between id: 1091 and id: 1124 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (1091, 1124, null, null, null, 1715, '1715-01-01');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (425, 1091, 1124, null, null, null, 1715, '1715-01-01');
 
 --======= Insert Marriage between id: 1093 and id: 1094 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (1093, 1094, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (426, 1093, 1094, null, null, null, null, null);
 
 --======= Insert Marriage between id: 1099 and id: 1100 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1699, 'Västra Vram', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (1099, 1100, 1699, 16, 10, 1795, '1795-10-16');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (427, 1099, 1100, 1699, 16, 10, 1795, '1795-10-16');
 
 --======= Insert Marriage between id: 1099 and id: 1101 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1700, 'Tving', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (1099, 1101, 1700, 29, 10, 1806, '1806-10-29');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (428, 1099, 1101, 1700, 29, 10, 1806, '1806-10-29');
 
 --======= Insert Marriage between id: 1103 and id: 1109 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1701, 'Fjelie', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (1103, 1109, 1701, 7, 8, 1825, '1825-08-07');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (429, 1103, 1109, 1701, 7, 8, 1825, '1825-08-07');
 
 --======= Insert Marriage between id: 1104 and id: 1110 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1702, 'Lund', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (1104, 1110, 1702, 30, 11, 1823, '1823-11-30');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (430, 1104, 1110, 1702, 30, 11, 1823, '1823-11-30');
 
 --======= Insert Marriage between id: 1107 and id: 1108 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (1107, 1108, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (431, 1107, 1108, null, null, null, null, null);
 
 --======= Insert Marriage between id: 1111 and id: 1112 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (1111, 1112, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (432, 1111, 1112, null, null, null, null, null);
 
 --======= Insert Marriage between id: 1113 and id: 1114 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (1113, 1114, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (433, 1113, 1114, null, null, null, null, null);
 
 --======= Insert Marriage between id: 1117 and id: 1118 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (1117, 1118, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (434, 1117, 1118, null, null, null, null, null);
 
 --======= Insert Marriage between id: 1120 and id: 1121 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (1120, 1121, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (435, 1120, 1121, null, null, null, null, null);
 
 --======= Insert Marriage between id: 1122 and id: 1123 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1703, 'Malmö', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (1122, 1123, 1703, null, null, 1653, '1653-01-01');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (436, 1122, 1123, 1703, null, null, 1653, '1653-01-01');
 
 --======= Insert Marriage between id: 1125 and id: 1215 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (1125, 1215, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (437, 1125, 1215, null, null, null, null, null);
 
 --======= Insert Marriage between id: 1129 and id: 1220 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (1129, 1220, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (438, 1129, 1220, null, null, null, null, null);
 
 --======= Insert Marriage between id: 1130 and id: 1131 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (1130, 1131, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (439, 1130, 1131, null, null, null, null, null);
 
 --======= Insert Marriage between id: 1136 and id: 1141 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (1136, 1141, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (440, 1136, 1141, null, null, null, null, null);
 
 --======= Insert Marriage between id: 1137 and id: 1142 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (1137, 1142, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (441, 1137, 1142, null, null, null, null, null);
 
 --======= Insert Marriage between id: 1140 and id: 1143 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (1140, 1143, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (442, 1140, 1143, null, null, null, null, null);
 
 --======= Insert Marriage between id: 1144 and id: 1145 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (1144, 1145, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (443, 1144, 1145, null, null, null, null, null);
 
 --======= Insert Marriage between id: 1149 and id: 1204 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (1149, 1204, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (444, 1149, 1204, null, null, null, null, null);
 
 --======= Insert Marriage between id: 1149 and id: 1205 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (1149, 1205, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (445, 1149, 1205, null, null, null, null, null);
 
 --======= Insert Marriage between id: 1151 and id: 1169 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (1151, 1169, null, null, null, 1900, '1900-01-01');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (446, 1151, 1169, null, null, null, 1900, '1900-01-01');
 
 --======= Insert Marriage between id: 1153 and id: 1156 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1704, 'Harlösa', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (1153, 1156, 1704, null, null, 1844, '1844-01-01');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (447, 1153, 1156, 1704, null, null, 1844, '1844-01-01');
 
 --======= Insert Marriage between id: 1154 and id: 1161 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (1154, 1161, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (448, 1154, 1161, null, null, null, null, null);
 
 --======= Insert Marriage between id: 1158 and id: 1164 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (1158, 1164, null, null, null, 1874, '1874-01-01');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (449, 1158, 1164, null, null, null, 1874, '1874-01-01');
 
 --======= Insert Marriage between id: 1162 and id: 1163 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1705, 'Gladsax', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (1162, 1163, 1705, null, null, 1819, '1819-01-01');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (450, 1162, 1163, 1705, null, null, 1819, '1819-01-01');
 
 --======= Insert Marriage between id: 1170 and id: 1173 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (1170, 1173, null, null, null, 1929, '1929-01-01');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (451, 1170, 1173, null, null, null, 1929, '1929-01-01');
 
 --======= Insert Marriage between id: 1171 and id: 1179 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (1171, 1179, null, null, null, 1929, '1929-01-01');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (452, 1171, 1179, null, null, null, 1929, '1929-01-01');
 
 --======= Insert Marriage between id: 1174 and id: 1177 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (1174, 1177, null, null, null, 1959, '1959-01-01');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (453, 1174, 1177, null, null, null, 1959, '1959-01-01');
 
 --======= Insert Marriage between id: 1181 and id: 1182 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (1181, 1182, null, 29, 9, 1967, '1967-09-29');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (454, 1181, 1182, null, 29, 9, 1967, '1967-09-29');
 
 --======= Insert Marriage between id: 1187 and id: 1223 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (1187, 1223, null, 22, 5, 1949, '1949-05-22');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (455, 1187, 1223, null, 22, 5, 1949, '1949-05-22');
 
 --======= Insert Marriage between id: 1188 and id: 1227 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (1188, 1227, null, 3, 1, 1959, '1959-01-03');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (456, 1188, 1227, null, 3, 1, 1959, '1959-01-03');
 
 --======= Insert Marriage between id: 1189 and id: 1230 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (1189, 1230, null, 14, 6, 1958, '1958-06-14');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (457, 1189, 1230, null, 14, 6, 1958, '1958-06-14');
 
 --======= Insert Marriage between id: 1190 and id: 1235 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (1190, 1235, null, 22, 10, 1960, '1960-10-22');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (458, 1190, 1235, null, 22, 10, 1960, '1960-10-22');
 
 --======= Insert Marriage between id: 1191 and id: 1239 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (1191, 1239, null, 28, 10, 1967, '1967-10-28');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (459, 1191, 1239, null, 28, 10, 1967, '1967-10-28');
 
 --======= Insert Marriage between id: 1194 and id: 1197 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (1194, 1197, null, null, null, 1965, '1965-01-01');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (460, 1194, 1197, null, null, null, 1965, '1965-01-01');
 
 --======= Insert Marriage between id: 1195 and id: 1201 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (1195, 1201, null, null, null, 1966, '1966-01-01');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (461, 1195, 1201, null, null, null, 1966, '1966-01-01');
 
 --======= Insert Marriage between id: 1217 and id: 1219 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (1217, 1219, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (462, 1217, 1219, null, null, null, null, null);
 
 --======= Insert Marriage between id: 1224 and id: 1226 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (1224, 1226, null, 17, 5, 1975, '1975-05-17');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (463, 1224, 1226, null, 17, 5, 1975, '1975-05-17');
 
 --======= Insert Marriage between id: 1240 and id: 1241 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (1240, 1241, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (464, 1240, 1241, null, null, null, null, null);
 
 --======= Insert Marriage between id: 1251 and id: 1252 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (1251, 1252, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (465, 1251, 1252, null, null, null, null, null);
 
 --======= Insert Marriage between id: 1255 and id: 1256 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1706, 'Husby', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (1255, 1256, 1706, null, null, 1853, '1853-01-01');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (466, 1255, 1256, 1706, null, null, 1853, '1853-01-01');
 
 --======= Insert Marriage between id: 1260 and id: 1261 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (1260, 1261, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (467, 1260, 1261, null, null, null, null, null);
 
 --======= Insert Marriage between id: 1262 and id: 1263 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (1262, 1263, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (468, 1262, 1263, null, null, null, null, null);
 
 --======= Insert Marriage between id: 1265 and id: 1268 =======
 INSERT INTO location (id, city, country, region, notes, latitude, longitude, fetch_status) VALUES (1707, 'Konga', 'Sverige', '', '', null, null, 'AWAITING');
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (1265, 1268, 1707, 8, 8, 1879, '1879-08-08');
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (469, 1265, 1268, 1707, 8, 8, 1879, '1879-08-08');
 
 --======= Insert Marriage between id: 1266 and id: 1267 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (1266, 1267, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (470, 1266, 1267, null, null, null, null, null);
 
 --======= Insert Marriage between id: 1271 and id: 1272 =======
-INSERT INTO marriage (spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (1271, 1272, null, null, null, null, null);
+INSERT INTO marriage (id, spouse_1_id, spouse_2_id, location_id, partial_day, partial_month, partial_year, partial_date) VALUES (471, 1271, 1272, null, null, null, null, null);
 
 --========== Resetting Sequences ============
 SELECT setval('person_seq', (SELECT MAX(id) FROM person));
 SELECT setval('life_event_seq', (SELECT MAX(id) FROM life_event));
 SELECT setval('location_seq', (SELECT MAX(id) FROM location));
 SELECT setval('occupation_seq', (SELECT MAX(id) FROM occupation));
+SELECT setval('marriage_seq', (SELECT MAX(id) FROM marriage));
 
 --========== Re-enable triggers ==========
 ALTER TABLE person ENABLE TRIGGER ALL;
 ALTER TABLE life_event ENABLE TRIGGER ALL;
 ALTER TABLE location ENABLE TRIGGER ALL;
 ALTER TABLE occupation ENABLE TRIGGER ALL;
+ALTER TABLE marriage ENABLE TRIGGER ALL;

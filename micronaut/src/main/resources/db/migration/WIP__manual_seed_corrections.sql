@@ -156,6 +156,12 @@ SET first_name='Karl',
     updated_at=NOW()
 WHERE id = 179;
 
+/* Set sex of Daniel Brisman */
+UPDATE person
+SET sex       = 'MAN',
+    updated_at=NOW()
+WHERE id = 101;
+
 /* Merge 3 duplicates of Peter Johansson Hegardt with id 48, 332 and 663 */
 
 /* TODO !! Fixa Klara Adela (Adèle) mellannamn (smeknamn)?*/
