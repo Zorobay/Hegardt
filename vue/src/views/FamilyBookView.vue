@@ -6,6 +6,8 @@ const props = withDefaults(defineProps<{ page?: number; personId?: EntityId }>()
   page: 1,
   personId: undefined,
 });
+
+console.log(`Paqe: ${JSON.stringify(props)}`);
 </script>
 
 <template>

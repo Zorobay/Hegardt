@@ -1,8 +1,8 @@
 import { filterNullOrUndefined } from '@/helpers/util-helper.ts';
 import { differenceInYears } from 'date-fns';
-import type { Location, PartialDate, Person, PersonBasic } from '@/types/person.type.ts';
+import type { Location, PartialDate, Person, PersonBasic, PersonMinimal } from '@/types/person.type.ts';
 
-export function formatPersonFullName(person: PersonBasic | undefined | null): string {
+export function formatPersonFullName(person: PersonMinimal | undefined | null): string {
   if (!person) {
     return '';
   }

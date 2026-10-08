@@ -22,12 +22,12 @@ class PersonsController {
 
     @Get('/getAll')
     HttpResponse<List<PersonSummaryDto>> getAll() {
-        return HttpResponse.ok(personsService.findAll().collect { Person p -> PersonSummaryDto.from(p) })
+        return HttpResponse.ok(personsService.findAll())
     }
 
     @Get('/getAllMap')
-    HttpResponse<Map<Long, PersonDto>> getAllMap() {
-        return HttpResponse.ok(personsService.findAll().collectEntries { Person p -> [(p.id): PersonDto.from(p)] })
+    HttpResponse<Map<Long, PersonSummaryDto>> getAllMap() {
+        return HttpResponse.ok(personsService.findAll().collectEntries { PersonSummaryDto p -> [(p.id): p] })
     }
 
     @Get('/findByName/{name}')

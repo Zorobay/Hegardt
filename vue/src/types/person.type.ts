@@ -51,32 +51,39 @@ export interface PersonTreeRoot extends PersonBasic {
   mother: PersonTreeNode;
 }
 
-export interface Person extends PersonSummary {
+export interface Person extends PersonBasic {
   occupations: Occupation[];
   father?: PersonSummary;
   mother?: PersonSummary;
-  children: Person[];
+  children: PersonSummary[];
   siblings: Person[];
   marriages: Marriage[];
-  pdfReference?: PdfReference;
+  pdfReferences: PdfReference[];
+  notes: string;
+  pdfPage: number;
 }
 
 export interface PersonSummary extends PersonBasic {
   notes: string;
   pdfPage: number;
+  father?: PersonMinimal;
+  mother?: PersonMinimal;
 }
 
-export interface PersonBasic {
-  id: EntityId;
-  firstName: string;
-  lastName: string;
-  middleNames: string;
-  sex: Sex;
+export interface PersonBasic extends PersonMinimal {
   birth: LifeEvent;
   death: LifeEvent;
   burial: LifeEvent;
 }
 
+export interface PersonMinimal {
+  id: EntityId;
+  firstName: string;
+  lastName: string;
+  middleNames: string;
+  sex: Sex;
+}
+
 export interface PersonsMap {
-  [key: EntityId]: Person;
+  [key: EntityId]: PersonSummary;
 }

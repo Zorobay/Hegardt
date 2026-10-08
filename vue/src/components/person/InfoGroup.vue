@@ -5,7 +5,7 @@ defineProps({ title: { type: String, required: false, default: '' } });
 <template>
   <CardPrime class="heg-info-group">
     <template #title>
-      {{ title }}
+      <slot name="title">{{ title }}</slot>
       <hr />
     </template>
     <template #content>

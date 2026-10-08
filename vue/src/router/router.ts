@@ -51,7 +51,7 @@ const router = createRouter({
         noRemount: true,
       },
       props: (route) => {
-        return { page: Number(route.params.page) };
+        return { page: Number(route.params.page), personId: Number(route.params.personId) };
       },
     },
     {

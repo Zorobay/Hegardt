@@ -11,11 +11,12 @@ import { filterNullOrUndefined } from '@/helpers/util-helper.ts';
 import PersonNotes from '@/components/person/PersonNotes.vue';
 import PersonIconLinks from '@/components/person/PersonCardIconLinks.vue';
 import { personsApiService } from '@/api/personsApiService.ts';
-import type { EntityId, Person, PersonSummary } from '@/types/person.type.ts';
+import type { EntityId, Person, PersonMinimal, PersonSummary } from '@/types/person.type.ts';
 import LoadingContainer from '@/components/async/LoadingContainer.vue';
 import PersonMarriages from '@/components/person/PersonMarriages.vue';
 
 const { id } = defineProps<{ id: EntityId }>();
+
 const loading = ref(true);
 const person = ref<Person | null>(null);
 const parents = ref<PersonSummary[]>([]);
@@ -33,6 +34,35 @@ onMounted(async () => {
     loading.value = false;
   }
 });
+
+function getOtherParent(child: PersonSummary): PersonMinimal | undefined {
+  if (child.mother?.id === person.value?.id && child.father?.id) {
+    return child.father;
+  }
+  if (child.father?.id === person.value?.id && child.mother?.id) {
+    return child.mother;
+  }
+  return undefined;
+}
+
+function getOtherParentIds(children: PersonSummary[]): Map<EntityId, [PersonMinimal, PersonSummary[]]> {
+  const map = new Map<EntityId, [PersonMinimal, PersonSummary[]]>();
+  for (const child of children) {
+    const otherParent = getOtherParent(child);
+    if (!otherParent?.id) {
+      continue;
+    }
+    if (map.has(otherParent.id)) {
+      const tuple = map.get(otherParent.id);
+      if (tuple) {
+        tuple[1].push(child);
+      }
+    } else {
+      map.set(otherParent.id, [otherParent, [child]]);
+    }
+  }
+  return map;
+}
 </script>
 
 <template>
@@ -50,7 +80,7 @@ onMounted(async () => {
                 {{ formatPersonFullName(person) }}
                 <SexIcon :sex="person.sex" />
               </h2>
-              <PersonIconLinks :id="id" :pdf-page="person.pdfReference?.pdfPage" />
+              <PersonIconLinks :person="person" />
             </div>
             <InfoGroup title="Personal details">
               <div class="row">
@@ -79,12 +109,25 @@ onMounted(async () => {
               <PersonCard v-for="parent in parents" :key="parent.id" :person="parent" class="person-card" />
             </InfoGroup>
 
-            <InfoGroup title="Siblings">
-              <PersonCard v-for="sibling in person.siblings" :key="sibling.id" :person="sibling" class="person-card" />
+            <InfoGroup title="Children">
+              <template
+                v-for="[otherParentId, [otherParent, children]] in getOtherParentIds(person.children)"
+                :key="otherParentId"
+              >
+                <InfoGroup>
+                  <template #title>
+                    With
+                    <router-link :to="{ name: 'person', params: { id: otherParentId } }">{{
+                      formatPersonFullName(otherParent)
+                    }}</router-link>
+                  </template>
+                  <PersonCard v-for="child in children" :key="child.id" :person="child" class="person-card" />
+                </InfoGroup>
+              </template>
             </InfoGroup>
 
-            <InfoGroup title="Children">
-              <PersonCard v-for="child in person.children" :key="child.id" :person="child" class="person-card" />
+            <InfoGroup title="Siblings">
+              <PersonCard v-for="sibling in person.siblings" :key="sibling.id" :person="sibling" class="person-card" />
             </InfoGroup>
           </div>
         </div>

@@ -15,6 +15,7 @@ The portraits are elliptic with an aspect ratio of about 3:4 or about 33% taller
 
 ## TODO
 
+- [ ] Fix sex filtering on Map
 - [ ] Fix searching with "," for example: "Anna Wilhelmina, Christina, Elisabeth Palm "
 - [ ] Replace favicon
 - [ ] Add some fun facts about the collection on the first page like
@@ -41,7 +42,7 @@ The portraits are elliptic with an aspect ratio of about 3:4 or about 33% taller
     - [x] References
     - [x] Show portraits under Parents, Siblings, Children etc.
     - [x] Marriages
-    - [ ] Group children by partner
+    - [x] Group children by partner
 - [x] Map
     - [x] Show markers for Birth, Death, Burial
     - [x] Find person by name

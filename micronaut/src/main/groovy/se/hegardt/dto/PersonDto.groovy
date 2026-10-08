@@ -3,6 +3,7 @@ package se.hegardt.dto
 import groovy.transform.CompileStatic
 import io.micronaut.serde.annotation.Serdeable
 import se.hegardt.domain.Occupation
+import se.hegardt.domain.PdfReference
 import se.hegardt.domain.Person
 
 @Serdeable
@@ -24,7 +25,7 @@ class PersonDto {
 
     // Fetched by PersonsService
     Set<MarriageDto> marriages = []
-    Set<PersonSummaryDto> children = []
+    Set<ChildSummaryDto> children = []
     Set<PersonSummaryDto> siblings = []
 
     Set<OccupationDto> occupations = []
@@ -43,8 +44,8 @@ class PersonDto {
             notes: person.notes,
             father: PersonSummaryDto.from(person.father),
             mother: PersonSummaryDto.from(person.mother),
-            occupations: person.occupations.collect(OccupationDto.&from).toSet(),
-            pdfReferences: person.pdfReferences.collect(PdfReferenceDto.&from).toSet()
+            occupations: person.occupations.collect { Occupation o -> OccupationDto.from(o) }.toSet(),
+            pdfReferences: person.pdfReferences.collect { PdfReference ref -> PdfReferenceDto.from(ref) }.toSet()
         )
     }
 }

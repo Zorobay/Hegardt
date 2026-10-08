@@ -146,7 +146,7 @@ watch(leftPage, (newPage: number) => {
             :key="reference.personId"
             :style="toScreenBox(reference)"
             class="pdf-reference-box"
-            :class="{ highlighted: reference.personId === personId }"
+            :class="{ highlighted: reference.personId === personId, 'pulse-focus': reference.personId === personId }"
             @click="goToPerson(reference.personId)"
           ></div>
         </template>
@@ -160,7 +160,7 @@ watch(leftPage, (newPage: number) => {
             :key="reference.personId"
             :style="toScreenBox(reference)"
             class="pdf-reference-box"
-            :class="{ highlighted: reference.personId === personId }"
+            :class="{ highlighted: reference.personId === personId, 'pulse-focus': reference.personId === personId }"
             @click="goToPerson(reference.personId)"
           ></div>
         </template>

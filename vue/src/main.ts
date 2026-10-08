@@ -25,7 +25,7 @@ import '@fortawesome/fontawesome-svg-core/styles.css';
 
 // Import PrimeVue
 import 'primeicons/primeicons.css';
-import { AccordionContent, AccordionHeader, AccordionPanel, Button } from 'primevue';
+import { AccordionContent, AccordionHeader, AccordionPanel, Button, Listbox } from 'primevue';
 
 // Import Bootstrap CSS
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -39,6 +39,7 @@ import Accordion from 'primevue/accordion';
 import Card from 'primevue/card';
 import Checkbox from 'primevue/checkbox';
 import InputNumber from 'primevue/inputnumber';
+import Dialog from 'primevue/dialog';
 
 // Configure FontAwesome icons
 library.add(faAnglesUp, faMars, faVenus, faArrowsToCircle, faSitemap, faUser, faBook);
@@ -59,6 +60,8 @@ app.component('AccordionContentPrime', AccordionContent);
 app.component('CardPrime', Card);
 app.component('CheckboxPrime', Checkbox);
 app.component('InputNumberPrime', InputNumber);
+app.component('DialogPrime', Dialog);
+app.component('ListboxPrime', Listbox);
 
 app.use(createPinia());
 app.use(router);

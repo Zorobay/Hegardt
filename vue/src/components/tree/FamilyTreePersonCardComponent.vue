@@ -48,7 +48,7 @@ const strokeColor = colorVarMap[node.sex];
       </div>
       <p class="small-text text-secondary mb-1">{{ node.lifespan }}</p>
       <div class="icon-links-row" style="flex-grow: 1">
-        <PersonCardIconLinks :id="node.id" />
+        <PersonCardIconLinks :person-id="node.id" />
       </div>
     </div>
   </foreignObject>

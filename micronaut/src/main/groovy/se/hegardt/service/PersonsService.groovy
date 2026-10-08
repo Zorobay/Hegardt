@@ -5,6 +5,7 @@ import io.micronaut.transaction.annotation.Transactional
 import jakarta.inject.Singleton
 import se.hegardt.domain.Marriage
 import se.hegardt.domain.Person
+import se.hegardt.dto.ChildSummaryDto
 import se.hegardt.dto.MarriageDto
 import se.hegardt.dto.PersonDto
 import se.hegardt.dto.PersonSummaryDto
@@ -29,8 +30,8 @@ class PersonsService implements IPersonsService {
         this.marriageRepo = marriageRepository
     }
 
-    List<Person> findAll() {
-        return personRepo.findAll().toList()
+    List<PersonSummaryDto> findAll() {
+        return personRepo.findAll().collect { Person p -> PersonSummaryDto.from(p) }
     }
 
     Optional<Person> getById(Long id) {
@@ -43,7 +44,7 @@ class PersonsService implements IPersonsService {
         if (person.present) {
             PersonDto personDto = PersonDto.from(person.get())
             personDto.children = personRepo.findChildren(personDto.id)
-                .collect { Person child -> PersonSummaryDto.from(child) }
+                .collect { Person child -> ChildSummaryDto.from(child) }
                 .toSet()
 
             personDto.siblings = findSiblings(personDto)

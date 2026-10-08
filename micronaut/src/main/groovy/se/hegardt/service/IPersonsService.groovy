@@ -3,10 +3,11 @@ package se.hegardt.service
 import io.micronaut.transaction.annotation.Transactional
 import se.hegardt.domain.Person
 import se.hegardt.dto.PersonDto
+import se.hegardt.dto.PersonSummaryDto
 import se.hegardt.dto.tree.PersonTreeRootDto
 
 interface IPersonsService {
-    List<Person> findAll()
+    List<PersonSummaryDto> findAll()
 
     Optional<Person> getById(Long id)
 
