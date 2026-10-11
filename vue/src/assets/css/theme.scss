@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* Custom colors */
 $glaucous: #7785ac;
@@ -50,6 +50,5 @@ $lavender-gray: #a8a4c7;
   --p-primary-950: #0f2144;
 
   /* Define global font */
-  --bs-body-font-family: "Roboto", "Inter", -apple-system, blinkmacsystemfont, " Segoe UI ", sans-serif;
-
+  --bs-body-font-family: 'Roboto', 'Inter', -apple-system, blinkmacsystemfont, ' Segoe UI ', sans-serif;
 }

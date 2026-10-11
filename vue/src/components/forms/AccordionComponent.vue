@@ -1,5 +1,4 @@
 <script setup lang="ts">
-
 const props = defineProps({ heading: { type: String, default: '' }, value: { type: String, required: true } });
 </script>
 
