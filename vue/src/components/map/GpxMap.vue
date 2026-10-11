@@ -119,7 +119,9 @@ async function loadGpxRoute(route: GpxRouteConfig, index: number, total: number)
 
   //  Fit the map view to the track extent
   const extent = trackLayerSource.getExtent();
-  mapView.fit(extent, { padding: [40, 40, 40, 40], duration: 800 });
+  if (extent) {
+    mapView.fit(extent, { padding: [40, 40, 40, 40], duration: 800 });
+  }
 
   return {
     id: route.id,
