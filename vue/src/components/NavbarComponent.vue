@@ -5,7 +5,7 @@ import type { MenuItem } from 'primevue/menuitem';
 import SearchComponent from '@/components/forms/SearchComponent.vue';
 
 const router = useRouter();
-const languageMenu = ref();
+// const languageMenu = ref();
 
 const menuItems = ref<MenuItem[]>([
   {
@@ -35,15 +35,15 @@ const menuItems = ref<MenuItem[]>([
   },
 ]);
 
-const languageItems = ref<MenuItem[]>([
-  { label: 'English', icon: 'pi pi-globe' },
-  { label: 'Swedish', icon: 'pi pi-globe' },
-  { label: 'Spanish', icon: 'pi pi-globe' },
-]);
-
-function toggleLanguageMenu(event: Event): void {
-  languageMenu.value.toggle(event);
-}
+// const languageItems = ref<MenuItem[]>([
+//   { label: 'English', icon: 'pi pi-globe' },
+//   { label: 'Swedish', icon: 'pi pi-globe' },
+//   { label: 'Spanish', icon: 'pi pi-globe' },
+// ]);
+//
+// function toggleLanguageMenu(event: Event): void {
+//   languageMenu.value.toggle(event);
+// }
 </script>
 
 <template>
@@ -57,8 +57,8 @@ function toggleLanguageMenu(event: Event): void {
         <div class="d-flex align-items-center gap-2">
           <SearchComponent class="search-component" />
 
-          <ButtonPrime icon="pi pi-language" text rounded aria-label="Language" @click="toggleLanguageMenu" />
-          <MenuPrime ref="languageMenu" :model="languageItems" popup />
+          <!--          <ButtonPrime icon="pi pi-language" text rounded aria-label="Language" @click="toggleLanguageMenu" />-->
+          <!--          <MenuPrime ref="languageMenu" :model="languageItems" popup />-->
         </div>
       </template>
     </MenubarPrime>

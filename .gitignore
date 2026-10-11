@@ -2,6 +2,8 @@
 **/.idea/
 *.psd
 
+node_modules
+
 # static media (keep folders)
 static_media/images/*
 static_media/portraits/*
