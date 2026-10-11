@@ -1,12 +1,21 @@
 <script setup lang="ts">
 import { RouterView } from 'vue-router';
+import { SidebarInset, SidebarProvider, SidebarTrigger } from '@/components/ui/sidebar';
+import AppSidebar from '@/components/AppSidebar.vue';
 </script>
 
 <template>
-  <h1>You did it!</h1>
-  <p>Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the documentation</p>
-
-  <RouterView></RouterView>
+  <SidebarProvider>
+    <AppSidebar />
+    <SidebarInset>
+      <header>
+        <SidebarTrigger />
+      </header>
+      <main class="flex flex-1 p-4">
+        <RouterView />
+      </main>
+    </SidebarInset>
+  </SidebarProvider>
 </template>
 
 <style scoped></style>
