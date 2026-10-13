@@ -21,7 +21,7 @@ export default defineConfig({
         rewrite: (path) => path.replace(/^\/api/, ''),
       },
       '/static_media': {
-        target: 'http://localhost:9000',
+        target: 'http://localhost:9999',
         rewrite: (path) => path.replace(/\/static_media/, ''),
       },
     },
