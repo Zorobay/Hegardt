@@ -8,5 +8,8 @@
     "exports": {
         ".": "./src/index.ts",
         "./styles/*": "./src/styles/*"
+    },
+    "dependencies": {
+        "date-fns": "^4.4.0"
     }
 }

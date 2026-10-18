@@ -12,10 +12,11 @@ import jakarta.persistence.criteria.CriteriaQuery
 import jakarta.persistence.criteria.Predicate
 import jakarta.persistence.criteria.Root
 import se.hegardt.domain.Person
+import se.hegardt.service.IPersonsService
 
 @Repository
 @CompileStatic
-abstract class PersonsRepository implements JpaRepository<Person, Long> {
+abstract class PersonsRepository implements IPersonsRepository {
 
     private final EntityManager entityManager
 

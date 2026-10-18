@@ -32,6 +32,8 @@ We can wipe the volume and all data with
 docker compose down postgres -v
 ```
 
+You can also use the script `reset_database.ps1` during development to reset the database.
+
 ### Reset PROD database if seed files are updated
 
 1. SSH into the server

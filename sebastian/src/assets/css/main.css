@@ -125,4 +125,17 @@
 
     @apply font-sans;
     }
+
+  /* Custom defaults */
+  h1 {
+    @apply scroll-m-20 text-4xl font-extrabold tracking-tight text-balance mb-6;
+  }
+
+  h2 {
+    @apply scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0 mb-4;
+  }
+
+  p {
+    @apply leading-7 [&:not(:first-child)]:mt-6;
+  }
 }
